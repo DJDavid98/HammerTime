@@ -46,7 +46,7 @@ const IndexPage: VFC = () => {
             <FontAwesomeIcon icon="calendar" fixedWidth />
           </InputGroupText>
         </InputGroupAddon>
-        <Input {...props} type="text" bsSize="lg" className={styles.dateInput} id={dateInputId} />
+        <Input {...props} type="text" bsSize="lg" className={styles.dateInput} id={dateInputId} readOnly />
       </InputGroup>
     ),
     [],
