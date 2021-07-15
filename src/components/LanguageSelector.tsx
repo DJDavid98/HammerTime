@@ -8,6 +8,7 @@ import { useRouter } from 'next/router';
 import { useCallback, useMemo, VFC } from 'react';
 import { DropdownItem, DropdownMenu, DropdownToggle, UncontrolledDropdown } from 'reactstrap';
 import { AvailableLanguage, LANGUAGES } from 'src/config';
+import Flag from 'react-flagkit';
 
 export const LanguageSelector: VFC<{ className?: string }> = ({ className }) => {
   const router = useRouter();
@@ -46,7 +47,8 @@ export const LanguageSelector: VFC<{ className?: string }> = ({ className }) => 
         {toPairs(LANGUAGES).map(([key, value]) => (
           <Link key={key} href={{ pathname: router.pathname, query: router.query }} locale={key} passHref>
             <DropdownItem tag="a" {...getCurrentItemProps(key)}>
-              <span>{value.nativeName}</span>
+              <Flag country={value.countryCode} />
+              <span className={styles.nativeName}>{value.nativeName}</span>
             </DropdownItem>
           </Link>
         ))}

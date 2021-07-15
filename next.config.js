@@ -1,4 +1,3 @@
-const { NEXT_PUBLIC_STORAGE_DOMAIN } = process.env;
 const { i18n } = require('./next-i18next.config.js');
 const withPlugins = require('next-compose-plugins');
 const withCamelCaseCSSModules = require('./utils/next-css-modules');
@@ -14,9 +13,10 @@ module.exports = withPlugins([[withCamelCaseCSSModules]], {
       if (devMode) {
         config.headers = config.headers.map((headerConfig) => {
           if (/content-security-policy/i.test(headerConfig.key)) {
-            const value = headerConfig.value
-              .replace(/script-src [^;]+(;|$)/, `script-src * 'unsafe-inline' 'unsafe-hashes' 'unsafe-eval'$1`)
-              .replace(/((?:img|default)-src [^;]+)(;|$)/g, `$1 ${NEXT_PUBLIC_STORAGE_DOMAIN}$2`);
+            const value = headerConfig.value.replace(
+              /script-src [^;]+(;|$)/,
+              `script-src * 'unsafe-inline' 'unsafe-hashes' 'unsafe-eval'$1`,
+            );
             return {
               ...headerConfig,
               value,

@@ -1,0 +1,12 @@
+{
+  "languages": {
+    "en": {
+      "nativeName": "English",
+      "countryCode": "US"
+    },
+    "hu": {
+      "nativeName": "Magyar",
+      "countryCode": "HU"
+    }
+  }
+}

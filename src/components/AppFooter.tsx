@@ -4,7 +4,7 @@ import { LanguageSelector } from 'components/LanguageSelector';
 import { Trans, useTranslation } from 'next-i18next';
 import React, { useRef, VFC } from 'react';
 import { UncontrolledTooltip } from 'reactstrap';
-import { REPOSITORY_URL } from 'src/config';
+import { FONTAWESOME_FREE_LICENSE_URL, REPOSITORY_URL } from 'src/config';
 
 const AppFooterComponent: VFC = () => {
   const { t } = useTranslation();
@@ -18,7 +18,7 @@ const AppFooterComponent: VFC = () => {
       </span>
       <span>
         <Trans t={t} i18nKey="common:builtWith">
-          0<ExternalLink href="https://fontawesome.com/license/free">1</ExternalLink>2
+          0<ExternalLink href={FONTAWESOME_FREE_LICENSE_URL}>1</ExternalLink>2
         </Trans>
       </span>
       <span>
