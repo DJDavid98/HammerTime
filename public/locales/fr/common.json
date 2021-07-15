@@ -1,0 +1,18 @@
+{
+  "seoDescription": "Générer des indicateurs d'horodatage pour les messages discord",
+  "howTo": "Choisissez une date, copiez l'horodatage désiré qui se situe dans la colonne \"{{syntaxColName}}\", ensuite collez le ou vous le souhaitez dans votre message. Le résultat sera un \"timestamp\" dynamique qui s'affichera différemment pour les gens suivant leur fuseau horaire.",
+  "table": {
+    "syntax": "Syntaxe du chat",
+    "example": "Exemple de résultat"
+  },
+  "changeLanguage": "Changer la langue",
+  "current": "Actif",
+  "notFound": {
+    "heading": "Non trouvé",
+    "content": "Il n'y a rien a voir ici."
+  },
+  "builtWith": "Site créé avec la police d'écriture <1>Font Awesome Free</1>",
+  "openSource": "Logiciel open-source",
+  "viewSource": "Voir le code source",
+  "notAffiliated": "Ce projet n'est pas affilié avec Discord."
+}

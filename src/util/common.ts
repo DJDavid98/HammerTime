@@ -4,6 +4,7 @@ import { AvailableLanguage, CANONICAL_URL, IS_CLIENT_SIDE } from 'src/config';
 export const localeMap: Record<AvailableLanguage, string> = {
   en: 'en',
   hu: 'hu',
+  fr: 'fr',
 };
 
 export const useLocale = (language: string) => useMemo<string>(() => localeMap[language as AvailableLanguage] || 'en', [language]);

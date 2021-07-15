@@ -7,6 +7,10 @@
     "hu": {
       "nativeName": "Magyar",
       "countryCode": "HU"
+    },
+    "fr": {
+      "nativeName": "Français",
+      "countryCode": "FR"
     }
   }
 }
