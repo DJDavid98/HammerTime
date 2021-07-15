@@ -1,4 +1,4 @@
-# Hammertime
+<h1>Hammertime <a title="Crowdin" target="_blank" href="https://crowdin.com/project/hammertime"><img src="https://badges.crowdin.net/hammertime/localized.svg"></a></h1>
 
 I discovered [DiscordTimeStamper] through [this Reddit post] and immediately knew this could be turned into a website, so here it is.
 
