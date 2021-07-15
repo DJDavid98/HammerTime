@@ -1,0 +1,28 @@
+#footer {
+  bottom: 0;
+  padding: 0.75rem;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 0;
+
+  > span {
+    font-size: 1rem;
+
+    @include media-breakpoint-down(md) {
+      display: block;
+
+      &:not(:last-child) {
+        margin-bottom: rem(5px);
+      }
+    }
+    @include media-breakpoint-up(lg) {
+      padding: 0 rem(7px);
+      display: inline;
+
+      &:not(:last-child) {
+        border-right: rem(1px) solid rgba(gray, 0.5);
+      }
+    }
+  }
+}

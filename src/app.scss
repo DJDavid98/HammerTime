@@ -1,0 +1,30 @@
+@import 'scss/vars';
+@import 'scss/functions';
+@import 'scss/fonts';
+@import '~bootstrap/scss/bootstrap';
+@import '~@fortawesome/fontawesome-svg-core/styles.css';
+@import '~react-datetime/css/react-datetime.css';
+
+@import 'scss/components/app-footer';
+
+* {
+  outline: none;
+}
+
+html {
+  background-color: $dark;
+  font-size: 100%;
+  min-height: 100vh;
+}
+
+code {
+  border: $code-border;
+  background-color: $code-bg;
+  border-radius: rem(4px);
+  padding: 0.5em;
+  user-select: all;
+}
+
+.table td {
+  vertical-align: middle;
+}

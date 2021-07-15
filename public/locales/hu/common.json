@@ -1,0 +1,17 @@
+{
+  "seoDescription": "Generálj időpont jelölőket a Discord üzeneteidhez",
+  "howTo": "Válassz egy dátumot', másold ki a kivánt jelölőt a {{col}} oszlopból, majd másold be bárhova egy üzenetbe. Az eredmény edgy dinamikus időbélyeg lesz, ami mindenkinek máshogy fog megjelenni a saját időzónájuktól függően.",
+  "changeLanguage": "Nyelv változtatás",
+  "current": "Jelenlegi",
+  "notFound": {
+    "heading": "Nem Található",
+    "content": "Nincs itt semmi látnivaló."
+  },
+  "builtWith": {
+    "t1": "A weboldal a ",
+    "t2": " segítségével készült"
+  },
+  "openSource": "Nyílt forráskódú szoftver",
+  "viewSource": "Forráskód megtekintése",
+  "notAffiliated": "A projektnek semmilyen kapcsolata nincs a Discord-dal."
+}

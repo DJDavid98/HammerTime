@@ -1,0 +1,10 @@
+@import '../vars';
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/mixins';
+@import '~bootstrap/scss/variables';
+
+.syntax-column {
+  @include media-breakpoint-up(md) {
+    width: 15rem;
+  }
+}
