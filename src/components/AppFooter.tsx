@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { ExternalLink } from 'components/ExternalLink';
 import { LanguageSelector } from 'components/LanguageSelector';
-import { useTranslation } from 'next-i18next';
+import { Trans, useTranslation } from 'next-i18next';
 import React, { useRef, VFC } from 'react';
 import { UncontrolledTooltip } from 'reactstrap';
 import { REPOSITORY_URL } from 'src/config';
@@ -17,9 +17,9 @@ const AppFooterComponent: VFC = () => {
         <LanguageSelector />
       </span>
       <span>
-        {t('common:builtWith.t1')}
-        <ExternalLink href="https://fontawesome.com/license/free">Font Awesome Free 5.15.1</ExternalLink>
-        {t('common:builtWith.t2')}
+        <Trans t={t} i18nKey="common:builtWith">
+          0<ExternalLink href="https://fontawesome.com/license/free">1</ExternalLink>2
+        </Trans>
       </span>
       <span>
         <FontAwesomeIcon icon={['fab', 'osi']} className="mr-2" />

@@ -65,8 +65,8 @@ export const TimestampsTable: VFC<PropTypes> = ({ locale, timestamp, t }) => {
     <Table responsive>
       <thead>
         <tr>
-          <th className={styles.syntaxColumn}>{t('table:syntax')}</th>
-          <th>{t('table:example')}</th>
+          <th className={styles.syntaxColumn}>{t('common:table.syntax')}</th>
+          <th>{t('common:table.example')}</th>
         </tr>
       </thead>
       <tbody>
