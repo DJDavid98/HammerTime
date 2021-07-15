@@ -1,6 +1,6 @@
 {
   "seoDescription": "Generálj időpont jelölőket a Discord üzeneteidhez",
-  "howTo": "Válassz egy dátumot, másold ki a kívánt jelölőt a {{syntaxColName}} oszlopból, majd másold be bárhova egy üzenetbe. Az eredmény egy dinamikus időbélyeg lesz, ami mindenkinek máshogy fog megjelenni a saját időzónájuktól függően.",
+  "howTo": "Pick a date, copy the desired timestamp from the {{syntaxColName}} column, then paste it anywhere in a chat message. The result will be a dynamic timestamp that displays differently for everyone based on their own timezone.",
   "table": {
     "syntax": "Üzenet formája",
     "example": "Példa megjelenés"
