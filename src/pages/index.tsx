@@ -59,7 +59,7 @@ const IndexPage: VFC = () => {
           <CustomIcon src="/logos/app.svg" className="mr-3" alt="" />
           {SITE_TITLE}
         </h1>
-        <p className="text-center">{t('common:seoDescription')}</p>
+        <p className="text-center">{t('common:howTo', { col: t('table:syntax') })}</p>
 
         <div className={styles.datepicker}>
           <Datetime
