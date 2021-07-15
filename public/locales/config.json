@@ -1,8 +1,12 @@
 {
   "languages": {
     "en": {
-      "nativeName": "English",
+      "nativeName": "English, US",
       "countryCode": "US"
+    },
+    "en-GB": {
+      "nativeName": "English, UK",
+      "countryCode": "GB"
     },
     "hu": {
       "nativeName": "Magyar",

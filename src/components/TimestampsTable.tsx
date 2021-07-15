@@ -47,7 +47,7 @@ export const TimestampsTable: VFC<PropTypes> = ({ locale, timestamp, t }) => {
       syntax: `<t:${timeInSeconds}:D>`,
     };
     const longFull: TimeValue = {
-      example: localizedTs.format('LLL'),
+      example: localizedTs.format('LLLL'),
       syntax: `<t:${timeInSeconds}:F>`,
     };
     const relativeTime: TimeValue = {
