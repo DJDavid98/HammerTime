@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { TFunction } from 'i18next';
-import { Moment } from 'moment';
+import moment, { Moment } from 'moment-timezone';
 import { useEffect, useMemo, useState, VFC } from 'react';
 import CopyToClipboard from 'react-copy-to-clipboard';
 import { Button, Table } from 'reactstrap';
@@ -8,6 +8,7 @@ import styles from 'modules/TimestampsTable.module.scss';
 
 interface PropTypes {
   timestamp: Moment;
+  timezone: string;
   locale: string;
   t: TFunction;
 }
@@ -17,7 +18,7 @@ interface TimeValue {
   syntax: string;
 }
 
-export const TimestampsTable: VFC<PropTypes> = ({ locale, timestamp, t }) => {
+export const TimestampsTable: VFC<PropTypes> = ({ t, locale, timestamp, timezone }) => {
   const [now, setNow] = useState(() => new Date());
 
   useEffect(() => {
@@ -26,7 +27,7 @@ export const TimestampsTable: VFC<PropTypes> = ({ locale, timestamp, t }) => {
     return () => clearInterval(timer);
   }, []);
 
-  const localizedTs = useMemo(() => timestamp.locale(locale), [timestamp, locale]);
+  const localizedTs = useMemo(() => moment.tz(timestamp, timezone).locale(locale), [timestamp, locale, timezone]);
 
   const timeInSeconds = localizedTs.locale(locale).format('X');
   const rows = useMemo<TimeValue[]>(() => {
