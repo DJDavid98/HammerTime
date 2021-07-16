@@ -1,6 +1,10 @@
 {
   "seoDescription": "Generálj időpont jelölőket a Discord üzeneteidhez",
   "howTo": "Válassz egy dátumot, másold ki a kívánt jelölőt a {{syntaxColName}} oszlopból, majd másold be bárhova egy üzenetbe. Az eredmény egy dinamikus időbélyeg lesz, ami mindenkinek máshogy fog megjelenni a saját időzónájuktól függően.",
+  "input": {
+    "date": "Date and time",
+    "timezone": "Timezone"
+  },
   "table": {
     "syntax": "Üzenet formája",
     "example": "Példa megjelenés"
