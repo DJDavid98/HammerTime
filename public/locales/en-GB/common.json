@@ -1,6 +1,10 @@
 {
   "seoDescription": "Generate timestamp indicators for Discord chat messages",
   "howTo": "Pick a date, copy the desired timestamp from the {{syntaxColName}} column, then paste it anywhere in a chat message. The result will be a dynamic timestamp that displays differently for everyone based on their own timezone.",
+  "input": {
+    "date": "Date and time",
+    "timezone": "Timezone"
+  },
   "table": {
     "syntax": "Chat syntax",
     "example": "Example result"
