@@ -48,7 +48,7 @@ const IndexPage: VFC = () => {
   }, []);
 
   useEffect(() => {
-    const clientMoment = moment();
+    const clientMoment = moment().seconds(0).milliseconds(0);
     handleDateChange(clientMoment);
     handleTimezoneChange(null);
   }, [handleDateChange, handleTimezoneChange]);
