@@ -8,13 +8,17 @@
       "nativeName": "English, UK",
       "countryCode": "GB"
     },
-    "hu": {
-      "nativeName": "Magyar",
-      "countryCode": "HU"
+    "ru": {
+      "nativeName": "Русский",
+      "countryCode": "RU"
     },
     "fr": {
       "nativeName": "Français",
       "countryCode": "FR"
+    },
+    "hu": {
+      "nativeName": "Magyar",
+      "countryCode": "HU"
     }
   }
 }
