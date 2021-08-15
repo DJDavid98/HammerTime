@@ -6,6 +6,7 @@ export const localeMap: Record<AvailableLanguage, string> = {
   'en-GB': 'en-gb',
   'hu': 'hu',
   'fr': 'fr',
+  'ru': 'ru',
 };
 
 export const useLocale = (language: string) => useMemo<string>(() => localeMap[language as AvailableLanguage] || 'en', [language]);
