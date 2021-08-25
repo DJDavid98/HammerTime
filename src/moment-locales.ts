@@ -1,3 +1,4 @@
+import 'moment/locale/de';
 import 'moment/locale/en-gb';
 import 'moment/locale/fr';
 import 'moment/locale/hu';

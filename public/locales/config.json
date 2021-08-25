@@ -9,6 +9,10 @@
       "countryCode": "GB",
       "momentLocale": "en-gb"
     },
+    "de": {
+      "nativeName": "Deutsch",
+      "countryCode": "DE"
+    },
     "ru": {
       "nativeName": "Русский",
       "countryCode": "RU"
