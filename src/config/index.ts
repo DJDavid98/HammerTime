@@ -16,6 +16,7 @@ type LanguagesConfig = Record<
     nativeName: string;
     countryCode: string;
     rtl?: boolean;
+    momentLocale?: string;
   }
 >;
 

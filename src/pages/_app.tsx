@@ -7,7 +7,7 @@ import React, { useEffect, useMemo } from 'react';
 import 'src/app.scss';
 import { isAvailableLanguage, SITE_TITLE } from 'src/config';
 import 'src/fontawesome';
-import { assembleSeoUrl, getDirAttribute } from 'src/util/common';
+import { assembleSeoUrl, getDirAttribute, useLocale } from 'src/util/common';
 import '../moment-locales';
 
 const App: AppComponent = ({ Component, pageProps }) => {
@@ -30,6 +30,8 @@ const App: AppComponent = ({ Component, pageProps }) => {
     const direction = getDirAttribute(locale);
     document.documentElement.setAttribute('dir', direction);
   }, [locale]);
+
+  const momentLocale = useLocale(locale);
 
   return (
     <>
@@ -56,7 +58,7 @@ const App: AppComponent = ({ Component, pageProps }) => {
           images: [
             {
               alt: '<t:1626299131:R> ⬇ 5 hours ago',
-              url: assembleSeoUrl('/logos/social.png'),
+              url: assembleSeoUrl(`/social/${momentLocale}.png`),
               width: 1200,
               height: 630,
             },

@@ -6,7 +6,8 @@
     },
     "en-GB": {
       "nativeName": "English, UK",
-      "countryCode": "GB"
+      "countryCode": "GB",
+      "momentLocale": "en-gb"
     },
     "ru": {
       "nativeName": "Русский",
