@@ -2,7 +2,12 @@ import { useMemo } from 'react';
 import { CANONICAL_URL, IS_CLIENT_SIDE, isAvailableLanguage, LANGUAGES } from 'src/config';
 
 export const useLocale = (language?: string) =>
-  useMemo<string>(() => (language && isAvailableLanguage(language) && (LANGUAGES[language].momentLocale || language)) || 'en', [language]);
+  useMemo<string>(() => {
+    if (language && isAvailableLanguage(language)) {
+      return LANGUAGES[language].momentLocale || language;
+    }
+    return 'en';
+  }, [language]);
 
 export const assembleSeoUrl = (pathname?: string): string => {
   const protocol = IS_CLIENT_SIDE ? location.protocol : 'https:';

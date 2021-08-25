@@ -113,3 +113,9 @@ $rdt-disabled-color: invert(#999999);
     text-align: right;
   }
 }
+
+:root[dir='rtl'] {
+  .date-input-group {
+    flex-direction: row-reverse;
+  }
+}
