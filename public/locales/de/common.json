@@ -1,22 +1,22 @@
 {
-  "seoDescription": "Generate timestamp indicators for Discord chat messages",
-  "howTo": "Pick a date, copy the desired timestamp from the {{syntaxColName}} column, then paste it anywhere in a chat message. The result will be a dynamic timestamp that displays differently for everyone based on their own timezone.",
+  "seoDescription": "Generiere Zeitstempel-Indikatoren für Discord Chatnachrichten",
+  "howTo": "Wähle eine Datum, kopiere den gewünschten Zeitstempel aus der Spalte {{syntaxColName}} und füge ihn dann irgendwo in eine Chatnachricht ein. Das Ergebnis ist ein dynamischer Zeitstempel, der je nach Zeitzone für jeden unterschiedlich angezeigt wird.",
   "input": {
-    "date": "Date and time",
-    "timezone": "Timezone"
+    "date": "Datum und Uhrzeit",
+    "timezone": "Zeitzone"
   },
   "table": {
-    "syntax": "Chat syntax",
-    "example": "Example result"
+    "syntax": "Chat Syntax",
+    "example": "Beispiel"
   },
-  "changeLanguage": "Change language",
-  "current": "Current",
+  "changeLanguage": "Sprache ändern",
+  "current": "Aktuell",
   "notFound": {
-    "heading": "Not Found",
-    "content": "Nothing to see here."
+    "heading": "Nicht gefunden",
+    "content": "Hier gibt es nichts zu sehen."
   },
-  "builtWith": "Website built with <1>Font Awesome Free</1>",
-  "openSource": "Open-source software",
-  "viewSource": "View source code",
-  "notAffiliated": "This project is not affiliated with Discord."
+  "builtWith": "Webseite erstellt mit <1>Font Awesome Free</1>",
+  "openSource": "Open-Source Software",
+  "viewSource": "Quellcode anzeigen",
+  "notAffiliated": "Dieses Projekt ist nicht mit Discord assoziiert."
 }
