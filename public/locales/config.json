@@ -21,6 +21,11 @@
       "nativeName": "Français",
       "countryCode": "FR"
     },
+    "ar": {
+      "nativeName": "عربي",
+      "countryCode": "AR",
+      "rtl": true
+    },
     "hu": {
       "nativeName": "Magyar",
       "countryCode": "HU"
