@@ -17,6 +17,7 @@ English and Hungarian translations have been included, so no translators will be
 - French: Cookie Kiro (Cookikui)
 - Russian: Luna (NightyCloud)
 - German: Fabian9799
+- Arabic: Raphael Santiago (raphael.santiago.53)
 
 [discordtimestamper]: https://github.com/TimeTravelPenguin/DiscordTimeStamper/
 [this reddit post]: https://www.reddit.com/r/discordapp/comments/oiv86b/i_made_a_tool_to_make_timestamps_for_discord/
