@@ -75,7 +75,7 @@ export const TimestampsTable: VFC<PropTypes> = ({ t, locale, timestamp, timezone
           <tr key={i}>
             <td className={styles.syntaxColumn}>
               <CopyToClipboard text={value.syntax}>
-                <Button color="link" className="mr-2">
+                <Button color="link" className={styles.copyButton}>
                   <FontAwesomeIcon icon="clipboard" />
                 </Button>
               </CopyToClipboard>
