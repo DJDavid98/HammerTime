@@ -98,4 +98,18 @@ $rdt-disabled-color: invert(#999999);
   }
 
   margin-bottom: 1rem;
+
+  .form-label {
+    width: 100%;
+  }
+}
+
+:root[dir='rtl'] {
+  .date-input-group {
+    flex-direction: row-reverse;
+  }
+
+  .datepicker .form-label {
+    text-align: right;
+  }
 }

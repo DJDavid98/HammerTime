@@ -1,0 +1,47 @@
+@import '../vars';
+@import '../functions';
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/mixins';
+@import '~bootstrap/scss/variables';
+
+$footer-separator-size: rem(1px);
+
+.footer {
+  bottom: 0;
+  padding: 0.75rem;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 0;
+
+  .footer-item {
+    font-size: 1rem;
+    display: block;
+  }
+
+  .footer-separator {
+    display: inline-block;
+    width: $footer-separator-size;
+    height: #{$line-height-base * 1rem};
+    border-right: $footer-separator-size solid rgba(gray, 0.5);
+    margin: 0 0.5rem;
+    position: relative;
+    top: 0.4rem;
+  }
+
+  @include media-breakpoint-down(md) {
+    .footer-item:not(:last-child) {
+      margin-bottom: rem(5px);
+    }
+
+    .footer-separator {
+      display: none;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    .footer-item {
+      display: inline;
+    }
+  }
+}

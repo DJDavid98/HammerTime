@@ -3,11 +3,11 @@ import { DefaultSeo } from 'next-seo';
 import { AppComponent } from 'next/dist/next-server/lib/router/router';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
-import React, { useMemo } from 'react';
+import React, { useEffect, useMemo } from 'react';
 import 'src/app.scss';
-import { SITE_TITLE } from 'src/config';
+import { isAvailableLanguage, SITE_TITLE } from 'src/config';
 import 'src/fontawesome';
-import { assembleSeoUrl } from 'src/util/common';
+import { assembleSeoUrl, getDirAttribute } from 'src/util/common';
 import '../moment-locales';
 
 const App: AppComponent = ({ Component, pageProps }) => {
@@ -23,6 +23,13 @@ const App: AppComponent = ({ Component, pageProps }) => {
   );
 
   const { t } = useTranslation();
+
+  useEffect(() => {
+    if (!locale || !isAvailableLanguage(locale)) return;
+
+    const direction = getDirAttribute(locale);
+    document.documentElement.setAttribute('dir', direction);
+  }, [locale]);
 
   return (
     <>

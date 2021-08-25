@@ -64,8 +64,8 @@ const IndexPage: VFC = () => {
     <Layout>
       <AppContainer bg="discord">
         <h1 className="text-center">
-          <CustomIcon src="/logos/app.svg" className="mr-3" alt="" />
-          {SITE_TITLE}
+          <CustomIcon src="/logos/app.svg" alt="" />
+          <span className="mx-3">{SITE_TITLE}</span>
         </h1>
         <p className="text-center">{t('common:howTo', { syntaxColName: t('common:table.syntax') })}</p>
 

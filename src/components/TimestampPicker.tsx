@@ -29,7 +29,7 @@ interface PropTypes {
 }
 
 const DateInput: VFC<unknown> = (props) => (
-  <InputGroup>
+  <InputGroup className={styles.dateInputGroup}>
     <InputGroupAddon addonType="prepend">
       <InputGroupText tag="label" htmlFor={dateInputId} className={styles.inputAddon}>
         <FontAwesomeIcon icon="calendar" fixedWidth />
@@ -114,7 +114,9 @@ export const TimestampPicker: VFC<PropTypes> = ({
       <Row form>
         <Col md={6}>
           <FormGroup>
-            <Label for={dateInputId}>{t('common:input.date')}</Label>
+            <Label className={styles.formLabel} for={dateInputId}>
+              {t('common:input.date')}
+            </Label>
             <Datetime
               locale={locale}
               value={datetime}
@@ -129,10 +131,15 @@ export const TimestampPicker: VFC<PropTypes> = ({
         {timestamp && (
           <Col md={6}>
             <FormGroup>
-              <Label for={timezoneSelectId}>{t('common:input.timezone')}</Label>
+              <Label className={styles.formLabel} for={timezoneSelectId}>
+                {t('common:input.timezone')}
+              </Label>
               <Select
                 inputId={timezoneSelectId}
-                value={{ label: timezone, value: timezone }}
+                value={{
+                  label: timezone,
+                  value: timezone,
+                }}
                 options={timezoneNames}
                 onChange={handleTimezoneChange}
                 className="w-100"

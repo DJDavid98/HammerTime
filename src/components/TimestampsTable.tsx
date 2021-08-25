@@ -29,7 +29,7 @@ export const TimestampsTable: VFC<PropTypes> = ({ t, locale, timestamp, timezone
 
   const localizedTs = useMemo(() => moment.tz(timestamp, timezone).locale(locale), [timestamp, locale, timezone]);
 
-  const timeInSeconds = localizedTs.locale(locale).format('X');
+  const timeInSeconds = localizedTs.locale('en').format('X');
   const rows = useMemo<TimeValue[]>(() => {
     const shortDate: TimeValue = {
       example: localizedTs.format('L'),
@@ -63,7 +63,7 @@ export const TimestampsTable: VFC<PropTypes> = ({ t, locale, timestamp, timezone
   }, [now, timeInSeconds, localizedTs]);
 
   return (
-    <Table responsive>
+    <Table responsive className={styles.table}>
       <thead>
         <tr>
           <th className={styles.syntaxColumn}>{t('common:table.syntax')}</th>

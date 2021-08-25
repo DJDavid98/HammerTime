@@ -3,6 +3,13 @@
 @import '~bootstrap/scss/mixins';
 @import '~bootstrap/scss/variables';
 
+:root[dir='rtl'] .table {
+  th,
+  td {
+    text-align: right;
+  }
+}
+
 .syntax-column {
   @include media-breakpoint-up(md) {
     width: 15rem;

@@ -15,9 +15,12 @@ type LanguagesConfig = Record<
   {
     nativeName: string;
     countryCode: string;
+    rtl?: boolean;
   }
 >;
 
 export const LANGUAGES: LanguagesConfig = localeConfig.languages;
 
 export const DEFAULT_I18N_NAMESPACES: AppI18nNamespaces[] = ['common'];
+
+export const isAvailableLanguage = (language: string): language is AvailableLanguage => language in LANGUAGES;

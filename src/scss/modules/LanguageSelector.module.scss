@@ -1,22 +1,24 @@
 .language-selector {
+  .current-lang-name {
+    margin: 0 0.5rem;
+  }
+
   .item {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
   }
 
-  .current::after {
-    content: attr(data-current);
+  .current-label {
     color: green;
     font-size: 0.7em;
-    margin-left: 5px;
     font-weight: 700;
     text-transform: uppercase;
   }
 
   .native-name {
-    margin-left: 0.5rem;
     line-height: 1rem;
     padding-top: 0.1rem;
+    margin: 0 0.5rem;
   }
 }
