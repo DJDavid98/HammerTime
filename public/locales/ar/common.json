@@ -1,22 +1,22 @@
 {
   "seoDescription": "قم بعمل مؤشرات ختم زمني لرسائل ديسكورد",
-  "howTo": "Pick a date, copy the desired timestamp from the {{syntaxColName}} column, then paste it anywhere in a chat message. The result will be a dynamic timestamp that displays differently for everyone based on their own timezone.",
+  "howTo": "اختر تاريخ، وانسخ الختم الزمني الذي تريده من صف {{syntaxColName}}، ثم الصقه في أي مكان في رسالة شات. ستكون النتيجة هي ختم زمني يتغير بشكل تلقائي حسب توقيت كل مستخدم.",
   "input": {
-    "date": "Date and time",
-    "timezone": "Timezone"
+    "date": "التاريخ والزمن",
+    "timezone": "التوقيت (المنطقة الزمنية)"
   },
   "table": {
-    "syntax": "Chat syntax",
-    "example": "Example result"
+    "syntax": "صيغة الشات",
+    "example": "الشكل فالشات"
   },
-  "changeLanguage": "Change language",
-  "current": "Current",
+  "changeLanguage": "تغيير اللغة",
+  "current": "اللغة الحالية",
   "notFound": {
-    "heading": "Not Found",
-    "content": "Nothing to see here."
+    "heading": "لم يتم إيجاد الموقع",
+    "content": "لا يوجد شيء هنا."
   },
-  "builtWith": "Website built with <1>Font Awesome Free</1>",
-  "openSource": "Open-source software",
-  "viewSource": "View source code",
-  "notAffiliated": "This project is not affiliated with Discord."
+  "builtWith": "تم عمل الموقع باستخدام <1>Font Awesome المجاني</1>",
+  "openSource": "الموقع مفتوح المصدر",
+  "viewSource": "عرض الكود المصدري",
+  "notAffiliated": "هذا المشروع غير مرتبط بديسكورد."
 }
