@@ -21,9 +21,14 @@
       "nativeName": "Français",
       "countryCode": "FR"
     },
+    "pt-BR": {
+      "nativeName": "Português do Brasil",
+      "countryCode": "BR",
+      "momentLocale": "pt-br"
+    },
     "ar": {
       "nativeName": "اللغة العربية",
-      "countryCode": "AR",
+      "countryCode": "AE",
       "rtl": true
     },
     "hu": {

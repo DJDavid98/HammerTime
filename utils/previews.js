@@ -36,7 +36,7 @@ console.info('Generating social previews…');
       const languageConfig = languages[language];
       const momentLocale = languageConfig.momentLocale || language;
       if (language !== 'en') require(`moment/locale/${momentLocale}`);
-      const outputPath = path.join(socialOutputDirectory, `${language}.png`);
+      const outputPath = path.join(socialOutputDirectory, `${momentLocale}.png`);
       const isRtl = languageConfig.rtl === true;
 
       const socialCanvasWidth = 1200;
