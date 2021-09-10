@@ -1,5 +1,5 @@
 {
-  "seoDescription": "Gere indicadores de timestamp para mensagens de chat do Discord",
+  "seoDescription": "Gere indicadores de timestamp para mensagens do Discord",
   "howTo": "Escolha uma data, copie o timestamp desejado da coluna da sintaxe do chat, e cole em qualquer lugar em uma mensagem. O resultado será um timestamp dinâmico que mostra diferentes datas e horários para todos com base no seu próprio fuso horário.",
   "input": {
     "date": "Data e hora",
