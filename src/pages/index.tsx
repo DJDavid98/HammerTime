@@ -60,6 +60,15 @@ const IndexPage: VFC = () => {
     t,
   };
 
+  const syntaxColName = useMemo(() => {
+    const originalText = t('common:table.syntax');
+    // Lowercase column name in text only for this language
+    if (locale === 'pt-br') {
+      return originalText.toLowerCase();
+    }
+    return originalText;
+  }, [locale, t]);
+
   return (
     <Layout>
       <AppContainer bg="discord">
@@ -67,7 +76,7 @@ const IndexPage: VFC = () => {
           <CustomIcon src="/logos/app.svg" alt="" />
           <span className="mx-3">{SITE_TITLE}</span>
         </h1>
-        <p className="text-center">{t('common:howTo', { syntaxColName: t('common:table.syntax') })}</p>
+        <p className="text-center">{t('common:howTo', { syntaxColName })}</p>
 
         <TimestampPicker
           {...commonProps}
