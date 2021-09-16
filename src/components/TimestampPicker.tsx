@@ -2,12 +2,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { TFunction } from 'i18next';
 import styles from 'modules/TimestampPicker.module.scss';
 import moment, { Moment } from 'moment-timezone';
-import { useCallback, VFC } from 'react';
+import { useCallback, useMemo, VFC } from 'react';
 import Datetime from 'react-datetime';
 import Select from 'react-select';
 import { StylesConfig } from 'react-select/src/styles';
 import { ThemeConfig } from 'react-select/src/theme';
 import { Col, FormGroup, Input, InputGroup, InputGroupAddon, InputGroupText, Label, Row } from 'reactstrap';
+import { getTimezoneValue } from 'src/util/timezone';
 
 const dateInputId = 'date-input';
 const timezoneSelectId = 'timezone-input';
@@ -109,6 +110,8 @@ export const TimestampPicker: VFC<PropTypes> = ({
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const renderDateInput = useCallback((props: any) => <DateInput {...props} />, []);
 
+  const timezoneSelectValue = useMemo(() => getTimezoneValue(timezone), [timezone]);
+
   return (
     <div className={styles.datepicker}>
       <Row form>
@@ -136,10 +139,7 @@ export const TimestampPicker: VFC<PropTypes> = ({
               </Label>
               <Select
                 inputId={timezoneSelectId}
-                value={{
-                  label: timezone,
-                  value: timezone,
-                }}
+                value={timezoneSelectValue}
                 options={timezoneNames}
                 onChange={handleTimezoneChange}
                 className="w-100"

@@ -10,28 +10,19 @@ import { useCallback, useEffect, useMemo, useState, VFC } from 'react';
 import { SITE_TITLE } from 'src/config';
 import { useLocale } from 'src/util/common';
 import { typedServerSideTranslations } from 'src/util/i18n-server';
+import { getSortedNormalizedTimezoneNames, getTimezoneValue } from 'src/util/timezone';
 
-const forceFirstTimezoneSet = 'GMT';
+interface IndexPageProps {
+  tzNames: string[];
+}
 
-const IndexPage: VFC = () => {
+const IndexPage: VFC<IndexPageProps> = ({ tzNames }) => {
   const {
     t,
     i18n: { language },
   } = useTranslation();
   const locale = useLocale(language);
-  const timezoneNames = useMemo(() => {
-    let compare = (a: string, b: string): number => a.localeCompare(b);
-    try {
-      const collator = new Intl.Collator(undefined, { numeric: true, sensitivity: 'base' });
-      compare = collator.compare;
-    } catch (e) {
-      console.error(e);
-    }
-    return moment.tz
-      .names()
-      .sort((a, b) => (forceFirstTimezoneSet === a ? -1 : forceFirstTimezoneSet === b ? 1 : compare(a, b)))
-      .map((value) => ({ label: value, value }));
-  }, []);
+  const timezoneNames = useMemo(() => tzNames.map((timezone) => getTimezoneValue(timezone)), [tzNames]);
   const [timezone, setTimezone] = useState<string>(() => timezoneNames[0].value);
   const [timestamp, setTimestamp] = useState<Moment>(() => moment(new Date(0)).utc());
   const [inputValue, setInputValue] = useState<Moment | string>('');
@@ -93,8 +84,9 @@ const IndexPage: VFC = () => {
 
 export default IndexPage;
 
-export const getStaticProps: GetStaticProps<SSRConfig> = async ({ locale }) => ({
+export const getStaticProps: GetStaticProps<IndexPageProps & SSRConfig> = async ({ locale }) => ({
   props: {
+    tzNames: getSortedNormalizedTimezoneNames(),
     ...(await typedServerSideTranslations(locale, ['common'])),
   },
 });
