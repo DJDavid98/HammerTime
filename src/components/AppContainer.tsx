@@ -13,7 +13,7 @@ const AppContainerComponent: React.FC<PropTypes> = ({ bg, fluid, heading, childr
   <div className={classNames('py-4', bg && `bg-${bg}`)}>
     <Container fluid={fluid}>
       <Row className="justify-content-center">
-        <Col md={10}>
+        <Col md={12} lg={10}>
           <Card>
             {typeof heading === 'string' && <CardHeader>{heading}</CardHeader>}
             <CardBody>{children}</CardBody>

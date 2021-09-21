@@ -1,45 +1,25 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { DateTimeInput } from 'components/DateTimeInput';
 import { TFunction } from 'i18next';
 import styles from 'modules/TimestampPicker.module.scss';
 import moment, { Moment } from 'moment-timezone';
-import { useCallback, useMemo, VFC } from 'react';
-import Datetime from 'react-datetime';
+import { ChangeEventHandler, useCallback, useMemo, VFC } from 'react';
 import Select from 'react-select';
 import { StylesConfig } from 'react-select/src/styles';
 import { ThemeConfig } from 'react-select/src/theme';
-import { Col, FormGroup, Input, InputGroup, InputGroupAddon, InputGroupText, Label, Row } from 'reactstrap';
+import { Col, FormGroup, Label, Row } from 'reactstrap';
 import { getTimezoneValue } from 'src/util/timezone';
 
 const dateInputId = 'date-input';
+const timeInputId = 'time-input';
 const timezoneSelectId = 'timezone-input';
+
+const isoTimeFormat = 'HH:mm:ss';
+const isoDateFormat = 'YYYY-MM-DD';
 
 interface TimezoneOptionType {
   label: string;
   value: string;
 }
-
-interface PropTypes {
-  changeTimezone: (tz: null | string) => void;
-  datetime: Moment | string;
-  handleDateChange: (value: Moment | string) => void;
-  locale: string;
-  t: TFunction;
-  timestamp: Moment;
-  timezone: string;
-  timezoneNames: TimezoneOptionType[];
-}
-
-const DateInput: VFC<unknown> = (props) => (
-  <InputGroup className={styles.dateInputGroup}>
-    <InputGroupAddon addonType="prepend">
-      <InputGroupText tag="label" htmlFor={dateInputId} className={styles.inputAddon}>
-        <FontAwesomeIcon icon="calendar" fixedWidth />
-        <FontAwesomeIcon icon="clock" fixedWidth />
-      </InputGroupText>
-    </InputGroupAddon>
-    <Input {...props} type="text" bsSize="lg" id={dateInputId} readOnly />
-  </InputGroup>
-);
 
 const customTheme: ThemeConfig = (theme) => ({
   ...theme,
@@ -90,16 +70,16 @@ const customStyles: StylesConfig<TimezoneOptionType, false> = {
   },
 };
 
-export const TimestampPicker: VFC<PropTypes> = ({
-  changeTimezone,
-  datetime,
-  handleDateChange,
-  locale,
-  t,
-  timestamp,
-  timezone,
-  timezoneNames,
-}) => {
+interface PropTypes {
+  changeTimezone: (tz: null | string) => void;
+  handleTimestampChange: (value: Moment) => void;
+  t: TFunction;
+  timestamp: Moment | null;
+  timezone: string;
+  timezoneNames: TimezoneOptionType[];
+}
+
+export const TimestampPicker: VFC<PropTypes> = ({ changeTimezone, handleTimestampChange, t, timestamp, timezone, timezoneNames }) => {
   const handleTimezoneChange = useCallback(
     (selected: TimezoneOptionType | null) => {
       changeTimezone(selected ? selected.value : null);
@@ -107,32 +87,63 @@ export const TimestampPicker: VFC<PropTypes> = ({
     [changeTimezone],
   );
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const renderDateInput = useCallback((props: any) => <DateInput {...props} />, []);
-
   const timezoneSelectValue = useMemo(() => getTimezoneValue(timezone), [timezone]);
+
+  const handleDateChange: ChangeEventHandler<HTMLInputElement> = useCallback(
+    (e) => {
+      const inputValue = e.target.value;
+      const now = moment();
+      if (!inputValue) return handleTimestampChange(moment(timestamp).year(now.year()).month(now.month()).date(now.date()));
+
+      return handleTimestampChange(moment(`${inputValue}T${(timestamp || moment()).format(isoTimeFormat)}`));
+    },
+    [handleTimestampChange, timestamp],
+  );
+
+  const handleTimeChange: ChangeEventHandler<HTMLInputElement> = useCallback(
+    (e) => {
+      const inputValue = e.target.value;
+      if (!inputValue) return handleTimestampChange(moment(timestamp).hour(0).minute(0).second(0));
+
+      return handleTimestampChange(moment(`${(timestamp || moment()).format(isoDateFormat)}T${inputValue}`));
+    },
+    [handleTimestampChange, timestamp],
+  );
 
   return (
     <div className={styles.datepicker}>
       <Row form>
-        <Col md={6}>
+        <Col md>
           <FormGroup>
-            <Label className={styles.formLabel} for={dateInputId}>
-              {t('common:input.date')}
-            </Label>
-            <Datetime
-              locale={locale}
-              value={datetime}
-              onChange={handleDateChange}
-              dateFormat={moment.localeData(locale).longDateFormat('LL')}
-              timeFormat={moment.localeData(locale).longDateFormat('LTS')}
-              displayTimeZone={timezone}
-              renderInput={renderDateInput}
-            />
+            <Label className={styles.formLabel}>{t('common:input.date')}</Label>
+
+            <Row form>
+              <Col xl={6}>
+                <DateTimeInput
+                  type="date"
+                  value={timestamp}
+                  className="mb-2 mb-xl-0"
+                  id={dateInputId}
+                  icon="calendar"
+                  format={isoDateFormat}
+                  onChange={handleDateChange}
+                />
+              </Col>
+              <Col xl={6}>
+                <DateTimeInput
+                  type="time"
+                  value={timestamp}
+                  id={timeInputId}
+                  icon="clock"
+                  format={isoTimeFormat}
+                  onChange={handleTimeChange}
+                />
+              </Col>
+            </Row>
           </FormGroup>
         </Col>
         {timestamp && (
-          <Col md={6}>
+          <Col md={5}>
             <FormGroup>
               <Label className={styles.formLabel} for={timezoneSelectId}>
                 {t('common:input.timezone')}

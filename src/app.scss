@@ -3,7 +3,20 @@
 @import 'scss/fonts';
 @import '~bootstrap/scss/bootstrap';
 @import '~@fortawesome/fontawesome-svg-core/styles.css';
-@import '~react-datetime/css/react-datetime.css';
+
+:root {
+  color-scheme: dark;
+}
+
+:root[dir='rtl'] {
+  .input-group > .input-group-prepend > .btn {
+    border-radius: 0 $input-border-radius $input-border-radius 0;
+  }
+
+  .input-group > .input-group-append > .input-group-text {
+    border-radius: $input-border-radius 0 0 $input-border-radius;
+  }
+}
 
 * {
   outline: none;
@@ -13,14 +26,6 @@ html {
   background-color: $dark;
   font-size: 100%;
   min-height: 100vh;
-}
-
-code {
-  border: $code-border;
-  background-color: $code-bg;
-  border-radius: rem(4px);
-  padding: 0.5em;
-  user-select: all;
 }
 
 .table td {

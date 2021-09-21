@@ -3,6 +3,7 @@ import { CustomIcon } from 'components/CustomIcon';
 import { Layout } from 'components/Layout';
 import { TimestampPicker } from 'components/TimestampPicker';
 import { TimestampsTable } from 'components/TimestampsTable';
+import { throttle } from 'lodash';
 import moment, { Moment } from 'moment-timezone';
 import { GetStaticProps } from 'next';
 import { SSRConfig, useTranslation } from 'next-i18next';
@@ -24,15 +25,15 @@ const IndexPage: VFC<IndexPageProps> = ({ tzNames }) => {
   const locale = useLocale(language);
   const timezoneNames = useMemo(() => tzNames.map((timezone) => getTimezoneValue(timezone)), [tzNames]);
   const [timezone, setTimezone] = useState<string>(() => timezoneNames[0].value);
-  const [timestamp, setTimestamp] = useState<Moment>(() => moment(new Date(0)).utc());
-  const [inputValue, setInputValue] = useState<Moment | string>('');
+  const [timestamp, setTimestamp] = useState<Moment | null>(null);
 
-  const handleDateChange = useCallback((value: Moment | string) => {
-    if (moment.isMoment(value)) {
-      setTimestamp(value);
-    }
-    setInputValue(value);
-  }, []);
+  const handleTimestampChange = useMemo(
+    () =>
+      throttle((value: Moment) => {
+        setTimestamp(value);
+      }, 250),
+    [],
+  );
   const handleTimezoneChange = useCallback((value: null | string) => {
     const newTimeZone = value === null ? moment.tz.guess() : value;
     setTimezone(newTimeZone);
@@ -40,9 +41,9 @@ const IndexPage: VFC<IndexPageProps> = ({ tzNames }) => {
 
   useEffect(() => {
     const clientMoment = moment().seconds(0).milliseconds(0);
-    handleDateChange(clientMoment);
+    handleTimestampChange(clientMoment);
     handleTimezoneChange(null);
-  }, [handleDateChange, handleTimezoneChange]);
+  }, [handleTimestampChange, handleTimezoneChange]);
 
   const commonProps = {
     locale,
@@ -72,8 +73,7 @@ const IndexPage: VFC<IndexPageProps> = ({ tzNames }) => {
         <TimestampPicker
           {...commonProps}
           changeTimezone={handleTimezoneChange}
-          handleDateChange={handleDateChange}
-          datetime={inputValue}
+          handleTimestampChange={handleTimestampChange}
           timezoneNames={timezoneNames}
         />
         <TimestampsTable {...commonProps} />
