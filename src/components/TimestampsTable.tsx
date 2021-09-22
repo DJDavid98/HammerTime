@@ -55,12 +55,11 @@ const IconCol: VoidFunctionComponent<{ i: number }> = ({ i }) => {
 
 interface PropTypes {
   timestamp: Moment | null;
-  timezone: string;
   locale: string;
   t: TFunction;
 }
 
-export const TimestampsTable: VFC<PropTypes> = ({ t, locale, timestamp, timezone }) => {
+export const TimestampsTable: VFC<PropTypes> = ({ t, locale, timestamp }) => {
   const [now, setNow] = useState(() => moment());
 
   useEffect(() => {
@@ -69,9 +68,12 @@ export const TimestampsTable: VFC<PropTypes> = ({ t, locale, timestamp, timezone
     return () => clearInterval(timer);
   }, []);
 
-  const localizedTs = useMemo(() => moment.tz(timestamp, timezone).locale(locale), [timestamp, locale, timezone]);
+  const localizedTs = useMemo(() => {
+    const value = timestamp ? timestamp.toDate() : 0;
+    return moment(value).locale(locale);
+  }, [timestamp, locale]);
 
-  const timeInSeconds = useMemo(() => moment(localizedTs).locale('en').format('X'), [localizedTs]);
+  const timeInSeconds = useMemo(() => String(timestamp?.unix() || '0'), [timestamp]);
   const rows = useMemo<TimeValue[]>(() => {
     const shortDate: TimeValue = {
       example: localizedTs.format('L'),

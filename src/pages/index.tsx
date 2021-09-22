@@ -11,7 +11,7 @@ import { useCallback, useEffect, useMemo, useState, VFC } from 'react';
 import { SITE_TITLE } from 'src/config';
 import { useLocale } from 'src/util/common';
 import { typedServerSideTranslations } from 'src/util/i18n-server';
-import { getSortedNormalizedTimezoneNames, getTimezoneValue } from 'src/util/timezone';
+import { getSortedNormalizedTimezoneNames, getTimezoneValue, isoDateFormat, isoTimeFormat } from 'src/util/timezone';
 
 interface IndexPageProps {
   tzNames: string[];
@@ -25,30 +25,43 @@ const IndexPage: VFC<IndexPageProps> = ({ tzNames }) => {
   const locale = useLocale(language);
   const timezoneNames = useMemo(() => tzNames.map((timezone) => getTimezoneValue(timezone)), [tzNames]);
   const [timezone, setTimezone] = useState<string>(() => timezoneNames[0].value);
+  const [timeString, setTimeString] = useState<string>('');
+  const [dateString, setDateString] = useState<string>('');
   const [timestamp, setTimestamp] = useState<Moment | null>(null);
 
-  const handleTimestampChange = useMemo(
+  const handleTimezoneChange = useMemo(
     () =>
-      throttle((value: Moment) => {
-        setTimestamp(value);
-      }, 250),
+      throttle((value: null | string) => {
+        const newTimeZone = value === null ? moment.tz.guess() : value;
+        setTimezone(newTimeZone);
+      }, 200),
     [],
   );
-  const handleTimezoneChange = useCallback((value: null | string) => {
-    const newTimeZone = value === null ? moment.tz.guess() : value;
-    setTimezone(newTimeZone);
+  const handleDateChange = useMemo(
+    () =>
+      throttle((value: null | string) => {
+        setDateString(value || '');
+      }, 200),
+    [],
+  );
+  const handleTimeChange = useCallback((value: null | string) => {
+    setTimeString(value || '');
   }, []);
 
   useEffect(() => {
     const clientMoment = moment().seconds(0).milliseconds(0);
-    handleTimestampChange(clientMoment);
+    setTimeString(clientMoment.format(isoTimeFormat));
+    setDateString(clientMoment.format(isoDateFormat));
     handleTimezoneChange(null);
-  }, [handleTimestampChange, handleTimezoneChange]);
+  }, [handleTimezoneChange]);
+
+  useEffect(() => {
+    if (!dateString || !timeString) return;
+    setTimestamp(moment.tz(`${dateString}T${timeString}`, timezone));
+  }, [dateString, timeString, timezone]);
 
   const commonProps = {
     locale,
-    timestamp,
-    timezone,
     t,
   };
 
@@ -72,11 +85,15 @@ const IndexPage: VFC<IndexPageProps> = ({ tzNames }) => {
 
         <TimestampPicker
           {...commonProps}
+          dateString={dateString}
+          timeString={timeString}
           changeTimezone={handleTimezoneChange}
-          handleTimestampChange={handleTimestampChange}
+          handleDateChange={handleDateChange}
+          handleTimeChange={handleTimeChange}
+          timezone={timezone}
           timezoneNames={timezoneNames}
         />
-        <TimestampsTable {...commonProps} />
+        <TimestampsTable {...commonProps} timestamp={timestamp} />
       </AppContainer>
     </Layout>
   );
