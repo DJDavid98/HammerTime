@@ -10,18 +10,18 @@
   }
 }
 
-.syntax-column {
-  @include media-breakpoint-up(md) {
-    width: 15rem;
-  }
+.icon-column {
+  width: 3rem;
 }
 
-.copy-button {
-  :root:not([dir='rtl']) {
-    margin-right: 0.5rem;
+.syntax-column {
+  @include media-breakpoint-up(md) {
+    width: 16rem;
   }
 
-  :root[dir='rtl'] & {
-    margin-left: 0.5rem;
+  .code-text {
+    border: $code-border;
+    background-color: $code-bg;
+    user-select: all;
   }
 }

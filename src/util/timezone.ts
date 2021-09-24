@@ -1,5 +1,8 @@
 import moment from 'moment-timezone';
 
+export const isoTimeFormat = 'HH:mm:ss';
+export const isoDateFormat = 'YYYY-MM-DD';
+
 export const gmtZoneRegex = /^Etc\/(GMT([+-]\d+)?)$/;
 
 export const switchGmtZoneName = (value: string): string =>

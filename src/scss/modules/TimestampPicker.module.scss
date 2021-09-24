@@ -105,17 +105,7 @@ $rdt-disabled-color: invert(#999999);
 }
 
 :root[dir='rtl'] {
-  .date-input-group {
-    flex-direction: row-reverse;
-  }
-
   .datepicker .form-label {
     text-align: right;
-  }
-}
-
-:root[dir='rtl'] {
-  .date-input-group {
-    flex-direction: row-reverse;
   }
 }
