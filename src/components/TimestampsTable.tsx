@@ -1,4 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import classNames from 'classnames';
 import { TFunction } from 'i18next';
 import styles from 'modules/TimestampsTable.module.scss';
 import moment, { Moment } from 'moment-timezone';
@@ -52,6 +53,21 @@ const IconCol: VoidFunctionComponent<{ i: number }> = ({ i }) => {
     </td>
   );
 };
+
+const CopySyntax: VoidFunctionComponent<{ syntax: string; className?: string }> = ({ syntax, className }) => (
+  <InputGroup className={classNames(`${styles.syntaxInputGroup} flex-nowrap ${syntaxJustifyClasses}`, className)}>
+    <InputGroupAddon addonType="prepend">
+      <CopyToClipboard text={syntax}>
+        <Button color="discord">
+          <FontAwesomeIcon icon="clipboard" />
+        </Button>
+      </CopyToClipboard>
+    </InputGroupAddon>
+    <InputGroupAddon addonType="append">
+      <InputGroupText className={`${styles.codeText} text-monospace`}>{syntax}</InputGroupText>
+    </InputGroupAddon>
+  </InputGroup>
+);
 
 interface PropTypes {
   timestamp: Moment | null;
@@ -129,18 +145,8 @@ export const TimestampsTable: VFC<PropTypes> = ({ t, locale, timestamp }) => {
                 className={`${syntaxJustifyClasses} align-items-center text-center text-${extendFromBreakpoint}-left ${textAlignmentClasses}`}
               >
                 <Col xs={12} md="auto" lg={12} className={`mb-3 mb-${extendFromBreakpoint}-0`}>
-                  <InputGroup className={`${styles.syntaxInputGroup} flex-nowrap ${syntaxJustifyClasses}`}>
-                    <InputGroupAddon addonType="prepend">
-                      <CopyToClipboard text={value.syntax}>
-                        <Button color="discord">
-                          <FontAwesomeIcon icon="clipboard" />
-                        </Button>
-                      </CopyToClipboard>
-                    </InputGroupAddon>
-                    <InputGroupAddon addonType="append">
-                      <InputGroupText className={`${styles.codeText} text-monospace`}>{value.syntax}</InputGroupText>
-                    </InputGroupAddon>
-                  </InputGroup>
+                  <CopySyntax syntax={value.syntax} />
+                  {value.syntax.endsWith(':f>') && <CopySyntax syntax={value.syntax.replace(/:f>$/, '>')} className="mt-2" />}
                 </Col>
                 <Col className={`d-${extendFromBreakpoint}-none`}>
                   <p className="flex-grow-1">
