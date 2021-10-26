@@ -13,10 +13,9 @@ module.exports = withPlugins([[withCamelCaseCSSModules]], {
       if (devMode) {
         config.headers = config.headers.map((headerConfig) => {
           if (/content-security-policy/i.test(headerConfig.key)) {
-            const value = headerConfig.value.replace(
-              /script-src [^;]+(;|$)/,
-              `script-src * 'unsafe-inline' 'unsafe-hashes' 'unsafe-eval'$1`,
-            );
+            const value = headerConfig.value
+              .replace(/script-src [^;]+(;|$)/, `script-src * 'unsafe-inline' 'unsafe-hashes' 'unsafe-eval'$1`)
+              .replace(/upgrade-insecure-requests;/, '');
             return {
               ...headerConfig,
               value,
