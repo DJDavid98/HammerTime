@@ -1,22 +1,22 @@
 {
   "seoDescription": "Genereer tijdsaanduidingen voor Discord chatberichten",
-  "howTo": "Pick a date, copy the desired timestamp from the {{syntaxColName}} column, then paste it anywhere in a chat message. The result will be a dynamic timestamp that displays differently for everyone based on their own timezone.",
+  "howTo": "Kies een datum, kopieer de gewenste tijdsaanduiding van de {{syntaxColName}} kolom en plak deze dan ergens in een chatbericht. Het resultaat zal een dynamische tijdsaanduiding zijn die voor iedereen anders wordt weergegeven, gebaseerd op hun eigen tijdzone.",
   "input": {
-    "date": "Date and time",
-    "timezone": "Timezone"
+    "date": "Datum en tijd",
+    "timezone": "Tijdzone"
   },
   "table": {
-    "syntax": "Chat syntax",
-    "example": "Example result"
+    "syntax": "Chat syntaxis",
+    "example": "Voorbeeld resultaat"
   },
-  "changeLanguage": "Change language",
-  "current": "Current",
+  "changeLanguage": "Wijzig taal",
+  "current": "Huidig",
   "notFound": {
-    "heading": "Not Found",
-    "content": "Nothing to see here."
+    "heading": "Pagina niet gevonden",
+    "content": "Niets te zien hier."
   },
-  "builtWith": "Website built with <1>Font Awesome Free</1>",
-  "openSource": "Open-source software",
-  "viewSource": "View source code",
-  "notAffiliated": "This project is not affiliated with Discord."
+  "builtWith": "Website gemaakt met <1>Font Awesome Free</1>",
+  "openSource": "Open bron software",
+  "viewSource": "Bekijk de broncode",
+  "notAffiliated": "Dit project is niet geassocieerd met Discord."
 }
