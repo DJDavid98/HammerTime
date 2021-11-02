@@ -5,6 +5,7 @@ import 'moment/locale/fr';
 import 'moment/locale/hu';
 import 'moment/locale/ru';
 import 'moment/locale/pt-br';
+import 'moment/locale/nl';
 import moment from 'moment-timezone';
 import latestTimezoneData from 'moment-timezone/data/packed/latest.json';
 

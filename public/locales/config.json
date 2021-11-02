@@ -1,39 +1,43 @@
 {
   "languages": {
-    "en": {
-      "nativeName": "English, US",
-      "countryCode": "US"
+    "de": {
+      "nativeName": "Deutsch",
+      "countryCode": "DE"
     },
     "en-GB": {
       "nativeName": "English, UK",
       "countryCode": "GB",
       "momentLocale": "en-gb"
     },
-    "de": {
-      "nativeName": "Deutsch",
-      "countryCode": "DE"
-    },
-    "ru": {
-      "nativeName": "Русский",
-      "countryCode": "RU"
+    "en": {
+      "nativeName": "English, US",
+      "countryCode": "US"
     },
     "fr": {
       "nativeName": "Français",
       "countryCode": "FR"
+    },
+    "hu": {
+      "nativeName": "Magyar",
+      "countryCode": "HU"
+    },
+    "nl": {
+      "nativeName": "Nederlands",
+      "countryCode": "NL"
     },
     "pt-BR": {
       "nativeName": "Português do Brasil",
       "countryCode": "BR",
       "momentLocale": "pt-br"
     },
+    "ru": {
+      "nativeName": "Русский",
+      "countryCode": "RU"
+    },
     "ar": {
       "nativeName": "اللغة العربية",
       "countryCode": "AE",
       "rtl": true
-    },
-    "hu": {
-      "nativeName": "Magyar",
-      "countryCode": "HU"
     }
   }
 }
