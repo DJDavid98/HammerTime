@@ -23,7 +23,8 @@
       "modules/*": ["src/scss/modules/*"],
       "src/*": ["src/*"]
     },
-    "typeRoots": ["node_modules/@types", "types"]
+    "typeRoots": ["node_modules/@types", "types"],
+    "incremental": true
   },
   "exclude": ["node_modules"],
   "include": ["**/*.ts", "**/*.tsx"]
