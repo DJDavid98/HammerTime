@@ -6,7 +6,7 @@ so here it is.
 [discordtimestamper]: https://github.com/TimeTravelPenguin/DiscordTimeStamper/
 [this reddit post]: https://www.reddit.com/r/discordapp/comments/oiv86b/i_made_a_tool_to_make_timestamps_for_discord/
 
-This project not affiliated with Discord in any way shape or form.
+This project is not affiliated with Discord in any way shape or form.
 
 Application logo based on [Hammer] by John Caserta, from The Noun Project licensed under [CC BY 3.0 Unported]
 
