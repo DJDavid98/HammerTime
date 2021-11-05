@@ -25,6 +25,10 @@
       "nativeName": "Nederlands",
       "countryCode": "NL"
     },
+    "pl": {
+      "nativeName": "Polski",
+      "countryCode": "PL"
+    },
     "pt-BR": {
       "nativeName": "Português do Brasil",
       "countryCode": "BR",

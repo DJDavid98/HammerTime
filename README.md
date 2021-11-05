@@ -32,3 +32,4 @@ English and Hungarian translations have been included, so no translators will be
 - Arabic: Raphael Santiago (raphael.santiago.53)
 - Brazilian Portuguese: LeonardoC06
 - Dutch: Jesse (Jessuh)
+- Polish: Dawid (MinerPL)
