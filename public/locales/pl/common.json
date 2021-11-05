@@ -1,0 +1,22 @@
+{
+  "seoDescription": "Generate timestamp indicators for Discord chat messages",
+  "howTo": "Wybierz datę, skopiuj znacznik czasu z kolumny {{syntaxColName}}, a następnie wklej go gdziekolwiek w wiadomości czatu. Rezultatem będzie dynamiczny znacznik czasu, który będzie wyświetlał się inaczej dla każdego w oparciu o własną strefę czasową.",
+  "input": {
+    "date": "Data i czas",
+    "timezone": "Strefa czasowa"
+  },
+  "table": {
+    "syntax": "Składania czatu",
+    "example": "Przykładowy wynik"
+  },
+  "changeLanguage": "Zmień język",
+  "current": "Aktualny",
+  "notFound": {
+    "heading": "Nie znaleziono",
+    "content": "Niczego tutaj nie ma."
+  },
+  "builtWith": "Strona stworzona z <1>Font Awesome Free</1>",
+  "openSource": "Open-source software",
+  "viewSource": "Zobacz kod źródłowy",
+  "notAffiliated": "Ten projekt nie jest powiązany z Discord."
+}
