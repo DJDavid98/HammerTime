@@ -151,9 +151,10 @@ export const TimestampPicker: FC<PropTypes> = ({
               isClearable
               isDisabled={fixedTimestamp}
             />
+            <div className="d-block d-xl-none mt-2">{children}</div>
           </FormGroup>
         </Col>
-        <Col xs="auto" className="d-flex flex-row align-items-end">
+        <Col xs="auto" className="d-none d-xl-flex flex-row align-items-end">
           {children}
         </Col>
       </Row>
