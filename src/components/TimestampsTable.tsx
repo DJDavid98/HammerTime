@@ -71,11 +71,12 @@ const CopySyntax: VoidFunctionComponent<{ syntax: string; className?: string }> 
 
 interface PropTypes {
   timestamp: Moment | null;
+  timeInSeconds: string;
   locale: string;
   t: TFunction;
 }
 
-export const TimestampsTable: VFC<PropTypes> = ({ t, locale, timestamp }) => {
+export const TimestampsTable: VFC<PropTypes> = ({ t, locale, timestamp, timeInSeconds }) => {
   const [now, setNow] = useState(() => moment());
 
   useEffect(() => {
@@ -89,7 +90,6 @@ export const TimestampsTable: VFC<PropTypes> = ({ t, locale, timestamp }) => {
     return moment(value).locale(locale);
   }, [timestamp, locale]);
 
-  const timeInSeconds = useMemo(() => String(timestamp?.unix() || '0'), [timestamp]);
   const rows = useMemo<TimeValue[]>(() => {
     const shortDate: TimeValue = {
       example: localizedTs.format('L'),

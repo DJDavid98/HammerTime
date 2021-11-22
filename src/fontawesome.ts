@@ -8,7 +8,9 @@ import {
   faCode,
   faEye,
   faGlobe,
+  faLock,
   faTimes,
+  faTimesCircle,
   faUserClock,
 } from '@fortawesome/free-solid-svg-icons';
 
@@ -18,4 +20,17 @@ config.autoAddCss = false;
 const brandIcons = [faGithub, faDiscord, faOsi];
 
 // List of used icons - amend if new icons are needed
-library.add(...brandIcons, faClipboard, faClock, fasCalendar, farCalendar, faGlobe, faTimes, faEye, faUserClock, faCode);
+library.add(
+  ...brandIcons,
+  faClipboard,
+  faClock,
+  fasCalendar,
+  farCalendar,
+  faGlobe,
+  faTimes,
+  faEye,
+  faUserClock,
+  faCode,
+  faTimesCircle,
+  faLock,
+);

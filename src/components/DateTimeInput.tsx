@@ -12,15 +12,16 @@ interface DateTimeInputProps {
   className?: string;
   onChange: ChangeEventHandler<HTMLInputElement>;
   type: 'date' | 'time';
+  readOnly?: boolean;
 }
 
-export const DateTimeInput: VFC<DateTimeInputProps> = ({ id, value, icon, className, onChange, type }) => (
+export const DateTimeInput: VFC<DateTimeInputProps> = ({ id, value, icon, className, onChange, type, readOnly }) => (
   <InputGroup className={classNames(styles.dateInputGroup, className)}>
     <InputGroupAddon addonType="prepend">
       <InputGroupText tag="label" htmlFor={id} className={styles.inputAddon}>
         <FontAwesomeIcon icon={icon} fixedWidth />
       </InputGroupText>
     </InputGroupAddon>
-    <Input type={type} bsSize="lg" id={id} value={value} onChange={onChange} />
+    <Input type={type} bsSize="lg" id={id} value={value} onChange={onChange} disabled={readOnly} tabIndex={readOnly ? -1 : undefined} />
   </InputGroup>
 );

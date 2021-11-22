@@ -1,7 +1,7 @@
 import { DateTimeInput } from 'components/DateTimeInput';
 import { TFunction } from 'i18next';
 import styles from 'modules/TimestampPicker.module.scss';
-import { ChangeEventHandler, useCallback, useMemo, VFC } from 'react';
+import React, { ChangeEventHandler, FC, useCallback, useMemo } from 'react';
 import Select from 'react-select';
 import { StylesConfig } from 'react-select/src/styles';
 import { ThemeConfig } from 'react-select/src/theme';
@@ -69,6 +69,7 @@ const customStyles: StylesConfig<TimezoneOptionType, false> = {
 interface PropTypes {
   changeTimezone: (tz: null | string) => void;
   dateString: string;
+  fixedTimestamp: boolean;
   handleDateChange: (value: string | null) => void;
   handleTimeChange: (value: string | null) => void;
   t: TFunction;
@@ -77,15 +78,17 @@ interface PropTypes {
   timezoneNames: TimezoneOptionType[];
 }
 
-export const TimestampPicker: VFC<PropTypes> = ({
+export const TimestampPicker: FC<PropTypes> = ({
   changeTimezone,
   dateString,
+  fixedTimestamp,
   handleDateChange: onDateChange,
   handleTimeChange: onTimeChange,
   t,
   timeString,
   timezone,
   timezoneNames,
+  children,
 }) => {
   const handleTimezoneChange = useCallback(
     (selected: TimezoneOptionType | null) => {
@@ -116,10 +119,18 @@ export const TimestampPicker: VFC<PropTypes> = ({
                   id={dateInputId}
                   icon="calendar"
                   onChange={handleDateChange}
+                  readOnly={fixedTimestamp}
                 />
               </Col>
               <Col xl={6}>
-                <DateTimeInput type="time" value={timeString} id={timeInputId} icon="clock" onChange={handleTimeChange} />
+                <DateTimeInput
+                  type="time"
+                  value={timeString}
+                  id={timeInputId}
+                  icon="clock"
+                  onChange={handleTimeChange}
+                  readOnly={fixedTimestamp}
+                />
               </Col>
             </Row>
           </FormGroup>
@@ -138,8 +149,13 @@ export const TimestampPicker: VFC<PropTypes> = ({
               theme={customTheme}
               styles={customStyles}
               isClearable
+              isDisabled={fixedTimestamp}
             />
+            <div className="d-block d-xl-none mt-2">{children}</div>
           </FormGroup>
+        </Col>
+        <Col xs="auto" className="d-none d-xl-flex flex-row align-items-end">
+          {children}
         </Col>
       </Row>
     </div>
