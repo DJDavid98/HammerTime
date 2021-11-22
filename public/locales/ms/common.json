@@ -13,10 +13,10 @@
   "current": "Semasa",
   "notFound": {
     "heading": "Tidak Dijumpai",
-    "content": "Tiada apa untuk dilihat di sini."
+    "content": "Tiada apa-apa untuk dilihat di sini."
   },
-  "builtWith": "Website built with <1>Font Awesome Free</1>",
-  "openSource": "Open-source software",
-  "viewSource": "View source code",
-  "notAffiliated": "This project is not affiliated with Discord."
+  "builtWith": "Laman sesawang dibina dengan <1>Font Awesome Free</1>",
+  "openSource": "Perisian sumber terbuka",
+  "viewSource": "Lihat kod sumber",
+  "notAffiliated": "Projek ini tidak berkaitan dengan Discord."
 }
