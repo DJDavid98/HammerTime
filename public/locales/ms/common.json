@@ -1,0 +1,22 @@
+{
+  "seoDescription": "Jana penunjuk cap masa untuk mesej sembang Discord",
+  "howTo": "Pilih tarikh, salin cap masa yang diingini dari lajur {{syntaxColName}}, kemudian tampal di mana-mana sahaja dalam mesej sembang. Hasilnya ialah cap masa dinamik yang dipaparkan secara berlainan untuk semua orang berdasarkan zon waktu masing-masing.",
+  "input": {
+    "date": "Tarikh dan masa",
+    "timezone": "Zon waktu"
+  },
+  "table": {
+    "syntax": "Sintaks sembang",
+    "example": "Contoh hasilnya"
+  },
+  "changeLanguage": "Tukar bahasa",
+  "current": "Semasa",
+  "notFound": {
+    "heading": "Tidak Dijumpai",
+    "content": "Tiada apa untuk dilihat di sini."
+  },
+  "builtWith": "Website built with <1>Font Awesome Free</1>",
+  "openSource": "Open-source software",
+  "viewSource": "View source code",
+  "notAffiliated": "This project is not affiliated with Discord."
+}
