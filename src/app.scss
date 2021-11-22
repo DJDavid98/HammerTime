@@ -36,3 +36,8 @@ html {
 .table td {
   vertical-align: middle;
 }
+
+// Hide date and time picker icons in Chrome
+input::-webkit-calendar-picker-indicator {
+  display: none;
+}

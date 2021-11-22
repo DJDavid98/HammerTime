@@ -3,6 +3,7 @@ import 'moment/locale/de';
 import 'moment/locale/en-gb';
 import 'moment/locale/fr';
 import 'moment/locale/hu';
+import 'moment/locale/ms';
 import 'moment/locale/nl';
 import 'moment/locale/pl';
 import 'moment/locale/pt-br';

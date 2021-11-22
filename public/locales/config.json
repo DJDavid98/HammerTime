@@ -1,5 +1,9 @@
 {
   "languages": {
+    "ms": {
+      "nativeName": "Bahasa Melayu",
+      "countryCode": "MY"
+    },
     "de": {
       "nativeName": "Deutsch",
       "countryCode": "DE"

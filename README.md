@@ -33,3 +33,4 @@ English and Hungarian translations have been included, so no translators will be
 - Brazilian Portuguese: LeonardoC06
 - Dutch: Jesse (Jessuh)
 - Polish: Dawid (MinerPL)
+- Malay: Nurul Azeera Hidayah @ Muhammad Nur Hidayat Yasuyoshi (MNH48.moe) (mnh48)
