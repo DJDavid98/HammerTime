@@ -1,22 +1,22 @@
 {
   "seoDescription": "Genera marcas de tiempo para mensajes de chat de Discord",
-  "howTo": "Pick a date, copy the desired timestamp from the {{syntaxColName}} column, then paste it anywhere in a chat message. The result will be a dynamic timestamp that displays differently for everyone based on their own timezone.",
+  "howTo": "Elige una fecha, copia la marca de tiempo que desees de la columna {{syntaxColName}}, luego cópiala en un mensaje de chat. El resultado será una marca de tiempo dinámica que se mostrará diferente a cada usuario basado en su zona horaria.",
   "input": {
-    "date": "Date and time",
-    "timezone": "Timezone"
+    "date": "Fecha y Hora",
+    "timezone": "Zona Horaria"
   },
   "table": {
-    "syntax": "Chat syntax",
-    "example": "Example result"
+    "syntax": "Sintaxis de chat",
+    "example": "Ejemplo del resultado"
   },
-  "changeLanguage": "Change language",
-  "current": "Current",
+  "changeLanguage": "Cambiar Idioma",
+  "current": "Actual",
   "notFound": {
-    "heading": "Not Found",
-    "content": "Nothing to see here."
+    "heading": "No Encontrado",
+    "content": "No hay resultados para mostrar."
   },
-  "builtWith": "Website built with <1>Font Awesome Free</1>",
-  "openSource": "Open-source software",
-  "viewSource": "View source code",
-  "notAffiliated": "This project is not affiliated with Discord."
+  "builtWith": "Página web construida con <1>Font Awesome Free</1>",
+  "openSource": "Software de código abierto",
+  "viewSource": "Ver código fuente",
+  "notAffiliated": "Este proyecto no está afiliado con Discord."
 }
