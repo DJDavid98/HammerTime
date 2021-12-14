@@ -17,6 +17,10 @@
       "nativeName": "English, US",
       "countryCode": "US"
     },
+    "es": {
+      "nativeName": "Español",
+      "countryCode": "ES"
+    },
     "fr": {
       "nativeName": "Français",
       "countryCode": "FR"
