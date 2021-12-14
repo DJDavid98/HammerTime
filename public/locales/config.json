@@ -1,5 +1,9 @@
 {
   "languages": {
+    "ms": {
+      "nativeName": "Bahasa Melayu",
+      "countryCode": "MY"
+    },
     "de": {
       "nativeName": "Deutsch",
       "countryCode": "DE"
@@ -12,6 +16,10 @@
     "en": {
       "nativeName": "English, US",
       "countryCode": "US"
+    },
+    "es": {
+      "nativeName": "Español",
+      "countryCode": "ES"
     },
     "fr": {
       "nativeName": "Français",
