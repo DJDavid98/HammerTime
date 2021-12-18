@@ -24,12 +24,12 @@ export const LanguageSelector: VFC<{ className?: string }> = ({ className }) => 
   );
 
   return (
-    <UncontrolledDropdown tag="span" className={classNames(className, styles.languageSelector)}>
+    <UncontrolledDropdown className={classNames(className, styles.languageSelector)}>
       <DropdownToggle color="link" caret>
         <FontAwesomeIcon icon="globe" />
         <span className={styles.currentLangName}>{nativeLangName}</span>
       </DropdownToggle>
-      <DropdownMenu right>
+      <DropdownMenu end dark>
         <DropdownItem header className={styles.item}>
           {t('common:changeLanguage')}
         </DropdownItem>

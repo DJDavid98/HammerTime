@@ -1,23 +1,26 @@
-@import 'scss/vars';
 @import 'scss/functions';
-@import '~bootstrap/scss/bootstrap';
+@import 'scss/bootstrap';
 @import '~@fortawesome/fontawesome-svg-core/styles.css';
 
 :root {
   color-scheme: dark;
 
   &[dir='rtl'] {
-    .input-group > .input-group-prepend > {
+    .input-group > {
       .btn,
       .input-group-text {
-        border-radius: 0 $input-border-radius $input-border-radius 0;
+        &:first-child {
+          border-radius: 0 $input-border-radius $input-border-radius 0;
+        }
       }
     }
 
     .input-group > {
-      .form-control:last-child,
-      .input-group-append > .input-group-text {
-        border-radius: $input-border-radius 0 0 $input-border-radius;
+      .form-control,
+      .input-group-text {
+        &:last-child {
+          border-radius: $input-border-radius 0 0 $input-border-radius;
+        }
       }
     }
   }
@@ -28,7 +31,7 @@
 }
 
 html {
-  background-color: $dark;
+  background-color: $body-bg;
   font-size: 100%;
   min-height: 100vh;
 }

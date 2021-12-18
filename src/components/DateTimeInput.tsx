@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import classNames from 'classnames';
 import styles from 'modules/TimestampPicker.module.scss';
 import { ChangeEventHandler, VFC } from 'react';
-import { Input, InputGroup, InputGroupAddon, InputGroupText } from 'reactstrap';
+import { Input, InputGroup, InputGroupText } from 'reactstrap';
 
 interface DateTimeInputProps {
   id: string;
@@ -17,11 +17,9 @@ interface DateTimeInputProps {
 
 export const DateTimeInput: VFC<DateTimeInputProps> = ({ id, value, icon, className, onChange, type, readOnly }) => (
   <InputGroup className={classNames(styles.dateInputGroup, className)}>
-    <InputGroupAddon addonType="prepend">
-      <InputGroupText tag="label" htmlFor={id} className={styles.inputAddon}>
-        <FontAwesomeIcon icon={icon} fixedWidth />
-      </InputGroupText>
-    </InputGroupAddon>
+    <InputGroupText tag="label" htmlFor={id} className={styles.inputAddon}>
+      <FontAwesomeIcon icon={icon} fixedWidth />
+    </InputGroupText>
     <Input type={type} bsSize="lg" id={id} value={value} onChange={onChange} disabled={readOnly} tabIndex={readOnly ? -1 : undefined} />
   </InputGroup>
 );

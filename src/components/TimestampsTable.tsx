@@ -5,7 +5,7 @@ import styles from 'modules/TimestampsTable.module.scss';
 import moment, { Moment } from 'moment-timezone';
 import { useEffect, useMemo, useState, VFC, VoidFunctionComponent } from 'react';
 import CopyToClipboard from 'react-copy-to-clipboard';
-import { Button, Col, InputGroup, InputGroupAddon, InputGroupText, Row, Table } from 'reactstrap';
+import { Button, Col, InputGroup, InputGroupText, Row, Table } from 'reactstrap';
 
 interface TimeValue {
   example: string;
@@ -56,16 +56,12 @@ const IconCol: VoidFunctionComponent<{ i: number }> = ({ i }) => {
 
 const CopySyntax: VoidFunctionComponent<{ syntax: string; className?: string }> = ({ syntax, className }) => (
   <InputGroup className={classNames(`${styles.syntaxInputGroup} flex-nowrap ${syntaxJustifyClasses}`, className)}>
-    <InputGroupAddon addonType="prepend">
-      <CopyToClipboard text={syntax}>
-        <Button color="discord">
-          <FontAwesomeIcon icon="clipboard" />
-        </Button>
-      </CopyToClipboard>
-    </InputGroupAddon>
-    <InputGroupAddon addonType="append">
-      <InputGroupText className={`${styles.codeText} text-monospace`}>{syntax}</InputGroupText>
-    </InputGroupAddon>
+    <CopyToClipboard text={syntax}>
+      <Button color="discord">
+        <FontAwesomeIcon icon="clipboard" />
+      </Button>
+    </CopyToClipboard>
+    <InputGroupText className={`${styles.codeText} font-monospace`}>{syntax}</InputGroupText>
   </InputGroup>
 );
 
@@ -150,7 +146,7 @@ export const TimestampsTable: VFC<PropTypes> = ({ t, locale, timestamp, timeInSe
                 </Col>
                 <Col className={`d-${extendFromBreakpoint}-none`}>
                   <p className="flex-grow-1">
-                    <FontAwesomeIcon icon="eye" className="mr-2" />
+                    <FontAwesomeIcon icon="eye" className="me-2" />
                     {value.example}
                   </p>
                 </Col>

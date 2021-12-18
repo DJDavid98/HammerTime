@@ -21,14 +21,7 @@ $input-disabled-bg: darken($code-bg, 3%);
 $input-group-addon-bg: darken($code-bg, 8%);
 $input-border-color: $code-border-color;
 $input-color: $body-color;
-$custom-select-indicator-color: $body-color;
 
-$theme-colors: (
+$custom-colors: (
   discord: $discord,
 );
-
-$rbt-color-primary: $discord;
-$rbt-color-disabled: $body-color;
-$rbt-color-white: #fff;
-$rbt-background-color-disabled: $input-disabled-bg;
-$rbt-placeholder-color: $input-color;

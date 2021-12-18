@@ -105,12 +105,12 @@ export const TimestampPicker: FC<PropTypes> = ({
 
   return (
     <div className={styles.datepicker}>
-      <Row form>
+      <Row>
         <Col md>
           <FormGroup>
             <Label className={styles.formLabel}>{t('common:input.date')}</Label>
 
-            <Row form>
+            <Row>
               <Col xl={6}>
                 <DateTimeInput
                   type="date"
