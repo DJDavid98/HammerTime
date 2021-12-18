@@ -1,0 +1,13 @@
+@import '../vars';
+
+.nft-card {
+  user-select: none;
+  background-image: url('/tone-indicator.svg');
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 69px;
+
+  border-width: $card-border-width;
+  background-color: $card-bg;
+  color: $body-color;
+}

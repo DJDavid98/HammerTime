@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { AppContainer } from 'components/AppContainer';
 import { CustomIcon } from 'components/CustomIcon';
 import { Layout } from 'components/Layout';
+import { fuckNftsStorageKey } from 'components/NoFuckingThanks';
 import { TimestampPicker } from 'components/TimestampPicker';
 import { TimestampsTable } from 'components/TimestampsTable';
 import { parseInt, throttle } from 'lodash';
@@ -102,10 +103,22 @@ export const IndexPage: VFC<IndexPageProps> = ({ tzNames }) => {
   }, [locale, t]);
 
   const fixedTimestamp = initialTimestamp !== null;
+  const nftEnabled = useMemo(() => ['en', 'en-GB'].includes(language), [language]);
+  const [showNft, setShowNft] = useState(false);
+  const closeNft = useCallback(() => {
+    localStorage.setItem(fuckNftsStorageKey, 'true');
+    setShowNft(false);
+  }, []);
+
+  useEffect(() => {
+    if (!nftEnabled) return;
+    const storageKey = localStorage.getItem(fuckNftsStorageKey);
+    setShowNft(storageKey === null);
+  }, [nftEnabled]);
 
   return (
     <Layout>
-      <AppContainer bg="discord">
+      <AppContainer bg="discord" showNft={showNft} closeNft={closeNft}>
         <h1 className="text-center">
           <CustomIcon src="/logos/app.svg" alt="" />
           <span className="mx-3">{SITE_TITLE}</span>

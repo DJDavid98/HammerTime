@@ -41,4 +41,7 @@ module.exports = withPlugins([[withCamelCaseCSSModules]], {
       return acc;
     }, []);
   },
+  async redirects() {
+    return vercelConfig.redirects;
+  },
 });

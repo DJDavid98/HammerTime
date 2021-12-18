@@ -14,6 +14,13 @@
       ]
     }
   ],
+  "redirects": [
+    {
+      "source": "/about-nfts",
+      "destination": "https://twitter.com/charlottejee/status/1387722711766650884",
+      "permanent": false
+    }
+  ],
   "github": {
     "silent": true
   }

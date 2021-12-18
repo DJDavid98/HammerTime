@@ -14,7 +14,7 @@ $body-bg: #36393f;
 $card-border-width: 0;
 $card-bg: $body-bg;
 $card-color: $body-color;
-$close-color: $body-color;
+$btn-close-color: $body-color;
 
 $input-bg: $code-bg;
 $input-disabled-bg: darken($code-bg, 3%);
@@ -24,4 +24,5 @@ $input-color: $body-color;
 
 $custom-colors: (
   discord: $discord,
+  body: $body-bg,
 );
