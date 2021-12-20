@@ -4,8 +4,8 @@ import moment from 'moment';
 import { useTranslation } from 'next-i18next';
 import React, { MouseEventHandler, useCallback, useEffect, useMemo, useState, VFC } from 'react';
 import { Alert, Badge, Button } from 'reactstrap';
-import type { NftStatus } from 'src/pages/api/nft';
 import { useLocale } from 'src/util/common';
+import { getNftData, NftStatus, rickRollLinkPool } from 'src/util/nft';
 import { setInterval } from 'timers';
 
 export const fuckNftsStorageKey = 'fuck_nfts';
@@ -20,7 +20,6 @@ export const NoFuckingThanks: VFC<{ handleClose?: VoidFunction }> = ({ handleClo
 
   useEffect(() => {
     let mounted = true;
-    let abortController: AbortController;
     let checkBackInterval: null | ReturnType<typeof setInterval> = null;
 
     const clearTs = () => {
@@ -30,9 +29,7 @@ export const NoFuckingThanks: VFC<{ handleClose?: VoidFunction }> = ({ handleClo
     const updateStatus = () => {
       if (!mounted) return;
 
-      if (!abortController) abortController = new AbortController();
-      fetch('/api/nft', { signal: abortController.signal })
-        .then((r) => r.json())
+      getNftData()
         .then((data: NftStatus) => {
           if (!mounted) return;
           setStatus(data);
@@ -86,6 +83,17 @@ export const NoFuckingThanks: VFC<{ handleClose?: VoidFunction }> = ({ handleClo
     alert('Right clicking has been disabled on this element to prevent theft via "Save as…"');
   }, []);
 
+  const handleLogin: MouseEventHandler = useCallback((e) => {
+    e.preventDefault();
+
+    const redirectUrl = rickRollLinkPool[Math.floor(rickRollLinkPool.length * Math.random())];
+
+    const newWindow = window.open(redirectUrl, '_blank', 'noopener,noreferrer');
+    if (newWindow) {
+      newWindow.opener = null;
+    }
+  }, []);
+
   return (
     <Alert color="secondary" className={`mb-0 text-center ${styles.nftCard}`} onContextMenu={handleRightClick} isOpen toggle={handleClose}>
       <p>
@@ -122,16 +130,7 @@ export const NoFuckingThanks: VFC<{ handleClose?: VoidFunction }> = ({ handleClo
           </Badge>
         )}
       </div>
-      <Button
-        tag="a"
-        color="light"
-        size="sm"
-        disabled={!status}
-        className="m-1"
-        href="/api/login"
-        target="_blank"
-        rel="noreferrer noopener"
-      >
+      <Button color="light" size="sm" disabled={!status} className="m-1" onClick={handleLogin}>
         <FontAwesomeIcon icon={['fab', 'ethereum']} className="me-2" />
         Sign in with Ethereum
       </Button>
