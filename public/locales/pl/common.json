@@ -1,13 +1,13 @@
 {
-  "seoDescription": "Generuj znacznik czasu dla wiadomości czatu Discord",
-  "howTo": "Wybierz datę, skopiuj znacznik czasu z kolumny {{syntaxColName}}, a następnie wklej go gdziekolwiek w wiadomości czatu. Rezultatem będzie dynamiczny znacznik czasu, który będzie wyświetlał się inaczej dla każdego w oparciu o własną strefę czasową.",
+  "seoDescription": "Generator znaczników czasu dla wiadomości wysyłanych na Discordzie",
+  "howTo": "Wybierz datę, skopiuj wybrany znacznik czasu z kolumny {{syntaxColName}}, a następnie wklej go w dowolnym miejscu w wiadomości. Gdy wiadomość zostanie wysłana, Ty i inni użytkownicy zobaczycie dynamiczny znacznik czasu, który będzie wyświetlany inaczej dla każdego, w zależności od strefy czasowej danego użytkownika.",
   "input": {
     "date": "Data i czas",
     "timezone": "Strefa czasowa"
   },
   "table": {
-    "syntax": "Składania czatu",
-    "example": "Przykładowy wynik"
+    "syntax": "Składnia",
+    "example": "Przykładowy wygląd"
   },
   "changeLanguage": "Zmień język",
   "current": "Aktualny",
@@ -15,8 +15,8 @@
     "heading": "Nie znaleziono",
     "content": "Niczego tutaj nie ma."
   },
-  "builtWith": "Strona stworzona z <1>Font Awesome Free</1>",
-  "openSource": "Oprogramowanie open-source",
+  "builtWith": "Strona stworzona przy użyciu <1>Font Awesome Free</1>",
+  "openSource": "Oprogramowanie otwarto źródłowe",
   "viewSource": "Zobacz kod źródłowy",
-  "notAffiliated": "Ten projekt nie jest powiązany z Discord."
+  "notAffiliated": "Ten projekt nie jest powiązany z Discordem."
 }
