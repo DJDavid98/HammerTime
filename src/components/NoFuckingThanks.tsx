@@ -4,7 +4,7 @@ import moment from 'moment';
 import { useTranslation } from 'next-i18next';
 import React, { MouseEventHandler, useCallback, useEffect, useMemo, useState, VFC } from 'react';
 import { Alert, Badge, Button } from 'reactstrap';
-import { useLocale } from 'src/util/common';
+import { openUrlInNewWindow, useLocale } from 'src/util/common';
 import { getNftData, NftStatus, rickRollLinkPool } from 'src/util/nft';
 import { setInterval } from 'timers';
 
@@ -88,10 +88,13 @@ export const NoFuckingThanks: VFC<{ handleClose?: VoidFunction }> = ({ handleClo
 
     const redirectUrl = rickRollLinkPool[Math.floor(rickRollLinkPool.length * Math.random())];
 
-    const newWindow = window.open(redirectUrl, '_blank', 'noopener,noreferrer');
-    if (newWindow) {
-      newWindow.opener = null;
-    }
+    openUrlInNewWindow(redirectUrl);
+  }, []);
+
+  const handleAbout: MouseEventHandler = useCallback((e) => {
+    e.preventDefault();
+
+    openUrlInNewWindow('https://twitter.com/charlottejee/status/1387722711766650884');
   }, []);
 
   return (
@@ -134,7 +137,7 @@ export const NoFuckingThanks: VFC<{ handleClose?: VoidFunction }> = ({ handleClo
         <FontAwesomeIcon icon={['fab', 'ethereum']} className="me-2" />
         Sign in with Ethereum
       </Button>
-      <Button tag="a" color="link" size="sm" className="m-1" href="/about-nfts" target="_blank" rel="noreferrer noopener">
+      <Button color="link" size="sm" className="m-1" onClick={handleAbout}>
         What's an NFT?
       </Button>
       <p className="mt-2 mb-0">

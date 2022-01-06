@@ -25,3 +25,24 @@ export const LANGUAGES: LanguagesConfig = localeConfig.languages;
 export const DEFAULT_I18N_NAMESPACES: AppI18nNamespaces[] = ['common'];
 
 export const isAvailableLanguage = (language: string): language is AvailableLanguage => language in LANGUAGES;
+
+const DEV_MODE = process.env.NODE_ENV === 'development';
+
+export const CSP_HEADER = [
+  `default-src 'self'`,
+  `script-src ${DEV_MODE ? `* 'unsafe-inline' 'unsafe-hashes' ` : ''}'self' 'unsafe-eval'`,
+  `style-src 'self' 'unsafe-inline' fonts.googleapis.com`,
+  `img-src 'self' data: cdn.jsdelivr.net; font-src fonts.gstatic.com`,
+  `connect-src 'self' vitals.vercel-insights.com; media-src 'self'`,
+  `object-src 'none'`,
+  `prefetch-src 'none'`,
+  `child-src 'none'`,
+  `frame-src 'none'`,
+  `worker-src 'self'`,
+  `frame-ancestors 'none'`,
+  `form-action 'none'`,
+  DEV_MODE ? null : `upgrade-insecure-requests`,
+  `block-all-mixed-content`,
+]
+  .filter(Boolean)
+  .join('; ');

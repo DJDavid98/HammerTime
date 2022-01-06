@@ -1,4 +1,5 @@
 import Document, { Head, Html, Main, NextScript } from 'next/document';
+import { CSP_HEADER } from 'src/config';
 import { getDirAttribute } from 'src/util/common';
 
 class MyDocument extends Document {
@@ -8,6 +9,8 @@ class MyDocument extends Document {
     return (
       <Html dir={direction}>
         <Head>
+          <meta httpEquiv="Content-Security-Policy" content={CSP_HEADER} />
+          <meta httpEquiv="Permissions-Policy" content="interest-cohort=()" />
           <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" />
         </Head>
         <body>

@@ -1,26 +1,4 @@
 {
-  "headers": [
-    {
-      "source": "/(.*)",
-      "headers": [
-        {
-          "key": "Content-Security-Policy",
-          "value": "default-src 'self'; script-src 'self' 'unsafe-eval'; style-src 'self' 'unsafe-inline' fonts.googleapis.com; img-src 'self' data: cdn.jsdelivr.net; font-src fonts.gstatic.com; connect-src 'self' vitals.vercel-insights.com; media-src 'self'; object-src 'none'; prefetch-src 'none'; child-src 'none'; frame-src 'none'; worker-src 'self'; frame-ancestors 'none'; form-action 'none'; upgrade-insecure-requests; block-all-mixed-content"
-        },
-        {
-          "key": "Permissions-Policy",
-          "value": "interest-cohort=()"
-        }
-      ]
-    }
-  ],
-  "redirects": [
-    {
-      "source": "/about-nfts",
-      "destination": "https://twitter.com/charlottejee/status/1387722711766650884",
-      "permanent": false
-    }
-  ],
   "github": {
     "silent": true
   }
