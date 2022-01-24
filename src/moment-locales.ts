@@ -9,6 +9,7 @@ import 'moment/locale/pl';
 import 'moment/locale/pt-br';
 import 'moment/locale/ru';
 import 'moment/locale/es';
+import 'moment/locale/it';
 import moment from 'moment-timezone';
 import latestTimezoneData from 'moment-timezone/data/packed/latest.json';
 

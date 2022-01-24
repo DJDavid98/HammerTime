@@ -29,6 +29,10 @@
       "nativeName": "Magyar",
       "countryCode": "HU"
     },
+    "it": {
+      "nativeName": "Italiano",
+      "countryCode": "IT"
+    },
     "nl": {
       "nativeName": "Nederlands",
       "countryCode": "NL"
