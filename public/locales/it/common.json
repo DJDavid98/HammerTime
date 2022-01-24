@@ -1,6 +1,6 @@
 {
-  "seoDescription": "Genera indicatori di timestamp per i messaggi di chat Discord",
-  "howTo": "Scegli una data, copia il timestamp desiderato dalla colonna {{syntaxColName}}, quindi incollalo ovunque in un messaggio testuale. Il risultato sarà un timestamp dinamico che ognuno visualizza diversamente in base al proprio fuso orario.",
+  "seoDescription": "Genera indicatori di timestamp per i messaggi testuali di Discord",
+  "howTo": "Scegli una data, copia il timestamp desiderato dalla colonna {{syntaxColName}}, quindi incollalo ovunque in un messaggio testuale. Il risultato sarà un timestamp dinamico che ognuno visualizzerá diversamente in base al proprio fuso orario.",
   "input": {
     "date": "Data e ora",
     "timezone": "Fuso orario"
