@@ -55,7 +55,7 @@ const IconCol: VoidFunctionComponent<{ i: number }> = ({ i }) => {
 };
 
 const CopySyntax: VoidFunctionComponent<{ syntax: string; className?: string }> = ({ syntax, className }) => (
-  <InputGroup className={classNames(`${styles.syntaxInputGroup} flex-nowrap ${syntaxJustifyClasses}`, className)}>
+  <InputGroup className={classNames(`flex-nowrap ${syntaxJustifyClasses}`, className)}>
     <CopyToClipboard text={syntax}>
       <Button color="discord">
         <FontAwesomeIcon icon="clipboard" />
