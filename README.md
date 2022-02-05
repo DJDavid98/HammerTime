@@ -36,3 +36,4 @@ English and Hungarian translations have been included, so no translators will be
 - Malay: Nurul Azeera Hidayah @ Muhammad Nur Hidayat Yasuyoshi (MNH48.moe) (mnh48)
 - Spanish: Pablo Luna (shaulyareaj)
 - Italian: Lory Pelli (pellilory126)
+- Swedish: Liggliluff

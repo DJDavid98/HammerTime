@@ -50,6 +50,10 @@
       "nativeName": "Русский",
       "countryCode": "RU"
     },
+    "sv": {
+      "nativeName": "Svenska",
+      "countryCode": "SE"
+    },
     "ar": {
       "nativeName": "اللغة العربية",
       "countryCode": "AE",

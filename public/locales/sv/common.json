@@ -1,0 +1,22 @@
+{
+  "seoDescription": "Generera tidsstämpelindikatorer för Discord-meddelanden",
+  "howTo": "Välj ett datum, kopiera det önskade formatet från kolumnen {{syntaxColName}}, klistra sedan in det någonstans i ett meddelande. Resultatet är dynamiskt och visar olika tid och datum för varje person baserat på deras tidszon.",
+  "input": {
+    "date": "Datum och tid",
+    "timezone": "Tidszon"
+  },
+  "table": {
+    "syntax": "Syntax",
+    "example": "Resultat"
+  },
+  "changeLanguage": "Byt språk",
+  "current": "Nuvarande",
+  "notFound": {
+    "heading": "Hittades inte",
+    "content": "Inget att se här."
+  },
+  "builtWith": "Webbplatsen är byggd med <1>Font Awesome Free</1>",
+  "openSource": "Öppen källkod",
+  "viewSource": "Se källkoden",
+  "notAffiliated": "Detta projekt är inte kopplat till Discord."
+}
