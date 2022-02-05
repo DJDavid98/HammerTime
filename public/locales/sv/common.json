@@ -1,22 +1,22 @@
 {
-  "seoDescription": "Test translation to see generated file name",
-  "howTo": "Pick a date, copy the desired timestamp from the {{syntaxColName}} column, then paste it anywhere in a chat message. The result will be a dynamic timestamp that displays differently for everyone based on their own timezone.",
+  "seoDescription": "Generera tidsstämpelindikatorer för Discord-meddelanden",
+  "howTo": "Välj ett datum, kopiera det önskade formatet från kolumnen {{syntaxColName}}, klistra sedan in det någonstans i ett meddelande. Resultatet är dynamiskt och visar olika tid och datum för varje person baserat på deras tidszon.",
   "input": {
-    "date": "Date and time",
-    "timezone": "Timezone"
+    "date": "Datum och tid",
+    "timezone": "Tidszon"
   },
   "table": {
-    "syntax": "Chat syntax",
-    "example": "Example result"
+    "syntax": "Syntax",
+    "example": "Resultat"
   },
-  "changeLanguage": "Change language",
-  "current": "Current",
+  "changeLanguage": "Byt språk",
+  "current": "Nuvarande",
   "notFound": {
-    "heading": "Not Found",
-    "content": "Nothing to see here."
+    "heading": "Hittades inte",
+    "content": "Inget att se här."
   },
-  "builtWith": "Website built with <1>Font Awesome Free</1>",
-  "openSource": "Open-source software",
-  "viewSource": "View source code",
-  "notAffiliated": "This project is not affiliated with Discord."
+  "builtWith": "Webbplatsen är byggd med <1>Font Awesome Free</1>",
+  "openSource": "Öppen källkod",
+  "viewSource": "Se källkoden",
+  "notAffiliated": "Detta projekt är inte kopplat till Discord."
 }
