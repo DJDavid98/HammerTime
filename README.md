@@ -37,3 +37,4 @@ English and Hungarian translations have been included, so no translators will be
 - Spanish: Pablo Luna (shaulyareaj)
 - Italian: Lory Pelli (pellilory126)
 - Swedish: Liggliluff
+- Bulgarian: Rxshi
