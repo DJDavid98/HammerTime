@@ -69,7 +69,7 @@
     "prettier": "^2.2.1",
     "sharp": "^0.29.0",
     "source-code-pro": "^2.38.0",
-    "typescript": "^4.3"
+    "typescript": "^4.6"
   },
   "license": "MIT",
   "lint-staged": {
