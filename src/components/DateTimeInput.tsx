@@ -11,15 +11,22 @@ interface DateTimeInputProps {
   icon: IconProp;
   className?: string;
   onChange: ChangeEventHandler<HTMLInputElement>;
-  type: 'date' | 'time';
   readOnly?: boolean;
 }
 
-export const DateTimeInput: VFC<DateTimeInputProps> = ({ id, value, icon, className, onChange, type, readOnly }) => (
+export const DateTimeInput: VFC<DateTimeInputProps> = ({ id, value, icon, className, onChange, readOnly }) => (
   <InputGroup className={classNames(styles.dateInputGroup, className)}>
     <InputGroupText tag="label" htmlFor={id} className={styles.inputAddon}>
       <FontAwesomeIcon icon={icon} fixedWidth />
     </InputGroupText>
-    <Input type={type} bsSize="lg" id={id} value={value} onChange={onChange} disabled={readOnly} tabIndex={readOnly ? -1 : undefined} />
+    <Input
+      type="datetime-local"
+      bsSize="lg"
+      id={id}
+      value={value}
+      onChange={onChange}
+      disabled={readOnly}
+      tabIndex={readOnly ? -1 : undefined}
+    />
   </InputGroup>
 );
