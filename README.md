@@ -26,16 +26,16 @@ English and Hungarian translations have been included, so no translators will be
 
 ### Credits
 
-- French: Cookie Kiro (Cookikui)
-- Russian: Luna (NightyCloud)
-- German: Fabian9799
-- Arabic: Raphael Santiago (raphael.santiago.53)
-- Brazilian Portuguese: LeonardoC06
-- Dutch: Jesse (Jessuh)
-- Polish: Dawid (MinerPL), stha (sthakrk)
-- Malay: Nurul Azeera Hidayah @ Muhammad Nur Hidayat Yasuyoshi (MNH48.moe) (mnh48)
-- Spanish: Pablo Luna (shaulyareaj)
-- Italian: Lory Pelli (pellilory126)
-- Swedish: Liggliluff
-- Bulgarian: Rxshi
-- Turkish: [@tututuana](https://github.com/tututuana)
+- 🇫🇷 French: Cookie Kiro (Cookikui)
+- 🇷🇺 Russian: Luna (NightyCloud)
+- 🇩🇪 German: Fabian9799
+- 🇸🇦 Arabic: Raphael Santiago (raphael.santiago.53)
+- 🇧🇷 Brazilian Portuguese: leo0six
+- 🇳🇱 Dutch: Jesse (Jessuh)
+- 🇵🇱 Polish: Dawid (MinerPL), stha (sthakrk)
+- 🇲🇾 Malay: Nurul Azeera Hidayah @ Muhammad Nur Hidayat Yasuyoshi (MNH48.moe) (mnh48)
+- 🇪🇸 Spanish: Pablo Luna (shaulyareaj)
+- 🇮🇹 Italian: Lory Pelli (pellilory126)
+- 🇸🇪 Swedish: Liggliluff
+- 🇧🇬 Bulgarian: Rxshi
+- 🇹🇷 Turkish: [@tututuana](https://github.com/tututuana)
