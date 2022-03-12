@@ -58,6 +58,10 @@
       "nativeName": "Svenska",
       "countryCode": "SE"
     },
+    "tr": {
+      "nativeName": "Türkçe",
+      "countryCode": "TR"
+    },
     "ar": {
       "nativeName": "اللغة العربية",
       "countryCode": "AE",
