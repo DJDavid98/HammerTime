@@ -1,6 +1,6 @@
 {
   "seoDescription": "Discord sohbet mesajları için zaman damgası göstergeleri oluştur",
-  "howTo": "Bir tarih seçin, {{syntaxColName}} sütunundan istediğiniz zaman damgasını kopyalayın ve ardından bunu sohbet mesajının herhangi bir yerine yapıştırın. Sonuç, herkes için kendi saat dilimine göre farklı görüntülenen dinamik bir zaman damgası olacaktır.",
+  "howTo": "Bir tarih seçin, \"{{syntaxColName}}\" sütunundan istediğiniz zaman damgasını kopyalayın ve ardından bunu sohbet mesajının herhangi bir yerine yapıştırın. Sonuç, herkes için kendi saat dilimine göre farklı görüntülenen dinamik bir zaman damgası olacaktır.",
   "input": {
     "date": "Tarih ve zaman",
     "timezone": "Zaman dilimi"
