@@ -1,4 +1,11 @@
 {
+  "redirects": [
+    {
+      "source": "/discord",
+      "destination": "https://discord.gg/vMfKCsWzZr",
+      "permanent": false
+    }
+  ],
   "github": {
     "silent": true
   }
