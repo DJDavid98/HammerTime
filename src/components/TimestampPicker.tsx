@@ -1,5 +1,5 @@
 import { DateTimeInput } from 'components/DateTimeInput';
-import { TFunction } from 'i18next';
+import { TFunction } from 'react-i18next';
 import styles from 'modules/TimestampPicker.module.scss';
 import React, { ChangeEventHandler, FC, useCallback, useMemo } from 'react';
 import Select from 'react-select';

@@ -1,11 +1,11 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import classNames from 'classnames';
-import { TFunction } from 'i18next';
+import { TFunction } from 'react-i18next';
 import styles from 'modules/TimestampsTable.module.scss';
 import moment, { Moment } from 'moment-timezone';
-import { useEffect, useMemo, useState, VFC, VoidFunctionComponent } from 'react';
+import { useEffect, useMemo, useRef, useState, VFC, VoidFunctionComponent } from 'react';
 import CopyToClipboard from 'react-copy-to-clipboard';
-import { Button, Col, InputGroup, InputGroupText, Row, Table } from 'reactstrap';
+import { Button, Col, InputGroup, InputGroupText, Row, Table, UncontrolledTooltip } from 'reactstrap';
 
 interface TimeValue {
   example: string;
@@ -31,7 +31,7 @@ const IconCol: VoidFunctionComponent<{ i: number }> = ({ i }) => {
       content = (
         <span className="fa-stack fa-1x">
           <FontAwesomeIcon icon={['far', 'calendar']} className="fa-stack-2x" />
-          <FontAwesomeIcon icon="clock" className="fa-stack-1x" transform={{ y: 3.5 }} />
+          <FontAwesomeIcon icon="clock" className="fa-stack-1x" transform={{ y: 4.5 }} />
         </span>
       );
       break;
@@ -54,16 +54,27 @@ const IconCol: VoidFunctionComponent<{ i: number }> = ({ i }) => {
   );
 };
 
-const CopySyntax: VoidFunctionComponent<{ syntax: string; className?: string }> = ({ syntax, className }) => (
-  <InputGroup className={classNames(`flex-nowrap ${syntaxJustifyClasses}`, className)}>
-    <CopyToClipboard text={syntax}>
-      <Button color="discord">
-        <FontAwesomeIcon icon="clipboard" />
-      </Button>
-    </CopyToClipboard>
-    <InputGroupText className={`${styles.codeText} font-monospace`}>{syntax}</InputGroupText>
-  </InputGroup>
-);
+const CopySyntax: VoidFunctionComponent<{ syntax: string; className?: string; t: TFunction }> = ({ t, syntax, className }) => {
+  const buttonRef = useRef<HTMLButtonElement>(null);
+  const buttonTooltipText = t('common:buttons.copy', '');
+  return (
+    <>
+      <InputGroup className={classNames(`flex-nowrap ${syntaxJustifyClasses}`, className)}>
+        <CopyToClipboard text={syntax}>
+          <Button color="discord" innerRef={buttonRef}>
+            <FontAwesomeIcon icon="clipboard" />
+          </Button>
+        </CopyToClipboard>
+        <InputGroupText className={`${styles.codeText} font-monospace`}>{syntax}</InputGroupText>
+      </InputGroup>
+      {Boolean(buttonTooltipText) && (
+        <UncontrolledTooltip target={buttonRef} placement="left" fade={false}>
+          {buttonTooltipText}
+        </UncontrolledTooltip>
+      )}
+    </>
+  );
+};
 
 interface PropTypes {
   timestamp: Moment | null;
@@ -141,8 +152,8 @@ export const TimestampsTable: VFC<PropTypes> = ({ t, locale, timestamp, timeInSe
                 className={`${syntaxJustifyClasses} align-items-center text-center text-${extendFromBreakpoint}-left ${textAlignmentClasses}`}
               >
                 <Col xs={12} md="auto" lg={12} className={`mb-3 mb-${extendFromBreakpoint}-0`}>
-                  <CopySyntax syntax={value.syntax} />
-                  {value.syntax.endsWith(':f>') && <CopySyntax syntax={value.syntax.replace(/:f>$/, '>')} className="mt-2" />}
+                  <CopySyntax t={t} syntax={value.syntax} />
+                  {value.syntax.endsWith(':f>') && <CopySyntax t={t} syntax={value.syntax.replace(/:f>$/, '>')} className="mt-2" />}
                 </Col>
                 <Col className={`d-${extendFromBreakpoint}-none`}>
                   <p className="flex-grow-1">

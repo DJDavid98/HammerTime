@@ -5,6 +5,12 @@
     "date": "Date and time",
     "timezone": "Timezone"
   },
+  "buttons": {
+    "copy": "Copy to clipboard",
+    "setCurrentTime": "Set to current time",
+    "lock": "Lock timestamp via URL",
+    "unlock": "Unlock timestamp"
+  },
   "table": {
     "syntax": "Chat syntax",
     "example": "Example result"

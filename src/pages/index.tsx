@@ -4,18 +4,19 @@ import { CustomIcon } from 'components/CustomIcon';
 import { Layout } from 'components/Layout';
 import { TimestampPicker } from 'components/TimestampPicker';
 import { TimestampsTable } from 'components/TimestampsTable';
+import { TooltipContent } from 'components/TooltipContent';
 import { parseInt, throttle } from 'lodash';
 import moment, { Moment } from 'moment-timezone';
 import { GetStaticProps } from 'next';
 import { SSRConfig, useTranslation } from 'next-i18next';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import React, { useEffect, useMemo, useState, VFC } from 'react';
-import { Button, FormGroup } from 'reactstrap';
+import React, { useCallback, useEffect, useMemo, useRef, useState, VFC } from 'react';
+import { Button, FormGroup, UncontrolledTooltip } from 'reactstrap';
 import { SITE_TITLE } from 'src/config';
 import { useLocale } from 'src/util/common';
 import { typedServerSideTranslations } from 'src/util/i18n-server';
-import { getSortedNormalizedTimezoneNames, getTimezoneValue, isoDateFormat, isoTimeFormat } from 'src/util/timezone';
+import { getSortedNormalizedTimezoneNames, getTimezoneValue, momentToTimeInputValue } from 'src/util/timezone';
 
 interface IndexPageProps {
   tzNames: string[];
@@ -45,6 +46,8 @@ export const IndexPage: VFC<IndexPageProps> = ({ tzNames }) => {
   }, [timestampQuery]);
   const [timestamp, setTimestamp] = useState<Moment | null>(null);
   const timestampInSeconds = useMemo(() => String(timestamp?.unix() || '0'), [timestamp]);
+  const setTimeButtonRef = useRef<HTMLButtonElement>(null);
+  const lockButtonRef = useRef<HTMLButtonElement>(null);
 
   const handleTimezoneChange = useMemo(
     () =>
@@ -61,6 +64,9 @@ export const IndexPage: VFC<IndexPageProps> = ({ tzNames }) => {
       }, 50),
     [],
   );
+  const setTimeNow = useCallback(() => {
+    setDateTimeString(momentToTimeInputValue());
+  }, []);
 
   useEffect(() => {
     let clientMoment: Moment | undefined;
@@ -73,7 +79,7 @@ export const IndexPage: VFC<IndexPageProps> = ({ tzNames }) => {
       }
     }
     if (!clientMoment) clientMoment = moment().seconds(0).milliseconds(0);
-    const formatted = clientMoment.format(`${isoDateFormat}\\T${isoTimeFormat}`);
+    const formatted = momentToTimeInputValue(clientMoment);
     handleDateTimeChange(formatted);
     handleTimezoneChange(clientTimezone);
   }, [handleDateTimeChange, handleTimezoneChange, initialTimestamp]);
@@ -98,6 +104,8 @@ export const IndexPage: VFC<IndexPageProps> = ({ tzNames }) => {
   }, [locale, t]);
 
   const fixedTimestamp = initialTimestamp !== null;
+  const lockButtonTooltipText = t(fixedTimestamp ? 'common:buttons.unlock' : 'common:buttons.lock', '');
+  const setTimeButtonTooltipText = t('common:buttons.setCurrentTime', '');
 
   return (
     <Layout>
@@ -118,11 +126,24 @@ export const IndexPage: VFC<IndexPageProps> = ({ tzNames }) => {
           fixedTimestamp={fixedTimestamp}
         >
           <FormGroup>
+            <Button size="lg" className="me-2" onClick={setTimeNow} disabled={fixedTimestamp} innerRef={setTimeButtonRef}>
+              <FontAwesomeIcon icon="clock-rotate-left" />
+            </Button>
+            {Boolean(setTimeButtonTooltipText) && (
+              <UncontrolledTooltip target={setTimeButtonRef} fade={false}>
+                {setTimeButtonTooltipText}
+              </UncontrolledTooltip>
+            )}
             <Link href={fixedTimestamp ? '/' : `/?${TS_QUERY_PARAM}=${timestampInSeconds}`} passHref>
-              <Button tag="a" size="lg" color={fixedTimestamp ? 'danger' : 'info'}>
-                <FontAwesomeIcon icon={fixedTimestamp ? 'times-circle' : 'lock'} />
+              <Button tag="a" innerRef={lockButtonRef} size="lg" color={fixedTimestamp ? 'danger' : 'info'}>
+                <FontAwesomeIcon icon={fixedTimestamp ? 'unlock' : 'lock'} />
               </Button>
             </Link>
+            {Boolean(lockButtonTooltipText) && (
+              <UncontrolledTooltip target={lockButtonRef} fade={false}>
+                {({ update }) => <TooltipContent update={update}>{lockButtonTooltipText}</TooltipContent>}
+              </UncontrolledTooltip>
+            )}
           </FormGroup>
         </TimestampPicker>
         <TimestampsTable {...commonProps} timestamp={timestamp} timeInSeconds={timestampInSeconds} />

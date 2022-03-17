@@ -17,11 +17,3 @@ export const assembleSeoUrl = (pathname?: string): string => {
 
 export const getDirAttribute = (locale?: string): 'rtl' | 'ltr' =>
   locale && isAvailableLanguage(locale) && LANGUAGES[locale].rtl ? 'rtl' : 'ltr';
-
-export const openUrlInNewWindow = (url: string) => {
-  const newWindow = window.open(url, '_blank', 'noopener,noreferrer');
-  if (newWindow) {
-    newWindow.opener = null;
-  }
-  return newWindow;
-};

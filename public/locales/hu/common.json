@@ -5,6 +5,12 @@
     "date": "Dátum és idő",
     "timezone": "Időzóna"
   },
+  "buttons": {
+    "copy": "Másolás a vágólapra",
+    "setCurrentTime": "Aktuális idő beállítása",
+    "lock": "Időbélyeg rögzítése URL-el",
+    "unlock": "Időbélyeg feloldása"
+  },
   "table": {
     "syntax": "Üzenet formája",
     "example": "Példa megjelenés"

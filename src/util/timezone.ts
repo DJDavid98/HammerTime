@@ -1,3 +1,4 @@
+import { Moment } from 'moment';
 import moment from 'moment-timezone';
 
 export const isoTimeFormat = 'HH:mm:ss';
@@ -32,3 +33,5 @@ export const getTimezoneValue = (timezone: string) => ({
   value: timezone,
   label: getTimezoneLabel(timezone),
 });
+
+export const momentToTimeInputValue = (time: Moment = moment()): string => time.format(`${isoDateFormat}\\T${isoTimeFormat}`);
