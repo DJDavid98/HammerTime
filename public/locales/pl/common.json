@@ -5,6 +5,12 @@
     "date": "Data i czas",
     "timezone": "Strefa czasowa"
   },
+  "buttons": {
+    "copy": "Skopiuj do schowka",
+    "setCurrentTime": "Ustaw bieżący czas",
+    "lock": "Zablokuj znacznik czasu przez adres URL",
+    "unlock": "Odblokuj znacznik czasu"
+  },
   "table": {
     "syntax": "Składnia",
     "example": "Przykładowy wygląd"
