@@ -5,6 +5,12 @@
     "date": "Datum en tijd",
     "timezone": "Tijdzone"
   },
+  "buttons": {
+    "copy": "Kopiëren naar klembord",
+    "setCurrentTime": "Zet naar huidige tijd",
+    "lock": "Tijdsaanduiding vergrendelen via de URL",
+    "unlock": "Tijdsaanduiding ontgrendelen"
+  },
   "table": {
     "syntax": "Chat syntaxis",
     "example": "Voorbeeld resultaat"

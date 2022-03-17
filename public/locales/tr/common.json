@@ -5,6 +5,12 @@
     "date": "Tarih ve zaman",
     "timezone": "Zaman dilimi"
   },
+  "buttons": {
+    "copy": "Panoya kopyala",
+    "setCurrentTime": "Geçerli zamana ayarla",
+    "lock": "URL aracılığıyla zaman damgasını kilitle",
+    "unlock": "Zaman damgasının kilidini aç"
+  },
   "table": {
     "syntax": "Sohbet sözdizimi",
     "example": "Örnek sonuç"

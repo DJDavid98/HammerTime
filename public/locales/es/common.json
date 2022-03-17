@@ -5,6 +5,12 @@
     "date": "Fecha y Hora",
     "timezone": "Zona Horaria"
   },
+  "buttons": {
+    "copy": "Copiar al portapapeles",
+    "setCurrentTime": "Establecer a hora actual",
+    "lock": "Bloquear la marca de tiempo vía URL",
+    "unlock": "Desbloquear marca de tiempo"
+  },
   "table": {
     "syntax": "Sintaxis de chat",
     "example": "Ejemplo del resultado"
