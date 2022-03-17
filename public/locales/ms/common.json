@@ -5,6 +5,12 @@
     "date": "Tarikh dan masa",
     "timezone": "Zon waktu"
   },
+  "buttons": {
+    "copy": "Salin ke papan keratan",
+    "setCurrentTime": "Tetapkan ke masa semasa",
+    "lock": "Kunci cap masa melalui URL",
+    "unlock": "Buka kunci cap masa"
+  },
   "table": {
     "syntax": "Sintaks sembang",
     "example": "Contoh hasilnya"
