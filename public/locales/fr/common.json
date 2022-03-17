@@ -5,9 +5,15 @@
     "date": "Date et heure",
     "timezone": "Fuseau horaire"
   },
+  "buttons": {
+    "copy": "Copier dans le presse papier",
+    "setCurrentTime": "Régler a l'heure actuelle",
+    "lock": "Bloquer l'horodatage via l'URL",
+    "unlock": "Débloquer l'horodatage"
+  },
   "table": {
     "syntax": "Syntaxe du chat",
-    "example": "Exemple de résultat"
+    "example": "Exemple du résultat"
   },
   "changeLanguage": "Changer la langue",
   "current": "Actif",
