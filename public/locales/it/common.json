@@ -5,6 +5,12 @@
     "date": "Data e ora",
     "timezone": "Fuso orario"
   },
+  "buttons": {
+    "copy": "Copia negli appunti",
+    "setCurrentTime": "Imposta all'ora attuale",
+    "lock": "Blocca timestamp tramite URL",
+    "unlock": "Sblocca timestamp"
+  },
   "table": {
     "syntax": "Sintassi della chat",
     "example": "Risultato d'esempio"
