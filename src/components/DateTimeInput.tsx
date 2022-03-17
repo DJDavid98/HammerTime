@@ -24,6 +24,7 @@ export const DateTimeInput: VFC<DateTimeInputProps> = ({ id, value, icon, classN
       bsSize="lg"
       id={id}
       value={value}
+      step="1"
       onChange={onChange}
       disabled={readOnly}
       tabIndex={readOnly ? -1 : undefined}
