@@ -1,7 +1,8 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { CombinedDateTimeInput } from 'components/CombinedDateTimeInput';
 import { DateTimeInput } from 'components/DateTimeInput';
 import styles from 'modules/TimestampPicker.module.scss';
-import React, { ChangeEventHandler, FC, useCallback, useEffect, useMemo, useState } from 'react';
+import React, { ChangeEventHandler, FC, MouseEventHandler, useCallback, useEffect, useMemo, useState } from 'react';
 import { TFunction } from 'react-i18next';
 import Select from 'react-select';
 import { StylesConfig } from 'react-select/src/styles';
@@ -67,6 +68,7 @@ const customStyles: StylesConfig<TimezoneOptionType, false> = {
     };
   },
 };
+const splitPrefKey = 'split-input';
 
 interface PropTypes {
   changeTimezone: (tz: null | string) => void;
@@ -101,7 +103,7 @@ export const TimestampPicker: FC<PropTypes> = ({
     [changeTimezone],
   );
 
-  const [isCombinedInputSupported, setIsCombinedInputSupported] = useState(false);
+  const [combinedInput, setCombinedInput] = useState(false);
 
   const timezoneSelectValue = useMemo(() => getTimezoneValue(timezone), [timezone]);
 
@@ -111,24 +113,43 @@ export const TimestampPicker: FC<PropTypes> = ({
     (e) => onDateTimeChange(e.target.value),
     [onDateTimeChange],
   );
+  const toggleCombinedInput: MouseEventHandler<HTMLAnchorElement> = useCallback((e) => {
+    e.preventDefault();
+    setCombinedInput((value) => !value);
+  }, []);
 
   useEffect(() => {
+    const storedPref = localStorage.getItem(splitPrefKey);
+    if (storedPref !== null) {
+      setCombinedInput(storedPref !== 'true');
+      return;
+    }
+
     // Feature detection for datetime-local input
     const testInput = document.createElement('input');
     testInput.setAttribute('type', 'datetime-local');
     const testValue = '1)';
     testInput.value = testValue;
-    setIsCombinedInputSupported(testInput.value !== testValue);
+    setCombinedInput(testInput.value !== testValue);
   }, []);
+
+  useEffect(() => {
+    localStorage.setItem(splitPrefKey, combinedInput ? 'false' : 'true');
+  }, [combinedInput]);
 
   return (
     <div className={styles.datepicker}>
       <Row>
         <Col md>
           <FormGroup>
-            <Label className={styles.formLabel}>{t('common:input.date')}</Label>
+            <Label className={`${styles.formLabel} d-flex justify-content-between`}>
+              {t('common:input.date')}
+              <a href="#" className="text-white text-decoration-none" onClick={toggleCombinedInput}>
+                <FontAwesomeIcon icon={combinedInput ? 'toggle-on' : 'toggle-off'} />
+              </a>
+            </Label>
 
-            {isCombinedInputSupported ? (
+            {combinedInput ? (
               <CombinedDateTimeInput
                 value={dateString && timeString ? `${dateString}T${timeString}` : ''}
                 className="mb-2 mb-xl-0"
