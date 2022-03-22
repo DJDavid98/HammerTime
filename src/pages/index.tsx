@@ -32,7 +32,8 @@ export const IndexPage: VFC<IndexPageProps> = ({ tzNames }) => {
   const locale = useLocale(language);
   const timezoneNames = useMemo(() => tzNames.map((timezone) => getTimezoneValue(timezone)), [tzNames]);
   const [timezone, setTimezone] = useState<string>(() => timezoneNames[0].value);
-  const [dateTimeString, setDateTimeString] = useState<string>('');
+  const [timeString, setTimeString] = useState<string>('');
+  const [dateString, setDateString] = useState<string>('');
   const router = useRouter();
   const timestampQuery = router.query[TS_QUERY_PARAM];
   const initialTimestamp = useMemo<number | null>(() => {
@@ -57,16 +58,31 @@ export const IndexPage: VFC<IndexPageProps> = ({ tzNames }) => {
       }, 200),
     [],
   );
+  const handleDateChange = useMemo(
+    () =>
+      throttle((value: null | string) => {
+        setDateString(value || '');
+      }, 200),
+    [],
+  );
+  const setDateTimeString = useCallback((value: string) => {
+    const [dateStr, timeStr] = value.split(/[T ]/);
+    setTimeString(timeStr);
+    setDateString(dateStr);
+  }, []);
+  const handleTimeChange = useCallback((value: null | string) => {
+    setTimeString(value || '');
+  }, []);
   const handleDateTimeChange = useMemo(
     () =>
       throttle((value: null | string) => {
         setDateTimeString(value || '');
       }, 50),
-    [],
+    [setDateTimeString],
   );
   const setTimeNow = useCallback(() => {
     setDateTimeString(momentToTimeInputValue());
-  }, []);
+  }, [setDateTimeString]);
 
   useEffect(() => {
     let clientMoment: Moment | undefined;
@@ -85,9 +101,9 @@ export const IndexPage: VFC<IndexPageProps> = ({ tzNames }) => {
   }, [handleDateTimeChange, handleTimezoneChange, initialTimestamp]);
 
   useEffect(() => {
-    if (!dateTimeString) return;
-    setTimestamp(moment.tz(dateTimeString, timezone));
-  }, [dateTimeString, timezone]);
+    if (!dateString || !timeString) return;
+    setTimestamp(moment.tz(`${dateString}T${timeString}`, timezone));
+  }, [dateString, timeString, timezone]);
 
   const commonProps = {
     locale,
@@ -118,8 +134,11 @@ export const IndexPage: VFC<IndexPageProps> = ({ tzNames }) => {
 
         <TimestampPicker
           {...commonProps}
-          dateTimeString={dateTimeString}
+          dateString={dateString}
+          timeString={timeString}
           changeTimezone={handleTimezoneChange}
+          handleDateChange={handleDateChange}
+          handleTimeChange={handleTimeChange}
           handleDateTimeChange={handleDateTimeChange}
           timezone={timezone}
           timezoneNames={timezoneNames}
