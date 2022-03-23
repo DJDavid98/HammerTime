@@ -1,4 +1,4 @@
-import { useMemo } from 'react';
+import { MouseEvent, MouseEventHandler, useMemo } from 'react';
 import { CANONICAL_URL, IS_CLIENT_SIDE, isAvailableLanguage, LANGUAGES } from 'src/config';
 
 export const useLocale = (language?: string) =>
@@ -17,3 +17,16 @@ export const assembleSeoUrl = (pathname?: string): string => {
 
 export const getDirAttribute = (locale?: string): 'rtl' | 'ltr' =>
   locale && isAvailableLanguage(locale) && LANGUAGES[locale].rtl ? 'rtl' : 'ltr';
+
+/**
+ * @see https://developer.chrome.com/blog/show-picker/
+ */
+export const inputWithPickerClickHandler: MouseEventHandler<HTMLInputElement> = (e: MouseEvent<HTMLInputElement>) => {
+  if ('showPicker' in HTMLInputElement.prototype) {
+    try {
+      (e.target as unknown as { showPicker: VoidFunction }).showPicker();
+    } catch (error) {
+      console.error(error);
+    }
+  }
+};

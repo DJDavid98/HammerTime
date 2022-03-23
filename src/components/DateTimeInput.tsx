@@ -4,6 +4,7 @@ import classNames from 'classnames';
 import styles from 'modules/TimestampPicker.module.scss';
 import { ChangeEventHandler, VFC } from 'react';
 import { Input, InputGroup, InputGroupText } from 'reactstrap';
+import { inputWithPickerClickHandler } from 'src/util/common';
 
 interface DateTimeInputProps {
   id: string;
@@ -20,6 +21,16 @@ export const DateTimeInput: VFC<DateTimeInputProps> = ({ id, value, icon, classN
     <InputGroupText tag="label" htmlFor={id} className={styles.inputAddon}>
       <FontAwesomeIcon icon={icon} fixedWidth />
     </InputGroupText>
-    <Input type={type} bsSize="lg" id={id} value={value} onChange={onChange} disabled={readOnly} tabIndex={readOnly ? -1 : undefined} />
+    <Input
+      type={type}
+      bsSize="lg"
+      id={id}
+      value={value}
+      step="1"
+      onChange={onChange}
+      onClick={inputWithPickerClickHandler}
+      disabled={readOnly}
+      tabIndex={readOnly ? -1 : undefined}
+    />
   </InputGroup>
 );

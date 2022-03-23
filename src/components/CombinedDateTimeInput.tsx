@@ -3,6 +3,7 @@ import classNames from 'classnames';
 import styles from 'modules/TimestampPicker.module.scss';
 import { ChangeEventHandler, VFC } from 'react';
 import { Input, InputGroup, InputGroupText } from 'reactstrap';
+import { inputWithPickerClickHandler } from 'src/util/common';
 
 interface DateTimeInputProps {
   id: string;
@@ -26,6 +27,7 @@ export const CombinedDateTimeInput: VFC<DateTimeInputProps> = ({ id, value, clas
       value={value}
       step="1"
       onChange={onChange}
+      onClick={inputWithPickerClickHandler}
       disabled={readOnly}
       tabIndex={readOnly ? -1 : undefined}
     />
