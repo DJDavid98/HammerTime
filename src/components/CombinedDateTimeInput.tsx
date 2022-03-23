@@ -15,7 +15,7 @@ interface DateTimeInputProps {
 
 export const CombinedDateTimeInput: VFC<DateTimeInputProps> = ({ id, value, className, onChange, readOnly }) => (
   <InputGroup className={classNames(styles.dateInputGroup, className)}>
-    <InputGroupText tag="label" htmlFor={id} className={styles.inputAddon}>
+    <InputGroupText tag="label" htmlFor={id} className={styles.inputAddon} onClick={inputWithPickerClickHandler}>
       <FontAwesomeIcon icon="calendar" />
       &nbsp;
       <FontAwesomeIcon icon="clock" />
@@ -27,7 +27,6 @@ export const CombinedDateTimeInput: VFC<DateTimeInputProps> = ({ id, value, clas
       value={value}
       step="1"
       onChange={onChange}
-      onClick={inputWithPickerClickHandler}
       disabled={readOnly}
       tabIndex={readOnly ? -1 : undefined}
     />

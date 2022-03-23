@@ -12,6 +12,10 @@
     width: 100%;
   }
 
+  .input-addon {
+    cursor: pointer;
+  }
+
   input[disabled] {
     color: rgba($input-color, 0.75);
     pointer-events: none;

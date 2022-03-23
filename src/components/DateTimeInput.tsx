@@ -18,7 +18,7 @@ interface DateTimeInputProps {
 
 export const DateTimeInput: VFC<DateTimeInputProps> = ({ id, value, icon, className, onChange, type, readOnly }) => (
   <InputGroup className={classNames(styles.dateInputGroup, className)}>
-    <InputGroupText tag="label" htmlFor={id} className={styles.inputAddon}>
+    <InputGroupText tag="label" htmlFor={id} className={styles.inputAddon} onClick={inputWithPickerClickHandler}>
       <FontAwesomeIcon icon={icon} fixedWidth />
     </InputGroupText>
     <Input
@@ -28,7 +28,6 @@ export const DateTimeInput: VFC<DateTimeInputProps> = ({ id, value, icon, classN
       value={value}
       step="1"
       onChange={onChange}
-      onClick={inputWithPickerClickHandler}
       disabled={readOnly}
       tabIndex={readOnly ? -1 : undefined}
     />

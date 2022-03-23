@@ -21,12 +21,21 @@ export const getDirAttribute = (locale?: string): 'rtl' | 'ltr' =>
 /**
  * @see https://developer.chrome.com/blog/show-picker/
  */
-export const inputWithPickerClickHandler: MouseEventHandler<HTMLInputElement> = (e: MouseEvent<HTMLInputElement>) => {
+export const inputWithPickerClickHandler: MouseEventHandler<HTMLButtonElement> = (e: MouseEvent<HTMLButtonElement>) => {
+  const label = (e.target as HTMLElement).closest('label') as HTMLLabelElement | null;
+  if (!label) return;
+  const targetId = label.htmlFor;
+  if (!targetId) return;
+  const target = document.querySelector(`input#${targetId}`) as HTMLInputElement | null;
+  if (!target) return;
   if ('showPicker' in HTMLInputElement.prototype) {
     try {
-      (e.target as unknown as { showPicker: VoidFunction }).showPicker();
+      (target as unknown as { showPicker: VoidFunction }).showPicker();
+      return;
     } catch (error) {
       console.error(error);
     }
   }
+
+  target.focus();
 };

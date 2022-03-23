@@ -184,7 +184,7 @@ export const TimestampPicker: FC<PropTypes> = ({
             )}
           </FormGroup>
         </Col>
-        <Col md={5}>
+        <Col md={combinedInput ? 5 : 4}>
           <FormGroup>
             <Label className={styles.formLabel} for={timezoneSelectId}>
               {t('common:input.timezone')}
