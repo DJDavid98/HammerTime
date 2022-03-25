@@ -16,10 +16,10 @@ Application logo based on [Hammer] by John Caserta, from The Noun Project licens
 ## Translation
 
 New language contributions are welcome! They are handled through [Crowdin]. If you don't see your language listed,
-[join our Discord server] and ask for your language to be added to the project in the [#translator-signup] channel.
-You will be given the Translator role and granted access to a language-specific channel for further discussion.
-This is necessary so that when new translations are needed for any potential new site features, I have an easy way
-to reach everyone at once.
+[join our Discord server] and ask for your language to be added to the project in the [#translator-signup] channel. You
+will be given the Translator role and granted access to a language-specific channel for further discussion. This is
+necessary so that when new translations are needed for any potential new site features, I have an easy way to reach
+everyone at once.
 
 [crowdin]: https://crowdin.com/project/hammertime
 [join our discord server]: https://hammertime.djdavid98.art/discord
@@ -30,8 +30,8 @@ English and Hungarian translations have been included, so no translators will be
 ### Credits
 
 - 🇫🇷 French: Cookie Kiro (Cookikui)
-- 🇷🇺 Russian: Luna (NightyCloud)
-- 🇩🇪 German: Fabian9799
+- 🇷🇺 Russian: JudeDM, Luna (NightyCloud)
+- 🇩🇪 German: Carlos Diener (carlos.diener), Fabian9799, julix00
 - 🇸🇦 Arabic: Raphael Santiago (raphael.santiago.53)
 - 🇧🇷 Brazilian Portuguese: leo0six
 - 🇳🇱 Dutch: Jesse (Jessuh)
