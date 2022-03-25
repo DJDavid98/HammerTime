@@ -5,6 +5,12 @@
     "date": "Datum und Uhrzeit",
     "timezone": "Zeitzone"
   },
+  "buttons": {
+    "copy": "In Zwischenablage kopieren",
+    "setCurrentTime": "Auf aktuelle Zeit setzen",
+    "lock": "Zeitstempel in URL speichern",
+    "unlock": "Zeitstempel entsperren"
+  },
   "table": {
     "syntax": "Chat Syntax",
     "example": "Beispiel"

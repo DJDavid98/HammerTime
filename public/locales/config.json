@@ -10,8 +10,7 @@
     },
     "de": {
       "nativeName": "Deutsch",
-      "countryCode": "DE",
-      "percent": 86
+      "countryCode": "DE"
     },
     "en-GB": {
       "nativeName": "English, UK",
@@ -55,7 +54,7 @@
     "ru": {
       "nativeName": "Русский",
       "countryCode": "RU",
-      "percent": 86
+      "percent": 93
     },
     "sv": {
       "nativeName": "Svenska",
@@ -70,8 +69,7 @@
     "ar": {
       "nativeName": "اللغة العربية",
       "countryCode": "AE",
-      "rtl": true,
-      "percent": 86
+      "rtl": true
     }
   }
 }
