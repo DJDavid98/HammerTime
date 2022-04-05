@@ -13,6 +13,7 @@ import 'moment/locale/it';
 import 'moment/locale/sv';
 import 'moment/locale/bg';
 import 'moment/locale/tr';
+import 'moment/locale/ja';
 import moment from 'moment-timezone';
 import latestTimezoneData from 'moment-timezone/data/packed/latest.json';
 

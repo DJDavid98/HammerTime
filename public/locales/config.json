@@ -65,6 +65,10 @@
       "nativeName": "Türkçe",
       "countryCode": "TR"
     },
+    "ja": {
+      "nativeName": "日本",
+      "countryCode": "JP"
+    },
     "ar": {
       "nativeName": "اللغة العربية",
       "countryCode": "AE",
