@@ -30,7 +30,7 @@ English and Hungarian translations have been included, so no translators will be
 ### Credits
 
 - 🇫🇷 French: Cookie Kiro (Cookikui)
-- 🇷🇺 Russian: JudeDM, Luna (NightyCloud)
+- 🇷🇺 Russian: JudeDM, Крутой Бо (arturfomenko8), Luna (NightyCloud)
 - 🇩🇪 German: Carlos Diener (carlos.diener), Fabian9799, julix00
 - 🇸🇦 Arabic: Raphael Santiago (raphael.santiago.53)
 - 🇧🇷 Brazilian Portuguese: leo0six
