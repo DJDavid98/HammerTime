@@ -19,11 +19,22 @@ console.info('Generating social previews…');
   const fontFamily = 'Source Code Pro';
   const fontStyle = 'normal';
   const fontWeight = '600';
-  const fontPath = await fs.realpath(path.join(fontPackagePath, 'TTF', `SourceCodePro-Semibold.ttf`));
+  const fontPath = await fs.realpath(path.join(fontPackagePath, 'TTF', 'SourceCodePro-Semibold.ttf'));
   registerFont(fontPath, {
     family: fontFamily,
     style: fontStyle,
     weight: fontWeight,
+  });
+
+  const jaFontPackagePath = path.join(nodeModulesPath, 'noto-sans-japanese');
+  const jaFontFamily = 'NotoSansJP';
+  const jaFontStyle = 'normal';
+  const jaFontWeight = '600';
+  const jaFontPath = await fs.realpath(path.join(jaFontPackagePath, 'fonts', 'NotoSansJP-Regular.otf'));
+  registerFont(jaFontPath, {
+    family: jaFontFamily,
+    style: jaFontStyle,
+    weight: jaFontWeight,
   });
 
   const latestTimezoneData = require('moment-timezone/data/packed/latest.json');
@@ -70,7 +81,7 @@ console.info('Generating social previews…');
       ];
       const lineHeight = 80;
       const offsetLineHeight = lineHeight * 1.1;
-      socialCanvasCtx.font = `${lineHeight}px ${fontFamily}`;
+      socialCanvasCtx.font = `${lineHeight}px ${fontFamily}, ${jaFontFamily}`;
       socialCanvasCtx.textAlign = 'center';
       socialCanvasCtx.fillStyle = '#dcddde';
       const textCenterX = Math.floor((socialCanvasWidth / 5) * (isRtl ? 2 : 3));
