@@ -1,0 +1,28 @@
+{
+  "seoDescription": "Discordメッセージのタイムスタンプを生成できる",
+  "howTo": "日付を選び、 {{syntaxColName}} 列から自由のタイムスタンプをコピーし、あなたのメッセージにどこにでもの貼り付けができます。 結果は、みんながいるタイムゾーンに基づいて表示される動的タイムスタンプになります。",
+  "input": {
+    "date": "日付と時刻",
+    "timezone": "タイムゾーン"
+  },
+  "buttons": {
+    "copy": "クリップボードにコピー",
+    "setCurrentTime": "今の時間に変える",
+    "lock": "リンクでタイムスタンプをセーブ",
+    "unlock": "タイムスタンプをアンロック"
+  },
+  "table": {
+    "syntax": "メッセージの構文",
+    "example": "例"
+  },
+  "changeLanguage": "言語を変える",
+  "current": "ただ今",
+  "notFound": {
+    "heading": "見つかりませんでした",
+    "content": "ここは何もありません"
+  },
+  "builtWith": "このサイトは<1>Font Awesome Free</1>で作っております",
+  "openSource": "オープンソース",
+  "viewSource": "ソースコードをアクセス",
+  "notAffiliated": "このサイトはDiscordと繋がってません。"
+}
