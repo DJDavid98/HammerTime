@@ -42,5 +42,5 @@ English and Hungarian translations have been included, so no translators will be
 - 🇸🇪 Swedish: Liggliluff
 - 🇧🇬 Bulgarian: Rxshi
 - 🇹🇷 Turkish: [@tututuana](https://github.com/tututuana)
-- 🇯🇵 Japanese: TheOnlyRAK
+- 🇯🇵 Japanese: sjkim04, TheOnlyRAK
 - 🇰🇷 Korean: sjkim04

@@ -7,7 +7,7 @@
   },
   "buttons": {
     "copy": "クリップボードにコピー",
-    "setCurrentTime": "今の時間に変える",
+    "setCurrentTime": "現在時刻にする",
     "lock": "リンクでタイムスタンプをセーブ",
     "unlock": "タイムスタンプをアンロック"
   },
@@ -16,13 +16,13 @@
     "example": "例"
   },
   "changeLanguage": "言語を変える",
-  "current": "ただ今",
+  "current": "現在",
   "notFound": {
     "heading": "見つかりませんでした",
     "content": "ここは何もありません"
   },
-  "builtWith": "このサイトは<1>Font Awesome Free</1>で作っております",
+  "builtWith": "<1>Font Awesome Free</1>を使って作成",
   "openSource": "オープンソース",
-  "viewSource": "ソースコードをアクセス",
-  "notAffiliated": "このサイトはDiscordと繋がってません。"
+  "viewSource": "ソースコードを見る",
+  "notAffiliated": "このサイトとDiscordは関係していません。"
 }
