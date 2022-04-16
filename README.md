@@ -43,3 +43,4 @@ English and Hungarian translations have been included, so no translators will be
 - 🇧🇬 Bulgarian: Rxshi
 - 🇹🇷 Turkish: [@tututuana](https://github.com/tututuana)
 - 🇯🇵 Japanese: sjkim04, TheOnlyRAK
+- 🇰🇷 Korean: sjkim04

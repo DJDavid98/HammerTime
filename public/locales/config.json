@@ -69,6 +69,10 @@
       "nativeName": "日本語",
       "countryCode": "JP"
     },
+    "ko": {
+      "nativeName": "한국어",
+      "countryCode": "KR"
+    },
     "ar": {
       "nativeName": "اللغة العربية",
       "countryCode": "AE",
