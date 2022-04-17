@@ -81,8 +81,12 @@ export const IndexPage: VFC<IndexPageProps> = ({ tzNames }) => {
     [setDateTimeString],
   );
   const setTimeNow = useCallback(() => {
-    setDateTimeString(momentToTimeInputValue());
-  }, [setDateTimeString]);
+    // Get local time zone
+    const guessed = moment.tz.guess();
+    // Create a timestamp in local timezone and convert it to selected timezone
+    const value = moment.tz(guessed).tz(timezone);
+    setDateTimeString(momentToTimeInputValue(value));
+  }, [setDateTimeString, timezone]);
 
   useEffect(() => {
     let clientMoment: Moment | undefined;
