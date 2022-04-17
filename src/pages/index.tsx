@@ -47,8 +47,6 @@ export const IndexPage: VFC<IndexPageProps> = ({ tzNames }) => {
   }, [timestampQuery]);
   const [timestamp, setTimestamp] = useState<Moment | null>(null);
   const timestampInSeconds = useMemo(() => String(timestamp?.unix() || '0'), [timestamp]);
-  const setTimeButtonRef = useRef<HTMLButtonElement>(null);
-  const lockButtonRef = useRef<HTMLButtonElement>(null);
 
   const handleTimezoneChange = useMemo(
     () =>
@@ -127,6 +125,39 @@ export const IndexPage: VFC<IndexPageProps> = ({ tzNames }) => {
   const lockButtonTooltipText = t(fixedTimestamp ? 'common:buttons.unlock' : 'common:buttons.lock', '');
   const setTimeButtonTooltipText = t('common:buttons.setCurrentTime', '');
 
+  const ButtonsComponent = useMemo(
+    (): VFC => () => {
+      // eslint-disable-next-line react-hooks/rules-of-hooks
+      const setTimeButtonRef = useRef<HTMLButtonElement>(null);
+      // eslint-disable-next-line react-hooks/rules-of-hooks
+      const lockButtonRef = useRef<HTMLButtonElement>(null);
+
+      return (
+        <FormGroup>
+          <Button size="lg" className="me-2" onClick={setTimeNow} disabled={fixedTimestamp} innerRef={setTimeButtonRef}>
+            <FontAwesomeIcon icon="clock-rotate-left" />
+          </Button>
+          {Boolean(setTimeButtonTooltipText) && (
+            <UncontrolledTooltip target={setTimeButtonRef} fade={false}>
+              {setTimeButtonTooltipText}
+            </UncontrolledTooltip>
+          )}
+          <Link href={fixedTimestamp ? '/' : `/?${TS_QUERY_PARAM}=${timestampInSeconds}`} passHref>
+            <Button tag="a" innerRef={lockButtonRef} size="lg" color={fixedTimestamp ? 'danger' : 'info'}>
+              <FontAwesomeIcon icon={fixedTimestamp ? 'unlock' : 'lock'} />
+            </Button>
+          </Link>
+          {Boolean(lockButtonTooltipText) && (
+            <UncontrolledTooltip target={lockButtonRef} fade={false}>
+              {({ update }) => <TooltipContent update={update}>{lockButtonTooltipText}</TooltipContent>}
+            </UncontrolledTooltip>
+          )}
+        </FormGroup>
+      );
+    },
+    [fixedTimestamp, lockButtonTooltipText, setTimeButtonTooltipText, setTimeNow, timestampInSeconds],
+  );
+
   return (
     <Layout>
       <AppContainer bg="discord">
@@ -147,28 +178,8 @@ export const IndexPage: VFC<IndexPageProps> = ({ tzNames }) => {
           timezone={timezone}
           timezoneNames={timezoneNames}
           fixedTimestamp={fixedTimestamp}
-        >
-          <FormGroup>
-            <Button size="lg" className="me-2" onClick={setTimeNow} disabled={fixedTimestamp} innerRef={setTimeButtonRef}>
-              <FontAwesomeIcon icon="clock-rotate-left" />
-            </Button>
-            {Boolean(setTimeButtonTooltipText) && (
-              <UncontrolledTooltip target={setTimeButtonRef} fade={false}>
-                {setTimeButtonTooltipText}
-              </UncontrolledTooltip>
-            )}
-            <Link href={fixedTimestamp ? '/' : `/?${TS_QUERY_PARAM}=${timestampInSeconds}`} passHref>
-              <Button tag="a" innerRef={lockButtonRef} size="lg" color={fixedTimestamp ? 'danger' : 'info'}>
-                <FontAwesomeIcon icon={fixedTimestamp ? 'unlock' : 'lock'} />
-              </Button>
-            </Link>
-            {Boolean(lockButtonTooltipText) && (
-              <UncontrolledTooltip target={lockButtonRef} fade={false}>
-                {({ update }) => <TooltipContent update={update}>{lockButtonTooltipText}</TooltipContent>}
-              </UncontrolledTooltip>
-            )}
-          </FormGroup>
-        </TimestampPicker>
+          ButtonsComponent={ButtonsComponent}
+        />
         <TimestampsTable {...commonProps} timestamp={timestamp} timeInSeconds={timestampInSeconds} />
       </AppContainer>
     </Layout>

@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { CombinedDateTimeInput } from 'components/CombinedDateTimeInput';
 import { DateTimeInput } from 'components/DateTimeInput';
 import styles from 'modules/TimestampPicker.module.scss';
-import React, { ChangeEventHandler, FC, MouseEventHandler, useCallback, useEffect, useMemo, useState } from 'react';
+import { ChangeEventHandler, MouseEventHandler, useCallback, useEffect, useMemo, useState, VFC, VoidFunctionComponent } from 'react';
 import { TFunction } from 'react-i18next';
 import Select from 'react-select';
 import { StylesConfig } from 'react-select/src/styles';
@@ -81,9 +81,10 @@ interface PropTypes {
   timeString: string;
   timezone: string;
   timezoneNames: TimezoneOptionType[];
+  ButtonsComponent: VoidFunctionComponent;
 }
 
-export const TimestampPicker: FC<PropTypes> = ({
+export const TimestampPicker: VFC<PropTypes> = ({
   changeTimezone,
   dateString,
   fixedTimestamp,
@@ -94,7 +95,7 @@ export const TimestampPicker: FC<PropTypes> = ({
   timeString,
   timezone,
   timezoneNames,
-  children,
+  ButtonsComponent,
 }) => {
   const handleTimezoneChange = useCallback(
     (selected: TimezoneOptionType | null) => {
@@ -200,11 +201,13 @@ export const TimestampPicker: FC<PropTypes> = ({
               isClearable
               isDisabled={fixedTimestamp}
             />
-            <div className="d-block d-xl-none mt-2">{children}</div>
+            <div className="d-block d-xl-none mt-2">
+              <ButtonsComponent />
+            </div>
           </FormGroup>
         </Col>
         <Col xs="auto" className="d-none d-xl-flex flex-row align-items-end">
-          {children}
+          <ButtonsComponent />
         </Col>
       </Row>
     </div>
