@@ -25,6 +25,10 @@
       "nativeName": "English, US",
       "countryCode": "US"
     },
+    "el": {
+      "nativeName": "Ελληνικά",
+      "countryCode": "GR"
+    },
     "es": {
       "nativeName": "Español",
       "countryCode": "ES",
