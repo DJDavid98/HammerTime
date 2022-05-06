@@ -45,3 +45,4 @@ English and Hungarian translations have been included, so no translators will be
 - 🇯🇵 Japanese: sjkim04, TheOnlyRAK
 - 🇰🇷 Korean: sjkim04
 - 🇬🇷 Greek: BelleBernice
+- 🇮🇩 Indonesian: Jackie (jackiecr2911)
