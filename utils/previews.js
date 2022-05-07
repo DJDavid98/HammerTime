@@ -37,6 +37,17 @@ console.info('Generating social previews…');
     weight: jaFontWeight,
   });
 
+  const koFontPackagePath = path.join(nodeModulesPath, '@kfonts', 'bm-euljiro');
+  const koFontFamily = '"배달의민족 을지로체 TTF", "배달의민족을지로체TTF", "bm-euljiro"';
+  const koFontStyle = 'normal';
+  const koFontWeight = '600';
+  const koFontPath = await fs.realpath(path.join(koFontPackagePath, 'BMEULJIROTTF.ttf'));
+  registerFont(koFontPath, {
+    family: koFontFamily,
+    style: koFontStyle,
+    weight: koFontWeight,
+  });
+
   const latestTimezoneData = require('moment-timezone/data/packed/latest.json');
   moment.tz.load(latestTimezoneData);
 
@@ -81,7 +92,7 @@ console.info('Generating social previews…');
       ];
       const lineHeight = 80;
       const offsetLineHeight = lineHeight * 1.1;
-      socialCanvasCtx.font = `${lineHeight}px ${fontFamily}, ${jaFontFamily}`;
+      socialCanvasCtx.font = `${lineHeight}px ${fontFamily}, ${jaFontFamily}, ${koFontFamily}`;
       socialCanvasCtx.textAlign = 'center';
       socialCanvasCtx.fillStyle = '#dcddde';
       const textCenterX = Math.floor((socialCanvasWidth / 5) * (isRtl ? 2 : 3));

@@ -22,7 +22,7 @@ necessary so that when new translations are needed for any potential new site fe
 everyone at once.
 
 [crowdin]: https://crowdin.com/project/hammertime
-[join our discord server]: https://hammertime.djdavid98.art/discord
+[join our discord server]: https://hammertime.cyou/discord
 [#translator-signup]: https://discord.com/channels/952258283882819595/952292965211074650
 
 English and Hungarian translations have been included, so no translators will be needed for these two languages.
@@ -42,4 +42,7 @@ English and Hungarian translations have been included, so no translators will be
 - 🇸🇪 Swedish: Liggliluff
 - 🇧🇬 Bulgarian: Rxshi
 - 🇹🇷 Turkish: [@tututuana](https://github.com/tututuana)
-- 🇯🇵 Japanese: TheOnlyRAK
+- 🇯🇵 Japanese: sjkim04, TheOnlyRAK
+- 🇰🇷 Korean: sjkim04
+- 🇬🇷 Greek: BelleBernice
+- 🇮🇩 Indonesian: Jackie (jackiecr2911)
