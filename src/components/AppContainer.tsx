@@ -17,7 +17,7 @@ const ContainerContent: FunctionComponent = ({ children }) => (
   </Row>
 );
 
-const AppContainerComponent: React.FC<PropTypes> = ({ bg, fluid, heading, children }) => (
+const AppContainerComponent: React.FC<PropTypes> = ({ bg = 'discord', fluid, heading, children }) => (
   <div className={classNames('py-4', bg && `bg-${bg}`)}>
     <Container fluid={fluid}>
       <ContainerContent>
