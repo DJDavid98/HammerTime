@@ -9,9 +9,9 @@ import bot from '../../public/bot.png';
 import textColor from '../../public/textcolor.png';
 import server from '../../public/server.png';
 
-export const UsefulLinks: VFC<{ t: TFunction }> = ({ t }) => (
+export const UsefulLinks: VFC<{ t: TFunction; leadText: string }> = ({ t, leadText }) => (
   <AppContainer>
-    <p className="text-center">{t('common:usefulLinks.lead')}</p>
+    <p className="text-center">{leadText}</p>
     <Row className={styles.links}>
       <Col xs="auto" className={styles.link}>
         <a href="/discord" target="_blank" rel="noopener noreferrer">

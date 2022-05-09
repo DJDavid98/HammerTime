@@ -123,8 +123,17 @@ export const IndexPage: VFC<IndexPageProps> = ({ tzNames }) => {
   }, [locale, t]);
 
   const fixedTimestamp = initialTimestamp !== null;
-  const lockButtonTooltipText = t(fixedTimestamp ? 'common:buttons.unlock' : 'common:buttons.lock', '');
-  const setTimeButtonTooltipText = t('common:buttons.setCurrentTime', '');
+  const { lockButtonTooltipText, setTimeButtonTooltipText, leadText } = useMemo(() => {
+    const options = {
+      defaultValue: false,
+      fallbackLng: [],
+    };
+    return {
+      lockButtonTooltipText: t(fixedTimestamp ? 'common:buttons.unlock' : 'common:buttons.lock', options),
+      setTimeButtonTooltipText: t('common:buttons.setCurrentTime', options),
+      leadText: t('common:usefulLinks.lead', options),
+    };
+  }, [fixedTimestamp, t]);
 
   const ButtonsComponent = useMemo(
     (): VFC => () => {
@@ -183,7 +192,7 @@ export const IndexPage: VFC<IndexPageProps> = ({ tzNames }) => {
         />
         <TimestampsTable {...commonProps} timestamp={timestamp} timeInSeconds={timestampInSeconds} />
       </AppContainer>
-      {locale.startsWith('en') && <UsefulLinks t={t} />}
+      {Boolean(leadText) && <UsefulLinks t={t} leadText={leadText} />}
     </Layout>
   );
 };
