@@ -1,0 +1,36 @@
+@import '../vars';
+
+.links {
+  justify-content: center;
+  align-items: stretch;
+  text-align: center;
+
+  .link {
+    figure {
+      margin-bottom: 0;
+    }
+
+    a {
+      border: 1px solid;
+      border-radius: 0.4rem;
+      display: flex;
+      height: 100%;
+      padding: 0.5rem;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      max-width: 280px;
+      color: $body-color;
+
+      .link-name {
+        margin-bottom: 0.5rem;
+
+        header {
+          font-weight: bold;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

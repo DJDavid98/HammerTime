@@ -15,6 +15,21 @@
     "syntax": "Chat syntax",
     "example": "Example result"
   },
+  "usefulLinks": {
+    "lead": "You may also find these useful:",
+    "server": {
+      "header": "Official HammerTime Server",
+      "p": "Discuss the website, test the syntax and suggest features"
+    },
+    "bot": {
+      "header": "HammerTime Bot <1>BETA</1>",
+      "p": "Generate timestamps with the <1>/timestamp</1> slash command"
+    },
+    "textColor": {
+      "header": "Rebane's <1>Colored</1> Text Generator",
+      "p": "A simple app that creates colored Discord messages using ANSI color codes"
+    }
+  },
   "changeLanguage": "Change language",
   "current": "Current",
   "notFound": {

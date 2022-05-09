@@ -5,6 +5,7 @@ import { Layout } from 'components/Layout';
 import { TimestampPicker } from 'components/TimestampPicker';
 import { TimestampsTable } from 'components/TimestampsTable';
 import { TooltipContent } from 'components/TooltipContent';
+import { UsefulLinks } from 'components/UsefulLinks';
 import { parseInt, throttle } from 'lodash';
 import moment, { Moment } from 'moment-timezone';
 import { GetStaticProps } from 'next';
@@ -160,7 +161,7 @@ export const IndexPage: VFC<IndexPageProps> = ({ tzNames }) => {
 
   return (
     <Layout>
-      <AppContainer bg="discord">
+      <AppContainer>
         <h1 className="text-center">
           <CustomIcon src="/logos/app.svg" alt="" />
           <span className="mx-3">{SITE_TITLE}</span>
@@ -182,6 +183,7 @@ export const IndexPage: VFC<IndexPageProps> = ({ tzNames }) => {
         />
         <TimestampsTable {...commonProps} timestamp={timestamp} timeInSeconds={timestampInSeconds} />
       </AppContainer>
+      {locale.startsWith('en') && <UsefulLinks t={t} />}
     </Layout>
   );
 };
