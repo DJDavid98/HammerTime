@@ -26,7 +26,7 @@
       "p": "Buat stempel waktu dengan perintah slash <1>/timestamp</1>"
     },
     "textColor": {
-      "header": "Generator Teks <1>Colored</1> Rebane",
+      "header": "Generator Teks <1>Berwarna</1> Rebane",
       "p": "Aplikasi sederhana yang membuat pesan Discord berwarna menggunakan kode warna ANSI"
     }
   },
