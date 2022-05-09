@@ -26,8 +26,8 @@
       "p": "Generate timestamps with the <1>/timestamp</1> slash command"
     },
     "textColor": {
-      "header": "Rebane's <1>Colored</1> Text Generator",
-      "p": "A simple app that creates colored Discord messages using ANSI color codes"
+      "header": "Rebane's <1>Coloured</1> Text Generator",
+      "p": "A simple app that creates coloured Discord messages using ANSI color codes"
     }
   },
   "changeLanguage": "Change language",
