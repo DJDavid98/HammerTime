@@ -15,6 +15,21 @@
     "syntax": "Chat syntaxis",
     "example": "Voorbeeld resultaat"
   },
+  "usefulLinks": {
+    "lead": "Dit is mogelijk ook handig:",
+    "server": {
+      "header": "Officiële HammerTime server",
+      "p": "Bespreek de website, test de syntaxis en stel nieuwe functies voor"
+    },
+    "bot": {
+      "header": "HammerTime bot <1>BETA</1>",
+      "p": "Genereer tijdsaanduidingen met de <1>/timestamp</1> opdracht"
+    },
+    "textColor": {
+      "header": "Rebane's <1>gekleurde</1> tekst generator",
+      "p": "Een eenvoudige app die gekleurde Discord-berichten maakt met ANSI-kleurcodes"
+    }
+  },
   "changeLanguage": "Wijzig taal",
   "current": "Huidig",
   "notFound": {

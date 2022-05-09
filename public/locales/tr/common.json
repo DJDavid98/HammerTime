@@ -15,6 +15,21 @@
     "syntax": "Sohbet sözdizimi",
     "example": "Örnek sonuç"
   },
+  "usefulLinks": {
+    "lead": "Bunları da faydalı bulabilirsiniz:",
+    "server": {
+      "header": "Resmi HammerTime Sunucusu",
+      "p": "Web sitesini tartışın, sözdizimini test edin ve özellikler önerin"
+    },
+    "bot": {
+      "header": "HammerTime Bot <1>BETA</1>",
+      "p": "<1>/timestamp</1> eğik çizgi komutuyla zaman damgaları oluşturun"
+    },
+    "textColor": {
+      "header": "Rebane'in <1>Renkli</1> Metin Oluşturucusu",
+      "p": "ANSI renk kodlarını kullanarak renkli Discord mesajları oluşturan basit bir uygulama"
+    }
+  },
   "changeLanguage": "Dili değiştir",
   "current": "Geçerli",
   "notFound": {

@@ -15,6 +15,21 @@
     "syntax": "メッセージの構文",
     "example": "例"
   },
+  "usefulLinks": {
+    "lead": "関連するもの",
+    "server": {
+      "header": "HammerTime公式サーバー",
+      "p": "サイトについての議論・タイムスタンプのテスト・機能のリクエストができます"
+    },
+    "bot": {
+      "header": "HammerTimeボット <1>BETA</1>",
+      "p": "<1>/timestamp</1>コマンドでのタイムスタンプの作成"
+    },
+    "textColor": {
+      "header": "Rebaneの<1>色付き</1>テキストジェネレーター",
+      "p": "ANSIカラーコードを使って、色を付けたDiscordメッセージを作るアプリ"
+    }
+  },
   "changeLanguage": "言語を変える",
   "current": "現在",
   "notFound": {
