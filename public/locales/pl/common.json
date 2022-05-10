@@ -15,6 +15,21 @@
     "syntax": "Składnia",
     "example": "Przykładowy wygląd"
   },
+  "usefulLinks": {
+    "lead": "Możesz również uznać to za przydatne:",
+    "server": {
+      "header": "Oficjalny serwer HammerTime",
+      "p": "Dyskusje na temat strony, testowanie składni i proponowanie nowych funkcji"
+    },
+    "bot": {
+      "header": "HammerTime Bot <1>BETA</1>",
+      "p": "Generuj znacznik czasu przy użyciu komendy <1>/timestamp</1>"
+    },
+    "textColor": {
+      "header": "Generator <1>Kolorowego</1> tekstu Rebane'a",
+      "p": "Prosta aplikacja do tworzenia kolorowych wiadomości na Discord przy użyciu kodów kolorów ANSI"
+    }
+  },
   "changeLanguage": "Zmień język",
   "current": "Aktualny",
   "notFound": {
