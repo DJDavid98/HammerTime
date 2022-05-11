@@ -27,7 +27,7 @@
     },
     "textColor": {
       "header": "Rebane's <1>Coloured</1> Text Generator",
-      "p": "A simple app that creates coloured Discord messages using ANSI color codes"
+      "p": "A simple app that creates coloured Discord messages using ANSI colour codes"
     }
   },
   "changeLanguage": "Change language",
