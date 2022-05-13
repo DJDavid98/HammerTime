@@ -11,7 +11,7 @@ import server from '../../public/server.png';
 
 export const UsefulLinks: VFC<{ t: TFunction; leadText: string }> = ({ t, leadText }) => (
   <AppContainer>
-    <p className="text-center">{leadText}</p>
+    <p className={styles.leadText}>{leadText}</p>
     <Row className={styles.links}>
       <Col xs="auto" className={styles.link}>
         <a href="/discord" target="_blank" rel="noopener noreferrer">

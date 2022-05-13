@@ -1,4 +1,12 @@
 @import '../vars';
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/mixins';
+@import '~bootstrap/scss/variables';
+
+.lead-text {
+  text-align: center;
+  margin-bottom: 0.25rem;
+}
 
 .links {
   justify-content: center;
@@ -6,6 +14,9 @@
   text-align: center;
 
   .link {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+
     figure {
       margin-bottom: 0;
     }
@@ -20,8 +31,11 @@
       justify-content: center;
       align-items: center;
       text-decoration: none;
-      max-width: 280px;
       color: $body-color;
+
+      @include media-breakpoint-up(md) {
+        max-width: 280px;
+      }
 
       .link-name {
         margin-bottom: 0.5rem;
