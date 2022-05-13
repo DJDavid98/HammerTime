@@ -84,6 +84,11 @@
       "nativeName": "اللغة العربية",
       "countryCode": "AE",
       "rtl": true
+    },
+    "he": {
+      "nativeName": "עִברִית",
+      "countryCode": "IL",
+      "rtl": true
     }
   }
 }
