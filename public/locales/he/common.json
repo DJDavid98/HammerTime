@@ -1,0 +1,43 @@
+{
+  "seoDescription": "צרו timestamps בשביל צ'אטים בדיסקורד",
+  "howTo": "בחרו תאריך, העתיקו את הtimestamp שיצא לכם מה {{syntaxColName}}, והדביקו בצ'אט שלכם. התוצאה תהיה timestamp דינמי שמראה את הזמן בהתאם לכל איזור של כל משתמש.",
+  "input": {
+    "date": "תאריך ושעה",
+    "timezone": "אזור זמן"
+  },
+  "buttons": {
+    "copy": "העתיקו ללוח",
+    "setCurrentTime": "קבע לזמן הנוכחי",
+    "lock": "נעל את הtimestamp בקישור",
+    "unlock": "פתח את הtimestamp"
+  },
+  "table": {
+    "syntax": "כתיבה בצ'אט",
+    "example": "דוגמא לתוצאה"
+  },
+  "usefulLinks": {
+    "lead": "אולי גם אלו יהיו שימושיים לכם:",
+    "server": {
+      "header": "השרת הרשמי של HammerTime",
+      "p": "דברו על האתר, בדקו את התחביר והציעו דברים חדשים"
+    },
+    "bot": {
+      "header": "HammerTime בוט<1>בטא</1>",
+      "p": "צרו timestamp עם הפקודת סלאש <1>/timestamp</1>"
+    },
+    "textColor": {
+      "header": "מייצר טקסט<1>צבעוני</1> של Rebane",
+      "p": "אפליקציה פשוטה שיוצרת הודעות דיסקורד צבעוניות באמצעות צבעי הקוד של ANSI"
+    }
+  },
+  "changeLanguage": "החליפו שפה",
+  "current": "נוכחי",
+  "notFound": {
+    "heading": "לא נמצא",
+    "content": "אין שום דברים לראות פה."
+  },
+  "builtWith": "אתר זה נבנה באמצעות <1>Font Awesome Free</1>",
+  "openSource": "תוכנה עם קוד-פתוח",
+  "viewSource": "צפו בקוד האתר",
+  "notAffiliated": "הפרויקט הזה הוא לא בשיתוף עם דיסקורד."
+}
