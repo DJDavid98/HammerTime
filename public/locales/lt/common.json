@@ -1,0 +1,43 @@
+{
+  "seoDescription": "Laiko žymų generatorius „Discord“ pranešimuose",
+  "howTo": "Pasirink datą, nukopijuok norimą laiko žymą iš skilties {{syntaxColName}} ir įklijuok ją bet kurioje žinutėje. Rezultatas bus dinaminė laiko žymas, kuri bus rodoma skirtingai kiekvienam vartotojui pagal jo laiko juostą.",
+  "input": {
+    "date": "Data ir laikas",
+    "timezone": "Laiko juosta"
+  },
+  "buttons": {
+    "copy": "Kopijuoti į iškarpinę",
+    "setCurrentTime": "Nustatyti į dabartinį laiką",
+    "lock": "Užrakinti laiko žymą per URL",
+    "unlock": "Atrakinti laiko žymą"
+  },
+  "table": {
+    "syntax": "Pokalbio sintaksė",
+    "example": "Pavyzdinis rezultatas"
+  },
+  "usefulLinks": {
+    "lead": "Galbūt tau taip pat naudingos šios nuorodos:",
+    "server": {
+      "header": "Oficialus „HammerTime“ serveris",
+      "p": "Aptark tinklalapį, patikrink sintaksę ir siūlyk funkcijas"
+    },
+    "bot": {
+      "header": "„HammerTime“ botas <1>BETA VERSIJA</1>",
+      "p": "Generuok laiko žymas naudojant <1>/timestamp</1> komandą"
+    },
+    "textColor": {
+      "header": "<1>Spalvoto</1> teksto generatorius, sukurtas Rebane",
+      "p": "Paprasta programėlė, kuri sukuria spalvotus „Discord“ pranešimus naudodama ANSI kodus"
+    }
+  },
+  "changeLanguage": "Pakeisti kalbą",
+  "current": "Dabartinė kalba",
+  "notFound": {
+    "heading": "Rasti nepavyko",
+    "content": "Čia nėra, ką pamatyti."
+  },
+  "builtWith": "Tinklalapis buvo sukurtas naudojant <1>Font Awesome Free</1>",
+  "openSource": "Atvirojo kodo programa",
+  "viewSource": "Peržiūrėti išeitinį kodą",
+  "notAffiliated": "Šitas projektas nėra susijęs su „Discord“."
+}

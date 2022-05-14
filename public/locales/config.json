@@ -47,6 +47,10 @@
       "nativeName": "Italiano",
       "countryCode": "IT"
     },
+    "lt": {
+      "nativeName": "Lietuviškai",
+      "countryCode": "LT"
+    },
     "nl": {
       "nativeName": "Nederlands",
       "countryCode": "NL"
