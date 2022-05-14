@@ -10,7 +10,8 @@
     },
     "bg": {
       "nativeName": "Български",
-      "countryCode": "BG"
+      "countryCode": "BG",
+      "percent": 65
     },
     "de": {
       "nativeName": "Deutsch",
@@ -36,7 +37,8 @@
     },
     "fr": {
       "nativeName": "Français",
-      "countryCode": "FR"
+      "countryCode": "FR",
+      "percent": 75
     },
     "hu": {
       "nativeName": "Magyar",
@@ -61,12 +63,14 @@
     },
     "ru": {
       "nativeName": "Русский",
-      "countryCode": "RU"
+      "countryCode": "RU",
+      "percent": 65
     },
     "sv": {
       "nativeName": "Svenska",
       "countryCode": "SE",
-      "crowdinLocale": "sv-SE"
+      "crowdinLocale": "sv-SE",
+      "percent": 63
     },
     "tr": {
       "nativeName": "Türkçe",
@@ -78,7 +82,8 @@
     },
     "ko": {
       "nativeName": "한국어",
-      "countryCode": "KR"
+      "countryCode": "KR",
+      "percent": 65
     },
     "ar": {
       "nativeName": "اللغة العربية",
