@@ -10,8 +10,7 @@
     },
     "bg": {
       "nativeName": "Български",
-      "countryCode": "BG",
-      "percent": 65
+      "countryCode": "BG"
     },
     "de": {
       "nativeName": "Deutsch",
