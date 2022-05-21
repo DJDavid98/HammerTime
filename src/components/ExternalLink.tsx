@@ -1,6 +1,6 @@
+import { Anchor } from '@mantine/core';
 import classNames from 'classnames';
 import React, { ComponentType, ElementType, forwardRef, ForwardRefRenderFunction, memo, ReactNode, ReactNodeArray } from 'react';
-import { Nullable } from 'src/types/common';
 
 export interface ExternalLinkProps {
   children?: ReactNode | ReactNodeArray;
@@ -9,26 +9,28 @@ export interface ExternalLinkProps {
   blank?: boolean;
   className?: string;
   title?: string;
-  rel?: Nullable<string>;
+  rel?: string;
   ref?: string;
 }
 
 const ExternalLinkComponent: ForwardRefRenderFunction<HTMLAnchorElement, ExternalLinkProps> = (
-  { children, tag = null, href, className, blank = true, title, rel = null },
+  { children, href, className, blank = true, title, rel },
   ref,
 ) => {
-  const Tag = tag || 'a';
   const targetProps = blank
     ? {
         target: '_blank',
         rel: classNames(rel, 'noopener noreferrer'),
       }
     : { rel };
-  const additionalProps = { ...targetProps, ref };
+  const additionalProps = {
+    ...targetProps,
+    ref,
+  };
   return (
-    <Tag href={href} className={className} title={title} {...additionalProps}>
+    <Anchor href={href} className={className} title={title} {...additionalProps}>
       {children}
-    </Tag>
+    </Anchor>
   );
 };
 

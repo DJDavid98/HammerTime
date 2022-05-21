@@ -1,29 +1,16 @@
 @import '../vars';
-@import '~bootstrap/scss/functions';
-@import '~bootstrap/scss/mixins';
-@import '~bootstrap/scss/variables';
 
-.datepicker {
+.timestamp-picker {
   position: relative;
   z-index: 3;
   margin-bottom: 1rem;
 
-  .form-label {
-    width: 100%;
-  }
-
-  .input-addon {
-    cursor: pointer;
-  }
-
   input[disabled] {
-    color: rgba($input-color, 0.75);
     pointer-events: none;
   }
 }
 
-:root[dir='rtl'] {
-  .datepicker .form-label {
-    text-align: right;
-  }
+// am/pm control
+.time-input-control > input:nth-of-type(4):last-child {
+  min-width: 2em;
 }
