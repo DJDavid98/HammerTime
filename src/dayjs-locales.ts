@@ -1,0 +1,25 @@
+import 'dayjs/locale/ar';
+import 'dayjs/locale/de';
+import 'dayjs/locale/en-gb';
+import 'dayjs/locale/fr';
+import 'dayjs/locale/hu';
+import 'dayjs/locale/ms';
+import 'dayjs/locale/nl';
+import 'dayjs/locale/pl';
+import 'dayjs/locale/pt-br';
+import 'dayjs/locale/ru';
+import 'dayjs/locale/es';
+import 'dayjs/locale/it';
+import 'dayjs/locale/sv';
+import 'dayjs/locale/bg';
+import 'dayjs/locale/tr';
+import 'dayjs/locale/ja';
+import 'dayjs/locale/ko';
+import 'dayjs/locale/el';
+import 'dayjs/locale/id';
+import 'dayjs/locale/he';
+import 'dayjs/locale/lt';
+import moment from 'moment-timezone';
+import latestTimezoneData from 'moment-timezone/data/packed/latest.json';
+
+moment.tz.load(latestTimezoneData);

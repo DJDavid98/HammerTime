@@ -1,0 +1,9 @@
+.shell-contents > * {
+  max-width: 1076px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}

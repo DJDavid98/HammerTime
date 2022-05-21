@@ -1,11 +1,7 @@
 @import '../vars';
 @import '../functions';
-@import '~bootstrap/scss/functions';
-@import '~bootstrap/scss/mixins';
-@import '~bootstrap/scss/variables';
 
 $footer-separator-size: rem(1px);
-$footer-items-inline-breakpoint: lg;
 
 .footer {
   bottom: 0;
@@ -14,6 +10,7 @@ $footer-items-inline-breakpoint: lg;
   width: 100%;
   box-sizing: border-box;
   font-size: 0;
+  flex-flow: row wrap;
 
   .footer-item {
     font-size: 1rem;
@@ -23,26 +20,20 @@ $footer-items-inline-breakpoint: lg;
   .footer-separator {
     display: inline-block;
     width: $footer-separator-size;
-    height: #{$line-height-base * 1rem};
+    height: 1.5rem;
     border-right: $footer-separator-size solid rgba(gray, 0.5);
     margin: 0 0.5rem;
-    position: relative;
-    top: 0.4rem;
   }
 
-  @include media-breakpoint-down($footer-items-inline-breakpoint) {
+  @media (max-width: 767px) {
+    flex-flow: column nowrap;
+
     .footer-item:not(:last-child) {
       margin-bottom: rem(5px);
     }
 
     .footer-separator {
       display: none;
-    }
-  }
-
-  @include media-breakpoint-up($footer-items-inline-breakpoint) {
-    .footer-item {
-      display: inline;
     }
   }
 }

@@ -1,76 +1,53 @@
 @import '../vars';
-@import '~bootstrap/scss/functions';
-@import '~bootstrap/scss/mixins';
-@import '~bootstrap/scss/variables';
 
 .lead-text {
   text-align: center;
   margin-bottom: 0.25rem;
 }
 
-.links {
-  justify-content: center;
-  align-items: stretch;
+.link {
+  flex: 1 1 auto;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 
-  .link {
-    flex: 0 1 auto;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-    $padding: 20px;
+  a {
+    border-radius: 0.4rem;
+    display: flex;
+    height: 100%;
+    flex-flow: column nowrap;
+    justify-content: center;
+    text-decoration: none !important;
+    max-width: 175px;
 
-    figure {
-      margin-bottom: 0;
+    @media (min-width: 576px) {
+      max-width: 225px;
     }
 
-    a {
-      border-radius: 0.4rem;
+    @media (min-width: 768px) {
+      max-width: 280px;
+    }
+
+    .card-top-half {
+      flex: 0 0 auto;
+    }
+
+    .card-bottom-half {
+      flex: 1 1 auto;
       display: flex;
-      height: 100%;
-      padding: $padding;
       flex-flow: column nowrap;
       justify-content: center;
-      text-decoration: none !important;
-      color: $body-color;
-      background-color: #25262b;
-      max-width: 175px;
-      overflow: hidden;
+      align-items: center;
+    }
 
-      figure {
-        display: contents;
-      }
+    .link-name {
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+      text-decoration: underline;
+      text-align: center;
+    }
 
-      @media (min-width: 576px) {
-        max-width: 225px;
-      }
-
-      @media (min-width: 768px) {
-        max-width: 280px;
-      }
-
-      .card-top-half {
-        flex: 0 0 auto;
-        margin: (-$padding) (-$padding) 0;
-      }
-
-      .card-bottom-half {
-        flex: 1 1 auto;
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .link-name {
-        margin-bottom: 0.5rem;
-        font-weight: bold;
-        text-decoration: underline;
-        text-align: center;
-      }
-
-      .link-desc {
-        margin-bottom: 0;
-        text-align: center;
-      }
+    .link-desc {
+      text-align: center;
     }
   }
 }
