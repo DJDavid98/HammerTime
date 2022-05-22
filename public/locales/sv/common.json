@@ -5,9 +5,30 @@
     "date": "Datum och tid",
     "timezone": "Tidszon"
   },
+  "buttons": {
+    "copy": "Kopiera till urklipp",
+    "setCurrentTime": "Återställ till aktuell tid",
+    "lock": "Lås tidsstämpel via URL",
+    "unlock": "Lås upp tidsstämpel"
+  },
   "table": {
     "syntax": "Syntax",
     "example": "Resultat"
+  },
+  "usefulLinks": {
+    "lead": "Du kanske även gillar dessa:",
+    "server": {
+      "header": "Officiell HammerTime-server",
+      "p": "Diskutera webbsidan, testa syntax och föreslå programfunktioner"
+    },
+    "bot": {
+      "header": "HammerTime-bot <1>BETA</1>",
+      "p": "Generera tidsstämplar med kommandot <1>/timestamp</1>"
+    },
+    "textColor": {
+      "header": "Rebanes <1>färgade</1> textgenerator",
+      "p": "En simpel app som skapar färgade Discord-meddelanden med ANSI-färgkoder"
+    }
   },
   "changeLanguage": "Byt språk",
   "current": "Nuvarande",
