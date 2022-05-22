@@ -25,3 +25,8 @@
     user-select: all;
   }
 }
+
+// For parity, remove after Mantine redesign
+.table tbody tr:last-child > * {
+  border-bottom-width: 0 !important;
+}

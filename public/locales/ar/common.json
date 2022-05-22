@@ -31,7 +31,6 @@
     }
   },
   "changeLanguage": "تغيير اللغة",
-  "current": "اللغة الحالية",
   "notFound": {
     "heading": "لم يتم إيجاد الموقع",
     "content": "لا يوجد شيء هنا."

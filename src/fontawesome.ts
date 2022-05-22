@@ -3,6 +3,7 @@ import { faDiscord, faEthereum, faGithub, faOsi } from '@fortawesome/free-brands
 import { faCalendar as farCalendar } from '@fortawesome/free-regular-svg-icons';
 import {
   faCalendar as fasCalendar,
+  faCaretUp,
   faClipboard,
   faClock,
   faClockRotateLeft,
@@ -41,4 +42,5 @@ library.add(
   faUserClock,
   farCalendar,
   fasCalendar,
+  faCaretUp,
 );

@@ -11,39 +11,65 @@
 .links {
   justify-content: center;
   align-items: stretch;
-  text-align: center;
 
   .link {
+    flex: 0 1 auto;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
+    $padding: 20px;
 
     figure {
       margin-bottom: 0;
     }
 
     a {
-      border: 1px solid;
       border-radius: 0.4rem;
       display: flex;
       height: 100%;
-      padding: 0.5rem;
+      padding: $padding;
       flex-flow: column nowrap;
       justify-content: center;
-      align-items: center;
-      text-decoration: none;
+      text-decoration: none !important;
       color: $body-color;
+      background-color: #25262b;
+      max-width: 175px;
+      overflow: hidden;
 
-      @include media-breakpoint-up(md) {
+      figure {
+        display: contents;
+      }
+
+      @media (min-width: 576px) {
+        max-width: 225px;
+      }
+
+      @media (min-width: 768px) {
         max-width: 280px;
+      }
+
+      .card-top-half {
+        flex: 0 0 auto;
+        margin: (-$padding) (-$padding) 0;
+      }
+
+      .card-bottom-half {
+        flex: 1 1 auto;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
       }
 
       .link-name {
         margin-bottom: 0.5rem;
+        font-weight: bold;
+        text-decoration: underline;
+        text-align: center;
+      }
 
-        header {
-          font-weight: bold;
-          text-decoration: underline;
-        }
+      .link-desc {
+        margin-bottom: 0;
+        text-align: center;
       }
     }
   }

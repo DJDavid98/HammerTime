@@ -153,7 +153,6 @@ export const TimestampsTable: VFC<PropTypes> = ({ t, locale, timestamp, timeInSe
               >
                 <Col xs={12} md="auto" lg={12} className={`mb-3 mb-${extendFromBreakpoint}-0`}>
                   <CopySyntax t={t} syntax={value.syntax} />
-                  {value.syntax.endsWith(':f>') && <CopySyntax t={t} syntax={value.syntax.replace(/:f>$/, '>')} className="mt-2" />}
                 </Col>
                 <Col className={`d-${extendFromBreakpoint}-none`}>
                   <p className="flex-grow-1">

@@ -31,7 +31,6 @@
     }
   },
   "changeLanguage": "Выбрать язык",
-  "current": "Выбран",
   "notFound": {
     "heading": "Не найдено",
     "content": "Здесь пусто."

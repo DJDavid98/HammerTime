@@ -31,7 +31,6 @@
     }
   },
   "changeLanguage": "言語を変える",
-  "current": "現在",
   "notFound": {
     "heading": "見つかりませんでした",
     "content": "ここは何もありません"

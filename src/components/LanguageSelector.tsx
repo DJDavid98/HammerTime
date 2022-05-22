@@ -18,24 +18,30 @@ export const LanguageSelector: VFC<{ className?: string }> = ({ className }) => 
     t,
     i18n: { language },
   } = useTranslation();
+  const sortedLanguages = useMemo(() => toPairs(LANGUAGES).sort(([, a], [, b]) => a.nativeName.localeCompare(b.nativeName)), []);
 
   const currentLanguage = useMemo(() => (language in LANGUAGES ? LANGUAGES[language as AvailableLanguage] : undefined), [language]);
+
+  const languagePercent = currentLanguage?.percent;
 
   const nativeLangName = useMemo(() => (currentLanguage ? currentLanguage.nativeName : t('common:changeLanguage')), [currentLanguage, t]);
 
   return (
     <>
       <UncontrolledDropdown className={classNames(className, styles.languageSelector)}>
-        <DropdownToggle color="link" caret>
-          <FontAwesomeIcon icon="globe" />
+        <DropdownToggle color="link" className="fw-bold text-decoration-none">
+          {currentLanguage ? <Flag country={currentLanguage.countryCode} /> : <FontAwesomeIcon icon="globe" />}
           <span className={styles.currentLangName}>{nativeLangName}</span>
+          <FontAwesomeIcon icon="caret-up" />
         </DropdownToggle>
         <DropdownMenu end dark>
           <DropdownItem header className={styles.item}>
             {t('common:changeLanguage')}
           </DropdownItem>
-          {toPairs(LANGUAGES).map(([key, value]) => {
-            const isCurrent = language === key;
+          {sortedLanguages.map(([key, value]) => {
+            if (language === key) {
+              return null;
+            }
             return (
               <Link
                 key={key}
@@ -47,11 +53,7 @@ export const LanguageSelector: VFC<{ className?: string }> = ({ className }) => 
                 passHref
                 shallow={false}
               >
-                <DropdownItem
-                  tag="a"
-                  className={classNames(styles.item, { [styles.current]: isCurrent })}
-                  dir={getDirAttribute(key as AvailableLanguage)}
-                >
+                <DropdownItem tag="a" className={styles.item} dir={getDirAttribute(key as AvailableLanguage)}>
                   <Flag country={value.countryCode} />
                   <span className={styles.nativeName}>{value.nativeName}</span>
                   {typeof value.percent === 'number' && (
@@ -59,15 +61,15 @@ export const LanguageSelector: VFC<{ className?: string }> = ({ className }) => 
                       <FontAwesomeIcon icon="life-ring" />
                     </span>
                   )}
-                  <span className={styles.currentLabel}>{isCurrent && t('common:current')}</span>
                 </DropdownItem>
               </Link>
             );
           })}
         </DropdownMenu>
       </UncontrolledDropdown>
-
-      <UnfinishedTranslationsLink percent={currentLanguage?.percent} crowdinLocale={currentLanguage?.crowdinLocale || language} />
+      {typeof languagePercent === 'number' && (
+        <UnfinishedTranslationsLink percent={currentLanguage?.percent} crowdinLocale={currentLanguage?.crowdinLocale || language} />
+      )}
     </>
   );
 };
