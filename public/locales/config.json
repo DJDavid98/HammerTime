@@ -65,8 +65,7 @@
     },
     "ru": {
       "nativeName": "Русский",
-      "countryCode": "RU",
-      "percent": 65
+      "countryCode": "RU"
     },
     "sv": {
       "nativeName": "Svenska",
