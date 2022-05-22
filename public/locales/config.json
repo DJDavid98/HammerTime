@@ -71,8 +71,7 @@
     "sv": {
       "nativeName": "Svenska",
       "countryCode": "SE",
-      "crowdinLocale": "sv-SE",
-      "percent": 63
+      "crowdinLocale": "sv-SE"
     },
     "tr": {
       "nativeName": "Türkçe",
