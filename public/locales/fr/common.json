@@ -15,6 +15,21 @@
     "syntax": "Syntaxe du chat",
     "example": "Exemple du résultat"
   },
+  "usefulLinks": {
+    "lead": "Cela pourrai vous être utile :",
+    "server": {
+      "header": "Le serveur officiel de HammerTime",
+      "p": "Discutez du site, testez la syntaxe et suggérez de nouvelles fonctionnalités"
+    },
+    "bot": {
+      "header": "Bot HammerTime <1>BETA</1>",
+      "p": "Générez un code d'horodatage avec la commandes Slash <1>/timestamp</1>"
+    },
+    "textColor": {
+      "header": "Le générateur de texte <1>coloré</1> de Rebane",
+      "p": "Une app simple qui crée des messages Discord colorés grâce aux codes couleur ANSI"
+    }
+  },
   "changeLanguage": "Changer la langue",
   "current": "Actif",
   "notFound": {

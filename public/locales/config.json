@@ -36,8 +36,7 @@
     },
     "fr": {
       "nativeName": "Français",
-      "countryCode": "FR",
-      "percent": 75
+      "countryCode": "FR"
     },
     "hu": {
       "nativeName": "Magyar",
