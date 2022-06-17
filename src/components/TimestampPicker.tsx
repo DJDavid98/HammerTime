@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Group, Select } from '@mantine/core';
 import { DatePicker, TimeInput } from '@mantine/dates';
 import styles from 'modules/TimestampPicker.module.scss';
-import moment, { Moment } from 'moment';
+import moment from 'moment';
 import { useCallback, useMemo, VFC, VoidFunctionComponent } from 'react';
 import { TFunction } from 'react-i18next';
 
@@ -15,11 +15,13 @@ interface TimezoneOptionType {
 
 interface PropTypes {
   locale: string;
+  dateString: string;
   changeTimezone: (tz: null | string) => void;
-  timestamp: Moment | null;
   fixedTimestamp: boolean;
-  handleDateChange: (value: Date | null) => void;
+  handleDateChange: (value: string | null) => void;
+  handleTimeChange: (value: string | null) => void;
   t: TFunction;
+  timeString: string;
   timezone?: string;
   defaultTimezone: string;
   timezoneNames: TimezoneOptionType[];
@@ -28,10 +30,12 @@ interface PropTypes {
 
 export const TimestampPicker: VFC<PropTypes> = ({
   changeTimezone,
-  timestamp,
+  dateString,
   fixedTimestamp,
   handleDateChange: onDateChange,
+  handleTimeChange: onTimeChange,
   t,
+  timeString,
   locale,
   timezone,
   defaultTimezone,
@@ -44,10 +48,23 @@ export const TimestampPicker: VFC<PropTypes> = ({
     },
     [changeTimezone],
   );
-  const date = useMemo(() => timestamp?.toDate(), [timestamp]);
+  const date = useMemo(() => new Date(`${dateString}T${timeString}`), [dateString, timeString]);
   const timeFormat = useMemo(() => (moment.localeData(locale).longDateFormat('LT').includes('A') ? '12' : '24'), [locale]);
+  const amLabel = useMemo(() => moment.localeData(locale).meridiem(1, 0, true), [locale]);
+  const pmLabel = useMemo(() => moment.localeData(locale).meridiem(13, 0, true), [locale]);
 
-  const handleDateChange = useCallback((value: Date | null) => onDateChange(value), [onDateChange]);
+  const handleDateChange = useCallback(
+    (value: Date | null) => {
+      onDateChange(value && moment(value).format('YYYY-MM-DD'));
+    },
+    [onDateChange],
+  );
+  const handleTimeChange = useCallback(
+    (value: Date | null) => {
+      onTimeChange(value && moment(value).format('HH:mm:ss'));
+    },
+    [onTimeChange],
+  );
 
   return (
     <Group align="end" className={styles.timestampPicker}>
@@ -65,12 +82,14 @@ export const TimestampPicker: VFC<PropTypes> = ({
         value={date}
         icon={<FontAwesomeIcon icon="clock" fixedWidth />}
         size="lg"
-        onChange={handleDateChange}
+        onChange={handleTimeChange}
         withSeconds
         format={timeFormat}
         disabled={fixedTimestamp}
         clearable={false}
         classNames={timeInputClassNames}
+        amLabel={amLabel}
+        pmLabel={pmLabel}
       />
       <Select
         label={t('common:input.timezone')}

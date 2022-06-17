@@ -19,7 +19,8 @@ import 'dayjs/locale/el';
 import 'dayjs/locale/id';
 import 'dayjs/locale/he';
 import 'dayjs/locale/lt';
-import moment from 'moment-timezone';
-import latestTimezoneData from 'moment-timezone/data/packed/latest.json';
+import { extend } from 'dayjs';
 
-moment.tz.load(latestTimezoneData);
+import localizedFormat from 'dayjs/plugin/localizedFormat';
+
+extend(localizedFormat);

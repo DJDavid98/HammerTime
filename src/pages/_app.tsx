@@ -9,7 +9,7 @@ import 'src/app.scss';
 import { SITE_TITLE } from 'src/config';
 import 'src/fontawesome';
 import { assembleSeoUrl, getDirAttribute, useLocale } from 'src/util/common';
-import { getEmotionProps, themeOverride } from 'src/util/styling';
+import { getEmotionProps, styleOverride, themeOverride } from 'src/util/styling';
 import '../moment-locales';
 import '../dayjs-locales';
 
@@ -78,7 +78,7 @@ const App: AppComponent = ({ Component, pageProps }) => {
           },
         ]}
       />
-      <MantineProvider withGlobalStyles withNormalizeCSS theme={theme} emotionOptions={ltrOptions.emotionOptions}>
+      <MantineProvider withGlobalStyles withNormalizeCSS theme={theme} styles={styleOverride} emotionOptions={ltrOptions.emotionOptions}>
         <Component {...pageProps} />
       </MantineProvider>
     </>
