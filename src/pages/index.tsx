@@ -15,7 +15,7 @@ import { useRouter } from 'next/router';
 import React, { useCallback, useEffect, useMemo, useState, VFC } from 'react';
 import { useLocale } from 'src/util/common';
 import { typedServerSideTranslations } from 'src/util/i18n-server';
-import { getSortedNormalizedTimezoneNames, getTimezoneValue } from 'src/util/timezone';
+import { getSortedNormalizedTimezoneNames, getTimezoneValue, momentToTimeInputValue } from 'src/util/timezone';
 
 interface IndexPageProps {
   tzNames: string[];
@@ -35,9 +35,9 @@ export const IndexPage: NextPage<IndexPageProps> = ({ tzNames }) => {
   const [showHowTo, setShowHowTo] = useState(false);
   const [defaultTimezone, setDefaultTimezone] = useState<string>(() => timezoneNames[0].value);
   const [timezone, setTimezone] = useState<string | undefined>();
-  const [timestamp, setTimestamp] = useState<Moment | null>(null);
   const safeTimezone = useMemo(() => timezone ?? defaultTimezone, [defaultTimezone, timezone]);
-
+  const [timeString, setTimeString] = useState<string>('');
+  const [dateString, setDateString] = useState<string>('');
   const router = useRouter();
   const timestampQuery = router.query[TS_QUERY_PARAM];
   const initialTimestamp = useMemo<number | null>(() => {
@@ -49,6 +49,7 @@ export const IndexPage: NextPage<IndexPageProps> = ({ tzNames }) => {
     }
     return null;
   }, [timestampQuery]);
+  const [timestamp, setTimestamp] = useState<Moment | null>(null);
   const timestampInSeconds = useMemo(() => String(timestamp?.unix() || '0'), [timestamp]);
 
   const handleTimezoneChange = useMemo(
@@ -61,16 +62,33 @@ export const IndexPage: NextPage<IndexPageProps> = ({ tzNames }) => {
   );
   const handleDateChange = useMemo(
     () =>
-      throttle((value: null | Date) => {
-        setTimestamp(value === null ? null : moment(value));
+      throttle((value: null | string) => {
+        setDateString(value || '');
       }, 200),
     [],
   );
+  const setDateTimeString = useCallback((value: string) => {
+    const [dateStr, timeStr] = value.split(/[T ]/);
+    setTimeString(timeStr);
+    setDateString(dateStr);
+  }, []);
+  const handleTimeChange = useCallback((value: null | string) => {
+    setTimeString(value || '');
+  }, []);
+  const handleDateTimeChange = useMemo(
+    () =>
+      throttle((value: null | string) => {
+        setDateTimeString(value || '');
+      }, 50),
+    [setDateTimeString],
+  );
   const setTimeNow = useCallback(() => {
+    // Get local time zone
+    const guessed = moment.tz.guess();
     // Create a timestamp in local timezone and convert it to selected timezone
-    const value = moment.tz(defaultTimezone).tz(safeTimezone);
-    handleDateChange(value.toDate());
-  }, [defaultTimezone, handleDateChange, safeTimezone]);
+    const value = moment.tz(guessed).tz(safeTimezone);
+    setDateTimeString(momentToTimeInputValue(value));
+  }, [safeTimezone, setDateTimeString]);
   const handleHowToClose = () => {
     setCookies(howToCookieName, howToCookieValue, {
       expires: moment().add(2, 'years').toDate(),
@@ -96,10 +114,15 @@ export const IndexPage: NextPage<IndexPageProps> = ({ tzNames }) => {
       }
     }
     if (!clientMoment) clientMoment = moment().seconds(0).milliseconds(0);
-
-    handleDateChange(clientMoment.toDate());
+    const formatted = momentToTimeInputValue(clientMoment);
+    handleDateTimeChange(formatted);
     handleTimezoneChange(clientTimezone);
-  }, [handleDateChange, handleTimezoneChange, initialTimestamp]);
+  }, [handleDateTimeChange, handleTimezoneChange, initialTimestamp]);
+
+  useEffect(() => {
+    if (!dateString || !timeString) return;
+    setTimestamp(moment.tz(`${dateString}T${timeString}`, safeTimezone));
+  }, [dateString, safeTimezone, timeString, timezone]);
 
   const commonProps = {
     locale,
@@ -167,9 +190,11 @@ export const IndexPage: NextPage<IndexPageProps> = ({ tzNames }) => {
         <Paper p="lg">
           <TimestampPicker
             {...commonProps}
-            timestamp={timestamp}
+            dateString={dateString}
+            timeString={timeString}
             changeTimezone={handleTimezoneChange}
             handleDateChange={handleDateChange}
+            handleTimeChange={handleTimeChange}
             timezone={timezone}
             defaultTimezone={defaultTimezone}
             timezoneNames={timezoneNames}

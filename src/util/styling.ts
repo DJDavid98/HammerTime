@@ -29,4 +29,13 @@ export const themeOverride: MantineProviderProps['theme'] = {
   fontFamily: `'Montserrat', sans-serif`,
   fontFamilyMonospace: `'Source Code Pro', 'Consolas', monospace`,
   primaryColor: 'indigo',
+  dateFormat: 'LL',
+};
+
+export const styleOverride: MantineProviderProps['styles'] = {
+  Button: {
+    root: {
+      padding: '0 .9em',
+    },
+  },
 };
