@@ -69,7 +69,7 @@
     "husky": "^7.0.2",
     "lint-staged": "^10.5.3",
     "prettier": "^2.2.1",
-    "sharp": "^0.29.0",
+    "sharp": "^0.30.6",
     "source-code-pro": "^2.38.0",
     "typescript": "^4.6"
   },
