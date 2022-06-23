@@ -18,7 +18,7 @@
     flex-flow: row nowrap;
     align-items: center;
 
-    &:global.disabled img {
+    &:disabled > * {
       opacity: 0.5;
     }
   }

@@ -33,9 +33,13 @@ export const themeOverride: MantineProviderProps['theme'] = {
 };
 
 export const styleOverride: MantineProviderProps['styles'] = {
-  Button: {
+  Button: (theme) => ({
     root: {
-      padding: '0 .9em',
+      'padding': '0 .9em',
+      // eslint-disable-next-line @typescript-eslint/naming-convention
+      '&:not(.__mantine-ref-loading):disabled': {
+        color: theme.colors.indigo[2],
+      },
     },
-  },
+  }),
 };

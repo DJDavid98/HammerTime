@@ -1,12 +1,12 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Button, Popover, Text } from '@mantine/core';
+import { Badge, Button, Popover, Text } from '@mantine/core';
 import { UnfinishedTranslationsLink } from 'components/UnfinishedTranslationsLink';
 import toPairs from 'lodash/toPairs';
 import styles from 'modules/LanguageSelector.module.scss';
 import { useTranslation } from 'next-i18next';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { useMemo, useState, VFC } from 'react';
+import { useCallback, useMemo, useState, VFC } from 'react';
 import Flag from 'react-flagkit';
 import { AvailableLanguage, LANGUAGES } from 'src/config';
 import { getDirAttribute } from 'src/util/common';
@@ -15,9 +15,12 @@ export const LanguageSelector: VFC<{ footerItemClass: string }> = ({ footerItemC
   const router = useRouter();
   const {
     t,
-    i18n: { language }
+    i18n: { language },
   } = useTranslation();
   const [opened, setOpened] = useState(false);
+  const toggleOpened = useCallback(() => {
+    setOpened((o) => !o);
+  }, []);
   const sortedLanguages = useMemo(() => toPairs(LANGUAGES).sort(([, a], [, b]) => a.nativeName.localeCompare(b.nativeName)), []);
 
   const currentLanguage = useMemo(() => (language in LANGUAGES ? LANGUAGES[language as AvailableLanguage] : undefined), [language]);
@@ -36,7 +39,7 @@ export const LanguageSelector: VFC<{ footerItemClass: string }> = ({ footerItemC
               size="sm"
               leftIcon={currentLanguage ? <Flag country={currentLanguage.countryCode} /> : <FontAwesomeIcon icon="globe" />}
               rightIcon={<FontAwesomeIcon icon={opened ? 'caret-down' : 'caret-up'} />}
-              onClick={() => setOpened((o) => !o)}
+              onClick={toggleOpened}
             >
               {currentLanguage?.nativeName || t('common:changeLanguage')}
             </Button>
@@ -47,6 +50,7 @@ export const LanguageSelector: VFC<{ footerItemClass: string }> = ({ footerItemC
         >
           <Text size="sm" className={styles.changeLanguage}>
             <span>{`${t('common:changeLanguage')} `}</span>
+            <Badge color="gray">{sortedLanguages.length}</Badge>
           </Text>
           <div className={styles.languageSelector}>
             {sortedLanguages.map(([key, value]) => {
@@ -54,7 +58,7 @@ export const LanguageSelector: VFC<{ footerItemClass: string }> = ({ footerItemC
               const dropdownItemJsx = (
                 <Button
                   key={isCurrentLanguage ? key : undefined}
-                  component={isCurrentLanguage ? 'a' : undefined}
+                  component={isCurrentLanguage ? undefined : ('a' as `button`)}
                   variant="subtle"
                   className={styles.item}
                   dir={getDirAttribute(key as AvailableLanguage)}
@@ -66,6 +70,7 @@ export const LanguageSelector: VFC<{ footerItemClass: string }> = ({ footerItemC
                       </Text>
                     )
                   }
+                  disabled={isCurrentLanguage}
                 >
                   <span className={styles.nativeName}>{value.nativeName}</span>
                 </Button>
@@ -78,7 +83,7 @@ export const LanguageSelector: VFC<{ footerItemClass: string }> = ({ footerItemC
                   key={key}
                   href={{
                     pathname: router.pathname,
-                    query: router.query
+                    query: router.query,
                   }}
                   locale={key}
                   passHref
