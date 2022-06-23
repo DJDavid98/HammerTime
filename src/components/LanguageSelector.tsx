@@ -8,7 +8,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useMemo, VFC } from 'react';
 import Flag from 'react-flagkit';
-import { DropdownItem, DropdownMenu, DropdownToggle, UncontrolledDropdown } from 'reactstrap';
+import { Badge, DropdownItem, DropdownMenu, DropdownToggle, UncontrolledDropdown } from 'reactstrap';
 import { AvailableLanguage, LANGUAGES } from 'src/config';
 import { getDirAttribute } from 'src/util/common';
 
@@ -34,13 +34,33 @@ export const LanguageSelector: VFC<{ className?: string }> = ({ className }) => 
           <span className={styles.currentLangName}>{nativeLangName}</span>
           <FontAwesomeIcon icon="caret-up" />
         </DropdownToggle>
-        <DropdownMenu end dark>
-          <DropdownItem header className={styles.item}>
-            {t('common:changeLanguage')}
+        <DropdownMenu end dark className={styles.languageList}>
+          <DropdownItem header className={`${styles.item} ${styles.headerItem}`}>
+            <span>{`${t('common:changeLanguage')} `}</span>
+            <Badge color="secondary" className="mx-2">
+              {sortedLanguages.length}
+            </Badge>
           </DropdownItem>
           {sortedLanguages.map(([key, value]) => {
-            if (language === key) {
-              return null;
+            const isCurrentLanguage = language === key;
+            const dropdownItemJsx = (
+              <DropdownItem
+                tag={isCurrentLanguage ? 'a' : undefined}
+                className={styles.item}
+                dir={getDirAttribute(key as AvailableLanguage)}
+                disabled={isCurrentLanguage}
+              >
+                <Flag country={value.countryCode} />
+                <span className={styles.nativeName}>{value.nativeName}</span>
+                {typeof value.percent === 'number' && (
+                  <span className="mx-1 text-warning">
+                    <FontAwesomeIcon icon="life-ring" />
+                  </span>
+                )}
+              </DropdownItem>
+            );
+            if (isCurrentLanguage) {
+              return dropdownItemJsx;
             }
             return (
               <Link
@@ -53,15 +73,7 @@ export const LanguageSelector: VFC<{ className?: string }> = ({ className }) => 
                 passHref
                 shallow={false}
               >
-                <DropdownItem tag="a" className={styles.item} dir={getDirAttribute(key as AvailableLanguage)}>
-                  <Flag country={value.countryCode} />
-                  <span className={styles.nativeName}>{value.nativeName}</span>
-                  {typeof value.percent === 'number' && (
-                    <span className="mx-1 text-warning">
-                      <FontAwesomeIcon icon="life-ring" />
-                    </span>
-                  )}
-                </DropdownItem>
+                {dropdownItemJsx}
               </Link>
             );
           })}
