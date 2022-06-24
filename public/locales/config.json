@@ -93,6 +93,12 @@
       "nativeName": "עִברִית",
       "countryCode": "IL",
       "rtl": true
+    },
+    "zh": {
+      "nativeName": "中文",
+      "countryCode": "CN",
+      "crowdinLocale": "zh-CN",
+      "momentLocale": "zh-cn"
     }
   }
 }
