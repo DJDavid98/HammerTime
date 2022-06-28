@@ -22,7 +22,7 @@
       "p": "讨论本网站，测试语法，提出建议"
     },
     "bot": {
-      "header": "HammerTime 机器人 <1>BETA</1>",
+      "header": "HammerTime 机器人",
       "p": "通过 <1>/timestamp</1> 斜杠指令生成时间戳"
     },
     "textColor": {

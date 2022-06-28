@@ -22,7 +22,7 @@
       "p": "Diskusikan situs web, uji sintaks dan sarankan fitur"
     },
     "bot": {
-      "header": "HammerTime Bot <1>BETA</1>",
+      "header": "HammerTime Bot",
       "p": "Buat stempel waktu dengan perintah slash <1>/timestamp</1>"
     },
     "textColor": {

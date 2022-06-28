@@ -22,7 +22,7 @@
       "p": "Discutez du site, testez la syntaxe et suggérez de nouvelles fonctionnalités"
     },
     "bot": {
-      "header": "Bot HammerTime <1>BETA</1>",
+      "header": "Bot HammerTime",
       "p": "Générez un code d'horodatage avec la commandes Slash <1>/timestamp</1>"
     },
     "textColor": {

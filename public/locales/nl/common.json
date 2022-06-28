@@ -22,7 +22,7 @@
       "p": "Bespreek de website, test de syntaxis en stel nieuwe functies voor"
     },
     "bot": {
-      "header": "HammerTime bot <1>BETA</1>",
+      "header": "HammerTime bot",
       "p": "Genereer tijdsaanduidingen met de <1>/timestamp</1> opdracht"
     },
     "textColor": {

@@ -22,7 +22,7 @@
       "p": "Dyskusje na temat strony, testowanie składni i proponowanie nowych funkcji"
     },
     "bot": {
-      "header": "HammerTime Bot <1>BETA</1>",
+      "header": "HammerTime Bot",
       "p": "Generuj znacznik czasu przy użyciu komendy <1>/timestamp</1>"
     },
     "textColor": {

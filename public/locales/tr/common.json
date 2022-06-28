@@ -22,7 +22,7 @@
       "p": "Web sitesini tartışın, sözdizimini test edin ve özellikler önerin"
     },
     "bot": {
-      "header": "HammerTime Bot <1>BETA</1>",
+      "header": "HammerTime Bot",
       "p": "<1>/timestamp</1> eğik çizgi komutuyla zaman damgaları oluşturun"
     },
     "textColor": {

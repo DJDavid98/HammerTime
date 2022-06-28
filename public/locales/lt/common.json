@@ -22,7 +22,7 @@
       "p": "Aptark tinklalapį, patikrink sintaksę ir siūlyk funkcijas"
     },
     "bot": {
-      "header": "„HammerTime“ botas <1>BETA VERSIJA</1>",
+      "header": "„HammerTime“ botas",
       "p": "Generuok laiko žymas naudojant <1>/timestamp</1> komandą"
     },
     "textColor": {

@@ -22,7 +22,7 @@
       "p": "Discuss the website, test the syntax and suggest features"
     },
     "bot": {
-      "header": "HammerTime Bot <1>BETA</1>",
+      "header": "HammerTime Bot",
       "p": "Generate timestamps with the <1>/timestamp</1> slash command"
     },
     "textColor": {

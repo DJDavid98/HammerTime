@@ -22,7 +22,7 @@
       "p": "Discuta sobre o site, teste a sintaxe e sugira funções"
     },
     "bot": {
-      "header": "HammerTime Bot <1>BETA</1>",
+      "header": "HammerTime Bot",
       "p": "Gere timestamps com o comando de barra <1>/timestamp</1>"
     },
     "textColor": {

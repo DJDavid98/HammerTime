@@ -4,7 +4,7 @@ import { Trans } from 'next-i18next';
 import Image, { StaticImageData } from 'next/image';
 import React, { memo, ReactChild, VFC } from 'react';
 import { TFunction } from 'react-i18next';
-import { Badge, Col, Row } from 'reactstrap';
+import { Col, Row } from 'reactstrap';
 import bot from '../../public/bot.png';
 import server from '../../public/server.png';
 import textColor from '../../public/textcolor.png';
@@ -27,14 +27,7 @@ const UsefulLinksComponent: VFC<{ t: TFunction; leadText: string }> = ({ t, lead
     {
       href: '/add-bot',
       image: bot,
-      name: (
-        <Trans t={t} i18nKey="common:usefulLinks.bot.header">
-          0
-          <Badge color="discord" variant="filled">
-            1
-          </Badge>
-        </Trans>
-      ),
+      name: t('common:usefulLinks.bot.header'),
       desc: (
         <Trans t={t} i18nKey="common:usefulLinks.bot.p">
           0<code>/timestamp</code>
