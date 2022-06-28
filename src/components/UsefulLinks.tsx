@@ -1,7 +1,7 @@
 import { AppContainer } from 'components/AppContainer';
 import styles from 'modules/UsefulLinks.module.scss';
 import { Trans } from 'next-i18next';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import React, { memo, ReactChild, VFC } from 'react';
 import { TFunction } from 'react-i18next';
 import { Badge, Col, Row } from 'reactstrap';

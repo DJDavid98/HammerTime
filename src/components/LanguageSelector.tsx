@@ -45,6 +45,7 @@ export const LanguageSelector: VFC<{ className?: string }> = ({ className }) => 
             const isCurrentLanguage = language === key;
             const dropdownItemJsx = (
               <DropdownItem
+                key={isCurrentLanguage ? key : undefined}
                 tag={isCurrentLanguage ? 'a' : undefined}
                 className={styles.item}
                 dir={getDirAttribute(key as AvailableLanguage)}
