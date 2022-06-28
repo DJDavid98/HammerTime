@@ -5,6 +5,7 @@
 @import '~bootstrap/scss/variables';
 
 $footer-separator-size: rem(1px);
+$footer-items-inline-breakpoint: lg;
 
 .footer {
   bottom: 0;
@@ -29,7 +30,7 @@ $footer-separator-size: rem(1px);
     top: 0.4rem;
   }
 
-  @include media-breakpoint-down(md) {
+  @include media-breakpoint-down($footer-items-inline-breakpoint) {
     .footer-item:not(:last-child) {
       margin-bottom: rem(5px);
     }
@@ -39,7 +40,7 @@ $footer-separator-size: rem(1px);
     }
   }
 
-  @include media-breakpoint-up(lg) {
+  @include media-breakpoint-up($footer-items-inline-breakpoint) {
     .footer-item {
       display: inline;
     }
