@@ -22,7 +22,7 @@
       "p": "サイトについての議論・タイムスタンプのテスト・機能のリクエストができます"
     },
     "bot": {
-      "header": "HammerTimeボット <1>BETA</1>",
+      "header": "HammerTime bot",
       "p": "<1>/timestamp</1>コマンドでのタイムスタンプの作成"
     },
     "textColor": {
