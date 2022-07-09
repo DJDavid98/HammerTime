@@ -1,0 +1,42 @@
+{
+  "seoDescription": "Genera marques de temps per a missatges de Discord",
+  "howTo": "Trieu una data, copieu la marca de temps desitjada de la columna {{syntaxColName}} i apegueu-la al missatge. El resultat serà una marca de temps dinàmica que es mostra diferent depenent del fus horari de la persona.",
+  "input": {
+    "date": "Data i hora",
+    "timezone": "Fus horari"
+  },
+  "buttons": {
+    "copy": "Copia al porta-retalls",
+    "setCurrentTime": "Ajusta a l'hora actual",
+    "lock": "Blocar marca de temps a l'adreça",
+    "unlock": "Desbloca la marca de temps"
+  },
+  "table": {
+    "syntax": "Sintaxi al xat",
+    "example": "Exemple"
+  },
+  "usefulLinks": {
+    "lead": "També podeu trobar útil:",
+    "server": {
+      "header": "Servidor oficial de HammerTime",
+      "p": "Comenteu la pàgina, experimenteu amb la sintaxi i suggeriu característiques"
+    },
+    "bot": {
+      "header": "Bot de HammerTime",
+      "p": "Genera marques de temps amb l'ordre <1>/timestamp</1>"
+    },
+    "textColor": {
+      "header": "Generador de text de <1>colors</1> de Rebane",
+      "p": "Una aplicació senzilla que crea missatges de Discord acolorits mitjançant codis de colors ANSI"
+    }
+  },
+  "changeLanguage": "Canvia l'idioma",
+  "notFound": {
+    "heading": "No s'ha trobat",
+    "content": "No hi ha res a veure ací."
+  },
+  "builtWith": "Pàgina creada amb <1>Font Awesome Free</1>",
+  "openSource": "Programari de codi obert",
+  "viewSource": "Vore codi font",
+  "notAffiliated": "Aquest projecte no està afiliat a Discord."
+}
