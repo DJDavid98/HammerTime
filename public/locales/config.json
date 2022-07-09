@@ -99,6 +99,11 @@
       "countryCode": "CN",
       "crowdinLocale": "zh-CN",
       "momentLocale": "zh-cn"
+    },
+    "ca": {
+      "nativeName": "Català",
+      "countryCode": "CA",
+      "customFlag": true
     }
   }
 }

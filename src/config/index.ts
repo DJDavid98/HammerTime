@@ -11,17 +11,17 @@ export const IS_CLIENT_SIDE = typeof window !== 'undefined';
 
 export type AvailableLanguage = keyof typeof localeConfig.languages;
 
-type LanguagesConfig = Record<
-  AvailableLanguage,
-  {
-    nativeName: string;
-    countryCode: string;
-    rtl?: boolean;
-    momentLocale?: string;
-    crowdinLocale?: string;
-    percent?: number;
-  }
->;
+export type LanguageConfig = {
+  nativeName: string;
+  countryCode: string;
+  customFlag?: boolean;
+  rtl?: boolean;
+  momentLocale?: string;
+  crowdinLocale?: string;
+  percent?: number;
+};
+
+type LanguagesConfig = Record<AvailableLanguage, LanguageConfig>;
 
 export const LANGUAGES: LanguagesConfig = localeConfig.languages;
 

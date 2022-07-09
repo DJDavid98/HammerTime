@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import classNames from 'classnames';
+import { LanguageFlag } from 'components/LanguageFlag';
 import { UnfinishedTranslationsLink } from 'components/UnfinishedTranslationsLink';
 import toPairs from 'lodash/toPairs';
 import styles from 'modules/LanguageSelector.module.scss';
@@ -7,7 +8,6 @@ import { useTranslation } from 'next-i18next';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useMemo, VFC } from 'react';
-import Flag from 'react-flagkit';
 import { Badge, DropdownItem, DropdownMenu, DropdownToggle, UncontrolledDropdown } from 'reactstrap';
 import { AvailableLanguage, LANGUAGES } from 'src/config';
 import { getDirAttribute } from 'src/util/common';
@@ -30,7 +30,7 @@ export const LanguageSelector: VFC<{ className?: string }> = ({ className }) => 
     <>
       <UncontrolledDropdown className={classNames(className, styles.languageSelector)}>
         <DropdownToggle color="link" className="fw-bold text-decoration-none">
-          {currentLanguage ? <Flag country={currentLanguage.countryCode} /> : <FontAwesomeIcon icon="globe" />}
+          {currentLanguage ? <LanguageFlag language={currentLanguage} /> : <FontAwesomeIcon icon="globe" />}
           <span className={styles.currentLangName}>{nativeLangName}</span>
           <FontAwesomeIcon icon="caret-up" />
         </DropdownToggle>
@@ -51,7 +51,7 @@ export const LanguageSelector: VFC<{ className?: string }> = ({ className }) => 
                 dir={getDirAttribute(key as AvailableLanguage)}
                 disabled={isCurrentLanguage}
               >
-                <Flag country={value.countryCode} />
+                <LanguageFlag language={value} />
                 <span className={styles.nativeName}>{value.nativeName}</span>
                 {typeof value.percent === 'number' && (
                   <span className="mx-1 text-warning">
