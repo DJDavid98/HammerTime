@@ -16,6 +16,7 @@ type LanguagesConfig = Record<
   {
     nativeName: string;
     countryCode: string;
+    customFlag?: boolean;
     rtl?: boolean;
     momentLocale?: string;
     crowdinLocale?: string;

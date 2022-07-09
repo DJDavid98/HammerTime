@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import classNames from 'classnames';
+import { CustomFlag } from 'components/CustomFlag';
 import { UnfinishedTranslationsLink } from 'components/UnfinishedTranslationsLink';
 import toPairs from 'lodash/toPairs';
 import styles from 'modules/LanguageSelector.module.scss';
@@ -43,6 +44,7 @@ export const LanguageSelector: VFC<{ className?: string }> = ({ className }) => 
           </DropdownItem>
           {sortedLanguages.map(([key, value]) => {
             const isCurrentLanguage = language === key;
+            const FlagComponent = value.customFlag ? CustomFlag : Flag;
             const dropdownItemJsx = (
               <DropdownItem
                 key={isCurrentLanguage ? key : undefined}
@@ -51,7 +53,7 @@ export const LanguageSelector: VFC<{ className?: string }> = ({ className }) => 
                 dir={getDirAttribute(key as AvailableLanguage)}
                 disabled={isCurrentLanguage}
               >
-                <Flag country={value.countryCode} />
+                <FlagComponent country={value.countryCode} />
                 <span className={styles.nativeName}>{value.nativeName}</span>
                 {typeof value.percent === 'number' && (
                   <span className="mx-1 text-warning">
