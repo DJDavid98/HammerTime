@@ -1,4 +1,5 @@
 import { MantineProviderProps } from '@mantine/core';
+import { MonthSettings } from '@mantine/dates';
 import rtlPlugin from 'stylis-plugin-rtl';
 
 export const getEmotionProps = (dir: 'rtl' | 'ltr'): MantineProviderProps['emotionOptions'] => ({
@@ -43,3 +44,16 @@ export const styleOverride: MantineProviderProps['styles'] = {
     },
   }),
 };
+
+export const getDayStyle =
+  (theme: Required<MantineProviderProps>['theme'], today: Date): MonthSettings['dayStyle'] =>
+  (date) => {
+    const dateString = date.toDateString();
+    const todayString = today.toDateString();
+    return dateString === todayString
+      ? {
+          border: `2px solid ${theme.colors?.indigo?.[4] || ''}`,
+          boxSizing: 'border-box',
+        }
+      : {};
+  };

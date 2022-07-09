@@ -1,10 +1,11 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Group, Select } from '@mantine/core';
+import { Group, Select, useMantineTheme } from '@mantine/core';
 import { DatePicker, TimeInput } from '@mantine/dates';
 import styles from 'modules/TimestampPicker.module.scss';
 import moment from 'moment';
-import { useCallback, useMemo, VFC, VoidFunctionComponent } from 'react';
+import { useCallback, useEffect, useMemo, useState, VFC, VoidFunctionComponent } from 'react';
 import { TFunction } from 'react-i18next';
+import { getDayStyle } from 'src/util/styling';
 
 const timeInputClassNames = { controls: styles.timeInputControl };
 
@@ -52,6 +53,16 @@ export const TimestampPicker: VFC<PropTypes> = ({
   const timeFormat = useMemo(() => (moment.localeData(locale).longDateFormat('LT').includes('A') ? '12' : '24'), [locale]);
   const amLabel = useMemo(() => moment.localeData(locale).meridiem(1, 0, true), [locale]);
   const pmLabel = useMemo(() => moment.localeData(locale).meridiem(13, 0, true), [locale]);
+  const theme = useMantineTheme();
+  const [today, setToday] = useState(() => new Date());
+
+  useEffect(() => {
+    const todayUpdateInterval = setInterval(() => {
+      setToday(new Date());
+    }, 60e3);
+
+    return () => clearInterval(todayUpdateInterval);
+  }, []);
 
   const handleDateChange = useCallback(
     (value: Date | null) => {
@@ -65,6 +76,7 @@ export const TimestampPicker: VFC<PropTypes> = ({
     },
     [onTimeChange],
   );
+  const dayStyle = useMemo(() => getDayStyle(theme, today), [theme, today]);
 
   return (
     <Group align="end" className={styles.timestampPicker}>
@@ -77,6 +89,7 @@ export const TimestampPicker: VFC<PropTypes> = ({
         onChange={handleDateChange}
         disabled={fixedTimestamp}
         clearable={false}
+        dayStyle={dayStyle}
       />
       <TimeInput
         value={date}
