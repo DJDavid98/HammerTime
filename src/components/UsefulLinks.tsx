@@ -1,4 +1,4 @@
-import { Badge, Card, Group, Text } from '@mantine/core';
+import { Card, Group, Text } from '@mantine/core';
 import { ExternalLink } from 'components/ExternalLink';
 import styles from 'modules/UsefulLinks.module.scss';
 import { Trans } from 'next-i18next';
