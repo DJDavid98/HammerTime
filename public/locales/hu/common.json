@@ -22,7 +22,7 @@
       "p": "Csevegj a weboldalról, próbáld ki a kódokat és javasolj funkciókat"
     },
     "bot": {
-      "header": "HammerTime Bot <1>BÉTA</1>",
+      "header": "HammerTime Bot",
       "p": "Generálj időbélyegeket a <1>/timestamp</1> slash paranccsal"
     },
     "textColor": {
