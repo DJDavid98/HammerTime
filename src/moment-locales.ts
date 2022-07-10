@@ -20,6 +20,7 @@ import 'moment/locale/id';
 import 'moment/locale/he';
 import 'moment/locale/lt';
 import 'moment/locale/zh-cn';
+import 'moment/locale/ca';
 import moment from 'moment-timezone';
 import latestTimezoneData from 'moment-timezone/data/packed/latest.json';
 

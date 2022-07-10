@@ -50,3 +50,4 @@ English and Hungarian translations have been included, so no translators will be
 - 🇮🇱 Hebrew: business zerealone (zerealone.business)
 - 🇱🇹 Lithuanian: tayloryte
 - 🇨🇳 Chinese: CPYW_7226, user670839245
+- Catalan: sware
