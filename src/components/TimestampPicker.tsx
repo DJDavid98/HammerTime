@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Group, Select, useMantineTheme } from '@mantine/core';
 import { DatePicker, TimeInput } from '@mantine/dates';
+import type { FirstDayOfWeek } from '@mantine/dates/lib/types';
 import styles from 'modules/TimestampPicker.module.scss';
 import moment from 'moment';
 import { useCallback, useEffect, useMemo, useState, VFC, VoidFunctionComponent } from 'react';
@@ -8,6 +9,11 @@ import { TFunction } from 'react-i18next';
 import { getDayStyle } from 'src/util/styling';
 
 const timeInputClassNames = { controls: styles.timeInputControl };
+const firstDayOfWeekOverrideRecord: Partial<Record<string, FirstDayOfWeek>> = {
+  ms: 'sunday',
+  // Not possible until https://github.com/mantinedev/mantine/discussions/1759 is resolved
+  // ar: 'saturday',
+};
 
 interface TimezoneOptionType {
   label: string;
@@ -51,6 +57,7 @@ export const TimestampPicker: VFC<PropTypes> = ({
   );
   const date = useMemo(() => new Date(`${dateString}T${timeString}`), [dateString, timeString]);
   const timeFormat = useMemo(() => (moment.localeData(locale).longDateFormat('LT').includes('A') ? '12' : '24'), [locale]);
+  const firstDayOfWeekOverride = useMemo(() => firstDayOfWeekOverrideRecord[locale], [locale]);
   const amLabel = useMemo(() => moment.localeData(locale).meridiem(1, 0, true), [locale]);
   const pmLabel = useMemo(() => moment.localeData(locale).meridiem(13, 0, true), [locale]);
   const theme = useMantineTheme();
@@ -90,6 +97,7 @@ export const TimestampPicker: VFC<PropTypes> = ({
         disabled={fixedTimestamp}
         clearable={false}
         dayStyle={dayStyle}
+        firstDayOfWeek={firstDayOfWeekOverride}
       />
       <TimeInput
         value={date}
