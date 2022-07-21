@@ -1,28 +1,37 @@
 @import '../vars';
-@import '~bootstrap/scss/functions';
-@import '~bootstrap/scss/mixins';
-@import '~bootstrap/scss/variables';
 
-:root[dir='rtl'] .table {
-  th,
-  td {
-    text-align: right;
-  }
-}
+$switch-breakpoint-min: 768px;
+$switch-breakpoint-max: $switch-breakpoint-min - 1px;
 
 .icon-column {
   width: 3rem;
 }
 
 .syntax-column {
-  @include media-breakpoint-up(md) {
+  @media (min-width: $switch-breakpoint-min) {
     width: 16rem;
   }
 
-  .code-text {
-    border: $code-border;
-    background-color: $code-bg;
-    user-select: all;
+  .example-text {
+    margin-top: 0.5rem;
+    @media (min-width: $switch-breakpoint-min) {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: $switch-breakpoint-max) {
+  .example-column,
+  .icon-column {
+    display: none;
+  }
+
+  .table {
+    text-align: center;
+  }
+
+  .copy-syntax {
+    justify-content: center !important;
   }
 }
 
