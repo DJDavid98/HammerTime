@@ -38,5 +38,19 @@
   "builtWith": "Strona stworzona przy użyciu <1>Font Awesome Free</1>",
   "openSource": "Oprogramowanie open-source",
   "viewSource": "Zobacz kod źródłowy",
-  "notAffiliated": "Ten projekt nie jest powiązany z Discordem."
+  "notAffiliated": "Ten projekt nie jest powiązany z Discordem.",
+  "jsDisabled": {
+    "title": "JavaScript jest wymagany",
+    "body": "Twoja przeglądarka nie wspiera JavaScript lub jest on aktualnie wyłączony. Niektóre przeglądarki domyślnie wyłączają JavaScripta ze względów bezpieczeństwa, lecz jest on wymagany dla tej aplikacji. Proszę go włączyć i odświeżyć stronę lub użyć innej przeglądarki."
+  },
+  "a11y": {
+    "calendar": {
+      "nextMonthLabel": "następny miesiąc",
+      "previousMonthLabel": "poprzedni miesiąc",
+      "nextYearLabel": "następny rok",
+      "previousYearLabel": "poprzedni rok",
+      "nextDecadeLabel": "następna dekada",
+      "previousDecadeLabel": "poprzednia dekada"
+    }
+  }
 }
