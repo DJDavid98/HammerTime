@@ -38,5 +38,9 @@
   "builtWith": "A weboldal az <1>Ingyenes Font Awesome</1> segítségével készült",
   "openSource": "Nyílt forráskódú szoftver",
   "viewSource": "Forráskód megtekintése",
-  "notAffiliated": "A projektnek semmilyen kapcsolata nincs a Discord-dal."
+  "notAffiliated": "A projektnek semmilyen kapcsolata nincs a Discord-dal.",
+  "jsDisabled": {
+    "title": "JavaScript szükséges",
+    "body": "A böngésződ vagy nem támogatja a JavaScript-et vagy jelenleg ki van kapcsolva. Egyes böngészők biztonsági okokból alapértelmezetten kikapcsolják, viszont ennek az alkalmazásnak szüksége van rá. Kérlek engedélyezd és töltsd újra az oldalt, vagy használj egy másik böngészőt."
+  }
 }

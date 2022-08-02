@@ -50,7 +50,7 @@ export const IndexPage: NextPage<IndexPageProps> = ({ tzNames }) => {
     return null;
   }, [timestampQuery]);
   const [timestamp, setTimestamp] = useState<Moment | null>(null);
-  const timestampInSeconds = useMemo(() => String(timestamp?.unix() || '0'), [timestamp]);
+  const timestampInSecondsString = useMemo(() => (timestamp ? timestamp?.unix().toString() : '0'), [timestamp]);
 
   const handleTimezoneChange = useMemo(
     () =>
@@ -161,7 +161,7 @@ export const IndexPage: NextPage<IndexPageProps> = ({ tzNames }) => {
             </Button>
           </Tooltip>{' '}
           <Tooltip label={lockButtonTooltipText}>
-            <Link href={fixedTimestamp ? '/' : `/?${TS_QUERY_PARAM}=${timestampInSeconds}`} passHref>
+            <Link href={fixedTimestamp ? '/' : `/?${TS_QUERY_PARAM}=${timestampInSecondsString}`} passHref>
               <Button component="a" size="lg" color={fixedTimestamp ? 'red' : 'blue'}>
                 <FontAwesomeIcon icon={fixedTimestamp ? 'unlock' : 'lock'} />
               </Button>
@@ -169,7 +169,7 @@ export const IndexPage: NextPage<IndexPageProps> = ({ tzNames }) => {
           </Tooltip>
         </>
       ),
-    [fixedTimestamp, lockButtonTooltipText, setTimeButtonTooltipText, setTimeNow, timestampInSeconds],
+    [fixedTimestamp, lockButtonTooltipText, setTimeButtonTooltipText, setTimeNow, timestampInSecondsString],
   );
 
   return (
@@ -187,6 +187,17 @@ export const IndexPage: NextPage<IndexPageProps> = ({ tzNames }) => {
           </Alert>
         )}
 
+        <noscript>
+          <Alert
+            title={t('common:jsDisabled.title')}
+            icon={<FontAwesomeIcon icon="exclamation-triangle" fixedWidth />}
+            color="red"
+            onClose={handleHowToClose}
+          >
+            {t('common:jsDisabled.body')}
+          </Alert>
+        </noscript>
+
         <Paper p="lg">
           <TimestampPicker
             {...commonProps}
@@ -201,7 +212,7 @@ export const IndexPage: NextPage<IndexPageProps> = ({ tzNames }) => {
             fixedTimestamp={fixedTimestamp}
             ButtonsComponent={ButtonsComponent}
           />
-          <TimestampsTable {...commonProps} timestamp={timestamp} timeInSeconds={timestampInSeconds} />
+          <TimestampsTable {...commonProps} timestamp={timestamp} timeInSeconds={timestampInSecondsString} />
         </Paper>
 
         {Boolean(leadText) && (

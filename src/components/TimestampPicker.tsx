@@ -55,7 +55,7 @@ export const TimestampPicker: VFC<PropTypes> = ({
     },
     [changeTimezone],
   );
-  const date = useMemo(() => new Date(`${dateString}T${timeString}`), [dateString, timeString]);
+  const date = useMemo(() => (dateString && timeString ? new Date(`${dateString}T${timeString}`) : new Date(0)), [dateString, timeString]);
   const timeFormat = useMemo(() => (moment.localeData(locale).longDateFormat('LT').includes('A') ? '12' : '24'), [locale]);
   const firstDayOfWeekOverride = useMemo(() => firstDayOfWeekOverrideRecord[locale], [locale]);
   const amLabel = useMemo(() => moment.localeData(locale).meridiem(1, 0, true), [locale]);

@@ -11,12 +11,7 @@ class MyDocument extends Document {
 
     return {
       ...initialProps,
-      styles: (
-        <>
-          {initialProps.styles}
-          <ServerStyles html={initialProps.html} server={stylesServer} />
-        </>
-      ),
+      styles: [initialProps.styles, <ServerStyles html={initialProps.html} server={stylesServer} key="styles" />],
     };
   }
 
