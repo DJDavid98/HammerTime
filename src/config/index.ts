@@ -19,6 +19,7 @@ export type LanguageConfig = {
   momentLocale?: string;
   crowdinLocale?: string;
   percent?: number;
+  calendarLabelFormat?: string;
 };
 
 type LanguagesConfig = Record<AvailableLanguage, LanguageConfig>;

@@ -42,5 +42,15 @@
   "jsDisabled": {
     "title": "JavaScript szükséges",
     "body": "A böngésződ vagy nem támogatja a JavaScript-et vagy jelenleg ki van kapcsolva. Egyes böngészők biztonsági okokból alapértelmezetten kikapcsolják, viszont ennek az alkalmazásnak szüksége van rá. Kérlek engedélyezd és töltsd újra az oldalt, vagy használj egy másik böngészőt."
+  },
+  "a11y": {
+    "calendar": {
+      "nextMonthLabel": "következő hónap",
+      "previousMonthLabel": "előző hónap",
+      "nextYearLabel": "következő év",
+      "previousYearLabel": "előző év",
+      "nextDecadeLabel": "következő évtized",
+      "previousDecadeLabel": "előző évtized"
+    }
   }
 }

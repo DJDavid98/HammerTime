@@ -4,8 +4,10 @@ import { DatePicker, TimeInput } from '@mantine/dates';
 import type { FirstDayOfWeek } from '@mantine/dates/lib/types';
 import styles from 'modules/TimestampPicker.module.scss';
 import moment from 'moment';
+import { useTranslation } from 'next-i18next';
 import { useCallback, useEffect, useMemo, useState, VFC, VoidFunctionComponent } from 'react';
 import { TFunction } from 'react-i18next';
+import { AvailableLanguage, LANGUAGES } from 'src/config';
 import { getDayStyle } from 'src/util/styling';
 
 const timeInputClassNames = { controls: styles.timeInputControl };
@@ -49,6 +51,9 @@ export const TimestampPicker: VFC<PropTypes> = ({
   timezoneNames,
   ButtonsComponent,
 }) => {
+  const {
+    i18n: { language },
+  } = useTranslation();
   const handleTimezoneChange = useCallback(
     (selected: TimezoneOptionType['value'] | null) => {
       changeTimezone(selected);
@@ -58,6 +63,7 @@ export const TimestampPicker: VFC<PropTypes> = ({
   const date = useMemo(() => (dateString && timeString ? new Date(`${dateString}T${timeString}`) : new Date(0)), [dateString, timeString]);
   const timeFormat = useMemo(() => (moment.localeData(locale).longDateFormat('LT').includes('A') ? '12' : '24'), [locale]);
   const firstDayOfWeekOverride = useMemo(() => firstDayOfWeekOverrideRecord[locale], [locale]);
+  const { calendarLabelFormat } = useMemo(() => LANGUAGES[language as AvailableLanguage], [language]);
   const amLabel = useMemo(() => moment.localeData(locale).meridiem(1, 0, true), [locale]);
   const pmLabel = useMemo(() => moment.localeData(locale).meridiem(13, 0, true), [locale]);
   const theme = useMantineTheme();
@@ -98,6 +104,7 @@ export const TimestampPicker: VFC<PropTypes> = ({
         clearable={false}
         dayStyle={dayStyle}
         firstDayOfWeek={firstDayOfWeekOverride}
+        labelFormat={calendarLabelFormat}
       />
       <TimeInput
         value={date}

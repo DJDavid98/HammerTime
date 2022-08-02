@@ -78,11 +78,13 @@
     },
     "ja": {
       "nativeName": "日本語",
-      "countryCode": "JP"
+      "countryCode": "JP",
+      "calendarLabelFormat": "YYYY年MMMM"
     },
     "ko": {
       "nativeName": "한국어",
-      "countryCode": "KR"
+      "countryCode": "KR",
+      "calendarLabelFormat": "YYYY년 MMMM"
     },
     "ar": {
       "nativeName": "اللغة العربية",
