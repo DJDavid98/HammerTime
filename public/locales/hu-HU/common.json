@@ -1,0 +1,56 @@
+{
+  "seoDescription": "Generálj időpont jelölőket a Discord üzeneteidhez",
+  "howTo": "Válassz egy dátumot, másold ki a kívánt jelölőt a {{syntaxColName}} oszlopból, majd másold be bárhova egy üzenetbe. Az eredmény egy dinamikus időbélyeg lesz, ami mindenkinek máshogy fog megjelenni a saját időzónájuktól függően.",
+  "input": {
+    "date": "Dátum és idő",
+    "timezone": "Időzóna"
+  },
+  "buttons": {
+    "copy": "Másolás a vágólapra",
+    "setCurrentTime": "Aktuális idő beállítása",
+    "lock": "Időbélyeg rögzítése URL-el",
+    "unlock": "Időbélyeg feloldása"
+  },
+  "table": {
+    "syntax": "Üzenet formája",
+    "example": "Példa megjelenés"
+  },
+  "usefulLinks": {
+    "lead": "Ezeket is hasznosnak találhatod:",
+    "server": {
+      "header": "Hivatalos HammerTime Szerver",
+      "p": "Csevegj a weboldalról, próbáld ki a kódokat és javasolj funkciókat"
+    },
+    "bot": {
+      "header": "HammerTime Bot",
+      "p": "Generálj időbélyegeket a <1>/timestamp</1> slash paranccsal"
+    },
+    "textColor": {
+      "header": "Rebane <1>Színezett</1> Szöveg Generálója",
+      "p": "Egy egyszerű oldal, ami ANSI színkódokkal színezett Discord üzeneteket készít"
+    }
+  },
+  "changeLanguage": "Nyelv változtatás",
+  "notFound": {
+    "heading": "Nem Található",
+    "content": "Nincs itt semmi látnivaló."
+  },
+  "builtWith": "A weboldal az <1>Ingyenes Font Awesome</1> segítségével készült",
+  "openSource": "Nyílt forráskódú szoftver",
+  "viewSource": "Forráskód megtekintése",
+  "notAffiliated": "A projektnek semmilyen kapcsolata nincs a Discord-dal.",
+  "jsDisabled": {
+    "title": "JavaScript szükséges",
+    "body": "A böngésződ vagy nem támogatja a JavaScript-et vagy jelenleg ki van kapcsolva. Egyes böngészők biztonsági okokból alapértelmezetten kikapcsolják, viszont ennek az alkalmazásnak szüksége van rá. Kérlek engedélyezd és töltsd újra az oldalt, vagy használj egy másik böngészőt."
+  },
+  "a11y": {
+    "calendar": {
+      "nextMonthLabel": "következő hónap",
+      "previousMonthLabel": "előző hónap",
+      "nextYearLabel": "következő év",
+      "previousYearLabel": "előző év",
+      "nextDecadeLabel": "következő évtized",
+      "previousDecadeLabel": "előző évtized"
+    }
+  }
+}
