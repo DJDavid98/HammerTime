@@ -1,4 +1,5 @@
 import { Anchor, AppShell, Center, Header } from '@mantine/core';
+import { AppFooter } from 'components/AppFooter';
 import { CustomIcon } from 'components/CustomIcon';
 import styles from 'modules/AppContainer.module.scss';
 import Link from 'next/link';
@@ -14,7 +15,7 @@ export const AppContainer: FC = ({ children }) => (
       <Header fixed height={headerHeight} p="xs">
         <Center>
           <Link href="/" passHref>
-            <Anchor size="xl" weight={700} color="gray" underline={false}>
+            <Anchor size="xl" weight={700} color="dimmed" underline={false}>
               <CustomIcon src="/logos/app.svg" alt="" />
               {` ${SITE_TITLE}`}
             </Anchor>
@@ -22,6 +23,8 @@ export const AppContainer: FC = ({ children }) => (
         </Center>
       </Header>
     }
+    footer={<AppFooter />}
+    fixed={false}
     styles={(theme) => ({
       main: {
         backgroundColor: theme.colors.discord[0],

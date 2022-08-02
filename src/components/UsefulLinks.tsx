@@ -49,7 +49,7 @@ const UsefulLinksComponent: VFC<{ t: TFunction; leadText: string }> = ({ t, lead
   return (
     <>
       <Text className={styles.leadText}>{leadText}</Text>
-      <Group direction="row" position="center" align="stretch">
+      <Group position="center" align="stretch">
         {components.map(({ href, image, name, desc }) => (
           <div key={href} className={styles.link}>
             <Card component={ExternalLink} href={href} shadow="sm" p="lg" withBorder>

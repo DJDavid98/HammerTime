@@ -31,10 +31,8 @@ export const LanguageSelector: VFC<{ footerItemClass: string }> = ({ footerItemC
   return (
     <>
       <div className={footerItemClass}>
-        <Popover
-          opened={opened}
-          onClose={() => setOpened(false)}
-          target={
+        <Popover opened={opened} onClose={() => setOpened(false)} position="top" withArrow shadow="xl">
+          <Popover.Target>
             <Button
               variant="subtle"
               size="sm"
@@ -44,57 +42,55 @@ export const LanguageSelector: VFC<{ footerItemClass: string }> = ({ footerItemC
             >
               {currentLanguage?.nativeName || t('common:changeLanguage')}
             </Button>
-          }
-          position="top"
-          withArrow
-          shadow="xl"
-        >
-          <Text size="sm" className={styles.changeLanguage}>
-            <span>{`${t('common:changeLanguage')} `}</span>
-            <Badge color="gray">{sortedLanguages.length}</Badge>
-          </Text>
-          <div className={styles.languageSelector}>
-            {sortedLanguages.map(([key, value]) => {
-              const isCurrentLanguage = language === key;
-              const dropdownItemJsx = (
-                <Button
-                  key={isCurrentLanguage ? key : undefined}
-                  component={isCurrentLanguage ? undefined : ('a' as `button`)}
-                  variant="subtle"
-                  className={styles.item}
-                  dir={getDirAttribute(key as AvailableLanguage)}
-                  leftIcon={<LanguageFlag language={value} />}
-                  rightIcon={
-                    typeof value.percent === 'number' && (
-                      <Text color="orange">
-                        <FontAwesomeIcon icon="life-ring" />
-                      </Text>
-                    )
-                  }
-                  disabled={isCurrentLanguage}
-                >
-                  <span className={styles.nativeName}>{value.nativeName}</span>
-                </Button>
-              );
-              if (isCurrentLanguage) {
-                return dropdownItemJsx;
-              }
-              return (
-                <Link
-                  key={key}
-                  href={{
-                    pathname: router.pathname,
-                    query: router.query,
-                  }}
-                  locale={key}
-                  passHref
-                  shallow={false}
-                >
-                  {dropdownItemJsx}
-                </Link>
-              );
-            })}
-          </div>
+          </Popover.Target>
+          <Popover.Dropdown>
+            <Text size="sm" className={styles.changeLanguage}>
+              <span>{`${t('common:changeLanguage')} `}</span>
+              <Badge color="gray">{sortedLanguages.length}</Badge>
+            </Text>
+            <div className={styles.languageSelector}>
+              {sortedLanguages.map(([key, value]) => {
+                const isCurrentLanguage = language === key;
+                const dropdownItemJsx = (
+                  <Button
+                    key={isCurrentLanguage ? key : undefined}
+                    component={isCurrentLanguage ? undefined : ('a' as `button`)}
+                    variant="subtle"
+                    className={styles.item}
+                    dir={getDirAttribute(key as AvailableLanguage)}
+                    leftIcon={<LanguageFlag language={value} />}
+                    rightIcon={
+                      typeof value.percent === 'number' && (
+                        <Text color="orange">
+                          <FontAwesomeIcon icon="life-ring" />
+                        </Text>
+                      )
+                    }
+                    disabled={isCurrentLanguage}
+                  >
+                    <span className={styles.nativeName}>{value.nativeName}</span>
+                  </Button>
+                );
+                if (isCurrentLanguage) {
+                  return dropdownItemJsx;
+                }
+                return (
+                  <Link
+                    key={key}
+                    href={{
+                      pathname: router.pathname,
+                      query: router.query,
+                    }}
+                    locale={key}
+                    passHref
+                    shallow={false}
+                  >
+                    {dropdownItemJsx}
+                  </Link>
+                );
+              })}
+            </div>
+          </Popover.Dropdown>
         </Popover>
       </div>
       {typeof languagePercent === 'number' && (

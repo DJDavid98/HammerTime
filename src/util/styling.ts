@@ -1,11 +1,15 @@
-import { MantineProviderProps } from '@mantine/core';
+import { MantineProviderProps, createEmotionCache } from '@mantine/core';
 import { MonthSettings } from '@mantine/dates';
 import rtlPlugin from 'stylis-plugin-rtl';
 
-export const getEmotionProps = (dir: 'rtl' | 'ltr'): MantineProviderProps['emotionOptions'] => ({
-  key: dir,
-  stylisPlugins: dir === 'rtl' ? [rtlPlugin] : undefined,
-});
+export const getEmotionCache = (dir: 'rtl' | 'ltr'): MantineProviderProps['emotionCache'] => {
+  if (dir !== 'rtl') return undefined;
+
+  return createEmotionCache({
+    key: 'mantine-rtl',
+    stylisPlugins: [rtlPlugin],
+  });
+};
 
 const discordColor = '#5865f2';
 
@@ -31,18 +35,19 @@ export const themeOverride: MantineProviderProps['theme'] = {
   fontFamilyMonospace: `'Source Code Pro', 'Consolas', monospace`,
   primaryColor: 'indigo',
   dateFormat: 'LL',
-};
-
-export const styleOverride: MantineProviderProps['styles'] = {
-  Button: (theme) => ({
-    root: {
-      'padding': '0 .9em',
-      // eslint-disable-next-line @typescript-eslint/naming-convention
-      '&:not(.__mantine-ref-loading):disabled': {
-        color: theme.colors.indigo[2],
-      },
+  components: {
+    Button: {
+      styles: (theme) => ({
+        root: {
+          'padding': '0 .9em',
+          // eslint-disable-next-line @typescript-eslint/naming-convention
+          '&:not(.__mantine-ref-loading):disabled': {
+            color: theme.colors.indigo[2],
+          },
+        },
+      }),
     },
-  }),
+  },
 };
 
 export const getDayStyle =

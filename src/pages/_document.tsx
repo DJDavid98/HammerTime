@@ -2,12 +2,12 @@ import { createStylesServer, ServerStyles } from '@mantine/next';
 import Document, { DocumentContext, Head, Html, Main, NextScript } from 'next/document';
 import { CSP_HEADER } from 'src/config';
 import { getDirAttribute } from 'src/util/common';
-import { getEmotionProps } from 'src/util/styling';
+import { getEmotionCache } from 'src/util/styling';
 
 class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
     const initialProps = await Document.getInitialProps(ctx);
-    const stylesServer = createStylesServer(getEmotionProps(getDirAttribute(ctx.locale)));
+    const stylesServer = createStylesServer(getEmotionCache(getDirAttribute(ctx.locale)));
 
     return {
       ...initialProps,

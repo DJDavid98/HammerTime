@@ -5,7 +5,7 @@ import { useCallback, useMemo, VoidFunctionComponent } from 'react';
 import { TFunction } from 'react-i18next';
 import styles from 'modules/TimestampsTable.module.scss';
 
-const elementSizes: ActionIconProps<unknown>['size'] = 'lg';
+const elementSizes: ActionIconProps['size'] = 'lg';
 const codeSx: CodeProps['sx'] = (theme) => ({ fontSize: theme.fontSizes[elementSizes] });
 
 export const CopySyntax: VoidFunctionComponent<{ syntax: string; t: TFunction }> = ({ t, syntax }) => {
@@ -30,7 +30,7 @@ export const CopySyntax: VoidFunctionComponent<{ syntax: string; t: TFunction }>
 
   if (buttonTooltipText) {
     actionItemJsx = (
-      <Tooltip label={buttonTooltipText} placement="start">
+      <Tooltip label={buttonTooltipText} position="left">
         {actionItemJsx}
       </Tooltip>
     );

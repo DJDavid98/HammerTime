@@ -9,9 +9,9 @@ import 'src/app.scss';
 import { SITE_TITLE } from 'src/config';
 import 'src/fontawesome';
 import { assembleSeoUrl, getDirAttribute, useLocale } from 'src/util/common';
-import { getEmotionProps, styleOverride, themeOverride } from 'src/util/styling';
-import '../moment-locales';
+import { getEmotionCache, themeOverride } from 'src/util/styling';
 import '../dayjs-locales';
+import '../moment-locales';
 
 const App: AppComponent = ({ Component, pageProps }) => {
   const { asPath, defaultLocale, locale, locales } = useRouter();
@@ -29,10 +29,10 @@ const App: AppComponent = ({ Component, pageProps }) => {
 
   const ltrOptions = useMemo(() => {
     const dir = getDirAttribute(locale);
-    const emotionOptions = getEmotionProps(dir);
+    const emotionCache = getEmotionCache(dir);
     return {
       dir,
-      emotionOptions,
+      emotionCache,
     };
   }, [locale]);
   useEffect(() => {
@@ -78,7 +78,7 @@ const App: AppComponent = ({ Component, pageProps }) => {
           },
         ]}
       />
-      <MantineProvider withGlobalStyles withNormalizeCSS theme={theme} styles={styleOverride} emotionOptions={ltrOptions.emotionOptions}>
+      <MantineProvider withGlobalStyles withNormalizeCSS theme={theme} emotionCache={ltrOptions.emotionCache}>
         <Component {...pageProps} />
       </MantineProvider>
     </>
