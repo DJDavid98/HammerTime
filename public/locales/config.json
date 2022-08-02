@@ -100,7 +100,8 @@
       "nativeName": "中文",
       "countryCode": "CN",
       "crowdinLocale": "zh-CN",
-      "momentLocale": "zh-cn"
+      "momentLocale": "zh-cn",
+      "calendarLabelFormat": "YYYY年MMM"
     },
     "ca": {
       "nativeName": "Català",

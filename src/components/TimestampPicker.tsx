@@ -1,10 +1,10 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Group, Select, useMantineTheme } from '@mantine/core';
 import { DatePicker, TimeInput } from '@mantine/dates';
+import { CalendarSharedProps } from '@mantine/dates/lib/components/CalendarBase/CalendarBase';
 import type { FirstDayOfWeek } from '@mantine/dates/lib/types';
 import styles from 'modules/TimestampPicker.module.scss';
 import moment from 'moment';
-import { useTranslation } from 'next-i18next';
 import { useCallback, useEffect, useMemo, useState, VFC, VoidFunctionComponent } from 'react';
 import { TFunction } from 'react-i18next';
 import { AvailableLanguage, LANGUAGES } from 'src/config';
@@ -30,6 +30,7 @@ interface PropTypes {
   handleDateChange: (value: string | null) => void;
   handleTimeChange: (value: string | null) => void;
   t: TFunction;
+  language: string;
   timeString: string;
   timezone?: string;
   defaultTimezone: string;
@@ -44,6 +45,7 @@ export const TimestampPicker: VFC<PropTypes> = ({
   handleDateChange: onDateChange,
   handleTimeChange: onTimeChange,
   t,
+  language,
   timeString,
   locale,
   timezone,
@@ -51,9 +53,6 @@ export const TimestampPicker: VFC<PropTypes> = ({
   timezoneNames,
   ButtonsComponent,
 }) => {
-  const {
-    i18n: { language },
-  } = useTranslation();
   const handleTimezoneChange = useCallback(
     (selected: TimezoneOptionType['value'] | null) => {
       changeTimezone(selected);
@@ -91,9 +90,22 @@ export const TimestampPicker: VFC<PropTypes> = ({
   );
   const dayStyle = useMemo(() => getDayStyle(theme, today), [theme, today]);
 
+  const datePickerA11y: Partial<CalendarSharedProps> = useMemo(
+    () => ({
+      nextMonthLabel: t('common:a11y.calendar.nextMonthLabel'),
+      previousMonthLabel: t('common:a11y.calendar.previousMonthLabel'),
+      nextYearLabel: t('common:a11y.calendar.nextYearLabel'),
+      previousYearLabel: t('common:a11y.calendar.previousYearLabel'),
+      nextDecadeLabel: t('common:a11y.calendar.nextDecadeLabel'),
+      previousDecadeLabel: t('common:a11y.calendar.previousDecadeLabel'),
+    }),
+    [t],
+  );
+
   return (
     <Group align="end" className={styles.timestampPicker}>
       <DatePicker
+        {...datePickerA11y}
         label={t('common:input.date')}
         locale={locale}
         value={date}

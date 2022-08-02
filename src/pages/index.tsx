@@ -201,6 +201,7 @@ export const IndexPage: NextPage<IndexPageProps> = ({ tzNames }) => {
         <Paper p="lg">
           <TimestampPicker
             {...commonProps}
+            language={language}
             dateString={dateString}
             timeString={timeString}
             changeTimezone={handleTimezoneChange}
