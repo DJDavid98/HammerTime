@@ -26,3 +26,5 @@ import moment from 'moment-timezone';
 import latestTimezoneData from 'moment-timezone/data/packed/latest.json';
 
 moment.tz.load(latestTimezoneData);
+moment.relativeTimeThreshold('s', 60);
+moment.relativeTimeThreshold('ss', 0);
