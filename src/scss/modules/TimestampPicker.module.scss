@@ -8,4 +8,11 @@
   input[disabled] {
     pointer-events: none;
   }
+
+  :global {
+    .mantine-AmPmInput-amPmInput {
+      width: 3em !important;
+      text-align: center;
+    }
+  }
 }
