@@ -87,7 +87,7 @@ export const TimestampsTable: VFC<PropTypes> = ({ t, locale, timestamp, timeInSe
   const [now, setNow] = useState(() => moment());
 
   useEffect(() => {
-    const timer = setInterval(() => setNow(moment()), 5e3);
+    const timer = setInterval(() => setNow(moment()), 1e3);
 
     return () => clearInterval(timer);
   }, []);
