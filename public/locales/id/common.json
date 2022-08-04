@@ -38,5 +38,19 @@
   "builtWith": "Situs web dibuat dengan <1>Font Awesome Free</1>",
   "openSource": "Perangkat lunak sumber terbuka",
   "viewSource": "Lihat kode sumber",
-  "notAffiliated": "Proyek ini tidak berafiliasi dengan Discord."
+  "notAffiliated": "Proyek ini tidak berafiliasi dengan Discord.",
+  "jsDisabled": {
+    "title": "JavaScript diperlukan",
+    "body": "Peramban Anda tidak mendukung JavaScript atau sedang dinonaktifkan. Beberapa browser menonaktifkan JavaScript secara bawaan untuk alasan keamanan, tetapi itu diperlukan untuk aplikasi ini. Harap aktifkan dan segarkan halaman, atau gunakan browser lain."
+  },
+  "a11y": {
+    "calendar": {
+      "nextMonthLabel": "bulan depan",
+      "previousMonthLabel": "bulan lalu",
+      "nextYearLabel": "tahun depan",
+      "previousYearLabel": "tahun lalu",
+      "nextDecadeLabel": "dekade berikutnya",
+      "previousDecadeLabel": "dekade sebelumnya"
+    }
+  }
 }

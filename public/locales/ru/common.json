@@ -38,5 +38,19 @@
   "builtWith": "Сайт создан с использованием <1>Font Awesome Free</1>",
   "openSource": "Открытое программное обеспечение",
   "viewSource": "Исходный код",
-  "notAffiliated": "Проект не связан с Discord."
+  "notAffiliated": "Проект не связан с Discord.",
+  "jsDisabled": {
+    "title": "Необходим JavaScript",
+    "body": "Ваш браузер либо не поддерживает JavaScript, либо он отключен. Некоторые браузеры отключают JavaScript по умолчанию по соображениям безопасности, но для данного приложения он необходим. Пожалуйста, включите его и обновите страницу или используйте другой браузер.\n"
+  },
+  "a11y": {
+    "calendar": {
+      "nextMonthLabel": "следующий месяц",
+      "previousMonthLabel": "предыдущий месяц",
+      "nextYearLabel": "следующий год",
+      "previousYearLabel": "предыдущий год",
+      "nextDecadeLabel": "следующее десятилетие",
+      "previousDecadeLabel": "предыдущее десятилетие"
+    }
+  }
 }

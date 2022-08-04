@@ -22,7 +22,7 @@
       "p": "Discutez du site, testez la syntaxe et suggérez de nouvelles fonctionnalités"
     },
     "bot": {
-      "header": "Bot HammerTime",
+      "header": "HammerTime Bot",
       "p": "Générez un code d'horodatage avec la commandes Slash <1>/timestamp</1>"
     },
     "textColor": {
@@ -38,5 +38,19 @@
   "builtWith": "Site créé avec la police d'écriture <1>Font Awesome Free</1>",
   "openSource": "Logiciel open-source",
   "viewSource": "Voir le code source",
-  "notAffiliated": "Ce projet n'est pas affilié avec Discord."
+  "notAffiliated": "Ce projet n'est pas affilié avec Discord.",
+  "jsDisabled": {
+    "title": "JavaScript est requis",
+    "body": "Votre navigateur ne supporte pas JavaScript ou il est actuellement désactivé. Certains navigateurs désactivent JavaScript par défaut pour des raisons de sécurité, mais il est nécessaire pour cette application. Veuillez l'activer et actualiser la page, ou utiliser un autre navigateur."
+  },
+  "a11y": {
+    "calendar": {
+      "nextMonthLabel": "mois suivant",
+      "previousMonthLabel": "mois précédent",
+      "nextYearLabel": "année suivante",
+      "previousYearLabel": "année précédente",
+      "nextDecadeLabel": "décennie suivante",
+      "previousDecadeLabel": "décennie précédente"
+    }
+  }
 }
