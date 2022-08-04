@@ -1,0 +1,56 @@
+{
+  "seoDescription": "Discord sohbet mesajları için zaman damgası göstergeleri oluştur",
+  "howTo": "Bir tarih seçin, \"{{syntaxColName}}\" sütunundan istediğiniz zaman damgasını kopyalayın ve ardından bunu sohbet mesajının herhangi bir yerine yapıştırın. Sonuç, herkes için kendi saat dilimine göre farklı görüntülenen dinamik bir zaman damgası olacaktır.",
+  "input": {
+    "date": "Tarih ve zaman",
+    "timezone": "Zaman dilimi"
+  },
+  "buttons": {
+    "copy": "Panoya kopyala",
+    "setCurrentTime": "Geçerli zamana ayarla",
+    "lock": "URL aracılığıyla zaman damgasını kilitle",
+    "unlock": "Zaman damgasının kilidini aç"
+  },
+  "table": {
+    "syntax": "Sohbet sözdizimi",
+    "example": "Örnek sonuç"
+  },
+  "usefulLinks": {
+    "lead": "Bunları da faydalı bulabilirsiniz:",
+    "server": {
+      "header": "Resmi HammerTime Sunucusu",
+      "p": "Web sitesini tartışın, sözdizimini test edin ve özellikler önerin"
+    },
+    "bot": {
+      "header": "HammerTime Botu",
+      "p": "<1>/timestamp</1> eğik çizgi komutuyla zaman damgaları oluşturun"
+    },
+    "textColor": {
+      "header": "Rebane'in <1>Renkli</1> Metin Oluşturucusu",
+      "p": "ANSI renk kodlarını kullanarak renkli Discord mesajları oluşturan basit bir uygulama"
+    }
+  },
+  "changeLanguage": "Dili değiştir",
+  "notFound": {
+    "heading": "Bulunamadı",
+    "content": "Burada görülecek bir şey yok."
+  },
+  "builtWith": "<1>Font Awesome Free</1> ile oluşturulmuş web sitesi",
+  "openSource": "Açık kaynak kodlu yazılım",
+  "viewSource": "Kaynak kodunu görüntüle",
+  "notAffiliated": "Bu proje Discord ile bağlantılı değildir.",
+  "jsDisabled": {
+    "title": "JavaScript gerekli",
+    "body": "Tarayıcınız JavaScript'i desteklemiyor veya şu anda devre dışı. Bazı tarayıcılar güvenlik için JavaScript'i devre dışı bırakır, ancak bu siteyi kullanabilmek için JavaScript'i etkinleştirmeniz gerekmekte. Lütfen etkinleştirin ve sayfayı yenileyin veya farklı bir tarayıcı kullanın."
+  },
+  "a11y": {
+    "calendar": {
+      "nextMonthLabel": "Gelecek ay",
+      "previousMonthLabel": "Geçen ay",
+      "nextYearLabel": "Gelecek yıl",
+      "previousYearLabel": "Geçen yıl",
+      "nextDecadeLabel": "Gelecek on yıl",
+      "previousDecadeLabel": "Geçmiş on yıl"
+    }
+  }
+}
