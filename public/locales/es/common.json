@@ -38,5 +38,19 @@
   "builtWith": "Página web construida con <1>Font Awesome Free</1>",
   "openSource": "Software de código abierto",
   "viewSource": "Ver código fuente",
-  "notAffiliated": "Este proyecto no está afiliado con Discord."
+  "notAffiliated": "Este proyecto no está afiliado con Discord.",
+  "jsDisabled": {
+    "title": "JavaScript es necesario",
+    "body": "Su navegador no soporta JavaScript o está actualmente deshabilitado. Algunos navegadores deshabilitan JavaScript por defecto por razones de seguridad, pero es necesario para esta aplicación. Por favor, actívelo y actualice la página o utilice un navegador diferente."
+  },
+  "a11y": {
+    "calendar": {
+      "nextMonthLabel": "el próximo mes",
+      "previousMonthLabel": "el mes anterior",
+      "nextYearLabel": "el próximo año",
+      "previousYearLabel": "el año anterior",
+      "nextDecadeLabel": "la próxima década",
+      "previousDecadeLabel": "la década anterior"
+    }
+  }
 }

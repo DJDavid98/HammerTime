@@ -38,5 +38,19 @@
   "builtWith": "本网站使用了 <1>Font Awesome Free</1>",
   "openSource": "开源软件",
   "viewSource": "查看源代码",
-  "notAffiliated": "此项目与 Discord 没有关联。"
+  "notAffiliated": "此项目与 Discord 没有关联。",
+  "jsDisabled": {
+    "title": "需要启用 JavaScript",
+    "body": "您的浏览器可能不支持 JavaScript，或者已禁用 JavaScript。有些浏览器会因为安全原因默认禁用 JavaScript，但是本应用需要使用 JavaScript 以正常工作。请启用 JavaScript 并刷新本页面，或者使用其他浏览器。"
+  },
+  "a11y": {
+    "calendar": {
+      "nextMonthLabel": "下个月",
+      "previousMonthLabel": "上个月",
+      "nextYearLabel": "下一年",
+      "previousYearLabel": "上一年",
+      "nextDecadeLabel": "下一个十年",
+      "previousDecadeLabel": "上一个十年"
+    }
+  }
 }

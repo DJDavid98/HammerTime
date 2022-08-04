@@ -22,7 +22,7 @@
       "p": "Дискусирай уебсайта, тествай синтаксиса и предлагай функции"
     },
     "bot": {
-      "header": "HammerTime Дискорд Бот <1>БЕТА</1>",
+      "header": "HammerTime Бот",
       "p": "Генерирай времеви мерки с <1>/timestamp</1> slash командата"
     },
     "textColor": {
@@ -38,5 +38,19 @@
   "builtWith": "Уебсайта е създаден с <1>Font Awesome Free</1>",
   "openSource": "Софтуер с отворен код",
   "viewSource": "Виж програмния код",
-  "notAffiliated": "Този проект не е свързан с Discord."
+  "notAffiliated": "Този проект не е свързан с Discord.",
+  "jsDisabled": {
+    "title": "JavaScript е необходим",
+    "body": "Вашият браузър не поддържа JavaScript или сте го изключили. Някой браузъри изключват JavaScript по подразбиране по съображения за сигурност, но е необходим за този сайт. Моля включете и опреснете или използвайте друг браузър."
+  },
+  "a11y": {
+    "calendar": {
+      "nextMonthLabel": "следващ месец",
+      "previousMonthLabel": "предишен месец",
+      "nextYearLabel": "следваща година",
+      "previousYearLabel": "предишна година",
+      "nextDecadeLabel": "следващо десетилетие",
+      "previousDecadeLabel": "предишно десетилетие"
+    }
+  }
 }

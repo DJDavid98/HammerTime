@@ -22,7 +22,7 @@
       "p": "Bespreek de website, test de syntaxis en stel nieuwe functies voor"
     },
     "bot": {
-      "header": "HammerTime bot",
+      "header": "HammerTime Bot",
       "p": "Genereer tijdsaanduidingen met de <1>/timestamp</1> opdracht"
     },
     "textColor": {
@@ -38,5 +38,19 @@
   "builtWith": "Website gemaakt met <1>Font Awesome Free</1>",
   "openSource": "Open-source software",
   "viewSource": "Bekijk de source code",
-  "notAffiliated": "Dit project is niet geassocieerd met Discord."
+  "notAffiliated": "Dit project is niet geassocieerd met Discord.",
+  "jsDisabled": {
+    "title": "JavaScript is noodzakelijk",
+    "body": "Uw browser ondersteunt JavaScript niet of het is momenteel uitgeschakeld. Sommige browsers deactiveren JavaScript standaard om veiligheidsredenen, maar het is noodzakelijk voor de werking van deze webapplicatie. Activeer JavaScript en ververs de pagina of gebruik een andere browser."
+  },
+  "a11y": {
+    "calendar": {
+      "nextMonthLabel": "volgende maand",
+      "previousMonthLabel": "vorige maand",
+      "nextYearLabel": "volgend jaar",
+      "previousYearLabel": "vorig jaar",
+      "nextDecadeLabel": "volgende decennium",
+      "previousDecadeLabel": "vorige decennium"
+    }
+  }
 }
