@@ -92,13 +92,22 @@ console.info('Generating social previews…');
       ];
       const lineHeight = 80;
       const offsetLineHeight = lineHeight * 1.1;
-      socialCanvasCtx.font = `${lineHeight}px ${fontFamily}, ${jaFontFamily}, ${koFontFamily}`;
+      // socialCanvasCtx.font = `${lineHeight}px ${fontFamily}, ${jaFontFamily}, ${koFontFamily}`;
+      socialCanvasCtx.font = `${lineHeight}px ${fontFamily}`;
       socialCanvasCtx.textAlign = 'center';
       socialCanvasCtx.fillStyle = '#dcddde';
       const textCenterX = Math.floor((socialCanvasWidth / 5) * (isRtl ? 2 : 3));
       const textCenterY = Math.floor(socialCanvasHeight / 2) * 1.05;
       socialCanvasCtx.fillText(chatSyntaxText[0], textCenterX, textCenterY - offsetLineHeight);
       socialCanvasCtx.fillText(chatSyntaxText[1], textCenterX, textCenterY);
+      switch (language) {
+        case 'ja':
+          socialCanvasCtx.font = jaFontFamily;
+          break;
+        case 'ko':
+          socialCanvasCtx.font = koFontFamily;
+          break;
+      }
       socialCanvasCtx.fillText(chatSyntaxText[2], textCenterX, textCenterY + offsetLineHeight);
 
       await fs.writeFile(outputPath, socialCanvas.toBuffer('image/png', { compressionLevel: 9 }));
