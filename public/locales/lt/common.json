@@ -38,5 +38,19 @@
   "builtWith": "Tinklalapis buvo sukurtas naudojant <1>Font Awesome Free</1>",
   "openSource": "Atvirojo kodo programa",
   "viewSource": "Peržiūrėti išeitinį kodą",
-  "notAffiliated": "Šitas projektas nėra susijęs su „Discord“."
+  "notAffiliated": "Šitas projektas nėra susijęs su „Discord“.",
+  "jsDisabled": {
+    "title": "Reikalingas JavaScript",
+    "body": "Tavo naršyklė nepalaiko JavaScript arba jis išjungtas. Saugumo sumetimais kai kuriose naršyklėse JavaScript yra išjungtas pagal nutylėjimą, tačiau šioje puslapyje jis yra būtinas. Įjunk jį ir atnaujink puslapį arba naudok kitą naršyklę."
+  },
+  "a11y": {
+    "calendar": {
+      "nextMonthLabel": "kitą mėnesį",
+      "previousMonthLabel": "praėjusį mėnesį",
+      "nextYearLabel": "kitais metais",
+      "previousYearLabel": "praėjusiais metais",
+      "nextDecadeLabel": "kitą dešimtmetį",
+      "previousDecadeLabel": "praėjusį dešimtmetį"
+    }
+  }
 }
