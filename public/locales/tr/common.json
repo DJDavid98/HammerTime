@@ -3,7 +3,20 @@
   "howTo": "Bir tarih seçin, \"{{syntaxColName}}\" sütunundan istediğiniz zaman damgasını kopyalayın ve ardından bunu sohbet mesajının herhangi bir yerine yapıştırın. Sonuç, herkes için kendi saat dilimine göre farklı görüntülenen dinamik bir zaman damgası olacaktır.",
   "input": {
     "timezone": "Zaman dilimi",
-    "datetime": "Tarih ve zaman"
+    "datetime": "Tarih ve zaman",
+    "date": "Tarih",
+    "time": "Zaman",
+    "settings": {
+      "label": "Girdi ayarları",
+      "customInputs": {
+        "label": "Özel girdiler",
+        "explanation": "Varsayılan girdileri, tarayıcınızın dili yerine geçerli dille eşleşenlerle değiştirir"
+      },
+      "separateInputs": {
+        "label": "Girdileri ayır",
+        "explanation": "Tarih ve saat için birleşik girdi yerine iki farklı ayrı girdi görüntüleyin (bazı tarayıcılarda desteklenmez)"
+      }
+    }
   },
   "buttons": {
     "copy": "Panoya kopyala",
