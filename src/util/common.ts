@@ -15,6 +15,11 @@ export const assembleSeoUrl = (pathname?: string, forceCanonical = false): strin
   return `${forceCanonical || !host ? CANONICAL_URL : `${protocol}//${host}`}${pathname || ''}`;
 };
 
+export const canonicalUrlForLanguage = (pathname: string, language?: string, defaultLanguage?: string) => {
+  const nonDefaultLanguage = language && language !== defaultLanguage;
+  return assembleSeoUrl(`${nonDefaultLanguage ? `/${language}` : ''}${pathname === '/' && nonDefaultLanguage ? '' : pathname}`, true);
+};
+
 export const getDirAttribute = (locale?: string): 'rtl' | 'ltr' =>
   locale && isAvailableLanguage(locale) && LANGUAGES[locale].rtl ? 'rtl' : 'ltr';
 

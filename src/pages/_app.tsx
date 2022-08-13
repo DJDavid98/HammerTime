@@ -5,23 +5,26 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 import React, { useEffect, useMemo } from 'react';
 import 'src/app.scss';
-import { CANONICAL_URL, isAvailableLanguage, SITE_TITLE } from 'src/config';
+import { isAvailableLanguage, SITE_TITLE } from 'src/config';
 import 'src/fontawesome';
-import { assembleSeoUrl, getDirAttribute, useLocale } from 'src/util/common';
+import { assembleSeoUrl, canonicalUrlForLanguage, getDirAttribute, useLocale } from 'src/util/common';
 import '../moment-locales';
 
 const App: AppComponent = ({ Component, pageProps }) => {
   const { asPath, defaultLocale, locale, locales } = useRouter();
 
+  const canonicalUrl = useMemo(() => canonicalUrlForLanguage(asPath, locale, defaultLocale), [asPath, defaultLocale, locale]);
   const languageAlternates = useMemo(
-    () =>
-      locales?.map((hrefLang) => {
-        const nonDefaultLanguage = hrefLang !== defaultLocale;
-        return {
-          hrefLang,
-          href: assembleSeoUrl(`${nonDefaultLanguage ? `/${hrefLang}` : ''}${asPath === '/' && nonDefaultLanguage ? '' : asPath}`, true),
-        };
-      }),
+    () => [
+      ...(locales ?? [])?.map((hrefLang) => ({
+        hrefLang,
+        href: canonicalUrlForLanguage(asPath, hrefLang, defaultLocale),
+      })),
+      {
+        hrefLang: 'x-default',
+        href: canonicalUrlForLanguage(asPath, defaultLocale, defaultLocale),
+      },
+    ],
     [asPath, defaultLocale, locales],
   );
 
@@ -72,7 +75,7 @@ const App: AppComponent = ({ Component, pageProps }) => {
           cardType: 'summary_large_image',
           handle: '@DJDavid98',
         }}
-        canonical={CANONICAL_URL}
+        canonical={canonicalUrl}
         languageAlternates={languageAlternates}
         additionalMetaTags={[
           {
