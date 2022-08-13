@@ -2,8 +2,8 @@
   "seoDescription": "Generiere Zeitstempel-Indikatoren für Discord Chatnachrichten",
   "howTo": "Wähle ein Datum, kopiere den gewünschten Zeitstempel aus der Spalte {{syntaxColName}} und füge ihn dann irgendwo in eine Chatnachricht ein. Das Ergebnis ist ein dynamischer Zeitstempel, der je nach Zeitzone für jeden unterschiedlich angezeigt wird.",
   "input": {
-    "date": "Datum und Uhrzeit",
-    "timezone": "Zeitzone"
+    "timezone": "Zeitzone",
+    "datetime": "Datum und Uhrzeit"
   },
   "buttons": {
     "copy": "In Zwischenablage kopieren",

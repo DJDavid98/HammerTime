@@ -2,8 +2,8 @@
   "seoDescription": "צרו timestamps בשביל צ'אטים בדיסקורד",
   "howTo": "בחרו תאריך, העתיקו את הtimestamp שיצא לכם מה {{syntaxColName}}, והדביקו בצ'אט שלכם. התוצאה תהיה timestamp דינמי שמראה את הזמן בהתאם לכל איזור של כל משתמש.",
   "input": {
-    "date": "תאריך ושעה",
-    "timezone": "אזור זמן"
+    "timezone": "אזור זמן",
+    "datetime": "תאריך ושעה"
   },
   "buttons": {
     "copy": "העתיקו ללוח",

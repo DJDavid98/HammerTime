@@ -2,8 +2,8 @@
   "seoDescription": "为 Discord 聊天消息生成时间戳",
   "howTo": "选择一个日期，从 {{syntaxColName}} 列复制想要的时间戳代码，然后粘贴到 Discord 消息中。在聊天消息中，该时间戳会动态地根据每个用户的时区更改显示的时间。",
   "input": {
-    "date": "日期与时间",
-    "timezone": "时区"
+    "timezone": "时区",
+    "datetime": "日期与时间"
   },
   "buttons": {
     "copy": "复制到剪贴板",

@@ -2,8 +2,8 @@
   "seoDescription": "Laiko žymų generatorius „Discord“ pranešimuose",
   "howTo": "Pasirink datą, nukopijuok norimą laiko žymą iš skilties {{syntaxColName}} ir įklijuok ją bet kurioje žinutėje. Rezultatas bus dinaminė laiko žymas, kuri bus rodoma skirtingai kiekvienam vartotojui pagal jo laiko juostą.",
   "input": {
-    "date": "Data ir laikas",
-    "timezone": "Laiko juosta"
+    "timezone": "Laiko juosta",
+    "datetime": "Data ir laikas"
   },
   "buttons": {
     "copy": "Kopijuoti į iškarpinę",
@@ -38,5 +38,19 @@
   "builtWith": "Tinklalapis buvo sukurtas naudojant <1>Font Awesome Free</1>",
   "openSource": "Atvirojo kodo programa",
   "viewSource": "Peržiūrėti išeitinį kodą",
-  "notAffiliated": "Šitas projektas nėra susijęs su „Discord“."
+  "notAffiliated": "Šitas projektas nėra susijęs su „Discord“.",
+  "jsDisabled": {
+    "title": "Reikalingas JavaScript",
+    "body": "Tavo naršyklė nepalaiko JavaScript arba jis išjungtas. Saugumo sumetimais kai kuriose naršyklėse JavaScript yra išjungtas pagal nutylėjimą, tačiau šioje puslapyje jis yra būtinas. Įjunk jį ir atnaujink puslapį arba naudok kitą naršyklę."
+  },
+  "a11y": {
+    "calendar": {
+      "nextMonthLabel": "kitą mėnesį",
+      "previousMonthLabel": "praėjusį mėnesį",
+      "nextYearLabel": "kitais metais",
+      "previousYearLabel": "praėjusiais metais",
+      "nextDecadeLabel": "kitą dešimtmetį",
+      "previousDecadeLabel": "praėjusį dešimtmetį"
+    }
+  }
 }

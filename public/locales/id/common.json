@@ -2,8 +2,8 @@
   "seoDescription": "Hasilkan indikator stempel waktu untuk pesan obrolan Discord",
   "howTo": "Pilih tanggal, salin stempel waktu yang diinginkan dari kolom {{syntaxColName}}, lalu tempel di mana saja dalam pesan obrolan. Hasilnya akan menjadi stempel waktu yang ditampilkan secara berbeda untuk semua orang berdasarkan zona waktu mereka sendiri.",
   "input": {
-    "date": "Tanggal dan waktu",
-    "timezone": "Zona waktu"
+    "timezone": "Zona waktu",
+    "datetime": "Tanggal dan waktu"
   },
   "buttons": {
     "copy": "Menyalin ke clipboard",
