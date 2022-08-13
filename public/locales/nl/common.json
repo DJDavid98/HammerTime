@@ -2,8 +2,8 @@
   "seoDescription": "Genereer tijdsaanduidingen voor Discord chatberichten",
   "howTo": "Kies een datum, kopieer de gewenste tijdsaanduiding van de {{syntaxColName}} kolom en plak deze dan ergens in een chatbericht. Het resultaat zal een dynamische tijdsaanduiding zijn die voor iedereen anders wordt weergegeven, gebaseerd op hun eigen tijdzone.",
   "input": {
-    "date": "Datum en tijd",
-    "timezone": "Tijdzone"
+    "timezone": "Tijdzone",
+    "datetime": "Datum en tijd"
   },
   "buttons": {
     "copy": "Kopiëren naar klembord",
