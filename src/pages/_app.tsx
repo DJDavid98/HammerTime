@@ -5,7 +5,7 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 import React, { useEffect, useMemo } from 'react';
 import 'src/app.scss';
-import { isAvailableLanguage, SITE_TITLE } from 'src/config';
+import { CANONICAL_URL, isAvailableLanguage, SITE_TITLE } from 'src/config';
 import 'src/fontawesome';
 import { assembleSeoUrl, getDirAttribute, useLocale } from 'src/util/common';
 import '../moment-locales';
@@ -17,7 +17,7 @@ const App: AppComponent = ({ Component, pageProps }) => {
     () =>
       locales?.map((hrefLang) => ({
         hrefLang,
-        href: (hrefLang !== defaultLocale ? assembleSeoUrl(`/${hrefLang}`) : '') + asPath,
+        href: (hrefLang !== defaultLocale ? assembleSeoUrl(`/${hrefLang}`, true) : '') + asPath,
       })),
     [asPath, defaultLocale, locales],
   );
@@ -69,6 +69,7 @@ const App: AppComponent = ({ Component, pageProps }) => {
           cardType: 'summary_large_image',
           handle: '@DJDavid98',
         }}
+        canonical={CANONICAL_URL}
         languageAlternates={languageAlternates}
         additionalMetaTags={[
           {
