@@ -1,0 +1,14 @@
+.button {
+  display: inline;
+  -webkit-appearance: none;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  color: inherit;
+  background: transparent !important;
+  cursor: pointer;
+}
+
+.dropdown-body > :not(:last-child) {
+  margin-bottom: 0.5rem;
+}

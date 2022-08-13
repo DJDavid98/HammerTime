@@ -9,6 +9,7 @@ import {
   faClock,
   faClockRotateLeft,
   faCode,
+  faCog,
   faExclamationTriangle,
   faEye,
   faGlobe,
@@ -49,4 +50,5 @@ library.add(
   faCaretUp,
   faInfo,
   faExclamationTriangle,
+  faCog,
 );

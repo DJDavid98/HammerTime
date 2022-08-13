@@ -1,7 +1,8 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Alert, Button, Paper, Tooltip } from '@mantine/core';
+import { Alert, Button, MantineSize, Paper, Tooltip } from '@mantine/core';
 import { AppContainer } from 'components/AppContainer';
 import { Layout } from 'components/Layout';
+import { LockButton } from 'components/LockButton';
 import { TimestampPicker } from 'components/TimestampPicker';
 import { TimestampsTable } from 'components/TimestampsTable';
 import { UsefulLinks } from 'components/UsefulLinks';
@@ -12,10 +13,16 @@ import { GetStaticProps, NextPage } from 'next';
 import { SSRConfig, useTranslation } from 'next-i18next';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import React, { useCallback, useEffect, useMemo, useState, VFC } from 'react';
+import React, { FC, PropsWithChildren, useCallback, useEffect, useMemo, useState } from 'react';
 import { useLocale } from 'src/util/common';
 import { typedServerSideTranslations } from 'src/util/i18n-server';
-import { getSortedNormalizedTimezoneNames, getTimezoneValue, momentToTimeInputValue } from 'src/util/timezone';
+import {
+  getSortedNormalizedTimezoneNames,
+  getTimezoneValue,
+  isoDateFormat,
+  isoTimeFormat,
+  momentToTimeInputValue,
+} from 'src/util/timezone';
 
 interface IndexPageProps {
   tzNames: string[];
@@ -63,7 +70,7 @@ export const IndexPage: NextPage<IndexPageProps> = ({ tzNames }) => {
   const handleDateChange = useMemo(
     () =>
       throttle((value: null | string) => {
-        setDateString(value || '');
+        setDateString(value || moment().format(isoDateFormat));
       }, 200),
     [],
   );
@@ -73,12 +80,12 @@ export const IndexPage: NextPage<IndexPageProps> = ({ tzNames }) => {
     setDateString(dateStr);
   }, []);
   const handleTimeChange = useCallback((value: null | string) => {
-    setTimeString(value || '');
+    setTimeString(value || moment().format(isoTimeFormat));
   }, []);
   const handleDateTimeChange = useMemo(
     () =>
       throttle((value: null | string) => {
-        setDateTimeString(value || '');
+        setDateTimeString(value || moment().format(`${isoDateFormat} ${isoTimeFormat}`));
       }, 50),
     [setDateTimeString],
   );
@@ -152,23 +159,21 @@ export const IndexPage: NextPage<IndexPageProps> = ({ tzNames }) => {
   }, [fixedTimestamp, t]);
 
   const ButtonsComponent = useMemo(
-    (): VFC => () =>
-      (
-        <>
-          <Tooltip label={setTimeButtonTooltipText}>
-            <Button size="lg" color="gray" onClick={setTimeNow} disabled={fixedTimestamp}>
-              <FontAwesomeIcon icon="clock-rotate-left" />
-            </Button>
-          </Tooltip>{' '}
-          <Tooltip label={lockButtonTooltipText}>
-            <Link href={fixedTimestamp ? '/' : `/?${TS_QUERY_PARAM}=${timestampInSecondsString}`} passHref>
-              <Button component="a" size="lg" color={fixedTimestamp ? 'red' : 'blue'}>
-                <FontAwesomeIcon icon={fixedTimestamp ? 'unlock' : 'lock'} />
+    (): FC<PropsWithChildren<{ size: MantineSize }>> =>
+      ({ size, children }) =>
+        (
+          <>
+            <Tooltip label={setTimeButtonTooltipText}>
+              <Button size={size} color="gray" onClick={setTimeNow} disabled={fixedTimestamp}>
+                <FontAwesomeIcon icon="clock-rotate-left" />
               </Button>
+            </Tooltip>{' '}
+            <Link href={fixedTimestamp ? '/' : `/?${TS_QUERY_PARAM}=${timestampInSecondsString}`} passHref legacyBehavior>
+              <LockButton size={size} lockButtonTooltipText={lockButtonTooltipText} fixedTimestamp={fixedTimestamp} />
             </Link>
-          </Tooltip>
-        </>
-      ),
+            {children}
+          </>
+        ),
     [fixedTimestamp, lockButtonTooltipText, setTimeButtonTooltipText, setTimeNow, timestampInSecondsString],
   );
 
@@ -207,6 +212,7 @@ export const IndexPage: NextPage<IndexPageProps> = ({ tzNames }) => {
             changeTimezone={handleTimezoneChange}
             handleDateChange={handleDateChange}
             handleTimeChange={handleTimeChange}
+            handleDateTimeChange={handleDateTimeChange}
             timezone={timezone}
             defaultTimezone={defaultTimezone}
             timezoneNames={timezoneNames}
