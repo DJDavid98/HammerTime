@@ -3,7 +3,20 @@
   "howTo": "Válassz egy dátumot, másold ki a kívánt jelölőt a {{syntaxColName}} oszlopból, majd másold be bárhova egy üzenetbe. Az eredmény egy dinamikus időbélyeg lesz, ami mindenkinek máshogy fog megjelenni a saját időzónájuktól függően.",
   "input": {
     "timezone": "Időzóna",
-    "datetime": "Dátum és idő"
+    "datetime": "Dátum és idő",
+    "date": "Dátum",
+    "time": "Idő",
+    "settings": {
+      "label": "Beviteli beállítások",
+      "customInputs": {
+        "label": "Egyéni beviteli mezők",
+        "explanation": "Lecseréli az alapértelmezett beviteli mezőket olyanokkal, melyek az aktuális nyelvhez igazodnak a böngészőé helyett"
+      },
+      "separateInputs": {
+        "label": "Külön beviteli mezők",
+        "explanation": "Két különböző mezőt jelenít meg a dátumnak és az időnek egy összevont helyett (ami néhány böngészőben nem támogatott)"
+      }
+    }
   },
   "buttons": {
     "copy": "Másolás a vágólapra",

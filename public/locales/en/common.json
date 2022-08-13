@@ -3,7 +3,20 @@
   "howTo": "Pick a date, copy the desired timestamp from the {{syntaxColName}} column, then paste it anywhere in a chat message. The result will be a dynamic timestamp that displays differently for everyone based on their own timezone.",
   "input": {
     "timezone": "Timezone",
-    "datetime": "Date and time"
+    "datetime": "Date and time",
+    "date": "Date",
+    "time": "Time",
+    "settings": {
+      "label": "Input settings",
+      "customInputs": {
+        "label": "Custom inputs",
+        "explanation": "Replaces the default inputs with ones that match the current language instead of your browser's"
+      },
+      "separateInputs": {
+        "label": "Separate inputs",
+        "explanation": "Display two different inputs for date and time instead of a combined one (which is not supported in some browsers)"
+      }
+    }
   },
   "buttons": {
     "copy": "Copy to clipboard",

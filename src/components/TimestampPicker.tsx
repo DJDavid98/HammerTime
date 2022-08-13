@@ -144,7 +144,7 @@ export const TimestampPicker: VFC<PropTypes> = ({
         <Col md>
           <FormGroup>
             <Label className={`${styles.formLabel} d-flex justify-content-between`}>
-              {t('common:input.date')}
+              {t('common:input.datetime')}
               <a href="#" className="text-white text-decoration-none" onClick={toggleCombinedInput}>
                 <FontAwesomeIcon icon={combinedInput ? 'toggle-on' : 'toggle-off'} />
               </a>
