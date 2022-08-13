@@ -26,5 +26,6 @@ export const LanguageFlag: VoidFunctionComponent<
     return <span>{countryCode}</span>;
   }
 
+  // eslint-disable-next-line @next/next/no-img-element -- We don't need the fancy image component here
   return <img src={flagImageSrc} role={role} alt={altText} height={size} width={size} {...props} placeholder={undefined} />;
 };
