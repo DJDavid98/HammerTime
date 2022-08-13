@@ -3,7 +3,20 @@
   "howTo": "Elige una fecha, copia la marca de tiempo que desees de la columna {{syntaxColName}}, luego cópiala en un mensaje de chat. El resultado será una marca de tiempo dinámica que se mostrará diferente a cada usuario basado en su zona horaria.",
   "input": {
     "timezone": "Zona Horaria",
-    "datetime": "Fecha y Hora"
+    "datetime": "Fecha y Hora",
+    "date": "Fecha",
+    "time": "Hora",
+    "settings": {
+      "label": "Ajustes de entrada",
+      "customInputs": {
+        "label": "Entradas personalizadas",
+        "explanation": "Reemplaza las entradas por defecto con unas que coinciden con el idioma actual en lugar del de tu navegador"
+      },
+      "separateInputs": {
+        "label": "Entradas separadas",
+        "explanation": "Muestra dos entradas diferentes para la fecha y la hora en lugar de una combinada (que no es compatible con algunos navegadores)"
+      }
+    }
   },
   "buttons": {
     "copy": "Copiar al portapapeles",
