@@ -3,7 +3,20 @@
   "howTo": "Scegli una data, copia il timestamp desiderato dalla colonna {{syntaxColName}}, quindi incollalo ovunque in un messaggio testuale. Il risultato sarà un timestamp dinamico che ognuno visualizzerá diversamente in base al proprio fuso orario.",
   "input": {
     "timezone": "Fuso orario",
-    "datetime": "Data e ora"
+    "datetime": "Data e ora",
+    "date": "Data",
+    "time": "Ora",
+    "settings": {
+      "label": "Impostazioni di input",
+      "customInputs": {
+        "label": "Input personalizzati",
+        "explanation": "Sostituisce gli input predefiniti con quelli che corrispondono alla lingua attuale invece di quelli del tuo browser"
+      },
+      "separateInputs": {
+        "label": "Input separati",
+        "explanation": "Mostra due input diversi per data e ora invece di uno combinato (che non è supportato in alcuni browser)"
+      }
+    }
   },
   "buttons": {
     "copy": "Copia negli appunti",
