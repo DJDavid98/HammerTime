@@ -18,8 +18,8 @@ console.info('Generating social previews…');
   const fontPackagePath = path.join(nodeModulesPath, 'source-code-pro');
   const fontFamily = 'Source Code Pro';
   const fontStyle = 'normal';
-  const fontWeight = '600';
-  const fontPath = await fs.realpath(path.join(fontPackagePath, 'TTF', 'SourceCodePro-Semibold.ttf'));
+  const fontWeight = '500';
+  const fontPath = await fs.realpath(path.join(fontPackagePath, 'TTF', 'SourceCodePro-Regular.ttf'));
   registerFont(fontPath, {
     family: fontFamily,
     style: fontStyle,
@@ -75,6 +75,26 @@ console.info('Generating social previews…');
       socialCanvasCtx.fillStyle = '#000';
       socialCanvasCtx.fillRect(0, 0, socialCanvasWidth, socialCanvasHeight);
 
+      // Gradient pass
+      const gradientStartXOffset = 0.33;
+      const gradientEndXOffset = 0.66;
+      const gradientStartX = socialCanvasWidth * (isRtl ? gradientEndXOffset : gradientStartXOffset);
+      const gradientEndX = socialCanvasWidth * (isRtl ? gradientStartXOffset : gradientEndXOffset);
+      const gradient = socialCanvasCtx.createLinearGradient(gradientStartX, 0, gradientEndX, socialCanvasHeight);
+      const gradientOpacity = 0.25;
+      let gradientColors = [
+        `rgba(88, 94, 242, ${gradientOpacity})`,
+        `rgba(88, 101, 242, ${gradientOpacity})`,
+        `rgba(165, 94, 165, ${gradientOpacity})`,
+      ];
+      if (isRtl) gradientColors.reverse();
+      gradientColors.forEach((color, i, arr) => {
+        const pos = i / (arr.length - 1);
+        gradient.addColorStop(isRtl ? 1 - pos : pos, color);
+      });
+      socialCanvasCtx.fillStyle = gradient;
+      socialCanvasCtx.fillRect(0, 0, socialCanvasWidth, socialCanvasHeight);
+
       // Place logo
       const logoLeftOffset = 33;
       const logoX = isRtl ? socialCanvasWidth - appIconSize - logoLeftOffset : logoLeftOffset;
@@ -85,7 +105,7 @@ console.info('Generating social previews…');
       const exampleTimestamp = 1626299131;
       const chatSyntaxText = [
         `<t:${exampleTimestamp}:R>`,
-        '⬇',
+        '⇣',
         moment(new Date(exampleTimestamp * 1e3))
           .locale(momentLocale)
           .from(now),
