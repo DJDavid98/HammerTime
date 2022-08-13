@@ -15,10 +15,13 @@ const App: AppComponent = ({ Component, pageProps }) => {
 
   const languageAlternates = useMemo(
     () =>
-      locales?.map((hrefLang) => ({
-        hrefLang,
-        href: assembleSeoUrl(`${hrefLang !== defaultLocale ? `/${hrefLang}` : ''}${asPath}`, true),
-      })),
+      locales?.map((hrefLang) => {
+        const nonDefaultLanguage = hrefLang !== defaultLocale;
+        return {
+          hrefLang,
+          href: assembleSeoUrl(`${nonDefaultLanguage ? `/${hrefLang}` : ''}${asPath === '/' && nonDefaultLanguage ? '' : asPath}`, true),
+        };
+      }),
     [asPath, defaultLocale, locales],
   );
 
