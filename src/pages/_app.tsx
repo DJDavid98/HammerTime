@@ -17,7 +17,7 @@ const App: AppComponent = ({ Component, pageProps }) => {
     () =>
       locales?.map((hrefLang) => ({
         hrefLang,
-        href: (hrefLang !== defaultLocale ? assembleSeoUrl(`/${hrefLang}`, true) : '') + asPath,
+        href: assembleSeoUrl(`${hrefLang !== defaultLocale ? `/${hrefLang}` : ''}${asPath}`, true),
       })),
     [asPath, defaultLocale, locales],
   );

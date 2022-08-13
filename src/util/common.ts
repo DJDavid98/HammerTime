@@ -12,7 +12,7 @@ export const useLocale = (language?: string) =>
 export const assembleSeoUrl = (pathname?: string, forceCanonical = false): string => {
   const protocol = IS_CLIENT_SIDE ? location.protocol : 'https:';
   const host = IS_CLIENT_SIDE ? location.host : process.env.NEXT_PUBLIC_VERCEL_URL;
-  return `${!forceCanonical && host ? `${protocol}//${host}` : CANONICAL_URL}${pathname || ''}`;
+  return `${forceCanonical || !host ? CANONICAL_URL : `${protocol}//${host}`}${pathname || ''}`;
 };
 
 export const getDirAttribute = (locale?: string): 'rtl' | 'ltr' =>
