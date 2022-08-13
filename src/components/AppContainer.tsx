@@ -8,6 +8,12 @@ import { SITE_TITLE } from 'src/config';
 
 const headerHeight = 52;
 
+const shellStyles = {
+  main: {
+    marginTop: headerHeight,
+  },
+};
+
 export const AppContainer: FC = ({ children }) => (
   <AppShell
     padding="md"
@@ -23,14 +29,10 @@ export const AppContainer: FC = ({ children }) => (
         </Center>
       </Header>
     }
+    className={styles.shell}
     footer={<AppFooter />}
     fixed={false}
-    styles={(theme) => ({
-      main: {
-        backgroundColor: theme.colors.discord[0],
-        marginTop: headerHeight,
-      },
-    })}
+    styles={shellStyles}
   >
     <div className={styles.shellContents}>{children}</div>
   </AppShell>

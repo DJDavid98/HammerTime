@@ -23,7 +23,7 @@ export const CopySyntax: VoidFunctionComponent<{ syntax: string; t: TFunction }>
   }, [clipboard, syntax]);
 
   let actionItemJsx: JSX.Element = (
-    <ActionIcon size={elementSizes} color="discord" variant="filled" onClick={copyToClipboard}>
+    <ActionIcon size={elementSizes} color="primary" variant="filled" onClick={copyToClipboard}>
       <FontAwesomeIcon icon="clipboard" />
     </ActionIcon>
   );
