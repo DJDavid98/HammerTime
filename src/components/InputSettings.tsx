@@ -27,17 +27,17 @@ export const InputSettings: FC<PropTypes> = ({
   return (
     <Popover shadow="xl" width={250}>
       <Popover.Target>
-        {size ? (
-          <Tooltip label={settingsLabel}>
+        <Tooltip label={settingsLabel}>
+          {size ? (
             <Button size={size} color="gray" aria-label={settingsLabel}>
               <FontAwesomeIcon icon="cog" />
             </Button>
-          </Tooltip>
-        ) : (
-          <button type="button" className={styles.button} aria-label={settingsLabel}>
-            <FontAwesomeIcon icon="cog" />
-          </button>
-        )}
+          ) : (
+            <button type="button" className={styles.button} aria-label={settingsLabel}>
+              <FontAwesomeIcon icon="cog" />
+            </button>
+          )}
+        </Tooltip>
       </Popover.Target>
 
       <Popover.Dropdown className={styles.dropdownBody} key={dropdownKey}>
