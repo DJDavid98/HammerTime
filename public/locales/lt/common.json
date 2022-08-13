@@ -2,8 +2,8 @@
   "seoDescription": "Laiko žymų generatorius „Discord“ pranešimuose",
   "howTo": "Pasirink datą, nukopijuok norimą laiko žymą iš skilties {{syntaxColName}} ir įklijuok ją bet kurioje žinutėje. Rezultatas bus dinaminė laiko žymas, kuri bus rodoma skirtingai kiekvienam vartotojui pagal jo laiko juostą.",
   "input": {
-    "date": "Data ir laikas",
-    "timezone": "Laiko juosta"
+    "timezone": "Laiko juosta",
+    "datetime": "Data ir laikas"
   },
   "buttons": {
     "copy": "Kopijuoti į iškarpinę",
