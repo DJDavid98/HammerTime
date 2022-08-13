@@ -2,8 +2,8 @@
   "seoDescription": "Generator znaczników czasu dla wiadomości wysyłanych na Discordzie",
   "howTo": "Wybierz datę, skopiuj wybrany znacznik czasu z kolumny {{syntaxColName}}, a następnie wklej go w dowolnym miejscu w wiadomości. Gdy wiadomość zostanie wysłana, Ty i inni użytkownicy zobaczycie dynamiczny znacznik czasu, który będzie wyświetlany inaczej dla każdego, w zależności od strefy czasowej danego użytkownika.",
   "input": {
-    "date": "Data i czas",
-    "timezone": "Strefa czasowa"
+    "timezone": "Strefa czasowa",
+    "datetime": "Data i czas"
   },
   "buttons": {
     "copy": "Skopiuj do schowka",
