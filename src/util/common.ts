@@ -9,10 +9,15 @@ export const useLocale = (language?: string) =>
     return 'en';
   }, [language]);
 
-export const assembleSeoUrl = (pathname?: string): string => {
+export const assembleSeoUrl = (pathname?: string, forceCanonical = false): string => {
   const protocol = IS_CLIENT_SIDE ? location.protocol : 'https:';
   const host = IS_CLIENT_SIDE ? location.host : process.env.NEXT_PUBLIC_VERCEL_URL;
-  return `${host ? `${protocol}//${host}` : CANONICAL_URL}${pathname || ''}`;
+  return `${forceCanonical || !host ? CANONICAL_URL : `${protocol}//${host}`}${pathname || ''}`;
+};
+
+export const canonicalUrlForLanguage = (pathname: string, language?: string, defaultLanguage?: string) => {
+  const nonDefaultLanguage = language && language !== defaultLanguage;
+  return assembleSeoUrl(`${nonDefaultLanguage ? `/${language}` : ''}${pathname === '/' && nonDefaultLanguage ? '' : pathname}`, true);
 };
 
 export const getDirAttribute = (locale?: string): 'rtl' | 'ltr' =>

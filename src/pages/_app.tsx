@@ -8,7 +8,7 @@ import React, { useEffect, useMemo } from 'react';
 import 'src/app.scss';
 import { SITE_TITLE } from 'src/config';
 import 'src/fontawesome';
-import { assembleSeoUrl, getDirAttribute, useLocale } from 'src/util/common';
+import { assembleSeoUrl, canonicalUrlForLanguage, getDirAttribute, useLocale } from 'src/util/common';
 import { getEmotionCache, themeOverride } from 'src/util/styling';
 import '../dayjs-locales';
 import '../moment-locales';
@@ -16,12 +16,18 @@ import '../moment-locales';
 const App: AppComponent = ({ Component, pageProps }) => {
   const { asPath, defaultLocale, locale, locales } = useRouter();
 
+  const canonicalUrl = useMemo(() => canonicalUrlForLanguage(asPath, locale, defaultLocale), [asPath, defaultLocale, locale]);
   const languageAlternates = useMemo(
-    () =>
-      locales?.map((hrefLang) => ({
+    () => [
+      ...(locales ?? [])?.map((hrefLang) => ({
         hrefLang,
-        href: (hrefLang !== defaultLocale ? `/${hrefLang}` : '') + asPath,
+        href: canonicalUrlForLanguage(asPath, hrefLang, defaultLocale),
       })),
+      {
+        hrefLang: 'x-default',
+        href: canonicalUrlForLanguage(asPath, defaultLocale, defaultLocale),
+      },
+    ],
     [asPath, defaultLocale, locales],
   );
 
@@ -70,6 +76,7 @@ const App: AppComponent = ({ Component, pageProps }) => {
           cardType: 'summary_large_image',
           handle: '@DJDavid98',
         }}
+        canonical={canonicalUrl}
         languageAlternates={languageAlternates}
         additionalMetaTags={[
           {

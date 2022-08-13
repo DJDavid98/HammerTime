@@ -192,7 +192,7 @@ export const TimestampPicker: VFC<PropTypes> = ({
               {...datePickerA11y}
               key={`${dateInputId}-${dateTimeValue}`}
               id={dateInputId}
-              label={t('common:input.date')}
+              label={t('common:input.datetime')}
               locale={locale}
               value={date}
               icon={<FontAwesomeIcon icon="calendar" fixedWidth />}

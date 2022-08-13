@@ -38,7 +38,7 @@ English and Hungarian translations have been included, so no translators will be
 - 🇳🇱 Dutch: Jesse (Jessuh)
 - 🇵🇱 Polish: Dawid (MinerPL), stha (sthakrk)
 - 🇲🇾 Malay: Nurul Azeera Hidayah @ Muhammad Nur Hidayat Yasuyoshi (MNH48.moe) (mnh48)
-- 🇪🇸 Spanish: Pablo Luna (shaulyareaj)
+- 🇪🇸 Spanish: Pablo Luna (shaulyareaj), DrakeZero
 - 🇮🇹 Italian: Lory Pelli (pellilory126)
 - 🇸🇪 Swedish: Liggliluff, tunket
 - 🇧🇬 Bulgarian: Rxshi
