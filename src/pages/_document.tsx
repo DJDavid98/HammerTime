@@ -30,9 +30,7 @@ class MyDocument extends Document {
           <meta name="color-scheme" content="dark" />
           <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
 
-          <link rel="icon" href="/logos/logo-light.png" media="(prefers-color-scheme:no-preference)" />
-          <link rel="icon" href="/logos/logo-dark.png" media="(prefers-color-scheme:dark)" />
-          <link rel="icon" href="/logos/logo-light.png" media="(prefers-color-scheme:light)" />
+          <link rel="icon" href="/logos/logo.png" />
         </Head>
         <body>
           <Main />
