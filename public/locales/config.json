@@ -79,12 +79,14 @@
     "ja": {
       "nativeName": "日本語",
       "countryCode": "JP",
-      "calendarLabelFormat": "YYYY年MMMM"
+      "calendarLabelFormat": "YYYY年MMMM",
+      "calendarYearLabelFormat": "YYYY年"
     },
     "ko": {
       "nativeName": "한국어",
       "countryCode": "KR",
-      "calendarLabelFormat": "YYYY년 MMMM"
+      "calendarLabelFormat": "YYYY년 MMMM",
+      "calendarYearLabelFormat": "YYYY년"
     },
     "ar": {
       "nativeName": "اللغة العربية",
@@ -101,7 +103,8 @@
       "countryCode": "CN",
       "crowdinLocale": "zh-CN",
       "momentLocale": "zh-cn",
-      "calendarLabelFormat": "YYYY年MMM"
+      "calendarLabelFormat": "YYYY年MMM",
+      "calendarYearLabelFormat": "YYYY年"
     },
     "ca": {
       "nativeName": "Català",

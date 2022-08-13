@@ -20,6 +20,7 @@ export type LanguageConfig = {
   crowdinLocale?: string;
   percent?: number;
   calendarLabelFormat?: string;
+  calendarYearLabelFormat?: string;
 };
 
 type LanguagesConfig = Record<AvailableLanguage, LanguageConfig>;

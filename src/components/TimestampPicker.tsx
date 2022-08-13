@@ -89,7 +89,7 @@ export const TimestampPicker: VFC<PropTypes> = ({
   const date = useMemo(() => (dateString && timeString ? new Date(`${dateString}T${timeString}`) : new Date(0)), [dateString, timeString]);
   const timeFormat = useMemo(() => (moment.localeData(locale).longDateFormat('LT').includes('A') ? '12' : '24'), [locale]);
   const firstDayOfWeekOverride = useMemo(() => firstDayOfWeekOverrideRecord[locale], [locale]);
-  const { calendarLabelFormat } = useMemo(() => LANGUAGES[language as AvailableLanguage], [language]);
+  const { calendarLabelFormat, calendarYearLabelFormat } = useMemo(() => LANGUAGES[language as AvailableLanguage], [language]);
   const amLabel = useMemo(() => moment.localeData(locale).meridiem(1, 0, true), [locale]);
   const pmLabel = useMemo(() => moment.localeData(locale).meridiem(13, 0, true), [locale]);
   const theme = useMantineTheme();
@@ -203,6 +203,7 @@ export const TimestampPicker: VFC<PropTypes> = ({
               dayStyle={dayStyle}
               firstDayOfWeek={firstDayOfWeekOverride}
               labelFormat={calendarLabelFormat}
+              yearLabelFormat={calendarYearLabelFormat}
             />
             <TimeInput
               key={`${timeInputId}-${dateTimeValue}`}
