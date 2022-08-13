@@ -2,8 +2,8 @@
   "seoDescription": "Genera marcas de tiempo para mensajes de chat de Discord",
   "howTo": "Elige una fecha, copia la marca de tiempo que desees de la columna {{syntaxColName}}, luego cópiala en un mensaje de chat. El resultado será una marca de tiempo dinámica que se mostrará diferente a cada usuario basado en su zona horaria.",
   "input": {
-    "date": "Fecha y Hora",
-    "timezone": "Zona Horaria"
+    "timezone": "Zona Horaria",
+    "datetime": "Fecha y Hora"
   },
   "buttons": {
     "copy": "Copiar al portapapeles",
