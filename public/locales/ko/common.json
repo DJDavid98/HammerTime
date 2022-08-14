@@ -2,8 +2,21 @@
   "seoDescription": "Discord용 타임스탬프를 생성할 수 있습니다.",
   "howTo": "날짜를 고르고, {{syntaxColName}} 리스트에서 원하는 형식의 타임스탬프를 복사하여, 메시지에 그대로 붙여 넣으세요. 시간대에 따라, 모두에게 다르게 보이는 동적 타임스탬프가 될 것입니다.",
   "input": {
-    "date": "일시",
-    "timezone": "시간대"
+    "timezone": "시간대",
+    "datetime": "일시",
+    "date": "날짜",
+    "time": "시간",
+    "settings": {
+      "label": "입력 설정",
+      "customInputs": {
+        "label": "커스텀 입력",
+        "explanation": "브라우저의 기본 입력 대신, 선택하신 언어에 맞는 입력을 표시합니다"
+      },
+      "separateInputs": {
+        "label": "별개 입력",
+        "explanation": "한 입력창 대신, 날짜와 시간으로 나뉜 두 입력창을 표시합니다 (일부 브라우저에서 지원하지 않음)"
+      }
+    }
   },
   "buttons": {
     "copy": "클립보드에 복사",
@@ -38,5 +51,19 @@
   "builtWith": "<1>Font Awesome Free</1>를 사용함",
   "openSource": "오픈 소스 소프트웨어",
   "viewSource": "소스 코드 보기",
-  "notAffiliated": "이 프로젝트는 Discord Inc.와 아무런 관련이 없습니다."
+  "notAffiliated": "이 프로젝트는 Discord Inc.와 아무런 관련이 없습니다.",
+  "jsDisabled": {
+    "title": "JavaScript가 필요합니다",
+    "body": "현재 사용하고 계시는 브라우저가 JavaScript를 지원하지 않거나, JavaScript를 끄고 있습니다. 일부 브라우저는 보안상의 이유로 기본값으로 JavaScript를 끄지만, 이 앱은 JavaScript를 사용합니다. JavaScript를 키고 페이지를 새로고침하거나, 다른 브라우저를 사용해 주세요."
+  },
+  "a11y": {
+    "calendar": {
+      "nextMonthLabel": "다음 달",
+      "previousMonthLabel": "이전 달",
+      "nextYearLabel": "다음 해",
+      "previousYearLabel": "이전 해",
+      "nextDecadeLabel": "다음 10년",
+      "previousDecadeLabel": "이전 10년"
+    }
+  }
 }

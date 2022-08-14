@@ -3,7 +3,20 @@
   "howTo": "Wybierz datę, skopiuj wybrany znacznik czasu z kolumny {{syntaxColName}}, a następnie wklej go w dowolnym miejscu w wiadomości. Gdy wiadomość zostanie wysłana, Ty i inni użytkownicy zobaczycie dynamiczny znacznik czasu, który będzie wyświetlany inaczej dla każdego, w zależności od strefy czasowej danego użytkownika.",
   "input": {
     "timezone": "Strefa czasowa",
-    "datetime": "Data i czas"
+    "datetime": "Data i czas",
+    "date": "Data",
+    "time": "Czas",
+    "settings": {
+      "label": "Ustawienia wejść",
+      "customInputs": {
+        "label": "Niestandardowe wejścia",
+        "explanation": "Zastępuje domyślne dane wejściowe na te, które pasują do bieżącego języka zamiast przeglądarki"
+      },
+      "separateInputs": {
+        "label": "Oddzielne wejścia",
+        "explanation": "Wyświetla dwa różne wejścia na date i czas zamiast połączonych pól (które nie są obsługiwane przez niektórze przeglądarki)"
+      }
+    }
   },
   "buttons": {
     "copy": "Skopiuj do schowka",

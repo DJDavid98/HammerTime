@@ -3,7 +3,20 @@
   "howTo": "选择一个日期，从 {{syntaxColName}} 列复制想要的时间戳代码，然后粘贴到 Discord 消息中。在聊天消息中，该时间戳会动态地根据每个用户的时区更改显示的时间。",
   "input": {
     "timezone": "时区",
-    "datetime": "日期与时间"
+    "datetime": "日期与时间",
+    "date": "日期",
+    "time": "时间",
+    "settings": {
+      "label": "输入设置",
+      "customInputs": {
+        "label": "自定义输入控件",
+        "explanation": "使用匹配您当前语言的输入控件，而非浏览器的默认输入控件。"
+      },
+      "separateInputs": {
+        "label": "分开日期与时间输入",
+        "explanation": "将“日期与时间”输入框拆分成“日期”和“时间”两个输入框。可能会解决浏览器兼容性问题。"
+      }
+    }
   },
   "buttons": {
     "copy": "复制到剪贴板",

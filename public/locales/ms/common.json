@@ -3,7 +3,20 @@
   "howTo": "Pilih tarikh, salin cap masa yang diingini dari lajur {{syntaxColName}}, kemudian tampal di mana-mana sahaja dalam mesej sembang. Hasilnya ialah cap masa dinamik yang dipaparkan secara berlainan untuk semua orang berdasarkan zon waktu masing-masing.",
   "input": {
     "timezone": "Zon waktu",
-    "datetime": "Tarikh dan masa"
+    "datetime": "Tarikh dan masa",
+    "date": "Tarikh",
+    "time": "Masa",
+    "settings": {
+      "label": "Tetapan input",
+      "customInputs": {
+        "label": "Input tersuai",
+        "explanation": "Menggantikan input lalai dengan versi yang sepadan dengan bahasa semasa berbanding versi pelayar anda"
+      },
+      "separateInputs": {
+        "label": "Input berasingan",
+        "explanation": "Memaparkan dua input berlainan untuk tarikh dan masa menggantikan input bergabung (yang tidak disokong pada sesetengah pelayar)"
+      }
+    }
   },
   "buttons": {
     "copy": "Salin ke papan keratan",
