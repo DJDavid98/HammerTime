@@ -1,33 +1,39 @@
-import classNames from 'classnames';
-import React, { FunctionComponent, memo, ReactNode, ReactNodeArray } from 'react';
-import { Card, CardBody, CardHeader, Col, Container, Row } from 'reactstrap';
+import { Anchor, AppShell, Center, Header } from '@mantine/core';
+import { AppFooter } from 'components/AppFooter';
+import { CustomIcon } from 'components/CustomIcon';
+import styles from 'modules/AppContainer.module.scss';
+import Link from 'next/link';
+import { FC } from 'react';
+import { SITE_TITLE } from 'src/config';
 
-interface PropTypes {
-  bg?: string;
-  heading?: string;
-  fluid?: boolean;
-  children: ReactNode | ReactNodeArray;
-}
+const headerHeight = 52;
 
-const ContainerContent: FunctionComponent = ({ children }) => (
-  <Row className="justify-content-center">
-    <Col md={12} lg={10}>
-      {children}
-    </Col>
-  </Row>
+const shellStyles = {
+  main: {
+    marginTop: headerHeight,
+  },
+};
+
+export const AppContainer: FC = ({ children }) => (
+  <AppShell
+    padding="md"
+    header={
+      <Header fixed height={headerHeight} p="xs">
+        <Center>
+          <Link href="/" passHref>
+            <Anchor size="xl" weight={700} color="dimmed" underline={false}>
+              <CustomIcon src="/logos/app.svg" alt="" />
+              {` ${SITE_TITLE}`}
+            </Anchor>
+          </Link>
+        </Center>
+      </Header>
+    }
+    className={styles.shell}
+    footer={<AppFooter />}
+    fixed={false}
+    styles={shellStyles}
+  >
+    <div className={styles.shellContents}>{children}</div>
+  </AppShell>
 );
-
-const AppContainerComponent: React.FC<PropTypes> = ({ bg = 'discord', fluid, heading, children }) => (
-  <div className={classNames('py-4', bg && `bg-${bg}`)}>
-    <Container fluid={fluid}>
-      <ContainerContent>
-        <Card>
-          {typeof heading === 'string' && <CardHeader>{heading}</CardHeader>}
-          <CardBody>{children}</CardBody>
-        </Card>
-      </ContainerContent>
-    </Container>
-  </div>
-);
-
-export const AppContainer = memo(AppContainerComponent);

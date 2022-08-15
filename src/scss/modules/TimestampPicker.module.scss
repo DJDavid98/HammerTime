@@ -1,29 +1,51 @@
 @import '../vars';
-@import '~bootstrap/scss/functions';
-@import '~bootstrap/scss/mixins';
-@import '~bootstrap/scss/variables';
 
-.datepicker {
+$large-input-threshold: 768px;
+
+.timestamp-picker {
   position: relative;
   z-index: 3;
   margin-bottom: 1rem;
 
-  .form-label {
-    width: 100%;
-  }
-
-  .input-addon {
-    cursor: pointer;
-  }
-
   input[disabled] {
-    color: rgba($input-color, 0.75);
     pointer-events: none;
   }
-}
 
-:root[dir='rtl'] {
-  .datepicker .form-label {
-    text-align: right;
+  .datetime-picker-wrap {
+    position: relative;
+
+    &.combined-input-wrap {
+      flex-basis: 100%;
+
+      @media (min-width: $large-input-threshold) {
+        flex-basis: 50%;
+      }
+
+      .combined-input {
+        flex-basis: 100%;
+        flex-grow: 1;
+      }
+    }
+
+    .input-selector-wrap {
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 1.75rem;
+    }
+  }
+
+  :global {
+    .mantine-InputWrapper-label {
+      display: block;
+    }
+
+    .mantine-AmPmInput-amPmInput {
+      width: 3em !important;
+      text-align: center;
+    }
   }
 }

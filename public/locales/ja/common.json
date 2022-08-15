@@ -2,8 +2,21 @@
   "seoDescription": "Discordメッセージのタイムスタンプを生成できる",
   "howTo": "日付を選び、 メッセージの {{syntaxColName}} 列文からタイムスタンプを自由にコピーし、あなたのメッセージにどこにでも貼り付ける事ができます。 みんなのタイムゾーンに基づいて表示される動的タイムスタンプになります。",
   "input": {
-    "date": "日付と時刻",
-    "timezone": "タイムゾーン"
+    "timezone": "タイムゾーン",
+    "datetime": "日付と時刻",
+    "date": "日付",
+    "time": "時刻",
+    "settings": {
+      "label": "入力設定",
+      "customInputs": {
+        "label": "カスタム入力",
+        "explanation": "ブラウザの入力方法の代わりに、言語に合う入力を表示します"
+      },
+      "separateInputs": {
+        "label": "分離入力",
+        "explanation": "日付と時刻の入力を分離させます（一部ブラウザではサポートされていません）"
+      }
+    }
   },
   "buttons": {
     "copy": "クリップボードにコピー",
@@ -38,5 +51,19 @@
   "builtWith": "<1>Font Awesome Free</1>を使って作成",
   "openSource": "オープンソース",
   "viewSource": "ソースコードを見る",
-  "notAffiliated": "このサイトとDiscordは関係していません。"
+  "notAffiliated": "このサイトとDiscordは関係していません。",
+  "jsDisabled": {
+    "title": "JavaScriptが必要です",
+    "body": "お使いのブラウザはJavaScriptをサポートしないか、無効化されています。一部ブラウザではセキュリティ上の理由でJavaScriptをデフォルトで無効化しますが、このアプリには必要です。有効にしてページを再読み込みするか、違うブラウザを使用してください。"
+  },
+  "a11y": {
+    "calendar": {
+      "nextMonthLabel": "来月",
+      "previousMonthLabel": "前月",
+      "nextYearLabel": "来年",
+      "previousYearLabel": "去年",
+      "nextDecadeLabel": "次の10年",
+      "previousDecadeLabel": "10年前"
+    }
+  }
 }

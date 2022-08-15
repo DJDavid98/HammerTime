@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import classNames from 'classnames';
+import { Badge, Button, Popover, Text } from '@mantine/core';
 import { LanguageFlag } from 'components/LanguageFlag';
 import { UnfinishedTranslationsLink } from 'components/UnfinishedTranslationsLink';
 import toPairs from 'lodash/toPairs';
@@ -7,81 +7,98 @@ import styles from 'modules/LanguageSelector.module.scss';
 import { useTranslation } from 'next-i18next';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { useMemo, VFC } from 'react';
-import { Badge, DropdownItem, DropdownMenu, DropdownToggle, UncontrolledDropdown } from 'reactstrap';
+import { useCallback, useMemo, useState, VFC } from 'react';
 import { AvailableLanguage, LANGUAGES } from 'src/config';
 import { getDirAttribute } from 'src/util/common';
 
-export const LanguageSelector: VFC<{ className?: string }> = ({ className }) => {
+export const LanguageSelector: VFC<{ footerItemClass: string }> = ({ footerItemClass }) => {
   const router = useRouter();
   const {
     t,
     i18n: { language },
   } = useTranslation();
+  const [opened, setOpened] = useState(false);
+  const toggleOpened = useCallback(() => {
+    setOpened((o) => !o);
+  }, []);
   const sortedLanguages = useMemo(() => toPairs(LANGUAGES).sort(([, a], [, b]) => a.nativeName.localeCompare(b.nativeName)), []);
 
   const currentLanguage = useMemo(() => (language in LANGUAGES ? LANGUAGES[language as AvailableLanguage] : undefined), [language]);
 
   const languagePercent = currentLanguage?.percent;
 
-  const nativeLangName = useMemo(() => (currentLanguage ? currentLanguage.nativeName : t('common:changeLanguage')), [currentLanguage, t]);
-
   return (
     <>
-      <UncontrolledDropdown className={classNames(className, styles.languageSelector)}>
-        <DropdownToggle color="link" className="fw-bold text-decoration-none">
-          {currentLanguage ? <LanguageFlag language={currentLanguage} /> : <FontAwesomeIcon icon="globe" />}
-          <span className={styles.currentLangName}>{nativeLangName}</span>
-          <FontAwesomeIcon icon="caret-up" />
-        </DropdownToggle>
-        <DropdownMenu end dark className={styles.languageList}>
-          <DropdownItem header className={`${styles.item} ${styles.headerItem}`}>
-            <span>{`${t('common:changeLanguage')} `}</span>
-            <Badge color="secondary" className="mx-2">
-              {sortedLanguages.length}
-            </Badge>
-          </DropdownItem>
-          {sortedLanguages.map(([key, value]) => {
-            const isCurrentLanguage = language === key;
-            const dropdownItemJsx = (
-              <DropdownItem
-                key={isCurrentLanguage ? key : undefined}
-                tag={isCurrentLanguage ? 'a' : undefined}
-                className={styles.item}
-                dir={getDirAttribute(key as AvailableLanguage)}
-                disabled={isCurrentLanguage}
-              >
-                <LanguageFlag language={value} />
-                <span className={styles.nativeName}>{value.nativeName}</span>
-                {typeof value.percent === 'number' && (
-                  <span className="mx-1 text-warning">
-                    <FontAwesomeIcon icon="life-ring" />
-                  </span>
-                )}
-              </DropdownItem>
-            );
-            if (isCurrentLanguage) {
-              return dropdownItemJsx;
-            }
-            return (
-              <Link
-                key={key}
-                href={{
-                  pathname: router.pathname,
-                  query: router.query,
-                }}
-                locale={key}
-                passHref
-                shallow={false}
-              >
-                {dropdownItemJsx}
-              </Link>
-            );
-          })}
-        </DropdownMenu>
-      </UncontrolledDropdown>
+      <div className={footerItemClass}>
+        <Popover opened={opened} onClose={() => setOpened(false)} position="top" withArrow shadow="xl">
+          <Popover.Target>
+            <Button
+              variant="subtle"
+              size="sm"
+              leftIcon={currentLanguage ? <LanguageFlag language={currentLanguage} /> : <FontAwesomeIcon icon="globe" />}
+              rightIcon={<FontAwesomeIcon icon={opened ? 'caret-down' : 'caret-up'} />}
+              onClick={toggleOpened}
+            >
+              {currentLanguage?.nativeName || t('common:changeLanguage')}
+            </Button>
+          </Popover.Target>
+          <Popover.Dropdown>
+            <Text size="sm" className={styles.changeLanguage}>
+              <span>{`${t('common:changeLanguage')} `}</span>
+              <Badge color="gray">{sortedLanguages.length}</Badge>
+            </Text>
+            <div className={styles.languageSelector}>
+              {sortedLanguages.map(([key, value]) => {
+                const isCurrentLanguage = language === key;
+                const dropdownItemJsx = (
+                  <Button
+                    key={isCurrentLanguage ? key : undefined}
+                    component={isCurrentLanguage ? undefined : ('a' as `button`)}
+                    variant="subtle"
+                    className={styles.item}
+                    dir={getDirAttribute(key as AvailableLanguage)}
+                    leftIcon={<LanguageFlag language={value} />}
+                    rightIcon={
+                      typeof value.percent === 'number' && (
+                        <Text color="orange">
+                          <FontAwesomeIcon icon="life-ring" />
+                        </Text>
+                      )
+                    }
+                    disabled={isCurrentLanguage}
+                  >
+                    <span className={styles.nativeName}>{value.nativeName}</span>
+                  </Button>
+                );
+                if (isCurrentLanguage) {
+                  return dropdownItemJsx;
+                }
+                return (
+                  <Link
+                    key={key}
+                    href={{
+                      pathname: router.pathname,
+                      query: router.query,
+                    }}
+                    locale={key}
+                    passHref
+                    shallow={false}
+                  >
+                    {dropdownItemJsx}
+                  </Link>
+                );
+              })}
+            </div>
+          </Popover.Dropdown>
+        </Popover>
+      </div>
       {typeof languagePercent === 'number' && (
-        <UnfinishedTranslationsLink percent={currentLanguage?.percent} crowdinLocale={currentLanguage?.crowdinLocale || language} />
+        <>
+          <div className={styles.spacer} />
+          <div className={footerItemClass}>
+            <UnfinishedTranslationsLink percent={languagePercent} crowdinLocale={currentLanguage?.crowdinLocale || language} />
+          </div>
+        </>
       )}
     </>
   );

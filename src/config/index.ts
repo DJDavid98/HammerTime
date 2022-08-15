@@ -12,6 +12,13 @@ export const IS_CLIENT_SIDE = typeof window !== 'undefined';
 export type AvailableLanguage = keyof typeof localeConfig.languages;
 
 export type LanguageConfig = {
+  /**
+   * Language name in English
+   */
+  name: string;
+  /**
+   * Language name in the language itself
+   */
   nativeName: string;
   countryCode: string;
   customFlag?: boolean;
@@ -19,6 +26,8 @@ export type LanguageConfig = {
   momentLocale?: string;
   crowdinLocale?: string;
   percent?: number;
+  calendarLabelFormat?: string;
+  calendarYearLabelFormat?: string;
 };
 
 type LanguagesConfig = Record<AvailableLanguage, LanguageConfig>;

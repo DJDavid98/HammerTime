@@ -1,3 +1,4 @@
+import { MantineProvider } from '@mantine/core';
 import { appWithTranslation, useTranslation } from 'next-i18next';
 import { DefaultSeo } from 'next-seo';
 import { AppComponent } from 'next/dist/shared/lib/router/router';
@@ -5,9 +6,11 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 import React, { useEffect, useMemo } from 'react';
 import 'src/app.scss';
-import { isAvailableLanguage, SITE_TITLE } from 'src/config';
+import { SITE_TITLE } from 'src/config';
 import 'src/fontawesome';
 import { assembleSeoUrl, canonicalUrlForLanguage, getDirAttribute, useLocale } from 'src/util/common';
+import { getEmotionCache, themeOverride } from 'src/util/styling';
+import '../dayjs-locales';
 import '../moment-locales';
 
 const App: AppComponent = ({ Component, pageProps }) => {
@@ -30,28 +33,26 @@ const App: AppComponent = ({ Component, pageProps }) => {
 
   const { t } = useTranslation();
 
-  useEffect(() => {
-    if (!locale || !isAvailableLanguage(locale)) return;
-
-    const direction = getDirAttribute(locale);
-    document.documentElement.setAttribute('dir', direction);
+  const ltrOptions = useMemo(() => {
+    const dir = getDirAttribute(locale);
+    const emotionCache = getEmotionCache(dir);
+    return {
+      dir,
+      emotionCache,
+    };
   }, [locale]);
+  useEffect(() => {
+    document.documentElement.setAttribute('dir', ltrOptions.dir);
+  }, [ltrOptions.dir]);
 
   const momentLocale = useLocale(locale);
+
+  const theme = useMemo(() => ({ dir: ltrOptions.dir, ...themeOverride }), [ltrOptions.dir]);
 
   return (
     <>
       <Head>
-        <meta charSet="UTF-8" />
-        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="format-detection" content="telephone=no" />
-        <meta name="theme-color" content="#5865F2" />
-        <meta name="color-scheme" content="dark" />
-
-        <link rel="icon" href="/logos/logo-light.png" media="(prefers-color-scheme:no-preference)" />
-        <link rel="icon" href="/logos/logo-dark.png" media="(prefers-color-scheme:dark)" />
-        <link rel="icon" href="/logos/logo-light.png" media="(prefers-color-scheme:light)" />
         <title>{SITE_TITLE}</title>
       </Head>
       <DefaultSeo
@@ -84,7 +85,9 @@ const App: AppComponent = ({ Component, pageProps }) => {
           },
         ]}
       />
-      <Component {...pageProps} />
+      <MantineProvider withGlobalStyles withNormalizeCSS theme={theme} emotionCache={ltrOptions.emotionCache}>
+        <Component {...pageProps} />
+      </MantineProvider>
     </>
   );
 };
