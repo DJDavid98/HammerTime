@@ -3,7 +3,20 @@
   "howTo": "Pilih tanggal, salin stempel waktu yang diinginkan dari kolom {{syntaxColName}}, lalu tempel di mana saja dalam pesan obrolan. Hasilnya akan menjadi stempel waktu yang ditampilkan secara berbeda untuk semua orang berdasarkan zona waktu mereka sendiri.",
   "input": {
     "timezone": "Zona waktu",
-    "datetime": "Tanggal dan waktu"
+    "datetime": "Tanggal dan waktu",
+    "date": "Tanggal",
+    "time": "Waktu",
+    "settings": {
+      "label": "Pengaturan Masukan",
+      "customInputs": {
+        "label": "Masukan khusus",
+        "explanation": "Mengganti input default dengan yang cocok dengan bahasa saat ini, bukan browser Anda"
+      },
+      "separateInputs": {
+        "label": "Masukan terpisah",
+        "explanation": "Tampilkan dua input berbeda untuk tanggal dan waktu alih-alih input gabungan (yang tidak didukung di beberapa browser)"
+      }
+    }
   },
   "buttons": {
     "copy": "Menyalin ke clipboard",
