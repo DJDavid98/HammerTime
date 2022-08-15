@@ -36,7 +36,8 @@
     },
     "fr": {
       "nativeName": "Français",
-      "countryCode": "FR"
+      "countryCode": "FR",
+      "percent": 81
     },
     "hu": {
       "nativeName": "Magyar",
@@ -48,7 +49,8 @@
     },
     "lt": {
       "nativeName": "Lietuviškai",
-      "countryCode": "LT"
+      "countryCode": "LT",
+      "percent": 81
     },
     "nl": {
       "nativeName": "Nederlands",
@@ -61,7 +63,8 @@
     "pt-BR": {
       "nativeName": "Português do Brasil",
       "countryCode": "BR",
-      "momentLocale": "pt-br"
+      "momentLocale": "pt-br",
+      "percent": 58
     },
     "ru": {
       "nativeName": "Русский",
@@ -70,7 +73,8 @@
     "sv": {
       "nativeName": "Svenska",
       "countryCode": "SE",
-      "crowdinLocale": "sv-SE"
+      "crowdinLocale": "sv-SE",
+      "percent": 58
     },
     "tr": {
       "nativeName": "Türkçe",
@@ -96,7 +100,8 @@
     "he": {
       "nativeName": "עִברִית",
       "countryCode": "IL",
-      "rtl": true
+      "rtl": true,
+      "percent": 81
     },
     "zh": {
       "nativeName": "中文",
@@ -109,7 +114,8 @@
     "ca": {
       "nativeName": "Català",
       "countryCode": "CA",
-      "customFlag": true
+      "customFlag": true,
+      "percent": 59
     }
   }
 }
