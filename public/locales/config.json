@@ -15,8 +15,7 @@
       "name": "Catalan",
       "nativeName": "Català",
       "countryCode": "CA",
-      "customFlag": true,
-      "percent": 59
+      "customFlag": true
     },
     "zh": {
       "name": "Chinese Simplified",
@@ -46,8 +45,7 @@
     "fr": {
       "name": "French",
       "nativeName": "Français",
-      "countryCode": "FR",
-      "percent": 81
+      "countryCode": "FR"
     },
     "de": {
       "name": "German",
@@ -98,8 +96,7 @@
     "lt": {
       "name": "Lithuanian",
       "nativeName": "Lietuviškai",
-      "countryCode": "LT",
-      "percent": 81
+      "countryCode": "LT"
     },
     "ms": {
       "name": "Malay",
@@ -115,8 +112,7 @@
       "name": "Portuguese, Brazilian",
       "nativeName": "Português do Brasil",
       "countryCode": "BR",
-      "momentLocale": "pt-br",
-      "percent": 58
+      "momentLocale": "pt-br"
     },
     "ru": {
       "name": "Russian",
