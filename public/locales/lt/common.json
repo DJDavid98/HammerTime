@@ -3,7 +3,20 @@
   "howTo": "Pasirink datą, nukopijuok norimą laiko žymą iš skilties {{syntaxColName}} ir įklijuok ją bet kurioje žinutėje. Rezultatas bus dinaminė laiko žymas, kuri bus rodoma skirtingai kiekvienam vartotojui pagal jo laiko juostą.",
   "input": {
     "timezone": "Laiko juosta",
-    "datetime": "Data ir laikas"
+    "datetime": "Data ir laikas",
+    "date": "Data",
+    "time": "Laikas",
+    "settings": {
+      "label": "Įvedimo nustatymai",
+      "customInputs": {
+        "label": "Pasirinktinės įvestys",
+        "explanation": "Pakeisti pasirinktines įvestis tokiomis, kurios atitinka dabartinę kalbą, o ne jūsų naršyklės"
+      },
+      "separateInputs": {
+        "label": "Atskiros įvestys",
+        "explanation": "Rodyti dvi skirtingas datos ir laiko įvestis, o ne vieną bendrą (kai kurios naršyklės to nepalaiko)"
+      }
+    }
   },
   "buttons": {
     "copy": "Kopijuoti į iškarpinę",
