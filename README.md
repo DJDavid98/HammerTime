@@ -51,3 +51,4 @@ English and Hungarian translations have been included, so no translators will be
 - 🇱🇹 Lithuanian: tayloryte
 - 🇨🇳 Chinese: CPYW_7226, user670839245
 - Catalan: sware
+- 🇺🇦 Ukrainian: GameHacker
