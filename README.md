@@ -34,7 +34,7 @@ English and Hungarian translations have been included, so no translators will be
   (helppriklreyta)
 - 🇩🇪 German: Carlos Diener (carlos.diener), Fabian9799, julix00
 - 🇸🇦 Arabic: Raphael Santiago (raphael.santiago.53)
-- 🇧🇷 Brazilian Portuguese: leo0six
+- 🇧🇷 Brazilian Portuguese: leo0six, ShadowG
 - 🇳🇱 Dutch: Jesse (Jessuh)
 - 🇵🇱 Polish: Dawid (MinerPL), stha (sthakrk)
 - 🇲🇾 Malay: Nurul Azeera Hidayah @ Muhammad Nur Hidayat Yasuyoshi (MNH48.moe) (mnh48)
