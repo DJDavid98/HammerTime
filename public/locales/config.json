@@ -140,6 +140,11 @@
       "name": "Turkish",
       "nativeName": "Türkçe",
       "countryCode": "TR"
+    },
+    "uk": {
+      "name": "Ukrainian",
+      "nativeName": "Український",
+      "countryCode": "UA"
     }
   }
 }
