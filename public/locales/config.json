@@ -26,6 +26,14 @@
       "calendarLabelFormat": "YYYY年MMM",
       "calendarYearLabelFormat": "YYYY年"
     },
+    "zh-TW": {
+      "name": "Chinese Traditional",
+      "nativeName": "繁體中文",
+      "countryCode": "TW",
+      "momentLocale": "zh-tw",
+      "calendarLabelFormat": "YYYY_MMM",
+      "calendarYearLabelFormat": "YYYY_"
+    },
     "nl": {
       "name": "Dutch",
       "nativeName": "Nederlands",
