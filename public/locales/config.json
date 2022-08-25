@@ -31,8 +31,8 @@
       "nativeName": "繁體中文",
       "countryCode": "TW",
       "momentLocale": "zh-tw",
-      "calendarLabelFormat": "YYYY_MMM",
-      "calendarYearLabelFormat": "YYYY_"
+      "calendarLabelFormat": "YYYY年MMM",
+      "calendarYearLabelFormat": "YYYY年"
     },
     "nl": {
       "name": "Dutch",
