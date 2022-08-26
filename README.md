@@ -53,3 +53,4 @@ English and Hungarian translations have been included, so no translators will be
 - Catalan: sware
 - 🇺🇦 Ukrainian: enky, GameHacker
 - 🇹🇼 Traditional Chinese: Jackie (jackiecr2911)
+- 🇮🇷 Perisan: Mohammad Safa Gray (DeadMarco)

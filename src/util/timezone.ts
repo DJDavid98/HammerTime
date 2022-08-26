@@ -34,4 +34,6 @@ export const getTimezoneValue = (timezone: string) => ({
   label: getTimezoneLabel(timezone),
 });
 
-export const momentToTimeInputValue = (time: Moment = moment()): string => time.format(`${isoDateFormat}\\T${isoTimeFormat}`);
+export const momentToTimeInputValue = (time: Moment = moment(), format = `${isoDateFormat}\\T${isoTimeFormat}`): string =>
+  // Force English locale so values are always in the expected format
+  time.clone().locale('en').format(format);

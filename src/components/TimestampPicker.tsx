@@ -23,6 +23,7 @@ import {
 import { TFunction } from 'react-i18next';
 import { AvailableLanguage, LANGUAGES } from 'src/config';
 import { getDayStyle } from 'src/util/styling';
+import { isoDateFormat, isoTimeFormat, momentToTimeInputValue } from 'src/util/timezone';
 
 const timeInputClassNames = { controls: styles.timeInputControl };
 const firstDayOfWeekOverrideRecord: Partial<Record<string, FirstDayOfWeek>> = {
@@ -117,13 +118,13 @@ export const TimestampPicker: FC<PropTypes> = ({
 
   const handleDateChange = useCallback(
     (value: Date | ChangeEvent<HTMLInputElement> | null) => {
-      onDateChange(value && (value instanceof Date ? moment(value).format('YYYY-MM-DD') : value.target.value));
+      onDateChange(value && (value instanceof Date ? momentToTimeInputValue(moment(value), isoDateFormat) : value.target.value));
     },
     [onDateChange],
   );
   const handleTimeChange = useCallback(
     (value: Date | ChangeEvent<HTMLInputElement> | null) => {
-      onTimeChange(value && (value instanceof Date ? moment(value).format('HH:mm:ss') : value.target.value));
+      onTimeChange(value && (value instanceof Date ? momentToTimeInputValue(moment(value), isoTimeFormat) : value.target.value));
     },
     [onTimeChange],
   );
