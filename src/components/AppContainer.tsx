@@ -3,7 +3,7 @@ import { AppFooter } from 'components/AppFooter';
 import { CustomIcon } from 'components/CustomIcon';
 import styles from 'modules/AppContainer.module.scss';
 import Link from 'next/link';
-import { FC } from 'react';
+import { FC, PropsWithChildren } from 'react';
 import { SITE_TITLE } from 'src/config';
 
 const headerHeight = 52;
@@ -14,7 +14,7 @@ const shellStyles = {
   },
 };
 
-export const AppContainer: FC = ({ children }) => (
+export const AppContainer: FC<PropsWithChildren> = ({ children }) => (
   <AppShell
     padding="md"
     header={

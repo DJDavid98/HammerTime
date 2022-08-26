@@ -1,13 +1,12 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Alert } from '@mantine/core';
-import { Layout } from 'components/Layout';
 import { AppContainer } from 'components/AppContainer';
-import { GetStaticProps } from 'next';
+import { Layout } from 'components/Layout';
+import { GetStaticProps, NextPage } from 'next';
 import { SSRConfig, useTranslation } from 'next-i18next';
-import { VFC } from 'react';
 import { typedServerSideTranslations } from 'src/util/i18n-server';
 
-const NotFoundPage: VFC = () => {
+const NotFoundPage: NextPage = () => {
   const { t } = useTranslation();
   return (
     <Layout>

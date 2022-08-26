@@ -1,8 +1,8 @@
 import { Button } from '@mantine/core';
-import { VFC } from 'react';
+import { FC } from 'react';
 import { CROWDIN_URL } from 'src/config';
 
-export const UnfinishedTranslationsLink: VFC<{ percent: number; crowdinLocale: string }> = ({ percent, crowdinLocale }) => (
+export const UnfinishedTranslationsLink: FC<{ percent: number; crowdinLocale: string }> = ({ percent, crowdinLocale }) => (
   <Button
     color="yellow"
     variant="outline"

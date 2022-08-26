@@ -1,19 +1,18 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Center, Footer, Tooltip } from '@mantine/core';
+import { Center, Footer } from '@mantine/core';
 import { ExternalLink } from 'components/ExternalLink';
+import { FooterItem } from 'components/FooterItem';
 import { FooterSeparator } from 'components/FooterSeparator';
 import { LanguageSelector } from 'components/LanguageSelector';
 import styles from 'modules/AppFooter.module.scss';
 import { Trans, useTranslation } from 'next-i18next';
-import React, { useEffect, useRef, useState, VFC } from 'react';
+import React, { FC, useEffect, useState } from 'react';
 import { FONTAWESOME_FREE_LICENSE_URL, REPOSITORY_URL } from 'src/config';
 
-export const AppFooter: VFC = () => {
+export const AppFooter: FC = () => {
   const { t } = useTranslation();
   const [footer, setFooter] = useState<HTMLElement | null>(null);
   const [footerHeight, setFooterHeight] = useState('61px');
-
-  const viewSourceRef = useRef<HTMLAnchorElement>(null);
 
   useEffect(() => {
     if (!footer) return;
@@ -34,23 +33,26 @@ export const AppFooter: VFC = () => {
       <Center component="footer" inline className={styles.footer} ref={setFooter}>
         <LanguageSelector footerItemClass={styles.footerItem} />
         <FooterSeparator />
-        <div className={styles.footerItem}>
+        <FooterItem>
           <Trans t={t} i18nKey="common:builtWith">
             0<ExternalLink href={FONTAWESOME_FREE_LICENSE_URL}>1</ExternalLink>2
           </Trans>
-        </div>
+        </FooterItem>
         <FooterSeparator />
-        <div className={styles.footerItem}>
+        <FooterItem>
           <FontAwesomeIcon icon={['fab', 'osi']} />
           <span>{` ${t('common:openSource')} `}</span>
-          <Tooltip label={t('common:viewSource')}>
-            <ExternalLink ref={viewSourceRef} href={REPOSITORY_URL}>
-              <FontAwesomeIcon icon={['fab', 'github']} />
-            </ExternalLink>
-          </Tooltip>
-        </div>
+        </FooterItem>
         <FooterSeparator />
-        <div className={styles.footerItem}>{t('common:notAffiliated')}</div>
+        <FooterItem>
+          <ExternalLink href={REPOSITORY_URL}>
+            <FontAwesomeIcon icon={['fab', 'github']} />
+            &nbsp;
+            {t('common:viewSource')}
+          </ExternalLink>
+        </FooterItem>
+        <FooterSeparator />
+        <FooterItem>{t('common:notAffiliated')}</FooterItem>
       </Center>
     </Footer>
   );

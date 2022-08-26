@@ -4,7 +4,7 @@ import { CopySyntax } from 'components/CopySyntax';
 import { IconCol } from 'components/IconCol';
 import styles from 'modules/TimestampsTable.module.scss';
 import moment, { Moment } from 'moment-timezone';
-import { useEffect, useMemo, useState, VFC } from 'react';
+import { FC, useEffect, useMemo, useState } from 'react';
 import { TFunction } from 'react-i18next';
 
 interface TimeValue {
@@ -19,7 +19,7 @@ interface PropTypes {
   t: TFunction;
 }
 
-export const TimestampsTable: VFC<PropTypes> = ({ t, locale, timestamp, timeInSeconds }) => {
+export const TimestampsTable: FC<PropTypes> = ({ t, locale, timestamp, timeInSeconds }) => {
   const [now, setNow] = useState(() => moment());
 
   useEffect(() => {

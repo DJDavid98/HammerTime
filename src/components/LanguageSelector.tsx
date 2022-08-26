@@ -7,11 +7,11 @@ import styles from 'modules/LanguageSelector.module.scss';
 import { useTranslation } from 'next-i18next';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { useCallback, useMemo, useState, VFC } from 'react';
+import { FC, useCallback, useMemo, useState } from 'react';
 import { AvailableLanguage, LANGUAGES } from 'src/config';
 import { getDirAttribute } from 'src/util/common';
 
-export const LanguageSelector: VFC<{ footerItemClass: string }> = ({ footerItemClass }) => {
+export const LanguageSelector: FC<{ footerItemClass: string }> = ({ footerItemClass }) => {
   const router = useRouter();
   const {
     t,

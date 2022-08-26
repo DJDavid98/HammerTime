@@ -1,7 +1,7 @@
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Input, MantineSize } from '@mantine/core';
-import { ChangeEventHandler, useMemo, VFC } from 'react';
+import { ChangeEventHandler, FC, useMemo } from 'react';
 
 export interface DateTimeInputProps {
   id: string;
@@ -15,7 +15,7 @@ export interface DateTimeInputProps {
   readOnly?: boolean;
 }
 
-export const DateTimeInput: VFC<DateTimeInputProps> = ({ id, label, value, icon, onChange, type, readOnly, className, size }) => {
+export const DateTimeInput: FC<DateTimeInputProps> = ({ id, label, value, icon, onChange, type, readOnly, className, size }) => {
   const icons = useMemo(() => {
     const iconArray = (typeof icon === 'string' ? [icon] : icon) as IconProp[];
     if (size === 'sm' && iconArray.length > 1) {

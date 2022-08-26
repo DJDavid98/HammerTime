@@ -3,7 +3,7 @@ import { ExternalLink } from 'components/ExternalLink';
 import styles from 'modules/UsefulLinks.module.scss';
 import { Trans } from 'next-i18next';
 import Image, { StaticImageData } from 'next/image';
-import React, { memo, ReactChild, VFC } from 'react';
+import React, { FC, memo, ReactElement } from 'react';
 import { TFunction } from 'react-i18next';
 import bot from '../../public/bot.png';
 import server from '../../public/server.png';
@@ -12,11 +12,11 @@ import textColor from '../../public/textcolor.png';
 interface UsefulLink {
   href: string;
   image: StaticImageData;
-  name: ReactChild;
-  desc: ReactChild;
+  name: ReactElement | string;
+  desc: ReactElement | string;
 }
 
-const UsefulLinksComponent: VFC<{ t: TFunction; leadText: string }> = ({ t, leadText }) => {
+const UsefulLinksComponent: FC<{ t: TFunction; leadText: string }> = ({ t, leadText }) => {
   const components: UsefulLink[] = [
     {
       href: '/discord',

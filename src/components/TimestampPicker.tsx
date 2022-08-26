@@ -12,13 +12,13 @@ import moment from 'moment';
 import {
   ChangeEvent,
   ChangeEventHandler,
+  FC,
   FunctionComponent,
   PropsWithChildren,
   useCallback,
   useEffect,
   useMemo,
   useState,
-  VFC,
 } from 'react';
 import { TFunction } from 'react-i18next';
 import { AvailableLanguage, LANGUAGES } from 'src/config';
@@ -64,7 +64,7 @@ interface PropTypes {
   ButtonsComponent: FunctionComponent<PropsWithChildren<{ size: MantineSize }>>;
 }
 
-export const TimestampPicker: VFC<PropTypes> = ({
+export const TimestampPicker: FC<PropTypes> = ({
   changeTimezone,
   dateString,
   fixedTimestamp,

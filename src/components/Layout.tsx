@@ -1,7 +1,7 @@
 import { ProgressIndicator } from 'components/ProgressIndicator';
-import { FC, memo } from 'react';
+import { FC, memo, PropsWithChildren } from 'react';
 
-const LayoutComponent: FC = ({ children }) => (
+const LayoutComponent: FC<PropsWithChildren> = ({ children }) => (
   <>
     <ProgressIndicator />
     <div id="wrap">{children}</div>

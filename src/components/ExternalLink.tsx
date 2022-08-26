@@ -23,12 +23,8 @@ const ExternalLinkComponent: ForwardRefRenderFunction<HTMLAnchorElement, Externa
         rel: classNames(rel, 'noopener noreferrer'),
       }
     : { rel };
-  const additionalProps = {
-    ...targetProps,
-    ref,
-  };
   return (
-    <Anchor href={href} className={className} title={title} {...additionalProps}>
+    <Anchor {...targetProps} href={href} className={className} title={title} ref={ref}>
       {children}
     </Anchor>
   );

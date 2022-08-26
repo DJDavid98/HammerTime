@@ -1,7 +1,7 @@
-import React, { memo, VFC } from 'react';
 import styles from 'modules/AppFooter.module.scss';
+import React, { FC, memo } from 'react';
 
-const Separator: VFC = () => (
+const Separator: FC = () => (
   <span className={styles.footerSeparator} role="presentation">
     {' '}
   </span>
