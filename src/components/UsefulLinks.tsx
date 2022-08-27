@@ -30,7 +30,7 @@ const UsefulLinksComponent: FC<{ t: TFunction; leadText: string }> = ({ t, leadT
       name: t('common:usefulLinks.bot.header'),
       desc: (
         <Trans t={t} i18nKey="common:usefulLinks.bot.p">
-          0<code>/timestamp</code>
+          0<code dir="ltr">1</code>
         </Trans>
       ),
     },
