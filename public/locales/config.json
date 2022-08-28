@@ -110,6 +110,12 @@
       "nativeName": "Bahasa Melayu",
       "countryCode": "MY"
     },
+    "fa": {
+      "name": "Persian",
+      "nativeName": "فارسی",
+      "countryCode": "IR",
+      "rtl": true
+    },
     "pl": {
       "name": "Polish",
       "nativeName": "Polski",

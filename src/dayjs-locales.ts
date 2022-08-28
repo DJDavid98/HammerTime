@@ -23,6 +23,7 @@ import 'dayjs/locale/tr';
 import 'dayjs/locale/zh-cn';
 import 'dayjs/locale/uk';
 import 'dayjs/locale/zh-tw';
+import 'dayjs/locale/fa';
 
 import { extend } from 'dayjs';
 import localizedFormat from 'dayjs/plugin/localizedFormat';

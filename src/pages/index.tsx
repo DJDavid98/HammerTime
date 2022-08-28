@@ -70,7 +70,7 @@ export const IndexPage: NextPage<IndexPageProps> = ({ tzNames }) => {
   const handleDateChange = useMemo(
     () =>
       throttle((value: null | string) => {
-        setDateString(value || moment().format(isoDateFormat));
+        setDateString(value || momentToTimeInputValue(moment(), isoDateFormat));
       }, 200),
     [],
   );
@@ -80,12 +80,12 @@ export const IndexPage: NextPage<IndexPageProps> = ({ tzNames }) => {
     setDateString(dateStr);
   }, []);
   const handleTimeChange = useCallback((value: null | string) => {
-    setTimeString(value || moment().format(isoTimeFormat));
+    setTimeString(value || momentToTimeInputValue(moment(), isoTimeFormat));
   }, []);
   const handleDateTimeChange = useMemo(
     () =>
       throttle((value: null | string) => {
-        setDateTimeString(value || moment().format(`${isoDateFormat} ${isoTimeFormat}`));
+        setDateTimeString(value || momentToTimeInputValue(moment(), `${isoDateFormat} ${isoTimeFormat}`));
       }, 50),
     [setDateTimeString],
   );
