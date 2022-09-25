@@ -11,7 +11,6 @@ import { parseInt, throttle } from 'lodash';
 import moment, { Moment } from 'moment-timezone';
 import { GetStaticProps, NextPage } from 'next';
 import { SSRConfig, useTranslation } from 'next-i18next';
-import Link from 'next/link';
 import { useRouter } from 'next/router';
 import React, { FC, PropsWithChildren, useCallback, useEffect, useMemo, useState } from 'react';
 import { useLocale } from 'src/util/common';
@@ -168,9 +167,12 @@ export const IndexPage: NextPage<IndexPageProps> = ({ tzNames }) => {
                 <FontAwesomeIcon icon="clock-rotate-left" />
               </Button>
             </Tooltip>{' '}
-            <Link href={fixedTimestamp ? '/' : `/?${TS_QUERY_PARAM}=${timestampInSecondsString}`} passHref legacyBehavior>
-              <LockButton size={size} lockButtonTooltipText={lockButtonTooltipText} fixedTimestamp={fixedTimestamp} />
-            </Link>
+            <LockButton
+              href={fixedTimestamp ? '/' : `/?${TS_QUERY_PARAM}=${timestampInSecondsString}`}
+              size={size}
+              lockButtonTooltipText={lockButtonTooltipText}
+              fixedTimestamp={fixedTimestamp}
+            />
             {children}
           </>
         ),
