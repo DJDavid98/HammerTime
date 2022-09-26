@@ -29,28 +29,54 @@ English and Hungarian translations have been included, so no translators will be
 
 ### Credits
 
-- 🇫🇷 French: Cookie Kiro (Cookikui), Ouiouibaguette, sivelswhy, ValouFCH
-- 🇷🇺 Russian: GameHacker, JudeDM, Крутой Бо (arturfomenko8), Luna (NightyCloud), Nikita Sharikov (Aligatoor), Рейт
-  (helppriklreyta)
-- 🇩🇪 German: Carlos Diener (carlos.diener), Fabian9799, julix00
-- 🇸🇦 Arabic: Raphael Santiago (raphael.santiago.53)
-- 🇧🇷 Brazilian Portuguese: leo0six, ShadowG
-- 🇳🇱 Dutch: Jesse (Jessuh)
-- 🇵🇱 Polish: Dawid (MinerPL), stha (sthakrk)
-- 🇲🇾 Malay: Nurul Azeera Hidayah @ Muhammad Nur Hidayat Yasuyoshi (MNH48.moe) (mnh48)
-- 🇪🇸 Spanish: Pablo Luna (shaulyareaj), DrakeZero
-- 🇮🇹 Italian: Lory Pelli (pellilory126)
-- 🇸🇪 Swedish: Liggliluff, tunket
 - 🇧🇬 Bulgarian: Rxshi
-- 🇹🇷 Turkish: [@tututuana](https://github.com/tututuana)
-- 🇯🇵 Japanese: sjkim04, TheOnlyRAK
-- 🇰🇷 Korean: sjkim04
+- 🇧🇷 Brazilian Portuguese:
+  - leo0six
+  - ShadowG
+- 🇨🇳 Simplified Chinese:
+  - CPYW_7226
+  - user670839245
+- 🇩🇪 German:
+  - Carlos Diener (carlos.diener)
+  - Fabian9799
+  - julix00
+- 🇪🇸 Spanish:
+  - Pablo Luna (shaulyareaj)
+  - DrakeZero
+- 🇫🇷 French:
+  - Cookie Kiro (Cookikui)
+  - Ouiouibaguette
+  - sivelswhy
+  - ValouFCH
 - 🇬🇷 Greek: BelleBernice
 - 🇮🇩 Indonesian: Jackie (jackiecr2911)
 - 🇮🇱 Hebrew: Amit Cohen
-- 🇱🇹 Lithuanian: tayloryte
-- 🇨🇳 Simplified Chinese: CPYW_7226, user670839245
-- Catalan: sware
-- 🇺🇦 Ukrainian: enky, GameHacker
-- 🇹🇼 Traditional Chinese: Jackie (jackiecr2911)
 - 🇮🇷 Perisan: Mohammad Safa Gray (DeadMarco)
+- 🇮🇹 Italian: Lory Pelli (pellilory126)
+- 🇯🇵 Japanese:
+  - TheOnlyRAK
+  - sjkim04
+- 🇰🇷 Korean: sjkim04
+- 🇱🇹 Lithuanian: tayloryte
+- 🇲🇾 Malay: Nurul Azeera Hidayah @ Muhammad Nur Hidayat Yasuyoshi (MNH48.moe) (mnh48)
+- 🇳🇱 Dutch: Jesse (Jessuh)
+- 🇵🇱 Polish:
+  - Dawid (MinerPL)
+  - stha (sthakrk)
+- 🇷🇺 Russian:
+  - GameHacker
+  - JudeDM
+  - Luna (NightyCloud)
+  - Nikita Sharikov (Aligatoor)
+  - Крутой Бо (arturfomenko8)
+  - Рейт (helppriklreyta)
+- 🇸🇦 Arabic: Raphael Santiago (raphael.santiago.53)
+- 🇸🇪 Swedish:
+  - Liggliluff
+  - tunket
+- 🇹🇷 Turkish: [@tututuana](https://github.com/tututuana)
+- 🇹🇼 Traditional Chinese: Jackie (jackiecr2911)
+- 🇺🇦 Ukrainian:
+  - GameHacker
+  - enky
+- 🏴󠁥󠁳󠁣󠁴󠁿 Catalan: sware
