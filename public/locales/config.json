@@ -145,6 +145,11 @@
       "crowdinLocale": "sv-SE",
       "percent": 58
     },
+    "th": {
+      "name": "Thai",
+      "nativeName": "ไทย",
+      "countryCode": "TH"
+    },
     "tr": {
       "name": "Turkish",
       "nativeName": "Türkçe",
