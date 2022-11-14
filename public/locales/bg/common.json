@@ -36,7 +36,8 @@
     },
     "bot": {
       "header": "HammerTime Бот",
-      "p": "Генерирай времеви мерки с <1>/timestamp</1> slash командата"
+      "p": "Генерирай времеви мерки с <1>/timestamp</1> slash командата",
+      "pWithoutCommand": "Генерира времеви мерки в Discord с използването на \"slash\" команди"
     },
     "textColor": {
       "header": "Rebane's <1>Цветен</1> Текст Генератор",
