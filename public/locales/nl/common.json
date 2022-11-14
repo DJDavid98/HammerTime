@@ -36,7 +36,8 @@
     },
     "bot": {
       "header": "HammerTime Bot",
-      "p": "Genereer tijdsaanduidingen met de <1>/timestamp</1> opdracht"
+      "p": "Genereer tijdsaanduidingen met de <1>/timestamp</1> opdracht",
+      "pWithoutCommand": "Genereer tijdstempels in Discord door middel van slash-opdrachten"
     },
     "textColor": {
       "header": "Rebane's <1>gekleurde</1> tekst generator",
