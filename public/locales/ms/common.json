@@ -36,7 +36,8 @@
     },
     "bot": {
       "header": "Bot HammerTime",
-      "p": "Jana cap masa dengan perintah tanda miring <1>/timestamp</1>"
+      "p": "Jana cap masa dengan perintah tanda miring <1>/timestamp</1>",
+      "pWithoutCommand": "Jana cap masa di dalam Discord sendiri menggunakan perintah palang"
     },
     "textColor": {
       "header": "Penjana Tulisan <1>Berwarna</1> Rebane",
