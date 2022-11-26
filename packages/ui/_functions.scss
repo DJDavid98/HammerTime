@@ -1,0 +1,12 @@
+@use 'sass:math';
+
+@function rem($px) {
+  $unit: unit($px);
+  @if ($unit != 'px') {
+    @if ($unit != 'rem') {
+      @error 'rem() only accepts pixel units';
+    }
+    @return $px;
+  }
+  @return 1rem * math.div($px, 16px);
+}

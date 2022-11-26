@@ -1,0 +1,69 @@
+{
+  "seoDescription": "Generate timestamp indicators for Discord chat messages",
+  "howTo": "Pick a date, copy the desired timestamp from the {{syntaxColName}} column, then paste it anywhere in a chat message. The result will be a dynamic timestamp that displays differently for everyone based on their own timezone.",
+  "input": {
+    "timezone": "Timezone",
+    "datetime": "Date and time",
+    "date": "Date",
+    "time": "Time",
+    "settings": {
+      "label": "Input settings",
+      "customInputs": {
+        "label": "Custom inputs",
+        "explanation": "Replaces the default inputs with ones that match the current language instead of your browser's"
+      },
+      "separateInputs": {
+        "label": "Separate inputs",
+        "explanation": "Display two different inputs for date and time instead of a combined one (which is not supported in some browsers)"
+      }
+    }
+  },
+  "buttons": {
+    "copy": "Copy to clipboard",
+    "setCurrentTime": "Set to current time",
+    "lock": "Lock timestamp via URL",
+    "unlock": "Unlock timestamp"
+  },
+  "table": {
+    "syntax": "Chat syntax",
+    "example": "Example result"
+  },
+  "usefulLinks": {
+    "lead": "You may also find these useful:",
+    "server": {
+      "header": "Official HammerTime Server",
+      "p": "Discuss the website, test the syntax and suggest features"
+    },
+    "bot": {
+      "header": "HammerTime Bot",
+      "p": "Generate timestamps with the <1>/timestamp</1> slash command"
+    },
+    "textColor": {
+      "header": "Rebane's <1>Coloured</1> Text Generator",
+      "p": "A simple app that creates coloured Discord messages using ANSI colour codes"
+    }
+  },
+  "changeLanguage": "Change language",
+  "notFound": {
+    "heading": "Not Found",
+    "content": "Nothing to see here."
+  },
+  "builtWith": "Website built with <1>Font Awesome Free</1>",
+  "openSource": "Open-source software",
+  "viewSource": "View source code",
+  "notAffiliated": "This project is not affiliated with Discord.",
+  "jsDisabled": {
+    "title": "JavaScript is necessary",
+    "body": "Your browser either does not support JavaScript or it's currently disabled. Some browsers disable JavaScript by default for security reasons, but it's necessary for this application. Please enable it and refresh the page, or use a different browser."
+  },
+  "a11y": {
+    "calendar": {
+      "nextMonthLabel": "next month",
+      "previousMonthLabel": "previous month",
+      "nextYearLabel": "next year",
+      "previousYearLabel": "previous year",
+      "nextDecadeLabel": "next decade",
+      "previousDecadeLabel": "previous decade"
+    }
+  }
+}

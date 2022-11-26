@@ -1,0 +1,17 @@
+{
+  "redirects": [
+    {
+      "source": "/discord",
+      "destination": "https://discord.gg/vMfKCsWzZr",
+      "permanent": false
+    },
+    {
+      "source": "/add-bot",
+      "destination": "https://discord.com/oauth2/authorize?client_id=964106782790283295&permissions=0&scope=bot%20applications.commands",
+      "permanent": false
+    }
+  ],
+  "github": {
+    "silent": true
+  }
+}

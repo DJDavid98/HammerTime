@@ -1,0 +1,69 @@
+{
+  "seoDescription": "Genera indicatori di timestamp per i messaggi testuali di Discord",
+  "howTo": "Scegli una data, copia il timestamp desiderato dalla colonna {{syntaxColName}}, quindi incollalo ovunque in un messaggio testuale. Il risultato sarà un timestamp dinamico che ognuno visualizzerá diversamente in base al proprio fuso orario.",
+  "input": {
+    "timezone": "Fuso orario",
+    "datetime": "Data e ora",
+    "date": "Data",
+    "time": "Ora",
+    "settings": {
+      "label": "Impostazioni di input",
+      "customInputs": {
+        "label": "Input personalizzati",
+        "explanation": "Sostituisce gli input predefiniti con quelli che corrispondono alla lingua attuale invece di quelli del tuo browser"
+      },
+      "separateInputs": {
+        "label": "Input separati",
+        "explanation": "Mostra due input diversi per data e ora invece di uno combinato (che non è supportato in alcuni browser)"
+      }
+    }
+  },
+  "buttons": {
+    "copy": "Copia negli appunti",
+    "setCurrentTime": "Imposta all'ora attuale",
+    "lock": "Blocca timestamp tramite URL",
+    "unlock": "Sblocca timestamp"
+  },
+  "table": {
+    "syntax": "Sintassi della chat",
+    "example": "Risultato d'esempio"
+  },
+  "usefulLinks": {
+    "lead": "Potresti anche trovare questi utili:",
+    "server": {
+      "header": "Server Ufficiale HammerTime",
+      "p": "Discuti sul sito web, prova la sintassi e suggerisci funzioni"
+    },
+    "bot": {
+      "header": "HammerTime Bot",
+      "p": "Genera timestamp con il comando slash <1>/timestamp</1>"
+    },
+    "textColor": {
+      "header": "Generatore di Testo <1>Colorato</1> di Rebane",
+      "p": "Una semplice app che crea messaggi Discord colorati utilizzando i codici colore ANSI"
+    }
+  },
+  "changeLanguage": "Cambia lingua",
+  "notFound": {
+    "heading": "Non Trovato",
+    "content": "Niente da vedere qui."
+  },
+  "builtWith": "Sito Web costruito con <1>Font Awesome Free</1>",
+  "openSource": "Software open source",
+  "viewSource": "Visualizza codice sorgente",
+  "notAffiliated": "Questo progetto non è affiliato con Discord.",
+  "jsDisabled": {
+    "title": "JavaScript è necessario",
+    "body": "Il tuo browser non supporta JavaScript o è attualmente disabilitato. Alcuni browser disabilitano JavaScript per motivi di sicurezza, ma è necessario per questa applicazione. Si prega di abilitare e aggiornare la pagina, o utilizzare un browser differente."
+  },
+  "a11y": {
+    "calendar": {
+      "nextMonthLabel": "mese successivo",
+      "previousMonthLabel": "mese precedente",
+      "nextYearLabel": "anno successivo",
+      "previousYearLabel": "anno precedente",
+      "nextDecadeLabel": "decennio successivo",
+      "previousDecadeLabel": "decennio precedente"
+    }
+  }
+}

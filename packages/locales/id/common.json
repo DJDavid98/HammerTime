@@ -1,0 +1,69 @@
+{
+  "seoDescription": "Hasilkan indikator stempel waktu untuk pesan obrolan Discord",
+  "howTo": "Pilih tanggal, salin stempel waktu yang diinginkan dari kolom {{syntaxColName}}, lalu tempel di mana saja dalam pesan obrolan. Hasilnya akan menjadi stempel waktu yang ditampilkan secara berbeda untuk semua orang berdasarkan zona waktu mereka sendiri.",
+  "input": {
+    "timezone": "Zona waktu",
+    "datetime": "Tanggal dan waktu",
+    "date": "Tanggal",
+    "time": "Waktu",
+    "settings": {
+      "label": "Pengaturan Masukan",
+      "customInputs": {
+        "label": "Masukan khusus",
+        "explanation": "Mengganti input default dengan yang cocok dengan bahasa saat ini, bukan browser Anda"
+      },
+      "separateInputs": {
+        "label": "Masukan terpisah",
+        "explanation": "Tampilkan dua input berbeda untuk tanggal dan waktu alih-alih input gabungan (yang tidak didukung di beberapa browser)"
+      }
+    }
+  },
+  "buttons": {
+    "copy": "Menyalin ke clipboard",
+    "setCurrentTime": "Setel waktu saat ini",
+    "lock": "Mengunci stempel waktu melalui URL",
+    "unlock": "Buka stempel waktu"
+  },
+  "table": {
+    "syntax": "Sintaks obrolan",
+    "example": "Contoh hasil"
+  },
+  "usefulLinks": {
+    "lead": "Anda mungkin juga menemukan ini berguna:",
+    "server": {
+      "header": "Server HammerTime Resmi",
+      "p": "Diskusikan situs web, uji sintaks dan sarankan fitur"
+    },
+    "bot": {
+      "header": "HammerTime Bot",
+      "p": "Buat stempel waktu dengan perintah slash <1>/timestamp</1>"
+    },
+    "textColor": {
+      "header": "Generator Teks <1>Berwarna</1> Rebane",
+      "p": "Aplikasi sederhana yang membuat pesan Discord berwarna menggunakan kode warna ANSI"
+    }
+  },
+  "changeLanguage": "Ganti bahasa",
+  "notFound": {
+    "heading": "Tidak Ditemukan",
+    "content": "Tidak ada yang bisa dilihat di sini."
+  },
+  "builtWith": "Situs web dibuat dengan <1>Font Awesome Free</1>",
+  "openSource": "Perangkat lunak sumber terbuka",
+  "viewSource": "Lihat kode sumber",
+  "notAffiliated": "Proyek ini tidak berafiliasi dengan Discord.",
+  "jsDisabled": {
+    "title": "JavaScript diperlukan",
+    "body": "Peramban Anda tidak mendukung JavaScript atau sedang dinonaktifkan. Beberapa browser menonaktifkan JavaScript secara bawaan untuk alasan keamanan, tetapi itu diperlukan untuk aplikasi ini. Harap aktifkan dan segarkan halaman, atau gunakan browser lain."
+  },
+  "a11y": {
+    "calendar": {
+      "nextMonthLabel": "bulan depan",
+      "previousMonthLabel": "bulan lalu",
+      "nextYearLabel": "tahun depan",
+      "previousYearLabel": "tahun lalu",
+      "nextDecadeLabel": "dekade berikutnya",
+      "previousDecadeLabel": "dekade sebelumnya"
+    }
+  }
+}

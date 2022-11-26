@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Noto+Sans+KR&family=Source+Code+Pro');
+
+body, html {
+  overflow: hidden;
+  margin: 0;
+}
+
+/* Visually hide all other elements and take them out of the dom flow */
+body > :not(canvas) {
+  opacity: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+canvas {
+  position: relative;
+  z-index: 2;
+}
+
+#mono-text {
+  font-family: 'Source Code Pro', monospace;
+}
+
+#ja-text {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+#ko-text {
+  font-family: 'Noto Sans KR', sans-serif;
+}

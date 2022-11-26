@@ -1,0 +1,13 @@
+{
+  "name": "@hammertime/dayjs",
+  "version": "0.0.0",
+  "main": "index.ts",
+  "dependencies": {
+    "dayjs": "^1.11.6"
+  },
+  "devDependencies": {
+    "@hammertime/tsconfig": "*",
+    "typescript": "^4.9"
+  },
+  "private": true
+}

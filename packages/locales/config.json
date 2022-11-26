@@ -1,0 +1,159 @@
+{
+  "languages": {
+    "ar": {
+      "name": "Arabic",
+      "nativeName": "اللغة العربية",
+      "countryCode": "AE",
+      "rtl": true
+    },
+    "bg": {
+      "name": "Bulgarian",
+      "nativeName": "Български",
+      "countryCode": "BG"
+    },
+    "ca": {
+      "name": "Catalan",
+      "nativeName": "Català",
+      "countryCode": "CA",
+      "customFlag": true
+    },
+    "zh": {
+      "name": "Chinese Simplified",
+      "nativeName": "中文",
+      "countryCode": "CN",
+      "crowdinLocale": "zh-CN",
+      "momentLocale": "zh-cn",
+      "calendarLabelFormat": "YYYY年MMM",
+      "calendarYearLabelFormat": "YYYY年"
+    },
+    "zh-TW": {
+      "name": "Chinese Traditional",
+      "nativeName": "繁體中文",
+      "countryCode": "TW",
+      "momentLocale": "zh-tw",
+      "calendarLabelFormat": "YYYY年MMM",
+      "calendarYearLabelFormat": "YYYY年"
+    },
+    "nl": {
+      "name": "Dutch",
+      "nativeName": "Nederlands",
+      "countryCode": "NL"
+    },
+    "en-GB": {
+      "name": "English, United Kingdom",
+      "nativeName": "English, UK",
+      "countryCode": "GB",
+      "momentLocale": "en-gb"
+    },
+    "en": {
+      "name": "English, United States",
+      "nativeName": "English, US",
+      "countryCode": "US"
+    },
+    "fr": {
+      "name": "French",
+      "nativeName": "Français",
+      "countryCode": "FR"
+    },
+    "de": {
+      "name": "German",
+      "nativeName": "Deutsch",
+      "countryCode": "DE"
+    },
+    "el": {
+      "name": "Greek",
+      "nativeName": "Ελληνικά",
+      "countryCode": "GR"
+    },
+    "he": {
+      "name": "Hebrew",
+      "nativeName": "עִברִית",
+      "countryCode": "IL",
+      "rtl": true
+    },
+    "hu": {
+      "name": "Hungarian",
+      "nativeName": "Magyar",
+      "countryCode": "HU"
+    },
+    "id": {
+      "name": "Indonesian",
+      "nativeName": "Bahasa Indonesia",
+      "countryCode": "ID"
+    },
+    "it": {
+      "name": "Italian",
+      "nativeName": "Italiano",
+      "countryCode": "IT"
+    },
+    "ja": {
+      "name": "Japanese",
+      "nativeName": "日本語",
+      "countryCode": "JP",
+      "calendarLabelFormat": "YYYY年MMMM",
+      "calendarYearLabelFormat": "YYYY年"
+    },
+    "ko": {
+      "name": "Korean",
+      "nativeName": "한국어",
+      "countryCode": "KR",
+      "calendarLabelFormat": "YYYY년 MMMM",
+      "calendarYearLabelFormat": "YYYY년"
+    },
+    "lt": {
+      "name": "Lithuanian",
+      "nativeName": "Lietuviškai",
+      "countryCode": "LT"
+    },
+    "ms": {
+      "name": "Malay",
+      "nativeName": "Bahasa Melayu",
+      "countryCode": "MY"
+    },
+    "fa": {
+      "name": "Persian",
+      "nativeName": "فارسی",
+      "countryCode": "IR",
+      "rtl": true
+    },
+    "pl": {
+      "name": "Polish",
+      "nativeName": "Polski",
+      "countryCode": "PL"
+    },
+    "pt-BR": {
+      "name": "Portuguese, Brazilian",
+      "nativeName": "Português do Brasil",
+      "countryCode": "BR",
+      "momentLocale": "pt-br"
+    },
+    "ru": {
+      "name": "Russian",
+      "nativeName": "Русский",
+      "countryCode": "RU"
+    },
+    "es": {
+      "name": "Spanish",
+      "nativeName": "Español",
+      "countryCode": "ES",
+      "crowdinLocale": "es-ES"
+    },
+    "sv": {
+      "name": "Swedish",
+      "nativeName": "Svenska",
+      "countryCode": "SE",
+      "crowdinLocale": "sv-SE",
+      "percent": 58
+    },
+    "tr": {
+      "name": "Turkish",
+      "nativeName": "Türkçe",
+      "countryCode": "TR"
+    },
+    "uk": {
+      "name": "Ukrainian",
+      "nativeName": "Українська",
+      "countryCode": "UA"
+    }
+  }
+}

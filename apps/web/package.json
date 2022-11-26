@@ -1,5 +1,5 @@
 {
-  "name": "web",
+  "name": "@hammertime/web",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -9,19 +9,36 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-common-types": "^6.1.0",
+    "@fortawesome/fontawesome-svg-core": "^6.1.0",
+    "@fortawesome/free-brands-svg-icons": "^6.1.0",
+    "@fortawesome/free-regular-svg-icons": "^6.1.0",
+    "@fortawesome/free-solid-svg-icons": "^6.1.0",
+    "@fortawesome/react-fontawesome": "^0.1.18",
+    "@hammertime/locales": "*",
+    "@hammertime/ui": "*",
+    "classnames": "^2.2.6",
+    "datalist-polyfill": "^1.25.0",
+    "dayjs": "^1.11.5",
+    "i18next": "^20.3.2",
     "next": "13.0.0",
+    "next-i18next": "^8.5.5",
+    "next-seo": "^4.17.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "ui": "*"
+    "react-flagkit": "^2.0.4",
+    "react-topbar-progress-indicator": "^4.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
-    "eslint": "7.32.0",
-    "eslint-config-custom": "*",
-    "tsconfig": "*",
     "@types/node": "^17.0.12",
     "@types/react": "^18.0.22",
     "@types/react-dom": "^18.0.7",
+    "@types/webpack-env": "^1.15.3",
+    "eslint": "7.32.0",
+    "@hammertime/eslint-config-custom": "*",
+    "prettier": "^2.8.0",
+    "@hammertime/tsconfig": "*",
     "typescript": "^4.5.3"
   }
 }

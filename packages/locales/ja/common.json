@@ -1,0 +1,69 @@
+{
+  "seoDescription": "Discordメッセージのタイムスタンプを生成できる",
+  "howTo": "日付を選び、 メッセージの {{syntaxColName}} 列文からタイムスタンプを自由にコピーし、あなたのメッセージにどこにでも貼り付ける事ができます。 みんなのタイムゾーンに基づいて表示される動的タイムスタンプになります。",
+  "input": {
+    "timezone": "タイムゾーン",
+    "datetime": "日付と時刻",
+    "date": "日付",
+    "time": "時刻",
+    "settings": {
+      "label": "入力設定",
+      "customInputs": {
+        "label": "カスタム入力",
+        "explanation": "ブラウザの入力方法の代わりに、言語に合う入力を表示します"
+      },
+      "separateInputs": {
+        "label": "分離入力",
+        "explanation": "日付と時刻の入力を分離させます（一部ブラウザではサポートされていません）"
+      }
+    }
+  },
+  "buttons": {
+    "copy": "クリップボードにコピー",
+    "setCurrentTime": "現在時刻にする",
+    "lock": "リンクでタイムスタンプをセーブ",
+    "unlock": "タイムスタンプをアンロック"
+  },
+  "table": {
+    "syntax": "メッセージの構文",
+    "example": "例"
+  },
+  "usefulLinks": {
+    "lead": "関連するもの",
+    "server": {
+      "header": "HammerTime公式サーバー",
+      "p": "サイトについての議論・タイムスタンプのテスト・機能のリクエストができます"
+    },
+    "bot": {
+      "header": "HammerTime bot",
+      "p": "<1>/timestamp</1>コマンドでのタイムスタンプの作成"
+    },
+    "textColor": {
+      "header": "Rebaneの<1>色付き</1>テキストジェネレーター",
+      "p": "ANSIカラーコードを使って、色を付けたDiscordメッセージを作るアプリ"
+    }
+  },
+  "changeLanguage": "言語を変える",
+  "notFound": {
+    "heading": "見つかりませんでした",
+    "content": "ここは何もありません"
+  },
+  "builtWith": "<1>Font Awesome Free</1>を使って作成",
+  "openSource": "オープンソース",
+  "viewSource": "ソースコードを見る",
+  "notAffiliated": "このサイトとDiscordは関係していません。",
+  "jsDisabled": {
+    "title": "JavaScriptが必要です",
+    "body": "お使いのブラウザはJavaScriptをサポートしないか、無効化されています。一部ブラウザではセキュリティ上の理由でJavaScriptをデフォルトで無効化しますが、このアプリには必要です。有効にしてページを再読み込みするか、違うブラウザを使用してください。"
+  },
+  "a11y": {
+    "calendar": {
+      "nextMonthLabel": "来月",
+      "previousMonthLabel": "前月",
+      "nextYearLabel": "来年",
+      "previousYearLabel": "去年",
+      "nextDecadeLabel": "次の10年",
+      "previousDecadeLabel": "10年前"
+    }
+  }
+}

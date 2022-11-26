@@ -1,19 +1,25 @@
 {
-  "name": "ui",
+  "name": "@hammertime/ui",
   "version": "0.0.0",
-  "main": "./index.tsx",
+  "main": "index.ts",
   "types": "./index.tsx",
   "license": "MIT",
   "scripts": {
     "lint": "TIMING=1 eslint \"**/*.ts*\""
   },
+  "dependencies": {
+    "@vvo/tzdb": "^6.77.0"
+  },
   "devDependencies": {
-    "@types/react": "^17.0.37",
-    "@types/react-dom": "^17.0.11",
+    "@hammertime/eslint-config-custom": "*",
+    "@hammertime/tsconfig": "*",
+    "@types/react": "^18.0.25",
+    "@types/react-dom": "^18.0.9",
     "eslint": "^7.32.0",
-    "eslint-config-custom": "*",
+    "i18next": "^22.0.6",
+    "next-i18next": "^13.0.0",
     "react": "^18.2.0",
-    "tsconfig": "*",
     "typescript": "^4.5.2"
-  }
+  },
+  "private": true
 }

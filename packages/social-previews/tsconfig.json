@@ -1,0 +1,7 @@
+{
+  "extends": "@hammertime/tsconfig/base.json",
+  "lib": ["DOM"],
+  "compilerOptions": {
+    "target": "ES2022"
+  }
+}

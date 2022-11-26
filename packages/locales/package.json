@@ -1,0 +1,17 @@
+{
+  "name": "@hammertime/locales",
+  "version": "0.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "noew export.js"
+  },
+  "dependencies": {
+    "ts-node": "^10.9.1"
+  },
+  "devDependencies": {
+    "@hammertime/tsconfig": "*",
+    "@types/node": "^18.11.9",
+    "typescript": "^4.9"
+  },
+  "private": true
+}

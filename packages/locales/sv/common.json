@@ -1,0 +1,42 @@
+{
+  "seoDescription": "Generera tidsstämpelindikatorer för Discord-meddelanden",
+  "howTo": "Välj ett datum, kopiera det önskade formatet från kolumnen {{syntaxColName}}, klistra sedan in det någonstans i ett meddelande. Resultatet är dynamiskt och visar olika tid och datum för varje person baserat på deras tidszon.",
+  "input": {
+    "date": "Datum och tid",
+    "timezone": "Tidszon"
+  },
+  "buttons": {
+    "copy": "Kopiera till urklipp",
+    "setCurrentTime": "Återställ till aktuell tid",
+    "lock": "Lås tidsstämpel via URL",
+    "unlock": "Lås upp tidsstämpel"
+  },
+  "table": {
+    "syntax": "Syntax",
+    "example": "Resultat"
+  },
+  "usefulLinks": {
+    "lead": "Du kanske även gillar dessa:",
+    "server": {
+      "header": "Officiell HammerTime-server",
+      "p": "Diskutera webbsidan, testa syntax och föreslå programfunktioner"
+    },
+    "bot": {
+      "header": "HammerTime-bot",
+      "p": "Generera tidsstämplar med kommandot <1>/timestamp</1>"
+    },
+    "textColor": {
+      "header": "Rebanes <1>färgade</1> textgenerator",
+      "p": "En simpel app som skapar färgade Discord-meddelanden med ANSI-färgkoder"
+    }
+  },
+  "changeLanguage": "Byt språk",
+  "notFound": {
+    "heading": "Hittades inte",
+    "content": "Inget att se här."
+  },
+  "builtWith": "Webbplatsen är byggd med <1>Font Awesome Free</1>",
+  "openSource": "Öppen källkod",
+  "viewSource": "Se källkoden",
+  "notAffiliated": "Detta projekt är inte kopplat till Discord."
+}

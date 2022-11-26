@@ -1,0 +1,69 @@
+{
+  "seoDescription": "Générer des indicateurs d'horodatage pour les messages discord",
+  "howTo": "Choisissez une date, copiez l'horodatage désiré qui se situe dans la colonne \"{{syntaxColName}}\", ensuite collez le ou vous le souhaitez dans votre message. Le résultat sera un \"timestamp\" dynamique qui s'affichera différemment pour les gens suivant leur fuseau horaire.",
+  "input": {
+    "timezone": "Fuseau horaire",
+    "datetime": "Date et heure",
+    "date": "Date",
+    "time": "Temps",
+    "settings": {
+      "label": "Paramètres de saisie",
+      "customInputs": {
+        "label": "Saisies personnalisées",
+        "explanation": "Remplace les entrées par défaut par celles qui correspondent à la langue actuelle au lieu de celle de votre navigateur"
+      },
+      "separateInputs": {
+        "label": "Saisies séparées",
+        "explanation": "Afficher deux entrées différentes pour la date et l'heure au lieu d'une entrée combinée (ce qui n'est pas pris en charge par certains navigateurs)"
+      }
+    }
+  },
+  "buttons": {
+    "copy": "Copier dans le presse papier",
+    "setCurrentTime": "Régler a l'heure actuelle",
+    "lock": "Bloquer l'horodatage via l'URL",
+    "unlock": "Débloquer l'horodatage"
+  },
+  "table": {
+    "syntax": "Syntaxe du chat",
+    "example": "Exemple du résultat"
+  },
+  "usefulLinks": {
+    "lead": "Cela pourrai vous être utile :",
+    "server": {
+      "header": "Le serveur officiel de HammerTime",
+      "p": "Discutez du site, testez la syntaxe et suggérez de nouvelles fonctionnalités"
+    },
+    "bot": {
+      "header": "HammerTime Bot",
+      "p": "Générez un code d'horodatage avec la commandes Slash <1>/timestamp</1>"
+    },
+    "textColor": {
+      "header": "Le générateur de texte <1>coloré</1> de Rebane",
+      "p": "Une app simple qui crée des messages Discord colorés grâce aux codes couleur ANSI"
+    }
+  },
+  "changeLanguage": "Changer la langue",
+  "notFound": {
+    "heading": "Non trouvé",
+    "content": "Il n'y a rien a voir ici."
+  },
+  "builtWith": "Site créé avec la police d'écriture <1>Font Awesome Free</1>",
+  "openSource": "Logiciel open-source",
+  "viewSource": "Voir le code source",
+  "notAffiliated": "Ce projet n'est pas affilié avec Discord.",
+  "jsDisabled": {
+    "title": "JavaScript est requis",
+    "body": "Votre navigateur ne supporte pas JavaScript ou il est actuellement désactivé. Certains navigateurs désactivent JavaScript par défaut pour des raisons de sécurité, mais il est nécessaire pour cette application. Veuillez l'activer et actualiser la page, ou utiliser un autre navigateur."
+  },
+  "a11y": {
+    "calendar": {
+      "nextMonthLabel": "mois suivant",
+      "previousMonthLabel": "mois précédent",
+      "nextYearLabel": "année suivante",
+      "previousYearLabel": "année précédente",
+      "nextDecadeLabel": "décennie suivante",
+      "previousDecadeLabel": "décennie précédente"
+    }
+  }
+}

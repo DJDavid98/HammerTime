@@ -1,0 +1,69 @@
+{
+  "seoDescription": "為 Discord 聊天消息生成時間戳指示符",
+  "howTo": "選擇一個日期，從 {{syntaxColName}} 列複製所需的時間戳，並將其粘貼到聊天消息的任何位置。 結果將是一個動態時間戳，每個人都會根據他們的時區以不同的方式顯示。",
+  "input": {
+    "timezone": "時區",
+    "datetime": "日期和時間",
+    "date": "日期",
+    "time": "時間",
+    "settings": {
+      "label": "輸入設置",
+      "customInputs": {
+        "label": "自定義輸入",
+        "explanation": "將默認輸入替換為與當前語言而不是瀏覽器匹配的輸入。"
+      },
+      "separateInputs": {
+        "label": "單獨輸入",
+        "explanation": "顯示兩個不同的日期和時間輸入而不是組合一個（某些瀏覽器不支持）"
+      }
+    }
+  },
+  "buttons": {
+    "copy": "複製到剪貼板",
+    "setCurrentTime": "設置為當前時間",
+    "lock": "通過 url 鎖定時間戳。",
+    "unlock": "解鎖時間戳"
+  },
+  "table": {
+    "syntax": "聊天句法",
+    "example": "樣本結果"
+  },
+  "usefulLinks": {
+    "lead": "您可能還會發現這些有用：",
+    "server": {
+      "header": "官方 HammerTime 服務器",
+      "p": "討論站點、測試語法和建議功能"
+    },
+    "bot": {
+      "header": "HammerTime 機器人",
+      "p": "使用 <1>/timestamp</1> 斜杠命令生成時間戳"
+    },
+    "textColor": {
+      "header": "Rebane 的 <1>彩色</1> 文本生成器",
+      "p": "使用 ANSI 顏色代碼創建彩色 Discord 消息的簡單應用程序"
+    }
+  },
+  "changeLanguage": "改變語言",
+  "notFound": {
+    "heading": "未找到",
+    "content": "這沒東西看"
+  },
+  "builtWith": "使用 <1>Font Awesome Free</1> 構建的網站",
+  "openSource": "開源軟件",
+  "viewSource": "查看源代碼",
+  "notAffiliated": "該項目不隸屬於 Discord",
+  "jsDisabled": {
+    "title": "JavaScript 是必需的",
+    "body": "您的瀏覽器要么不支持 JavaScript，要么當前被禁用。 出於安全原因，某些瀏覽器默認禁用 JavaScript，但對於此應用程序來說，這是必需的。 請啟用它並刷新頁面，或使用其他瀏覽器。"
+  },
+  "a11y": {
+    "calendar": {
+      "nextMonthLabel": "下個月",
+      "previousMonthLabel": "前一個月",
+      "nextYearLabel": "明年",
+      "previousYearLabel": "上一年",
+      "nextDecadeLabel": "下一個十年",
+      "previousDecadeLabel": "前十年"
+    }
+  }
+}
