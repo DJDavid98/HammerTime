@@ -27,18 +27,18 @@ export const getDirAttribute = (locale?: string): 'rtl' | 'ltr' =>
  * @see https://developer.chrome.com/blog/show-picker/
  */
 export const inputWithPickerClickHandler: MouseEventHandler<HTMLButtonElement> = (e: MouseEvent<HTMLButtonElement>) => {
-  const label = (e.target as HTMLElement).closest('label') as HTMLLabelElement | null;
+  const label = (e.target as HTMLElement).closest('label');
   if (!label) return;
   const targetId = label.htmlFor;
   if (!targetId) return;
+  // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion -- .focus() is not defined unless this is here
   const target = document.querySelector(`input#${targetId}`) as HTMLInputElement | null;
   if (!target) return;
   if ('showPicker' in HTMLInputElement.prototype) {
     try {
       (target as unknown as { showPicker: VoidFunction }).showPicker();
       return;
-    }
-    catch (error) {
+    } catch (error) {
       console.error(error);
     }
   }

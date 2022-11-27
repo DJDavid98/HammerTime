@@ -1,3 +1,7 @@
 {
-  "extends": "@hammertime/tsconfig/base.json"
+  "extends": "@hammertime/tsconfig/base.json",
+  "include": ["index.ts", "config.json"],
+  "compilerOptions": {
+    "outDir": "./dist"
+  }
 }

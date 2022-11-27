@@ -1,5 +1,5 @@
-@use "../variables" as v;
-@use "../functions" as f;
+@use "../styles/variables" as v;
+@use "../styles/functions" as f;
 
 $footer-separator-size: f.rem(1px);
 

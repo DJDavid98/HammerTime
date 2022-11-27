@@ -1,5 +1,5 @@
-import { TimezonePicker } from "@hammertime/ui";
-import { NextPage } from "next";
+import { TimezonePicker } from '../components/TimezonePicker';
+import { NextPage } from 'next';
 
 const IndexPage: NextPage = () => {
   return (
@@ -8,6 +8,6 @@ const IndexPage: NextPage = () => {
       <TimezonePicker />
     </div>
   );
-}
+};
 
 export default IndexPage;

@@ -1,4 +1,6 @@
-const { languages } = require('@hammertime/locales/src/config.json');
+const {
+  config: { languages },
+} = require('@hammertime/locales');
 
 module.exports = {
   i18n: {

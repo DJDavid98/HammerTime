@@ -4,11 +4,10 @@ import { AppComponent } from 'next/dist/shared/lib/router/router';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import React, { useEffect, useMemo } from 'react';
-import 'src/app.scss';
+import 'src/styles/app.scss';
 import { SITE_TITLE } from '../config';
 import { assembleSeoUrl, canonicalUrlForLanguage, getDirAttribute, useLocale } from '../util/common';
 import '@hammertime/dayjs';
-import 'datalist-polyfill';
 
 const nextSeoTwitter: NextSeoProps['twitter'] = {
   cardType: 'summary_large_image',
@@ -23,6 +22,12 @@ const nextSeoAdditionalMetaTags: NextSeoProps['additionalMetaTags'] = [
 
 const App: AppComponent = ({ Component, pageProps }) => {
   const { asPath, defaultLocale, locale, locales } = useRouter();
+
+  useEffect(() => {
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment -- It's a polyfill, we don't care about its types
+    // @ts-ignore
+    import('datalist-polyfill');
+  }, []);
 
   const canonicalUrl = useMemo(() => canonicalUrlForLanguage(asPath, locale, defaultLocale), [asPath, defaultLocale, locale]);
   const languageAlternates = useMemo(
@@ -61,7 +66,7 @@ const App: AppComponent = ({ Component, pageProps }) => {
         },
       ],
     }),
-    [],
+    [asPath, locale, momentLocale],
   );
 
   return (

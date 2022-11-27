@@ -16,7 +16,8 @@
     "@fortawesome/free-solid-svg-icons": "^6.1.0",
     "@fortawesome/react-fontawesome": "^0.1.18",
     "@hammertime/locales": "*",
-    "@hammertime/ui": "*",
+    "@hammertime/social-previews": "*",
+    "@vvo/tzdb": "^6.77.0",
     "classnames": "^2.2.6",
     "datalist-polyfill": "^1.25.0",
     "dayjs": "^1.11.5",
@@ -27,7 +28,8 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-flagkit": "^2.0.4",
-    "react-topbar-progress-indicator": "^4.1.0"
+    "react-topbar-progress-indicator": "^4.1.0",
+    "sass": "^1.56.1"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
