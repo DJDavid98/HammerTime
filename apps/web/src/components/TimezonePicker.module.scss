@@ -1,0 +1,9 @@
+.timezonePicker {
+  &:valid {
+    border: lime;
+  }
+
+  &:invalid {
+    border: red;
+  }
+}

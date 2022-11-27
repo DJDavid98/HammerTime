@@ -1,13 +1,6 @@
-import { TimezonePicker } from '../components/TimezonePicker';
-import { NextPage } from 'next';
+import TimestampIndexPage, { getStaticProps as timestampGetStaticProps } from './[t]';
+import { GetStaticProps } from 'next';
 
-const IndexPage: NextPage = () => {
-  return (
-    <div>
-      <h1>Web</h1>
-      <TimezonePicker />
-    </div>
-  );
-};
+export default TimestampIndexPage;
 
-export default IndexPage;
+export const getStaticProps: GetStaticProps = (context) => timestampGetStaticProps(context);

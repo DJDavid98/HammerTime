@@ -1,0 +1,42 @@
+.spacer {
+  padding: 0.5rem;
+}
+
+.changeLanguage,
+.languageSelector {
+  font-size: 1rem;
+}
+
+.changeLanguage {
+  margin-bottom: 0.5rem;
+}
+
+.languageSelector {
+  display: flex;
+  flex-flow: column nowrap;
+  max-height: 300px;
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  .itemLink {
+    text-decoration: none;
+    display: block;
+  }
+
+  .item {
+    display: flex;
+    width: 100%;
+    flex-flow: row nowrap;
+    align-items: center;
+
+    &:disabled > * {
+      opacity: 0.5;
+    }
+  }
+
+  .nativeName {
+    line-height: 1rem;
+    padding-top: 0.1rem;
+    margin: 0 0.5rem;
+  }
+}

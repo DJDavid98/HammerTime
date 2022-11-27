@@ -1,5 +1,7 @@
 import { FunctionComponent, PropsWithChildren } from 'react';
 import styles from './Layout.module.scss';
+import { ProgressIndicator } from './ProgressIndicator';
+import { AppFooter } from './AppFooter';
 
 interface LayoutProps {
   header?: JSX.Element;
@@ -7,14 +9,17 @@ interface LayoutProps {
   Footer?: FunctionComponent<{ className: string; itemClassName: string; separatorClassName: string }>;
 }
 
-export const Layout: FunctionComponent<PropsWithChildren<LayoutProps>> = ({ header, notice, children, Footer }) => {
+export const Layout: FunctionComponent<PropsWithChildren<LayoutProps>> = ({ header, notice, children }) => {
   // Keep separate return for now
   return (
-    <div className={styles.layout}>
-      <header>{header}</header>
-      {notice}
-      <main>{children}</main>
-      {Footer && <Footer className={styles.footer} itemClassName={styles.footerItem} separatorClassName={styles.footerSeparator} />}
-    </div>
+    <>
+      <ProgressIndicator />
+      <div className={styles.layout}>
+        <header>{header}</header>
+        {notice}
+        <main>{children}</main>
+        <AppFooter />
+      </div>
+    </>
   );
 };
