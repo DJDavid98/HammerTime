@@ -48,6 +48,17 @@ console.info('Generating social previews…');
     weight: koFontWeight,
   });
 
+  const thFontPackagePath = path.join(nodeModulesPath, 'addthaifont-pdfmake');
+  const thFontFamily = 'Sarabun';
+  const thFontStyle = 'normal';
+  const thFontWeight = '600';
+  const thFontPath = await fs.realpath(path.join(thFontPackagePath, 'fonts', 'ThaiFonts', 'Sarabun-Regular.ttf'));
+  registerFont(thFontPath, {
+    family: thFontFamily,
+    style: thFontStyle,
+    weight: thFontWeight,
+  });
+
   const latestTimezoneData = require('moment-timezone/data/packed/latest.json');
   moment.tz.load(latestTimezoneData);
 
@@ -120,6 +131,7 @@ console.info('Generating social previews…');
       const textCenterY = Math.floor(socialCanvasHeight / 2) * 1.05;
       socialCanvasCtx.fillText(chatSyntaxText[0], textCenterX, textCenterY - offsetLineHeight);
       socialCanvasCtx.fillText(chatSyntaxText[1], textCenterX, textCenterY);
+      let previewOffsetMultiplier = 1;
       switch (language) {
         case 'ja':
           socialCanvasCtx.font = jaFontFamily;
@@ -127,8 +139,12 @@ console.info('Generating social previews…');
         case 'ko':
           socialCanvasCtx.font = koFontFamily;
           break;
+        case 'th':
+          socialCanvasCtx.font = thFontFamily;
+          previewOffsetMultiplier = 1.33;
+          break;
       }
-      socialCanvasCtx.fillText(chatSyntaxText[2], textCenterX, textCenterY + offsetLineHeight);
+      socialCanvasCtx.fillText(chatSyntaxText[2], textCenterX, textCenterY + offsetLineHeight * previewOffsetMultiplier);
 
       await fs.writeFile(outputPath, socialCanvas.toBuffer('image/png', { compressionLevel: 9 }));
 

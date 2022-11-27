@@ -74,6 +74,7 @@ English and Hungarian translations have been included, so no translators will be
 - 🇸🇪 Swedish:
   - Liggliluff
   - tunket
+- 🇹🇭 Thai: Rukchad Wongprayoon (unpredictable)
 - 🇹🇷 Turkish: [@tututuana](https://github.com/tututuana)
 - 🇹🇼 Traditional Chinese: Jackie (jackiecr2911)
 - 🇺🇦 Ukrainian:
