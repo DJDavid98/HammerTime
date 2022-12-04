@@ -127,6 +127,11 @@
       "countryCode": "BR",
       "momentLocale": "pt-br"
     },
+    "ro": {
+      "name": "Romanian",
+      "nativeName": "Română",
+      "countryCode": "RO"
+    },
     "ru": {
       "name": "Russian",
       "nativeName": "Русский",

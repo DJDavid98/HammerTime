@@ -20,6 +20,7 @@ import 'moment/locale/ms';
 import 'moment/locale/nl';
 import 'moment/locale/pl';
 import 'moment/locale/pt-br';
+import 'moment/locale/ro';
 import 'moment/locale/ru';
 import 'moment/locale/sv';
 import 'moment/locale/th';
