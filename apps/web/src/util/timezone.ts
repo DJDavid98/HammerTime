@@ -88,7 +88,8 @@ export const useTimestampPreservation = (
       clientTimezone = dayjs.tz.guess();
       clientTimestamp = dayjs().second(0).millisecond(0);
     }
-    void preserveTimestampInUrl(router, clientTimestamp, clientTimezone);
+    // TODO Worry about this later
+    // void preserveTimestampInUrl(router, clientTimestamp, clientTimezone);
     setTimezone(clientTimezone);
     setTimestamp(clientTimestamp.unix());
   }, [router, setTimestamp, setTimezone, timestampQuery, timezoneQuery]);
