@@ -1,5 +1,5 @@
 import 'react-i18next';
-import commonNs from '../../../packages/locales/en/common.json';
+import commonNs from '../public/locales/en/common.json';
 
 declare module 'react-i18next' {
   interface CustomTypeOptions {

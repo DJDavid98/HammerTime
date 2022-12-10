@@ -19,6 +19,19 @@ module.exports = {
       ],
       rules: {
         'react/prop-types': 'off',
+        'no-restricted-imports': 'off',
+        '@typescript-eslint/no-restricted-imports': [
+          'error',
+          {
+            paths: [
+              {
+                name: 'dayjs',
+                message: 'Please use @hammertime/dayjs instead.',
+                allowTypeImports: true,
+              },
+            ],
+          },
+        ],
       },
     },
   ],

@@ -127,6 +127,11 @@
       "countryCode": "BR",
       "momentLocale": "pt-br"
     },
+    "ro": {
+      "name": "Romanian",
+      "nativeName": "Română",
+      "countryCode": "RO"
+    },
     "ru": {
       "name": "Russian",
       "nativeName": "Русский",
@@ -144,6 +149,11 @@
       "countryCode": "SE",
       "crowdinLocale": "sv-SE",
       "percent": 58
+    },
+    "th": {
+      "name": "Thai",
+      "nativeName": "ไทย",
+      "countryCode": "TH"
     },
     "tr": {
       "name": "Turkish",

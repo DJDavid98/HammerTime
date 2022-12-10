@@ -1,0 +1,70 @@
+{
+  "seoDescription": "Generați indicatori de marcaj de timp pentru mesajele de chat Discord",
+  "howTo": "Alegeți o dată, copiați marcajul de timp dorit din {{syntaxColName}} coloană, apoi lipiți-l oriunde într-un mesaj de chat. Rezultatul va fi un marcaj temporal dinamic care se afișează diferit pentru fiecare, în funcție de propriul fus orar.",
+  "input": {
+    "timezone": "Fus orar",
+    "datetime": "Data și ora",
+    "date": "Data",
+    "time": "Timpu",
+    "settings": {
+      "label": "Setări de intrare",
+      "customInputs": {
+        "label": "Intrări personalizate",
+        "explanation": "Înlocuiește intrările implicite cu altele care se potrivesc cu limba curentă în loc de cea a browserului dvs"
+      },
+      "separateInputs": {
+        "label": "Intrări separate",
+        "explanation": "Afișează două intrări diferite pentru dată și oră în loc de una combinată (care nu este acceptată în unele browsere)"
+      }
+    }
+  },
+  "buttons": {
+    "copy": "Copiați în clipboard",
+    "setCurrentTime": "Setați la ora curentă",
+    "lock": "Blocați marca temporală prin URL",
+    "unlock": "Deblocați marca temporală"
+  },
+  "table": {
+    "syntax": "Sintaxa chat-ului",
+    "example": "Exemplu de rezultat"
+  },
+  "usefulLinks": {
+    "lead": "De asemenea, puteți găsi utile acestea:",
+    "server": {
+      "header": "Server oficial HammerTime",
+      "p": "Discutați site-ul web, testați sintaxa și sugerați caracteristici"
+    },
+    "bot": {
+      "header": "HammerTime Bot",
+      "p": "Generați marcaje temporale cu <1>/timestamp</1> comanda slash",
+      "pWithoutCommand": "Generați timestamp-uri din cadrul Discord folosind comenzi slash"
+    },
+    "textColor": {
+      "header": "Generatorul de text <1>Colorat</1> al lui Rebane",
+      "p": "O aplicație simplă care creează mesaje Discord colorate folosind coduri de culoare ANSI"
+    }
+  },
+  "changeLanguage": "Schimbă limba",
+  "notFound": {
+    "heading": "Nu a fost găsit",
+    "content": "Nimic de văzut aici."
+  },
+  "builtWith": "Site web construit cu <1>Font Awesome Gratuit</1>",
+  "openSource": "Software cu sursă deschisă",
+  "viewSource": "Vezi codul sursă",
+  "notAffiliated": "Acest proiect nu este afiliat cu Discord.",
+  "jsDisabled": {
+    "title": "JavaScript este necesar",
+    "body": "Browserul dvs. fie nu acceptă JavaScript, fie este dezactivat în prezent. Unele browsere dezactivează JavaScript în mod implicit din motive de securitate, dar este necesar pentru această aplicație. Vă rugăm să îl activați și să reîncărcați pagina sau să folosiți un alt browser."
+  },
+  "a11y": {
+    "calendar": {
+      "nextMonthLabel": "luna viitoare",
+      "previousMonthLabel": "luna precedentă",
+      "nextYearLabel": "anul viitor",
+      "previousYearLabel": "anul precedent",
+      "nextDecadeLabel": "următorul deceniu",
+      "previousDecadeLabel": "deceniul precedent"
+    }
+  }
+}

@@ -60,7 +60,7 @@ const App: AppComponent = ({ Component, pageProps }) => {
       url: assembleSeoUrl(asPath),
       images: [
         {
-          url: assembleSeoUrl(`/social/${momentLocale}.png`),
+          url: assembleSeoUrl(`/social/preview/${momentLocale}.png`),
           width: 1200,
           height: 630,
         },

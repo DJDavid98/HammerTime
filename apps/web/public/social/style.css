@@ -1,0 +1,111 @@
+:root {
+  --width: 75rem;
+  --height: 39.375rem;
+  font-size: 16px;
+}
+
+body, html {
+  overflow: hidden;
+  margin: 0;
+}
+
+body, html, #render-area, #gradient {
+  width: var(--width);
+  height: var(--height);
+}
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+#render-area {
+  background-color: #000;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+#render-area,
+#gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+#gradient {
+  opacity: .25;
+  background-image: linear-gradient(to bottom right, #585ef2 0%, #5865f2 40%, #a55ea5 90%);
+}
+
+:root[dir=rtl] #gradient {
+  transform: rotateY(180deg);
+}
+
+#logo, #text {
+  position: relative;
+  z-index: 1;
+}
+
+#logo {
+  --logo-size: 15.625rem;
+  width: var(--logo-size);
+  height: var(--logo-size);
+}
+
+#text {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #dcddde;
+  font-size: 5rem;
+  line-height: 1.1em;
+  font-weight: 400;
+  margin: 0 2rem;
+  width: 48rem;
+}
+
+#text-code {
+  font-family: 'Source Code Pro', monospace;
+}
+
+.local-text {
+  display: block;
+  position: absolute;
+  font-size: 0;
+  width: 0;
+  height: 0;
+  z-index: -1;
+}
+
+.local-text[lang=ja] {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.local-text[lang=ko] {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.local-text[lang=he] {
+  font-family: 'Noto Sans Hebrew', sans-serif;
+}
+
+.local-text[lang=ar] {
+  font-family: 'Noto Sans Arabic', sans-serif;
+}
+
+.local-text[lang=th] {
+  font-family: 'Noto Sans Thai', sans-serif;
+}
+
+.local-text[lang=zh-cn] {
+  font-family: 'Noto Sans SC', sans-serif;
+}
+
+.local-text[lang=zh-tw] {
+  font-family: 'Noto Sans TC', sans-serif;
+}

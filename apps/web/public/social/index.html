@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <title>HammerTime Social Image Renderer</title>
+  <style> @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Sans+Arabic&family=Noto+Sans+Hebrew&family=Noto+Sans+JP&family=Noto+Sans+KR&family=Noto+Sans+SC&family=Noto+Sans+TC&family=Noto+Sans+Thai&family=Source+Code+Pro&display=swap'); </style>
+  <link rel='stylesheet' href='style.css'>
+</head>
+<body>
+
+<!-- Place some text with the necessary fonts to make sure they are loaded -->
+<span class='local-text' lang='ar'>أ</span>
+<span class='local-text' lang='he'>א</span>
+<span class='local-text' lang='ja'>あ</span>
+<span class='local-text' lang='ko'>ㅏ</span>
+<span class='local-text' lang='th'>ก</span>
+<span class='local-text' lang='zh-cn'>一个</span>
+<span class='local-text' lang='zh-tw'>一個</span>
+
+<div id='render-area'>
+  <div id='gradient'></div>
+
+  <!-- Place the application logo to ensure it gets loaded -->
+  <img src='/logos/app.svg' id='logo' alt='HammerTime logo'>
+
+  <div id='text'>
+    <code id='text-code' dir='ltr'>&lt;t:0123456789:R&gt;</code>
+    <span dir='ltr'>⇣</span>
+    <span id='text-example'>X time ago</span>
+  </div>
+</div>
+
+</body>
+</html>
