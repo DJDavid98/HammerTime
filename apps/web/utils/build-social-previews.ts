@@ -69,8 +69,8 @@ void (async () => {
     for (const language of languageKeys) {
       console.info(`language set to ${language}`);
       const languageConfig = languages[language];
-      const momentLocale = 'momentLocale' in languageConfig ? languageConfig.momentLocale : language;
-      const outputPath = path.join(socialOutputDirectory, `${momentLocale}.png`);
+      const dayjsLocale = 'dayjsLocale' in languageConfig ? languageConfig.dayjsLocale : language;
+      const outputPath = path.join(socialOutputDirectory, `${dayjsLocale}.png`);
       const isRtl = 'rtl' in languageConfig && languageConfig.rtl === true;
 
       console.info('Running canvas render script');
@@ -85,7 +85,7 @@ void (async () => {
           textCodeEl: Element | null,
           textExampleEl: Element | null,
           isRtl: boolean,
-          momentLocale: string,
+          dayjsLocale: string,
           exampleTs: number,
           relativeTs: string,
           dimensions: Viewport,
@@ -113,7 +113,7 @@ void (async () => {
             return window.getComputedStyle(el).fontFamily;
           };
 
-          textEl.style.fontFamily = findTextFontFamily(momentLocale);
+          textEl.style.fontFamily = findTextFontFamily(dayjsLocale);
 
           // Write chat syntax example
           const chatSyntaxText = [`<t:${exampleTs}:R>`, '⇣', relativeTs];
@@ -124,18 +124,18 @@ void (async () => {
         await page.$('#text-code'),
         await page.$('#text-example'),
         isRtl,
-        momentLocale,
+        dayjsLocale,
         exampleTimestamp,
         dayjs(new Date(exampleTimestamp * 1e3))
-          .locale(momentLocale)
+          .locale(dayjsLocale)
           .fromNow(),
         previewDimensions,
       );
 
-      console.log(`Generating screenshot for ${momentLocale}`);
+      console.log(`Generating screenshot for ${dayjsLocale}`);
       await page.screenshot({ path: outputPath });
 
-      console.info(`Generated preview for ${momentLocale} in ${outputPath}`);
+      console.info(`Generated preview for ${dayjsLocale} in ${outputPath}`);
     }
   } catch (e) {
     console.error(e);

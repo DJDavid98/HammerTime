@@ -4,7 +4,7 @@ import { CANONICAL_URL, IS_CLIENT_SIDE, isAvailableLanguage, LANGUAGES } from '.
 export const useLocale = (language?: string) =>
   useMemo<string>(() => {
     if (language && isAvailableLanguage(language)) {
-      return LANGUAGES[language].momentLocale || language;
+      return LANGUAGES[language].dayjsLocale || language;
     }
     return 'en';
   }, [language]);

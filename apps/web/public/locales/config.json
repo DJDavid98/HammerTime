@@ -22,7 +22,7 @@
       "nativeName": "中文",
       "countryCode": "CN",
       "crowdinLocale": "zh-CN",
-      "momentLocale": "zh-cn",
+      "dayjsLocale": "zh-cn",
       "calendarLabelFormat": "YYYY年MMM",
       "calendarYearLabelFormat": "YYYY年"
     },
@@ -30,7 +30,7 @@
       "name": "Chinese Traditional",
       "nativeName": "繁體中文",
       "countryCode": "TW",
-      "momentLocale": "zh-tw",
+      "dayjsLocale": "zh-tw",
       "calendarLabelFormat": "YYYY年MMM",
       "calendarYearLabelFormat": "YYYY年"
     },
@@ -43,7 +43,7 @@
       "name": "English, United Kingdom",
       "nativeName": "English, UK",
       "countryCode": "GB",
-      "momentLocale": "en-gb"
+      "dayjsLocale": "en-gb"
     },
     "en": {
       "name": "English, United States",
@@ -125,7 +125,7 @@
       "name": "Portuguese, Brazilian",
       "nativeName": "Português do Brasil",
       "countryCode": "BR",
-      "momentLocale": "pt-br"
+      "dayjsLocale": "pt-br"
     },
     "ro": {
       "name": "Romanian",

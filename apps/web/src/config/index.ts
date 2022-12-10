@@ -23,7 +23,7 @@ export type LanguageConfig = {
   countryCode: string;
   customFlag?: boolean;
   rtl?: boolean;
-  momentLocale?: string;
+  dayjsLocale?: string;
   crowdinLocale?: string;
   percent?: number;
   calendarLabelFormat?: string;

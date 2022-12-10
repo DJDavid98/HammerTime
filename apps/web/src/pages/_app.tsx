@@ -51,7 +51,7 @@ const App: AppComponent = ({ Component, pageProps }) => {
     document.documentElement.setAttribute('dir', dir);
   }, [dir]);
 
-  const momentLocale = useLocale(locale);
+  const dayjsLocale = useLocale(locale);
   const nextSeoOpenGraph: NextSeoProps['openGraph'] = useMemo(
     () => ({
       type: 'website',
@@ -60,13 +60,13 @@ const App: AppComponent = ({ Component, pageProps }) => {
       url: assembleSeoUrl(asPath),
       images: [
         {
-          url: assembleSeoUrl(`/social/preview/${momentLocale}.png`),
+          url: assembleSeoUrl(`/social/preview/${dayjsLocale}.png`),
           width: 1200,
           height: 630,
         },
       ],
     }),
-    [asPath, locale, momentLocale],
+    [asPath, locale, dayjsLocale],
   );
 
   return (
