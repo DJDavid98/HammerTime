@@ -1,5 +1,5 @@
 @use "../styles/mixins" as m;
 
-.timezonePicker {
+.dateTimePicker {
   @include m.input;
 }

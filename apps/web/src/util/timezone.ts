@@ -13,16 +13,23 @@ export const gmtZoneRegex = /^Etc\/(GMT([+-]\d{1,2})?)$/;
 const compareGmtStrings = (a: string, b: string) =>
   parseInt(a.replace(gmtZoneRegex, '$2'), 10) - parseInt(b.replace(gmtZoneRegex, '$2'), 10);
 
+const getFixedGmtTimeZoneNames = () => {
+  const finalArray = ['GMT'];
+  for (let i = 1; i < 15; i++) {
+    finalArray.push(`${finalArray[0]}-${i}`);
+    finalArray.push(`${finalArray[0]}+${i}`);
+  }
+  return finalArray;
+};
+
 export const getSortedNormalizedTimezoneNames = (): string[] =>
-  timeZonesNames
-    .filter((name) => !/^(?:Etc\/)?GMT[+-]0$/.test(name))
-    .sort((a, b) => {
-      const isAGmt = gmtZoneRegex.test(a);
-      const isBGmt = gmtZoneRegex.test(b);
-      if (isAGmt) return isBGmt ? compareGmtStrings(a, b) : -1;
-      if (isBGmt) return isAGmt ? compareGmtStrings(a, b) : 1;
-      return a.localeCompare(b);
-    });
+  [...timeZonesNames, ...getFixedGmtTimeZoneNames()].sort((a, b) => {
+    const isAGmt = gmtZoneRegex.test(a);
+    const isBGmt = gmtZoneRegex.test(b);
+    if (isAGmt) return isBGmt ? compareGmtStrings(a, b) : -1;
+    if (isBGmt) return isAGmt ? compareGmtStrings(a, b) : 1;
+    return a.localeCompare(b);
+  });
 
 export const isValidTimezone = (timeZone: string): boolean => {
   if (gmtZoneRegex.test(timeZone)) {

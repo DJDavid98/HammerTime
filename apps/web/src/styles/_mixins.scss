@@ -1,0 +1,7 @@
+@mixin input {
+  border: 1px solid;
+
+  &:invalid {
+    border-color: #800000;
+  }
+}

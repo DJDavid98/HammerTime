@@ -1,0 +1,8 @@
+{
+  "timestamp": {
+    "invalid": "Invalid timestamp"
+  },
+  "timezone": {
+    "invalid": "Invalid timezone"
+  }
+}

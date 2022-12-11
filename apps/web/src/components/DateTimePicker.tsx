@@ -1,11 +1,13 @@
-import { ChangeEventHandler, Fragment, FunctionComponent, useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import styles from './TimezonePicker.module.scss';
+import { ChangeEventHandler, Fragment, FunctionComponent, useCallback, useEffect, useRef, useState } from 'react';
+import styles from './DateTimePicker.module.scss';
 import { isValidTimestamp } from '../util/timezone';
 import dayjs from '@hammertime/dayjs';
 import { useTimestampContext } from '../contexts/TimestampContext';
 import { useTimezoneContext } from '../contexts/TimezoneContext';
+import { useTranslation } from 'next-i18next';
 
 export const DateTimePicker: FunctionComponent = () => {
+  const { t } = useTranslation();
   const [value, setValue] = useState<number>(0);
   const inputRef = useRef<HTMLInputElement>(null);
   const [timestamp, setTimestamp] = useTimestampContext();
@@ -20,12 +22,11 @@ export const DateTimePicker: FunctionComponent = () => {
   );
 
   useEffect(() => {
-    inputRef.current?.setCustomValidity(isValidTimestamp(value) ? '' : 'Invalid timestamp');
-  }, [value]);
+    inputRef.current?.setCustomValidity(isValidTimestamp(value) ? '' : t('inputs:timestamp.invalid'));
+  }, [value, t]);
 
   useEffect(() => {
     const isValid = isValidTimestamp(value);
-    console.log('DateTimePicker isValid', isValid);
     if (isValid) {
       setTimestamp(value);
     }
@@ -43,7 +44,7 @@ export const DateTimePicker: FunctionComponent = () => {
         step="1"
         value={timestamp}
         onChange={handleChange}
-        className={styles.timezonePicker}
+        className={styles.dateTimePicker}
         ref={inputRef}
       />
     </Fragment>
