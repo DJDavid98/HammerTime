@@ -1,0 +1,70 @@
+{
+  "seoDescription": "Izveidot laika zīmogu rādītājus Discord čata ziņojumiem",
+  "howTo": "Izvēlies datumu, nokopē vēlamo laika zīmogu no {{syntaxColName}} kolonnas un ievieto to jebkurā čata ziņā. Rezultāts būs dinamisks laika zīmogs, kas izskatīsies atšķirīgi visiem, atkarībā no viņu pašu laika joslas.",
+  "input": {
+    "timezone": "Laika josla",
+    "datetime": "Datums un laiks",
+    "date": "Datums",
+    "time": "Laiks",
+    "settings": {
+      "label": "Ievades iestatījumi",
+      "customInputs": {
+        "label": "Pielāgoti ievadi",
+        "explanation": "Aizvieto ievades ar tām, kas atbilst pašreizējai valodai, nevis pārlūkprogrammas valodai"
+      },
+      "separateInputs": {
+        "label": "Atsevišķas ievades",
+        "explanation": "Parādīt divus atšķirīgus ievades laukus datumam un laikam, nevis vienu kombinētu (kas dažās pārlūkprogrammās netiek atbalstīts)"
+      }
+    }
+  },
+  "buttons": {
+    "copy": "Kopēt uz starpliktuvi",
+    "setCurrentTime": "Iestatīt uz pašreizējo laiku",
+    "lock": "Noslēgt laika zīmogu caur URL",
+    "unlock": "Atslēgt laika zīmogu"
+  },
+  "table": {
+    "syntax": "Čata sintakses",
+    "example": "Rezultāta piemērs"
+  },
+  "usefulLinks": {
+    "lead": "Jūs varat arī atrast šos noderīgus:",
+    "server": {
+      "header": "Oficiālais HammerTime serveris",
+      "p": "Apspriest tīmekļa vietni, pārbaudīt sintaksu un ieteikt iespējas"
+    },
+    "bot": {
+      "header": "HammerTime Bots",
+      "p": "Ģenerēt laika zīmogus ar <1>/timestamp</1> slīpkomandu",
+      "pWithoutCommand": "Ģenerēt laika zīmogus no Discord izmantojot slīpkomandas"
+    },
+    "textColor": {
+      "header": "Rebane's <1>Krāsainais</1> teksta ģenerators",
+      "p": "Vienkārša lietotne, kas izveido krāsainus Discord ziņojumus, izmantojot ANSI krāsu kodus"
+    }
+  },
+  "changeLanguage": "Mainīt valodu",
+  "notFound": {
+    "heading": "Netika Atrasts",
+    "content": "Šeit nav ko redzēt."
+  },
+  "builtWith": "Mājaslapa izveidota ar <1>Font Awesome Free</1>",
+  "openSource": "Atklātā pirmkoda programmatūra",
+  "viewSource": "Skatīt pirmkodu",
+  "notAffiliated": "Šis projekts nav saistīts ar Discord.",
+  "jsDisabled": {
+    "title": "JavaScripts ir nepieciešams",
+    "body": "Jūsu pārlūkprogramma vai nu neatbalsta JavaScript, vai arī tas pašlaik ir atspējots. Dažās pārlūkprogrammās JavaScript ir atspējots pēc noklusējuma drošības apsvērumu dēļ, taču šajā lietojumprogrammā tas ir nepieciešams. Lūdzu, iespējojiet to un atsvaidziniet lapu vai izmantojiet citu pārlūkprogrammu."
+  },
+  "a11y": {
+    "calendar": {
+      "nextMonthLabel": "nākamais mēnesis",
+      "previousMonthLabel": "iepriekšējais mēnesis",
+      "nextYearLabel": "nākamais gads",
+      "previousYearLabel": "iepriekšējais gads",
+      "nextDecadeLabel": "nākamā dekāde",
+      "previousDecadeLabel": "iepriekšējā dekāde"
+    }
+  }
+}
