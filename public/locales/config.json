@@ -105,6 +105,11 @@
       "nativeName": "Lietuviškai",
       "countryCode": "LT"
     },
+    "lv": {
+      "name": "Latvian",
+      "nativeName": "Latviski",
+      "countryCode": "LV"
+    },
     "ms": {
       "name": "Malay",
       "nativeName": "Bahasa Melayu",

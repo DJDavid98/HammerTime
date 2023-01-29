@@ -57,6 +57,7 @@ English and Hungarian translations have been included, so no translators will be
   - TheOnlyRAK
   - sjkim04
 - 🇰🇷 Korean: sjkim04
+- 🇱🇻 Latvian: Casper (JajarGG)
 - 🇱🇹 Lithuanian: tayloryte
 - 🇲🇾 Malay: Nurul Azeera Hidayah @ Muhammad Nur Hidayat Yasuyoshi (MNH48.moe) (mnh48)
 - 🇳🇱 Dutch: Jesse (Jessuh)
