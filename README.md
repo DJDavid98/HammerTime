@@ -65,6 +65,7 @@ English and Hungarian translations have been included, so no translators will be
   - Dawid (MinerPL)
   - stha (sthakrk)
 - 🇷🇴 Romanian: mihai (mihaiofficialRO)
+- 🇷🇸 Serbian: net-tech-
 - 🇷🇺 Russian:
   - GameHacker
   - JudeDM
