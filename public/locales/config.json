@@ -148,6 +148,12 @@
       "countryCode": "ES",
       "crowdinLocale": "es-ES"
     },
+    "sr": {
+      "name": "Serbian (Latin)",
+      "nativeName": "Srpski",
+      "countryCode": "RS",
+      "crowdinLocale": "sr-CS"
+    },
     "sv": {
       "name": "Swedish",
       "nativeName": "Svenska",

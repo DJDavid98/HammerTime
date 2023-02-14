@@ -1,0 +1,70 @@
+{
+  "seoDescription": "Generišite vremenske oznake za poruke na Discord aplikaciji",
+  "howTo": "Izaberite datum, kopirajte željenu vremensku oznaku iz kolone {{syntaxColName}}, a zatim je nalepite bilo gde u poruci. Rezultat će biti dinamička vremenska oznaka koja se prikazuje različito za svakoga na osnovu njihove vremenske zone.",
+  "input": {
+    "timezone": "Vremenska zona",
+    "datetime": "Datum i vreme",
+    "date": "Datum",
+    "time": "Vreme",
+    "settings": {
+      "label": "Podešavanja unosa",
+      "customInputs": {
+        "label": "Prilagođeni ulazi",
+        "explanation": "Zamenjuje podrazumevane unose onima koji odgovaraju trenutnom jeziku umesto jezika vašeg internet pretraživača"
+      },
+      "separateInputs": {
+        "label": "Odvojeni ulazi",
+        "explanation": "Prikaži dva različita unosa za datum i vreme umesto kombinovanog (što nije podržano u nekim internet pretraživačima)"
+      }
+    }
+  },
+  "buttons": {
+    "copy": "Kopiraj u klipboard",
+    "setCurrentTime": "Podesi na trenutno vreme",
+    "lock": "Zaključaj vremensku oznaku preko URL-a",
+    "unlock": "Otključaj vremensku oznaku"
+  },
+  "table": {
+    "syntax": "Sintaksa u poruci",
+    "example": "Primer rezultata"
+  },
+  "usefulLinks": {
+    "lead": "Ovo Vam takođe može biti korisno:",
+    "server": {
+      "header": "Zvanični HammerTime server",
+      "p": "Razgovarajte o websajtu, testirajte sintakse i predložite funkcije"
+    },
+    "bot": {
+      "header": "HammerTime Bot",
+      "p": "Generišite vremenske oznake pomoću komande <1>/timestamp</1>",
+      "pWithoutCommand": "Generišite vremenske oznake iz Discord-a pomoću slash komandi"
+    },
+    "textColor": {
+      "header": "Rebaneov generator <1>obojenog</1> teksta",
+      "p": "Jednostavna aplikacija koja kreira obojene Discord poruke koristeći ANSI kodove boja"
+    }
+  },
+  "changeLanguage": "Promeni jezik",
+  "notFound": {
+    "heading": "Nije pronađeno",
+    "content": "Nema ništa da se vidi ovde."
+  },
+  "builtWith": "Websajt napravljen pomoću <1>Font Avesome Free</1>",
+  "openSource": "Softver otvorenog koda",
+  "viewSource": "Pogledajte izvorni kod",
+  "notAffiliated": "Ovaj projekat nije povezan sa Discord-om.",
+  "jsDisabled": {
+    "title": "JavaScript je neophodan",
+    "body": "Vaš internet pretraživač ne podržava JavaScript ili ga je onemogućio. Neki internet pretraživači podrazumevano onemogućavaju JavaScript iz bezbednosnih razloga, ali on je neophodan za ovu aplikaciju. Omogućite ga i osvežite stranicu ili koristite drugi internet pretraživač."
+  },
+  "a11y": {
+    "calendar": {
+      "nextMonthLabel": "sledeći mesec",
+      "previousMonthLabel": "prethodni mesec",
+      "nextYearLabel": "sledeća godina",
+      "previousYearLabel": "prošla godina",
+      "nextDecadeLabel": "sledeća decenija",
+      "previousDecadeLabel": "prošla decenija"
+    }
+  }
+}
