@@ -2,6 +2,7 @@ import { extend } from 'dayjs';
 import 'dayjs/locale/ar';
 import 'dayjs/locale/bg';
 import 'dayjs/locale/ca';
+import 'dayjs/locale/cs';
 import 'dayjs/locale/de';
 import 'dayjs/locale/el';
 import 'dayjs/locale/en-gb';

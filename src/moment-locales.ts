@@ -3,6 +3,7 @@ import latestTimezoneData from 'moment-timezone/data/packed/latest.json';
 import 'moment/locale/ar';
 import 'moment/locale/bg';
 import 'moment/locale/ca';
+import 'moment/locale/cs';
 import 'moment/locale/de';
 import 'moment/locale/el';
 import 'moment/locale/en-gb';
