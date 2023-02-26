@@ -36,6 +36,9 @@ English and Hungarian translations have been included, so no translators will be
 - 🇨🇳 Simplified Chinese:
   - CPYW_7226
   - user670839245
+- 🇨🇿 Czech
+  - klauny
+  - イーテルニティ ☄️ (Ethxrnity)
 - 🇩🇪 German:
   - Carlos Diener (carlos.diener)
   - Fabian9799
