@@ -1,0 +1,70 @@
+{
+  "seoDescription": "Generování indikátorů časových značek pro zprávy chatu Discord",
+  "howTo": "Vyberte datum, zkopírujte požadované časové razítko ze sloupce {{syntaxColName}} a vložte je kamkoli do zprávy chatu. Výsledkem bude dynamické časové razítko, které se každému zobrazí jinak na základě jeho časového pásma.",
+  "input": {
+    "timezone": "Časové pásmo",
+    "datetime": "Datum a čas",
+    "date": "Datum",
+    "time": "Čas",
+    "settings": {
+      "label": "Nastavení vstupu",
+      "customInputs": {
+        "label": "Vlastní vstupy",
+        "explanation": "Nahradí výchozí vstupy vstupy, které odpovídají aktuálnímu jazyku namísto jazyka prohlížeče"
+      },
+      "separateInputs": {
+        "label": "Oddělit vstupy",
+        "explanation": "Zobrazí dva odlišné vstupy pro datum a čas namísto kombinace (což není podporování u některých prohlížečů)"
+      }
+    }
+  },
+  "buttons": {
+    "copy": "Zkopírovat do schránky",
+    "setCurrentTime": "Nastavit na aktuální čas",
+    "lock": "Uzamknout časové razítko pomocí URL",
+    "unlock": "Odemknout časové razítko"
+  },
+  "table": {
+    "syntax": "Syntax chatu",
+    "example": "Příklad výsledku"
+  },
+  "usefulLinks": {
+    "lead": "Užitečné pro vás mohou být také tyto:",
+    "server": {
+      "header": "Officální HammerTime Server",
+      "p": "Diskutujte o webových stránkách, testujte syntaxi a navrhujte funkce"
+    },
+    "bot": {
+      "header": "HammerTime Bot",
+      "p": "Generování časových razítek pomocí příkazu <1>/timestamp</1> lomítko",
+      "pWithoutCommand": "Generování časových značek z aplikace Discord pomocí příkazů s lomítkem"
+    },
+    "textColor": {
+      "header": "Generátor <1>barevného</1> textu od společnosti Rebane",
+      "p": "Jednoduchá aplikace, která vytváří barevné zprávy Discord pomocí barevných kódů ANSI"
+    }
+  },
+  "changeLanguage": "Změnit jazyk",
+  "notFound": {
+    "heading": "Nenalezeno",
+    "content": "Není zde nic k zobrazení."
+  },
+  "builtWith": "Webové stránky vytvořené pomocí <1>písma Font Awesome Free</1>",
+  "openSource": "Otevřený software",
+  "viewSource": "Zobrazit zdrojový kód",
+  "notAffiliated": "Tento projekt není spojen se společností Discord.",
+  "jsDisabled": {
+    "title": "JavaScript je nezbytný",
+    "body": "Váš prohlížeč buď nepodporuje JavaScript, nebo je momentálně vypnutý. Některé prohlížeče JavaScript ve výchozím nastavení z bezpečnostních důvodů zakazují, ale pro tuto aplikaci je nezbytný. Povolte jej a obnovte stránku nebo použijte jiný prohlížeč."
+  },
+  "a11y": {
+    "calendar": {
+      "nextMonthLabel": "příští měsíc",
+      "previousMonthLabel": "předchozí měsíc",
+      "nextYearLabel": "příští rok",
+      "previousYearLabel": "předchozí rok",
+      "nextDecadeLabel": "příští desetiletí",
+      "previousDecadeLabel": "předchozí desetiletí"
+    }
+  }
+}
