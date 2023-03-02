@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Badge, Button, Popover, Text } from '@mantine/core';
-import { LanguageFlag } from 'components/LanguageFlag';
-import { UnfinishedTranslationsLink } from 'components/UnfinishedTranslationsLink';
+import { LanguageFlag } from 'components/i18n/LanguageFlag';
+import { UnfinishedTranslationsLink } from 'components/i18n/UnfinishedTranslationsLink';
 import toPairs from 'lodash/toPairs';
 import styles from 'modules/LanguageSelector.module.scss';
 import { useTranslation } from 'next-i18next';
@@ -43,11 +43,11 @@ export const LanguageSelector: FC<{ footerItemClass: string }> = ({ footerItemCl
             </Button>
           </Popover.Target>
           <Popover.Dropdown>
-            <Text size="sm" className={styles.changeLanguage}>
+            <Text size="sm" className={styles['change-language']}>
               <span>{`${t('common:changeLanguage')} `}</span>
               <Badge color="gray">{sortedLanguages.length}</Badge>
             </Text>
-            <div className={styles.languageSelector}>
+            <div className={styles['language-selector']}>
               {sortedLanguages.map(([key, value]) => {
                 const isCurrentLanguage = language === key;
                 const dropdownItemJsx = (
@@ -67,7 +67,7 @@ export const LanguageSelector: FC<{ footerItemClass: string }> = ({ footerItemCl
                     }
                     disabled={isCurrentLanguage}
                   >
-                    <span className={styles.nativeName}>{value.nativeName}</span>
+                    <span className={styles['native-name']}>{value.nativeName}</span>
                   </Button>
                 );
                 if (isCurrentLanguage) {

@@ -1,7 +1,8 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Alert, Button, MantineSize, Paper, Tooltip } from '@mantine/core';
-import { AppContainer } from 'components/AppContainer';
-import { Layout } from 'components/Layout';
+import { DatesProvider, DayOfWeek } from '@mantine/dates';
+import { AppContainer } from 'components/app/AppContainer';
+import { Layout } from 'components/app/Layout';
 import { LockButton } from 'components/LockButton';
 import { TimestampPicker } from 'components/TimestampPicker';
 import { TimestampsTable } from 'components/TimestampsTable';
@@ -130,11 +131,6 @@ export const IndexPage: NextPage<IndexPageProps> = ({ tzNames }) => {
     setTimestamp(moment.tz(`${dateString}T${timeString}`, safeTimezone));
   }, [dateString, safeTimezone, timeString, timezone]);
 
-  const commonProps = {
-    locale,
-    t,
-  };
-
   const syntaxColName = useMemo(() => {
     const originalText = t('common:table.syntax');
     // Lowercase column name in text only for this language
@@ -179,57 +175,68 @@ export const IndexPage: NextPage<IndexPageProps> = ({ tzNames }) => {
     [fixedTimestamp, lockButtonTooltipText, setTimeButtonTooltipText, setTimeNow, timestampInSecondsString],
   );
 
+  const dateProviderSettings = useMemo(
+    () => ({
+      locale,
+      firstDayOfWeek: moment.localeData('locale').firstDayOfWeek() as DayOfWeek | undefined,
+    }),
+    [locale],
+  );
+
   return (
     <Layout>
-      <AppContainer>
-        {showHowTo && (
-          <Alert
-            title={t('common:seoDescription')}
-            icon={<FontAwesomeIcon icon="info" fixedWidth />}
-            color="dark"
-            withCloseButton
-            onClose={handleHowToClose}
-          >
-            {t('common:howTo', { syntaxColName })}
-          </Alert>
-        )}
+      <DatesProvider settings={dateProviderSettings}>
+        <AppContainer>
+          {showHowTo && (
+            <Alert
+              title={t('common:seoDescription')}
+              icon={<FontAwesomeIcon icon="info" fixedWidth />}
+              color="dark"
+              withCloseButton
+              onClose={handleHowToClose}
+            >
+              {t('common:howTo', { syntaxColName })}
+            </Alert>
+          )}
 
-        <noscript>
-          <Alert
-            title={t('common:jsDisabled.title')}
-            icon={<FontAwesomeIcon icon="exclamation-triangle" fixedWidth />}
-            color="red"
-            onClose={handleHowToClose}
-          >
-            {t('common:jsDisabled.body')}
-          </Alert>
-        </noscript>
+          <noscript>
+            <Alert
+              title={t('common:jsDisabled.title')}
+              icon={<FontAwesomeIcon icon="exclamation-triangle" fixedWidth />}
+              color="red"
+              onClose={handleHowToClose}
+            >
+              {t('common:jsDisabled.body')}
+            </Alert>
+          </noscript>
 
-        <Paper p="lg">
-          <TimestampPicker
-            {...commonProps}
-            language={language}
-            dateString={dateString}
-            timeString={timeString}
-            changeTimezone={handleTimezoneChange}
-            handleDateChange={handleDateChange}
-            handleTimeChange={handleTimeChange}
-            handleDateTimeChange={handleDateTimeChange}
-            timezone={timezone}
-            defaultTimezone={defaultTimezone}
-            timezoneNames={timezoneNames}
-            fixedTimestamp={fixedTimestamp}
-            ButtonsComponent={ButtonsComponent}
-          />
-          <TimestampsTable {...commonProps} timestamp={timestamp} timeInSeconds={timestampInSecondsString} />
-        </Paper>
-
-        {Boolean(leadText) && (
           <Paper p="lg">
-            <UsefulLinks t={t} leadText={leadText} />
+            <TimestampPicker
+              t={t}
+              locale={locale}
+              language={language}
+              dateString={dateString}
+              timeString={timeString}
+              changeTimezone={handleTimezoneChange}
+              handleDateChange={handleDateChange}
+              handleTimeChange={handleTimeChange}
+              handleDateTimeChange={handleDateTimeChange}
+              timezone={timezone}
+              defaultTimezone={defaultTimezone}
+              timezoneNames={timezoneNames}
+              fixedTimestamp={fixedTimestamp}
+              ButtonsComponent={ButtonsComponent}
+            />
+            <TimestampsTable t={t} locale={locale} timestamp={timestamp} timeInSeconds={timestampInSecondsString} />
           </Paper>
-        )}
-      </AppContainer>
+
+          {Boolean(leadText) && (
+            <Paper p="lg">
+              <UsefulLinks t={t} leadText={leadText} />
+            </Paper>
+          )}
+        </AppContainer>
+      </DatesProvider>
     </Layout>
   );
 };

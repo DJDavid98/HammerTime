@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Center, Footer } from '@mantine/core';
+import { FooterItem } from 'components/app/FooterItem';
+import { FooterSeparator } from 'components/app/FooterSeparator';
 import { ExternalLink } from 'components/ExternalLink';
-import { FooterItem } from 'components/FooterItem';
-import { FooterSeparator } from 'components/FooterSeparator';
-import { LanguageSelector } from 'components/LanguageSelector';
+import { LanguageSelector } from 'components/i18n/LanguageSelector';
 import styles from 'modules/AppFooter.module.scss';
 import { Trans, useTranslation } from 'next-i18next';
 import React, { FC, useEffect, useState } from 'react';
@@ -31,7 +31,7 @@ export const AppFooter: FC = () => {
   return (
     <Footer height={footerHeight}>
       <Center component="footer" inline className={styles.footer} ref={setFooter}>
-        <LanguageSelector footerItemClass={styles.footerItem} />
+        <LanguageSelector footerItemClass={styles['footer-item']} />
         <FooterSeparator />
         <FooterItem>
           <Trans t={t} i18nKey="common:builtWith">

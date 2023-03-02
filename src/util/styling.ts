@@ -1,4 +1,4 @@
-import { MantineProviderProps, createEmotionCache } from '@mantine/core';
+import { createEmotionCache, MantineProviderProps } from '@mantine/core';
 import { MonthSettings } from '@mantine/dates';
 import rtlPlugin from 'stylis-plugin-rtl';
 
@@ -13,7 +13,7 @@ export const getEmotionCache = (dir: 'rtl' | 'ltr'): MantineProviderProps['emoti
 
 const discordColor = '#5865f2';
 
-const createColorArray = (value: string): [string, string, string, string, string, string, string, string, string, string] => [
+const createColorArray = <T extends string>(value: T): [T, T, T, T, T, T, T, T, T, T] => [
   value,
   value,
   value,
@@ -34,7 +34,6 @@ export const themeOverride: MantineProviderProps['theme'] = {
   fontFamily: `'Montserrat', sans-serif`,
   fontFamilyMonospace: `'Source Code Pro', 'Consolas', monospace`,
   primaryColor: 'indigo',
-  dateFormat: 'LL',
   components: {
     Button: {
       styles: (theme) => ({
@@ -47,18 +46,27 @@ export const themeOverride: MantineProviderProps['theme'] = {
         },
       }),
     },
+    Tooltip: {
+      defaultProps: {
+        color: 'dark',
+      },
+    },
   },
 };
 
 export const getDayStyle =
-  (theme: Required<MantineProviderProps>['theme'], today: Date): MonthSettings['dayStyle'] =>
+  (today: Date): MonthSettings['getDayProps'] =>
   (date) => {
     const dateString = date.toDateString();
     const todayString = today.toDateString();
-    return dateString === todayString
-      ? {
+    if (dateString === todayString) {
+      return {
+        sx: (theme) => ({
           border: `2px solid ${theme.colors?.indigo?.[4] || ''}`,
           boxSizing: 'border-box',
-        }
-      : {};
+        }),
+      };
+    }
+
+    return {};
   };

@@ -48,19 +48,19 @@ const UsefulLinksComponent: FC<{ t: TFunction; leadText: string }> = ({ t, leadT
 
   return (
     <>
-      <Text className={styles.leadText}>{leadText}</Text>
+      <Text className={styles['lead-text']}>{leadText}</Text>
       <Group position="center" align="stretch">
         {components.map(({ href, image, name, desc }) => (
           <div key={href} className={styles.link}>
             <Card component={ExternalLink} href={href} shadow="sm" p="lg" withBorder>
-              <Card.Section className={styles.cardTopHalf}>
+              <Card.Section className={styles['card-top-half']}>
                 <Image src={image} />
               </Card.Section>
 
-              <div className={styles.cardBottomHalf}>
-                <Text className={styles.linkName}>{name}</Text>
+              <div className={styles['card-bottom-half']}>
+                <Text className={styles['link-name']}>{name}</Text>
 
-                <Text size="sm" className={styles.linkDesc}>
+                <Text size="sm" className={styles['link-desc']}>
                   {desc}
                 </Text>
               </div>

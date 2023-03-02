@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { ActionIcon, ActionIconProps, Code, CodeProps, Group, Tooltip } from '@mantine/core';
 import { useClipboard } from '@mantine/hooks';
+import styles from 'modules/TimestampsTable.module.scss';
 import { useCallback, useMemo, VoidFunctionComponent } from 'react';
 import { TFunction } from 'react-i18next';
-import styles from 'modules/TimestampsTable.module.scss';
 
 const elementSizes: ActionIconProps['size'] = 'lg';
 const codeSx: CodeProps['sx'] = (theme) => ({ fontSize: theme.fontSizes[elementSizes] });
@@ -37,7 +37,7 @@ export const CopySyntax: VoidFunctionComponent<{ syntax: string; t: TFunction }>
   }
 
   return (
-    <Group spacing={5} className={styles.copySyntax}>
+    <Group spacing={5} className={styles['copy-syntax']}>
       {actionItemJsx}
       <Code sx={codeSx}>{syntax}</Code>
     </Group>

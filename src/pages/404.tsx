@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Alert } from '@mantine/core';
-import { AppContainer } from 'components/AppContainer';
-import { Layout } from 'components/Layout';
+import { AppContainer } from 'components/app/AppContainer';
+import { Layout } from 'components/app/Layout';
 import { GetStaticProps, NextPage } from 'next';
 import { SSRConfig, useTranslation } from 'next-i18next';
 import { typedServerSideTranslations } from 'src/util/i18n-server';

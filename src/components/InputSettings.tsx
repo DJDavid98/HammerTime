@@ -40,7 +40,7 @@ export const InputSettings: FC<PropTypes> = ({
         </Tooltip>
       </Popover.Target>
 
-      <Popover.Dropdown className={styles.dropdownBody} key={dropdownKey}>
+      <Popover.Dropdown className={styles['dropdown-body']} key={dropdownKey}>
         <Text>{settingsLabel}</Text>
 
         <div>
@@ -49,12 +49,7 @@ export const InputSettings: FC<PropTypes> = ({
         </div>
 
         <div>
-          <Switch
-            label={t('input.settings.separateInputs.label')}
-            checked={customInputEnabled || separateInputsEnabled}
-            disabled={customInputEnabled}
-            onChange={toggleSeparateInputs}
-          />
+          <Switch label={t('input.settings.separateInputs.label')} checked={separateInputsEnabled} onChange={toggleSeparateInputs} />
           <Text size="xs">{t('input.settings.separateInputs.explanation')}</Text>
         </div>
       </Popover.Dropdown>

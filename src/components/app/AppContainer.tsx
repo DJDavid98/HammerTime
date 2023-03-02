@@ -1,5 +1,5 @@
 import { Anchor, AppShell, Center, Header } from '@mantine/core';
-import { AppFooter } from 'components/AppFooter';
+import { AppFooter } from 'components/app/AppFooter';
 import { CustomIcon } from 'components/CustomIcon';
 import styles from 'modules/AppContainer.module.scss';
 import Link from 'next/link';
@@ -34,6 +34,6 @@ export const AppContainer: FC<PropsWithChildren> = ({ children }) => (
     fixed={false}
     styles={shellStyles}
   >
-    <div className={styles.shellContents}>{children}</div>
+    <div className={styles['shell-contents']}>{children}</div>
   </AppShell>
 );

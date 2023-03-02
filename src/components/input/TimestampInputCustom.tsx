@@ -1,0 +1,123 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { ActionIcon } from '@mantine/core';
+import { CalendarAriaLabels, DatePickerInput, DateTimePicker, TimeInput } from '@mantine/dates';
+import { IconRenderer } from 'components/IconRenderer';
+import styles from 'modules/TimestampPicker.module.scss';
+import moment from 'moment-timezone';
+import { FC, useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { AvailableLanguage, LANGUAGES } from 'src/config';
+import { dateInputIcon, dateTimeInputIcons, timeInputIcon, TimestampInputProps } from 'src/model/timestamp-input-props';
+import { getDayStyle } from 'src/util/styling';
+
+const dateInputId = 'date-custom-input';
+const timeInputId = 'time-custom-input';
+const dateTimeInputId = 'date-time-custom-input';
+
+export const TimestampInputCustom: FC<TimestampInputProps> = ({
+  combinedInput,
+  t,
+  locale,
+  dateString,
+  timeString,
+  language,
+  inputSize,
+  fixedTimestamp,
+  handleDateChange,
+  handleTimeChange,
+  handleDateTimeChange,
+}) => {
+  const date = useMemo(() => (dateString ? new Date(`${dateString}T${timeString}`) : new Date(0)), [dateString, timeString]);
+  const { calendarLabelFormat, calendarYearLabelFormat, rtl } = useMemo(() => LANGUAGES[language as AvailableLanguage], [language]);
+  const [today, setToday] = useState(() => new Date());
+  const timeInputRef = useRef<HTMLInputElement>(null);
+
+  useEffect(() => {
+    const todayUpdateInterval = setInterval(() => {
+      setToday(new Date());
+    }, 60e3);
+
+    return () => clearInterval(todayUpdateInterval);
+  }, []);
+
+  const getDayProps = useMemo(() => getDayStyle(today), [today]);
+
+  const datePickerA11y = useMemo(
+    (): CalendarAriaLabels => ({
+      nextMonth: t('common:a11y.calendar.nextMonthLabel'),
+      previousMonth: t('common:a11y.calendar.previousMonthLabel'),
+      nextYear: t('common:a11y.calendar.nextYearLabel'),
+      previousYear: t('common:a11y.calendar.previousYearLabel'),
+      nextDecade: t('common:a11y.calendar.nextDecadeLabel'),
+      previousDecade: t('common:a11y.calendar.previousDecadeLabel'),
+    }),
+    [t],
+  );
+
+  const valueFormats = useMemo(() => {
+    const localeData = moment.localeData(locale);
+    const dateFormat = localeData.longDateFormat('LL');
+    const parts = [dateFormat, localeData.longDateFormat('LTS')];
+    return {
+      dateTime: (rtl ? parts.reverse() : parts).join(' '),
+      date: dateFormat,
+    };
+  }, [locale, rtl]);
+
+  const datePickerClearable = useMemo(() => date.toDateString() !== today.toDateString(), [date, today]);
+
+  const handleTimeIconClick = useCallback(() => {
+    timeInputRef.current?.showPicker();
+  }, []);
+
+  if (combinedInput) {
+    return (
+      <DateTimePicker
+        label={t('common:input.datetime')}
+        valueFormat={valueFormats.dateTime}
+        value={date}
+        id={dateTimeInputId}
+        onChange={handleDateTimeChange}
+        readOnly={fixedTimestamp}
+        size={inputSize}
+        className={styles['combined-input']}
+        icon={<IconRenderer icons={dateTimeInputIcons} />}
+        withSeconds
+      />
+    );
+  }
+
+  return (
+    <>
+      <DatePickerInput
+        id={dateInputId}
+        label={t('common:input.date')}
+        ariaLabels={datePickerA11y}
+        value={date}
+        icon={<FontAwesomeIcon icon={dateInputIcon} fixedWidth />}
+        size={inputSize}
+        onChange={handleDateChange}
+        readOnly={fixedTimestamp}
+        clearable={datePickerClearable}
+        getDayProps={getDayProps}
+        monthLabelFormat={calendarLabelFormat}
+        yearLabelFormat={calendarYearLabelFormat}
+        valueFormat={valueFormats.date}
+      />
+      <TimeInput
+        id={timeInputId}
+        label={t('common:input.time')}
+        value={timeString}
+        icon={
+          <ActionIcon onClick={handleTimeIconClick}>
+            <IconRenderer icons={timeInputIcon} />
+          </ActionIcon>
+        }
+        onChange={handleTimeChange}
+        withSeconds
+        readOnly={fixedTimestamp}
+        size={inputSize}
+        ref={timeInputRef}
+      />
+    </>
+  );
+};

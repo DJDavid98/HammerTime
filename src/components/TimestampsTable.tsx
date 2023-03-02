@@ -73,25 +73,25 @@ export const TimestampsTable: FC<PropTypes> = ({ t, locale, timestamp, timeInSec
     <Table className={styles.table}>
       <thead>
         <tr>
-          <th className={styles.syntaxColumn} colSpan={2}>
+          <th className={styles['syntax-column']} colSpan={2}>
             {t('common:table.syntax')}
           </th>
-          <th className={styles.exampleColumn}>{t('common:table.example')}</th>
+          <th className={styles['example-column']}>{t('common:table.example')}</th>
         </tr>
       </thead>
       <tbody>
         {rows.map((value, i) => (
           <tr key={i}>
-            <IconCol className={styles.iconColumn} i={i} />
-            <td className={styles.syntaxColumn}>
+            <IconCol className={styles['icon-column']} i={i} />
+            <td className={styles['syntax-column']}>
               <CopySyntax t={t} syntax={value.syntax} />
 
-              <Text className={styles.exampleText}>
+              <Text className={styles['example-text']}>
                 <FontAwesomeIcon icon="eye" />
                 {` ${value.example}`}
               </Text>
             </td>
-            <td className={styles.exampleColumn}>
+            <td className={styles['example-column']}>
               <Text size="lg">{value.example}</Text>
             </td>
           </tr>

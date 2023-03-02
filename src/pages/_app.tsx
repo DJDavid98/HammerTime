@@ -1,15 +1,16 @@
 import { MantineProvider } from '@mantine/core';
+import { RouterTransition } from 'components/app/RouterTransition';
 import { appWithTranslation, useTranslation } from 'next-i18next';
 import { DefaultSeo } from 'next-seo';
 import { AppComponent } from 'next/dist/shared/lib/router/router';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import React, { useEffect, useMemo } from 'react';
-import 'src/app.scss';
 import { SITE_TITLE } from 'src/config';
 import 'src/fontawesome';
 import { assembleSeoUrl, canonicalUrlForLanguage, getDirAttribute, useLocale } from 'src/util/common';
 import { getEmotionCache, themeOverride } from 'src/util/styling';
+import '../app.scss';
 import '../dayjs-locales';
 import '../moment-locales';
 
@@ -86,6 +87,7 @@ const App: AppComponent = ({ Component, pageProps }) => {
         ]}
       />
       <MantineProvider withGlobalStyles withNormalizeCSS theme={theme} emotionCache={ltrOptions.emotionCache}>
+        <RouterTransition />
         <Component {...pageProps} />
       </MantineProvider>
     </>

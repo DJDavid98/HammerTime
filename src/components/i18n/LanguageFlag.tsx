@@ -1,6 +1,6 @@
 import { useMemo, VoidFunctionComponent } from 'react';
-import Flag from 'react-flagkit';
 import type { Props as FlagProps } from 'react-flagkit';
+import Flag from 'react-flagkit';
 import { LanguageConfig } from 'src/config';
 
 export const LanguageFlag: VoidFunctionComponent<

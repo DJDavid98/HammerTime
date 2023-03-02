@@ -7,11 +7,12 @@ import { getEmotionCache } from 'src/util/styling';
 class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
     const initialProps = await Document.getInitialProps(ctx);
-    const stylesServer = createStylesServer(getEmotionCache(getDirAttribute(ctx.locale)));
+    const dir = getDirAttribute(ctx.locale);
+    const stylesServer = createStylesServer(getEmotionCache(dir));
 
     return {
       ...initialProps,
-      styles: [initialProps.styles, <ServerStyles html={initialProps.html} server={stylesServer} key="styles" />],
+      styles: [initialProps.styles, <ServerStyles html={initialProps.html} server={stylesServer} key={`styles-${dir}`} />],
     };
   }
 
