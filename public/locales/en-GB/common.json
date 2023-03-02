@@ -36,7 +36,8 @@
     },
     "bot": {
       "header": "HammerTime Bot",
-      "p": "Generate timestamps with the <1>/timestamp</1> slash command"
+      "p": "Generate timestamps with the <1>/timestamp</1> slash command",
+      "pWithoutCommand": "Generate timestamps from within Discord using slash commands"
     },
     "textColor": {
       "header": "Rebane's <1>Coloured</1> Text Generator",

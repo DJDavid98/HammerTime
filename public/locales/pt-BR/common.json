@@ -36,7 +36,8 @@
     },
     "bot": {
       "header": "HammerTime Bot",
-      "p": "Gere timestamps com o comando de barra <1>/timestamp</1>"
+      "p": "Gere timestamps com o comando de barra <1>/timestamp</1>",
+      "pWithoutCommand": "Gere timestamps dentro do Discord usando slash commands"
     },
     "textColor": {
       "header": "Gerador de Texto <1>Colorido</1> do Rebane",

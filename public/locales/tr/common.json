@@ -36,7 +36,8 @@
     },
     "bot": {
       "header": "HammerTime Botu",
-      "p": "<1>/timestamp</1> eğik çizgi komutuyla zaman damgaları oluşturun"
+      "p": "<1>/timestamp</1> eğik çizgi komutuyla zaman damgaları oluşturun",
+      "pWithoutCommand": "Slash komutlarını kullanarak Discord üzerinden zaman damgaları oluşturun"
     },
     "textColor": {
       "header": "Rebane'in <1>Renkli</1> Metin Oluşturucusu",

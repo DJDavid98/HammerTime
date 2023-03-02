@@ -36,7 +36,8 @@
     },
     "bot": {
       "header": "HammerTime 机器人",
-      "p": "通过 <1>/timestamp</1> 斜杠指令生成时间戳"
+      "p": "通过 <1>/timestamp</1> 斜杠指令生成时间戳",
+      "pWithoutCommand": "使用斜杠指令在 Discord 内生成时间戳"
     },
     "textColor": {
       "header": "Rebane 的<1>彩色</1>文本生成器",

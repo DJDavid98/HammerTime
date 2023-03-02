@@ -36,7 +36,8 @@
     },
     "bot": {
       "header": "Bot HammerTime",
-      "p": "Generuj znacznik czasu przy użyciu komendy <1>/timestamp</1>"
+      "p": "Generuj znacznik czasu przy użyciu komendy <1>/timestamp</1>",
+      "pWithoutCommand": "Generuj znaczniki czasu z poziomu Discorda za pomocą poleceń typu slash"
     },
     "textColor": {
       "header": "Generator <1>Kolorowego</1> tekstu Rebane'a",

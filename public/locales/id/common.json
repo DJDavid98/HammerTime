@@ -36,7 +36,8 @@
     },
     "bot": {
       "header": "HammerTime Bot",
-      "p": "Buat stempel waktu dengan perintah slash <1>/timestamp</1>"
+      "p": "Buat stempel waktu dengan perintah slash <1>/timestamp</1>",
+      "pWithoutCommand": "Hasilkan cap waktu dari dalam Discord menggunakan perintah garis miring"
     },
     "textColor": {
       "header": "Generator Teks <1>Berwarna</1> Rebane",
