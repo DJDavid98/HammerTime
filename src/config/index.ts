@@ -28,6 +28,7 @@ export type LanguageConfig = {
   percent?: number;
   calendarLabelFormat?: string;
   calendarYearLabelFormat?: string;
+  weekendDays?: number[];
 };
 
 type LanguagesConfig = Record<AvailableLanguage, LanguageConfig>;

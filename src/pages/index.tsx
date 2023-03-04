@@ -15,7 +15,7 @@ import { GetStaticProps, NextPage } from 'next';
 import { SSRConfig, useTranslation } from 'next-i18next';
 import { useRouter } from 'next/router';
 import React, { FC, PropsWithChildren, useCallback, useEffect, useMemo, useState } from 'react';
-import { AvailableLanguage } from 'src/config';
+import { AvailableLanguage, LANGUAGES } from 'src/config';
 import { useLocale } from 'src/util/common';
 import { typedServerSideTranslations } from 'src/util/i18n-server';
 import {
@@ -33,11 +33,6 @@ interface IndexPageProps {
 const TS_QUERY_PARAM = 't';
 const howToCookieName = 'how-to-dismiss';
 const howToCookieValue = 'how-to-dismiss';
-
-const weekendDaysMap: Partial<Record<AvailableLanguage, DayOfWeek[]>> = {
-  sv: [0],
-  he: [5, 6],
-};
 
 export const IndexPage: NextPage<IndexPageProps> = ({ tzNames }) => {
   const {
@@ -186,7 +181,7 @@ export const IndexPage: NextPage<IndexPageProps> = ({ tzNames }) => {
     () => ({
       locale,
       firstDayOfWeek: moment.localeData(locale).firstDayOfWeek() as DayOfWeek | undefined,
-      weekendDays: weekendDaysMap[locale as AvailableLanguage],
+      weekendDays: LANGUAGES[locale as AvailableLanguage]?.weekendDays as undefined | DayOfWeek[],
     }),
     [locale],
   );

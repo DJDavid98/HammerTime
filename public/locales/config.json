@@ -74,7 +74,8 @@
       "name": "Hebrew",
       "nativeName": "עִברִית",
       "countryCode": "IL",
-      "rtl": true
+      "rtl": true,
+      "weekendDays": [5, 6]
     },
     "hu": {
       "name": "Hungarian",
@@ -164,7 +165,7 @@
       "nativeName": "Svenska",
       "countryCode": "SE",
       "crowdinLocale": "sv-SE",
-      "percent": 58
+      "weekendDays": [0]
     },
     "th": {
       "name": "Thai",
