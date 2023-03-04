@@ -78,6 +78,7 @@ English and Hungarian translations have been included, so no translators will be
   - Рейт (helppriklreyta)
 - 🇸🇦 Arabic: Raphael Santiago (raphael.santiago.53)
 - 🇸🇪 Swedish:
+  - joll05
   - Liggliluff
   - tunket
 - 🇹🇭 Thai: Rukchad Wongprayoon (unpredictable)
