@@ -80,7 +80,8 @@
     "hu": {
       "name": "Hungarian",
       "nativeName": "Magyar",
-      "countryCode": "HU"
+      "countryCode": "HU",
+      "weekendDays": [6, 0]
     },
     "id": {
       "name": "Indonesian",

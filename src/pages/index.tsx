@@ -181,7 +181,7 @@ export const IndexPage: NextPage<IndexPageProps> = ({ tzNames }) => {
     () => ({
       locale,
       firstDayOfWeek: moment.localeData(locale).firstDayOfWeek() as DayOfWeek | undefined,
-      weekendDays: LANGUAGES[locale as AvailableLanguage]?.weekendDays as undefined | DayOfWeek[],
+      weekendDays: (LANGUAGES[locale as AvailableLanguage]?.weekendDays ?? []) as DayOfWeek[],
     }),
     [locale],
   );
