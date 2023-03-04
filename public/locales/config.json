@@ -132,6 +132,11 @@
       "nativeName": "Polski",
       "countryCode": "PL"
     },
+    "pt": {
+      "name": "Portuguese",
+      "nativeName": "Português",
+      "countryCode": "PT"
+    },
     "pt-BR": {
       "name": "Portuguese, Brazilian",
       "nativeName": "Português do Brasil",

@@ -67,6 +67,10 @@ English and Hungarian translations have been included, so no translators will be
 - 🇵🇱 Polish:
   - Dawid (MinerPL)
   - stha (sthakrk)
+- 🇵🇹 Portuguese:
+  - Tiago (DemiCool)
+  - ً (buckshot-)
+  - Casper (JajarGG)
 - 🇷🇴 Romanian: mihai (mihaiofficialRO)
 - 🇷🇸 Serbian: net-tech-
 - 🇷🇺 Russian:
