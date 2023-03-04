@@ -59,7 +59,9 @@ English and Hungarian translations have been included, so no translators will be
 - 🇯🇵 Japanese:
   - TheOnlyRAK
   - sjkim04
-- 🇰🇷 Korean: sjkim04
+- 🇰🇷 Korean:
+  - Bin (cheesepickle12345678)
+  - sjkim04
 - 🇱🇻 Latvian: Casper (JajarGG)
 - 🇱🇹 Lithuanian: tayloryte
 - 🇲🇾 Malay: Nurul Azeera Hidayah @ Muhammad Nur Hidayat Yasuyoshi (MNH48.moe) (mnh48)
@@ -68,9 +70,9 @@ English and Hungarian translations have been included, so no translators will be
   - Dawid (MinerPL)
   - stha (sthakrk)
 - 🇵🇹 Portuguese:
+  - Casper (JajarGG)
   - Tiago (DemiCool)
   - ً (buckshot-)
-  - Casper (JajarGG)
 - 🇷🇴 Romanian: mihai (mihaiofficialRO)
 - 🇷🇸 Serbian: net-tech-
 - 🇷🇺 Russian:
