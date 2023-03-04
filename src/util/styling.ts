@@ -35,11 +35,11 @@ export const themeOverride: MantineProviderProps['theme'] = {
   fontFamilyMonospace: `'Source Code Pro', 'Consolas', monospace`,
   primaryColor: 'indigo',
   components: {
+    /* eslint-disable @typescript-eslint/naming-convention */
     Button: {
       styles: (theme) => ({
         root: {
           'padding': '0 .9em',
-          // eslint-disable-next-line @typescript-eslint/naming-convention
           '&:not(.__mantine-ref-loading):disabled': {
             color: theme.colors.indigo[2],
           },
@@ -51,6 +51,10 @@ export const themeOverride: MantineProviderProps['theme'] = {
         color: 'dark',
       },
     },
+    WeekdaysRow: {
+      styles: () => ({ weekday: { 'text-transform': 'none' } }),
+    },
+    /* eslint-enable @typescript-eslint/naming-convention */
   },
 };
 

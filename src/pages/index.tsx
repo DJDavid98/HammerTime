@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Alert, Button, MantineSize, Paper, Tooltip } from '@mantine/core';
 import { DatesProvider, DayOfWeek } from '@mantine/dates';
+import { DatesProviderSettings } from '@mantine/dates/lib/components/DatesProvider/DatesProvider';
 import { AppContainer } from 'components/app/AppContainer';
 import { Layout } from 'components/app/Layout';
 import { LockButton } from 'components/LockButton';
@@ -14,6 +15,7 @@ import { GetStaticProps, NextPage } from 'next';
 import { SSRConfig, useTranslation } from 'next-i18next';
 import { useRouter } from 'next/router';
 import React, { FC, PropsWithChildren, useCallback, useEffect, useMemo, useState } from 'react';
+import { AvailableLanguage } from 'src/config';
 import { useLocale } from 'src/util/common';
 import { typedServerSideTranslations } from 'src/util/i18n-server';
 import {
@@ -31,6 +33,11 @@ interface IndexPageProps {
 const TS_QUERY_PARAM = 't';
 const howToCookieName = 'how-to-dismiss';
 const howToCookieValue = 'how-to-dismiss';
+
+const weekendDaysMap: Partial<Record<AvailableLanguage, DayOfWeek[]>> = {
+  sv: [0],
+  he: [5, 6],
+};
 
 export const IndexPage: NextPage<IndexPageProps> = ({ tzNames }) => {
   const {
@@ -175,10 +182,11 @@ export const IndexPage: NextPage<IndexPageProps> = ({ tzNames }) => {
     [fixedTimestamp, lockButtonTooltipText, setTimeButtonTooltipText, setTimeNow, timestampInSecondsString],
   );
 
-  const dateProviderSettings = useMemo(
+  const dateProviderSettings: DatesProviderSettings = useMemo(
     () => ({
       locale,
-      firstDayOfWeek: moment.localeData('locale').firstDayOfWeek() as DayOfWeek | undefined,
+      firstDayOfWeek: moment.localeData(locale).firstDayOfWeek() as DayOfWeek | undefined,
+      weekendDays: weekendDaysMap[locale as AvailableLanguage],
     }),
     [locale],
   );
