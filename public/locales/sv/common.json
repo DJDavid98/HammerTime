@@ -2,8 +2,21 @@
   "seoDescription": "Generera tidsstämpelindikatorer för Discord-meddelanden",
   "howTo": "Välj ett datum, kopiera det önskade formatet från kolumnen {{syntaxColName}}, klistra sedan in det någonstans i ett meddelande. Resultatet är dynamiskt och visar olika tid och datum för varje person baserat på deras tidszon.",
   "input": {
-    "date": "Datum och tid",
-    "timezone": "Tidszon"
+    "timezone": "Tidszon",
+    "datetime": "Datum och tid",
+    "date": "Datum",
+    "time": "Tid",
+    "settings": {
+      "label": "Inmatningsinställningar",
+      "customInputs": {
+        "label": "Anpassad inmatning",
+        "explanation": "Ersätter standardväljaren med sådana som matchar det aktuella språket i stället för webbläsarens språk"
+      },
+      "separateInputs": {
+        "label": "Separata inmatningar",
+        "explanation": "Visa två olika inmatningar för datum och tid i stället för en kombinerad (vilket inte stöds i vissa webbläsare)"
+      }
+    }
   },
   "buttons": {
     "copy": "Kopiera till urklipp",
@@ -23,7 +36,8 @@
     },
     "bot": {
       "header": "HammerTime-bot",
-      "p": "Generera tidsstämplar med kommandot <1>/timestamp</1>"
+      "p": "Generera tidsstämplar med kommandot <1>/timestamp</1>",
+      "pWithoutCommand": "Generera tidsstämplar direkt i Discord med hjälp av snedstreckskommandon"
     },
     "textColor": {
       "header": "Rebanes <1>färgade</1> textgenerator",
@@ -38,5 +52,19 @@
   "builtWith": "Webbplatsen är byggd med <1>Font Awesome Free</1>",
   "openSource": "Öppen källkod",
   "viewSource": "Se källkoden",
-  "notAffiliated": "Detta projekt är inte kopplat till Discord."
+  "notAffiliated": "Detta projekt är inte kopplat till Discord.",
+  "jsDisabled": {
+    "title": "JavaScript krävs",
+    "body": "Din webbläsare stödjer inte JavaScript eller så är det inaktiverat för tillfället. Vissa webbläsare inaktiverar JavaScript som standard för säkerhetsskäl, men det är nödvändigt för den här applikationen. Aktivera det och uppdatera sidan, eller använd en annan webbläsare."
+  },
+  "a11y": {
+    "calendar": {
+      "nextMonthLabel": "nästa månad",
+      "previousMonthLabel": "föregående månad",
+      "nextYearLabel": "nästa år",
+      "previousYearLabel": "föregående år",
+      "nextDecadeLabel": "nästa årtionde",
+      "previousDecadeLabel": "föregående årtionde"
+    }
+  }
 }
