@@ -28,6 +28,7 @@ export type LanguageConfig = {
   percent?: number;
   calendarLabelFormat?: string;
   calendarYearLabelFormat?: string;
+  calendarWeekdayFormat?: string;
   weekendDays?: number[];
   firstDayOfWeek?: number;
   blueDay?: number;

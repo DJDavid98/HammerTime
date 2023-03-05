@@ -27,7 +27,10 @@ export const TimestampInputCustom: FC<TimestampInputProps> = ({
   handleDateTimeChange,
 }) => {
   const date = useMemo(() => (dateString ? new Date(`${dateString}T${timeString}`) : new Date(0)), [dateString, timeString]);
-  const { calendarLabelFormat, calendarYearLabelFormat, rtl } = useMemo(() => LANGUAGES[language as AvailableLanguage], [language]);
+  const { calendarLabelFormat, calendarYearLabelFormat, calendarWeekdayFormat, rtl } = useMemo(
+    () => LANGUAGES[language as AvailableLanguage],
+    [language],
+  );
   const [today, setToday] = useState(() => new Date());
   const timeInputRef = useRef<HTMLInputElement>(null);
 
@@ -101,6 +104,7 @@ export const TimestampInputCustom: FC<TimestampInputProps> = ({
         getDayProps={getDayProps}
         monthLabelFormat={calendarLabelFormat}
         yearLabelFormat={calendarYearLabelFormat}
+        weekdayFormat={calendarWeekdayFormat}
         valueFormat={valueFormats.date}
       />
       <TimeInput

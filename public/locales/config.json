@@ -4,7 +4,8 @@
       "name": "Arabic",
       "nativeName": "اللغة العربية",
       "countryCode": "AE",
-      "rtl": true
+      "rtl": true,
+      "calendarWeekdayFormat": "dddd"
     },
     "bg": {
       "name": "Bulgarian",
