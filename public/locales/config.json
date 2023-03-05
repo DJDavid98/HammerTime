@@ -92,7 +92,8 @@
     "it": {
       "name": "Italian",
       "nativeName": "Italiano",
-      "countryCode": "IT"
+      "countryCode": "IT",
+      "weekendDays": [6, 0]
     },
     "ja": {
       "name": "Japanese",
