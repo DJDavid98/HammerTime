@@ -120,7 +120,10 @@
     "ms": {
       "name": "Malay",
       "nativeName": "Bahasa Melayu",
-      "countryCode": "MY"
+      "countryCode": "MY",
+      "firstDayOfWeek": 0,
+      "weekendDays": [0],
+      "blueDay": 6
     },
     "fa": {
       "name": "Persian",
@@ -131,7 +134,8 @@
     "pl": {
       "name": "Polish",
       "nativeName": "Polski",
-      "countryCode": "PL"
+      "countryCode": "PL",
+      "weekendDays": [0]
     },
     "pt": {
       "name": "Portuguese",
@@ -164,7 +168,8 @@
       "name": "Serbian (Latin)",
       "nativeName": "Srpski",
       "countryCode": "RS",
-      "crowdinLocale": "sr-CS"
+      "crowdinLocale": "sr-CS",
+      "weekendDays": [6, 0]
     },
     "sv": {
       "name": "Swedish",

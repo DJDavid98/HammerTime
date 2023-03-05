@@ -177,14 +177,14 @@ export const IndexPage: NextPage<IndexPageProps> = ({ tzNames }) => {
     [fixedTimestamp, lockButtonTooltipText, setTimeButtonTooltipText, setTimeNow, timestampInSecondsString],
   );
 
-  const dateProviderSettings: DatesProviderSettings = useMemo(
-    () => ({
+  const dateProviderSettings: DatesProviderSettings = useMemo(() => {
+    const languageConfig = LANGUAGES[locale as AvailableLanguage];
+    return {
       locale,
-      firstDayOfWeek: moment.localeData(locale).firstDayOfWeek() as DayOfWeek | undefined,
-      weekendDays: (LANGUAGES[locale as AvailableLanguage]?.weekendDays ?? []) as DayOfWeek[],
-    }),
-    [locale],
-  );
+      firstDayOfWeek: (languageConfig?.firstDayOfWeek ?? moment.localeData(locale).firstDayOfWeek()) as DayOfWeek,
+      weekendDays: (languageConfig?.weekendDays ?? []) as DayOfWeek[],
+    };
+  }, [locale]);
 
   return (
     <Layout>

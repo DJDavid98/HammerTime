@@ -29,6 +29,8 @@ export type LanguageConfig = {
   calendarLabelFormat?: string;
   calendarYearLabelFormat?: string;
   weekendDays?: number[];
+  firstDayOfWeek?: number;
+  blueDay?: number;
 };
 
 type LanguagesConfig = Record<AvailableLanguage, LanguageConfig>;

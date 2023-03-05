@@ -39,7 +39,7 @@ export const TimestampInputCustom: FC<TimestampInputProps> = ({
     return () => clearInterval(todayUpdateInterval);
   }, []);
 
-  const getDayProps = useMemo(() => getDayStyle(today), [today]);
+  const getDayProps = useMemo(() => getDayStyle(today, locale), [today, locale]);
 
   const datePickerA11y = useMemo(
     (): CalendarAriaLabels => ({

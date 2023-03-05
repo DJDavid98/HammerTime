@@ -1,5 +1,6 @@
 import { createEmotionCache, MantineProviderProps } from '@mantine/core';
 import { MonthSettings } from '@mantine/dates';
+import { AvailableLanguage, LANGUAGES } from 'src/config';
 import rtlPlugin from 'stylis-plugin-rtl';
 
 export const getEmotionCache = (dir: 'rtl' | 'ltr'): MantineProviderProps['emotionCache'] => {
@@ -59,8 +60,10 @@ export const themeOverride: MantineProviderProps['theme'] = {
 };
 
 export const getDayStyle =
-  (today: Date): MonthSettings['getDayProps'] =>
+  (today: Date, locale: string): MonthSettings['getDayProps'] =>
   (date) => {
+    const blueDay = LANGUAGES[locale as AvailableLanguage]?.blueDay;
+    const color = blueDay !== undefined && date.getDay() === blueDay ? '#8af' : undefined;
     const dateString = date.toDateString();
     const todayString = today.toDateString();
     if (dateString === todayString) {
@@ -68,9 +71,10 @@ export const getDayStyle =
         sx: (theme) => ({
           border: `2px solid ${theme.colors?.indigo?.[4] || ''}`,
           boxSizing: 'border-box',
+          color,
         }),
       };
     }
 
-    return {};
+    return { sx: () => ({ color }) };
   };
