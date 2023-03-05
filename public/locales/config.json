@@ -141,13 +141,15 @@
     "pt": {
       "name": "Portuguese",
       "nativeName": "Português",
-      "countryCode": "PT"
+      "countryCode": "PT",
+      "calendarWeekdayFormat": "ddd"
     },
     "pt-BR": {
       "name": "Portuguese, Brazilian",
       "nativeName": "Português do Brasil",
       "countryCode": "BR",
-      "momentLocale": "pt-br"
+      "momentLocale": "pt-br",
+      "calendarWeekdayFormat": "ddd"
     },
     "ro": {
       "name": "Romanian",
