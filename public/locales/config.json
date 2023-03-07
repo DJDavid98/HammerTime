@@ -43,7 +43,8 @@
     "nl": {
       "name": "Dutch",
       "nativeName": "Nederlands",
-      "countryCode": "NL"
+      "countryCode": "NL",
+      "weekendDays": [6, 0]
     },
     "en-GB": {
       "name": "English, United Kingdom",
