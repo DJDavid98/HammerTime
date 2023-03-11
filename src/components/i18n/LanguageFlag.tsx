@@ -1,7 +1,7 @@
 import { useMemo, VoidFunctionComponent } from 'react';
 import type { Props as FlagProps } from 'react-flagkit';
 import Flag from 'react-flagkit';
-import { LanguageConfig } from 'src/config';
+import { LanguageConfig } from 'src/model/language-config';
 
 export const LanguageFlag: VoidFunctionComponent<
   Omit<FlagProps, 'country'> & { language: Pick<LanguageConfig, 'countryCode' | 'customFlag'> }

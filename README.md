@@ -29,68 +29,70 @@ English and Hungarian translations have been included, so no translators will be
 
 ### Credits
 
-- 🇧🇬 Bulgarian: Rxshi
-- 🇧🇷 Brazilian Portuguese:
-  - leo0six
-  - ShadowG
-- 🇨🇳 Simplified Chinese:
-  - CPYW_7226
-  - user670839245
+- Arabic: [Raphael Santiago](https://crowdin.com/profile/raphael.santiago.53)
+- 🇧🇬 Bulgarian: [Rxshi](https://crowdin.com/profile/Rxshi)
+- Catalan: [sware](https://crowdin.com/profile/sware)
+- 🇨🇳 Chinese Simplified
+  - [CPYW_7226](https://crowdin.com/profile/CPYW_7226)
+  - [user670839245](https://crowdin.com/profile/user670839245)
+- 🇹🇼 Chinese Traditional
+  - [CPYW_7226](https://crowdin.com/profile/CPYW_7226)
+  - [Jackie](https://crowdin.com/profile/jackiecr2911)
 - 🇨🇿 Czech
-  - klauny
-  - イーテルニティ ☄️ (Ethxrnity)
-- 🇩🇪 German:
-  - Carlos Diener (carlos.diener)
-  - Fabian9799
-  - julix00
-- 🇪🇸 Spanish:
-  - Pablo Luna (shaulyareaj)
-  - DrakeZero
-- 🇫🇷 French:
-  - Cookie Kiro (Cookikui)
-  - Ouiouibaguette
-  - sivelswhy
-  - ValouFCH
-- 🇬🇷 Greek: BelleBernice
-- 🇮🇩 Indonesian: Jackie (jackiecr2911)
-- 🇮🇱 Hebrew: Amit Cohen
-- 🇮🇷 Perisan: Mohammad Safa Gray (DeadMarco)
-- 🇮🇹 Italian: Lory Pelli (pellilory126)
-- 🇯🇵 Japanese:
-  - TheOnlyRAK
-  - sjkim04
-- 🇰🇷 Korean:
-  - Bin (cheesepickle12345678)
-  - sjkim04
-- 🇱🇻 Latvian: Casper (JajarGG)
-- 🇱🇹 Lithuanian: tayloryte
-- 🇲🇾 Malay: Nurul Azeera Hidayah @ Muhammad Nur Hidayat Yasuyoshi (MNH48.moe) (mnh48)
-- 🇳🇱 Dutch: Jesse (Jessuh)
-- 🇵🇱 Polish:
-  - Dawid (MinerPL)
-  - stha (sthakrk)
-- 🇵🇹 Portuguese:
-  - Casper (JajarGG)
-  - Tiago (DemiCool)
-  - ً (buckshot-)
-- 🇷🇴 Romanian: mihai (mihaiofficialRO)
-- 🇷🇸 Serbian: net-tech-
-- 🇷🇺 Russian:
-  - GameHacker
-  - JudeDM
-  - Luna (NightyCloud)
-  - Nikita Sharikov (Aligatoor)
-  - Крутой Бо (arturfomenko8)
-  - Рейт (helppriklreyta)
-- 🇸🇦 Arabic: Raphael Santiago (raphael.santiago.53)
-- 🇸🇪 Swedish:
-  - joll05
-  - Liggliluff
-  - tunket
-- 🇹🇭 Thai: Rukchad Wongprayoon (unpredictable)
-- 🇹🇷 Turkish: [@tututuana](https://github.com/tututuana)
-- 🇹🇼 Traditional Chinese: Jackie (jackiecr2911)
-- 🇺🇦 Ukrainian:
-  - GameHacker
-  - enky
-- 🏴󠁥󠁳󠁣󠁴󠁿 Catalan: sware
+  - [klauny](https://crowdin.com/profile/klauny)
+  - [イーテルニティ ☄️](https://crowdin.com/profile/Ethxrnity)
+- 🇳🇱 Dutch: [Jesse](https://crowdin.com/profile/Jessuh)
+- 🇫🇷 French
+  - [Cookie Kiro](https://crowdin.com/profile/Cookikui)
+  - [Ouiouibaguette](https://crowdin.com/profile/Ouiouibaguette)
+  - [sivelswhy](https://crowdin.com/profile/sivelswhy)
+  - [ValouFCH](https://crowdin.com/profile/ValouFCH)
+- 🇩🇪 German
+  - [Carlos Diener](https://crowdin.com/profile/carlos.diener)
+  - [Fabian9799](https://crowdin.com/profile/Fabian9799)
+  - [julix00](https://crowdin.com/profile/julix00)
+- 🇬🇷 Greek: [BelleBernice](https://crowdin.com/profile/BelleBernice)
+- 🇮🇱 Hebrew: [Amit Cohen](https://crowdin.com/profile/ZeRealOne)
+- 🇮🇩 Indonesian: [Jackie](https://crowdin.com/profile/jackiecr2911)
+- 🇮🇹 Italian: [RVG|𝓵𝓸𝓻𝔂](https://top.gg/bot/1076200668810985634)
+- 🇯🇵 Japanese
+  - [sjkim04](https://crowdin.com/profile/sjkim04)
+  - [TheOnlyRAK](https://crowdin.com/profile/TheOnlyRAK)
+- 🇰🇷 Korean
+  - [Bin](https://crowdin.com/profile/cheesepickle12345678)
+  - [sjkim04](https://crowdin.com/profile/sjkim04)
+- 🇱🇻 Latvian: [Casper](https://crowdin.com/profile/JajarGG)
+- 🇱🇹 Lithuanian: [tayloryte](https://crowdin.com/profile/tayloryte)
+- 🇲🇾 Malay: [Nurul Azeera Hidayah @ Muhammad Nur Hidayat Yasuyoshi (MNH48.moe)](https://crowdin.com/profile/mnh48)
+- 🇮🇷 Persian: [Mohammad Safa Gray](https://crowdin.com/profile/DeadMarco)
+- 🇵🇱 Polish
+  - [Dawid](https://crowdin.com/profile/MinerPL)
+  - [stha](https://crowdin.com/profile/sthakrk)
+- 🇵🇹 Portuguese
+  - [buckshot-](https://crowdin.com/profile/buckshot-)
+  - [Casper](https://crowdin.com/profile/JajarGG)
+  - [Tiago](https://crowdin.com/profile/DemiCool)
+- 🇧🇷 Portuguese, Brazilian
+  - [leo0six](https://crowdin.com/profile/leo0six)
+  - [ShadowG](https://crowdin.com/profile/ShadowG)
+- 🇷🇴 Romanian: [mihai](https://crowdin.com/profile/mihaiofficialRO)
+- 🇷🇺 Russian
+  - [GameHacker](https://crowdin.com/profile/GameHacker)
+  - [JudeDM](https://crowdin.com/profile/JudeDM)
+  - [Luna](https://crowdin.com/profile/NightyCloud)
+  - [Nikita Sharikov](https://crowdin.com/profile/Aligatoor)
+  - [Крутой Бо](https://crowdin.com/profile/arturfomenko8)
+  - [Рейт](https://crowdin.com/profile/helppriklreyta)
+- 🇷🇸 Serbian (Latin): [net-tech-#7475](https://nettech.dev/)
+- 🇪🇸 Spanish
+  - [DrakeZero](https://crowdin.com/profile/DrakeZero)
+  - [Pablo Luna](https://crowdin.com/profile/shaulyareaj)
+- 🇸🇪 Swedish
+  - [joll05](https://crowdin.com/profile/joll05)
+  - [Liggliluff](https://github.com/Liggliluff)
+  - [tunket](https://crowdin.com/profile/tunket)
+- 🇹🇭 Thai: [Rukchad Wongprayoon](https://crowdin.com/profile/unpredictable)
+- 🇹🇷 Turkish: [tututuana](https://github.com/tututuana)
+- 🇺🇦 Ukrainian
+  - [enky](https://crowdin.com/profile/enky)
+  - [GameHacker](https://crowdin.com/profile/GameHacker)

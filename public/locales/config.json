@@ -4,199 +4,479 @@
       "name": "Arabic",
       "nativeName": "اللغة العربية",
       "countryCode": "AE",
+      "emoji": "",
       "rtl": true,
-      "calendarWeekdayFormat": "dddd"
+      "calendarWeekdayFormat": "dddd",
+      "credits": [
+        {
+          "crowdin": "raphael.santiago.53",
+          "displayName": "Raphael Santiago"
+        }
+      ]
     },
     "bg": {
       "name": "Bulgarian",
       "nativeName": "Български",
-      "countryCode": "BG"
+      "countryCode": "BG",
+      "emoji": "\uD83C\uDDE7\uD83C\uDDEC",
+      "credits": [
+        {
+          "crowdin": "Rxshi"
+        }
+      ]
     },
     "ca": {
       "name": "Catalan",
       "nativeName": "Català",
       "countryCode": "CA",
-      "customFlag": true
+      "customFlag": true,
+      "credits": [
+        {
+          "crowdin": "sware"
+        }
+      ]
     },
     "zh": {
       "name": "Chinese Simplified",
       "nativeName": "中文",
       "countryCode": "CN",
+      "emoji": "\uD83C\uDDE8\uD83C\uDDF3",
       "crowdinLocale": "zh-CN",
       "momentLocale": "zh-cn",
       "calendarLabelFormat": "YYYY年MMM",
-      "calendarYearLabelFormat": "YYYY年"
+      "calendarYearLabelFormat": "YYYY年",
+      "credits": [
+        {
+          "crowdin": "CPYW_7226"
+        },
+        {
+          "crowdin": "user670839245"
+        }
+      ]
     },
     "zh-TW": {
       "name": "Chinese Traditional",
       "nativeName": "繁體中文",
       "countryCode": "TW",
+      "emoji": "\uD83C\uDDF9\uD83C\uDDFC",
       "momentLocale": "zh-tw",
       "calendarLabelFormat": "YYYY年MMM",
-      "calendarYearLabelFormat": "YYYY年"
+      "calendarYearLabelFormat": "YYYY年",
+      "credits": [
+        {
+          "crowdin": "CPYW_7226"
+        },
+        {
+          "crowdin": "jackiecr2911",
+          "displayName": "Jackie"
+        }
+      ]
     },
     "cs": {
       "name": "Czech",
       "nativeName": "Čeština",
-      "countryCode": "CZ"
+      "countryCode": "CZ",
+      "emoji": "\uD83C\uDDE8\uD83C\uDDFF",
+      "credits": [
+        {
+          "crowdin": "klauny"
+        },
+        {
+          "crowdin": "Ethxrnity",
+          "displayName": "イーテルニティ ☄️"
+        }
+      ]
     },
     "nl": {
       "name": "Dutch",
       "nativeName": "Nederlands",
       "countryCode": "NL",
-      "weekendDays": [6, 0]
+      "emoji": "\uD83C\uDDF3\uD83C\uDDF1",
+      "weekendDays": [6, 0],
+      "credits": [
+        {
+          "crowdin": "Jessuh",
+          "displayName": "Jesse"
+        }
+      ]
     },
     "en-GB": {
       "name": "English, United Kingdom",
       "nativeName": "English, UK",
       "countryCode": "GB",
+      "emoji": "\uD83C\uDDEC\uD83C\uDDE7",
       "momentLocale": "en-gb"
     },
     "en": {
       "name": "English, United States",
       "nativeName": "English, US",
-      "countryCode": "US"
+      "countryCode": "US",
+      "emoji": "\uD83C\uDDFA\uD83C\uDDF8"
     },
     "fr": {
       "name": "French",
       "nativeName": "Français",
-      "countryCode": "FR"
+      "countryCode": "FR",
+      "emoji": "\uD83C\uDDEB\uD83C\uDDF7",
+      "credits": [
+        {
+          "crowdin": "Cookikui",
+          "displayName": "Cookie Kiro"
+        },
+        {
+          "crowdin": "Ouiouibaguette"
+        },
+        {
+          "crowdin": "sivelswhy"
+        },
+        {
+          "crowdin": "ValouFCH"
+        }
+      ]
     },
     "de": {
       "name": "German",
       "nativeName": "Deutsch",
-      "countryCode": "DE"
+      "countryCode": "DE",
+      "emoji": "\uD83C\uDDE9\uD83C\uDDEA",
+      "credits": [
+        {
+          "crowdin": "carlos.diener",
+          "displayName": "Carlos Diener"
+        },
+        {
+          "crowdin": "Fabian9799"
+        },
+        {
+          "crowdin": "julix00"
+        }
+      ]
     },
     "el": {
       "name": "Greek",
       "nativeName": "Ελληνικά",
-      "countryCode": "GR"
+      "countryCode": "GR",
+      "emoji": "\uD83C\uDDEC\uD83C\uDDF7",
+      "credits": [
+        {
+          "crowdin": "BelleBernice"
+        }
+      ]
     },
     "he": {
       "name": "Hebrew",
       "nativeName": "עִברִית",
       "countryCode": "IL",
+      "emoji": "\uD83C\uDDEE\uD83C\uDDF1",
       "rtl": true,
-      "weekendDays": [5, 6]
+      "weekendDays": [5, 6],
+      "credits": [
+        {
+          "crowdin": "ZeRealOne",
+          "displayName": "Amit Cohen"
+        }
+      ]
     },
     "hu": {
       "name": "Hungarian",
       "nativeName": "Magyar",
       "countryCode": "HU",
+      "emoji": "\uD83C\uDDED\uD83C\uDDFA",
       "weekendDays": [6, 0]
     },
     "id": {
       "name": "Indonesian",
       "nativeName": "Bahasa Indonesia",
-      "countryCode": "ID"
+      "countryCode": "ID",
+      "emoji": "\uD83C\uDDEE\uD83C\uDDE9",
+      "credits": [
+        {
+          "crowdin": "jackiecr2911",
+          "displayName": "Jackie"
+        }
+      ]
     },
     "it": {
       "name": "Italian",
       "nativeName": "Italiano",
       "countryCode": "IT",
-      "weekendDays": [6, 0]
+      "emoji": "\uD83C\uDDEE\uD83C\uDDF9",
+      "weekendDays": [6, 0],
+      "credits": [
+        {
+          "crowdin": "pellilory126",
+          "displayName": "RVG|\uD835\uDCF5\uD835\uDCF8\uD835\uDCFB\uD835\uDD02",
+          "url": "https://top.gg/bot/1076200668810985634"
+        }
+      ]
     },
     "ja": {
       "name": "Japanese",
       "nativeName": "日本語",
       "countryCode": "JP",
+      "emoji": "\uD83C\uDDEF\uD83C\uDDF5",
       "calendarLabelFormat": "YYYY年MMMM",
-      "calendarYearLabelFormat": "YYYY年"
+      "calendarYearLabelFormat": "YYYY年",
+      "credits": [
+        {
+          "crowdin": "TheOnlyRAK"
+        },
+        {
+          "crowdin": "sjkim04"
+        }
+      ]
     },
     "ko": {
       "name": "Korean",
       "nativeName": "한국어",
       "countryCode": "KR",
+      "emoji": "\uD83C\uDDF0\uD83C\uDDF7",
       "calendarLabelFormat": "YYYY년 MMMM",
-      "calendarYearLabelFormat": "YYYY년"
+      "calendarYearLabelFormat": "YYYY년",
+      "credits": [
+        {
+          "crowdin": "cheesepickle12345678",
+          "displayName": "Bin"
+        },
+        {
+          "crowdin": "sjkim04"
+        }
+      ]
     },
     "lt": {
       "name": "Lithuanian",
       "nativeName": "Lietuviškai",
-      "countryCode": "LT"
+      "countryCode": "LT",
+      "emoji": "\uD83C\uDDF1\uD83C\uDDF9",
+      "credits": [
+        {
+          "crowdin": "tayloryte"
+        }
+      ]
     },
     "lv": {
       "name": "Latvian",
       "nativeName": "Latviski",
-      "countryCode": "LV"
+      "countryCode": "LV",
+      "emoji": "\uD83C\uDDF1\uD83C\uDDFB",
+      "credits": [
+        {
+          "crowdin": "JajarGG",
+          "displayName": "Casper"
+        }
+      ]
     },
     "ms": {
       "name": "Malay",
       "nativeName": "Bahasa Melayu",
       "countryCode": "MY",
+      "emoji": "\uD83C\uDDF2\uD83C\uDDFE",
       "firstDayOfWeek": 0,
       "weekendDays": [0],
-      "blueDay": 6
+      "blueDay": 6,
+      "credits": [
+        {
+          "crowdin": "mnh48",
+          "displayName": "Nurul Azeera Hidayah @ Muhammad Nur Hidayat Yasuyoshi (MNH48.moe)"
+        }
+      ]
     },
     "fa": {
       "name": "Persian",
       "nativeName": "فارسی",
       "countryCode": "IR",
-      "rtl": true
+      "emoji": "\uD83C\uDDEE\uD83C\uDDF7",
+      "rtl": true,
+      "credits": [
+        {
+          "crowdin": "DeadMarco",
+          "displayName": "Mohammad Safa Gray"
+        }
+      ]
     },
     "pl": {
       "name": "Polish",
       "nativeName": "Polski",
       "countryCode": "PL",
-      "weekendDays": [0]
+      "emoji": "\uD83C\uDDF5\uD83C\uDDF1",
+      "weekendDays": [0],
+      "credits": [
+        {
+          "crowdin": "MinerPL",
+          "displayName": "Dawid"
+        },
+        {
+          "crowdin": "sthakrk",
+          "displayName": "stha"
+        }
+      ]
     },
     "pt": {
       "name": "Portuguese",
       "nativeName": "Português",
       "countryCode": "PT",
-      "calendarWeekdayFormat": "ddd"
+      "emoji": "\uD83C\uDDF5\uD83C\uDDF9",
+      "calendarWeekdayFormat": "ddd",
+      "credits": [
+        {
+          "crowdin": "JajarGG",
+          "displayName": "Casper"
+        },
+        {
+          "crowdin": "DemiCool",
+          "displayName": "Tiago"
+        },
+        {
+          "crowdin": "buckshot-"
+        }
+      ]
     },
     "pt-BR": {
       "name": "Portuguese, Brazilian",
       "nativeName": "Português do Brasil",
       "countryCode": "BR",
+      "emoji": "\uD83C\uDDE7\uD83C\uDDF7",
       "momentLocale": "pt-br",
-      "calendarWeekdayFormat": "ddd"
+      "calendarWeekdayFormat": "ddd",
+      "credits": [
+        {
+          "crowdin": "leo0six"
+        },
+        {
+          "crowdin": "ShadowG"
+        }
+      ]
     },
     "ro": {
       "name": "Romanian",
       "nativeName": "Română",
-      "countryCode": "RO"
+      "countryCode": "RO",
+      "emoji": "\uD83C\uDDF7\uD83C\uDDF4",
+      "credits": [
+        {
+          "crowdin": "mihaiofficialRO",
+          "displayName": "mihai"
+        }
+      ]
     },
     "ru": {
       "name": "Russian",
       "nativeName": "Русский",
-      "countryCode": "RU"
+      "countryCode": "RU",
+      "emoji": "\uD83C\uDDF7\uD83C\uDDFA",
+      "credits": [
+        {
+          "crowdin": "GameHacker"
+        },
+        {
+          "crowdin": "JudeDM"
+        },
+        {
+          "crowdin": "NightyCloud",
+          "displayName": "Luna"
+        },
+        {
+          "crowdin": "Aligatoor",
+          "displayName": "Nikita Sharikov"
+        },
+        {
+          "crowdin": "arturfomenko8",
+          "displayName": "Крутой Бо"
+        },
+        {
+          "crowdin": "helppriklreyta",
+          "displayName": "Рейт"
+        }
+      ]
     },
     "es": {
       "name": "Spanish",
       "nativeName": "Español",
       "countryCode": "ES",
-      "crowdinLocale": "es-ES"
+      "emoji": "\uD83C\uDDEA\uD83C\uDDF8",
+      "crowdinLocale": "es-ES",
+      "credits": [
+        {
+          "crowdin": "shaulyareaj",
+          "displayName": "Pablo Luna"
+        },
+        {
+          "crowdin": "DrakeZero"
+        }
+      ]
     },
     "sr": {
       "name": "Serbian (Latin)",
       "nativeName": "Srpski",
       "countryCode": "RS",
+      "emoji": "\uD83C\uDDF7\uD83C\uDDF8",
       "crowdinLocale": "sr-CS",
-      "weekendDays": [6, 0]
+      "weekendDays": [6, 0],
+      "credits": [
+        {
+          "crowdin": "net-tech-",
+          "displayName": "net-tech-#7475",
+          "url": "https://nettech.dev/"
+        }
+      ]
     },
     "sv": {
       "name": "Swedish",
       "nativeName": "Svenska",
       "countryCode": "SE",
+      "emoji": "\uD83C\uDDF8\uD83C\uDDEA",
       "crowdinLocale": "sv-SE",
-      "weekendDays": [0]
+      "weekendDays": [0],
+      "credits": [
+        {
+          "crowdin": "joll05"
+        },
+        {
+          "crowdin": "Liggliluff",
+          "url": "https://github.com/Liggliluff"
+        },
+        {
+          "crowdin": "tunket"
+        }
+      ]
     },
     "th": {
       "name": "Thai",
       "nativeName": "ไทย",
-      "countryCode": "TH"
+      "countryCode": "TH",
+      "emoji": "\uD83C\uDDF9\uD83C\uDDED",
+      "credits": [
+        {
+          "crowdin": "unpredictable",
+          "displayName": "Rukchad Wongprayoon"
+        }
+      ]
     },
     "tr": {
       "name": "Turkish",
       "nativeName": "Türkçe",
-      "countryCode": "TR"
+      "countryCode": "TR",
+      "emoji": "\uD83C\uDDF9\uD83C\uDDF7",
+      "credits": [
+        {
+          "crowdin": "tututuana",
+          "url": "https://github.com/tututuana"
+        }
+      ]
     },
     "uk": {
       "name": "Ukrainian",
       "nativeName": "Українська",
-      "countryCode": "UA"
+      "countryCode": "UA",
+      "emoji": "\uD83C\uDDFA\uD83C\uDDE6",
+      "credits": [
+        {
+          "crowdin": "GameHacker"
+        },
+        {
+          "crowdin": "enky"
+        }
+      ]
     }
   }
 }

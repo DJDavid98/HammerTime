@@ -2,7 +2,9 @@
   "name": "hammertime",
   "version": "1.0.0",
   "scripts": {
-    "predev": "node ./utils/previews.js",
+    "predev:previews": "node ./utils/previews.js",
+    "predev:translation-credits": "node ./utils/translation-credits.js",
+    "predev": "concurrently -p name npm:predev:*",
     "dev": "next",
     "build": "next build",
     "start": "next start",
@@ -55,6 +57,7 @@
     "@typescript-eslint/eslint-plugin": "^5.54.0",
     "@typescript-eslint/parser": "^5.54.0",
     "canvas": "^2.10.2",
+    "concurrently": "^7.6.0",
     "eslint": "^7.13.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-next": "^12.2.5",

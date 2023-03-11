@@ -1,4 +1,5 @@
 import type { AppI18nNamespaces } from 'react-i18next';
+import { LanguageConfig } from 'src/model/language-config';
 import localeConfig from '../../public/locales/config.json';
 
 export const SITE_TITLE = 'HammerTime';
@@ -10,29 +11,6 @@ export const FONTAWESOME_FREE_LICENSE_URL = 'https://fontawesome.com/license/fre
 export const IS_CLIENT_SIDE = typeof window !== 'undefined';
 
 export type AvailableLanguage = keyof typeof localeConfig.languages;
-
-export type LanguageConfig = {
-  /**
-   * Language name in English
-   */
-  name: string;
-  /**
-   * Language name in the language itself
-   */
-  nativeName: string;
-  countryCode: string;
-  customFlag?: boolean;
-  rtl?: boolean;
-  momentLocale?: string;
-  crowdinLocale?: string;
-  percent?: number;
-  calendarLabelFormat?: string;
-  calendarYearLabelFormat?: string;
-  calendarWeekdayFormat?: string;
-  weekendDays?: number[];
-  firstDayOfWeek?: number;
-  blueDay?: number;
-};
 
 type LanguagesConfig = Record<AvailableLanguage, LanguageConfig>;
 
