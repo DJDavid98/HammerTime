@@ -302,8 +302,7 @@
       "weekendDays": [0],
       "credits": [
         {
-          "crowdin": "MinerPL",
-          "displayName": "Dawid"
+          "crowdin": "MinerPL"
         },
         {
           "crowdin": "sthakrk",
