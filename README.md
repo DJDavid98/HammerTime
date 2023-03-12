@@ -56,11 +56,11 @@ English and Hungarian translations have been included, so no translators will be
 - 🇮🇩 Indonesian: [Jackie](https://crowdin.com/profile/jackiecr2911)
 - 🇮🇹 Italian: [RVG|𝓵𝓸𝓻𝔂](https://top.gg/bot/1076200668810985634)
 - 🇯🇵 Japanese
-  - [sjkim04](https://crowdin.com/profile/sjkim04)
   - [TheOnlyRAK](https://crowdin.com/profile/TheOnlyRAK)
+  - [のむチュウ (sjk)](https://github.com/sjkim04)
 - 🇰🇷 Korean
   - [Bin](https://crowdin.com/profile/cheesepickle12345678)
-  - [sjkim04](https://crowdin.com/profile/sjkim04)
+  - [김카츄 (sjk)](https://github.com/sjkim04)
 - 🇱🇻 Latvian: [Casper](https://crowdin.com/profile/JajarGG)
 - 🇱🇹 Lithuanian: [tayloryte](https://crowdin.com/profile/tayloryte)
 - 🇲🇾 Malay: [Nurul Azeera Hidayah @ Muhammad Nur Hidayat Yasuyoshi (MNH48.moe)](https://crowdin.com/profile/mnh48)

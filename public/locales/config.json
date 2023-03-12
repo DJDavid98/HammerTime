@@ -222,7 +222,9 @@
           "crowdin": "TheOnlyRAK"
         },
         {
-          "crowdin": "sjkim04"
+          "crowdin": "sjkim04",
+          "displayName": "のむチュウ (sjk)",
+          "url": "https://github.com/sjkim04"
         }
       ]
     },
@@ -239,7 +241,9 @@
           "displayName": "Bin"
         },
         {
-          "crowdin": "sjkim04"
+          "crowdin": "sjkim04",
+          "displayName": "김카츄 (sjk)",
+          "url": "https://github.com/sjkim04"
         }
       ]
     },
