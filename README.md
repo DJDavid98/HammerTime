@@ -34,7 +34,7 @@ English and Hungarian translations have been included, so no translators will be
 - Catalan: [sware](https://crowdin.com/profile/sware)
 - 🇨🇳 Chinese Simplified
   - [CPYW_7226](https://crowdin.com/profile/CPYW_7226)
-  - [user670839245](https://crowdin.com/profile/user670839245)
+  - [User670](https://crowdin.com/profile/User670)
 - 🇹🇼 Chinese Traditional
   - [CPYW_7226](https://crowdin.com/profile/CPYW_7226)
   - [Jackie](https://crowdin.com/profile/jackiecr2911)
