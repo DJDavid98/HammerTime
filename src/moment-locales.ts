@@ -11,6 +11,7 @@ import 'moment/locale/es';
 import 'moment/locale/fa';
 import 'moment/locale/fr';
 import 'moment/locale/he';
+import 'moment/locale/hr';
 import 'moment/locale/hu';
 import 'moment/locale/id';
 import 'moment/locale/it';
