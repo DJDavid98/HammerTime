@@ -29,7 +29,7 @@ English and Hungarian translations have been included, so no translators will be
 
 ### Credits
 
-- Arabic: [Raphael Santiago](https://crowdin.com/profile/raphael.santiago.53)
+- 🇸🇦 Arabic: [Raphael Santiago](https://crowdin.com/profile/raphael.santiago.53)
 - 🇧🇬 Bulgarian: [Rxshi](https://crowdin.com/profile/Rxshi)
 - Catalan: [sware](https://crowdin.com/profile/sware)
 - 🇨🇳 Chinese Simplified
