@@ -1,0 +1,70 @@
+{
+  "seoDescription": "Generirajte indikatore vremenske oznake za Discord chat poruke",
+  "howTo": "Odaberite datum, kopirajte željenu vremensku oznaku iz stupca {{syntaxColName}}, zatim je zalijepite bilo gdje u chat poruci. Rezultat će biti dinamična vremenska oznaka koja se prikazuje različito za svakoga na temelju njegove vlastite vremenske zone.",
+  "input": {
+    "timezone": "Vremenska zona",
+    "datetime": "Datum i vrijeme",
+    "date": "Datum",
+    "time": "Vrijeme",
+    "settings": {
+      "label": "Postavke unosa",
+      "customInputs": {
+        "label": "Prilagođeni unosi",
+        "explanation": "Zamjenjuje zadane unose onima koji odgovaraju trenutnom jeziku umjesto jezika vašeg preglednika"
+      },
+      "separateInputs": {
+        "label": "Odvojeni ulazi",
+        "explanation": "Prikaži dva različita unosa za datum i vrijeme umjesto kombiniranog (što nije podržano u nekim preglednicima)"
+      }
+    }
+  },
+  "buttons": {
+    "copy": "Kopirajte u međuspremnik",
+    "setCurrentTime": "Postavite na trenutno vrijeme",
+    "lock": "Zaključaj vremensku oznaku putem URL-a",
+    "unlock": "Otključaj vremensku oznaku"
+  },
+  "table": {
+    "syntax": "Sintaksa chata",
+    "example": "Primjer rezultata"
+  },
+  "usefulLinks": {
+    "lead": "Ovo vam također može biti korisno:",
+    "server": {
+      "header": "Službeni HammerTime server",
+      "p": "Razgovarajte o web stranici, testirajte sintaksu i predložite značajke"
+    },
+    "bot": {
+      "header": "HammerTime Bot",
+      "p": "Generirajte vremenske oznake pomoću naredbe <1>/timestamp</1> kose crte",
+      "pWithoutCommand": "Generirajte vremenske oznake unutar Discorda koristeći naredbe kose crte"
+    },
+    "textColor": {
+      "header": "Rebaneov <1>obojeni</1> generator teksta",
+      "p": "Jednostavna aplikacija koja stvara Discord poruke u boji koristeći ANSI kodove boja"
+    }
+  },
+  "changeLanguage": "Promjeni jezik",
+  "notFound": {
+    "heading": "Nije pronađeno",
+    "content": "Ovdje se nema što vidjeti."
+  },
+  "builtWith": "Web stranica izrađena pomoću <1>Font Awesome Free</1>",
+  "openSource": "Softver otvorenog koda",
+  "viewSource": "Pogledaj izvorni kod",
+  "notAffiliated": "Ovaj projekt nije povezan s Discordom.",
+  "jsDisabled": {
+    "title": "JavaScript je neophodan",
+    "body": "Vaš preglednik ili ne podržava JavaScript ili je trenutno onemogućen. Neki preglednici onemogućuju JavaScript prema zadanim postavkama iz sigurnosnih razloga, ali to je neophodno za ovu aplikaciju. Omogućite ga i osvježite stranicu ili upotrijebite drugi preglednik."
+  },
+  "a11y": {
+    "calendar": {
+      "nextMonthLabel": "sljedeći mjesec",
+      "previousMonthLabel": "prethodni mjesec",
+      "nextYearLabel": "sljedeća godina",
+      "previousYearLabel": "prošla godina",
+      "nextDecadeLabel": "sljedeće desetljeće",
+      "previousDecadeLabel": "prethodno desetljeće"
+    }
+  }
+}
