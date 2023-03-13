@@ -10,6 +10,7 @@ import 'dayjs/locale/es';
 import 'dayjs/locale/fa';
 import 'dayjs/locale/fr';
 import 'dayjs/locale/he';
+import 'dayjs/locale/hr';
 import 'dayjs/locale/hu';
 import 'dayjs/locale/id';
 import 'dayjs/locale/it';

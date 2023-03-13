@@ -480,6 +480,20 @@
           "crowdin": "enky"
         }
       ]
+    },
+    "hr": {
+      "name": "Croatian",
+      "nativeName": "Hrvatski",
+      "countryCode": "HR",
+      "emoji": "\uD83C\uDDED\uD83C\uDDF7",
+      "weekendDays": [0],
+      "credits": [
+        {
+          "crowdin": "stjepanmih13x",
+          "displayName": "Volvone",
+          "url": "https://github.com/volvone"
+        }
+      ]
     }
   }
 }
