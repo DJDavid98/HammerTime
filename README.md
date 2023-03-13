@@ -38,7 +38,7 @@ English and Hungarian translations have been included, so no translators will be
 - 🇹🇼 Chinese Traditional
   - [CPYW_7226](https://crowdin.com/profile/CPYW_7226)
   - [Jackie](https://crowdin.com/profile/jackiecr2911)
-- 🇭🇷 Croatian: [Stipex13 x](https://crowdin.com/profile/stjepanmih13x)
+- 🇭🇷 Croatian: [Volvone](https://github.com/volvone)
 - 🇨🇿 Czech
   - [klauny](https://crowdin.com/profile/klauny)
   - [イーテルニティ ☄️](https://crowdin.com/profile/Ethxrnity)
