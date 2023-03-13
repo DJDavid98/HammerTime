@@ -46,7 +46,7 @@ const mapCreditToString = (credit) => `[${credit.displayName}](${credit.url})`;
       }
     }
   });
-  const finalReadme = readmeTextBeforeMarker + creditsText.join('\n');
+  const finalReadme = readmeTextBeforeMarker + creditsText.join('\n') + '\n';
 
   console.info('Writing updated README file…');
   await fs.writeFile(readmePath, finalReadme, 'utf8');
