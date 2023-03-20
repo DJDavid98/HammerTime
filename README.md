@@ -87,7 +87,7 @@ English and Hungarian translations have been included, so no translators will be
 - 🇷🇸 Serbian (Latin): [net-tech-#7475](https://nettech.dev/)
 - 🇪🇸 Spanish
   - [DrakeZero](https://crowdin.com/profile/DrakeZero)
-  - [Pablo Luna](https://crowdin.com/profile/shaulyareaj)
+  - [Yareaj](https://github.com/Yareaj/)
 - 🇸🇪 Swedish
   - [joll05](https://crowdin.com/profile/joll05)
   - [Liggliluff](https://github.com/Liggliluff)
