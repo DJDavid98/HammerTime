@@ -36,7 +36,6 @@
     },
     "bot": {
       "header": "HammerTime 봇",
-      "p": "<1>/timestamp</1> 슬래시 커맨드를 사용해서 타임스탬프를 생성할 수 있습니다.",
       "pWithoutCommand": "슬래시 명령어를 사용하여 Discord 내에서 타임스탬프를 생성하세요."
     },
     "textColor": {

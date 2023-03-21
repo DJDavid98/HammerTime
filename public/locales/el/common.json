@@ -36,7 +36,6 @@
     },
     "bot": {
       "header": "HammerTime Bot",
-      "p": "Δημιουργήστε χρονοσημάνσεις με την κάθετο εντολή <1>/timestamp</1>",
       "pWithoutCommand": "Δημιουργία χρονοσημάνσεων μέσα από το Discord χρησιμοποιώντας εντολές slash"
     },
     "textColor": {

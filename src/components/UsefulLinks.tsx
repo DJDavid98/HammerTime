@@ -29,7 +29,7 @@ const UsefulLinksComponent: FC<{ t: TFunction; leadText: string }> = ({ t, leadT
       image: bot,
       name: t('common:usefulLinks.bot.header'),
       desc: (
-        <Trans t={t} i18nKey="common:usefulLinks.bot.p">
+        <Trans t={t} i18nKey="common:usefulLinks.bot.pWithoutCommand">
           0<code dir="ltr">1</code>
         </Trans>
       ),

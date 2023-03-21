@@ -36,7 +36,6 @@
     },
     "bot": {
       "header": "Bot HammerTime",
-      "p": "Gerar timestamps com o comando slash <1>/timestamp</1>",
       "pWithoutCommand": "Gerar timestamps a partir de dentro do Discord usando comandos slash"
     },
     "textColor": {

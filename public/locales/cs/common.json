@@ -36,7 +36,6 @@
     },
     "bot": {
       "header": "HammerTime Bot",
-      "p": "Generování časových razítek pomocí příkazu <1>/timestamp</1> lomítko",
       "pWithoutCommand": "Generování časových značek z aplikace Discord pomocí příkazů s lomítkem"
     },
     "textColor": {

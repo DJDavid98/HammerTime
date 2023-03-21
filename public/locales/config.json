@@ -60,6 +60,7 @@
       "countryCode": "TW",
       "emoji": "\uD83C\uDDF9\uD83C\uDDFC",
       "momentLocale": "zh-tw",
+      "percent": 96,
       "calendarLabelFormat": "YYYY年MMM",
       "calendarYearLabelFormat": "YYYY年",
       "credits": [
@@ -118,6 +119,7 @@
       "nativeName": "Français",
       "countryCode": "FR",
       "emoji": "\uD83C\uDDEB\uD83C\uDDF7",
+      "percent": 96,
       "credits": [
         {
           "crowdin": "Cookikui",
@@ -168,6 +170,7 @@
       "nativeName": "עִברִית",
       "countryCode": "IL",
       "emoji": "\uD83C\uDDEE\uD83C\uDDF1",
+      "percent": 96,
       "rtl": true,
       "weekendDays": [5, 6],
       "credits": [
@@ -215,6 +218,7 @@
       "nativeName": "日本語",
       "countryCode": "JP",
       "emoji": "\uD83C\uDDEF\uD83C\uDDF5",
+      "percent": 96,
       "calendarLabelFormat": "YYYY年MMMM",
       "calendarYearLabelFormat": "YYYY年",
       "credits": [
@@ -252,6 +256,7 @@
       "nativeName": "Lietuviškai",
       "countryCode": "LT",
       "emoji": "\uD83C\uDDF1\uD83C\uDDF9",
+      "percent": 96,
       "credits": [
         {
           "crowdin": "tayloryte"
@@ -367,6 +372,7 @@
       "nativeName": "Русский",
       "countryCode": "RU",
       "emoji": "\uD83C\uDDF7\uD83C\uDDFA",
+      "percent": 96,
       "credits": [
         {
           "crowdin": "GameHacker"
@@ -473,6 +479,7 @@
       "nativeName": "Українська",
       "countryCode": "UA",
       "emoji": "\uD83C\uDDFA\uD83C\uDDE6",
+      "percent": 96,
       "credits": [
         {
           "crowdin": "GameHacker"

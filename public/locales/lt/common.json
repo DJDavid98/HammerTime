@@ -35,8 +35,7 @@
       "p": "Aptark tinklalapį, patikrink sintaksę ir siūlyk funkcijas"
     },
     "bot": {
-      "header": "„HammerTime“ botas",
-      "p": "Generuok laiko žymas naudojant <1>/timestamp</1> komandą"
+      "header": "„HammerTime“ botas"
     },
     "textColor": {
       "header": "<1>Spalvoto</1> teksto generatorius, sukurtas Rebane",

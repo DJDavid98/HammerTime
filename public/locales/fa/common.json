@@ -36,7 +36,6 @@
     },
     "bot": {
       "header": "ربات HammerTime",
-      "p": "ساخت مهر زمانی با دستور <1>/timestamp</1>",
       "pWithoutCommand": "ساخت مهرزمانی در دیسکورد با استفاده از دستورات اسلش"
     },
     "textColor": {

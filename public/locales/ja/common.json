@@ -35,8 +35,7 @@
       "p": "サイトについての議論・タイムスタンプのテスト・機能のリクエストができます"
     },
     "bot": {
-      "header": "HammerTime bot",
-      "p": "<1>/timestamp</1>コマンドでのタイムスタンプの作成"
+      "header": "HammerTime bot"
     },
     "textColor": {
       "header": "Rebaneの<1>色付き</1>テキストジェネレーター",

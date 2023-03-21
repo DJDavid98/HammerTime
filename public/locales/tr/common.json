@@ -36,7 +36,6 @@
     },
     "bot": {
       "header": "HammerTime Botu",
-      "p": "<1>/timestamp</1> eğik çizgi komutuyla zaman damgaları oluşturun",
       "pWithoutCommand": "Slash komutlarını kullanarak Discord üzerinden zaman damgaları oluşturun"
     },
     "textColor": {

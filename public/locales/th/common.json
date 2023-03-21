@@ -36,7 +36,6 @@
     },
     "bot": {
       "header": "Discord บอท HammerTime",
-      "p": "สร้างตัวเวลาโดยใช้ คำสั่ง <1>/timestamp</1>",
       "pWithoutCommand": "สร้างการประทับเวลาภายใน Discord โดยใช้คำสั่งสแลช"
     },
     "textColor": {

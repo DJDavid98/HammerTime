@@ -35,8 +35,7 @@
       "p": "Discutez du site, testez la syntaxe et suggérez de nouvelles fonctionnalités"
     },
     "bot": {
-      "header": "HammerTime Bot",
-      "p": "Générez un code d'horodatage avec la commandes Slash <1>/timestamp</1>"
+      "header": "HammerTime Bot"
     },
     "textColor": {
       "header": "Le générateur de texte <1>coloré</1> de Rebane",

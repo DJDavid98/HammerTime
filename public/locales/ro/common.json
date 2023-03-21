@@ -36,7 +36,6 @@
     },
     "bot": {
       "header": "HammerTime Bot",
-      "p": "Generați marcaje temporale cu <1>/timestamp</1> comanda slash",
       "pWithoutCommand": "Generați timestamp-uri din cadrul Discord folosind comenzi slash"
     },
     "textColor": {

@@ -35,8 +35,7 @@
       "p": "討論站點、測試語法和建議功能"
     },
     "bot": {
-      "header": "HammerTime 機器人",
-      "p": "使用 <1>/timestamp</1> 斜杠命令生成時間戳"
+      "header": "HammerTime 機器人"
     },
     "textColor": {
       "header": "Rebane 的 <1>彩色</1> 文本生成器",

@@ -36,7 +36,6 @@
     },
     "bot": {
       "header": "HammerTime Bot",
-      "p": "Generálj időbélyegeket a <1>/timestamp</1> slash paranccsal",
       "pWithoutCommand": "Generálj időbélyegeket slash parancsok használatával"
     },
     "textColor": {

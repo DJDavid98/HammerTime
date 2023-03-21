@@ -36,7 +36,6 @@
     },
     "bot": {
       "header": "HammerTime Bot",
-      "p": "Generiere Zeitstempel mit dem <1>/timestamp</1> Befehl",
       "pWithoutCommand": "Generiere Zeitstempel innerhalb von Discord mit Slash-Befehlen"
     },
     "textColor": {

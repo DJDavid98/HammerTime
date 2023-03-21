@@ -36,7 +36,6 @@
     },
     "bot": {
       "header": "HammerTime-bot",
-      "p": "Generera tidsstämplar med kommandot <1>/timestamp</1>",
       "pWithoutCommand": "Generera tidsstämplar direkt i Discord med hjälp av snedstreckskommandon"
     },
     "textColor": {

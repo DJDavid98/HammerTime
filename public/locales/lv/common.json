@@ -36,7 +36,6 @@
     },
     "bot": {
       "header": "HammerTime Bots",
-      "p": "Ģenerēt laika zīmogus ar <1>/timestamp</1> slīpkomandu",
       "pWithoutCommand": "Ģenerēt laika zīmogus no Discord izmantojot slīpkomandas"
     },
     "textColor": {
