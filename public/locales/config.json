@@ -479,13 +479,16 @@
       "nativeName": "Українська",
       "countryCode": "UA",
       "emoji": "\uD83C\uDDFA\uD83C\uDDE6",
-      "percent": 96,
       "credits": [
         {
           "crowdin": "GameHacker"
         },
         {
           "crowdin": "enky"
+        },
+        {
+          "crowdin": "WhiteBear60",
+          "displayName": "Myhailo Yaremenko"
         }
       ]
     },
