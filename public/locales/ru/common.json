@@ -35,7 +35,8 @@
       "p": "Обсуждайте сайт, проверяйте синтаксис и предлагайте функции"
     },
     "bot": {
-      "header": "HammerTime Bot"
+      "header": "HammerTime Bot",
+      "pWithoutCommand": "Создавайте временные метки в Discord с помощью slash-команд"
     },
     "textColor": {
       "header": "Генератор <1>цветного</1> текста Rebane",
