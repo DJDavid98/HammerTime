@@ -372,7 +372,6 @@
       "nativeName": "Русский",
       "countryCode": "RU",
       "emoji": "\uD83C\uDDF7\uD83C\uDDFA",
-      "percent": 96,
       "credits": [
         {
           "crowdin": "GameHacker"
@@ -395,6 +394,10 @@
         {
           "crowdin": "helppriklreyta",
           "displayName": "Рейт"
+        },
+        {
+          "crowdin": "JudDayLum",
+          "displayName": "JudDayLum Official"
         }
       ]
     },

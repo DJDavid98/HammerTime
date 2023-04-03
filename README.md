@@ -79,6 +79,7 @@ English and Hungarian translations have been included, so no translators will be
 - 🇷🇴 Romanian: [mihai](https://crowdin.com/profile/mihaiofficialRO)
 - 🇷🇺 Russian
   - [GameHacker](https://crowdin.com/profile/GameHacker)
+  - [JudDayLum Official](https://crowdin.com/profile/JudDayLum)
   - [JudeDM](https://crowdin.com/profile/JudeDM)
   - [Luna](https://crowdin.com/profile/NightyCloud)
   - [Nikita Sharikov](https://crowdin.com/profile/Aligatoor)
