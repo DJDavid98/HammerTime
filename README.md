@@ -99,3 +99,4 @@ English and Hungarian translations have been included, so no translators will be
   - [enky](https://crowdin.com/profile/enky)
   - [GameHacker](https://crowdin.com/profile/GameHacker)
   - [Myhailo Yaremenko](https://crowdin.com/profile/WhiteBear60)
+- 🇵🇰 Urdu (Pakistan): [muharslan](https://crowdin.com/profile/muharslan)

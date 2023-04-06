@@ -508,6 +508,18 @@
           "url": "https://github.com/volvone"
         }
       ]
+    },
+    "ur": {
+      "name": "Urdu (Pakistan)",
+      "nativeName": "اردو",
+      "countryCode": "PK",
+      "emoji": "\uD83C\uDDF5\uD83C\uDDF0",
+      "rtl": true,
+      "credits": [
+        {
+          "crowdin": "muharslan"
+        }
+      ]
     }
   }
 }

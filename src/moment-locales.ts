@@ -31,6 +31,7 @@ import 'moment/locale/sv';
 import 'moment/locale/th';
 import 'moment/locale/tr';
 import 'moment/locale/uk';
+import 'moment/locale/ur';
 import 'moment/locale/zh-cn';
 import 'moment/locale/zh-tw';
 
