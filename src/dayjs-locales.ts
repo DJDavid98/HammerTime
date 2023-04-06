@@ -30,6 +30,7 @@ import 'dayjs/locale/sv';
 import 'dayjs/locale/th';
 import 'dayjs/locale/tr';
 import 'dayjs/locale/uk';
+import 'dayjs/locale/ur';
 import 'dayjs/locale/zh-cn';
 import 'dayjs/locale/zh-tw';
 import localizedFormat from 'dayjs/plugin/localizedFormat';
