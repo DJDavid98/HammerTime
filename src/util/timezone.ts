@@ -23,7 +23,7 @@ const compareGmtStrings = (a: string, b: string) =>
 export const getSortedNormalizedTimezoneNames = (): string[] =>
   moment.tz
     .names()
-    .filter((name) => !/^(?:Etc\/)?GMT[+-]0$/.test(name) && !name.includes('UTC'))
+    .filter((name) => !/^(?:Etc\/)?GMT[+-]?0$/.test(name) && !name.includes('UTC') && name !== 'GMT')
     .sort((a, b) => {
       const isAGmt = gmtZoneRegex.test(a);
       const isBGmt = gmtZoneRegex.test(b);
