@@ -6,8 +6,16 @@ export const isoDateFormat = 'YYYY-MM-DD';
 
 export const gmtZoneRegex = /^Etc\/(GMT([+-]\d+)?)$/;
 
-export const switchGmtZoneName = (value: string): string =>
-  value.replace(gmtZoneRegex, (_, extractedIdentifier: string) => extractedIdentifier.replace(/([+-])/, (m) => (m === '+' ? '-' : '+')));
+const formatGmtZoneLabel = (offset = '') => `GMT${offset} (UTC${offset})`;
+
+export const transformGmtZoneName = (value: string): string =>
+  value.replace(gmtZoneRegex, (_, extractedIdentifier: string) =>
+    // eslint-disable-next-line @typescript-eslint/naming-convention
+    extractedIdentifier.replace(/^GMT(?:([+-])(\d+))?$/, (__, sign: string, offset: string) => {
+      const newSign = sign ? (sign === '+' ? '-' : '+') : '';
+      return formatGmtZoneLabel(`${newSign}${offset ?? ''}`);
+    }),
+  );
 
 const compareGmtStrings = (a: string, b: string) =>
   parseInt(a.replace(gmtZoneRegex, '$2'), 10) - parseInt(b.replace(gmtZoneRegex, '$2'), 10);
@@ -15,7 +23,7 @@ const compareGmtStrings = (a: string, b: string) =>
 export const getSortedNormalizedTimezoneNames = (): string[] =>
   moment.tz
     .names()
-    .filter((name) => !/^(?:Etc\/)?GMT[+-]0$/.test(name))
+    .filter((name) => !/^(?:Etc\/)?GMT[+-]0$/.test(name) && !name.includes('UTC'))
     .sort((a, b) => {
       const isAGmt = gmtZoneRegex.test(a);
       const isBGmt = gmtZoneRegex.test(b);
@@ -26,7 +34,7 @@ export const getSortedNormalizedTimezoneNames = (): string[] =>
 
 export const getTimezoneLabel = (timezone: string): string => {
   if (!gmtZoneRegex.test(timezone)) return timezone;
-  return switchGmtZoneName(timezone);
+  return transformGmtZoneName(timezone);
 };
 
 export const getTimezoneValue = (timezone: string) => ({
