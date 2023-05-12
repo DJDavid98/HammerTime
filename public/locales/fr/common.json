@@ -35,7 +35,8 @@
       "p": "Discutez du site, testez la syntaxe et suggérez de nouvelles fonctionnalités"
     },
     "bot": {
-      "header": "HammerTime Bot"
+      "header": "HammerTime Bot",
+      "pWithoutCommand": "Générer des horodatages à partir de Discord à l'aide de commandes slash"
     },
     "textColor": {
       "header": "Le générateur de texte <1>coloré</1> de Rebane",
