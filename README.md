@@ -45,6 +45,7 @@ English and Hungarian translations have been included, so no translators will be
 - 🇳🇱 Dutch: [Jesse](https://crowdin.com/profile/Jessuh)
 - 🇫🇷 French
   - [Cookie Kiro](https://crowdin.com/profile/Cookikui)
+  - [James Roger](https://crowdin.com/profile/graffiti34)
   - [Ouiouibaguette](https://crowdin.com/profile/Ouiouibaguette)
   - [sivelswhy](https://crowdin.com/profile/sivelswhy)
   - [ValouFCH](https://crowdin.com/profile/ValouFCH)
@@ -57,6 +58,7 @@ English and Hungarian translations have been included, so no translators will be
 - 🇮🇩 Indonesian: [Jackie](https://crowdin.com/profile/jackiecr2911)
 - 🇮🇹 Italian: [RVG|𝓵𝓸𝓻𝔂](https://top.gg/bot/1076200668810985634)
 - 🇯🇵 Japanese
+  - [eai04191](https://crowdin.com/profile/eai04191)
   - [TheOnlyRAK](https://crowdin.com/profile/TheOnlyRAK)
   - [のむチュウ (sjk)](https://github.com/sjkim04)
 - 🇰🇷 Korean

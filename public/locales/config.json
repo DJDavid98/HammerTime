@@ -119,7 +119,6 @@
       "nativeName": "Français",
       "countryCode": "FR",
       "emoji": "\uD83C\uDDEB\uD83C\uDDF7",
-      "percent": 96,
       "credits": [
         {
           "crowdin": "Cookikui",
@@ -133,6 +132,10 @@
         },
         {
           "crowdin": "ValouFCH"
+        },
+        {
+          "crowdin": "graffiti34",
+          "displayName": "James Roger"
         }
       ]
     },
@@ -218,7 +221,6 @@
       "nativeName": "日本語",
       "countryCode": "JP",
       "emoji": "\uD83C\uDDEF\uD83C\uDDF5",
-      "percent": 96,
       "calendarLabelFormat": "YYYY年MMMM",
       "calendarYearLabelFormat": "YYYY年",
       "credits": [
@@ -229,6 +231,9 @@
           "crowdin": "sjkim04",
           "displayName": "のむチュウ (sjk)",
           "url": "https://github.com/sjkim04"
+        },
+        {
+          "crowdin": "eai04191"
         }
       ]
     },
