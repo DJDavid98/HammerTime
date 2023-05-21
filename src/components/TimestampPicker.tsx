@@ -148,6 +148,7 @@ export const TimestampPicker: FC<PropTypes> = ({
           locale={locale}
           dateString={dateString}
           timeString={timeString}
+          timezone={timezone}
           inputSize={inputSize}
           language={language}
           fixedTimestamp={fixedTimestamp}
