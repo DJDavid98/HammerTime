@@ -9,7 +9,7 @@ import moment from 'moment';
 import { ChangeEventHandler, FC, FunctionComponent, PropsWithChildren, useCallback, useEffect, useMemo, useState } from 'react';
 import { TFunction } from 'react-i18next';
 import { InputChangeHandler, TimestampInputProps } from 'src/model/timestamp-input-props';
-import { isoDateFormat, isoTimeFormat, momentToTimeInputValue } from 'src/util/timezone';
+import { isoFormattingDateFormat, isoTimeFormat, momentToTimeInputValue } from 'src/util/timezone';
 
 interface TimezoneOptionType {
   label: string;
@@ -77,7 +77,7 @@ export const TimestampPicker: FC<PropTypes> = ({
 
   const handleDateChange: InputChangeHandler = useCallback(
     (value) => {
-      onDateChange(value && (value instanceof Date ? momentToTimeInputValue(moment(value), isoDateFormat) : value.target.value));
+      onDateChange(value && (value instanceof Date ? momentToTimeInputValue(moment(value), isoFormattingDateFormat) : value.target.value));
     },
     [onDateChange],
   );
@@ -90,7 +90,10 @@ export const TimestampPicker: FC<PropTypes> = ({
   const handleDateTimeChange: InputChangeHandler = useCallback(
     (value) => {
       onDateTimeChange(
-        value && (value instanceof Date ? momentToTimeInputValue(moment(value), `${isoDateFormat} ${isoTimeFormat}`) : value?.target.value),
+        value &&
+          (value instanceof Date
+            ? momentToTimeInputValue(moment(value), `${isoFormattingDateFormat} ${isoTimeFormat}`)
+            : value?.target.value),
       );
     },
     [onDateTimeChange],

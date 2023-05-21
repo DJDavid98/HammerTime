@@ -2,7 +2,8 @@ import { Moment } from 'moment';
 import moment from 'moment-timezone';
 
 export const isoTimeFormat = 'HH:mm:ss';
-export const isoDateFormat = 'YYYY-MM-DD';
+export const isoFormattingDateFormat = 'YYYY-MM-DD';
+export const isoParsingDateFormat = 'Y-MM-DD';
 
 export const gmtZoneRegex = /^Etc\/(GMT([+-]\d+)?)$/;
 
@@ -42,6 +43,6 @@ export const getTimezoneValue = (timezone: string) => ({
   label: getTimezoneLabel(timezone),
 });
 
-export const momentToTimeInputValue = (time: Moment = moment(), format = `${isoDateFormat}\\T${isoTimeFormat}`): string =>
+export const momentToTimeInputValue = (time: Moment = moment(), format = `${isoFormattingDateFormat}\\T${isoTimeFormat}`): string =>
   // Force English locale so values are always in the expected format
   time.clone().locale('en').format(format);

@@ -21,7 +21,8 @@ import { typedServerSideTranslations } from 'src/util/i18n-server';
 import {
   getSortedNormalizedTimezoneNames,
   getTimezoneValue,
-  isoDateFormat,
+  isoFormattingDateFormat,
+  isoParsingDateFormat,
   isoTimeFormat,
   momentToTimeInputValue,
 } from 'src/util/timezone';
@@ -53,7 +54,12 @@ export const IndexPage: NextPage<IndexPageProps> = ({ tzNames }) => {
     if (typeof timestampQuery === 'string') {
       const timestampNumber = parseInt(timestampQuery, 10);
       if (!isNaN(timestampNumber) && isFinite(timestampNumber)) {
-        return timestampNumber;
+        try {
+          // Make sure timestamp value can be parsed by Date constructor before accepting it
+          return Math.round(new Date(timestampNumber * 1e3).getTime() / 1e3);
+        } catch (e) {
+          console.error(e);
+        }
       }
     }
     return null;
@@ -72,7 +78,7 @@ export const IndexPage: NextPage<IndexPageProps> = ({ tzNames }) => {
   const handleDateChange = useMemo(
     () =>
       throttle((value: null | string) => {
-        setDateString(value || momentToTimeInputValue(moment(), isoDateFormat));
+        setDateString(value || momentToTimeInputValue(moment(), isoFormattingDateFormat));
       }, 200),
     [],
   );
@@ -87,7 +93,7 @@ export const IndexPage: NextPage<IndexPageProps> = ({ tzNames }) => {
   const handleDateTimeChange = useMemo(
     () =>
       throttle((value: null | string) => {
-        setDateTimeString(value || momentToTimeInputValue(moment(), `${isoDateFormat} ${isoTimeFormat}`));
+        setDateTimeString(value || momentToTimeInputValue(moment(), `${isoFormattingDateFormat} ${isoTimeFormat}`));
       }, 50),
     [setDateTimeString],
   );
@@ -130,7 +136,7 @@ export const IndexPage: NextPage<IndexPageProps> = ({ tzNames }) => {
 
   useEffect(() => {
     if (!dateString || !timeString) return;
-    setTimestamp(moment.tz(`${dateString}T${timeString}`, safeTimezone));
+    setTimestamp(moment.tz(`${dateString}T${timeString}`, `${isoParsingDateFormat}T${isoTimeFormat}`, safeTimezone));
   }, [dateString, safeTimezone, timeString, timezone]);
 
   const syntaxColName = useMemo(() => {
