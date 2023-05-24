@@ -29,7 +29,7 @@
     "example": "Exemple du résultat"
   },
   "usefulLinks": {
-    "lead": "Cela pourrai vous être utile :",
+    "lead": "Cela pourrait vous être utile :",
     "server": {
       "header": "Le serveur officiel de HammerTime",
       "p": "Discutez du site, testez la syntaxe et suggérez de nouvelles fonctionnalités"
