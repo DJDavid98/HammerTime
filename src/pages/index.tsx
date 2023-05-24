@@ -212,7 +212,7 @@ export const getStaticProps: GetStaticProps<IndexPageProps & SSRConfig> = async 
     props: {
       initialTimestamp,
       tzNames: getSortedNormalizedTimezoneNames(),
-      ...(await typedServerSideTranslations(locale, ['common'])),
+      ...(await typedServerSideTranslations(locale)),
     },
   };
 };
