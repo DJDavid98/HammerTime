@@ -46,6 +46,7 @@ English and Hungarian translations have been included, so no translators will be
 - 🇫🇷 French
   - [Cookie Kiro](https://crowdin.com/profile/Cookikui)
   - [James Roger](https://crowdin.com/profile/graffiti34)
+  - [M4gicalCat](https://crowdin.com/profile/M4gicalCat)
   - [Ouiouibaguette](https://crowdin.com/profile/Ouiouibaguette)
   - [sivelswhy](https://crowdin.com/profile/sivelswhy)
   - [ValouFCH](https://crowdin.com/profile/ValouFCH)
