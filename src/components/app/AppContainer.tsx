@@ -20,7 +20,7 @@ export const AppContainer: FC<PropsWithChildren> = ({ children }) => (
     header={
       <Header fixed height={headerHeight} p="xs">
         <Center>
-          <Link href="/" passHref>
+          <Link href="/" passHref legacyBehavior>
             <Anchor size="xl" weight={700} color="dimmed" underline={false}>
               <CustomIcon src="/logos/app.svg" alt="" />
               {` ${SITE_TITLE}`}

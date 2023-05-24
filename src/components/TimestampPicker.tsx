@@ -4,10 +4,10 @@ import { IconRenderer } from 'components/IconRenderer';
 import { TimestampInputBrowser } from 'components/input/TimestampInputBrowser';
 import { TimestampInputCustom } from 'components/input/TimestampInputCustom';
 import { InputSettings } from 'components/InputSettings';
+import { TFunction } from 'i18next';
 import styles from 'modules/TimestampPicker.module.scss';
 import moment from 'moment';
 import { ChangeEventHandler, FC, FunctionComponent, PropsWithChildren, useCallback, useEffect, useMemo, useState } from 'react';
-import { TFunction } from 'react-i18next';
 import { InputChangeHandler, TimestampInputProps } from 'src/model/timestamp-input-props';
 import { isoFormattingDateFormat, isoTimeFormat, momentToTimeInputValue } from 'src/util/timezone';
 

@@ -1,7 +1,7 @@
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import { MantineSize } from '@mantine/core';
+import { TFunction } from 'i18next';
 import { ChangeEvent } from 'react';
-import { TFunction } from 'react-i18next';
 
 export type InputChangeHandler = (value: Date | ChangeEvent<HTMLInputElement> | null) => void;
 

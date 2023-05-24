@@ -2,10 +2,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Table, Text } from '@mantine/core';
 import { CopySyntax } from 'components/CopySyntax';
 import { IconCol } from 'components/IconCol';
+import { TFunction } from 'i18next';
 import styles from 'modules/TimestampsTable.module.scss';
 import moment, { Moment } from 'moment-timezone';
 import { FC, useEffect, useMemo, useState } from 'react';
-import { TFunction } from 'react-i18next';
 
 interface TimeValue {
   example: string;

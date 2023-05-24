@@ -1,8 +1,9 @@
-import 'react-i18next';
 import commonNs from 'public/locales/en/common.json';
+import 'react-i18next';
 
 declare module 'react-i18next' {
   interface CustomTypeOptions {
+    defaultNS: 'common';
     resources: {
       common: typeof commonNs;
     };

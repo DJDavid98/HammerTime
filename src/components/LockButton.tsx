@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Button, MantineSize, Tooltip } from '@mantine/core';
 import Link from 'next/link';
-import React, { FC } from 'react';
+import React, { FC, ReactNode } from 'react';
 
-export const LockButton: FC<{ fixedTimestamp: boolean; href: string; lockButtonTooltipText: string; size: MantineSize }> = ({
+export const LockButton: FC<{ fixedTimestamp: boolean; href: string; lockButtonTooltipText: ReactNode; size: MantineSize }> = ({
   fixedTimestamp,
   href,
   lockButtonTooltipText,

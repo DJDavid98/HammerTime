@@ -55,12 +55,12 @@ export const TimestampInputCustom: FC<TimestampInputProps> = ({
 
   const datePickerA11y = useMemo(
     (): CalendarAriaLabels => ({
-      nextMonth: t('common:a11y.calendar.nextMonthLabel'),
-      previousMonth: t('common:a11y.calendar.previousMonthLabel'),
-      nextYear: t('common:a11y.calendar.nextYearLabel'),
-      previousYear: t('common:a11y.calendar.previousYearLabel'),
-      nextDecade: t('common:a11y.calendar.nextDecadeLabel'),
-      previousDecade: t('common:a11y.calendar.previousDecadeLabel'),
+      nextMonth: t('common:a11y.calendar.nextMonthLabel') ?? undefined,
+      previousMonth: t('common:a11y.calendar.previousMonthLabel') ?? undefined,
+      nextYear: t('common:a11y.calendar.nextYearLabel') ?? undefined,
+      previousYear: t('common:a11y.calendar.previousYearLabel') ?? undefined,
+      nextDecade: t('common:a11y.calendar.nextDecadeLabel') ?? undefined,
+      previousDecade: t('common:a11y.calendar.previousDecadeLabel') ?? undefined,
     }),
     [t],
   );

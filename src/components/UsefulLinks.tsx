@@ -1,10 +1,10 @@
 import { Card, Group, Text } from '@mantine/core';
 import { ExternalLink } from 'components/ExternalLink';
+import { TFunction } from 'i18next';
 import styles from 'modules/UsefulLinks.module.scss';
 import { Trans } from 'next-i18next';
 import Image, { StaticImageData } from 'next/image';
-import React, { FC, memo, ReactElement } from 'react';
-import { TFunction } from 'react-i18next';
+import React, { FC, memo, ReactNode } from 'react';
 import bot from '../../public/bot.png';
 import server from '../../public/server.png';
 import textColor from '../../public/textcolor.png';
@@ -12,8 +12,8 @@ import textColor from '../../public/textcolor.png';
 interface UsefulLink {
   href: string;
   image: StaticImageData;
-  name: ReactElement | string;
-  desc: ReactElement | string;
+  name: ReactNode;
+  desc: ReactNode;
 }
 
 const UsefulLinksComponent: FC<{ t: TFunction; leadText: string }> = ({ t, leadText }) => {
@@ -54,7 +54,7 @@ const UsefulLinksComponent: FC<{ t: TFunction; leadText: string }> = ({ t, leadT
           <div key={href} className={styles.link}>
             <Card component={ExternalLink} href={href} shadow="sm" p="lg" withBorder>
               <Card.Section className={styles['card-top-half']}>
-                <Image src={image} />
+                <Image src={image} alt="" fill />
               </Card.Section>
 
               <div className={styles['card-bottom-half']}>

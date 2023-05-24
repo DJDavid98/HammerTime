@@ -12,10 +12,12 @@ import { getCookie, setCookies } from 'cookies-next';
 import { parseInt, throttle } from 'lodash';
 import moment, { Moment } from 'moment-timezone';
 import { GetStaticProps, NextPage } from 'next';
-import { SSRConfig, useTranslation } from 'next-i18next';
+import { SSRConfig } from 'next-i18next';
 import { useRouter } from 'next/router';
 import React, { FC, PropsWithChildren, useCallback, useEffect, useMemo, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { AvailableLanguage, LANGUAGES } from 'src/config';
+import { useServerTimeSync } from 'src/hooks/useServerTimeSync';
 import { useLocale } from 'src/util/common';
 import { typedServerSideTranslations } from 'src/util/i18n-server';
 import {
@@ -155,9 +157,9 @@ export const IndexPage: NextPage<IndexPageProps> = ({ tzNames }) => {
       fallbackLng: [],
     };
     return {
-      lockButtonTooltipText: t(fixedTimestamp ? 'common:buttons.unlock' : 'common:buttons.lock', options),
-      setTimeButtonTooltipText: t('common:buttons.setCurrentTime', options),
-      leadText: t('common:usefulLinks.lead', options),
+      lockButtonTooltipText: t(fixedTimestamp ? 'common:buttons.unlock' : 'common:buttons.lock', options) as string | null,
+      setTimeButtonTooltipText: t('common:buttons.setCurrentTime', options) as string | null,
+      leadText: t('common:usefulLinks.lead', options) as string | null,
     };
   }, [fixedTimestamp, t]);
 
@@ -191,6 +193,8 @@ export const IndexPage: NextPage<IndexPageProps> = ({ tzNames }) => {
       weekendDays: (languageConfig?.weekendDays ?? []) as DayOfWeek[],
     };
   }, [locale]);
+
+  useServerTimeSync(t);
 
   return (
     <Layout>
@@ -239,7 +243,7 @@ export const IndexPage: NextPage<IndexPageProps> = ({ tzNames }) => {
             <TimestampsTable t={t} locale={locale} timestamp={timestamp} timeInSeconds={timestampInSecondsString} />
           </Paper>
 
-          {Boolean(leadText) && (
+          {!!leadText && (
             <Paper p="lg">
               <UsefulLinks t={t} leadText={leadText} />
             </Paper>
@@ -265,7 +269,7 @@ export const getStaticProps: GetStaticProps<IndexPageProps & SSRConfig> = async 
     props: {
       initialTimestamp,
       tzNames: getSortedNormalizedTimezoneNames(),
-      ...(await typedServerSideTranslations(locale, ['common'])),
+      ...(await typedServerSideTranslations(locale)),
     },
   };
 };

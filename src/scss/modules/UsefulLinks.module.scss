@@ -30,6 +30,14 @@
 
     .card-top-half {
       flex: 0 0 auto;
+      position: relative;
+      height: 0;
+      padding-top: 61.58%;
+
+      &,
+      * {
+        border-radius: inherit;
+      }
     }
 
     .card-bottom-half {

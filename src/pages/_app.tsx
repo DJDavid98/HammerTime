@@ -1,4 +1,5 @@
 import { MantineProvider } from '@mantine/core';
+import { Notifications } from '@mantine/notifications';
 import { RouterTransition } from 'components/app/RouterTransition';
 import { appWithTranslation, useTranslation } from 'next-i18next';
 import { DefaultSeo } from 'next-seo';
@@ -58,7 +59,7 @@ const App: AppComponent = ({ Component, pageProps }) => {
       </Head>
       <DefaultSeo
         title={SITE_TITLE}
-        description={t('common:seoDescription')}
+        description={t('common:seoDescription') ?? undefined}
         openGraph={{
           type: 'website',
           locale,
@@ -88,6 +89,7 @@ const App: AppComponent = ({ Component, pageProps }) => {
       />
       <MantineProvider withGlobalStyles withNormalizeCSS theme={theme} emotionCache={ltrOptions.emotionCache}>
         <RouterTransition />
+        <Notifications />
         <Component {...pageProps} />
       </MantineProvider>
     </>
