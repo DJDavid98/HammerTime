@@ -56,6 +56,11 @@
     "title": "JavaScript is noodzakelijk",
     "body": "Uw browser ondersteunt JavaScript niet of het is momenteel uitgeschakeld. Sommige browsers deactiveren JavaScript standaard om veiligheidsredenen, maar het is noodzakelijk voor de werking van deze webapplicatie. Activeer JavaScript en ververs de pagina of gebruik een andere browser."
   },
+  "timeSync": {
+    "syncing": "Tijd aan het synchroniseren met de server…",
+    "outOfSync": "De tijd van uw apparaat lijkt incorrect, dit kan leiden tot rekenfouten (verschil: {{deltaTimeMs}}ms)",
+    "inSync": "Tijd gesynchroniseerd (verschil: {{deltaTimeMs}}ms)"
+  },
   "a11y": {
     "calendar": {
       "nextMonthLabel": "volgende maand",
