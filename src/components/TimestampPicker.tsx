@@ -3,6 +3,7 @@ import classNames from 'classnames';
 import { IconRenderer } from 'components/IconRenderer';
 import { TimestampInputBrowser } from 'components/input/TimestampInputBrowser';
 import { TimestampInputCustom } from 'components/input/TimestampInputCustom';
+import { TimezoneSelectItem } from 'components/input/TimezoneSelectItem';
 import { InputSettings } from 'components/InputSettings';
 import { TFunction } from 'i18next';
 import styles from 'modules/TimestampPicker.module.scss';
@@ -179,6 +180,7 @@ export const TimestampPicker: FC<PropTypes> = ({
         searchable
         disabled={fixedTimestamp}
         icon={<IconRenderer icons="globe" />}
+        itemComponent={TimezoneSelectItem}
       />
       <Group align="end">
         <ButtonsComponent size={inputSize}>
