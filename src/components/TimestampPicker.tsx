@@ -170,7 +170,7 @@ export const TimestampPicker: FC<PropTypes> = ({
       </Group>
       <Select
         label={t('common:input.timezone')}
-        value={timezone}
+        value={timezone ?? null}
         data={timezoneNames}
         size={inputSize}
         placeholder={defaultTimezone}
