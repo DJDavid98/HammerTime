@@ -56,6 +56,11 @@
     "title": "JavaScripts ir nepieciešams",
     "body": "Jūsu pārlūkprogramma vai nu neatbalsta JavaScript, vai arī tas pašlaik ir atspējots. Dažās pārlūkprogrammās JavaScript ir atspējots pēc noklusējuma drošības apsvērumu dēļ, taču šajā lietojumprogrammā tas ir nepieciešams. Lūdzu, iespējojiet to un atsvaidziniet lapu vai izmantojiet citu pārlūkprogrammu."
   },
+  "timeSync": {
+    "syncing": "Laika sinhronizēšana ar serveri…",
+    "outOfSync": "Ierīces laiks šķiet nepareizs, tas var radīt aprēķinu kļūdas (starpība: {{deltaTimeMs}}ms)",
+    "inSync": "Sinhronizēts laiks (starpība: {{deltaTimeMs}}ms)"
+  },
   "a11y": {
     "calendar": {
       "nextMonthLabel": "nākamais mēnesis",
