@@ -56,6 +56,11 @@
     "title": "JavaScript je neophodan",
     "body": "Vaš preglednik ili ne podržava JavaScript ili je trenutno onemogućen. Neki preglednici onemogućuju JavaScript prema zadanim postavkama iz sigurnosnih razloga, ali to je neophodno za ovu aplikaciju. Omogućite ga i osvježite stranicu ili upotrijebite drugi preglednik."
   },
+  "timeSync": {
+    "syncing": "Sinkronizacija vremena sa serverom…",
+    "outOfSync": "Čini se da je vrijeme vašeg uređaja isključeno, to može dovesti do pogrešaka u izračunu (razlika: {{deltaTimeMs}}ms)",
+    "inSync": "Vrijeme sinkronizirano (razlika: {{deltaTimeMs}}ms)"
+  },
   "a11y": {
     "calendar": {
       "nextMonthLabel": "sljedeći mjesec",
