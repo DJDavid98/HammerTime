@@ -56,6 +56,11 @@
     "title": "JavaScript diperlukan",
     "body": "Pelayar anda sama ada tidak menyokong JavaScript ataupun ia dinyahdayakan ketika ini. Sesetengah pelayar menyahdayakan JavaScript secara lalainya atas sebab keselamatan, tetapi ia diperlukan untuk aplikasi ini. Sila mendayakannya dan segar semula halaman, atau guna pelayar yang lain."
   },
+  "timeSync": {
+    "syncing": "Menyelaraskan masa dengan pelayan…",
+    "outOfSync": "Nampaknya masa peranti anda tidak tepat, ini boleh menyebabkan ralat perkiraan (perbezaan: {{deltaTimeMs}}ms)",
+    "inSync": "Masa telah diselaraskan (perbezaan: {{deltaTimeMs}}ms)"
+  },
   "a11y": {
     "calendar": {
       "nextMonthLabel": "bulan hadapan",
