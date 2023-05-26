@@ -56,6 +56,11 @@
     "title": "JavaScript este necesar",
     "body": "Browserul dvs. fie nu acceptă JavaScript, fie este dezactivat în prezent. Unele browsere dezactivează JavaScript în mod implicit din motive de securitate, dar este necesar pentru această aplicație. Vă rugăm să îl activați și să reîncărcați pagina sau să folosiți un alt browser."
   },
+  "timeSync": {
+    "syncing": "Sincronizarea timpului cu serverul…",
+    "outOfSync": "Ora dispozitivului pare oprită, acest lucru poate duce la erori de calcul (diferență: {{deltaTimeMs}}ms)",
+    "inSync": "Timp sincronizat (diferență: {{deltaTimeMs}}ms)"
+  },
   "a11y": {
     "calendar": {
       "nextMonthLabel": "luna viitoare",
