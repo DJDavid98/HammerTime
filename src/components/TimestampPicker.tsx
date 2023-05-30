@@ -170,10 +170,10 @@ export const TimestampPicker: FC<PropTypes> = ({
       </Group>
       <Select
         label={t('common:input.timezone')}
-        value={timezone ?? null}
+        value={fixedTimestamp ? null : timezone ?? null}
         data={timezoneNames}
         size={inputSize}
-        placeholder={defaultTimezone}
+        placeholder={fixedTimestamp ? 'GMT' : defaultTimezone}
         onChange={handleTimezoneChange}
         className="w-100"
         clearable
