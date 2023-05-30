@@ -56,6 +56,11 @@
     "title": "JavaScript szükséges",
     "body": "A böngésződ vagy nem támogatja a JavaScript-et vagy jelenleg ki van kapcsolva. Egyes böngészők biztonsági okokból alapértelmezetten kikapcsolják, viszont ennek az alkalmazásnak szüksége van rá. Kérlek engedélyezd és töltsd újra az oldalt, vagy használj egy másik böngészőt."
   },
+  "timeSync": {
+    "syncing": "Idő szinkronizálása a szerverrel…",
+    "outOfSync": "Úgy tűnik az eszköz időbeállítása hibás, ez számítási hibákhoz vezethet (különbség: {{deltaTimeMs}}ms)",
+    "inSync": "Idő szinkronizálva (különbség: {{deltaTimeMs}}ms)"
+  },
   "a11y": {
     "calendar": {
       "nextMonthLabel": "következő hónap",

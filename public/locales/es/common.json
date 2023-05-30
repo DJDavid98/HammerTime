@@ -56,6 +56,11 @@
     "title": "JavaScript es necesario",
     "body": "Su navegador no soporta JavaScript o está actualmente deshabilitado. Algunos navegadores deshabilitan JavaScript por defecto por razones de seguridad, pero es necesario para esta aplicación. Por favor, actívelo y actualice la página o utilice un navegador diferente."
   },
+  "timeSync": {
+    "syncing": "Sincronizando el tiempo con el servidor…",
+    "outOfSync": "Tu dispositivo del tiempo parece apagado, esto puede provocar errores de cálculo (diferencia: {{deltaTimeMs}}ms)",
+    "inSync": "Tiempo sincronizado (diferencia: {{deltaTimeMs}}ms)"
+  },
   "a11y": {
     "calendar": {
       "nextMonthLabel": "el próximo mes",

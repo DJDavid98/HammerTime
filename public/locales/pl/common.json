@@ -56,6 +56,11 @@
     "title": "JavaScript jest wymagany",
     "body": "Twoja przeglądarka nie wspiera JavaScript lub jest on aktualnie wyłączony. Niektóre przeglądarki domyślnie wyłączają JavaScripta ze względów bezpieczeństwa, lecz jest on wymagany dla tej aplikacji. Proszę go włączyć i odświeżyć stronę lub użyć innej przeglądarki."
   },
+  "timeSync": {
+    "syncing": "Synchronizacja czasu z serwerem…",
+    "outOfSync": "Czas twojego urządzeia wydaje się odbiegać od normy, może to prowadzić do błędów w obliczeniach (różnica: {{deltaTimeMs}}ms)",
+    "inSync": "Czas zsynchronizowany (różnica: {{deltaTimeMs}}ms)"
+  },
   "a11y": {
     "calendar": {
       "nextMonthLabel": "następny miesiąc",
