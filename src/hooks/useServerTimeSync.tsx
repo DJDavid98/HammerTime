@@ -18,7 +18,7 @@ export const useServerTimeSync = (t: TFunction) => {
       withCloseButton: false,
       loading: true,
     });
-    void fetch('/timecheck.txt').then((r) => {
+    void fetch('/timecheck.txt', { cache: 'no-cache' }).then((r) => {
       if (!mounted) return;
       const dateHeader = r.headers.get('date');
       const serverDate = moment.utc(dateHeader).toDate();
