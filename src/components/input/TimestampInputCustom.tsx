@@ -8,7 +8,7 @@ import { FC, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { AvailableLanguage, LANGUAGES } from 'src/config';
 import { dateInputIcon, dateTimeInputIcons, timeInputIcon, TimestampInputProps } from 'src/model/timestamp-input-props';
 import { getDayStyle } from 'src/util/styling';
-import { isoParsingDateFormat, isoTimeFormat } from 'src/util/timezone';
+import { isoParsingDateFormat } from 'src/util/timezone';
 
 const dateInputId = 'date-custom-input';
 const timeInputId = 'time-custom-input';
@@ -20,7 +20,6 @@ export const TimestampInputCustom: FC<TimestampInputProps> = ({
   locale,
   dateString,
   timeString,
-  timezone,
   language,
   inputSize,
   fixedTimestamp,
@@ -32,10 +31,10 @@ export const TimestampInputCustom: FC<TimestampInputProps> = ({
     if (!dateString) {
       return new Date(0);
     }
-    const inputString = `${dateString}T${timeString}`;
-    const formatString = `${isoParsingDateFormat}T${isoTimeFormat}`;
-    return (timezone ? moment.tz(inputString, formatString, timezone) : moment(inputString, formatString)).toDate();
-  }, [dateString, timeString, timezone]);
+    const inputString = `${dateString}`;
+    const formatString = `${isoParsingDateFormat}`;
+    return moment(inputString, formatString).toDate();
+  }, [dateString]);
   const { calendarLabelFormat, calendarYearLabelFormat, calendarWeekdayFormat, rtl } = useMemo(
     () => LANGUAGES[language as AvailableLanguage],
     [language],
