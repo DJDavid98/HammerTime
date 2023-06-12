@@ -60,7 +60,6 @@
       "countryCode": "TW",
       "emoji": "\uD83C\uDDF9\uD83C\uDDFC",
       "momentLocale": "zh-tw",
-      "percent": 96,
       "calendarLabelFormat": "YYYY年MMM",
       "calendarYearLabelFormat": "YYYY年",
       "credits": [
@@ -106,7 +105,14 @@
       "nativeName": "English, UK",
       "countryCode": "GB",
       "emoji": "\uD83C\uDDEC\uD83C\uDDE7",
-      "momentLocale": "en-gb"
+      "momentLocale": "en-gb",
+      "credits": [
+        {
+          "crowdin": "DJDavid98",
+          "displayName": "DJDavid98",
+          "url": "https://djdavid98.art"
+        }
+      ]
     },
     "en": {
       "name": "English, United States",
@@ -176,7 +182,6 @@
       "nativeName": "עִברִית",
       "countryCode": "IL",
       "emoji": "\uD83C\uDDEE\uD83C\uDDF1",
-      "percent": 96,
       "rtl": true,
       "weekendDays": [5, 6],
       "credits": [
@@ -264,7 +269,6 @@
       "nativeName": "Lietuviškai",
       "countryCode": "LT",
       "emoji": "\uD83C\uDDF1\uD83C\uDDF9",
-      "percent": 96,
       "credits": [
         {
           "crowdin": "tayloryte"
