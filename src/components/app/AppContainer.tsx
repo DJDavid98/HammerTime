@@ -35,7 +35,7 @@ export const AppContainer: FC<PropsWithChildren> = ({ children }) => {
               right={sidebarOnRight ? undefined : toggleButtonSpacing}
               p="xs"
               onClick={toggleSidebarOnRight}
-              aria-label={t('toggleSidebarPosition')}
+              aria-label={t('a11y.toggleSidebarPosition')}
             >
               <FontAwesomeIcon icon={effectiveSidebarOnRight ? 'chevron-left' : 'chevron-right'} fixedWidth />
             </UnstyledButton>
