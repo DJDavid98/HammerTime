@@ -70,5 +70,12 @@
       "nextDecadeLabel": "sljedeće desetljeće",
       "previousDecadeLabel": "prethodno desetljeće"
     }
+  },
+  "credits": {
+    "title": "Zasluge",
+    "intro": "Ovo web mjesto je softver otvorenog koda koji je razvio <1>{{developerName}}</1> koristeći <3>Font Awesome Free</3> i <5>Mantine</5>. Dostupan je na više jezika zahvaljujući prevoditeljima volonterima.",
+    "translationsBy": "Prijevodi <1></1>",
+    "incompleteTranslations": "Prijevodi su nepotpuni",
+    "contributeTranslations": "Doprinos"
   }
 }
