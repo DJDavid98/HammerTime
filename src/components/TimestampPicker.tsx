@@ -106,7 +106,7 @@ export const TimestampPicker: FC<PropTypes> = ({
     <Group align="end" className={styles['timestamp-picker']}>
       <Group align="end" className={classNames(styles['datetime-picker-wrap'], { [styles['combined-input-wrap']]: combinedInputsEnabled })}>
         <TimestampInput
-          combinedInput={combinedInputsEnabled}
+          combinedInput={!!combinedInputsEnabled}
           t={t}
           locale={locale}
           dateString={dateString}

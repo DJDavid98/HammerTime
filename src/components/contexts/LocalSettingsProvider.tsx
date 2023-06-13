@@ -1,9 +1,9 @@
 import { ChangeEventHandler, createContext, FC, PropsWithChildren, useCallback, useContext, useEffect, useMemo, useState } from 'react';
 
 export interface LocalSettingsContextValue {
-  customInputEnabled: boolean;
-  combinedInputsEnabled: boolean;
-  sidebarOnRight: boolean;
+  customInputEnabled: boolean | null;
+  combinedInputsEnabled: boolean | null;
+  sidebarOnRight: boolean | null;
   toggleCustomInput: ChangeEventHandler<HTMLInputElement>;
   toggleSeparateInputs: ChangeEventHandler<HTMLInputElement>;
   toggleSidebarOnRight: VoidFunction;
@@ -27,9 +27,9 @@ const customPrefKey = 'custom-input';
 const sidebarPrefKey = 'sidebar-right';
 
 export const LocalSettingsProvider: FC<PropsWithChildren> = ({ children }) => {
-  const [combinedInput, setCombinedInput] = useState(false);
-  const [customInput, setCustomInput] = useState(false);
-  const [sidebarOnRight, setSidebarOnRight] = useState(false);
+  const [combinedInput, setCombinedInput] = useState<boolean | null>(null);
+  const [customInput, setCustomInput] = useState<boolean | null>(null);
+  const [sidebarOnRight, setSidebarOnRight] = useState<boolean | null>(null);
   const toggleSeparateInputs: ChangeEventHandler<HTMLInputElement> = useCallback((e) => {
     setCombinedInput(!e.target.checked);
   }, []);
@@ -37,12 +37,15 @@ export const LocalSettingsProvider: FC<PropsWithChildren> = ({ children }) => {
     setCustomInput(e.target.checked);
   }, []);
   useEffect(() => {
+    if (combinedInput === null) return;
     localStorage.setItem(splitPrefKey, combinedInput ? 'false' : 'true');
   }, [combinedInput]);
   useEffect(() => {
+    if (customInput === null) return;
     localStorage.setItem(customPrefKey, customInput ? 'true' : 'false');
   }, [customInput]);
   useEffect(() => {
+    if (sidebarOnRight === null) return;
     localStorage.setItem(sidebarPrefKey, sidebarOnRight ? 'true' : 'false');
   }, [sidebarOnRight]);
 

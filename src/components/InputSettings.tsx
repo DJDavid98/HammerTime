@@ -11,7 +11,7 @@ export const InputSettings: FC = () => {
   return (
     <div className={styles.wrapper}>
       <div>
-        <Switch label={t('input.settings.customInputs.label')} checked={customInputEnabled} onChange={toggleCustomInput} />
+        <Switch label={t('input.settings.customInputs.label')} checked={!!customInputEnabled} onChange={toggleCustomInput} />
         <Text size="xs">{t('input.settings.customInputs.explanation')}</Text>
       </div>
 
