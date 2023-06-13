@@ -70,5 +70,12 @@
       "nextDecadeLabel": "decennio successivo",
       "previousDecadeLabel": "decennio precedente"
     }
+  },
+  "credits": {
+    "title": "Crediti",
+    "intro": "Questo sito web è un software open-source sviluppato da <1>{{developerName}}</1> utilizzando <3>Font Awesome Free</3> e <5>Mantine</5>. È disponibile in più lingue grazie a chi si è offerto di tradurlo.",
+    "translationsBy": "Traduzioni da <1></1>",
+    "incompleteTranslations": "Le traduzioni sono incomplete",
+    "contributeTranslations": "Contribuisci"
   }
 }
