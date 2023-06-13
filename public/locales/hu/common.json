@@ -70,5 +70,12 @@
       "nextDecadeLabel": "következő évtized",
       "previousDecadeLabel": "előző évtized"
     }
+  },
+  "credits": {
+    "title": "Névjegy",
+    "intro": "Ez a weboldal nyílt forráskódú szoftver, melyet <1>{{developerName}}</1> fejleszt a <3>Font Awesome Free</3> és <5>Mantine</5> felhasználásával. Önkéntes fordítóknak köszönhetően több nyelven is elérhető.",
+    "translationsBy": "Fordítók: <1></1>",
+    "incompleteTranslations": "A fordítások hiányosak",
+    "contributeTranslations": "Közreműködés"
   }
 }
