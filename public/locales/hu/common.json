@@ -69,7 +69,8 @@
       "previousYearLabel": "előző év",
       "nextDecadeLabel": "következő évtized",
       "previousDecadeLabel": "előző évtized"
-    }
+    },
+    "toggleSidebarPosition": "Oldalsáv mogzatása a túloldalra"
   },
   "credits": {
     "title": "Névjegy",
