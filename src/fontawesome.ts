@@ -6,6 +6,8 @@ import {
   faCalendar as fasCalendar,
   faCaretDown,
   faCaretUp,
+  faChevronLeft,
+  faChevronRight,
   faClipboard,
   faClock,
   faClockRotateLeft,
@@ -53,4 +55,6 @@ library.add(
   faExclamationTriangle,
   faCog,
   faBan,
+  faChevronLeft,
+  faChevronRight,
 );

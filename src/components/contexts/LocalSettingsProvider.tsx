@@ -3,8 +3,10 @@ import { ChangeEventHandler, createContext, FC, PropsWithChildren, useCallback, 
 export interface LocalSettingsContextValue {
   customInputEnabled: boolean;
   combinedInputsEnabled: boolean;
+  sidebarOnRight: boolean;
   toggleCustomInput: ChangeEventHandler<HTMLInputElement>;
   toggleSeparateInputs: ChangeEventHandler<HTMLInputElement>;
+  toggleSidebarOnRight: VoidFunction;
 }
 
 const defaultFunction = () => undefined;
@@ -12,18 +14,22 @@ const defaultFunction = () => undefined;
 const LocalSettingsContext = createContext<LocalSettingsContextValue>({
   customInputEnabled: false,
   combinedInputsEnabled: false,
+  sidebarOnRight: false,
   toggleCustomInput: defaultFunction,
   toggleSeparateInputs: defaultFunction,
+  toggleSidebarOnRight: defaultFunction,
 });
 
 export const useLocalSettings = () => useContext(LocalSettingsContext);
 
 const splitPrefKey = 'split-input';
 const customPrefKey = 'custom-input';
+const sidebarPrefKey = 'sidebar-right';
 
 export const LocalSettingsProvider: FC<PropsWithChildren> = ({ children }) => {
   const [combinedInput, setCombinedInput] = useState(false);
   const [customInput, setCustomInput] = useState(false);
+  const [sidebarOnRight, setSidebarOnRight] = useState(false);
   const toggleSeparateInputs: ChangeEventHandler<HTMLInputElement> = useCallback((e) => {
     setCombinedInput(!e.target.checked);
   }, []);
@@ -36,6 +42,9 @@ export const LocalSettingsProvider: FC<PropsWithChildren> = ({ children }) => {
   useEffect(() => {
     localStorage.setItem(customPrefKey, customInput ? 'true' : 'false');
   }, [customInput]);
+  useEffect(() => {
+    localStorage.setItem(sidebarPrefKey, sidebarOnRight ? 'true' : 'false');
+  }, [sidebarOnRight]);
 
   useEffect(() => {
     const storedPref = localStorage.getItem(splitPrefKey);
@@ -61,10 +70,12 @@ export const LocalSettingsProvider: FC<PropsWithChildren> = ({ children }) => {
     () => ({
       toggleSeparateInputs,
       toggleCustomInput,
+      toggleSidebarOnRight: () => setSidebarOnRight((v) => !v),
       combinedInputsEnabled: combinedInput,
       customInputEnabled: customInput,
+      sidebarOnRight,
     }),
-    [combinedInput, customInput, toggleCustomInput, toggleSeparateInputs],
+    [combinedInput, customInput, sidebarOnRight, toggleCustomInput, toggleSeparateInputs],
   );
 
   return <LocalSettingsContext.Provider value={ctxValue}>{children}</LocalSettingsContext.Provider>;

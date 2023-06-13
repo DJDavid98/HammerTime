@@ -78,5 +78,6 @@
     "translationsBy": "Translations by <1></1>",
     "incompleteTranslations": "Translations are incomplete",
     "contributeTranslations": "Contribute"
-  }
+  },
+  "toggleSidebarPosition": "Move sidebar to opposite side"
 }

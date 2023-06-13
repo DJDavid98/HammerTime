@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Navbar, ScrollArea, Space, Text, Title } from '@mantine/core';
+import { Aside, Navbar, ScrollArea, Space, Text, Title } from '@mantine/core';
 import { ExternalLink } from 'components/ExternalLink';
 import { LanguageSelector } from 'components/i18n/LanguageSelector';
 import { InputSettings } from 'components/InputSettings';
@@ -9,10 +9,10 @@ import { DEVELOPER_NAME, DEVELOPER_URL, FONTAWESOME_FREE_LICENSE_URL, MANTINE_UR
 
 const creditsIntoValues = { developerName: DEVELOPER_NAME };
 
-export const AppSidebar: FC<{ opened: boolean }> = ({ opened }) => {
+export const AppSidebar: FC<{ opened: boolean; Component: typeof Aside | typeof Navbar }> = ({ opened, Component }) => {
   const { t } = useTranslation();
   return (
-    <Navbar
+    <Component
       p="md"
       hiddenBreakpoint="md"
       hidden={!opened}
@@ -21,7 +21,7 @@ export const AppSidebar: FC<{ opened: boolean }> = ({ opened }) => {
         xl: 400,
       }}
     >
-      <Navbar.Section grow component={ScrollArea} mx="-xs" px="xs" pb="md">
+      <Component.Section grow component={ScrollArea} mx="-xs" px="xs" pb="md">
         <Title align="center" order={3} mb={10}>
           <FontAwesomeIcon icon="cog" /> {t('input.settings.label')}
         </Title>
@@ -49,10 +49,10 @@ export const AppSidebar: FC<{ opened: boolean }> = ({ opened }) => {
             {t('common:viewSource')}
           </ExternalLink>
         </Text>
-      </Navbar.Section>
-      <Navbar.Section>
+      </Component.Section>
+      <Component.Section>
         <LanguageSelector />
-      </Navbar.Section>
-    </Navbar>
+      </Component.Section>
+    </Component>
   );
 };
