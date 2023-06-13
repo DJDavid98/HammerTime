@@ -70,5 +70,12 @@
       "nextDecadeLabel": "nākamā dekāde",
       "previousDecadeLabel": "iepriekšējā dekāde"
     }
+  },
+  "credits": {
+    "title": "Pateicība",
+    "intro": "Šī vietne ir atvērtā koda programmatūra, ko izstrādājis <1>{{developerName}}</1> izmantojot <3>Font Awesome Free</3> un <5>Mantine</5>. Tā ir pieejama vairākās valodās, pateicoties brīvprātīgajiem tulkotājiem.",
+    "translationsBy": "Tulkojumi <1></1>",
+    "incompleteTranslations": "Tulkojumi ir nepilnīgi",
+    "contributeTranslations": "Atbalsti"
   }
 }
