@@ -65,6 +65,11 @@ export const LocalSettingsProvider: FC<PropsWithChildren> = ({ children }) => {
     // Enable custom input by default
     setCustomInput(storedPref !== 'false');
   }, []);
+  useEffect(() => {
+    const storedPref = localStorage.getItem(sidebarPrefKey);
+    // Sidebar is on the left by default
+    setSidebarOnRight(storedPref === 'true');
+  }, []);
 
   const ctxValue: LocalSettingsContextValue = useMemo(
     () => ({
