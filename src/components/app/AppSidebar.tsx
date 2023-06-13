@@ -4,7 +4,7 @@ import { ExternalLink } from 'components/ExternalLink';
 import { LanguageSelector } from 'components/i18n/LanguageSelector';
 import { InputSettings } from 'components/InputSettings';
 import { Trans, useTranslation } from 'next-i18next';
-import React, { FC } from 'react';
+import { FC } from 'react';
 import { DEVELOPER_NAME, DEVELOPER_URL, FONTAWESOME_FREE_LICENSE_URL, MANTINE_URL, REPOSITORY_URL } from 'src/config';
 
 const creditsIntoValues = { developerName: DEVELOPER_NAME };
