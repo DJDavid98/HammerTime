@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Button, MantineSize, Popover, Switch, Text, Tooltip } from '@mantine/core';
 import styles from 'modules/InputSettings.module.scss';
 import { useTranslation } from 'next-i18next';
-import React, { ChangeEventHandler, FC } from 'react';
+import { ChangeEventHandler, FC } from 'react';
 
 interface PropTypes {
   customInputEnabled: boolean;

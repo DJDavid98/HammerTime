@@ -1,6 +1,6 @@
 import { Anchor } from '@mantine/core';
 import classNames from 'classnames';
-import React, { ComponentType, ElementType, forwardRef, ForwardRefRenderFunction, memo, ReactNode, ReactNodeArray } from 'react';
+import { ComponentType, ElementType, forwardRef, ForwardRefRenderFunction, memo, ReactNode, ReactNodeArray } from 'react';
 
 export interface ExternalLinkProps {
   children?: ReactNode | ReactNodeArray;

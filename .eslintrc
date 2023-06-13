@@ -14,9 +14,7 @@
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:@typescript-eslint/recommended-requiring-type-checking",
-    "prettier",
-    "prettier/@typescript-eslint",
-    "prettier/react"
+    "prettier"
   ],
   "ignorePatterns": ["node_modules"],
   "parser": "@typescript-eslint/parser",
@@ -78,6 +76,23 @@
     ],
     "no-plusplus": "off",
     "no-restricted-globals": "off",
+    "no-restricted-imports": [
+      "error",
+      {
+        "paths": [
+          {
+            "name": "react-i18next",
+            "importNames": ["useTranslation"],
+            "message": "Import from next-i18next instead!"
+          },
+          {
+            "name": "react",
+            "importNames": ["default"],
+            "message": "This is not actually necessary"
+          }
+        ]
+      }
+    ],
     "no-shadow": "off",
     "no-unused-vars": "off",
     "no-use-before-define": "off",
@@ -118,7 +133,8 @@
       {
         "checkFragmentShorthand": true
       }
-    ]
+    ],
+    "react/function-component-definition": "off"
   },
   "settings": {
     "import/resolver": {

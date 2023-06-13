@@ -4,7 +4,7 @@ import { TFunction } from 'i18next';
 import styles from 'modules/UsefulLinks.module.scss';
 import { Trans } from 'next-i18next';
 import Image, { StaticImageData } from 'next/image';
-import React, { FC, memo, ReactNode } from 'react';
+import { FC, memo, ReactNode } from 'react';
 import bot from '../../public/bot.png';
 import server from '../../public/server.png';
 import textColor from '../../public/textcolor.png';

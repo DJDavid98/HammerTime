@@ -12,10 +12,9 @@ import { getCookie, setCookies } from 'cookies-next';
 import { parseInt, throttle } from 'lodash';
 import moment, { Moment } from 'moment-timezone';
 import { GetStaticProps, NextPage } from 'next';
-import { SSRConfig } from 'next-i18next';
+import { SSRConfig, useTranslation } from 'next-i18next';
 import { useRouter } from 'next/router';
-import React, { FC, PropsWithChildren, useCallback, useEffect, useMemo, useState } from 'react';
-import { useTranslation } from 'react-i18next';
+import { FC, PropsWithChildren, useCallback, useEffect, useMemo, useState } from 'react';
 import { AvailableLanguage, LANGUAGES } from 'src/config';
 import { useServerTimeSync } from 'src/hooks/useServerTimeSync';
 import { useLocale } from 'src/util/common';
@@ -165,6 +164,7 @@ export const IndexPage: NextPage<IndexPageProps> = ({ tzNames }) => {
 
   const ButtonsComponent = useMemo(
     (): FC<PropsWithChildren<{ size: MantineSize }>> =>
+      // eslint-disable-next-line react/no-unstable-nested-components -- It's memoized, should be fine (?)
       ({ size, children }) =>
         (
           <>

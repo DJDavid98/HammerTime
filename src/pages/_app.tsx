@@ -6,7 +6,7 @@ import { DefaultSeo } from 'next-seo';
 import { AppComponent } from 'next/dist/shared/lib/router/router';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
-import React, { useEffect, useMemo } from 'react';
+import { useEffect, useMemo } from 'react';
 import { SITE_TITLE } from 'src/config';
 import 'src/fontawesome';
 import { assembleSeoUrl, canonicalUrlForLanguage, getDirAttribute, useLocale } from 'src/util/common';
@@ -21,10 +21,10 @@ const App: AppComponent = ({ Component, pageProps }) => {
   const canonicalUrl = useMemo(() => canonicalUrlForLanguage(asPath, locale, defaultLocale), [asPath, defaultLocale, locale]);
   const languageAlternates = useMemo(
     () => [
-      ...(locales ?? [])?.map((hrefLang) => ({
+      ...(locales?.map((hrefLang) => ({
         hrefLang,
         href: canonicalUrlForLanguage(asPath, hrefLang, defaultLocale),
-      })),
+      })) ?? []),
       {
         hrefLang: 'x-default',
         href: canonicalUrlForLanguage(asPath, defaultLocale, defaultLocale),

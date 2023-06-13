@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { notifications } from '@mantine/notifications';
 import { TFunction } from 'i18next';
 import moment from 'moment-timezone';
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 
 // This should stay 5 minutes as this is the value used in localization files
 const fiveMinutesInMs = 300e3;

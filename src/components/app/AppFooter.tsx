@@ -6,7 +6,7 @@ import { ExternalLink } from 'components/ExternalLink';
 import { LanguageSelector } from 'components/i18n/LanguageSelector';
 import styles from 'modules/AppFooter.module.scss';
 import { Trans, useTranslation } from 'next-i18next';
-import React, { FC, useEffect, useState } from 'react';
+import { FC, useEffect, useState } from 'react';
 import { FONTAWESOME_FREE_LICENSE_URL, REPOSITORY_URL } from 'src/config';
 
 export const AppFooter: FC = () => {
