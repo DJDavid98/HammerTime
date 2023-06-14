@@ -1,10 +1,13 @@
 import { config, library } from '@fortawesome/fontawesome-svg-core';
-import { faDiscord, faEthereum, faGithub, faOsi } from '@fortawesome/free-brands-svg-icons';
+import { faDiscord, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faCalendar as farCalendar } from '@fortawesome/free-regular-svg-icons';
 import {
+  faBan,
   faCalendar as fasCalendar,
   faCaretDown,
   faCaretUp,
+  faChevronLeft,
+  faChevronRight,
   faClipboard,
   faClock,
   faClockRotateLeft,
@@ -26,7 +29,7 @@ import {
 // Tell Font Awesome to skip adding the CSS automatically since it's being imported
 config.autoAddCss = false;
 
-const brandIcons = [faGithub, faDiscord, faOsi, faEthereum];
+const brandIcons = [faGithub, faDiscord];
 
 // List of used icons - amend if new icons are needed
 library.add(
@@ -51,4 +54,7 @@ library.add(
   faInfo,
   faExclamationTriangle,
   faCog,
+  faBan,
+  faChevronLeft,
+  faChevronRight,
 );

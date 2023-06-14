@@ -42,7 +42,7 @@ English and Hungarian translations have been included, so no translators will be
 - 🇨🇿 Czech
   - [klauny](https://crowdin.com/profile/klauny)
   - [イーテルニティ ☄️](https://crowdin.com/profile/Ethxrnity)
-- 🇳🇱 Dutch: [Jesse](https://crowdin.com/profile/Jessuh)
+- 🇳🇱 Dutch: [Jesse](https://github.com/Jessuhh)
 - 🇫🇷 French
   - [Cookie Kiro](https://crowdin.com/profile/Cookikui)
   - [HumainAbsurde](https://crowdin.com/profile/humain)

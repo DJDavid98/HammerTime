@@ -34,7 +34,8 @@
         {
           "crowdin": "sware"
         }
-      ]
+      ],
+      "percent": 78
     },
     "zh": {
       "name": "Chinese Simplified",
@@ -52,7 +53,8 @@
         {
           "crowdin": "User670"
         }
-      ]
+      ],
+      "percent": 78
     },
     "zh-TW": {
       "name": "Chinese Traditional",
@@ -60,7 +62,6 @@
       "countryCode": "TW",
       "emoji": "\uD83C\uDDF9\uD83C\uDDFC",
       "momentLocale": "zh-tw",
-      "percent": 96,
       "calendarLabelFormat": "YYYY年MMM",
       "calendarYearLabelFormat": "YYYY年",
       "credits": [
@@ -71,7 +72,23 @@
           "crowdin": "jackiecr2911",
           "displayName": "Jackie"
         }
-      ]
+      ],
+      "percent": 75
+    },
+    "hr": {
+      "name": "Croatian",
+      "nativeName": "Hrvatski",
+      "countryCode": "HR",
+      "emoji": "\uD83C\uDDED\uD83C\uDDF7",
+      "weekendDays": [0],
+      "credits": [
+        {
+          "crowdin": "stjepanmih13x",
+          "displayName": "Volvone",
+          "url": "https://github.com/volvone"
+        }
+      ],
+      "percent": 98
     },
     "cs": {
       "name": "Czech",
@@ -86,7 +103,8 @@
           "crowdin": "Ethxrnity",
           "displayName": "イーテルニティ ☄️"
         }
-      ]
+      ],
+      "percent": 78
     },
     "nl": {
       "name": "Dutch",
@@ -97,7 +115,8 @@
       "credits": [
         {
           "crowdin": "Jessuh",
-          "displayName": "Jesse"
+          "displayName": "Jesse",
+          "url": "https://github.com/Jessuhh"
         }
       ]
     },
@@ -173,14 +192,14 @@
         {
           "crowdin": "BelleBernice"
         }
-      ]
+      ],
+      "percent": 78
     },
     "he": {
       "name": "Hebrew",
       "nativeName": "עִברִית",
       "countryCode": "IL",
       "emoji": "\uD83C\uDDEE\uD83C\uDDF1",
-      "percent": 96,
       "rtl": true,
       "weekendDays": [5, 6],
       "credits": [
@@ -188,7 +207,8 @@
           "crowdin": "ZeRealOne",
           "displayName": "Amit Cohen"
         }
-      ]
+      ],
+      "percent": 75
     },
     "hu": {
       "name": "Hungarian",
@@ -207,7 +227,8 @@
           "crowdin": "jackiecr2911",
           "displayName": "Jackie"
         }
-      ]
+      ],
+      "percent": 78
     },
     "it": {
       "name": "Italian",
@@ -242,7 +263,8 @@
         {
           "crowdin": "eai04191"
         }
-      ]
+      ],
+      "percent": 78
     },
     "ko": {
       "name": "Korean",
@@ -261,19 +283,8 @@
           "displayName": "김카츄 (sjk)",
           "url": "https://github.com/sjkim04"
         }
-      ]
-    },
-    "lt": {
-      "name": "Lithuanian",
-      "nativeName": "Lietuviškai",
-      "countryCode": "LT",
-      "emoji": "\uD83C\uDDF1\uD83C\uDDF9",
-      "percent": 96,
-      "credits": [
-        {
-          "crowdin": "tayloryte"
-        }
-      ]
+      ],
+      "percent": 78
     },
     "lv": {
       "name": "Latvian",
@@ -286,6 +297,18 @@
           "displayName": "Casper"
         }
       ]
+    },
+    "lt": {
+      "name": "Lithuanian",
+      "nativeName": "Lietuviškai",
+      "countryCode": "LT",
+      "emoji": "\uD83C\uDDF1\uD83C\uDDF9",
+      "credits": [
+        {
+          "crowdin": "tayloryte"
+        }
+      ],
+      "percent": 75
     },
     "ms": {
       "name": "Malay",
@@ -313,7 +336,8 @@
           "crowdin": "DeadMarco",
           "displayName": "Mohammad Safa Gray"
         }
-      ]
+      ],
+      "percent": 78
     },
     "pl": {
       "name": "Polish",
@@ -349,7 +373,8 @@
         {
           "crowdin": "buckshot-"
         }
-      ]
+      ],
+      "percent": 78
     },
     "pt-BR": {
       "name": "Portuguese, Brazilian",
@@ -365,7 +390,8 @@
         {
           "crowdin": "ShadowG"
         }
-      ]
+      ],
+      "percent": 78
     },
     "ro": {
       "name": "Romanian",
@@ -411,7 +437,24 @@
           "crowdin": "JudDayLum",
           "displayName": "JudDayLum Official"
         }
-      ]
+      ],
+      "percent": 78
+    },
+    "sr": {
+      "name": "Serbian (Latin)",
+      "nativeName": "Srpski",
+      "countryCode": "RS",
+      "emoji": "\uD83C\uDDF7\uD83C\uDDF8",
+      "crowdinLocale": "sr-CS",
+      "weekendDays": [6, 0],
+      "credits": [
+        {
+          "crowdin": "net-tech-",
+          "displayName": "net-tech-#7475",
+          "url": "https://nettech.dev/"
+        }
+      ],
+      "percent": 85
     },
     "es": {
       "name": "Spanish",
@@ -427,21 +470,6 @@
         },
         {
           "crowdin": "DrakeZero"
-        }
-      ]
-    },
-    "sr": {
-      "name": "Serbian (Latin)",
-      "nativeName": "Srpski",
-      "countryCode": "RS",
-      "emoji": "\uD83C\uDDF7\uD83C\uDDF8",
-      "crowdinLocale": "sr-CS",
-      "weekendDays": [6, 0],
-      "credits": [
-        {
-          "crowdin": "net-tech-",
-          "displayName": "net-tech-#7475",
-          "url": "https://nettech.dev/"
         }
       ]
     },
@@ -463,7 +491,8 @@
         {
           "crowdin": "tunket"
         }
-      ]
+      ],
+      "percent": 78
     },
     "th": {
       "name": "Thai",
@@ -505,21 +534,8 @@
           "crowdin": "WhiteBear60",
           "displayName": "Myhailo Yaremenko"
         }
-      ]
-    },
-    "hr": {
-      "name": "Croatian",
-      "nativeName": "Hrvatski",
-      "countryCode": "HR",
-      "emoji": "\uD83C\uDDED\uD83C\uDDF7",
-      "weekendDays": [0],
-      "credits": [
-        {
-          "crowdin": "stjepanmih13x",
-          "displayName": "Volvone",
-          "url": "https://github.com/volvone"
-        }
-      ]
+      ],
+      "percent": 78
     },
     "ur": {
       "name": "Urdu (Pakistan)",
@@ -531,7 +547,8 @@
         {
           "crowdin": "muharslan"
         }
-      ]
+      ],
+      "percent": 98
     }
   }
 }
