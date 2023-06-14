@@ -69,7 +69,8 @@
       "previousYearLabel": "tahun lepas",
       "nextDecadeLabel": "dekad hadapan",
       "previousDecadeLabel": "dekad lepas"
-    }
+    },
+    "toggleSidebarPosition": "Pindahkan palang sisi ke sisi yang berlawanan"
   },
   "credits": {
     "title": "Penghargaan",
