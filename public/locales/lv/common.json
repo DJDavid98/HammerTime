@@ -69,7 +69,8 @@
       "previousYearLabel": "iepriekšējais gads",
       "nextDecadeLabel": "nākamā dekāde",
       "previousDecadeLabel": "iepriekšējā dekāde"
-    }
+    },
+    "toggleSidebarPosition": "Pārvietot sānu joslu uz pretējo pusi"
   },
   "credits": {
     "title": "Pateicība",
