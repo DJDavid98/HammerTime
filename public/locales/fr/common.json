@@ -69,7 +69,8 @@
       "previousYearLabel": "année précédente",
       "nextDecadeLabel": "décennie suivante",
       "previousDecadeLabel": "décennie précédente"
-    }
+    },
+    "toggleSidebarPosition": "Déplacer la barre latérale de l'autre côté"
   },
   "credits": {
     "title": "Crédits",
