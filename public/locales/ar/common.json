@@ -69,7 +69,8 @@
       "previousYearLabel": "العام الماضي",
       "nextDecadeLabel": "العقد القادم",
       "previousDecadeLabel": "العقد الماضي"
-    }
+    },
+    "toggleSidebarPosition": "نقل شريط الخصائص للجانب الآخر"
   },
   "credits": {
     "title": "المساهمون في العمل",

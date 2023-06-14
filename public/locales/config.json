@@ -146,6 +146,10 @@
         },
         {
           "crowdin": "M4gicalCat"
+        },
+        {
+          "crowdin": "humain",
+          "displayName": "HumainAbsurde"
         }
       ],
       "percent": 87

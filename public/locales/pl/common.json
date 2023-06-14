@@ -69,7 +69,8 @@
       "previousYearLabel": "poprzedni rok",
       "nextDecadeLabel": "następna dekada",
       "previousDecadeLabel": "poprzednia dekada"
-    }
+    },
+    "toggleSidebarPosition": "Przenieś pasek boczny na przeciwną stronę"
   },
   "credits": {
     "title": "Autorzy",

@@ -45,6 +45,7 @@ English and Hungarian translations have been included, so no translators will be
 - 🇳🇱 Dutch: [Jesse](https://github.com/Jessuhh)
 - 🇫🇷 French
   - [Cookie Kiro](https://crowdin.com/profile/Cookikui)
+  - [HumainAbsurde](https://crowdin.com/profile/humain)
   - [James Roger](https://crowdin.com/profile/graffiti34)
   - [M4gicalCat](https://crowdin.com/profile/M4gicalCat)
   - [Ouiouibaguette](https://crowdin.com/profile/Ouiouibaguette)

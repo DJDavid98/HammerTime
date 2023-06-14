@@ -69,7 +69,8 @@
       "previousYearLabel": "el año anterior",
       "nextDecadeLabel": "la próxima década",
       "previousDecadeLabel": "la década anterior"
-    }
+    },
+    "toggleSidebarPosition": "Mover la barra lateral al lado opuesto"
   },
   "credits": {
     "title": "Créditos",
