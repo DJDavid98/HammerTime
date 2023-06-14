@@ -69,7 +69,8 @@
       "previousYearLabel": "anul precedent",
       "nextDecadeLabel": "următorul deceniu",
       "previousDecadeLabel": "deceniul precedent"
-    }
+    },
+    "toggleSidebarPosition": "Mutați bara laterală în partea opusă"
   },
   "credits": {
     "title": "Credite",
