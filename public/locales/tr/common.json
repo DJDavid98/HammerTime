@@ -69,7 +69,8 @@
       "previousYearLabel": "Geçen yıl",
       "nextDecadeLabel": "Gelecek on yıl",
       "previousDecadeLabel": "Geçmiş on yıl"
-    }
+    },
+    "toggleSidebarPosition": "Kenar çubuğunu karşı tarafa taşı"
   },
   "credits": {
     "title": "Katkıda Bulunanlar",
