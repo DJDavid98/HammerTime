@@ -347,7 +347,8 @@
       "weekendDays": [0],
       "credits": [
         {
-          "crowdin": "MinerPL"
+          "crowdin": "MinerPL",
+          "url": "https://github.com/minerpl"
         },
         {
           "crowdin": "sthakrk",

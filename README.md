@@ -71,7 +71,7 @@ English and Hungarian translations have been included, so no translators will be
 - 🇲🇾 Malay: [Nurul Azeera Hidayah @ Muhammad Nur Hidayat Yasuyoshi (MNH48.moe)](https://crowdin.com/profile/mnh48)
 - 🇮🇷 Persian: [Mohammad Safa Gray](https://crowdin.com/profile/DeadMarco)
 - 🇵🇱 Polish
-  - [MinerPL](https://crowdin.com/profile/MinerPL)
+  - [MinerPL](https://github.com/minerpl)
   - [stha](https://crowdin.com/profile/sthakrk)
 - 🇵🇹 Portuguese
   - [buckshot-](https://crowdin.com/profile/buckshot-)
