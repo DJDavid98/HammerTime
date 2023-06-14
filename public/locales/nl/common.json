@@ -69,7 +69,8 @@
       "previousYearLabel": "vorig jaar",
       "nextDecadeLabel": "volgende decennium",
       "previousDecadeLabel": "vorige decennium"
-    }
+    },
+    "toggleSidebarPosition": "Verplaats balk naar tegenoverliggende zijde"
   },
   "credits": {
     "title": "Met dank aan",
