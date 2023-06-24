@@ -38,8 +38,10 @@ English and Hungarian translations have been included, so no translators will be
 - 🇹🇼 Chinese Traditional
   - [CPYW_7226](https://crowdin.com/profile/CPYW_7226)
   - [Jackie](https://crowdin.com/profile/jackiecr2911)
+  - [notlin4](https://crowdin.com/profile/notlin4)
 - 🇭🇷 Croatian: [Volvone](https://github.com/volvone)
 - 🇨🇿 Czech
+  - [Blurplix](https://crowdin.com/profile/Blurplix)
   - [klauny](https://crowdin.com/profile/klauny)
   - [イーテルニティ ☄️](https://crowdin.com/profile/Ethxrnity)
 - 🇳🇱 Dutch: [Jesse](https://github.com/Jessuhh)
