@@ -48,13 +48,16 @@
     "heading": "Nije pronađeno",
     "content": "Nema ništa da se vidi ovde."
   },
-  "builtWith": "Websajt napravljen pomoću <1>Font Avesome Free</1>",
-  "openSource": "Softver otvorenog koda",
   "viewSource": "Pogledajte izvorni kod",
   "notAffiliated": "Ovaj projekat nije povezan sa Discord-om.",
   "jsDisabled": {
     "title": "JavaScript je neophodan",
     "body": "Vaš internet pretraživač ne podržava JavaScript ili ga je onemogućio. Neki internet pretraživači podrazumevano onemogućavaju JavaScript iz bezbednosnih razloga, ali on je neophodan za ovu aplikaciju. Omogućite ga i osvežite stranicu ili koristite drugi internet pretraživač."
+  },
+  "timeSync": {
+    "syncing": "Sinhronizovanje vremena sa serverom…",
+    "outOfSync": "Izgleda da vreme vašeg uređaja nije tačno, to može dovesti do grešaka u proračunu vreme (razlika: {{deltaTimeMs}}ms)",
+    "inSync": "Vreme sinhronizovano (razlika: {{deltaTimeMs}}ms)"
   },
   "a11y": {
     "calendar": {
@@ -64,6 +67,14 @@
       "previousYearLabel": "prošla godina",
       "nextDecadeLabel": "sledeća decenija",
       "previousDecadeLabel": "prošla decenija"
-    }
+    },
+    "toggleSidebarPosition": "Pomerite bočnu traku na suprotnu stranu"
+  },
+  "credits": {
+    "title": "Autori",
+    "intro": "Ova veb stranica je softver otvorenog koda koji je razvio <1>{{developerName}}</1> koristeći <3>Font Awesome Free</3> i <5>Mantine</5>. Dostupan je na više jezika zahvaljujući volonterskim prevodiocima.",
+    "translationsBy": "Prevod <1></1>",
+    "incompleteTranslations": "Prevodi su nepotpuni",
+    "contributeTranslations": "Pomogni u prevodu"
   }
 }
