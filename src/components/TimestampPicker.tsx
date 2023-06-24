@@ -10,7 +10,7 @@ import styles from 'modules/TimestampPicker.module.scss';
 import moment from 'moment';
 import { FC, FunctionComponent, PropsWithChildren, useCallback, useEffect, useMemo, useState } from 'react';
 import { InputChangeHandler, TimestampInputProps } from 'src/model/timestamp-input-props';
-import { isoFormattingDateFormat, isoTimeFormat, momentToTimeInputValue } from 'src/util/timezone';
+import { getTimezoneValue, isoFormattingDateFormat, isoTimeFormat, momentToTimeInputValue } from 'src/util/timezone';
 
 interface TimezoneOptionType {
   label: string;
@@ -34,7 +34,7 @@ interface PropTypes {
   timeString: string;
   timezone?: string;
   defaultTimezone: string;
-  timezoneNames: TimezoneOptionType[];
+  tzNames: string[];
   ButtonsComponent: FunctionComponent<PropsWithChildren<{ size: MantineSize }>>;
 }
 
@@ -51,7 +51,7 @@ export const TimestampPicker: FC<PropTypes> = ({
   locale,
   timezone,
   defaultTimezone,
-  timezoneNames,
+  tzNames,
   ButtonsComponent,
 }) => {
   const handleTimezoneChange = useCallback(
@@ -62,6 +62,7 @@ export const TimestampPicker: FC<PropTypes> = ({
   );
   const [inputSize, setInputSize] = useState<MantineSize>(largeInputSize);
   const { customInputEnabled, combinedInputsEnabled } = useLocalSettings();
+  const timezoneNames: TimezoneOptionType[] = useMemo(() => tzNames.map((zoneName) => getTimezoneValue(zoneName)), [tzNames]);
   useEffect(() => {
     const inputSizeQuery = window.matchMedia(`(min-width: ${largeInputThreshold}px)`);
     const updateInputSizes = (e: Pick<MediaQueryListEvent, 'matches'>) => {
@@ -125,7 +126,7 @@ export const TimestampPicker: FC<PropTypes> = ({
         value={fixedTimestamp ? null : timezone ?? null}
         data={timezoneNames}
         size={inputSize}
-        placeholder={fixedTimestamp ? 'GMT' : defaultTimezone}
+        placeholder={fixedTimestamp ? 'GMT (UTC)' : defaultTimezone}
         onChange={handleTimezoneChange}
         className="w-100"
         clearable

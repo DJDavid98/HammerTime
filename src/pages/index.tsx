@@ -1,19 +1,20 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Alert, Button, MantineSize, Paper, Tooltip } from '@mantine/core';
+import { Button, MantineSize, Paper, Tooltip } from '@mantine/core';
 import { DatesProvider, DayOfWeek } from '@mantine/dates';
 import { DatesProviderSettings } from '@mantine/dates/lib/components/DatesProvider/DatesProvider';
 import { AppContainer } from 'components/app/AppContainer';
 import { Layout } from 'components/app/Layout';
+import { HowToAlert } from 'components/HowToAlert';
 import { LockButton } from 'components/LockButton';
 import { TimestampPicker } from 'components/TimestampPicker';
 import { TimestampsTable } from 'components/TimestampsTable';
 import { UsefulLinks } from 'components/UsefulLinks';
-import { getCookie, setCookies } from 'cookies-next';
 import { parseInt, throttle } from 'lodash';
 import moment, { Moment } from 'moment-timezone';
 import { GetStaticProps, NextPage } from 'next';
 import { SSRConfig, useTranslation } from 'next-i18next';
 import { useRouter } from 'next/router';
+import { ParsedUrlQuery } from 'querystring';
 import { FC, PropsWithChildren, useCallback, useEffect, useMemo, useState } from 'react';
 import { AvailableLanguage, LANGUAGES } from 'src/config';
 import { useServerTimeSync } from 'src/hooks/useServerTimeSync';
@@ -21,7 +22,6 @@ import { useLocale } from 'src/util/common';
 import { typedServerSideTranslations } from 'src/util/i18n-server';
 import {
   getSortedNormalizedTimezoneNames,
-  getTimezoneValue,
   isoFormattingDateFormat,
   isoParsingDateFormat,
   isoTimeFormat,
@@ -33,8 +33,7 @@ interface IndexPageProps {
 }
 
 const TS_QUERY_PARAM = 't';
-const howToCookieName = 'how-to-dismiss';
-const howToCookieValue = 'how-to-dismiss';
+const TZ_QUERY_PARAM = 'tz';
 
 export const IndexPage: NextPage<IndexPageProps> = ({ tzNames }) => {
   const {
@@ -42,15 +41,45 @@ export const IndexPage: NextPage<IndexPageProps> = ({ tzNames }) => {
     i18n: { language },
   } = useTranslation();
   const locale = useLocale(language);
-  const timezoneNames = useMemo(() => tzNames.map((timezone) => getTimezoneValue(timezone)), [tzNames]);
-  const [showHowTo, setShowHowTo] = useState(false);
-  const [defaultTimezone, setDefaultTimezone] = useState<string>(() => timezoneNames[0].value);
-  const [timezone, setTimezone] = useState<string | undefined>();
-  const safeTimezone = useMemo(() => timezone ?? defaultTimezone, [defaultTimezone, timezone]);
+  const defaultTimezone = useMemo<string>(
+    // Get local time zone
+    () => moment.tz.guess(),
+    [],
+  );
+  const router = useRouter();
+  const timestampQuery = useMemo(() => {
+    const queryParam = router.query[TS_QUERY_PARAM];
+    return typeof queryParam === 'string' ? queryParam : undefined;
+  }, [router.query]);
+  const timezoneQuery = useMemo(() => {
+    const queryParam = router.query[TZ_QUERY_PARAM];
+    return typeof queryParam === 'string' ? queryParam : undefined;
+  }, [router.query]);
+  const setTimezone = useCallback(
+    (timezoneName?: string) => {
+      if (!router.isReady) return;
+
+      if (timezoneQuery === timezoneName) {
+        return;
+      }
+
+      const query: ParsedUrlQuery = {};
+      if (timestampQuery) {
+        query[TS_QUERY_PARAM] = timestampQuery;
+      }
+      if (timezoneName) {
+        query[TZ_QUERY_PARAM] = timezoneName;
+      }
+      void router.replace({ query }, undefined, {
+        shallow: true,
+        scroll: false,
+      });
+    },
+    [router, timestampQuery, timezoneQuery],
+  );
+  const safeTimezone = useMemo(() => timezoneQuery ?? defaultTimezone, [defaultTimezone, timezoneQuery]);
   const [timeString, setTimeString] = useState<string>('');
   const [dateString, setDateString] = useState<string>('');
-  const router = useRouter();
-  const timestampQuery = router.query[TS_QUERY_PARAM];
   const initialTimestamp = useMemo<number | null>(() => {
     if (typeof timestampQuery === 'string') {
       const timestampNumber = parseInt(timestampQuery, 10);
@@ -74,7 +103,7 @@ export const IndexPage: NextPage<IndexPageProps> = ({ tzNames }) => {
         const newTimeZone = value === null ? undefined : value;
         setTimezone(newTimeZone);
       }, 200),
-    [],
+    [setTimezone],
   );
   const handleDateChange = useMemo(
     () =>
@@ -105,49 +134,27 @@ export const IndexPage: NextPage<IndexPageProps> = ({ tzNames }) => {
     const value = moment.tz(guessed).tz(safeTimezone);
     setDateTimeString(momentToTimeInputValue(value));
   }, [safeTimezone, setDateTimeString]);
-  const handleHowToClose = () => {
-    setCookies(howToCookieName, howToCookieValue, {
-      expires: moment().add(2, 'years').toDate(),
-    });
-    setShowHowTo(false);
-  };
-
-  useEffect(() => {
-    // Get local time zone
-    setDefaultTimezone(moment.tz.guess());
-
-    setShowHowTo(getCookie(howToCookieName) !== howToCookieValue);
-  }, []);
 
   useEffect(() => {
     let clientMoment: Moment | undefined;
     let clientTimezone: string | null = null;
     if (typeof initialTimestamp === 'number') {
-      const initialDate = moment.tz(initialTimestamp * 1000, 'GMT');
+      const initialDate = moment.unix(initialTimestamp).utc(false);
       if (initialDate.isValid()) {
-        clientTimezone = 'GMT';
+        clientTimezone = 'Etc/GMT';
         clientMoment = initialDate;
       }
     }
     if (!clientMoment) clientMoment = moment().seconds(0).milliseconds(0);
     const formatted = momentToTimeInputValue(clientMoment);
     handleDateTimeChange(formatted);
-    handleTimezoneChange(clientTimezone);
+    if (clientTimezone) handleTimezoneChange(clientTimezone);
   }, [handleDateTimeChange, handleTimezoneChange, initialTimestamp]);
 
   useEffect(() => {
     if (!dateString || !timeString) return;
     setTimestamp(moment.tz(`${dateString}T${timeString}`, `${isoParsingDateFormat}T${isoTimeFormat}`, safeTimezone));
-  }, [dateString, safeTimezone, timeString, timezone]);
-
-  const syntaxColName = useMemo(() => {
-    const originalText = t('common:table.syntax');
-    // Lowercase column name in text only for this language
-    if (locale === 'pt-br') {
-      return originalText.toLowerCase();
-    }
-    return originalText;
-  }, [locale, t]);
+  }, [dateString, safeTimezone, timeString, timezoneQuery]);
 
   const fixedTimestamp = initialTimestamp !== null;
   const { lockButtonTooltipText, setTimeButtonTooltipText, leadText } = useMemo(() => {
@@ -200,28 +207,7 @@ export const IndexPage: NextPage<IndexPageProps> = ({ tzNames }) => {
     <Layout>
       <DatesProvider settings={dateProviderSettings}>
         <AppContainer>
-          {showHowTo && (
-            <Alert
-              title={t('common:seoDescription')}
-              icon={<FontAwesomeIcon icon="info" fixedWidth />}
-              color="dark"
-              withCloseButton
-              onClose={handleHowToClose}
-            >
-              {t('common:howTo', { syntaxColName })}
-            </Alert>
-          )}
-
-          <noscript>
-            <Alert
-              title={t('common:jsDisabled.title')}
-              icon={<FontAwesomeIcon icon="exclamation-triangle" fixedWidth />}
-              color="red"
-              onClose={handleHowToClose}
-            >
-              {t('common:jsDisabled.body')}
-            </Alert>
-          </noscript>
+          <HowToAlert />
 
           <Paper p="lg">
             <TimestampPicker
@@ -234,9 +220,9 @@ export const IndexPage: NextPage<IndexPageProps> = ({ tzNames }) => {
               handleDateChange={handleDateChange}
               handleTimeChange={handleTimeChange}
               handleDateTimeChange={handleDateTimeChange}
-              timezone={timezone}
+              timezone={timezoneQuery}
               defaultTimezone={defaultTimezone}
-              timezoneNames={timezoneNames}
+              tzNames={tzNames}
               fixedTimestamp={fixedTimestamp}
               ButtonsComponent={ButtonsComponent}
             />
