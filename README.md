@@ -35,6 +35,7 @@ English and Hungarian translations have been included, so no translators will be
 - 🇨🇳 Chinese Simplified
   - [CPYW_7226](https://crowdin.com/profile/CPYW_7226)
   - [User670](https://crowdin.com/profile/User670)
+  - [姓甚名谁](https://crowdin.com/profile/febilly)
 - 🇹🇼 Chinese Traditional
   - [CPYW_7226](https://crowdin.com/profile/CPYW_7226)
   - [Jackie](https://crowdin.com/profile/jackiecr2911)
@@ -89,6 +90,7 @@ English and Hungarian translations have been included, so no translators will be
   - [JudeDM](https://crowdin.com/profile/JudeDM)
   - [Luna](https://crowdin.com/profile/NightyCloud)
   - [Nikita Sharikov](https://crowdin.com/profile/Aligatoor)
+  - [Vladimir](https://crowdin.com/profile/bill876)
   - [Крутой Бо](https://crowdin.com/profile/arturfomenko8)
   - [Рейт](https://crowdin.com/profile/helppriklreyta)
 - 🇷🇸 Serbian (Latin): [net-tech-#7475](https://nettech.dev/)
