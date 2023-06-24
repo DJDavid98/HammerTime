@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Anchor, AppShell, Aside, Burger, Center, Header, MediaQuery, Navbar, UnstyledButton, useMantineTheme } from '@mantine/core';
+import { useMediaQuery } from '@mantine/hooks';
 import { AppSidebar } from 'components/app/AppSidebar';
 import { useLocalSettings } from 'components/contexts/LocalSettingsProvider';
 import { CustomIcon } from 'components/CustomIcon';
@@ -15,18 +16,26 @@ const toggleButtonSpacing = 8;
 export const AppContainer: FC<PropsWithChildren> = ({ children }) => {
   const { t } = useTranslation();
   const theme = useMantineTheme();
-  const { sidebarOnRight, toggleSidebarOnRight } = useLocalSettings();
+  const { sidebarOnRight, sidebarOffDesktop, toggleSidebarOnRight, toggleSidebarOffDesktop } = useLocalSettings();
   const [opened, setOpened] = useState(false);
   const toggleOpen = useCallback(() => setOpened((o) => !o), []);
   const effectiveSidebarOnRight = theme.dir === 'rtl' ? !sidebarOnRight : sidebarOnRight;
+  const aboveMdMediaQuery = useMediaQuery(`(min-width: ${theme.breakpoints.md})`);
+  const forceHideSidebar = !!sidebarOffDesktop && aboveMdMediaQuery;
   return (
     <AppShell
       padding="md"
       header={
         <Header fixed height={headerHeight} p="xs">
-          <MediaQuery largerThan="md" styles={{ display: 'none' }}>
-            <Burger opened={opened} onClick={toggleOpen} size="sm" color={theme.colors.gray[6]} pos="absolute" />
-          </MediaQuery>
+          <Burger
+            opened={aboveMdMediaQuery ? !sidebarOffDesktop : opened}
+            onClick={aboveMdMediaQuery ? toggleSidebarOffDesktop : toggleOpen}
+            size="sm"
+            color={theme.colors.gray[6]}
+            pos="absolute"
+            left={sidebarOnRight ? undefined : toggleButtonSpacing}
+            right={sidebarOnRight ? toggleButtonSpacing : undefined}
+          />
           <MediaQuery smallerThan="md" styles={{ display: 'none' }}>
             <UnstyledButton
               pos="absolute"
@@ -36,6 +45,7 @@ export const AppContainer: FC<PropsWithChildren> = ({ children }) => {
               p="xs"
               onClick={toggleSidebarOnRight}
               aria-label={t('a11y.toggleSidebarPosition')}
+              hidden={forceHideSidebar}
             >
               <FontAwesomeIcon icon={effectiveSidebarOnRight ? 'chevron-left' : 'chevron-right'} fixedWidth />
             </UnstyledButton>
@@ -50,8 +60,8 @@ export const AppContainer: FC<PropsWithChildren> = ({ children }) => {
           </Center>
         </Header>
       }
-      aside={sidebarOnRight ? <AppSidebar opened={opened} Component={Aside} /> : undefined}
-      navbar={sidebarOnRight ? undefined : <AppSidebar opened={opened} Component={Navbar} />}
+      aside={sidebarOnRight && !forceHideSidebar ? <AppSidebar opened={opened} Component={Aside} /> : undefined}
+      navbar={sidebarOnRight || forceHideSidebar ? undefined : <AppSidebar opened={opened} Component={Navbar} />}
       className={styles.shell}
       fixed
     >
