@@ -4,9 +4,11 @@ export interface LocalSettingsContextValue {
   customInputEnabled: boolean | null;
   combinedInputsEnabled: boolean | null;
   sidebarOnRight: boolean | null;
+  sidebarOffDesktop: boolean | null;
   toggleCustomInput: ChangeEventHandler<HTMLInputElement>;
   toggleSeparateInputs: ChangeEventHandler<HTMLInputElement>;
   toggleSidebarOnRight: VoidFunction;
+  toggleSidebarOffDesktop: VoidFunction;
 }
 
 const defaultFunction = () => undefined;
@@ -15,9 +17,11 @@ const LocalSettingsContext = createContext<LocalSettingsContextValue>({
   customInputEnabled: false,
   combinedInputsEnabled: false,
   sidebarOnRight: false,
+  sidebarOffDesktop: false,
   toggleCustomInput: defaultFunction,
   toggleSeparateInputs: defaultFunction,
   toggleSidebarOnRight: defaultFunction,
+  toggleSidebarOffDesktop: defaultFunction,
 });
 
 export const useLocalSettings = () => useContext(LocalSettingsContext);
@@ -25,11 +29,13 @@ export const useLocalSettings = () => useContext(LocalSettingsContext);
 const splitPrefKey = 'split-input';
 const customPrefKey = 'custom-input';
 const sidebarPrefKey = 'sidebar-right';
+const sidebarOffDesktopPrefKey = 'sidebar-off-desktop';
 
 export const LocalSettingsProvider: FC<PropsWithChildren> = ({ children }) => {
   const [combinedInput, setCombinedInput] = useState<boolean | null>(null);
   const [customInput, setCustomInput] = useState<boolean | null>(null);
   const [sidebarOnRight, setSidebarOnRight] = useState<boolean | null>(null);
+  const [sidebarOffDesktop, setSidebarOffDesktop] = useState<boolean | null>(null);
   const toggleSeparateInputs: ChangeEventHandler<HTMLInputElement> = useCallback((e) => {
     setCombinedInput(!e.target.checked);
   }, []);
@@ -48,6 +54,10 @@ export const LocalSettingsProvider: FC<PropsWithChildren> = ({ children }) => {
     if (sidebarOnRight === null) return;
     localStorage.setItem(sidebarPrefKey, sidebarOnRight ? 'true' : 'false');
   }, [sidebarOnRight]);
+  useEffect(() => {
+    if (sidebarOffDesktop === null) return;
+    localStorage.setItem(sidebarOffDesktopPrefKey, sidebarOffDesktop ? 'true' : 'false');
+  }, [sidebarOffDesktop]);
 
   useEffect(() => {
     const storedPref = localStorage.getItem(splitPrefKey);
@@ -73,17 +83,24 @@ export const LocalSettingsProvider: FC<PropsWithChildren> = ({ children }) => {
     // Sidebar is on the left by default
     setSidebarOnRight(storedPref === 'true');
   }, []);
+  useEffect(() => {
+    const storedPref = localStorage.getItem(sidebarOffDesktopPrefKey);
+    // Sidebar is on by default
+    setSidebarOffDesktop(storedPref === 'true');
+  }, []);
 
   const ctxValue: LocalSettingsContextValue = useMemo(
     () => ({
       toggleSeparateInputs,
       toggleCustomInput,
       toggleSidebarOnRight: () => setSidebarOnRight((v) => !v),
+      toggleSidebarOffDesktop: () => setSidebarOffDesktop((v) => !v),
       combinedInputsEnabled: combinedInput,
       customInputEnabled: customInput,
       sidebarOnRight,
+      sidebarOffDesktop,
     }),
-    [combinedInput, customInput, sidebarOnRight, toggleCustomInput, toggleSeparateInputs],
+    [combinedInput, customInput, sidebarOffDesktop, sidebarOnRight, toggleCustomInput, toggleSeparateInputs],
   );
 
   return <LocalSettingsContext.Provider value={ctxValue}>{children}</LocalSettingsContext.Provider>;
