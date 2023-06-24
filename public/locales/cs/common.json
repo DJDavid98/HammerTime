@@ -1,6 +1,6 @@
 {
-  "seoDescription": "Generování indikátorů časových značek pro zprávy chatu Discord",
-  "howTo": "Vyberte datum, zkopírujte požadované časové razítko ze sloupce {{syntaxColName}} a vložte je kamkoli do zprávy chatu. Výsledkem bude dynamické časové razítko, které se každému zobrazí jinak na základě jeho časového pásma.",
+  "seoDescription": "Generování ukazatelů časových razítek pro zprávy chatu Discord",
+  "howTo": "Vyberte datum, zkopírujte požadované časové razítko ze sloupce {{syntaxColName}} a vložte jej kamkoli do zprávy chatu. Výsledkem bude dynamické časové razítko, které se každému zobrazí jinak na základě jeho časového pásma.",
   "input": {
     "timezone": "Časové pásmo",
     "datetime": "Datum a čas",
@@ -10,11 +10,11 @@
       "label": "Nastavení vstupu",
       "customInputs": {
         "label": "Vlastní vstupy",
-        "explanation": "Nahradí výchozí vstupy vstupy, které odpovídají aktuálnímu jazyku namísto jazyka prohlížeče"
+        "explanation": "Nahradí výchozí vstupy jinými, které odpovídají aktuálnímu jazyku namísto jazyka vašeho prohlížeče"
       },
       "separateInputs": {
         "label": "Oddělit vstupy",
-        "explanation": "Zobrazí dva odlišné vstupy pro datum a čas namísto kombinace (což není podporování u některých prohlížečů)"
+        "explanation": "Zobrazí dva odlišné vstupy pro datum a čas namísto jednoho kombinovaného (což v některých prohlížečích nemusí být podporováno)"
       }
     }
   },
@@ -31,12 +31,12 @@
   "usefulLinks": {
     "lead": "Užitečné pro vás mohou být také tyto:",
     "server": {
-      "header": "Officální HammerTime Server",
+      "header": "Oficální HammerTime Server",
       "p": "Diskutujte o webových stránkách, testujte syntaxi a navrhujte funkce"
     },
     "bot": {
       "header": "HammerTime Bot",
-      "pWithoutCommand": "Generování časových značek z aplikace Discord pomocí příkazů s lomítkem"
+      "pWithoutCommand": "Generování časových razítek přímo z aplikace Discord pomocí lomítkových příkazů"
     },
     "textColor": {
       "header": "Generátor <1>barevného</1> textu od společnosti Rebane",
@@ -48,13 +48,16 @@
     "heading": "Nenalezeno",
     "content": "Není zde nic k zobrazení."
   },
-  "builtWith": "Webové stránky vytvořené pomocí <1>písma Font Awesome Free</1>",
-  "openSource": "Otevřený software",
   "viewSource": "Zobrazit zdrojový kód",
-  "notAffiliated": "Tento projekt není spojen se společností Discord.",
+  "notAffiliated": "Tento projekt není nijak přidružen k společnosti Discord.",
   "jsDisabled": {
     "title": "JavaScript je nezbytný",
     "body": "Váš prohlížeč buď nepodporuje JavaScript, nebo je momentálně vypnutý. Některé prohlížeče JavaScript ve výchozím nastavení z bezpečnostních důvodů zakazují, ale pro tuto aplikaci je nezbytný. Povolte jej a obnovte stránku nebo použijte jiný prohlížeč."
+  },
+  "timeSync": {
+    "syncing": "Synchronizuji čas se serverem…",
+    "outOfSync": "Zdá se, že se čas vašeho zařízení liší, což může vést k chybám ve výpočtu (rozdíl: {{deltaTimeMs}}ms)",
+    "inSync": "Čas synchronizován (rozdíl: {{deltaTimeMs}}ms)"
   },
   "a11y": {
     "calendar": {
@@ -64,6 +67,14 @@
       "previousYearLabel": "předchozí rok",
       "nextDecadeLabel": "příští desetiletí",
       "previousDecadeLabel": "předchozí desetiletí"
-    }
+    },
+    "toggleSidebarPosition": "Přesunout postranní panel na opačnou stranu"
+  },
+  "credits": {
+    "title": "Zásluhy",
+    "intro": "Tato webová stránka obsahuje software s otevřeným zdrojovým kódem, který vyvinul <1>{{developerName}}</1> pomocí <3>Font Awesome Free</3> a <5>Mantine</5>. Díky dobrovolným překladatelům je k dispozici ve více jazycích.",
+    "translationsBy": "Přeložili <1></1>",
+    "incompleteTranslations": "Překlad není úplný",
+    "contributeTranslations": "Přispět"
   }
 }
