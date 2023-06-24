@@ -39,27 +39,14 @@ export const HowToAlert: FC = () => {
   if (!showHowTo) return null;
 
   return (
-    <>
-      <Alert
-        title={t('common:seoDescription')}
-        icon={<FontAwesomeIcon icon="info" fixedWidth />}
-        color="dark"
-        withCloseButton
-        onClose={handleHowToClose}
-      >
-        {t('common:howTo', { syntaxColName })}
-      </Alert>
-
-      <noscript>
-        <Alert
-          title={t('common:jsDisabled.title')}
-          icon={<FontAwesomeIcon icon="exclamation-triangle" fixedWidth />}
-          color="red"
-          onClose={handleHowToClose}
-        >
-          {t('common:jsDisabled.body')}
-        </Alert>
-      </noscript>
-    </>
+    <Alert
+      title={t('common:seoDescription')}
+      icon={<FontAwesomeIcon icon="info" fixedWidth />}
+      color="dark"
+      withCloseButton
+      onClose={handleHowToClose}
+    >
+      {t('common:howTo', { syntaxColName })}
+    </Alert>
   );
 };
