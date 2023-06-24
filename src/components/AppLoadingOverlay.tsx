@@ -12,6 +12,8 @@ const centerAlignedStyle: CSSProperties = {
   marginBottom: '1rem',
 };
 
+const transitionDuration = 500;
+
 export const AppLoadingOverlay: FC = () => {
   const theme = useMantineTheme();
   const { t } = useTranslation();
@@ -24,6 +26,8 @@ export const AppLoadingOverlay: FC = () => {
       visible={visible}
       overlayOpacity={0.98}
       overlayColor={theme.colors.dark[9]}
+      transitionDuration={transitionDuration}
+      exitTransitionDuration={transitionDuration}
       loader={
         <>
           <div style={centerAlignedStyle}>
