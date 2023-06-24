@@ -48,13 +48,16 @@
     "heading": "No s'ha trobat",
     "content": "No hi ha res a veure ací."
   },
-  "builtWith": "Pàgina creada amb <1>Font Awesome Free</1>",
-  "openSource": "Programari de codi obert",
   "viewSource": "Vore codi font",
-  "notAffiliated": "Aquest projecte no està afiliat a Discord.",
+  "notAffiliated": "Aquest projecte no està afiliat amb Discord.",
   "jsDisabled": {
     "title": "No s'ha trobat JavaScript",
     "body": "El vostre navegador no és compatible amb JavaScript o està desactivat. Alguns navegadors desactiven JavaScript per defecte per motius de seguretat, però és necessari per a aquesta aplicació. Per favor, activeu-la i refresqueu la pàgina, o utilitzeu un navegador diferent."
+  },
+  "timeSync": {
+    "syncing": "Sincronitzant el temps amb el servidor…",
+    "outOfSync": "El vostre dispositiu sembla no estar a hora i pot incórrer errors de càlcul (diferència: {{deltaTimeMs}} ms)",
+    "inSync": "Temps sincronitzat (diferència: {{deltaTimeMs}} ms)"
   },
   "a11y": {
     "calendar": {
@@ -64,6 +67,14 @@
       "previousYearLabel": "any anterior",
       "nextDecadeLabel": "pròxima dècada",
       "previousDecadeLabel": "dècada anterior"
-    }
+    },
+    "toggleSidebarPosition": "Mou menú a la banda contrària"
+  },
+  "credits": {
+    "title": "Crèdits",
+    "intro": "Aquesta pàgina web és de codi obert i ha sigut desenvolupada per <1>{{developerName}}</1> amb <3>Font Awesome Free</3> i <5>Mantine</5>. Està disponible en múltiples llengües gràcies a traductors voluntaris.",
+    "translationsBy": "Traducció per <1></1>",
+    "incompleteTranslations": "Traducció incompleta",
+    "contributeTranslations": "Contribuïu"
   }
 }
