@@ -48,13 +48,16 @@
     "heading": "Tidak Ditemukan",
     "content": "Tidak ada yang bisa dilihat di sini."
   },
-  "builtWith": "Situs web dibuat dengan <1>Font Awesome Free</1>",
-  "openSource": "Perangkat lunak sumber terbuka",
   "viewSource": "Lihat kode sumber",
   "notAffiliated": "Proyek ini tidak berafiliasi dengan Discord.",
   "jsDisabled": {
     "title": "JavaScript diperlukan",
     "body": "Peramban Anda tidak mendukung JavaScript atau sedang dinonaktifkan. Beberapa browser menonaktifkan JavaScript secara bawaan untuk alasan keamanan, tetapi itu diperlukan untuk aplikasi ini. Harap aktifkan dan segarkan halaman, atau gunakan browser lain."
+  },
+  "timeSync": {
+    "syncing": "Menyinkronkan waktu dengan server...",
+    "outOfSync": "Waktu perangkat Anda tampaknya mati, ini dapat menyebabkan kesalahan penghitungan (perbedaan: {{deltaTimeMs}}ms)",
+    "inSync": "Waktu disinkronkan (perbedaan: {{deltaTimeMs}}ms)"
   },
   "a11y": {
     "calendar": {
@@ -64,6 +67,14 @@
       "previousYearLabel": "tahun lalu",
       "nextDecadeLabel": "dekade berikutnya",
       "previousDecadeLabel": "dekade sebelumnya"
-    }
+    },
+    "toggleSidebarPosition": "Pindahkan sidebar ke sisi yang berlawanan"
+  },
+  "credits": {
+    "title": "Kredit",
+    "intro": "Situs web ini adalah perangkat lunak sumber terbuka yang dikembangkan oleh <1>{{developerName}}</1> menggunakan <3>Font Awesome Free</3> dan <5>Mantine</5>. Ini tersedia dalam berbagai bahasa berkat penerjemah sukarela.",
+    "translationsBy": "Terjemahan oleh <1></1>",
+    "incompleteTranslations": "Terjemahan tidak lengkap",
+    "contributeTranslations": "Kontribusi"
   }
 }

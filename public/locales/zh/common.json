@@ -48,13 +48,16 @@
     "heading": "未找到",
     "content": "未找到您请求的内容。"
   },
-  "builtWith": "本网站使用了 <1>Font Awesome Free</1>",
-  "openSource": "开源软件",
   "viewSource": "查看源代码",
   "notAffiliated": "此项目与 Discord 没有关联。",
   "jsDisabled": {
     "title": "需要启用 JavaScript",
     "body": "您的浏览器可能不支持 JavaScript，或者已禁用 JavaScript。有些浏览器会因为安全原因默认禁用 JavaScript，但是本应用需要使用 JavaScript 以正常工作。请启用 JavaScript 并刷新本页面，或者使用其他浏览器。"
+  },
+  "timeSync": {
+    "syncing": "正在与服务器同步时间…",
+    "outOfSync": "似乎您的设备的时间不正确，这可能会导致计算错误。（差异： {{deltaTimeMs}}ms）",
+    "inSync": "时间已同步（差异： {{deltaTimeMs}}ms）"
   },
   "a11y": {
     "calendar": {
@@ -64,6 +67,14 @@
       "previousYearLabel": "上一年",
       "nextDecadeLabel": "下一个十年",
       "previousDecadeLabel": "上一个十年"
-    }
+    },
+    "toggleSidebarPosition": "将侧边栏移至另一边"
+  },
+  "credits": {
+    "title": "致谢",
+    "intro": "本网站为<1>{{developerName}}</1>使用 <3>Font Awesome Free</3>和<5>Mantine</5>开发的开源软件。本网站支持多种语言，翻译由志愿者提供。",
+    "translationsBy": "翻译者：<1></1>",
+    "incompleteTranslations": "翻译不完整",
+    "contributeTranslations": "贡献"
   }
 }
