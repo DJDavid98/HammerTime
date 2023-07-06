@@ -136,6 +136,9 @@ export const IndexPage: NextPage<IndexPageProps> = ({ tzNames }) => {
   }, [safeTimezone, setDateTimeString]);
 
   useEffect(() => {
+    // Setting initial values only
+    if (dateString !== '' && timeString !== '') return;
+
     let clientMoment: Moment | undefined;
     let clientTimezone: string | null = null;
     if (typeof initialTimestamp === 'number') {
@@ -149,7 +152,7 @@ export const IndexPage: NextPage<IndexPageProps> = ({ tzNames }) => {
     const formatted = momentToTimeInputValue(clientMoment);
     handleDateTimeChange(formatted);
     if (clientTimezone) handleTimezoneChange(clientTimezone);
-  }, [handleDateTimeChange, handleTimezoneChange, initialTimestamp]);
+  }, [dateString, handleDateTimeChange, handleTimezoneChange, initialTimestamp, timeString]);
 
   useEffect(() => {
     if (!dateString || !timeString) return;
