@@ -72,7 +72,7 @@
   },
   "credits": {
     "title": "Credite",
-    "intro": "Acest site este un software open-source dezvoltat de <1>{{{developerName}}</1> folosind <3>Font Awesome Free</3> și <5>Mantine</5>. Este disponibil în mai multe limbi datorită traducătorilor voluntari.",
+    "intro": "Acest site este un software open-source dezvoltat de <1>{{developerName}}</1> folosind <3>Font Awesome Gratuit</3> și <5>Mantine</5>. Este disponibil în mai multe limbi datorită traducătorilor voluntari.",
     "translationsBy": "Traduceri de <1></1>",
     "incompleteTranslations": "Traducerile sunt incomplete",
     "contributeTranslations": "Contribuiți"
