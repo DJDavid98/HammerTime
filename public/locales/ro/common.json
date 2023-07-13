@@ -1,27 +1,27 @@
 {
-  "seoDescription": "Generați indicatori de marcaj de timp pentru mesajele de chat Discord",
-  "howTo": "Alegeți o dată, copiați marcajul de timp dorit din {{syntaxColName}} coloană, apoi lipiți-l oriunde într-un mesaj de chat. Rezultatul va fi un marcaj temporal dinamic care se afișează diferit pentru fiecare, în funcție de propriul fus orar.",
+  "seoDescription": "Generați indicatori de timestamp pentru mesajele de chat Discord",
+  "howTo": "Alegeți o dată, copiați data și ora dorite din coloana {{syntaxColName}}, apoi inserați-o oriunde într-un mesaj de chat. Rezultatul va fi un timestamp dinamic care se afișează diferit pentru fiecare persoană în funcție de propriul fus orar.",
   "input": {
     "timezone": "Fus orar",
-    "datetime": "Data și ora",
+    "datetime": "Data și timpu",
     "date": "Data",
     "time": "Timpu",
     "settings": {
       "label": "Setări de intrare",
       "customInputs": {
         "label": "Intrări personalizate",
-        "explanation": "Înlocuiește intrările implicite cu altele care se potrivesc cu limba curentă în loc de cea a browserului dvs"
+        "explanation": "Înlocuiește intrările implicite cu cele care corespund limbii curente în loc de cea a browserului dvs"
       },
       "separateInputs": {
         "label": "Intrări separate",
-        "explanation": "Afișează două intrări diferite pentru dată și oră în loc de una combinată (care nu este acceptată în unele browsere)"
+        "explanation": "Afișarea a două intrări diferite pentru dată și oră în loc de una combinată (care nu este acceptată în unele browsere)"
       }
     }
   },
   "buttons": {
     "copy": "Copiați în clipboard",
-    "setCurrentTime": "Setați la ora curentă",
-    "lock": "Blocați marca temporală prin URL",
+    "setCurrentTime": "Setează ora curentă",
+    "lock": "Blocare timestamp prin URL",
     "unlock": "Deblocați marca temporală"
   },
   "table": {
@@ -29,7 +29,7 @@
     "example": "Exemplu de rezultat"
   },
   "usefulLinks": {
-    "lead": "De asemenea, puteți găsi utile acestea:",
+    "lead": "S-ar putea să vă fie utile și acestea:",
     "server": {
       "header": "Server oficial HammerTime",
       "p": "Discutați site-ul web, testați sintaxa și sugerați caracteristici"
@@ -43,7 +43,7 @@
       "p": "O aplicație simplă care creează mesaje Discord colorate folosind coduri de culoare ANSI"
     }
   },
-  "changeLanguage": "Schimbă limba",
+  "changeLanguage": "Schimbați limba",
   "notFound": {
     "heading": "Nu a fost găsit",
     "content": "Nimic de văzut aici."
