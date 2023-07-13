@@ -81,6 +81,7 @@ English and Hungarian translations have been included, so no translators will be
   - [Casper](https://crowdin.com/profile/JajarGG)
   - [Tiago](https://crowdin.com/profile/DemiCool)
 - 🇧🇷 Portuguese, Brazilian
+  - [Chris](https://crowdin.com/profile/Chrisdbhr)
   - [leo0six](https://crowdin.com/profile/leo0six)
   - [ShadowG](https://crowdin.com/profile/ShadowG)
 - 🇷🇴 Romanian: [mihai](https://crowdin.com/profile/mihaiofficialRO)

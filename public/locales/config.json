@@ -396,9 +396,12 @@
         },
         {
           "crowdin": "ShadowG"
+        },
+        {
+          "crowdin": "Chrisdbhr",
+          "displayName": "Chris"
         }
-      ],
-      "percent": 78
+      ]
     },
     "ro": {
       "name": "Romanian",
