@@ -202,6 +202,17 @@
       ],
       "percent": 78
     },
+    "hi": {
+      "name": "Hindi",
+      "nativeName": "हिंदी",
+      "countryCode": "IN",
+      "emoji": "\uD83C\uDDEE\uD83C\uDDF3",
+      "credits": [
+        {
+          "crowdin": "Balajiasli"
+        }
+      ]
+    },
     "he": {
       "name": "Hebrew",
       "nativeName": "עִברִית",

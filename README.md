@@ -60,6 +60,7 @@ English and Hungarian translations have been included, so no translators will be
   - [julix00](https://crowdin.com/profile/julix00)
 - 🇬🇷 Greek: [BelleBernice](https://crowdin.com/profile/BelleBernice)
 - 🇮🇱 Hebrew: [Amit Cohen](https://crowdin.com/profile/ZeRealOne)
+- 🇮🇳 Hindi: [Balajiasli](https://crowdin.com/profile/Balajiasli)
 - 🇮🇩 Indonesian: [Jackie](https://crowdin.com/profile/jackiecr2911)
 - 🇮🇹 Italian: [RVG|𝓵𝓸𝓻𝔂](https://top.gg/bot/1076200668810985634)
 - 🇯🇵 Japanese
