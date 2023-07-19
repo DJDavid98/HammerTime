@@ -43,6 +43,7 @@
       "emoji": "\uD83C\uDDE8\uD83C\uDDF3",
       "crowdinLocale": "zh-CN",
       "momentLocale": "zh-cn",
+      "dayjsLocale": "zh-cn",
       "calendarLabelFormat": "YYYY年MMM",
       "calendarYearLabelFormat": "YYYY年",
       "credits": [
@@ -64,6 +65,7 @@
       "countryCode": "TW",
       "emoji": "\uD83C\uDDF9\uD83C\uDDFC",
       "momentLocale": "zh-tw",
+      "dayjsLocale": "zh-tw",
       "calendarLabelFormat": "YYYY年MMM",
       "calendarYearLabelFormat": "YYYY年",
       "credits": [
@@ -132,7 +134,8 @@
       "nativeName": "English, UK",
       "countryCode": "GB",
       "emoji": "\uD83C\uDDEC\uD83C\uDDE7",
-      "momentLocale": "en-gb"
+      "momentLocale": "en-gb",
+      "dayjsLocale": "en-gb"
     },
     "en": {
       "name": "English, United States",
@@ -400,6 +403,7 @@
       "countryCode": "BR",
       "emoji": "\uD83C\uDDE7\uD83C\uDDF7",
       "momentLocale": "pt-br",
+      "dayjsLocale": "pt-br",
       "calendarWeekdayFormat": "ddd",
       "credits": [
         {
