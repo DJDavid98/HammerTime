@@ -56,6 +56,7 @@
     "import/extensions": "off",
     "import/no-dynamic-require": "off",
     "import/prefer-default-export": "off",
+    "import/no-extraneous-dependencies": "off",
     "indent": "off",
     "jsx-a11y/anchor-is-valid": "off",
     "jsx-a11y/click-events-have-key-events": "off",
@@ -114,6 +115,7 @@
         "allowTemplateLiterals": true
       }
     ],
+    "no-await-in-loop": "off",
     "react/jsx-filename-extension": [
       "error",
       {

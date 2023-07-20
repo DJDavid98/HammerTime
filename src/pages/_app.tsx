@@ -12,7 +12,7 @@ import 'src/fontawesome';
 import { assembleSeoUrl, canonicalUrlForLanguage, getDirAttribute, useLocale } from 'src/util/common';
 import { getEmotionCache, themeOverride } from 'src/util/styling';
 import '../app.scss';
-import '../dayjs-locales';
+import '../dayjs';
 import '../moment-locales';
 
 const App: AppComponent = ({ Component, pageProps }) => {
@@ -68,7 +68,7 @@ const App: AppComponent = ({ Component, pageProps }) => {
           images: [
             {
               alt: '<t:1626299131:R> ⬇ 5 hours ago',
-              url: assembleSeoUrl(`/social/${momentLocale}.png`),
+              url: assembleSeoUrl(`/social/preview/${momentLocale}.png`),
               width: 1200,
               height: 630,
             },

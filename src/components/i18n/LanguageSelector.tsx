@@ -10,20 +10,10 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { FC, Fragment, useCallback, useMemo, useState } from 'react';
 import { AvailableLanguage, LANGUAGES } from 'src/config';
-import { TranslationCredit } from 'src/model/translation-credit';
 import { getDirAttribute } from 'src/util/common';
+import { normalizeCredit, NormalizedCredits } from 'src/util/translation';
 
 const flagIconSize = 32;
-
-interface NormalizedCredits {
-  displayName: string;
-  url: string;
-}
-
-const normalizeCredit = (credit: TranslationCredit): NormalizedCredits => ({
-  displayName: credit.displayName ?? credit.crowdin,
-  url: credit.url ?? `https://crowdin.com/profile/${credit.crowdin}`,
-});
 
 const TranslationCredits: FC<{ credits: NormalizedCredits[] }> = ({ credits }) => (
   <>
