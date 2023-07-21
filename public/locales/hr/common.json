@@ -48,8 +48,6 @@
     "heading": "Nije pronađeno",
     "content": "Ovdje se nema što vidjeti."
   },
-  "builtWith": "Web stranica izrađena pomoću <1>Font Awesome Free</1>",
-  "openSource": "Softver otvorenog koda",
   "viewSource": "Pogledaj izvorni kod",
   "notAffiliated": "Ovaj projekt nije povezan s Discordom.",
   "jsDisabled": {
@@ -69,7 +67,8 @@
       "previousYearLabel": "prošla godina",
       "nextDecadeLabel": "sljedeće desetljeće",
       "previousDecadeLabel": "prethodno desetljeće"
-    }
+    },
+    "toggleSidebarPosition": "Pomaknite bočnu traku na suprotnu stranu"
   },
   "credits": {
     "title": "Zasluge",
