@@ -573,6 +573,10 @@
       "credits": [
         {
           "crowdin": "muharslan"
+        },
+        {
+          "crowdin": "Developer_X",
+          "displayName": "Muhammad Dawood"
         }
       ],
       "percent": 98
