@@ -48,13 +48,16 @@
     "heading": "Hittades inte",
     "content": "Inget att se här."
   },
-  "builtWith": "Webbplatsen är byggd med <1>Font Awesome Free</1>",
-  "openSource": "Öppen källkod",
   "viewSource": "Se källkoden",
   "notAffiliated": "Detta projekt är inte kopplat till Discord.",
   "jsDisabled": {
     "title": "JavaScript krävs",
     "body": "Din webbläsare stödjer inte JavaScript eller så är det inaktiverat för tillfället. Vissa webbläsare inaktiverar JavaScript som standard för säkerhetsskäl, men det är nödvändigt för den här applikationen. Aktivera det och uppdatera sidan, eller använd en annan webbläsare."
+  },
+  "timeSync": {
+    "syncing": "Synkroniserar tiden med servern…",
+    "outOfSync": "Din enhets tid verkar vara felaktig, detta kan leda till beräkningsfel (skillnad: {{deltaTimeMs}}ms)",
+    "inSync": "Tid synkroniserad (skillnad: {{deltaTimeMs}}ms)"
   },
   "a11y": {
     "calendar": {
@@ -64,6 +67,14 @@
       "previousYearLabel": "föregående år",
       "nextDecadeLabel": "nästa årtionde",
       "previousDecadeLabel": "föregående årtionde"
-    }
+    },
+    "toggleSidebarPosition": "Flytta sidofältet till motsatt sida"
+  },
+  "credits": {
+    "title": "Erkännanden",
+    "intro": "Denna webbplats är en programvara med öppen källkod som utvecklats av <1>{{developerName}}</1> med hjälp av <3>Font Awesome Free</3> och <5>Mantine</5>. Den finns tillgänglig på flera språk tack vare frivilliga översättare.",
+    "translationsBy": "Översättningar av <1></1>",
+    "incompleteTranslations": "Översättningarna är ofullständiga",
+    "contributeTranslations": "Bidra"
   }
 }
