@@ -48,13 +48,16 @@
     "heading": "찾을 수 없음",
     "content": "아무것도 없네요."
   },
-  "builtWith": "<1>Font Awesome Free</1>를 사용함",
-  "openSource": "오픈 소스 소프트웨어",
   "viewSource": "소스 코드 보기",
   "notAffiliated": "이 프로젝트는 Discord Inc.와 아무런 관련이 없습니다.",
   "jsDisabled": {
     "title": "JavaScript가 필요합니다",
     "body": "현재 사용하고 계시는 브라우저가 JavaScript를 지원하지 않거나, JavaScript를 끄고 있습니다. 일부 브라우저는 보안상의 이유로 기본값으로 JavaScript를 끄지만, 이 앱은 JavaScript를 사용합니다. JavaScript를 키고 페이지를 새로고침하거나, 다른 브라우저를 사용해 주세요."
+  },
+  "timeSync": {
+    "syncing": "서버와 시간 동기화 중…",
+    "outOfSync": "기기 시간이 틀어진 거 같네요. 계산 에러로 이어질 수도 있습니다. (오차: {{deltaTimeMs}}ms)",
+    "inSync": "시간 동기화 완료 (오차: {{deltaTimeMs}}ms)"
   },
   "a11y": {
     "calendar": {
@@ -64,6 +67,14 @@
       "previousYearLabel": "이전 해",
       "nextDecadeLabel": "다음 10년",
       "previousDecadeLabel": "이전 10년"
-    }
+    },
+    "toggleSidebarPosition": "사이드바를 반대쪽으로 이동"
+  },
+  "credits": {
+    "title": "크레딧",
+    "intro": "이 웹사이트는 <3>Font Awesome Free</3>와 <5>Mantine</5>을 사용하며, <1>{{developerName}}</1>에 의해 개발된 오픈 소스 소프트웨어입니다. 자원 봉사 번역가들에 의해 여러 언어로 제공되고 있습니다.",
+    "translationsBy": "번역: <1></1>",
+    "incompleteTranslations": "번역 미완료",
+    "contributeTranslations": "기여하기"
   }
 }
