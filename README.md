@@ -102,6 +102,7 @@ English and Hungarian translations have been included, so no translators will be
 - 🇸🇪 Swedish
   - [joll05](https://crowdin.com/profile/joll05)
   - [Liggliluff](https://github.com/Liggliluff)
+  - [Patrick Tobias](https://crowdin.com/profile/patricktobias)
   - [tunket](https://crowdin.com/profile/tunket)
 - 🇹🇭 Thai: [Rukchad Wongprayoon](https://crowdin.com/profile/unpredictable)
 - 🇹🇷 Turkish: [tututuana](https://github.com/tututuana)

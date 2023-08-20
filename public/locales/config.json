@@ -517,6 +517,10 @@
         },
         {
           "crowdin": "tunket"
+        },
+        {
+          "crowdin": "patricktobias",
+          "displayName": "Patrick Tobias"
         }
       ],
       "percent": 78
