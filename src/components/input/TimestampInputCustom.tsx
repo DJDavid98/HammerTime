@@ -27,6 +27,7 @@ export const TimestampInputCustom: FC<TimestampInputProps> = ({
   handleTimeChange,
   handleDateTimeChange,
 }) => {
+  const [withSeconds, setWithSeconds] = useState(true);
   const date = useMemo(() => {
     if (!dateString) {
       return new Date(0);
@@ -80,6 +81,19 @@ export const TimestampInputCustom: FC<TimestampInputProps> = ({
     timeInputRef.current?.showPicker();
   }, []);
 
+  /**
+   * This is a workaround because Firefox on Android has a bugged time selector when seconds are allowed
+   * @see https://github.com/DJDavid98/HammerTime/issues/153
+   */
+  useEffect(() => {
+    const lowerUserAgent = navigator.userAgent.toLowerCase();
+    const wordsForFirefoxOnAndroid = ['android', 'mobile', 'firefox/'];
+    const detectedAllWords = wordsForFirefoxOnAndroid.every((word) => lowerUserAgent.includes(word));
+    if (detectedAllWords) {
+      setWithSeconds(false);
+    }
+  }, []);
+
   if (combinedInput) {
     return (
       <DateTimePicker
@@ -125,7 +139,7 @@ export const TimestampInputCustom: FC<TimestampInputProps> = ({
           </ActionIcon>
         }
         onChange={handleTimeChange}
-        withSeconds
+        withSeconds={withSeconds}
         readOnly={fixedTimestamp}
         size={inputSize}
         ref={timeInputRef}
