@@ -6,7 +6,9 @@ import styles from 'modules/TimestampPicker.module.scss';
 import moment from 'moment-timezone';
 import { FC, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { AvailableLanguage, LANGUAGES } from 'src/config';
+import { useWithSeconds } from 'src/hooks/useWithSeconds';
 import { dateInputIcon, dateTimeInputIcons, timeInputIcon, TimestampInputProps } from 'src/model/timestamp-input-props';
+import { removeSecondsFromTimeString } from 'src/util/common';
 import { getDayStyle } from 'src/util/styling';
 import { isoParsingDateFormat, isoTimeFormat } from 'src/util/timezone';
 
@@ -27,7 +29,7 @@ export const TimestampInputCustom: FC<TimestampInputProps> = ({
   handleTimeChange,
   handleDateTimeChange,
 }) => {
-  const [withSeconds, setWithSeconds] = useState(true);
+  const withSeconds = useWithSeconds();
   const date = useMemo(() => {
     if (!dateString) {
       return new Date(0);
@@ -40,6 +42,7 @@ export const TimestampInputCustom: FC<TimestampInputProps> = ({
     () => LANGUAGES[language as AvailableLanguage],
     [language],
   );
+  const saferTimeString = useMemo(() => removeSecondsFromTimeString(timeString, withSeconds), [timeString, withSeconds]);
   const [today, setToday] = useState(() => new Date());
   const timeInputRef = useRef<HTMLInputElement>(null);
 
@@ -81,19 +84,6 @@ export const TimestampInputCustom: FC<TimestampInputProps> = ({
     timeInputRef.current?.showPicker();
   }, []);
 
-  /**
-   * This is a workaround because Firefox on Android has a bugged time selector when seconds are allowed
-   * @see https://github.com/DJDavid98/HammerTime/issues/153
-   */
-  useEffect(() => {
-    const lowerUserAgent = navigator.userAgent.toLowerCase();
-    const wordsForFirefoxOnAndroid = ['android', 'mobile', 'firefox/'];
-    const detectedAllWords = wordsForFirefoxOnAndroid.every((word) => lowerUserAgent.includes(word));
-    if (detectedAllWords) {
-      setWithSeconds(false);
-    }
-  }, []);
-
   if (combinedInput) {
     return (
       <DateTimePicker
@@ -106,7 +96,7 @@ export const TimestampInputCustom: FC<TimestampInputProps> = ({
         size={inputSize}
         className={styles['combined-input']}
         icon={<IconRenderer icons={dateTimeInputIcons} />}
-        withSeconds
+        withSeconds={withSeconds}
       />
     );
   }
@@ -132,7 +122,7 @@ export const TimestampInputCustom: FC<TimestampInputProps> = ({
       <TimeInput
         id={timeInputId}
         label={t('common:input.time')}
-        value={timeString}
+        value={saferTimeString}
         icon={
           <ActionIcon onClick={handleTimeIconClick}>
             <IconRenderer icons={timeInputIcon} />

@@ -2,6 +2,7 @@ import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import { Input, MantineSize } from '@mantine/core';
 import { IconRenderer } from 'components/IconRenderer';
 import { ChangeEventHandler, FC, useMemo } from 'react';
+import { useWithSeconds } from 'src/hooks/useWithSeconds';
 
 export interface DateTimeInputProps {
   id: string;
@@ -16,6 +17,8 @@ export interface DateTimeInputProps {
 }
 
 export const BrowserInput: FC<DateTimeInputProps> = ({ id, label, value, icon, onChange, type, readOnly, className, size }) => {
+  const withSeconds = useWithSeconds();
+  const step = useMemo(() => (withSeconds && type.includes('time') ? '1' : undefined), [withSeconds, type]);
   const icons = useMemo(() => {
     const iconArray = (typeof icon === 'string' ? [icon] : icon) as IconProp[];
     if (size === 'sm' && iconArray.length > 1) {
@@ -30,7 +33,7 @@ export const BrowserInput: FC<DateTimeInputProps> = ({ id, label, value, icon, o
         size={size}
         id={id}
         value={value}
-        step="1"
+        step={step}
         onChange={onChange}
         disabled={readOnly}
         tabIndex={readOnly ? -1 : undefined}

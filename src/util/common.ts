@@ -44,3 +44,6 @@ export const inputWithPickerClickHandler: MouseEventHandler<HTMLButtonElement> =
 
   target.focus();
 };
+
+export const removeSecondsFromTimeString = (timeString: string, withSeconds: boolean) =>
+  withSeconds ? timeString : timeString.replace(/:\d{2}$/, '');
