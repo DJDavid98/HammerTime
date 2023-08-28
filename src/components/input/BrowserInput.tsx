@@ -3,6 +3,7 @@ import { Input, MantineSize } from '@mantine/core';
 import { IconRenderer } from 'components/IconRenderer';
 import { ChangeEventHandler, FC, useMemo } from 'react';
 import { useWithSeconds } from 'src/hooks/useWithSeconds';
+import { removeSecondsFromTimeString } from 'src/util/common';
 
 export interface DateTimeInputProps {
   id: string;
@@ -18,7 +19,12 @@ export interface DateTimeInputProps {
 
 export const BrowserInput: FC<DateTimeInputProps> = ({ id, label, value, icon, onChange, type, readOnly, className, size }) => {
   const withSeconds = useWithSeconds();
-  const step = useMemo(() => (withSeconds && type.includes('time') ? '1' : undefined), [withSeconds, type]);
+  const typeContainsTime = useMemo(() => type.includes('time'), [type]);
+  const step = useMemo(() => (withSeconds && typeContainsTime ? '1' : undefined), [withSeconds, typeContainsTime]);
+  const saferValue = useMemo(
+    () => (typeContainsTime ? removeSecondsFromTimeString(value, withSeconds) : value),
+    [typeContainsTime, value, withSeconds],
+  );
   const icons = useMemo(() => {
     const iconArray = (typeof icon === 'string' ? [icon] : icon) as IconProp[];
     if (size === 'sm' && iconArray.length > 1) {
@@ -32,7 +38,7 @@ export const BrowserInput: FC<DateTimeInputProps> = ({ id, label, value, icon, o
         type={type}
         size={size}
         id={id}
-        value={value}
+        value={saferValue}
         step={step}
         onChange={onChange}
         disabled={readOnly}
