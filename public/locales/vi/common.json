@@ -39,7 +39,7 @@
       "pWithoutCommand": "Tạo lập định dạng thời gian tự động ngay trong Discord bằng các câu lệnh sử dụng gạch chéo"
     },
     "textColor": {
-      "header": "Trình tạo lập Tin nhắn <1>Sắc màu</1> của Rebane",
+      "header": "Trình tạo lập Tin nhắn <1>Sắc màu</1> của Rebane",
       "p": "Một ứng dụng đơn giản để tạo ra những tin nhắn đầy màu sắc trên Discord sử dụng mã màu ANSI"
     }
   },
