@@ -582,6 +582,18 @@
         }
       ],
       "percent": 98
+    },
+    "vi": {
+      "name": "Vietnamese",
+      "nativeName": "Tiếng Việt",
+      "countryCode": "VN",
+      "emoji": "\uD83C\uDDFB\uD83C\uDDF3",
+      "credits": [
+        {
+          "crowdin": "quanonthecob",
+          "displayName": "Quan"
+        }
+      ]
     }
   }
 }
