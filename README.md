@@ -113,3 +113,4 @@ English and Hungarian translations have been included, so no translators will be
 - 🇵🇰 Urdu (Pakistan)
   - [Muhammad Dawood](https://crowdin.com/profile/Developer_X)
   - [muharslan](https://crowdin.com/profile/muharslan)
+- 🇻🇳 Vietnamese: [Quan](https://crowdin.com/profile/quanonthecob)

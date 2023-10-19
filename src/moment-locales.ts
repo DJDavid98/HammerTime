@@ -33,6 +33,7 @@ import 'moment/locale/th';
 import 'moment/locale/tr';
 import 'moment/locale/uk';
 import 'moment/locale/ur';
+import 'moment/locale/vi';
 import 'moment/locale/zh-cn';
 import 'moment/locale/zh-tw';
 
