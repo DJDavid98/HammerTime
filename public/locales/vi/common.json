@@ -1,0 +1,80 @@
+{
+  "seoDescription": "Tạo lập định dạng thời gian tự động cho các tin nhắn trên Discord",
+  "howTo": "Lựa chọn một thời điểm, sao chép định dạng thời gian theo nhu cầu từ cột {{syntaxColName}}, và gắn định dạng này vào bất cứ đâu trong tin nhắn. Kết quả thu được sẽ là một con dấu thời gian tự động cập nhật dựa trên múi giờ của từng người dùng.",
+  "input": {
+    "timezone": "Múi giờ",
+    "datetime": "Ngày giờ",
+    "date": "Ngày tháng năm",
+    "time": "Giờ phút giây",
+    "settings": {
+      "label": "Tùy chỉnh định dạng nhập vào",
+      "customInputs": {
+        "label": "Dữ liệu nhập tùy chỉnh",
+        "explanation": "Thay thế định dạng mặc định bằng định dạng của ngôn ngữ hiện tại, thay vì định dạng của trình duyệt"
+      },
+      "separateInputs": {
+        "label": "Phân tách ô nhập dữ liệu",
+        "explanation": "Hiển thị hai ô nhập dữ liệu tách biệt cho ngày và giờ thay vì để chung một ô (việc để chung có thể không được hỗ trợ ở một số trình duyệt)"
+      }
+    }
+  },
+  "buttons": {
+    "copy": "Sao chép vào bảng nhớ tạm",
+    "setCurrentTime": "Đặt về thời điểm hiện tại",
+    "lock": "Cố định thời gian sử dụng đường dẫn URL",
+    "unlock": "Bỏ cố định thời gian"
+  },
+  "table": {
+    "syntax": "Định dạng tin nhắn",
+    "example": "Kết quả ví dụ"
+  },
+  "usefulLinks": {
+    "lead": "Những đường dẫn dưới đây có thể có ích đối với bạn:",
+    "server": {
+      "header": "Server chính thức của HammerTime",
+      "p": "Thảo luận về trang web, thử nghiệm định dạng và góp ý thêm các tính năng mới"
+    },
+    "bot": {
+      "header": "Robot HammerTime",
+      "pWithoutCommand": "Tạo lập định dạng thời gian tự động ngay trong Discord bằng các câu lệnh sử dụng gạch chéo"
+    },
+    "textColor": {
+      "header": "Trình tạo lập Tin nhắn <1>Sắc màu</1> của Rebane",
+      "p": "Một ứng dụng đơn giản để tạo ra những tin nhắn đầy màu sắc trên Discord sử dụng mã màu ANSI"
+    }
+  },
+  "changeLanguage": "Thay đổi ngôn ngữ",
+  "notFound": {
+    "heading": "Không tìm thấy",
+    "content": "Chẳng có gì ở đây cả."
+  },
+  "viewSource": "Xem mã nguồn",
+  "notAffiliated": "Dự án này không liên kết với Discord.",
+  "jsDisabled": {
+    "title": "Cần sử dụng JavaScript",
+    "body": "Trình duyệt của bạn có thể không hỗ trợ JavaScript hoặc chức năng này đã bị tắt. Một số trình duyệt mặc định vô hiệu hóa JavaScript vì lý do bảo mật, nhưng nó cần thiết cho hoạt động của ứng dụng chúng tôi. Vui lòng bật JavaScript và tải lại trang, hoặc sử dụng một trình duyệt khác."
+  },
+  "timeSync": {
+    "syncing": "Đang đồng bộ hóa thời gian với máy chủ…",
+    "outOfSync": "Thời gian trên thiết bị của bạn có vẻ không chính xác, điều này có thể dẫn đến các sai số trong tính toán (độ chênh lệch: {{deltaTimeMs}}ms)",
+    "inSync": "Đồng bộ hóa thời gian hoàn tất (độ chênh lệch: {{deltaTimeMs}}ms)"
+  },
+  "a11y": {
+    "calendar": {
+      "nextMonthLabel": "tháng sau",
+      "previousMonthLabel": "tháng trước",
+      "nextYearLabel": "năm sau",
+      "previousYearLabel": "năm trước",
+      "nextDecadeLabel": "thập kỷ sau",
+      "previousDecadeLabel": "thập kỷ trước"
+    },
+    "toggleSidebarPosition": "Dịch chuyển thanh cài đặt sang phía còn lại"
+  },
+  "credits": {
+    "title": "Các sự đóng góp",
+    "intro": "Trang web này là phần mềm với mã nguồn mở, được phát triển bởi <1>{{developerName}}</1> sử dụng <3>Font Awesome Free</3> và <5>Mantine</5>. Trang web hỗ trợ các ngôn ngữ khác nhau nhờ vào sự giúp đỡ của các phiên dịch viên tình nguyện.",
+    "translationsBy": "Bản dịch bởi <1></1>",
+    "incompleteTranslations": "Bản dịch chưa hoàn thiện",
+    "contributeTranslations": "Đóng góp thêm"
+  }
+}
