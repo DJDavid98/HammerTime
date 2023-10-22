@@ -38,6 +38,7 @@ English and Hungarian translations have been included, so no translators will be
   - [姓甚名谁](https://crowdin.com/profile/febilly)
 - 🇹🇼 Chinese Traditional
   - [CPYW_7226](https://crowdin.com/profile/CPYW_7226)
+  - [investigator VT](https://crowdin.com/profile/ms.investigator)
   - [Jackie](https://crowdin.com/profile/jackiecr2911)
   - [notlin4](https://crowdin.com/profile/notlin4)
 - 🇭🇷 Croatian: [Volvone](https://github.com/volvone)
@@ -78,6 +79,7 @@ English and Hungarian translations have been included, so no translators will be
   - [MinerPL](https://github.com/minerpl)
   - [stha](https://crowdin.com/profile/sthakrk)
 - 🇵🇹 Portuguese
+  - [Alexandre Savchyshkin](https://crowdin.com/profile/alexsav004)
   - [buckshot-](https://crowdin.com/profile/buckshot-)
   - [Casper](https://crowdin.com/profile/JajarGG)
   - [Tiago](https://crowdin.com/profile/DemiCool)

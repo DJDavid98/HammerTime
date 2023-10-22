@@ -78,9 +78,12 @@
         },
         {
           "crowdin": "notlin4"
+        },
+        {
+          "crowdin": "ms.investigator",
+          "displayName": "investigator VT"
         }
-      ],
-      "percent": 85
+      ]
     },
     "hr": {
       "name": "Croatian",
@@ -202,8 +205,7 @@
         {
           "crowdin": "BelleBernice"
         }
-      ],
-      "percent": 78
+      ]
     },
     "hi": {
       "name": "Hindi",
@@ -392,9 +394,12 @@
         },
         {
           "crowdin": "buckshot-"
+        },
+        {
+          "crowdin": "alexsav004",
+          "displayName": "Alexandre Savchyshkin"
         }
-      ],
-      "percent": 78
+      ]
     },
     "pt-BR": {
       "name": "Portuguese, Brazilian",
