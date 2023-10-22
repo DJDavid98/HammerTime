@@ -48,13 +48,16 @@
     "heading": "Não Encontrado",
     "content": "Nada para visualizar aqui."
   },
-  "builtWith": "Site construído com <1>Font Awesome Free</1>",
-  "openSource": "Programa com código aberto",
   "viewSource": "Ver código fonte",
   "notAffiliated": "Este projeto não é afiliado ao Discord.",
   "jsDisabled": {
     "title": "JavaScript é necessário",
     "body": "O seu browser ou não suporta JavaScript, ou está atualmente desativado. Alguns navegadores desativam o JavaScript por padrão por razões de segurança, mas é necessário para esta aplicação. Por favor, ative-o e atualize a página, ou utilize um navegador diferente."
+  },
+  "timeSync": {
+    "syncing": "Sincronizando horário com o servidor…",
+    "outOfSync": "As horas do seu dispositivo parecem estar desligadas, isso pode levar a erros de cálculo (diferença: {{deltaTimeMs}}ms)",
+    "inSync": "Tempo sincronizado (diferença: {{deltaTimeMs}}ms)"
   },
   "a11y": {
     "calendar": {
@@ -64,6 +67,14 @@
       "previousYearLabel": "ano anterior",
       "nextDecadeLabel": "próxima década",
       "previousDecadeLabel": "década anterior"
-    }
+    },
+    "toggleSidebarPosition": "Mova a barra lateral para o lado oposto"
+  },
+  "credits": {
+    "title": "Créditos",
+    "intro": "Este sítio Web é um software de código aberto desenvolvido por <1>{{developerName}}</1> usando <3>Font Awesome Free</3> e <5>Mantine</5>. Está disponível em várias línguas graças a tradutores voluntários.",
+    "translationsBy": "Tradução por <1></1>",
+    "incompleteTranslations": "As traduções estão incompletas",
+    "contributeTranslations": "Contribuir"
   }
 }

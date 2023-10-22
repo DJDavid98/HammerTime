@@ -1,16 +1,16 @@
 {
-  "seoDescription": "為 Discord 聊天消息生成時間戳指示符",
-  "howTo": "選擇一個日期，從 {{syntaxColName}} 列複製所需的時間戳，並將其粘貼到聊天消息的任何位置。 結果將是一個動態時間戳，每個人都會根據他們的時區以不同的方式顯示。",
+  "seoDescription": "為 Discord 聊天訊息生成時間戳指示符",
+  "howTo": "選擇一個日期，從 {{syntaxColName}} 列複製所需的時間戳，並將其貼上到聊天訊息的任何位置。 結果將是一個動態時間戳，每個人都會根據他們的時區以不同的方式顯示。",
   "input": {
     "timezone": "時區",
     "datetime": "日期和時間",
     "date": "日期",
     "time": "時間",
     "settings": {
-      "label": "輸入設置",
+      "label": "輸入設定",
       "customInputs": {
-        "label": "自定義輸入",
-        "explanation": "將默認輸入替換為與當前語言而不是瀏覽器匹配的輸入。"
+        "label": "自訂輸入",
+        "explanation": "將預設輸入替換為與當前語言而不是瀏覽器匹配的輸入。"
       },
       "separateInputs": {
         "label": "單獨輸入",
@@ -19,8 +19,8 @@
     }
   },
   "buttons": {
-    "copy": "複製到剪貼板",
-    "setCurrentTime": "設置為當前時間",
+    "copy": "複製到剪貼簿",
+    "setCurrentTime": "設定為目前時間",
     "lock": "通過 url 鎖定時間戳。",
     "unlock": "解鎖時間戳"
   },
@@ -31,15 +31,16 @@
   "usefulLinks": {
     "lead": "您可能還會發現這些有用：",
     "server": {
-      "header": "官方 HammerTime 服務器",
+      "header": "官方 HammerTime 伺服器",
       "p": "討論站點、測試語法和建議功能"
     },
     "bot": {
-      "header": "HammerTime 機器人"
+      "header": "HammerTime 機器人",
+      "pWithoutCommand": "在 Discord 中使用斜線指令生成時間戳記"
     },
     "textColor": {
       "header": "Rebane 的 <1>彩色</1> 文本生成器",
-      "p": "使用 ANSI 顏色代碼創建彩色 Discord 消息的簡單應用程序"
+      "p": "使用 ANSI 顏色代碼建立彩色 Discord 訊息的簡單應用程式"
     }
   },
   "changeLanguage": "改變語言",
@@ -47,13 +48,16 @@
     "heading": "未找到",
     "content": "這沒東西看"
   },
-  "builtWith": "使用 <1>Font Awesome Free</1> 構建的網站",
-  "openSource": "開源軟件",
-  "viewSource": "查看源代碼",
-  "notAffiliated": "該項目不隸屬於 Discord",
+  "viewSource": "檢視原始碼",
+  "notAffiliated": "該專案不隸屬於 Discord",
   "jsDisabled": {
     "title": "JavaScript 是必需的",
-    "body": "您的瀏覽器要么不支持 JavaScript，要么當前被禁用。 出於安全原因，某些瀏覽器默認禁用 JavaScript，但對於此應用程序來說，這是必需的。 請啟用它並刷新頁面，或使用其他瀏覽器。"
+    "body": "您的瀏覽器不支援 JavaScript 或目前已停用。出於安全考量，有些瀏覽器預設會停用 JavaScript，但對於這個應用程式來說，啟用 JavaScript 是必要的。請啟用 JavaScript 並重新整理頁面，或使用其他瀏覽器。"
+  },
+  "timeSync": {
+    "syncing": "與伺服器同步時間…",
+    "outOfSync": "您的裝置時間似乎不正確，這可能導致計算錯誤（差異：{{deltaTimeMs}} 毫秒）。",
+    "inSync": "時間已同步（差異：{{deltaTimeMs}} 毫秒）。"
   },
   "a11y": {
     "calendar": {
@@ -63,6 +67,14 @@
       "previousYearLabel": "上一年",
       "nextDecadeLabel": "下一個十年",
       "previousDecadeLabel": "前十年"
-    }
+    },
+    "toggleSidebarPosition": "將側邊面板移至另一側"
+  },
+  "credits": {
+    "title": "製作群",
+    "intro": "本網站是<1>{{developerName}}</1>使用了<3>Font Awesome Free</3>和<5>Mantine</5>開發而成的開源軟體。本站支援由志願者翻譯的多語言版本。",
+    "translationsBy": "翻譯者：<1></1>",
+    "incompleteTranslations": "未完整翻譯",
+    "contributeTranslations": "參與貢獻"
   }
 }
