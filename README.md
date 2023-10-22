@@ -46,6 +46,7 @@ English and Hungarian translations have been included, so no translators will be
   - [Blurplix](https://crowdin.com/profile/Blurplix)
   - [klauny](https://crowdin.com/profile/klauny)
   - [イーテルニティ ☄️](https://crowdin.com/profile/Ethxrnity)
+- 🇩🇰 Danish: [jovictasor](https://crowdin.com/profile/jovictasor)
 - 🇳🇱 Dutch: [Jesse](https://github.com/Jessuhh)
 - 🇫🇷 French
   - [Cookie Kiro](https://crowdin.com/profile/Cookikui)

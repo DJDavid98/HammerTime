@@ -599,6 +599,17 @@
           "displayName": "Quan"
         }
       ]
+    },
+    "da": {
+      "name": "Danish",
+      "nativeName": "Dansk",
+      "countryCode": "DK",
+      "emoji": "\uD83C\uDDE9\uD83C\uDDF0",
+      "credits": [
+        {
+          "crowdin": "jovictasor"
+        }
+      ]
     }
   }
 }
