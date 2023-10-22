@@ -1,0 +1,80 @@
+{
+  "seoDescription": "Generer tidsstempler til Discord beskeder",
+  "howTo": "Vælg en dato, kopier det ønskede tidsstempel fra kolonnen {{syntaxColName}}, og indsæt det hvor som helst i en besked. Resultatet vil være et dynamisk tidsstempel, der vises forskelligt for alle baseret på deres egen tidszone.",
+  "input": {
+    "timezone": "Tidszone",
+    "datetime": "Dato og tidspunkt",
+    "date": "Dato",
+    "time": "Tid",
+    "settings": {
+      "label": "Input indstillinger",
+      "customInputs": {
+        "label": "Brugerdefinerede input",
+        "explanation": "Erstatter standardinput med input, der matcher det aktuelle sprog i stedet for din browsers"
+      },
+      "separateInputs": {
+        "label": "Separer input",
+        "explanation": "Vis to forskellige inputs for dato og tid i stedet for en kombineret (som ikke understøttes i nogle browsere)"
+      }
+    }
+  },
+  "buttons": {
+    "copy": "Kopier til udklipsholder",
+    "setCurrentTime": "Indstil til aktuel tid",
+    "lock": "Lås tidsstempel via URL",
+    "unlock": "Oplås tidsstempel"
+  },
+  "table": {
+    "syntax": "Syntaks",
+    "example": "Resultat"
+  },
+  "usefulLinks": {
+    "lead": "Du kan også finde disse nyttige:",
+    "server": {
+      "header": "Officiell HammerTime-server",
+      "p": "Diskuter hjemmesiden, test syntaksen og foreslå funktioner"
+    },
+    "bot": {
+      "header": "HammerTime Bot",
+      "pWithoutCommand": "Generer tidsstempler fra Discord ved hjælp af slash kommandoer"
+    },
+    "textColor": {
+      "header": "Rebanes <1>farvede</1> tekstgenerator",
+      "p": "En simpel app, der skaber farvede Discord beskeder ved hjælp af ANSI farvekoder"
+    }
+  },
+  "changeLanguage": "Skift sprog",
+  "notFound": {
+    "heading": "Ikke Fundet",
+    "content": "Der er ikke noget at se her."
+  },
+  "viewSource": "Se kildekoden",
+  "notAffiliated": "Dette projekt er ikke forbundet med Discord.",
+  "jsDisabled": {
+    "title": "JavaScript er nødvendigt",
+    "body": "Din browser understøtter enten ikke JavaScript, eller også er det deaktiveret i øjeblikket. Nogle browsere deaktiverer JavaScript som standard af sikkerhedsmæssige årsager, men det er nødvendigt for denne applikation. Aktivér det, og opdater siden, eller brug en anden browser."
+  },
+  "timeSync": {
+    "syncing": "Synkronisering af tid med server...",
+    "outOfSync": "Din enheds tid virker forkert, det kan føre til beregningsfejl (forskel: {{deltaTimeMs}}ms)",
+    "inSync": "Tidssynkroniseret (forskel: {{deltaTimeMs}}ms)"
+  },
+  "a11y": {
+    "calendar": {
+      "nextMonthLabel": "næste måned",
+      "previousMonthLabel": "forrige måned",
+      "nextYearLabel": "næste år",
+      "previousYearLabel": "forrige år",
+      "nextDecadeLabel": "næste årti",
+      "previousDecadeLabel": "forrige årti"
+    },
+    "toggleSidebarPosition": "Flyt sidepanelet til den modsatte side"
+  },
+  "credits": {
+    "title": "Krediteringer",
+    "intro": "Denne hjemmeside er åben source-software udviklet af <1>{{developerName}}</1> ved hjælp af <3>Font Awesome Free</3> og <5>Mantine</5>. Den er tilgængelig på flere sprog takket være frivillige oversættere.",
+    "translationsBy": "Oversættelser af <1></1>",
+    "incompleteTranslations": "Oversættelserne er ufuldstændige",
+    "contributeTranslations": "Bidrage"
+  }
+}
