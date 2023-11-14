@@ -35,7 +35,8 @@
       "p": "Aptark tinklalapį, patikrink sintaksę ir siūlyk funkcijas"
     },
     "bot": {
-      "header": "„HammerTime“ botas"
+      "header": "„HammerTime“ botas",
+      "pWithoutCommand": "Laiko žymų generavimas \"Discord\" programoje su pasviraus brūkšnio komandomis"
     },
     "textColor": {
       "header": "<1>Spalvoto</1> teksto generatorius, sukurtas Rebane",
@@ -47,13 +48,16 @@
     "heading": "Rasti nepavyko",
     "content": "Čia nėra, ką pamatyti."
   },
-  "builtWith": "Tinklalapis buvo sukurtas naudojant <1>Font Awesome Free</1>",
-  "openSource": "Atvirojo kodo programa",
   "viewSource": "Peržiūrėti išeitinį kodą",
   "notAffiliated": "Šitas projektas nėra susijęs su „Discord“.",
   "jsDisabled": {
     "title": "Reikalingas JavaScript",
     "body": "Tavo naršyklė nepalaiko JavaScript arba jis išjungtas. Saugumo sumetimais kai kuriose naršyklėse JavaScript yra išjungtas pagal nutylėjimą, tačiau šioje puslapyje jis yra būtinas. Įjunk jį ir atnaujink puslapį arba naudok kitą naršyklę."
+  },
+  "timeSync": {
+    "syncing": "Sinchronizuojamas laikas…",
+    "outOfSync": "Jūsų prietaiso laikas atrodo klaidingas, tai gali sukelti skaičiavimo klaidas (skirtumas: {{deltaTimeMs}}ms)",
+    "inSync": "Laikas sinchronizuotas (skirtumas: {{deltaTimeMs}}ms)"
   },
   "a11y": {
     "calendar": {
@@ -63,6 +67,14 @@
       "previousYearLabel": "praėjusiais metais",
       "nextDecadeLabel": "kitą dešimtmetį",
       "previousDecadeLabel": "praėjusį dešimtmetį"
-    }
+    },
+    "toggleSidebarPosition": "Šoninės juostos perkėlimas į priešingą pusę"
+  },
+  "credits": {
+    "title": "Kūrėjų sąrašas",
+    "intro": "Ši svetainė yra atvirojo kodo programinė įranga, kurią sukūrė <1>{{developerName}}</1> naudojant <3>Font Awesome Free</3> ir <5>Mantine</5>. Savanorių vertėjų dėka ji yra prieinama keliomis kalbomis.",
+    "translationsBy": "Išvertė <1></1>",
+    "incompleteTranslations": "Vertimai nebaigti",
+    "contributeTranslations": "Prisidėti"
   }
 }
