@@ -327,6 +327,9 @@
       "credits": [
         {
           "crowdin": "tayloryte"
+        },
+        {
+          "crowdin": "Seenoc"
         }
       ],
       "percent": 75
