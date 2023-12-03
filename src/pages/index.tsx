@@ -108,21 +108,29 @@ export const IndexPage: NextPage<IndexPageProps> = ({ tzNames }) => {
   const handleDateChange = useMemo(
     () =>
       throttle((value: null | string) => {
+        // eslint-disable-next-line no-console
+        console.debug('handleDateChange', value);
         setDateString(value || momentToInputValue(moment(), isoFormattingDateFormat));
       }, 200),
     [],
   );
   const setDateTimeString = useCallback((value: string) => {
     const [dateStr, timeStr] = value.split(/[T ]/);
+    // eslint-disable-next-line no-console
+    console.debug('setDateTimeString', { dateStr, timeStr });
     setTimeString(timeStr);
     setDateString(dateStr);
   }, []);
   const handleTimeChange = useCallback((value: null | string) => {
+    // eslint-disable-next-line no-console
+    console.debug('handleTimeChange', value);
     setTimeString(value || momentToInputValue(moment(), isoTimeFormat));
   }, []);
   const handleDateTimeChange = useMemo(
     () =>
       throttle((value: string) => {
+        // eslint-disable-next-line no-console
+        console.debug('handleDateTimeChange', value);
         setDateTimeString(value || momentToInputValue(moment(), `${isoFormattingDateFormat} ${isoTimeFormat}`));
       }, 50),
     [setDateTimeString],
