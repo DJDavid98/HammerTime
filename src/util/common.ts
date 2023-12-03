@@ -47,3 +47,5 @@ export const inputWithPickerClickHandler: MouseEventHandler<HTMLButtonElement> =
 
 export const removeSecondsFromTimeString = (timeString: string, withSeconds: boolean) =>
   withSeconds ? timeString : timeString.replace(/:\d{2}$/, '');
+
+export const isNonEmptyString = (value: unknown): value is string => typeof value === 'string' && value.length > 0;

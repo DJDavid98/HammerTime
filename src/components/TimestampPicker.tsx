@@ -10,7 +10,8 @@ import styles from 'modules/TimestampPicker.module.scss';
 import moment from 'moment';
 import { FC, FunctionComponent, PropsWithChildren, useCallback, useEffect, useMemo, useState } from 'react';
 import { InputChangeHandler, TimestampInputProps } from 'src/model/timestamp-input-props';
-import { getTimezoneValue, isoFormattingDateFormat, isoTimeFormat, momentToTimeInputValue } from 'src/util/timezone';
+import { isNonEmptyString } from 'src/util/common';
+import { getTimezoneValue, isoFormattingDateFormat, isoTimeFormat, momentToInputValue } from 'src/util/timezone';
 
 interface TimezoneOptionType {
   label: string;
@@ -27,8 +28,8 @@ interface PropTypes {
   changeTimezone: (tz: null | string) => void;
   fixedTimestamp: boolean;
   handleDateChange: (value: string | null) => void;
-  handleTimeChange: (value: string | null) => void;
-  handleDateTimeChange: (value: string | null) => void;
+  handleTimeChange: (value: string) => void;
+  handleDateTimeChange: (value: string) => void;
   t: TFunction;
   language: string;
   timeString: string;
@@ -76,24 +77,32 @@ export const TimestampPicker: FC<PropTypes> = ({
 
   const handleDateChange: InputChangeHandler = useCallback(
     (value) => {
-      onDateChange(value && (value instanceof Date ? momentToTimeInputValue(moment(value), isoFormattingDateFormat) : value.target.value));
+      const updatedValue =
+        value && value instanceof Date ? momentToInputValue(moment(value), isoFormattingDateFormat) : value?.target.value;
+      if (isNonEmptyString(updatedValue) || customInputEnabled) {
+        onDateChange(updatedValue ?? '');
+      }
     },
-    [onDateChange],
+    [customInputEnabled, onDateChange],
   );
   const handleTimeChange: InputChangeHandler = useCallback(
     (value) => {
-      onTimeChange(value && (value instanceof Date ? momentToTimeInputValue(moment(value), isoTimeFormat) : value.target.value));
+      const updatedValue = value && value instanceof Date ? momentToInputValue(moment(value), isoTimeFormat) : value?.target.value;
+      if (isNonEmptyString(updatedValue)) {
+        onTimeChange(updatedValue);
+      }
     },
     [onTimeChange],
   );
   const handleDateTimeChange: InputChangeHandler = useCallback(
     (value) => {
-      onDateTimeChange(
-        value &&
-          (value instanceof Date
-            ? momentToTimeInputValue(moment(value), `${isoFormattingDateFormat} ${isoTimeFormat}`)
-            : value?.target.value),
-      );
+      const updatedValue =
+        value && value instanceof Date
+          ? momentToInputValue(moment(value), `${isoFormattingDateFormat} ${isoTimeFormat}`)
+          : value?.target.value;
+      if (isNonEmptyString(updatedValue)) {
+        onDateTimeChange(updatedValue);
+      }
     },
     [onDateTimeChange],
   );

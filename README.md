@@ -73,7 +73,9 @@ English and Hungarian translations have been included, so no translators will be
   - [Bin](https://crowdin.com/profile/cheesepickle12345678)
   - [김카츄 (sjk)](https://github.com/sjkim04)
 - 🇱🇻 Latvian: [Casper](https://crowdin.com/profile/JajarGG)
-- 🇱🇹 Lithuanian: [tayloryte](https://crowdin.com/profile/tayloryte)
+- 🇱🇹 Lithuanian
+  - [Seenoc](https://crowdin.com/profile/Seenoc)
+  - [tayloryte](https://crowdin.com/profile/tayloryte)
 - 🇲🇾 Malay: [Nurul Azeera Hidayah @ Muhammad Nur Hidayat Yasuyoshi (MNH48.moe)](https://crowdin.com/profile/mnh48)
 - 🇮🇷 Persian: [Mohammad Safa Gray](https://crowdin.com/profile/DeadMarco)
 - 🇵🇱 Polish

@@ -25,7 +25,7 @@ import {
   isoFormattingDateFormat,
   isoParsingDateFormat,
   isoTimeFormat,
-  momentToTimeInputValue,
+  momentToInputValue,
 } from 'src/util/timezone';
 
 interface IndexPageProps {
@@ -108,7 +108,7 @@ export const IndexPage: NextPage<IndexPageProps> = ({ tzNames }) => {
   const handleDateChange = useMemo(
     () =>
       throttle((value: null | string) => {
-        setDateString(value || momentToTimeInputValue(moment(), isoFormattingDateFormat));
+        setDateString(value || momentToInputValue(moment(), isoFormattingDateFormat));
       }, 200),
     [],
   );
@@ -118,12 +118,12 @@ export const IndexPage: NextPage<IndexPageProps> = ({ tzNames }) => {
     setDateString(dateStr);
   }, []);
   const handleTimeChange = useCallback((value: null | string) => {
-    setTimeString(value || momentToTimeInputValue(moment(), isoTimeFormat));
+    setTimeString(value || momentToInputValue(moment(), isoTimeFormat));
   }, []);
   const handleDateTimeChange = useMemo(
     () =>
-      throttle((value: null | string) => {
-        setDateTimeString(value || momentToTimeInputValue(moment(), `${isoFormattingDateFormat} ${isoTimeFormat}`));
+      throttle((value: string) => {
+        setDateTimeString(value || momentToInputValue(moment(), `${isoFormattingDateFormat} ${isoTimeFormat}`));
       }, 50),
     [setDateTimeString],
   );
@@ -132,7 +132,7 @@ export const IndexPage: NextPage<IndexPageProps> = ({ tzNames }) => {
     const guessed = moment.tz.guess();
     // Create a timestamp in local timezone and convert it to selected timezone
     const value = moment.tz(guessed).tz(safeTimezone);
-    setDateTimeString(momentToTimeInputValue(value));
+    setDateTimeString(momentToInputValue(value));
   }, [safeTimezone, setDateTimeString]);
 
   useEffect(() => {
@@ -149,7 +149,7 @@ export const IndexPage: NextPage<IndexPageProps> = ({ tzNames }) => {
       }
     }
     if (!clientMoment) clientMoment = moment().seconds(0).milliseconds(0);
-    const formatted = momentToTimeInputValue(clientMoment);
+    const formatted = momentToInputValue(clientMoment);
     handleDateTimeChange(formatted);
     if (clientTimezone) handleTimezoneChange(clientTimezone);
   }, [dateString, handleDateTimeChange, handleTimezoneChange, initialTimestamp, timeString]);
