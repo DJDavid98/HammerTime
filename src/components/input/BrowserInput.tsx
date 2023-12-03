@@ -40,7 +40,7 @@ export const BrowserInput: FC<DateTimeInputProps> = ({ id, label, value, icon, o
         id={id}
         value={saferValue}
         step={step}
-        onChange={onChange}
+        onInput={onChange}
         disabled={readOnly}
         tabIndex={readOnly ? -1 : undefined}
         icon={<IconRenderer icons={icons} />}
