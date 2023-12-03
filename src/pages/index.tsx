@@ -105,6 +105,13 @@ export const IndexPage: NextPage<IndexPageProps> = ({ tzNames }) => {
       }, 200),
     [setTimezone],
   );
+  const setDateTimeString = useCallback((value: string) => {
+    const [dateStr, timeStr] = value.split(/[T ]/);
+    // eslint-disable-next-line no-console
+    console.debug('setDateTimeString', { dateStr, timeStr });
+    setTimeString(timeStr);
+    setDateString(dateStr);
+  }, []);
   const handleDateChange = useMemo(
     () =>
       throttle((value: null | string) => {
@@ -114,18 +121,21 @@ export const IndexPage: NextPage<IndexPageProps> = ({ tzNames }) => {
       }, 200),
     [],
   );
-  const setDateTimeString = useCallback((value: string) => {
-    const [dateStr, timeStr] = value.split(/[T ]/);
-    // eslint-disable-next-line no-console
-    console.debug('setDateTimeString', { dateStr, timeStr });
-    setTimeString(timeStr);
-    setDateString(dateStr);
-  }, []);
-  const handleTimeChange = useCallback((value: null | string) => {
-    // eslint-disable-next-line no-console
-    console.debug('handleTimeChange', value);
-    setTimeString(value || momentToInputValue(moment(), isoTimeFormat));
-  }, []);
+  const handleTimeChange = useMemo(
+    () =>
+      throttle((value: null | string) => {
+        // eslint-disable-next-line no-console
+        console.debug('handleTimeChange', value);
+        if (typeof value === 'string') {
+          // If value only has 'HH:mm' add seconds
+          const paddedValue = value.length === 5 ? `${value}:00` : value;
+          setTimeString(paddedValue);
+          return;
+        }
+        setTimeString(momentToInputValue(moment(), isoTimeFormat));
+      }, 200),
+    [],
+  );
   const handleDateTimeChange = useMemo(
     () =>
       throttle((value: string) => {
@@ -161,6 +171,11 @@ export const IndexPage: NextPage<IndexPageProps> = ({ tzNames }) => {
     handleDateTimeChange(formatted);
     if (clientTimezone) handleTimezoneChange(clientTimezone);
   }, [dateString, handleDateTimeChange, handleTimezoneChange, initialTimestamp, timeString]);
+
+  useEffect(() => {
+    // eslint-disable-next-line no-console
+    console.debug({ dateString, timeString });
+  }, [dateString, timeString]);
 
   useEffect(() => {
     if (!dateString || !timeString) return;

@@ -79,10 +79,8 @@ export const TimestampPicker: FC<PropTypes> = ({
     (value) => {
       const updatedValue =
         value && value instanceof Date ? momentToInputValue(moment(value), isoFormattingDateFormat) : value?.target.value;
-      // eslint-disable-next-line no-debugger
-      debugger;
       // eslint-disable-next-line no-console
-      console.debug('handleDateChange', value);
+      console.debug('TimestampPicker#handleDateChange', updatedValue);
       if (isNonEmptyString(updatedValue) || customInputEnabled) {
         onDateChange(updatedValue ?? '');
       }
@@ -92,10 +90,8 @@ export const TimestampPicker: FC<PropTypes> = ({
   const handleTimeChange: InputChangeHandler = useCallback(
     (value) => {
       const updatedValue = value && value instanceof Date ? momentToInputValue(moment(value), isoTimeFormat) : value?.target.value;
-      // eslint-disable-next-line no-debugger
-      debugger;
       // eslint-disable-next-line no-console
-      console.debug('handleTimeChange', value);
+      console.debug('TimestampPicker#handleTimeChange', updatedValue);
       if (isNonEmptyString(updatedValue)) {
         onTimeChange(updatedValue);
       }
@@ -108,10 +104,8 @@ export const TimestampPicker: FC<PropTypes> = ({
         value && value instanceof Date
           ? momentToInputValue(moment(value), `${isoFormattingDateFormat} ${isoTimeFormat}`)
           : value?.target.value;
-      // eslint-disable-next-line no-debugger
-      debugger;
       // eslint-disable-next-line no-console
-      console.debug('handleDateTimeChange', value);
+      console.debug('TimestampPicker#handleDateTimeChange', updatedValue);
       if (isNonEmptyString(updatedValue)) {
         onDateTimeChange(updatedValue);
       }
