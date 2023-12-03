@@ -18,7 +18,7 @@ import { ParsedUrlQuery } from 'querystring';
 import { FC, PropsWithChildren, useCallback, useEffect, useMemo, useState } from 'react';
 import { AvailableLanguage, LANGUAGES } from 'src/config';
 import { useServerTimeSync } from 'src/hooks/useServerTimeSync';
-import { useLocale } from 'src/util/common';
+import { addSecondsToTimeString, useLocale } from 'src/util/common';
 import { typedServerSideTranslations } from 'src/util/i18n-server';
 import {
   getSortedNormalizedTimezoneNames,
@@ -107,16 +107,12 @@ export const IndexPage: NextPage<IndexPageProps> = ({ tzNames }) => {
   );
   const setDateTimeString = useCallback((value: string) => {
     const [dateStr, timeStr] = value.split(/[T ]/);
-    // eslint-disable-next-line no-console
-    console.debug('setDateTimeString', { dateStr, timeStr });
-    setTimeString(timeStr);
+    setTimeString(addSecondsToTimeString(timeStr));
     setDateString(dateStr);
   }, []);
   const handleDateChange = useMemo(
     () =>
       throttle((value: null | string) => {
-        // eslint-disable-next-line no-console
-        console.debug('handleDateChange', value);
         setDateString(value || momentToInputValue(moment(), isoFormattingDateFormat));
       }, 200),
     [],
@@ -124,23 +120,13 @@ export const IndexPage: NextPage<IndexPageProps> = ({ tzNames }) => {
   const handleTimeChange = useMemo(
     () =>
       throttle((value: null | string) => {
-        // eslint-disable-next-line no-console
-        console.debug('handleTimeChange', value);
-        if (typeof value === 'string') {
-          // If value only has 'HH:mm' add seconds
-          const paddedValue = value.length === 5 ? `${value}:00` : value;
-          setTimeString(paddedValue);
-          return;
-        }
-        setTimeString(momentToInputValue(moment(), isoTimeFormat));
+        setTimeString(addSecondsToTimeString(value) || momentToInputValue(moment(), isoTimeFormat));
       }, 200),
     [],
   );
   const handleDateTimeChange = useMemo(
     () =>
       throttle((value: string) => {
-        // eslint-disable-next-line no-console
-        console.debug('handleDateTimeChange', value);
         setDateTimeString(value || momentToInputValue(moment(), `${isoFormattingDateFormat} ${isoTimeFormat}`));
       }, 50),
     [setDateTimeString],
@@ -171,11 +157,6 @@ export const IndexPage: NextPage<IndexPageProps> = ({ tzNames }) => {
     handleDateTimeChange(formatted);
     if (clientTimezone) handleTimezoneChange(clientTimezone);
   }, [dateString, handleDateTimeChange, handleTimezoneChange, initialTimestamp, timeString]);
-
-  useEffect(() => {
-    // eslint-disable-next-line no-console
-    console.debug({ dateString, timeString });
-  }, [dateString, timeString]);
 
   useEffect(() => {
     if (!dateString || !timeString) return;
