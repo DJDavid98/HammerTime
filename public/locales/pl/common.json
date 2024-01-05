@@ -14,7 +14,7 @@
       },
       "separateInputs": {
         "label": "Oddzielne wejścia",
-        "explanation": "Wyświetla dwa różne wejścia na date i czas zamiast połączonych pól (które nie są obsługiwane przez niektórze przeglądarki)"
+        "explanation": "Wyświetla dwa różne wejścia na datę i czas zamiast połączonych pól (które nie są obsługiwane przez niektórze przeglądarki)"
       }
     }
   },
