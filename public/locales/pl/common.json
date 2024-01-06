@@ -14,7 +14,7 @@
       },
       "separateInputs": {
         "label": "Oddzielne wejścia",
-        "explanation": "Wyświetla dwa różne wejścia na date i czas zamiast połączonych pól (które nie są obsługiwane przez niektórze przeglądarki)"
+        "explanation": "Wyświetla dwa różne wejścia na datę i czas zamiast połączonych pól (które nie są obsługiwane przez niektóre przeglądarki)"
       }
     }
   },
@@ -72,7 +72,7 @@
   },
   "credits": {
     "title": "Autorzy",
-    "intro": "Ta strona jest oprogramowaniem open-source stworzonym przez <1>{{developerName}}</1> używając <3>Font Awesome Free</3> i <5>Mantine</5>. Jest dostępna w wielu językach dzięki tłumaczą wolontariuszom.",
+    "intro": "Ta strona jest oprogramowaniem open-source stworzonym przez <1>{{developerName}}</1> używając <3>Font Awesome Free</3> i <5>Mantine</5>. Jest dostępna w wielu językach dzięki tłumaczom wolontariuszom.",
     "translationsBy": "Tłumaczenia <1></1>",
     "incompleteTranslations": "Tłumaczenia są niekompletne",
     "contributeTranslations": "Wkład"
