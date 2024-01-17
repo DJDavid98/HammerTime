@@ -284,6 +284,10 @@
         },
         {
           "crowdin": "eai04191"
+        },
+        {
+          "crowdin": "sakana0580",
+          "displayName": "sakana"
         }
       ],
       "percent": 78
