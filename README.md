@@ -67,6 +67,7 @@ English and Hungarian translations have been included, so no translators will be
 - 🇮🇹 Italian: [RVG|𝓵𝓸𝓻𝔂](https://top.gg/bot/1076200668810985634)
 - 🇯🇵 Japanese
   - [eai04191](https://crowdin.com/profile/eai04191)
+  - [sakana](https://crowdin.com/profile/sakana0580)
   - [TheOnlyRAK](https://crowdin.com/profile/TheOnlyRAK)
   - [のむチュウ (sjk)](https://github.com/sjkim04)
 - 🇰🇷 Korean
@@ -110,7 +111,7 @@ English and Hungarian translations have been included, so no translators will be
   - [Liggliluff](https://github.com/Liggliluff)
   - [Patrick Tobias](https://crowdin.com/profile/patricktobias)
   - [tunket](https://crowdin.com/profile/tunket)
-- 🇹🇭 Thai: [Rukchad Wongprayoon](https://crowdin.com/profile/unpredictable)
+- 🇹🇭 Thai: [timelessnesses](https://github.com/timelessnesses)
 - 🇹🇷 Turkish: [tututuana](https://github.com/tututuana)
 - 🇺🇦 Ukrainian
   - [enky](https://crowdin.com/profile/enky)
