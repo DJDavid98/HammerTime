@@ -4,6 +4,7 @@ import { LoadingIndicator } from 'components/app/LoadingIndicator';
 import { useLocalSettings } from 'components/contexts/LocalSettingsProvider';
 import { useTranslation } from 'next-i18next';
 import { CSSProperties, FC } from 'react';
+import { useRouter } from 'next/router';
 
 const centerAlignedStyle: CSSProperties = {
   display: 'flex',
@@ -16,10 +17,13 @@ const transitionDuration = 500;
 
 export const AppLoadingOverlay: FC = () => {
   const theme = useMantineTheme();
+  const router = useRouter();
   const { t } = useTranslation();
   const { sidebarOnRight, sidebarOffDesktop, customInputEnabled, combinedInputsEnabled } = useLocalSettings();
 
-  const visible = [sidebarOnRight, sidebarOffDesktop, customInputEnabled, combinedInputsEnabled].some((value) => value === null);
+  const visible = [sidebarOnRight, sidebarOffDesktop, customInputEnabled, combinedInputsEnabled, router.isReady ? true : null].some(
+    (value) => value === null,
+  );
 
   return (
     <LoadingOverlay

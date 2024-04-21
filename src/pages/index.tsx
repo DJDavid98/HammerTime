@@ -145,6 +145,10 @@ export const IndexPage: NextPage<IndexPageProps> = ({ tzNames }) => {
 
     let clientMoment: Moment | undefined;
     let clientTimezone: string | null = null;
+    if (!router.isReady) {
+      // Router still initializing, wait for next execution before setting
+      return;
+    }
     if (typeof initialTimestamp === 'number') {
       const initialDate = moment.unix(initialTimestamp).utc(false);
       if (initialDate.isValid()) {
