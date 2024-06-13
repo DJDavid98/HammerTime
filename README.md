@@ -39,7 +39,6 @@ English and Hungarian translations have been included, so no translators will be
 - 🇹🇼 Chinese Traditional
   - [CPYW_7226](https://crowdin.com/profile/CPYW_7226)
   - [investigator VT](https://crowdin.com/profile/ms.investigator)
-  - [Jackie](https://crowdin.com/profile/jackiecr2911)
   - [notlin4](https://crowdin.com/profile/notlin4)
 - 🇭🇷 Croatian: [Volvone](https://github.com/volvone)
 - 🇨🇿 Czech
@@ -63,7 +62,7 @@ English and Hungarian translations have been included, so no translators will be
 - 🇬🇷 Greek: [BelleBernice](https://crowdin.com/profile/BelleBernice)
 - 🇮🇱 Hebrew: [Amit Cohen](https://crowdin.com/profile/ZeRealOne)
 - 🇮🇳 Hindi: [Balajiasli](https://crowdin.com/profile/Balajiasli)
-- 🇮🇩 Indonesian: [Jackie](https://crowdin.com/profile/jackiecr2911)
+- 🇮🇩 Indonesian: [Jackie](https://github.com/Jckcr)
 - 🇮🇹 Italian: [RVG|𝓵𝓸𝓻𝔂](https://top.gg/bot/1076200668810985634)
 - 🇯🇵 Japanese
   - [eai04191](https://crowdin.com/profile/eai04191)
