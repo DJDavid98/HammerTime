@@ -1,0 +1,11 @@
+.developer-credit {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  margin: 0.5em 0;
+  text-transform: none;
+
+  .developer-avatar {
+    margin-right: 0.5em;
+  }
+}

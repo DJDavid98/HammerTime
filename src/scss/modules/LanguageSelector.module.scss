@@ -25,25 +25,3 @@
     margin: 0 0.5rem;
   }
 }
-
-.translator {
-  display: flex;
-  flex-flow: row wrap;
-  gap: 0.25em;
-
-  .translator-item {
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    padding: 0 0.15em;
-
-    .translator-avatar {
-      display: inline-block;
-      margin-right: 0.25em;
-
-      img {
-        background-color: #fff;
-      }
-    }
-  }
-}

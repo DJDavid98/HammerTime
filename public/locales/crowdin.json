@@ -1,5 +1,5 @@
 {
-  "meta": "Generated at 2024-09-28T20:46:06.838Z",
+  "meta": "Generated at 2024-09-28T21:50:29.363Z",
   "users": {
     "DJDavid98": {
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/13617551/medium/89d4d6ca67dabd71e4738d8bbda1d337.png",
@@ -66,6 +66,11 @@
       "fullName": "ඞ111More1ඞ",
       "languages": ["ca", "zh-TW", "fr", "he", "ja", "ko", "lt", "pt", "ru", "sv", "th", "uk"]
     },
+    "lorypelli": {
+      "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/15096881/medium/00650463a370bd09c4622987cccb9b07.png",
+      "fullName": "Lory Pelli",
+      "languages": ["it"]
+    },
     "raphael.santiago.53": {
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/13734875/medium/b58cf5c12984f4ed0e2741c7f1b0e4f4.jpg",
       "fullName": "Raphael Santiago",
@@ -80,11 +85,6 @@
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/12680006/medium/9f5292343710ba9994afbec480ce02cc.png",
       "fullName": "Nurul Azeera Hidayah Muhammad Nur Hidayat Yasuyoshi (MNH48)",
       "languages": ["ms"]
-    },
-    "lorypelli": {
-      "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/15096881/medium/00650463a370bd09c4622987cccb9b07.png",
-      "fullName": "Lory Pelli",
-      "languages": ["it"]
     },
     "Rxshi": {
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/15078949/medium/ccf2fa657ac59b4017218b3b74c18f29.jpg",

@@ -8,6 +8,7 @@ export const CROWDIN_URL = 'https://crowdin.com/project/hammertime';
 export const FONTAWESOME_FREE_LICENSE_URL = 'https://fontawesome.com/license/free';
 export const DEVELOPER_NAME = 'DJDavid98';
 export const DEVELOPER_URL = 'https://djdavid98.art';
+export const DEVELOPER_AVATAR_URL = 'https://gravatar.com/avatar/f341ebe7cfc73b35ff4ec66897b5c30d?size=64';
 export const MANTINE_URL = 'https://mantine.dev';
 
 export const IS_CLIENT_SIDE = typeof window !== 'undefined';
@@ -28,7 +29,7 @@ export const CSP_HEADER = [
   `default-src 'self'`,
   `script-src ${DEV_MODE ? `* 'unsafe-inline' 'unsafe-hashes' ` : ''}'self' 'unsafe-eval'`,
   `style-src 'self' 'unsafe-inline' fonts.googleapis.com`,
-  `img-src 'self' data: cdn.jsdelivr.net crowdin-static.downloads.crowdin.com avatars.githubusercontent.com`,
+  `img-src 'self' data: cdn.jsdelivr.net crowdin-static.downloads.crowdin.com avatars.githubusercontent.com gravatar.com`,
   'font-src fonts.gstatic.com',
   `connect-src 'self' vitals.vercel-insights.com',
   'media-src 'self'`,

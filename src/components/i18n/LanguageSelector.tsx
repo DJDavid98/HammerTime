@@ -4,18 +4,14 @@ import { LanguageFlag } from 'components/i18n/LanguageFlag';
 import { UnfinishedTranslationsLink } from 'components/i18n/UnfinishedTranslationsLink';
 import toPairs from 'lodash/toPairs';
 import styles from 'modules/LanguageSelector.module.scss';
-import { Trans, useTranslation } from 'next-i18next';
+import { useTranslation } from 'next-i18next';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { FC, useCallback, useMemo, useState } from 'react';
 import { AvailableLanguage, LANGUAGES } from 'src/config';
 import { getDirAttribute } from 'src/util/common';
-import { IndexedReportData, normalizeCredit } from 'src/util/translation';
-import reportDataJson from 'public/locales/crowdin.json';
-import { TranslationCredits } from 'components/i18n/TranslationCredits';
 
 const flagIconSize = 32;
-const reportData: IndexedReportData = reportDataJson;
 
 export const LanguageSelector: FC = () => {
   const router = useRouter();
@@ -33,13 +29,6 @@ export const LanguageSelector: FC = () => {
   const currentLanguage = useMemo(() => (language in LANGUAGES ? LANGUAGES[language as AvailableLanguage] : undefined), [language]);
 
   const languagePercent = currentLanguage?.percent;
-  const translationCredits = useMemo(() => {
-    if (!currentLanguage?.credits) return null;
-
-    return currentLanguage.credits
-      .map((c) => normalizeCredit(c, reportData))
-      .sort((cr1, cr2) => cr1.displayName.localeCompare(cr2.displayName));
-  }, [currentLanguage?.credits]);
 
   return (
     <Box
@@ -60,14 +49,6 @@ export const LanguageSelector: FC = () => {
               {currentLanguage?.nativeName}
             </Text>
           </Group>
-          {translationCredits && (
-            <Text size="sm" transform="uppercase">
-              <Trans t={t} i18nKey="credits.translationsBy">
-                0
-                <TranslationCredits credits={translationCredits} />
-              </Trans>
-            </Text>
-          )}
           {typeof languagePercent === 'number' && <Text color="yellow">{t('credits.incompleteTranslations')}</Text>}
         </Box>
       </Group>

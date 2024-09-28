@@ -1,5 +1,5 @@
 import { config, library } from '@fortawesome/fontawesome-svg-core';
-import { faDiscord, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faDiscord, faGithub, faOsi } from '@fortawesome/free-brands-svg-icons';
 import { faCalendar as farCalendar } from '@fortawesome/free-regular-svg-icons';
 import {
   faBan,
@@ -17,12 +17,14 @@ import {
   faEye,
   faGlobe,
   faInfo,
+  faLanguage,
   faLifeRing,
   faLock,
   faTimes,
   faToggleOff,
   faToggleOn,
   faUnlock,
+  faUser,
   faUserClock,
 } from '@fortawesome/free-solid-svg-icons';
 
@@ -57,4 +59,7 @@ library.add(
   faBan,
   faChevronLeft,
   faChevronRight,
+  faUser,
+  faOsi,
+  faLanguage,
 );

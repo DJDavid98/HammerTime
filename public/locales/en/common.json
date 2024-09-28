@@ -77,6 +77,7 @@
     "incompleteTranslations": "Translations are incomplete",
     "contributeTranslations": "Contribute",
     "developedBy": "Developed by <1></1>",
-    "externalLibraries": "Developed using <1></1>"
+    "externalLibraries": "Using <1></1>",
+    "openSource": "Open-source software"
   }
 }
