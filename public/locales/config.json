@@ -9,8 +9,7 @@
       "calendarWeekdayFormat": "dddd",
       "credits": [
         {
-          "crowdin": "raphael.santiago.53",
-          "displayName": "Raphael Santiago"
+          "crowdin": "raphael.santiago.53"
         }
       ]
     },
@@ -54,8 +53,7 @@
           "crowdin": "User670"
         },
         {
-          "crowdin": "febilly",
-          "displayName": "姓甚名谁"
+          "crowdin": "febilly"
         }
       ]
     },
@@ -76,8 +74,7 @@
           "crowdin": "notlin4"
         },
         {
-          "crowdin": "ms.investigator",
-          "displayName": "investigator VT"
+          "crowdin": "ms.investigator"
         }
       ]
     },
@@ -106,8 +103,7 @@
           "crowdin": "klauny"
         },
         {
-          "crowdin": "Ethxrnity",
-          "displayName": "イーテルニティ ☄️"
+          "crowdin": "Ethxrnity"
         },
         {
           "crowdin": "Blurplix"
@@ -149,8 +145,7 @@
       "emoji": "\uD83C\uDDEB\uD83C\uDDF7",
       "credits": [
         {
-          "crowdin": "Cookikui",
-          "displayName": "Cookie Kiro"
+          "crowdin": "Cookikui"
         },
         {
           "crowdin": "Ouiouibaguette"
@@ -162,15 +157,10 @@
           "crowdin": "ValouFCH"
         },
         {
-          "crowdin": "graffiti34",
-          "displayName": "James Roger"
-        },
-        {
           "crowdin": "M4gicalCat"
         },
         {
-          "crowdin": "humain",
-          "displayName": "HumainAbsurde"
+          "crowdin": "humain"
         }
       ]
     },
@@ -181,8 +171,7 @@
       "emoji": "\uD83C\uDDE9\uD83C\uDDEA",
       "credits": [
         {
-          "crowdin": "carlos.diener",
-          "displayName": "Carlos Diener"
+          "crowdin": "carlos.diener"
         },
         {
           "crowdin": "Fabian9799"
@@ -223,8 +212,7 @@
       "weekendDays": [5, 6],
       "credits": [
         {
-          "crowdin": "ZeRealOne",
-          "displayName": "Amit Cohen"
+          "crowdin": "ZeRealOne"
         }
       ],
       "percent": 75
@@ -244,7 +232,6 @@
       "credits": [
         {
           "crowdin": "jckcr",
-          "displayName": "Jackie",
           "url": "https://github.com/Jckcr"
         }
       ]
@@ -257,8 +244,7 @@
       "weekendDays": [6, 0],
       "credits": [
         {
-          "crowdin": "pellilory126",
-          "displayName": "RVG|\uD835\uDCF5\uD835\uDCF8\uD835\uDCFB\uD835\uDD02",
+          "crowdin": "lorypelli",
           "url": "https://top.gg/bot/1076200668810985634"
         }
       ]
@@ -283,8 +269,7 @@
           "crowdin": "eai04191"
         },
         {
-          "crowdin": "sakana0580",
-          "displayName": "sakana"
+          "crowdin": "sakana0580"
         }
       ]
     },
@@ -297,8 +282,7 @@
       "calendarYearLabelFormat": "YYYY년",
       "credits": [
         {
-          "crowdin": "cheesepickle12345678",
-          "displayName": "Bin"
+          "crowdin": "cheesepickle12345678"
         },
         {
           "crowdin": "sjkim04",
@@ -314,8 +298,7 @@
       "emoji": "\uD83C\uDDF1\uD83C\uDDFB",
       "credits": [
         {
-          "crowdin": "JajarGG",
-          "displayName": "Casper"
+          "crowdin": "JajarGG"
         }
       ]
     },
@@ -343,8 +326,7 @@
       "blueDay": 6,
       "credits": [
         {
-          "crowdin": "mnh48",
-          "displayName": "Nurul Azeera Hidayah @ Muhammad Nur Hidayat Yasuyoshi (MNH48.moe)"
+          "crowdin": "mnh48"
         }
       ]
     },
@@ -356,8 +338,7 @@
       "rtl": true,
       "credits": [
         {
-          "crowdin": "DeadMarco",
-          "displayName": "Mohammad Safa Gray"
+          "crowdin": "DeadMarco"
         }
       ],
       "percent": 78
@@ -371,11 +352,11 @@
       "credits": [
         {
           "crowdin": "MinerPL",
+          "displayName": "MinerPL",
           "url": "https://github.com/minerpl"
         },
         {
-          "crowdin": "sthakrk",
-          "displayName": "stha"
+          "crowdin": "sthakrk"
         },
         {
           "crowdin": "meeekos"
@@ -390,12 +371,10 @@
       "calendarWeekdayFormat": "ddd",
       "credits": [
         {
-          "crowdin": "JajarGG",
-          "displayName": "Casper"
+          "crowdin": "JajarGG"
         },
         {
-          "crowdin": "DemiCool",
-          "displayName": "Tiago"
+          "crowdin": "DemiCool"
         },
         {
           "crowdin": "buckshot-"
@@ -418,8 +397,7 @@
           "crowdin": "ShadowG"
         },
         {
-          "crowdin": "Chrisdbhr",
-          "displayName": "Chris"
+          "crowdin": "Chrisdbhr"
         }
       ]
     },
@@ -430,8 +408,7 @@
       "emoji": "\uD83C\uDDF7\uD83C\uDDF4",
       "credits": [
         {
-          "crowdin": "mihaiofficialRO",
-          "displayName": "mihai"
+          "crowdin": "mihaiofficialRO"
         }
       ]
     },
@@ -448,28 +425,22 @@
           "crowdin": "JudeDM"
         },
         {
-          "crowdin": "NightyCloud",
-          "displayName": "Luna"
+          "crowdin": "NightyCloud"
         },
         {
-          "crowdin": "Aligatoor",
-          "displayName": "Nikita Sharikov"
+          "crowdin": "Aligatoor"
         },
         {
-          "crowdin": "arturfomenko8",
-          "displayName": "Крутой Бо"
+          "crowdin": "arturfomenko8"
         },
         {
-          "crowdin": "helppriklreyta",
-          "displayName": "Рейт"
+          "crowdin": "helppriklreyta"
         },
         {
-          "crowdin": "JudDayLum",
-          "displayName": "JudDayLum Official"
+          "crowdin": "JudDayLum"
         },
         {
-          "crowdin": "bill876",
-          "displayName": "Vladimir"
+          "crowdin": "bill876"
         }
       ]
     },
@@ -496,7 +467,7 @@
       "crowdinLocale": "es-ES",
       "credits": [
         {
-          "crowdin": "shaulyareaj",
+          "crowdin": "yareaj",
           "displayName": "Yareaj",
           "url": "https://github.com/Yareaj/"
         },
@@ -517,15 +488,15 @@
           "crowdin": "joll05"
         },
         {
-          "crowdin": "Liggliluff",
-          "url": "https://github.com/Liggliluff"
+          "displayName": "Liggliluff",
+          "url": "https://github.com/Liggliluff",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/822352?v=4&size=40"
         },
         {
           "crowdin": "tunket"
         },
         {
-          "crowdin": "patricktobias",
-          "displayName": "Patrick Tobias"
+          "crowdin": "patricktobias"
         }
       ]
     },
@@ -567,8 +538,7 @@
           "crowdin": "enky"
         },
         {
-          "crowdin": "WhiteBear60",
-          "displayName": "Myhailo Yaremenko"
+          "crowdin": "WhiteBear60"
         }
       ]
     },
@@ -583,8 +553,7 @@
           "crowdin": "muharslan"
         },
         {
-          "crowdin": "Developer_X",
-          "displayName": "Muhammad Dawood"
+          "crowdin": "Developer_X"
         }
       ],
       "percent": 98
@@ -596,8 +565,7 @@
       "emoji": "\uD83C\uDDFB\uD83C\uDDF3",
       "credits": [
         {
-          "crowdin": "quanonthecob",
-          "displayName": "Quan"
+          "crowdin": "quanonthecob"
         }
       ]
     },

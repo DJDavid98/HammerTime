@@ -1,4 +1,3 @@
-import type { AppI18nNamespaces } from 'react-i18next';
 import { LanguageConfig } from 'src/model/language-config';
 import localeConfig from '../../public/locales/config.json';
 
@@ -19,7 +18,7 @@ type LanguagesConfig = Record<AvailableLanguage, LanguageConfig>;
 
 export const LANGUAGES: LanguagesConfig = localeConfig.languages;
 
-export const DEFAULT_I18N_NAMESPACES: AppI18nNamespaces[] = ['common'];
+export const DEFAULT_I18N_NAMESPACES = ['common'];
 
 export const isAvailableLanguage = (language: string): language is AvailableLanguage => language in LANGUAGES;
 
@@ -29,8 +28,10 @@ export const CSP_HEADER = [
   `default-src 'self'`,
   `script-src ${DEV_MODE ? `* 'unsafe-inline' 'unsafe-hashes' ` : ''}'self' 'unsafe-eval'`,
   `style-src 'self' 'unsafe-inline' fonts.googleapis.com`,
-  `img-src 'self' data: cdn.jsdelivr.net; font-src fonts.gstatic.com`,
-  `connect-src 'self' vitals.vercel-insights.com; media-src 'self'`,
+  `img-src 'self' data: cdn.jsdelivr.net crowdin-static.downloads.crowdin.com avatars.githubusercontent.com`,
+  'font-src fonts.gstatic.com',
+  `connect-src 'self' vitals.vercel-insights.com',
+  'media-src 'self'`,
   `object-src 'none'`,
   `child-src 'none'`,
   `frame-src 'none'`,

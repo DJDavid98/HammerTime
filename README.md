@@ -27,6 +27,25 @@ everyone at once.
 
 English and Hungarian translations have been included, so no translators will be needed for these two languages.
 
+<details>
+<summary>How to set up Credits generation locally</summary>
+
+> [!NOTE]
+> This section is primarily for me, the developer, to be able to refer back to these instructions in the future. However, if you would like to know the process on how to set this up locally, feel free to read on.
+
+1. Obtain a Crowdin API token for your account at https://crowdin.com/settings#api-key
+   - You can enter any name you like
+   - Check the "Projects" scope and select "Read only" from the dropdown next to it
+   - Select "Read and write" in the "Reports" line inside "Projects"
+2. Make a copy of `.env.template` at the root of the repository called `.env`
+   - This file is normally ignored in version control, if you are committing your changes, make sure it id not included.
+3. Fill in the environment variables inside the `.env` file as follows:
+   - `CROWDIN_API_KEY` should be set to the token you just created
+   - `CROWDIN_PROJECT_IDENTIFIER` is the text-based identifier on the project, this is typically at the end of the project page URL, e.g. in https://crowdin.com/project/hammertime the value that should be entered here is `hammertime`. You must have manager access to the project in question for the script to find it.
+   - You can leave the rest of the values as-is.
+4. Now you can run `npm run dev` without the warning message related to credit generation
+</details>
+
 ### Credits
 
 - 🇸🇦 Arabic: [Raphael Santiago](https://crowdin.com/profile/raphael.santiago.53)
@@ -50,7 +69,6 @@ English and Hungarian translations have been included, so no translators will be
 - 🇫🇷 French
   - [Cookie Kiro](https://crowdin.com/profile/Cookikui)
   - [HumainAbsurde](https://crowdin.com/profile/humain)
-  - [James Roger](https://crowdin.com/profile/graffiti34)
   - [M4gicalCat](https://crowdin.com/profile/M4gicalCat)
   - [Ouiouibaguette](https://crowdin.com/profile/Ouiouibaguette)
   - [sivelswhy](https://crowdin.com/profile/sivelswhy)
@@ -58,12 +76,12 @@ English and Hungarian translations have been included, so no translators will be
 - 🇩🇪 German
   - [Carlos Diener](https://crowdin.com/profile/carlos.diener)
   - [Fabian9799](https://crowdin.com/profile/Fabian9799)
-  - [julix00](https://crowdin.com/profile/julix00)
-- 🇬🇷 Greek: [BelleBernice](https://crowdin.com/profile/BelleBernice)
+  - [Julius Geiger](https://crowdin.com/profile/julix00)
+- 🇬🇷 Greek: [Belle Bernice](https://crowdin.com/profile/BelleBernice)
 - 🇮🇱 Hebrew: [Amit Cohen](https://crowdin.com/profile/ZeRealOne)
 - 🇮🇳 Hindi: [Balajiasli](https://crowdin.com/profile/Balajiasli)
 - 🇮🇩 Indonesian: [Jackie](https://github.com/Jckcr)
-- 🇮🇹 Italian: [RVG|𝓵𝓸𝓻𝔂](https://top.gg/bot/1076200668810985634)
+- 🇮🇹 Italian: [Lory Pelli](https://top.gg/bot/1076200668810985634)
 - 🇯🇵 Japanese
   - [eai04191](https://crowdin.com/profile/eai04191)
   - [sakana](https://crowdin.com/profile/sakana0580)
@@ -76,14 +94,14 @@ English and Hungarian translations have been included, so no translators will be
 - 🇱🇹 Lithuanian
   - [Seenoc](https://crowdin.com/profile/Seenoc)
   - [tayloryte](https://crowdin.com/profile/tayloryte)
-- 🇲🇾 Malay: [Nurul Azeera Hidayah @ Muhammad Nur Hidayat Yasuyoshi (MNH48.moe)](https://crowdin.com/profile/mnh48)
+- 🇲🇾 Malay: [Nurul Azeera Hidayah Muhammad Nur Hidayat Yasuyoshi (MNH48)](https://crowdin.com/profile/mnh48)
 - 🇮🇷 Persian: [Mohammad Safa Gray](https://crowdin.com/profile/DeadMarco)
 - 🇵🇱 Polish
   - [meeekos](https://crowdin.com/profile/meeekos)
   - [MinerPL](https://github.com/minerpl)
   - [stha](https://crowdin.com/profile/sthakrk)
 - 🇵🇹 Portuguese
-  - [buckshot-](https://crowdin.com/profile/buckshot-)
+  - [ً](https://crowdin.com/profile/buckshot-)
   - [Casper](https://crowdin.com/profile/JajarGG)
   - [Tiago](https://crowdin.com/profile/DemiCool)
 - 🇧🇷 Portuguese, Brazilian
@@ -112,9 +130,9 @@ English and Hungarian translations have been included, so no translators will be
 - 🇹🇭 Thai: [timelessnesses](https://github.com/timelessnesses)
 - 🇹🇷 Turkish: [tututuana](https://github.com/tututuana)
 - 🇺🇦 Ukrainian
-  - [enky](https://crowdin.com/profile/enky)
   - [GameHacker](https://crowdin.com/profile/GameHacker)
-  - [Myhailo Yaremenko](https://crowdin.com/profile/WhiteBear60)
+  - [i](https://crowdin.com/profile/enky)
+  - [Mykhailo Yaremenko](https://crowdin.com/profile/WhiteBear60)
 - 🇵🇰 Urdu (Pakistan)
   - [Muhammad Dawood](https://crowdin.com/profile/Developer_X)
   - [muharslan](https://crowdin.com/profile/muharslan)
