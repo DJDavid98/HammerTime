@@ -76,6 +76,7 @@
     "translationsBy": "Translations by <1></1>",
     "incompleteTranslations": "Translations are incomplete",
     "contributeTranslations": "Contribute",
-    "developedBy": "Developed by <1></1>"
+    "developedBy": "Developed by <1></1>",
+    "externalLibraries": "Developed using <1></1>"
   }
 }
