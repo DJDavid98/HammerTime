@@ -76,7 +76,6 @@
     "imagemin": "^8.0.1",
     "lint-staged": "^10.5.3",
     "prettier": "^2.2.1",
-    "puppeteer": "^20.8.3",
     "sharp": "^0.30.7",
     "source-code-pro": "^2.38.0",
     "ts-node": "^10.9.1",
