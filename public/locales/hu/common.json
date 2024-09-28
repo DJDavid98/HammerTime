@@ -76,7 +76,7 @@
     "translationsBy": "Fordítók: <1></1>",
     "incompleteTranslations": "A fordítások hiányosak",
     "contributeTranslations": "Közreműködés",
-    "developedBy": "Fejlesztő: <1></1>",
-    "externalLibraries": "Ezek használatával fejlesztve: <1></1>"
+    "developedBy": "Fejlesztette: <1></1>",
+    "externalLibraries": "Ezek használatával: <1></1>"
   }
 }
