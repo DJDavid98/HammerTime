@@ -83,7 +83,6 @@ English and Hungarian translations have been included, so no translators will be
   - [MinerPL](https://github.com/minerpl)
   - [stha](https://crowdin.com/profile/sthakrk)
 - 🇵🇹 Portuguese
-  - [Alexandre Savchyshkin](https://crowdin.com/profile/alexsav004)
   - [buckshot-](https://crowdin.com/profile/buckshot-)
   - [Casper](https://crowdin.com/profile/JajarGG)
   - [Tiago](https://crowdin.com/profile/DemiCool)
