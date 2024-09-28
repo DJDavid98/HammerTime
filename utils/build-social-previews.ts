@@ -46,7 +46,7 @@ void (async () => {
   const browser = await puppeteer.launch({
     defaultViewport: previewDimensions,
     dumpio: true,
-    headless: 'new',
+    headless: true,
   });
   const publicPath = await getPublicPath();
   const socialOutputDirectory = await getOutputFolder(publicPath);
