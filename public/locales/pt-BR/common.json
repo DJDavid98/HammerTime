@@ -75,6 +75,9 @@
     "intro": "Este site é de código aberto desenvolvido por <1>{{developerName}}</1> usando <3>Font Awesome Free</3> e <5>Mantine</5>. Está disponível em vários idiomas graças aos tradutores voluntários.",
     "translationsBy": "Traduções por <1></1>",
     "incompleteTranslations": "Traduções ainda incompletas",
-    "contributeTranslations": "Contribuir"
+    "contributeTranslations": "Contribuir",
+    "developedBy": "Desenvolvido por <1></1>",
+    "externalLibraries": "Usando <1></1>",
+    "openSource": "Software de código aberto"
   }
 }
