@@ -75,6 +75,9 @@
     "intro": "Ta strona jest oprogramowaniem open-source stworzonym przez <1>{{developerName}}</1> używając <3>Font Awesome Free</3> i <5>Mantine</5>. Jest dostępna w wielu językach dzięki tłumaczom wolontariuszom.",
     "translationsBy": "Tłumaczenia <1></1>",
     "incompleteTranslations": "Tłumaczenia są niekompletne",
-    "contributeTranslations": "Wkład"
+    "contributeTranslations": "Wkład",
+    "developedBy": "Stworzone przez <1></1>",
+    "externalLibraries": "Używając <1></1>",
+    "openSource": "Otwartoźródłowe oprogramowanie"
   }
 }
