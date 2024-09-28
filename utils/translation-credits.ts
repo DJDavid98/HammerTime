@@ -247,7 +247,7 @@ void (async () => {
           const rawReportDataString = [
             `// Generated at ${new Date().toISOString()} based on Crowding project ${crowdinProjectId} report ${reportId}`,
             `// Downloaded from ${reportDownloadData.data.url} (link expires at ${reportDownloadData.data.expireIn})`,
-            JSON.stringify(reportData, null, 4),
+            JSON.stringify(reportData, null, 2),
           ].join('\n');
           await fs.writeFile(rawReportDataCachePath, rawReportDataString);
         }
@@ -325,7 +325,7 @@ void (async () => {
   });
   const assembledReportDataOutputPath = path.join(readmeFolder, 'public', 'locales', 'crowdin.json');
   console.info(`Writing assembled report data to ${assembledReportDataOutputPath}…`);
-  const assembledReportDataString = JSON.stringify(indexedReportData, null, 4);
+  const assembledReportDataString = JSON.stringify(indexedReportData, null, 2);
   await fs.writeFile(assembledReportDataOutputPath, assembledReportDataString);
 
   console.info('Generating credits text…');

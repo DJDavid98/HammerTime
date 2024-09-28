@@ -81,7 +81,7 @@ English and Hungarian translations have been included, so no translators will be
 - 🇮🇱 Hebrew: [Amit Cohen](https://crowdin.com/profile/ZeRealOne)
 - 🇮🇳 Hindi: [Balajiasli](https://crowdin.com/profile/Balajiasli)
 - 🇮🇩 Indonesian: [Jackie](https://github.com/Jckcr)
-- 🇮🇹 Italian: [Lory Pelli](https://top.gg/bot/1076200668810985634)
+- 🇮🇹 Italian: [Lory Pelli](https://github.com/lorypelli)
 - 🇯🇵 Japanese
   - [eai04191](https://crowdin.com/profile/eai04191)
   - [sakana](https://crowdin.com/profile/sakana0580)
