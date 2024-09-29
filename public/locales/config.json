@@ -343,8 +343,7 @@
         {
           "crowdin": "mnh48"
         }
-      ],
-      "percent": 97
+      ]
     },
     "fa": {
       "name": "Persian",
@@ -494,8 +493,7 @@
         {
           "crowdin": "DrakeZero"
         }
-      ],
-      "percent": 97
+      ]
     },
     "sv": {
       "name": "Swedish",
@@ -533,8 +531,7 @@
           "displayName": "timelessnesses",
           "url": "https://github.com/timelessnesses"
         }
-      ],
-      "percent": 97
+      ]
     },
     "tr": {
       "name": "Turkish",
