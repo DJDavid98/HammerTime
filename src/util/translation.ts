@@ -30,16 +30,9 @@ export const normalizeCredit = (credit: TranslationCredit, reportData?: IndexedR
   if (!displayName) {
     throw new Error(`Display name is required for credit:\n${JSON.stringify(credit)}`);
   }
-  let url = credit.url;
-  if (!url) {
-    if (!crowdinUsername) {
-      throw new Error(`URL is required for credit:\n${JSON.stringify(credit)}`);
-    }
-    url = `https://crowdin.com/profile/${crowdinUsername}`;
-  }
   return {
     displayName,
-    url,
+    url: credit.url ?? `https://crowdin.com/profile/${crowdinUsername}`,
     avatarUrl: credit.avatarUrl ?? details?.avatarUrl,
   };
 };
