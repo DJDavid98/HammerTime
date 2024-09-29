@@ -64,9 +64,7 @@ export const LanguageSelector: FC = () => {
             >
               <Text>{t('common:changeLanguage')}</Text>
             </Button>
-            {typeof languagePercent === 'number' && (
-              <UnfinishedTranslationsLink crowdinLocale={currentLanguage?.crowdinLocale || language} />
-            )}
+            <UnfinishedTranslationsLink percent={languagePercent} crowdinLocale={currentLanguage?.crowdinLocale || language} />
           </Group>
         </Popover.Target>
         <Popover.Dropdown>

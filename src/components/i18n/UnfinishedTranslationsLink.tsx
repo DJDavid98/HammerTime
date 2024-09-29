@@ -5,13 +5,20 @@ import { useTranslation } from 'next-i18next';
 import { FC } from 'react';
 import { CROWDIN_URL } from 'src/config';
 
-export const UnfinishedTranslationsLink: FC<{ crowdinLocale: string }> = ({ crowdinLocale }) => {
+const noTranslationsNeededLocales = new Set(['en', 'en-GB', 'hu']);
+
+export const UnfinishedTranslationsLink: FC<{ crowdinLocale: string; percent?: number }> = ({ crowdinLocale, percent }) => {
   const { t } = useTranslation();
+
+  if (noTranslationsNeededLocales.has(crowdinLocale)) {
+    return null;
+  }
+
   const label = t('credits.contributeTranslations');
   return (
     <Tooltip label={label}>
       <Button
-        color="yellow"
+        color={percent ? 'orange' : 'light'}
         variant="subtle"
         size="sm"
         component={ExternalLink}
