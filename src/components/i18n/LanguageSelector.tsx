@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Box, Button, Group, Popover, rem, Text, useMantineTheme } from '@mantine/core';
+import { Box, Button, Group, Popover, Progress, rem, Text, useMantineTheme } from '@mantine/core';
 import { LanguageFlag } from 'components/i18n/LanguageFlag';
 import { UnfinishedTranslationsLink } from 'components/i18n/UnfinishedTranslationsLink';
 import toPairs from 'lodash/toPairs';
@@ -49,7 +49,12 @@ export const LanguageSelector: FC = () => {
               {currentLanguage?.nativeName}
             </Text>
           </Group>
-          {typeof languagePercent === 'number' && <Text color="yellow">{t('credits.incompleteTranslations')}</Text>}
+          {typeof languagePercent === 'number' && (
+            <>
+              <Text color="yellow">{t('credits.incompleteTranslations')}</Text>
+              <Progress color="yellow" value={languagePercent} />
+            </>
+          )}
         </Box>
       </Group>
       <Popover opened={opened} onClose={() => setOpened(false)} position="top" withArrow shadow="xl" width="target">
