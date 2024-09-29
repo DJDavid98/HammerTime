@@ -1,5 +1,5 @@
 {
-  "meta": "Generated at 2024-09-29T11:24:55.700Z",
+  "meta": "Generated at 2024-09-29T18:10:08.402Z",
   "users": {
     "111More1": {
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/15497858/medium/f5e25458a9c752ff23e270d4adee80f9.png",
@@ -109,6 +109,7 @@
         "lv",
         "lt",
         "ms",
+        "no",
         "fa",
         "pl",
         "pt",
@@ -212,6 +213,11 @@
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/15709863/medium/f20693f8db72984068f71696a682c2af.jpeg",
       "languages": ["cs"]
     },
+    "LennartDenmark": {
+      "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/12852355/medium/c40a1133aaacf9a196c4426af1b9845f.jpg",
+      "fullName": "Lennart Christiansen",
+      "languages": ["da"]
+    },
     "leo0six": {
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/14830652/medium/28af1eaf066206e61307f05e82c4e0fd.png",
       "languages": ["pt-BR"]
@@ -253,6 +259,11 @@
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/12680006/medium/9f5292343710ba9994afbec480ce02cc.png",
       "fullName": "Nurul Azeera Hidayah Muhammad Nur Hidayat Yasuyoshi (MNH48)",
       "languages": ["ms"]
+    },
+    "Mr.Shad": {
+      "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/16601907/medium/011f3d993c8042891d17ee6ec4b18d67.jpg",
+      "fullName": "Александр Виноградов",
+      "languages": ["fr", "ro", "ru", "uk"]
     },
     "ms.investigator": {
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/15980591/medium/266c3ea571aad5b10f5c60c300e600b2.png",

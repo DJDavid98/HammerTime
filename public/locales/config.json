@@ -36,7 +36,7 @@
           "crowdin": "sware"
         }
       ],
-      "percent": 97
+      "percent": 96
     },
     "zh": {
       "name": "Chinese Simplified",
@@ -128,7 +128,7 @@
           "url": "https://github.com/Jessuhh"
         }
       ],
-      "percent": 97
+      "percent": 96
     },
     "en-GB": {
       "name": "English, United Kingdom",
@@ -167,9 +167,11 @@
         },
         {
           "crowdin": "humain"
+        },
+        {
+          "crowdin": "Mr.Shad"
         }
-      ],
-      "percent": 97
+      ]
     },
     "de": {
       "name": "German",
@@ -210,7 +212,7 @@
           "crowdin": "Balajiasli"
         }
       ],
-      "percent": 97
+      "percent": 96
     },
     "he": {
       "name": "Hebrew",
@@ -425,9 +427,11 @@
       "credits": [
         {
           "crowdin": "mihaiofficialRO"
+        },
+        {
+          "crowdin": "Mr.Shad"
         }
-      ],
-      "percent": 97
+      ]
     },
     "ru": {
       "name": "Russian",
@@ -458,9 +462,11 @@
         },
         {
           "crowdin": "bill876"
+        },
+        {
+          "crowdin": "Mr.Shad"
         }
-      ],
-      "percent": 97
+      ]
     },
     "sr": {
       "name": "Serbian (Latin)",
@@ -560,9 +566,11 @@
         },
         {
           "crowdin": "WhiteBear60"
+        },
+        {
+          "crowdin": "Mr.Shad"
         }
-      ],
-      "percent": 97
+      ]
     },
     "ur": {
       "name": "Urdu (Pakistan)",
@@ -590,7 +598,7 @@
           "crowdin": "quanonthecob"
         }
       ],
-      "percent": 97
+      "percent": 96
     },
     "da": {
       "name": "Danish",
@@ -600,9 +608,11 @@
       "credits": [
         {
           "crowdin": "jovictasor"
+        },
+        {
+          "crowdin": "LennartDenmark"
         }
-      ],
-      "percent": 97
+      ]
     },
     "no": {
       "name": "Norwegian",
@@ -616,7 +626,7 @@
           "crowdin": "zach.lawnmower"
         }
       ],
-      "percent": 17
+      "percent": 42
     }
   }
 }

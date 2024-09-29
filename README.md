@@ -64,7 +64,9 @@ English and Hungarian translations have been included, so no translators will be
   - [Blurplix](https://crowdin.com/profile/Blurplix)
   - [klauny](https://crowdin.com/profile/klauny)
   - [イーテルニティ ☄️](https://crowdin.com/profile/Ethxrnity)
-- 🇩🇰 Danish: [jovictasor](https://crowdin.com/profile/jovictasor)
+- 🇩🇰 Danish
+  - [jovictasor](https://crowdin.com/profile/jovictasor)
+  - [Lennart Christiansen](https://crowdin.com/profile/LennartDenmark)
 - 🇳🇱 Dutch: [Jesse](https://github.com/Jessuhh)
 - 🇫🇷 French
   - [Cookie Kiro](https://crowdin.com/profile/Cookikui)
@@ -73,6 +75,7 @@ English and Hungarian translations have been included, so no translators will be
   - [Ouiouibaguette](https://crowdin.com/profile/Ouiouibaguette)
   - [sivelswhy](https://crowdin.com/profile/sivelswhy)
   - [ValouFCH](https://crowdin.com/profile/ValouFCH)
+  - [Александр Виноградов](https://crowdin.com/profile/Mr.Shad)
 - 🇩🇪 German
   - [Carlos Diener](https://crowdin.com/profile/carlos.diener)
   - [Fabian9799](https://crowdin.com/profile/Fabian9799)
@@ -109,7 +112,9 @@ English and Hungarian translations have been included, so no translators will be
   - [Chris](https://crowdin.com/profile/Chrisdbhr)
   - [leo0six](https://crowdin.com/profile/leo0six)
   - [ShadowG](https://crowdin.com/profile/ShadowG)
-- 🇷🇴 Romanian: [mihai](https://crowdin.com/profile/mihaiofficialRO)
+- 🇷🇴 Romanian
+  - [mihai](https://crowdin.com/profile/mihaiofficialRO)
+  - [Александр Виноградов](https://crowdin.com/profile/Mr.Shad)
 - 🇷🇺 Russian
   - [GameHacker](https://crowdin.com/profile/GameHacker)
   - [JudDayLum Official](https://crowdin.com/profile/JudDayLum)
@@ -117,6 +122,7 @@ English and Hungarian translations have been included, so no translators will be
   - [Luna](https://crowdin.com/profile/NightyCloud)
   - [Nikita Sharikov](https://crowdin.com/profile/Aligatoor)
   - [Vladimir](https://crowdin.com/profile/bill876)
+  - [Александр Виноградов](https://crowdin.com/profile/Mr.Shad)
   - [Крутой Бо](https://crowdin.com/profile/arturfomenko8)
   - [Рейт](https://crowdin.com/profile/helppriklreyta)
 - 🇷🇸 Serbian (Latin): [net-tech-#7475](https://nettech.dev/)
@@ -134,6 +140,7 @@ English and Hungarian translations have been included, so no translators will be
   - [GameHacker](https://crowdin.com/profile/GameHacker)
   - [i](https://crowdin.com/profile/enky)
   - [Mykhailo Yaremenko](https://crowdin.com/profile/WhiteBear60)
+  - [Александр Виноградов](https://crowdin.com/profile/Mr.Shad)
 - 🇵🇰 Urdu (Pakistan)
   - [Muhammad Dawood](https://crowdin.com/profile/Developer_X)
   - [muharslan](https://crowdin.com/profile/muharslan)
