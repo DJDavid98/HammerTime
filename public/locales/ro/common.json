@@ -75,6 +75,9 @@
     "intro": "Acest site este un software open-source dezvoltat de <1>{{developerName}}</1> folosind <3>Font Awesome Gratuit</3> și <5>Mantine</5>. Este disponibil în mai multe limbi datorită traducătorilor voluntari.",
     "translationsBy": "Tradus de <1></1>",
     "incompleteTranslations": "Traducerile sunt incomplete",
-    "contributeTranslations": "Contribuiți"
+    "contributeTranslations": "Contribuiți",
+    "developedBy": "Dezvoltat <1></1>",
+    "externalLibraries": "Utilizarea <1></1>",
+    "openSource": "Software cu sursă deschisă"
   }
 }
