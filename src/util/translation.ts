@@ -1,21 +1,11 @@
 import { TranslationCredit } from 'src/model/translation-credit';
+import { IndexedReportData, ReportUserData } from 'src/util/crowdin';
 
 export interface NormalizedCredits {
   displayName: string;
   url: string;
   avatarUrl?: string;
 }
-
-export interface ReportUserData {
-  fullName?: string;
-  avatarUrl: string;
-  languages?: string[];
-}
-
-export type IndexedReportData = {
-  meta: string;
-  users: Partial<Record<string, ReportUserData>>;
-};
 
 export const normalizeCredit = (credit: TranslationCredit, reportData?: IndexedReportData): NormalizedCredits => {
   const crowdinUsername = credit.crowdin;

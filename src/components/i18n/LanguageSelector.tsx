@@ -10,6 +10,7 @@ import { useRouter } from 'next/router';
 import { FC, useCallback, useMemo, useState } from 'react';
 import { AvailableLanguage, LANGUAGES } from 'src/config';
 import { getDirAttribute } from 'src/util/common';
+import { getIsTranslationComplete, getTranslationCompletePercent, getTranslationCompletionData } from 'src/util/crowdin';
 
 const flagIconSize = 32;
 
@@ -28,7 +29,9 @@ export const LanguageSelector: FC = () => {
 
   const currentLanguage = useMemo(() => (language in LANGUAGES ? LANGUAGES[language as AvailableLanguage] : undefined), [language]);
 
-  const languagePercent = currentLanguage?.percent;
+  const completionData = getTranslationCompletionData(language);
+  const languagePercent = getTranslationCompletePercent(completionData);
+  const isTranslationComplete = getIsTranslationComplete(languagePercent);
 
   return (
     <Box
@@ -49,7 +52,7 @@ export const LanguageSelector: FC = () => {
               {currentLanguage?.nativeName}
             </Text>
           </Group>
-          {typeof languagePercent === 'number' && (
+          {!isTranslationComplete && (
             <>
               <Text color="yellow">{t('credits.incompleteTranslations')}</Text>
               <Progress color="yellow" value={languagePercent} />
@@ -76,6 +79,7 @@ export const LanguageSelector: FC = () => {
           <div className={styles['language-selector']}>
             {sortedLanguages.map(([key, value]) => {
               const isCurrentLanguage = language === key;
+              const languageCompletionData = getTranslationCompletionData(key);
               const dropdownItemJsx = (
                 <Button
                   key={isCurrentLanguage ? key : undefined}
@@ -85,7 +89,7 @@ export const LanguageSelector: FC = () => {
                   dir={getDirAttribute(key as AvailableLanguage)}
                   leftIcon={<LanguageFlag language={value} />}
                   rightIcon={
-                    typeof value.percent === 'number' ? (
+                    !getIsTranslationComplete(languageCompletionData) ? (
                       <Text color="yellow">
                         <FontAwesomeIcon icon="life-ring" />
                       </Text>

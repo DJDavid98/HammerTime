@@ -1,5 +1,5 @@
 {
-  "meta": "Generated at 2024-09-29T22:04:20.506Z",
+  "meta": "Generated at 2024-09-29T23:40:37.929Z",
   "users": {
     "111More1": {
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/15497858/medium/f5e25458a9c752ff23e270d4adee80f9.png",
@@ -621,6 +621,164 @@
       "languages": [
         "he"
       ]
+    }
+  },
+  "progress": {
+    "en": {
+      "approval": 100,
+      "translation": 100
+    },
+    "ar": {
+      "approval": 96,
+      "translation": 96
+    },
+    "bg": {
+      "approval": 98,
+      "translation": 98
+    },
+    "ca": {
+      "approval": 96,
+      "translation": 96
+    },
+    "cs": {
+      "approval": 98,
+      "translation": 98
+    },
+    "da": {
+      "approval": 98,
+      "translation": 98
+    },
+    "de": {
+      "approval": 98,
+      "translation": 98
+    },
+    "el": {
+      "approval": 96,
+      "translation": 96
+    },
+    "en-GB": {
+      "approval": 100,
+      "translation": 100
+    },
+    "es": {
+      "approval": 98,
+      "translation": 98
+    },
+    "fa": {
+      "approval": 74,
+      "translation": 74
+    },
+    "fr": {
+      "approval": 98,
+      "translation": 98
+    },
+    "he": {
+      "approval": 71,
+      "translation": 71
+    },
+    "hi": {
+      "approval": 95,
+      "translation": 95
+    },
+    "hr": {
+      "approval": 96,
+      "translation": 96
+    },
+    "hu": {
+      "approval": 100,
+      "translation": 100
+    },
+    "id": {
+      "approval": 96,
+      "translation": 96
+    },
+    "it": {
+      "approval": 97,
+      "translation": 97
+    },
+    "ja": {
+      "approval": 96,
+      "translation": 96
+    },
+    "ko": {
+      "approval": 96,
+      "translation": 96
+    },
+    "lt": {
+      "approval": 96,
+      "translation": 96
+    },
+    "lv": {
+      "approval": 96,
+      "translation": 96
+    },
+    "ms": {
+      "approval": 98,
+      "translation": 98
+    },
+    "nb": {
+      "approval": 41,
+      "translation": 41
+    },
+    "nl": {
+      "approval": 95,
+      "translation": 95
+    },
+    "pl": {
+      "approval": 98,
+      "translation": 98
+    },
+    "pt-BR": {
+      "approval": 98,
+      "translation": 98
+    },
+    "pt": {
+      "approval": 96,
+      "translation": 96
+    },
+    "ro": {
+      "approval": 100,
+      "translation": 100
+    },
+    "ru": {
+      "approval": 98,
+      "translation": 98
+    },
+    "sr": {
+      "approval": 96,
+      "translation": 96
+    },
+    "sv": {
+      "approval": 96,
+      "translation": 96
+    },
+    "th": {
+      "approval": 98,
+      "translation": 98
+    },
+    "tr": {
+      "approval": 96,
+      "translation": 96
+    },
+    "uk": {
+      "approval": 98,
+      "translation": 98
+    },
+    "ur": {
+      "approval": 96,
+      "translation": 96
+    },
+    "vi": {
+      "approval": 95,
+      "translation": 95
+    },
+    "zh": {
+      "approval": 96,
+      "translation": 96
+    },
+    "zh-TW": {
+      "approval": 96,
+      "translation": 96
     }
   }
 }

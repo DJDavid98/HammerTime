@@ -1,10 +1,11 @@
 import { promises as fs } from 'fs';
 import path from 'path';
 import { config as dotenvConfig } from 'dotenv';
+import { IndexedReportData, ReportUserData } from 'src/util/crowdin';
 import localeConfig from '../public/locales/config.json';
-import { AvailableLanguage, isAvailableLanguage } from '../src/config';
+import { AvailableLanguage, isAvailableLanguage, LANGUAGES } from '../src/config';
 import { LanguageConfig } from '../src/model/language-config';
-import { IndexedReportData, normalizeCredit, NormalizedCredits, ReportUserData } from '../src/util/translation';
+import { normalizeCredit, NormalizedCredits } from '../src/util/translation';
 
 dotenvConfig();
 
@@ -24,6 +25,21 @@ interface ProjectData {
   data: {
     id: number;
     identifier: string;
+  };
+}
+
+interface ProjectTranslationProgressResponse {
+  data: Array<{
+    data: {
+      translationProgress: number;
+      approvalProgress: number;
+      languageId: string;
+      language: CrowdinLanguage;
+    };
+  }>;
+  pagination: {
+    offset: number;
+    limit: number;
   };
 }
 
@@ -137,38 +153,38 @@ void (async () => {
         })
     : false;
 
+  console.info('Getting project information from Crowdin…');
+  const projectList = await fetch('https://api.crowdin.com/api/v2/projects?hasManagerAccess=1', {
+    headers: {
+      Authorization: `Bearer ${crowdinApiKey}`,
+    },
+  }).then((r) => r.json() as Promise<ProjectListResponse>);
+
+  const projects = (projectList.data as ProjectData[]).reduce(
+    (acc: Record<string, number>, p) => ({
+      ...acc,
+      [p.data.identifier]: p.data.id,
+    }),
+    {},
+  );
+
+  console.info(
+    `Found projects:\n${Object.entries(projects)
+      .map(([identifier, id]) => `${id}. ${identifier}`)
+      .join('\n')}`,
+  );
+
+  console.info(`Checking for project with identifier ${crowdinProjectIdentifier}…`);
+  const crowdinProjectId = projects[crowdinProjectIdentifier];
+  if (!crowdinProjectId) {
+    throw new Error(`Could not find Crowdin project with identifier "${crowdinProjectIdentifier}"`);
+  }
+
   let rawReportData: ProjectReportDataResponse;
   if (!cachedDataExists || !useCache) {
-    console.info('Getting project information from Crowdin…');
-    const projectList = await fetch('https://api.crowdin.com/api/v2/projects?hasManagerAccess=1', {
-      headers: {
-        Authorization: `Bearer ${crowdinApiKey}`,
-      },
-    }).then((r) => r.json() as Promise<ProjectListResponse>);
-
-    const projects = (projectList.data as ProjectData[]).reduce(
-      (acc: Record<string, number>, p) => ({
-        ...acc,
-        [p.data.identifier]: p.data.id,
-      }),
-      {},
-    );
-
-    console.info(
-      `Found projects:\n${Object.entries(projects)
-        .map(([identifier, id]) => `${id}. ${identifier}`)
-        .join('\n')}`,
-    );
-
-    console.info(`Checking for project with identifier ${crowdinProjectIdentifier}…`);
-    const crowdinProjectId = projects[crowdinProjectIdentifier];
-    if (!crowdinProjectId) {
-      throw new Error(`Could not find Crowdin project with identifier "${crowdinProjectIdentifier}"`);
-    }
-
     const reportName = 'top-members';
     console.info(`Creating new ${reportName} report on Crowdin…`);
-    const createReportRespone = await fetch(`https://api.crowdin.com/api/v2/projects/${crowdinProjectId}/reports`, {
+    const createReportResponse = await fetch(`https://api.crowdin.com/api/v2/projects/${crowdinProjectId}/reports`, {
       method: 'POST',
       headers: {
         'Authorization': `Bearer ${crowdinApiKey}`,
@@ -186,18 +202,19 @@ void (async () => {
       }),
     });
 
-    if (!createReportRespone.ok) {
+    if (!createReportResponse.ok) {
       throw new Error(
-        `Failed to create report (HTTP ${createReportRespone.status} ${
-          createReportRespone.statusText
-        })\n${await createReportRespone.text()}`,
+        `Failed to create report (HTTP ${createReportResponse.status} ${
+          createReportResponse.statusText
+        })\n${await createReportResponse.text()}`,
       );
     }
-    const createReportResult = (await createReportRespone.json()) as ProjectReportResponse;
+    const createReportResult = (await createReportResponse.json()) as ProjectReportResponse;
 
-    const pollIntervalMs = 500;
+    // Used for exponential backoff
+    let pollIntervalFactor = 0;
     const reportId = createReportResult.data.identifier;
-    console.info(`Report export started with id ${reportId}, checking for status with breaks of ${pollIntervalMs}ms…`);
+    console.info(`Report export started with id ${reportId}, checking for status…`);
     rawReportData = await new Promise<ProjectReportDataResponse>((res) => {
       let reportCheckTimeout: ReturnType<typeof setTimeout> | null = null;
 
@@ -205,8 +222,10 @@ void (async () => {
         if (reportCheckTimeout) {
           clearTimeout(reportCheckTimeout);
         }
+        const nextTimeoutMs = 100 * 2 ** pollIntervalFactor++;
+        console.info(`Running next check in ${nextTimeoutMs}ms…`);
         // eslint-disable-next-line @typescript-eslint/no-use-before-define
-        reportCheckTimeout = setTimeout(() => void checkerFunction(), pollIntervalMs);
+        reportCheckTimeout = setTimeout(() => void checkerFunction(), nextTimeoutMs);
       }
 
       async function checkerFunction() {
@@ -264,10 +283,23 @@ void (async () => {
     rawReportData = JSON.parse(rawReportDataString.replace(/^\/\/.*$/gm, '')) as typeof rawReportData;
   }
 
+  console.info(`Reading translation progress for project ${crowdinProjectIdentifier}…`);
+  const translationProgressResponse = await fetch(
+    `https://api.crowdin.com/api/v2/projects/${crowdinProjectId}/languages/progress?limit=${Object.keys(LANGUAGES).length}`,
+    {
+      headers: {
+        Authorization: `Bearer ${crowdinApiKey}`,
+      },
+    },
+  ).then((r) => r.json() as Promise<ProjectTranslationProgressResponse>);
+
   console.info(`Creating assembled report data…`);
   const indexedReportData: IndexedReportData = {
     meta: `Generated at ${new Date().toISOString()}`,
     users: {},
+    progress: {
+      en: { approval: 100, translation: 100 },
+    },
   };
   const languageMapping: Record<string, AvailableLanguage> = {
     /* eslint-disable @typescript-eslint/naming-convention */
@@ -293,6 +325,17 @@ void (async () => {
 
     return crowdinLanguage.id;
   };
+  translationProgressResponse.data.sort((a, b) => a.data.languageId.localeCompare(b.data.languageId));
+  translationProgressResponse.data.forEach(({ data: languageProgress }) => {
+    const availableLanguageCode = mapCrowdinLanguageToAvailableLanguage(languageProgress.language);
+    if (!availableLanguageCode) {
+      return;
+    }
+    indexedReportData.progress[availableLanguageCode] = {
+      approval: languageProgress.approvalProgress,
+      translation: languageProgress.translationProgress,
+    };
+  });
   rawReportData.data.sort((a, b) => a.user.username.localeCompare(b.user.username));
   rawReportData.data.forEach((reportDataItem) => {
     if (reportDataItem.approved === 0 && reportDataItem.voted === 0 && reportDataItem.translated === 0) {

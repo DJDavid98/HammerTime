@@ -11,8 +11,7 @@
         {
           "crowdin": "raphael.santiago.53"
         }
-      ],
-      "percent": 97
+      ]
     },
     "bg": {
       "name": "Bulgarian",
@@ -26,8 +25,7 @@
         {
           "crowdin": "Mr.Shad"
         }
-      ],
-      "percent": 97
+      ]
     },
     "ca": {
       "name": "Catalan",
@@ -38,8 +36,7 @@
         {
           "crowdin": "sware"
         }
-      ],
-      "percent": 96
+      ]
     },
     "zh": {
       "name": "Chinese Simplified",
@@ -61,8 +58,7 @@
         {
           "crowdin": "febilly"
         }
-      ],
-      "percent": 97
+      ]
     },
     "zh-TW": {
       "name": "Chinese Traditional",
@@ -83,8 +79,7 @@
         {
           "crowdin": "ms.investigator"
         }
-      ],
-      "percent": 97
+      ]
     },
     "hr": {
       "name": "Croatian",
@@ -100,8 +95,7 @@
           "displayName": "Volvone",
           "url": "https://github.com/volvone"
         }
-      ],
-      "percent": 97
+      ]
     },
     "cs": {
       "name": "Czech",
@@ -135,8 +129,7 @@
           "displayName": "Jesse",
           "url": "https://github.com/Jessuhh"
         }
-      ],
-      "percent": 96
+      ]
     },
     "en-GB": {
       "name": "English, United Kingdom",
@@ -207,8 +200,7 @@
         {
           "crowdin": "BelleBernice"
         }
-      ],
-      "percent": 97
+      ]
     },
     "hi": {
       "name": "Hindi",
@@ -219,8 +211,7 @@
         {
           "crowdin": "Balajiasli"
         }
-      ],
-      "percent": 96
+      ]
     },
     "he": {
       "name": "Hebrew",
@@ -236,8 +227,7 @@
         {
           "crowdin": "ZeRealOne"
         }
-      ],
-      "percent": 72
+      ]
     },
     "hu": {
       "name": "Hungarian",
@@ -259,8 +249,7 @@
           "crowdin": "jckcr",
           "url": "https://github.com/Jckcr"
         }
-      ],
-      "percent": 97
+      ]
     },
     "it": {
       "name": "Italian",
@@ -276,8 +265,7 @@
           "crowdin": "lorypelli",
           "url": "https://github.com/lorypelli"
         }
-      ],
-      "percent": 98
+      ]
     },
     "ja": {
       "name": "Japanese",
@@ -301,8 +289,7 @@
         {
           "crowdin": "sakana0580"
         }
-      ],
-      "percent": 97
+      ]
     },
     "ko": {
       "name": "Korean",
@@ -320,8 +307,7 @@
           "displayName": "김카츄 (sjk)",
           "url": "https://github.com/sjkim04"
         }
-      ],
-      "percent": 97
+      ]
     },
     "lv": {
       "name": "Latvian",
@@ -332,8 +318,7 @@
         {
           "crowdin": "JajarGG"
         }
-      ],
-      "percent": 97
+      ]
     },
     "lt": {
       "name": "Lithuanian",
@@ -347,8 +332,7 @@
         {
           "crowdin": "Seenoc"
         }
-      ],
-      "percent": 97
+      ]
     },
     "ms": {
       "name": "Malay",
@@ -376,8 +360,7 @@
         {
           "crowdin": "DeadMarco"
         }
-      ],
-      "percent": 75
+      ]
     },
     "pl": {
       "name": "Polish",
@@ -417,8 +400,7 @@
         {
           "crowdin": "buckshot-"
         }
-      ],
-      "percent": 97
+      ]
     },
     "pt-BR": {
       "name": "Portuguese, Brazilian",
@@ -502,8 +484,7 @@
           "displayName": "net-tech-#7475",
           "url": "https://nettech.dev/"
         }
-      ],
-      "percent": 97
+      ]
     },
     "es": {
       "name": "Spanish",
@@ -546,8 +527,7 @@
         {
           "crowdin": "patricktobias"
         }
-      ],
-      "percent": 97
+      ]
     },
     "th": {
       "name": "Thai",
@@ -572,8 +552,7 @@
           "crowdin": "tututuana",
           "url": "https://github.com/tututuana"
         }
-      ],
-      "percent": 97
+      ]
     },
     "uk": {
       "name": "Ukrainian",
@@ -608,8 +587,7 @@
         {
           "crowdin": "Developer_X"
         }
-      ],
-      "percent": 97
+      ]
     },
     "vi": {
       "name": "Vietnamese",
@@ -620,8 +598,7 @@
         {
           "crowdin": "quanonthecob"
         }
-      ],
-      "percent": 96
+      ]
     },
     "da": {
       "name": "Danish",
@@ -646,8 +623,7 @@
         {
           "crowdin": "zach.lawnmower"
         }
-      ],
-      "percent": 42
+      ]
     }
   }
 }
