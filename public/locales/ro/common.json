@@ -76,8 +76,8 @@
     "translationsBy": "Tradus de <1></1>",
     "incompleteTranslations": "Traducerile sunt incomplete",
     "contributeTranslations": "Contribuiți",
-    "developedBy": "Dezvoltat <1></1>",
-    "externalLibraries": "Utilizarea <1></1>",
+    "developedBy": "Dezvoltat de <1></1>",
+    "externalLibraries": "Folosind <1></1>",
     "openSource": "Software cu sursă deschisă"
   }
 }
