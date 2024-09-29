@@ -292,6 +292,7 @@ void (async () => {
 
     return crowdinLanguage.id;
   };
+  rawReportData.data.sort((a, b) => a.user.username.localeCompare(b.user.username));
   rawReportData.data.forEach((reportDataItem) => {
     if (reportDataItem.approved === 0 && reportDataItem.voted === 0 && reportDataItem.translated === 0) {
       // Skip users with virtually 0 activity
