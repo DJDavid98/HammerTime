@@ -12,7 +12,14 @@
 
     .translator-avatar {
       display: inline-block;
-      margin-right: 0.5em;
+
+      :root[dir='ltr'] & {
+        margin-right: 0.5em;
+      }
+
+      :root[dir='rtl'] & {
+        margin-left: 0.5em;
+      }
 
       img {
         background-color: #fff;
