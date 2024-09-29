@@ -75,6 +75,9 @@
     "intro": "Ce site web est un logiciel open-source développé par <1>{{developerName}}</1> utilisant <3>Font Awesome Free</3> et <5>Mantine</5>. Il est disponible dans plusieurs langues grâce aux traducteurs bénévoles.",
     "translationsBy": "Traduit par <1></1>",
     "incompleteTranslations": "Les traductions sont incomplètes",
-    "contributeTranslations": "Contribuer"
+    "contributeTranslations": "Contribuer",
+    "developedBy": "Développeur <1></1>",
+    "externalLibraries": "Utilisant <1></1>",
+    "openSource": "Logiciel open-source"
   }
 }
