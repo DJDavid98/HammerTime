@@ -75,6 +75,9 @@
     "intro": "Този уебсайт е софтуер с отворен код, програмиран от <1>{{developerName}}</1> с помощта на <3>Font Awesome Free</3> и <5>Mantime</5>. Достъпен е на множество езици благодарение на преводачи доброволци.",
     "translationsBy": "Превод от <1></1>",
     "incompleteTranslations": "Преводът е недовършен",
-    "contributeTranslations": "Допринасяне"
+    "contributeTranslations": "Допринасяне",
+    "developedBy": "Разработя <1></1>",
+    "externalLibraries": "Използувам <1></1>",
+    "openSource": "Софтуер с отворен код"
   }
 }
