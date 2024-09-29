@@ -114,9 +114,7 @@ English and Hungarian translations have been included, so no translators will be
   - [Chris](https://crowdin.com/profile/Chrisdbhr)
   - [leo0six](https://crowdin.com/profile/leo0six)
   - [ShadowG](https://crowdin.com/profile/ShadowG)
-- 🇷🇴 Romanian
-  - [Alexander](https://crowdin.com/profile/Mr.Shad)
-  - [mihai](https://crowdin.com/profile/mihaiofficialRO)
+- 🇷🇴 Romanian: [mihai](https://crowdin.com/profile/mihaiofficialRO)
 - 🇷🇺 Russian
   - [Alexander](https://crowdin.com/profile/Mr.Shad)
   - [GameHacker](https://crowdin.com/profile/GameHacker)
