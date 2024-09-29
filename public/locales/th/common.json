@@ -75,6 +75,9 @@
     "intro": "เว็บไซต์นี้เป็นซอฟต์แวร์โอเพ่นซอร์สที่พัฒนาโดย <1>{{developerName}}</1> โดยใช้ <3>Font Awesome Free</3> และ <5>Mantine</5> และก็ยังมีให้หลายภาษาด้วยต้องขอบคุณนักแปลอาสาสมัครทุกคน",
     "translationsBy": "แปลโดย <1></1>",
     "incompleteTranslations": "ภาษานี้ยังแปลภาษาไม่สมบูรณ์",
-    "contributeTranslations": "สนับสนุน"
+    "contributeTranslations": "สนับสนุน",
+    "developedBy": "สร้างโดย <1></1>",
+    "externalLibraries": "ได้ใช้ <1></1>",
+    "openSource": "ซอฟต์แวร์แบบโอเพ่นซอร์ส"
   }
 }
