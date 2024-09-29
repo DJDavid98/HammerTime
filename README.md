@@ -49,7 +49,9 @@ English and Hungarian translations have been included, so no translators will be
 ### Credits
 
 - 🇸🇦 Arabic: [Raphael Santiago](https://crowdin.com/profile/raphael.santiago.53)
-- 🇧🇬 Bulgarian: [Rxshi](https://crowdin.com/profile/Rxshi)
+- 🇧🇬 Bulgarian
+  - [Alexander](https://crowdin.com/profile/Mr.Shad)
+  - [Rxshi](https://crowdin.com/profile/Rxshi)
 - Catalan: [sware](https://crowdin.com/profile/sware)
 - 🇨🇳 Chinese Simplified
   - [CPYW_7226](https://crowdin.com/profile/CPYW_7226)
@@ -69,13 +71,13 @@ English and Hungarian translations have been included, so no translators will be
   - [Lennart Christiansen](https://crowdin.com/profile/LennartDenmark)
 - 🇳🇱 Dutch: [Jesse](https://github.com/Jessuhh)
 - 🇫🇷 French
+  - [Alexander](https://crowdin.com/profile/Mr.Shad)
   - [Cookie Kiro](https://crowdin.com/profile/Cookikui)
   - [HumainAbsurde](https://crowdin.com/profile/humain)
   - [M4gicalCat](https://crowdin.com/profile/M4gicalCat)
   - [Ouiouibaguette](https://crowdin.com/profile/Ouiouibaguette)
   - [sivelswhy](https://crowdin.com/profile/sivelswhy)
   - [ValouFCH](https://crowdin.com/profile/ValouFCH)
-  - [Александр Виноградов](https://crowdin.com/profile/Mr.Shad)
 - 🇩🇪 German
   - [Carlos Diener](https://crowdin.com/profile/carlos.diener)
   - [Fabian9799](https://crowdin.com/profile/Fabian9799)
@@ -113,16 +115,16 @@ English and Hungarian translations have been included, so no translators will be
   - [leo0six](https://crowdin.com/profile/leo0six)
   - [ShadowG](https://crowdin.com/profile/ShadowG)
 - 🇷🇴 Romanian
+  - [Alexander](https://crowdin.com/profile/Mr.Shad)
   - [mihai](https://crowdin.com/profile/mihaiofficialRO)
-  - [Александр Виноградов](https://crowdin.com/profile/Mr.Shad)
 - 🇷🇺 Russian
+  - [Alexander](https://crowdin.com/profile/Mr.Shad)
   - [GameHacker](https://crowdin.com/profile/GameHacker)
   - [JudDayLum Official](https://crowdin.com/profile/JudDayLum)
   - [JudeDM](https://crowdin.com/profile/JudeDM)
   - [Luna](https://crowdin.com/profile/NightyCloud)
   - [Nikita Sharikov](https://crowdin.com/profile/Aligatoor)
   - [Vladimir](https://crowdin.com/profile/bill876)
-  - [Александр Виноградов](https://crowdin.com/profile/Mr.Shad)
   - [Крутой Бо](https://crowdin.com/profile/arturfomenko8)
   - [Рейт](https://crowdin.com/profile/helppriklreyta)
 - 🇷🇸 Serbian (Latin): [net-tech-#7475](https://nettech.dev/)
@@ -137,10 +139,10 @@ English and Hungarian translations have been included, so no translators will be
 - 🇹🇭 Thai: [timelessnesses](https://github.com/timelessnesses)
 - 🇹🇷 Turkish: [tututuana](https://github.com/tututuana)
 - 🇺🇦 Ukrainian
+  - [Alexander](https://crowdin.com/profile/Mr.Shad)
   - [GameHacker](https://crowdin.com/profile/GameHacker)
   - [i](https://crowdin.com/profile/enky)
   - [Mykhailo Yaremenko](https://crowdin.com/profile/WhiteBear60)
-  - [Александр Виноградов](https://crowdin.com/profile/Mr.Shad)
 - 🇵🇰 Urdu (Pakistan)
   - [Muhammad Dawood](https://crowdin.com/profile/Developer_X)
   - [muharslan](https://crowdin.com/profile/muharslan)

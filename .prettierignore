@@ -1,2 +1,4 @@
 .next
 node_modules
+public/locales/crowdin.json
+public/locales/config.json

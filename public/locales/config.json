@@ -22,6 +22,9 @@
       "credits": [
         {
           "crowdin": "Rxshi"
+        },
+        {
+          "crowdin": "Mr.Shad"
         }
       ],
       "percent": 97
@@ -88,7 +91,9 @@
       "nativeName": "Hrvatski",
       "countryCode": "HR",
       "emoji": "\uD83C\uDDED\uD83C\uDDF7",
-      "weekendDays": [0],
+      "weekendDays": [
+        0
+      ],
       "credits": [
         {
           "crowdin": "stjepanmih13x",
@@ -120,7 +125,10 @@
       "nativeName": "Nederlands",
       "countryCode": "NL",
       "emoji": "\uD83C\uDDF3\uD83C\uDDF1",
-      "weekendDays": [6, 0],
+      "weekendDays": [
+        6,
+        0
+      ],
       "credits": [
         {
           "crowdin": "Jessuh",
@@ -220,7 +228,10 @@
       "countryCode": "IL",
       "emoji": "\uD83C\uDDEE\uD83C\uDDF1",
       "rtl": true,
-      "weekendDays": [5, 6],
+      "weekendDays": [
+        5,
+        6
+      ],
       "credits": [
         {
           "crowdin": "ZeRealOne"
@@ -233,7 +244,10 @@
       "nativeName": "Magyar",
       "countryCode": "HU",
       "emoji": "\uD83C\uDDED\uD83C\uDDFA",
-      "weekendDays": [6, 0]
+      "weekendDays": [
+        6,
+        0
+      ]
     },
     "id": {
       "name": "Indonesian",
@@ -253,7 +267,10 @@
       "nativeName": "Italiano",
       "countryCode": "IT",
       "emoji": "\uD83C\uDDEE\uD83C\uDDF9",
-      "weekendDays": [6, 0],
+      "weekendDays": [
+        6,
+        0
+      ],
       "credits": [
         {
           "crowdin": "lorypelli",
@@ -339,7 +356,9 @@
       "countryCode": "MY",
       "emoji": "\uD83C\uDDF2\uD83C\uDDFE",
       "firstDayOfWeek": 0,
-      "weekendDays": [0],
+      "weekendDays": [
+        0
+      ],
       "blueDay": 6,
       "credits": [
         {
@@ -365,7 +384,9 @@
       "nativeName": "Polski",
       "countryCode": "PL",
       "emoji": "\uD83C\uDDF5\uD83C\uDDF1",
-      "weekendDays": [0],
+      "weekendDays": [
+        0
+      ],
       "credits": [
         {
           "crowdin": "MinerPL",
@@ -474,7 +495,10 @@
       "countryCode": "RS",
       "emoji": "\uD83C\uDDF7\uD83C\uDDF8",
       "crowdinLocale": "sr-CS",
-      "weekendDays": [6, 0],
+      "weekendDays": [
+        6,
+        0
+      ],
       "credits": [
         {
           "crowdin": "net-tech-",
@@ -507,7 +531,9 @@
       "countryCode": "SE",
       "emoji": "\uD83C\uDDF8\uD83C\uDDEA",
       "crowdinLocale": "sv-SE",
-      "weekendDays": [0],
+      "weekendDays": [
+        0
+      ],
       "credits": [
         {
           "crowdin": "joll05"
@@ -614,12 +640,10 @@
         }
       ]
     },
-    "no": {
+    "nb": {
       "name": "Norwegian",
       "nativeName": "Norsk",
       "countryCode": "NO",
-      "momentLocale": "nb",
-      "dayjsLocale": "nb",
       "emoji": "\uD83C\uDDF3\uD83C\uDDF4",
       "credits": [
         {

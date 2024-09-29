@@ -279,6 +279,7 @@ void (async () => {
     'ur-PK': 'ur',
     'es-ES': 'es',
     'sv-SE': 'sv',
+    'no': 'nb',
     /* eslint-enable @typescript-eslint/naming-convention */
   };
   const mapCrowdinLanguageToAvailableLanguage = (crowdinLanguage: CrowdinLanguage): AvailableLanguage | null => {
