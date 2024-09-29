@@ -37,6 +37,7 @@ import 'moment/locale/ur';
 import 'moment/locale/vi';
 import 'moment/locale/zh-cn';
 import 'moment/locale/zh-tw';
+import 'moment/locale/nb';
 
 moment.tz.load(latestTimezoneData);
 moment.relativeTimeThreshold('s', 60);

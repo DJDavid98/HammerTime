@@ -1,5 +1,5 @@
 {
-  "meta": "Generated at 2024-09-29T10:51:41.135Z",
+  "meta": "Generated at 2024-09-29T11:11:29.304Z",
   "users": {
     "111More1": {
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/15497858/medium/f5e25458a9c752ff23e270d4adee80f9.png",
@@ -400,7 +400,7 @@
     "zach.lawnmower": {
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/16466619/medium/d6cb5d30611145442ab98303a519813d.png",
       "fullName": "Ivy Wilson",
-      "languages": []
+      "languages": ["no"]
     },
     "ZeRealOne": {
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/15269410/medium/4d8badba317583e1ad8a75eb635aaaf1.gif",

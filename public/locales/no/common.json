@@ -1,0 +1,83 @@
+{
+  "seoDescription": "Generer tidsstempel indikatorer for Discord chat meldinger",
+  "howTo": "Velg en dato, kopier ønsket tidsstempel fra {{syntaxColName}} kolonnen, og lim den inn hvor som helst i en chat-melding. Resultatet vil være et dynamisk tidsstempel som viser forskjellig for alle basert på egen tidssone.",
+  "input": {
+    "timezone": "Tidssone",
+    "datetime": "Dato og klokkeslett",
+    "date": "Dato",
+    "time": "Tidspunkt",
+    "settings": {
+      "label": "Inndata innstillinger",
+      "customInputs": {
+        "label": "Egendefinert inndata",
+        "explanation": "Replaces the default inputs with ones that match the current language instead of your browser's"
+      },
+      "separateInputs": {
+        "label": "Separate inputs",
+        "explanation": "Display two different inputs for date and time instead of a combined one (which is not supported in some browsers)"
+      }
+    }
+  },
+  "buttons": {
+    "copy": "Copy to clipboard",
+    "setCurrentTime": "Set to current time",
+    "lock": "Lock timestamp via URL",
+    "unlock": "Unlock timestamp"
+  },
+  "table": {
+    "syntax": "Chat syntax",
+    "example": "Example result"
+  },
+  "usefulLinks": {
+    "lead": "You may also find these useful:",
+    "server": {
+      "header": "Official HammerTime Server",
+      "p": "Discuss the website, test the syntax and suggest features"
+    },
+    "bot": {
+      "header": "HammerTime Bot",
+      "pWithoutCommand": "Generate timestamps from within Discord using slash commands"
+    },
+    "textColor": {
+      "header": "Rebane's <1>Colored</1> Text Generator",
+      "p": "A simple app that creates colored Discord messages using ANSI color codes"
+    }
+  },
+  "changeLanguage": "Change language",
+  "notFound": {
+    "heading": "Not Found",
+    "content": "Nothing to see here."
+  },
+  "viewSource": "View source code",
+  "notAffiliated": "This project is not affiliated with Discord.",
+  "jsDisabled": {
+    "title": "JavaScript is necessary",
+    "body": "Your browser either does not support JavaScript or it's currently disabled. Some browsers disable JavaScript by default for security reasons, but it's necessary for this application. Please enable it and refresh the page, or use a different browser."
+  },
+  "timeSync": {
+    "syncing": "Synchronizing time with server…",
+    "outOfSync": "Your device time seems off, this may lead to calculation errors (difference: {{deltaTimeMs}}ms)",
+    "inSync": "Time synchronized (difference: {{deltaTimeMs}}ms)"
+  },
+  "a11y": {
+    "calendar": {
+      "nextMonthLabel": "next month",
+      "previousMonthLabel": "previous month",
+      "nextYearLabel": "next year",
+      "previousYearLabel": "previous year",
+      "nextDecadeLabel": "next decade",
+      "previousDecadeLabel": "previous decade"
+    },
+    "toggleSidebarPosition": "Move sidebar to opposite side"
+  },
+  "credits": {
+    "title": "Credits",
+    "intro": "This website is open-source software developed by <1>{{developerName}}</1> using <3>Font Awesome Free</3> and <5>Mantine</5>. It's available in multiple languages thanks to volunteer translators.",
+    "translationsBy": "Translations by <1></1>",
+    "incompleteTranslations": "Translations are incomplete",
+    "contributeTranslations": "Contribute",
+    "developedBy": "Developed by <1></1>",
+    "externalLibraries": "Using <1></1>",
+    "openSource": "Open-source software"
+  }
+}

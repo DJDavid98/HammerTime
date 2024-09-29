@@ -603,6 +603,20 @@
         }
       ],
       "percent": 97
+    },
+    "no": {
+      "name": "Norwegian",
+      "nativeName": "Norsk",
+      "countryCode": "NO",
+      "momentLocale": "nb",
+      "dayjsLocale": "nb",
+      "emoji": "\uD83C\uDDF3\uD83C\uDDF4",
+      "credits": [
+        {
+          "crowdin": "zach.lawnmower"
+        }
+      ],
+      "percent": 17
     }
   }
 }

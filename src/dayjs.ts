@@ -36,6 +36,7 @@ import 'dayjs/locale/ur';
 import 'dayjs/locale/vi';
 import 'dayjs/locale/zh-cn';
 import 'dayjs/locale/zh-tw';
+import 'dayjs/locale/nb';
 import localizedFormat from 'dayjs/plugin/localizedFormat';
 import relativeTime from 'dayjs/plugin/relativeTime';
 import timezone from 'dayjs/plugin/timezone';
