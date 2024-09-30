@@ -78,6 +78,8 @@
     "contributeTranslations": "Contribuye",
     "developedBy": "Desarrollado por <1></1>",
     "externalLibraries": "Utilizando <1></1>",
-    "openSource": "Software de código abierto"
+    "openSource": "Software de código abierto",
+    "fontAwesomeFree": "Font Awesome Free",
+    "mantine": "Mantine"
   }
 }
