@@ -1,5 +1,5 @@
 {
-  "meta": "Generated at 2024-09-29T23:40:37.929Z",
+  "meta": "Generated at 2024-09-30T17:14:06.453Z",
   "users": {
     "111More1": {
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/15497858/medium/f5e25458a9c752ff23e270d4adee80f9.png",
@@ -105,6 +105,12 @@
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/15176660/medium/51f7e18f58cb0eb9abcf197f7338f8f1_default.png",
       "languages": [
         "zh"
+      ]
+    },
+    "Dead3XD": {
+      "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/16602531/medium/4ca643d7c2eb9e15b6f09d8e0a3078e8_default.png",
+      "languages": [
+        "ru"
       ]
     },
     "DeadMarco": {
@@ -501,6 +507,12 @@
         "ko"
       ]
     },
+    "Spisp": {
+      "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/16603067/medium/5bd34b69521633cfc056781263c1735c_default.png",
+      "languages": [
+        "it"
+      ]
+    },
     "sthakrk": {
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/14031231/medium/be9cd1be371920bad4b5f793a6eb4c14.jpeg",
       "fullName": "stha",
@@ -629,8 +641,8 @@
       "translation": 100
     },
     "ar": {
-      "approval": 96,
-      "translation": 96
+      "approval": 100,
+      "translation": 100
     },
     "bg": {
       "approval": 98,
@@ -661,8 +673,8 @@
       "translation": 100
     },
     "es": {
-      "approval": 98,
-      "translation": 98
+      "approval": 100,
+      "translation": 100
     },
     "fa": {
       "approval": 74,
@@ -693,8 +705,8 @@
       "translation": 96
     },
     "it": {
-      "approval": 97,
-      "translation": 97
+      "approval": 100,
+      "translation": 100
     },
     "ja": {
       "approval": 96,
@@ -713,8 +725,8 @@
       "translation": 96
     },
     "ms": {
-      "approval": 98,
-      "translation": 98
+      "approval": 100,
+      "translation": 100
     },
     "nb": {
       "approval": 41,
