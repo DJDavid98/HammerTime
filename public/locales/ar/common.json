@@ -75,6 +75,11 @@
     "intro": "هذا الموقع مفتوح المصدر وتم تطويره بواسطة <1>{{developerName}}</1> باستخدام <3>Font Awesome Free</3> و<5>Mantine</5> وقد تمت ترجمته لعدة لغات بفضل مترجمين متطوعين.",
     "translationsBy": "ترجمة <1></1>",
     "incompleteTranslations": "الترجمة غير مكتملة",
-    "contributeTranslations": "المشاركة في الترجمة"
+    "contributeTranslations": "المشاركة في الترجمة",
+    "developedBy": "طوّره <1></1>",
+    "externalLibraries": "باستخدام <1></1>",
+    "openSource": "الموقع مفتوح المصدر",
+    "fontAwesomeFree": "Font Awesome Free",
+    "mantine": "Mantine"
   }
 }
