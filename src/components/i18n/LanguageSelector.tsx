@@ -90,7 +90,7 @@ export const LanguageSelector: FC = () => {
                   leftIcon={<LanguageFlag language={value} />}
                   rightIcon={
                     !getIsTranslationComplete(languageCompletionData) ? (
-                      <Text color="yellow">
+                      <Text color="green">
                         <FontAwesomeIcon icon="life-ring" />
                       </Text>
                     ) : undefined
