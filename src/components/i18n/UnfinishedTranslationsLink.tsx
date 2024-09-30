@@ -4,8 +4,11 @@ import { ExternalLink } from 'components/ExternalLink';
 import { useTranslation } from 'next-i18next';
 import { FC } from 'react';
 import { CROWDIN_URL } from 'src/config';
+import { getIsTranslationComplete } from 'src/util/crowdin';
+import { MantineGradient } from '@mantine/styles';
 
 const noTranslationsNeededLocales = new Set(['en', 'en-GB', 'hu']);
+const incompleteButtonGradient: MantineGradient = { from: 'blue', to: 'lime', deg: 135 };
 
 export const UnfinishedTranslationsLink: FC<{ crowdinLocale: string; percent?: number }> = ({ crowdinLocale, percent }) => {
   const { t } = useTranslation();
@@ -15,11 +18,13 @@ export const UnfinishedTranslationsLink: FC<{ crowdinLocale: string; percent?: n
   }
 
   const label = t('credits.contributeTranslations');
+  const isComplete = getIsTranslationComplete(percent);
   return (
     <Tooltip label={label}>
       <Button
-        color={percent ? 'orange' : 'light'}
-        variant="subtle"
+        color={isComplete ? 'light' : undefined}
+        variant={isComplete ? 'subtle' : 'gradient'}
+        gradient={isComplete ? undefined : incompleteButtonGradient}
         size="sm"
         component={ExternalLink}
         href={`${CROWDIN_URL}/${crowdinLocale}`}

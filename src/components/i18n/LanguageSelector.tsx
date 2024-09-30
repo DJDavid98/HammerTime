@@ -54,8 +54,8 @@ export const LanguageSelector: FC = () => {
           </Group>
           {!isTranslationComplete && (
             <>
-              <Text color="yellow">{t('credits.incompleteTranslations')}</Text>
-              <Progress color="yellow" value={languagePercent} />
+              <Text color="#6dc271">{t('credits.incompleteTranslations')}</Text>
+              <Progress color="#6dc271" value={languagePercent} radius="xs" />
             </>
           )}
         </Box>
