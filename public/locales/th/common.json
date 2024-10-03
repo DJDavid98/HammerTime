@@ -78,6 +78,8 @@
     "contributeTranslations": "สนับสนุน",
     "developedBy": "สร้างโดย <1></1>",
     "externalLibraries": "ได้ใช้ <1></1>",
-    "openSource": "ซอฟต์แวร์แบบโอเพ่นซอร์ส"
+    "openSource": "ซอฟต์แวร์แบบโอเพ่นซอร์ส",
+    "fontAwesomeFree": "Font Awesome Free",
+    "mantine": "Mantine"
   }
 }
