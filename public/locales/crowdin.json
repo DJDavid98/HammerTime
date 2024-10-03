@@ -1,5 +1,5 @@
 {
-  "meta": "Generated at 2024-09-30T17:14:06.453Z",
+  "meta": "Generated at 2024-10-03T17:51:28.097Z",
   "users": {
     "111More1": {
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/15497858/medium/f5e25458a9c752ff23e270d4adee80f9.png",
@@ -29,6 +29,13 @@
     "Aligatoor": {
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/15276232/medium/ad814a1cf2070097254fee1b06cc28e5.jpg",
       "fullName": "Nikita Sharikov",
+      "languages": [
+        "ru"
+      ]
+    },
+    "arantirrein": {
+      "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/16608543/medium/2e12d4449f7468ee7184e5d4dae6be31.png",
+      "fullName": "Arantir Reinhold",
       "languages": [
         "ru"
       ]
@@ -231,6 +238,12 @@
         "uk"
       ]
     },
+    "gsgsgdggfd": {
+      "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/16603607/medium/9f93684be4896ced4636756b2479afc9.png",
+      "languages": [
+        "de"
+      ]
+    },
     "helppriklreyta": {
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/14318252/medium/0eb295b570a3e6bd67c754bed8424ac4.jpeg",
       "fullName": "Рейт",
@@ -352,6 +365,13 @@
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/16172948/medium/62c44a407cbd24307b8d9b4e28665240.jpeg",
       "languages": [
         "pl"
+      ]
+    },
+    "melishy": {
+      "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/16587533/medium/69333d4c608f1a0284c2cd46f6562b05.jpeg",
+      "fullName": "Melishy",
+      "languages": [
+        "ru"
       ]
     },
     "mihaiofficialRO": {
@@ -646,7 +666,7 @@
     },
     "bg": {
       "approval": 98,
-      "translation": 98
+      "translation": 100
     },
     "ca": {
       "approval": 96,
@@ -753,20 +773,20 @@
       "translation": 100
     },
     "ru": {
-      "approval": 98,
-      "translation": 98
+      "approval": 100,
+      "translation": 100
     },
     "sr": {
-      "approval": 96,
-      "translation": 96
+      "approval": 98,
+      "translation": 98
     },
     "sv": {
       "approval": 96,
       "translation": 96
     },
     "th": {
-      "approval": 98,
-      "translation": 98
+      "approval": 100,
+      "translation": 100
     },
     "tr": {
       "approval": 96,
@@ -774,7 +794,7 @@
     },
     "uk": {
       "approval": 98,
-      "translation": 98
+      "translation": 100
     },
     "ur": {
       "approval": 96,
