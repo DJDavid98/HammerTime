@@ -78,6 +78,8 @@
     "contributeTranslations": "Внести свой вклад",
     "developedBy": "Разработал <1></1>",
     "externalLibraries": "Используя <1></1>",
-    "openSource": "Открытое программное обеспечение"
+    "openSource": "Открытое программное обеспечение",
+    "fontAwesomeFree": "Бесплатную лицензию Font Awesome",
+    "mantine": "Библиотеку Mantine"
   }
 }
