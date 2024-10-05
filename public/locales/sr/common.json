@@ -75,6 +75,11 @@
     "intro": "Ova veb stranica je softver otvorenog koda koji je razvio <1>{{developerName}}</1> koristeći <3>Font Awesome Free</3> i <5>Mantine</5>. Dostupan je na više jezika zahvaljujući volonterskim prevodiocima.",
     "translationsBy": "Prevod <1></1>",
     "incompleteTranslations": "Prevodi su nepotpuni",
-    "contributeTranslations": "Pomogni u prevodu"
+    "contributeTranslations": "Pomogni u prevodu",
+    "developedBy": "Naprvaio <1></1>",
+    "externalLibraries": "Koristeći <1></1>",
+    "openSource": "Softver otvorenog koda",
+    "fontAwesomeFree": "Font Awesome (Besplatna Verzija)",
+    "mantine": "Mantine"
   }
 }
