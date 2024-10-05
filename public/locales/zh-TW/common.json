@@ -75,6 +75,11 @@
     "intro": "本網站是<1>{{developerName}}</1>使用了<3>Font Awesome Free</3>和<5>Mantine</5>開發而成的開源軟體。本站支援由志願者翻譯的多語言版本。",
     "translationsBy": "翻譯者：<1></1>",
     "incompleteTranslations": "未完整翻譯",
-    "contributeTranslations": "參與貢獻"
+    "contributeTranslations": "參與貢獻",
+    "developedBy": "開發者：<1></1>",
+    "externalLibraries": "引用工具：<1></1>",
+    "openSource": "開源軟件",
+    "fontAwesomeFree": "Font Awesome Free",
+    "mantine": "Mantine"
   }
 }
