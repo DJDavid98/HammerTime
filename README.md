@@ -74,6 +74,7 @@ English and Hungarian translations have been included, so no translators will be
   - [Alexander](https://crowdin.com/profile/Mr.Shad)
   - [Cookie Kiro](https://crowdin.com/profile/Cookikui)
   - [HumainAbsurde](https://crowdin.com/profile/humain)
+  - [Kyaz](https://crowdin.com/profile/09kyaz)
   - [M4gicalCat](https://crowdin.com/profile/M4gicalCat)
   - [Ouiouibaguette](https://crowdin.com/profile/Ouiouibaguette)
   - [sivelswhy](https://crowdin.com/profile/sivelswhy)
@@ -89,6 +90,7 @@ English and Hungarian translations have been included, so no translators will be
 - 🇮🇹 Italian: [Lory Pelli](https://github.com/lorypelli)
 - 🇯🇵 Japanese
   - [eai04191](https://crowdin.com/profile/eai04191)
+  - [investigator VT](https://crowdin.com/profile/ms.investigator)
   - [sakana](https://crowdin.com/profile/sakana0580)
   - [TheOnlyRAK](https://crowdin.com/profile/TheOnlyRAK)
   - [のむチュウ (sjk)](https://github.com/sjkim04)
@@ -106,6 +108,7 @@ English and Hungarian translations have been included, so no translators will be
   - [meeekos](https://crowdin.com/profile/meeekos)
   - [MinerPL](https://github.com/minerpl)
   - [stha](https://crowdin.com/profile/sthakrk)
+  - [Wojciech Marzec](https://crowdin.com/profile/Keyacom)
 - 🇵🇹 Portuguese
   - [ً](https://crowdin.com/profile/buckshot-)
   - [Casper](https://crowdin.com/profile/JajarGG)

@@ -1,6 +1,13 @@
 {
-  "meta": "Generated at 2024-10-03T17:51:28.097Z",
+  "meta": "Generated at 2024-10-05T11:29:38.539Z",
   "users": {
+    "09kyaz": {
+      "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/16611155/medium/a968db6840c87a6f72f322b9fed002aa.png",
+      "fullName": "Kyaz",
+      "languages": [
+        "fr"
+      ]
+    },
     "111More1": {
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/15497858/medium/f5e25458a9c752ff23e270d4adee80f9.png",
       "fullName": "ඞ111More1ඞ",
@@ -314,6 +321,13 @@
         "de"
       ]
     },
+    "Keyacom": {
+      "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/14673608/medium/39dc654d4a7ce4d578e063d9dd9a27c5.png",
+      "fullName": "Wojciech Marzec",
+      "languages": [
+        "pl"
+      ]
+    },
     "klauny": {
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/15709863/medium/f20693f8db72984068f71696a682c2af.jpeg",
       "languages": [
@@ -413,7 +427,8 @@
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/15980591/medium/266c3ea571aad5b10f5c60c300e600b2.png",
       "fullName": "investigator VT",
       "languages": [
-        "zh-TW"
+        "zh-TW",
+        "ja"
       ]
     },
     "muharslan": {
@@ -701,8 +716,8 @@
       "translation": 74
     },
     "fr": {
-      "approval": 98,
-      "translation": 98
+      "approval": 99,
+      "translation": 99
     },
     "he": {
       "approval": 71,
@@ -729,8 +744,8 @@
       "translation": 100
     },
     "ja": {
-      "approval": 96,
-      "translation": 96
+      "approval": 100,
+      "translation": 100
     },
     "ko": {
       "approval": 96,
@@ -757,8 +772,8 @@
       "translation": 95
     },
     "pl": {
-      "approval": 98,
-      "translation": 98
+      "approval": 100,
+      "translation": 100
     },
     "pt-BR": {
       "approval": 98,
@@ -777,8 +792,8 @@
       "translation": 100
     },
     "sr": {
-      "approval": 98,
-      "translation": 98
+      "approval": 100,
+      "translation": 100
     },
     "sv": {
       "approval": 96,
@@ -809,8 +824,8 @@
       "translation": 96
     },
     "zh-TW": {
-      "approval": 96,
-      "translation": 96
+      "approval": 100,
+      "translation": 100
     }
   }
 }
