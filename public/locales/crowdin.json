@@ -1,7 +1,8 @@
 {
-  "meta": "Generated at 2024-10-07T01:22:45.699Z",
+  "meta": "Generated at 2024-10-07T15:18:26.351Z",
   "users": {
     "09kyaz": {
+      "id": "16611155",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/16611155/medium/a968db6840c87a6f72f322b9fed002aa.png",
       "fullName": "Kyaz",
       "languages": [
@@ -9,6 +10,7 @@
       ]
     },
     "111More1": {
+      "id": "15497858",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/15497858/medium/f5e25458a9c752ff23e270d4adee80f9.png",
       "fullName": "ඞ111More1ඞ",
       "languages": [
@@ -27,6 +29,7 @@
       ]
     },
     "Alex6_": {
+      "id": "14881780",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/14881780/medium/c7a51bd295ec108e379a092f8bcb5585.png",
       "fullName": "Alex6",
       "languages": [
@@ -34,6 +37,7 @@
       ]
     },
     "Aligatoor": {
+      "id": "15276232",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/15276232/medium/ad814a1cf2070097254fee1b06cc28e5.jpg",
       "fullName": "Nikita Sharikov",
       "languages": [
@@ -41,6 +45,7 @@
       ]
     },
     "arantirrein": {
+      "id": "16608543",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/16608543/medium/2e12d4449f7468ee7184e5d4dae6be31.png",
       "fullName": "Arantir Reinhold",
       "languages": [
@@ -48,6 +53,7 @@
       ]
     },
     "arturfomenko8": {
+      "id": "14491318",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/14491318/medium/4ac1064cf539387bd60bdaca60f9c6a6.png",
       "fullName": "Крутой Бо",
       "languages": [
@@ -55,12 +61,14 @@
       ]
     },
     "Balajiasli": {
+      "id": "15923883",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/15923883/medium/c28c99b833b73ad713e6c7fc304a3837_default.png",
       "languages": [
         "hi"
       ]
     },
     "BelleBernice": {
+      "id": "14459560",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/14459560/medium/e95c5c8972902e5bc2541fd8c91b847a.jpg",
       "fullName": "Belle Bernice",
       "languages": [
@@ -68,6 +76,7 @@
       ]
     },
     "bill876": {
+      "id": "12500432",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/12500432/medium/969c551bd64a94a5cca8e2d1eea48fbd.png",
       "fullName": "Vladimir",
       "languages": [
@@ -75,19 +84,30 @@
       ]
     },
     "Blurplix": {
+      "id": "15193976",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/15193976/medium/4b08a4900a298969f9ed68ff1f639d46.png",
       "languages": [
         "cs"
       ]
     },
     "buckshot-": {
+      "id": "15281318",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/15281318/medium/363768b7f5d6aeefadc4ef37b563ac64.jpeg",
       "fullName": "ً",
       "languages": [
         "pt"
       ]
     },
+    "C.Ezra.M": {
+      "id": "14673608",
+      "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/14673608/medium/39dc654d4a7ce4d578e063d9dd9a27c5.png",
+      "fullName": "Wojciech Marzec",
+      "languages": [
+        "pl"
+      ]
+    },
     "carlos.diener": {
+      "id": "15199922",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/15199922/medium/a17f070266b6105abda962b7e05e41c1.png",
       "fullName": "Carlos Diener",
       "languages": [
@@ -95,6 +115,7 @@
       ]
     },
     "cheesepickle12345678": {
+      "id": "15404404",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/15404404/medium/f5661cd0e6ea9c6e6904a9efcc79c3ba.png",
       "fullName": "Bin",
       "languages": [
@@ -102,6 +123,7 @@
       ]
     },
     "Chrisdbhr": {
+      "id": "13379819",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/13379819/medium/f9f1d9f07ed024f9984cfee30171c158.jpg",
       "fullName": "Chris",
       "languages": [
@@ -109,6 +131,7 @@
       ]
     },
     "Cookikui": {
+      "id": "14840926",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/14840926/medium/51ec0133fc45c0c9a27d77efbacab2fd.jpeg",
       "fullName": "Cookie Kiro",
       "languages": [
@@ -116,18 +139,21 @@
       ]
     },
     "CPYW_7226": {
+      "id": "15176660",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/15176660/medium/51f7e18f58cb0eb9abcf197f7338f8f1_default.png",
       "languages": [
         "zh"
       ]
     },
     "Dead3XD": {
+      "id": "16602531",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/16602531/medium/4ca643d7c2eb9e15b6f09d8e0a3078e8_default.png",
       "languages": [
         "ru"
       ]
     },
     "DeadMarco": {
+      "id": "15419858",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/15419858/medium/3b6c5eccc1a9aee62fe8789a8b132d03.jpeg",
       "fullName": "Mohammad Safa Gray",
       "languages": [
@@ -135,6 +161,7 @@
       ]
     },
     "DemiCool": {
+      "id": "15682999",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/15682999/medium/ee2bb4425c16600014a5cafd1cbf167e.jpeg",
       "fullName": "Tiago",
       "languages": [
@@ -142,6 +169,7 @@
       ]
     },
     "Developer_X": {
+      "id": "15745113",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/15745113/medium/b69a58d3b8bcf360760b4ae577100753.png",
       "fullName": "Muhammad Dawood",
       "languages": [
@@ -149,6 +177,7 @@
       ]
     },
     "DJDavid98": {
+      "id": "13617551",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/13617551/medium/89d4d6ca67dabd71e4738d8bbda1d337.png",
       "languages": [
         "ar",
@@ -193,18 +222,21 @@
       ]
     },
     "DrakeZero": {
+      "id": "14699026",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/14699026/medium/c4e20b5bd0d67578d6c8372c94fe5e34.jpg",
       "languages": [
         "es"
       ]
     },
     "eai04191": {
+      "id": "13047240",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/13047240/medium/8930ba6c0b0036f390443b004ceaeb0e.jpeg",
       "languages": [
         "ja"
       ]
     },
     "EL0nMusk": {
+      "id": "15757195",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/15757195/medium/c792eae26bf6201b6fdff2889ddf3837.jpeg",
       "fullName": "Feor",
       "languages": [
@@ -212,6 +244,7 @@
       ]
     },
     "enky": {
+      "id": "14495070",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/14495070/medium/9790134cb3a75f96edf02a1a34253d6b_default.png",
       "fullName": "i",
       "languages": [
@@ -219,6 +252,7 @@
       ]
     },
     "Ethxrnity": {
+      "id": "14311950",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/14311950/medium/f66038a711625b43473c75b9b34b9944.jpeg",
       "fullName": "イーテルニティ ☄️",
       "languages": [
@@ -226,12 +260,14 @@
       ]
     },
     "Fabian9799": {
+      "id": "13020288",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/13020288/medium/b561bc893b978a594e40704fba749500.png",
       "languages": [
         "de"
       ]
     },
     "febilly": {
+      "id": "15776699",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/15776699/medium/3cefddd8b28b638fce14ab846598af18.png",
       "fullName": "姓甚名谁",
       "languages": [
@@ -239,6 +275,7 @@
       ]
     },
     "GameHacker": {
+      "id": "15276044",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/15276044/medium/44caa0878ba5d8b3957dc0cec142af07.png",
       "languages": [
         "ru",
@@ -246,12 +283,14 @@
       ]
     },
     "gsgsgdggfd": {
+      "id": "16603607",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/16603607/medium/9f93684be4896ced4636756b2479afc9.png",
       "languages": [
         "de"
       ]
     },
     "helppriklreyta": {
+      "id": "14318252",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/14318252/medium/0eb295b570a3e6bd67c754bed8424ac4.jpeg",
       "fullName": "Рейт",
       "languages": [
@@ -259,6 +298,7 @@
       ]
     },
     "humain": {
+      "id": "13466537",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/13466537/medium/0391792e7d4d8859143ee511b5cbe6b1.png",
       "fullName": "HumainAbsurde",
       "languages": [
@@ -266,6 +306,7 @@
       ]
     },
     "JajarGG": {
+      "id": "15659129",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/15659129/medium/a6cf2868abb6fb3060b565fc5e8fe9eb.png",
       "fullName": "Casper",
       "languages": [
@@ -275,6 +316,7 @@
       ]
     },
     "jckcr": {
+      "id": "15258052",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/15258052/medium/8b9ed9fceb2db497212c6340c96e6e2d.png",
       "fullName": "Jackie",
       "languages": [
@@ -283,6 +325,7 @@
       ]
     },
     "Jessuh": {
+      "id": "14730100",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/14730100/medium/c819c192ba8d27779598167353cb01ee.png",
       "fullName": "Jesse",
       "languages": [
@@ -290,18 +333,21 @@
       ]
     },
     "joll05": {
+      "id": "15692641",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/15692641/medium/6f3727d77c8c635a5cfa412a0bdc56c6_default.png",
       "languages": [
         "sv"
       ]
     },
     "jovictasor": {
+      "id": "16066210",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/16066210/medium/dea52aa62dffb32ffce212d8b9ccb7bf_default.png",
       "languages": [
         "da"
       ]
     },
     "JudDayLum": {
+      "id": "15761951",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/15761951/medium/4b8ca80ed9c3daf4cf2aec65f97092bb.png",
       "fullName": "JudDayLum Official",
       "languages": [
@@ -309,32 +355,29 @@
       ]
     },
     "JudeDM": {
+      "id": "15196324",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/15196324/medium/3dcf5db92cdc8c91ec22b05ffe41935c.png",
       "languages": [
         "ru"
       ]
     },
     "julix00": {
+      "id": "15169912",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/15169912/medium/8a6ca1b2207f50a15753f8471fb0d0b9_default.png",
       "fullName": "Julius Geiger",
       "languages": [
         "de"
       ]
     },
-    "Keyacom": {
-      "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/14673608/medium/39dc654d4a7ce4d578e063d9dd9a27c5.png",
-      "fullName": "Wojciech Marzec",
-      "languages": [
-        "pl"
-      ]
-    },
     "klauny": {
+      "id": "15709863",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/15709863/medium/f20693f8db72984068f71696a682c2af.jpeg",
       "languages": [
         "cs"
       ]
     },
     "LennartDenmark": {
+      "id": "12852355",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/12852355/medium/c40a1133aaacf9a196c4426af1b9845f.jpg",
       "fullName": "Lennart Christiansen",
       "languages": [
@@ -342,12 +385,14 @@
       ]
     },
     "leo0six": {
+      "id": "14830652",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/14830652/medium/28af1eaf066206e61307f05e82c4e0fd.png",
       "languages": [
         "pt-BR"
       ]
     },
     "Liggli": {
+      "id": "25282",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/25282/medium/2e4f4db1a90b45727acdc13302365351.png",
       "fullName": "Liggliluff",
       "languages": [
@@ -355,6 +400,7 @@
       ]
     },
     "lorypelli": {
+      "id": "15096881",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/15096881/medium/00650463a370bd09c4622987cccb9b07.png",
       "fullName": "Lory Pelli",
       "languages": [
@@ -362,6 +408,7 @@
       ]
     },
     "LumiKitten": {
+      "id": "14428048",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/14428048/medium/a1c3cd7a85bd5c5afc53f5bb5d05be65.png",
       "fullName": "Luna A",
       "languages": [
@@ -370,18 +417,21 @@
       ]
     },
     "M4gicalCat": {
+      "id": "15845459",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/15845459/medium/231367867a98f9f7cef7c2b7f4d004a3_default.png",
       "languages": [
         "fr"
       ]
     },
     "meeekos": {
+      "id": "16172948",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/16172948/medium/62c44a407cbd24307b8d9b4e28665240.jpeg",
       "languages": [
         "pl"
       ]
     },
     "melishy": {
+      "id": "16587533",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/16587533/medium/69333d4c608f1a0284c2cd46f6562b05.jpeg",
       "fullName": "Melishy",
       "languages": [
@@ -389,6 +439,7 @@
       ]
     },
     "mihaiofficialRO": {
+      "id": "14999657",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/14999657/medium/64e7f99cd656e04aad4d9394e86bae71_default.png",
       "fullName": "mihai",
       "languages": [
@@ -396,6 +447,7 @@
       ]
     },
     "MinerPL": {
+      "id": "14844020",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/14844020/medium/6b7cb5838cb242b98de29ace86cad2c8.png",
       "fullName": "Dawid Jaworski",
       "languages": [
@@ -403,6 +455,7 @@
       ]
     },
     "mnh48": {
+      "id": "12680006",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/12680006/medium/9f5292343710ba9994afbec480ce02cc.png",
       "fullName": "Nurul Azeera Hidayah Muhammad Nur Hidayat Yasuyoshi (MNH48)",
       "languages": [
@@ -410,6 +463,7 @@
       ]
     },
     "Mr.Shad": {
+      "id": "16601907",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/16601907/medium/011f3d993c8042891d17ee6ec4b18d67.jpg",
       "fullName": "Alexander",
       "languages": [
@@ -424,6 +478,7 @@
       ]
     },
     "ms.investigator": {
+      "id": "15980591",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/15980591/medium/266c3ea571aad5b10f5c60c300e600b2.png",
       "fullName": "investigator VT",
       "languages": [
@@ -432,12 +487,14 @@
       ]
     },
     "muharslan": {
+      "id": "15767931",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/15767931/medium/d904aaa8d373bcccd43a1049d0069fdb_default.png",
       "languages": [
         "ur"
       ]
     },
     "net-tech-": {
+      "id": "14936099",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/14936099/medium/577bbd43898509185ee3aa910be8d7a0.png",
       "languages": [
         "hr",
@@ -445,6 +502,7 @@
       ]
     },
     "NightyCloud": {
+      "id": "14880978",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/14880978/medium/57ba400598e4f8ef92bc17055ea07d78_default.png",
       "fullName": "Luna",
       "languages": [
@@ -452,12 +510,14 @@
       ]
     },
     "notlin4": {
+      "id": "15434450",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/15434450/medium/bf2311cb92f429b2420bf4cbba2e5124.png",
       "languages": [
         "zh-TW"
       ]
     },
     "okunamayanad": {
+      "id": "14744332",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/14744332/medium/0cbbb2ef7f1e01e5433f7019b457f2a9.png",
       "fullName": "Baran Moroğan",
       "languages": [
@@ -465,12 +525,14 @@
       ]
     },
     "Ouiouibaguette": {
+      "id": "15263324",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/15263324/medium/a756c80d209816c4235f7805168580bb_default.png",
       "languages": [
         "fr"
       ]
     },
     "patricktobias": {
+      "id": "15221880",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/15221880/medium/32654a21f1184063c3da71396f6c6ceb.png",
       "fullName": "Patrick Tobias",
       "languages": [
@@ -478,6 +540,7 @@
       ]
     },
     "quanonthecob": {
+      "id": "16061216",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/16061216/medium/661f9256140289c8709b4bfa647efcdc.png",
       "fullName": "Quan",
       "languages": [
@@ -485,6 +548,7 @@
       ]
     },
     "raphael.santiago.53": {
+      "id": "13734875",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/13734875/medium/b58cf5c12984f4ed0e2741c7f1b0e4f4.jpg",
       "fullName": "Raphael Santiago",
       "languages": [
@@ -492,18 +556,21 @@
       ]
     },
     "REMOVED_USER": {
+      "id": "15976005",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/15976005/medium/8ab79eda3947b2b96c395e989632a7c5_default.png",
       "languages": [
         "pt"
       ]
     },
     "Rxshi": {
+      "id": "15078949",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/15078949/medium/ccf2fa657ac59b4017218b3b74c18f29.jpg",
       "languages": [
         "bg"
       ]
     },
     "sakana0580": {
+      "id": "16187048",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/16187048/medium/44c428f630dfe252bda767c6dfdd5cd2.png",
       "fullName": "sakana",
       "languages": [
@@ -511,12 +578,14 @@
       ]
     },
     "Seenoc": {
+      "id": "14785728",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/14785728/medium/12d06cd9c515388be7cb3577027dd4fb.png",
       "languages": [
         "lt"
       ]
     },
     "servey22": {
+      "id": "12773366",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/12773366/medium/fdaf3adb9a721d31f59ff07f3c0b7506_default.png",
       "fullName": "Сергей Блохнов",
       "languages": [
@@ -524,18 +593,21 @@
       ]
     },
     "ShadowG": {
+      "id": "13110344",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/13110344/medium/be3cabf0ae69468ba96625a9422dd9b0_default.png",
       "languages": [
         "pt-BR"
       ]
     },
     "sivelswhy": {
+      "id": "15066243",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/15066243/medium/dbe5cee3743fb4f3fb95b726dbfc6904.png",
       "languages": [
         "fr"
       ]
     },
     "sjkim04": {
+      "id": "14469636",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/14469636/medium/1802f157429ca48973bf029b494df439.jpeg",
       "languages": [
         "ja",
@@ -543,12 +615,14 @@
       ]
     },
     "Spisp": {
+      "id": "16603067",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/16603067/medium/5bd34b69521633cfc056781263c1735c_default.png",
       "languages": [
         "it"
       ]
     },
     "sthakrk": {
+      "id": "14031231",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/14031231/medium/be9cd1be371920bad4b5f793a6eb4c14.jpeg",
       "fullName": "stha",
       "languages": [
@@ -556,6 +630,7 @@
       ]
     },
     "stjepanmih13x": {
+      "id": "15734961",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/15734961/medium/cbe5c1641f25c98ca3741acc11a4929d.jpeg",
       "fullName": "Stipex13 x",
       "languages": [
@@ -563,6 +638,7 @@
       ]
     },
     "streetdog.arg": {
+      "id": "13524864",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/13524864/medium/3e0a0f048029a3b3b606b7e8c915e1cb.jpg",
       "fullName": "Street Dog",
       "languages": [
@@ -570,6 +646,7 @@
       ]
     },
     "sware": {
+      "id": "13533384",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/13533384/medium/3f23c22f45a145db5c2fb24ceb3df6e0.png",
       "languages": [
         "ar",
@@ -591,12 +668,14 @@
       ]
     },
     "tayloryte": {
+      "id": "15270240",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/15270240/medium/d44401e0cdd380fd2b82305810671784_default.png",
       "languages": [
         "lt"
       ]
     },
     "TheOnlyRAK": {
+      "id": "15218810",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/15218810/medium/772b6979668675519d61aa01f0d61556_default.png",
       "languages": [
         "de",
@@ -604,6 +683,7 @@
       ]
     },
     "thorarne94": {
+      "id": "16611703",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/16611703/medium/2f3d5cdb1db8842bf4a70d93d7471bcc.png",
       "fullName": "Thor",
       "languages": [
@@ -611,18 +691,21 @@
       ]
     },
     "tunket": {
+      "id": "15276254",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/15276254/medium/2de681008fa84f431b6e535dd0fd6c70.jpeg",
       "languages": [
         "sv"
       ]
     },
     "tututuana": {
+      "id": "14391214",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/14391214/medium/6cda81418c47236460cdf36339c0f19d_default.png",
       "languages": [
         "tr"
       ]
     },
     "unpredictable": {
+      "id": "15514192",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/15514192/medium/375165879a1d44129a06d1c635976680.png",
       "fullName": "Rukchad Wongprayoon",
       "languages": [
@@ -630,18 +713,21 @@
       ]
     },
     "User670": {
+      "id": "12485887",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/12485887/medium/179b686ac43da2059ac51f1c1a021890_default.png",
       "languages": [
         "zh"
       ]
     },
     "ValouFCH": {
+      "id": "15205466",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/15205466/medium/77ca45838d1bfedc06caee2ca27858e0.png",
       "languages": [
         "fr"
       ]
     },
     "vitalkanev": {
+      "id": "13099141",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/13099141/medium/3895672f9b44c0e276992b0de4e2b870_default.png",
       "fullName": "Vitaliy Kanev",
       "languages": [
@@ -649,6 +735,7 @@
       ]
     },
     "w11039685": {
+      "id": "16611181",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/16611181/medium/cec9e3b6380e7ba2ebc1dc2f22f7267b.jpeg",
       "fullName": "Chenyu Wang",
       "languages": [
@@ -656,6 +743,7 @@
       ]
     },
     "WhiteBear60": {
+      "id": "14236042",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/14236042/medium/c99e038b875be4cd35910b0395a848db.png",
       "fullName": "Mykhailo Yaremenko",
       "languages": [
@@ -663,6 +751,7 @@
       ]
     },
     "yareaj": {
+      "id": "14524626",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/14524626/medium/0f22f876f30db0adc352800a6795d754.png",
       "fullName": "Pablo",
       "languages": [
@@ -670,6 +759,7 @@
       ]
     },
     "zach.lawnmower": {
+      "id": "16466619",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/16466619/medium/d6cb5d30611145442ab98303a519813d.png",
       "fullName": "Ivy Wilson",
       "languages": [
@@ -677,6 +767,7 @@
       ]
     },
     "ZeRealOne": {
+      "id": "15269410",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/15269410/medium/4d8badba317583e1ad8a75eb635aaaf1.gif",
       "fullName": "Amit Cohen",
       "languages": [

@@ -351,6 +351,7 @@ void (async () => {
       fullName = fullName.replace(/\s\([^)]+\)$/, '');
     }
     const reportUserData: ReportUserData = {
+      id: reportDataItem.user.id,
       avatarUrl: reportDataItem.user.avatarUrl,
     };
     if (fullName) {
