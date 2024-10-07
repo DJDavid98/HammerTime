@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Aside, Navbar, ScrollArea, Space, Text, Title } from '@mantine/core';
+import { Aside, Flex, Navbar, ScrollArea, Space, Text, Title } from '@mantine/core';
 import { ExternalLink } from 'components/ExternalLink';
 import { LanguageSelector } from 'components/i18n/LanguageSelector';
 import { InputSettings } from 'components/InputSettings';
@@ -33,20 +33,28 @@ export const AppSidebar: FC<{ opened: boolean; Component: typeof Aside | typeof 
         <Title align="center" order={3} mb={10}>
           <FontAwesomeIcon icon="info" fixedWidth /> {t('credits.title')}
         </Title>
-        <Text mb="sm" transform="uppercase">
-          <FontAwesomeIcon icon="user" className={styles['text-icon']} />
-          <Trans t={t} i18nKey="credits.developedBy">
-            0
-            <DeveloperCredit />
-          </Trans>
-        </Text>
-        <Text mb="sm" transform="uppercase">
-          <FontAwesomeIcon icon="code" className={styles['text-icon']} />
-          <Trans t={t} i18nKey="credits.externalLibraries">
-            0
-            <ExternalLibrariesCredit />
-          </Trans>
-        </Text>
+        <Flex wrap="nowrap">
+          <Text mb="sm">
+            <FontAwesomeIcon icon="user" className={styles['text-icon']} />
+          </Text>
+          <Text mb="sm" transform="uppercase">
+            <Trans t={t} i18nKey="credits.developedBy">
+              0
+              <DeveloperCredit />
+            </Trans>
+          </Text>
+        </Flex>
+        <Flex wrap="nowrap">
+          <Text mb="sm">
+            <FontAwesomeIcon icon="code" className={styles['text-icon']} />
+          </Text>
+          <Text mb="sm" transform="uppercase">
+            <Trans t={t} i18nKey="credits.externalLibraries">
+              0
+              <ExternalLibrariesCredit />
+            </Trans>
+          </Text>
+        </Flex>
         <TranslatorCredit />
         <Text mb="sm" color="#3da639" transform="uppercase">
           <FontAwesomeIcon icon={['fab', 'osi']} className={styles['text-icon']} />

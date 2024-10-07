@@ -5,7 +5,7 @@ import { normalizeCredit } from 'src/util/translation';
 import { TranslationCredits } from 'components/i18n/TranslationCredits';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styles from 'modules/AppSidebar.module.scss';
-import { Text } from '@mantine/core';
+import { Flex, Text } from '@mantine/core';
 import { reportData } from 'src/util/crowdin';
 
 export const TranslatorCredit: FC = () => {
@@ -27,12 +27,16 @@ export const TranslatorCredit: FC = () => {
   if (!translationCredits) return null;
 
   return (
-    <Text mb="sm" transform="uppercase">
-      <FontAwesomeIcon icon="language" className={styles['text-icon']} />
-      <Trans t={t} i18nKey="credits.translationsBy">
-        0
-        <TranslationCredits credits={translationCredits} />
-      </Trans>
-    </Text>
+    <Flex wrap="nowrap">
+      <Text mb="sm">
+        <FontAwesomeIcon icon="language" className={styles['text-icon']} />
+      </Text>
+      <Text mb="sm" transform="uppercase">
+        <Trans t={t} i18nKey="credits.translationsBy">
+          0
+          <TranslationCredits credits={translationCredits} />
+        </Trans>
+      </Text>
+    </Flex>
   );
 };
