@@ -109,7 +109,7 @@ English and Hungarian translations have been included, so no translators will be
   - [meeekos](https://crowdin.com/profile/meeekos)
   - [MinerPL](https://github.com/minerpl)
   - [stha](https://crowdin.com/profile/sthakrk)
-  - [Wojciech Marzec](https://crowdin.com/profile/Keyacom)
+  - [Wojciech Marzec](https://crowdin.com/profile/C.Ezra.M)
 - 🇵🇹 Portuguese
   - [ً](https://crowdin.com/profile/buckshot-)
   - [Casper](https://crowdin.com/profile/JajarGG)
