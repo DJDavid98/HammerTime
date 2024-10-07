@@ -160,7 +160,7 @@ export const IndexPage: NextPage<IndexPageProps> = ({ tzNames }) => {
     const formatted = momentToInputValue(clientMoment);
     handleDateTimeChange(formatted);
     if (clientTimezone) handleTimezoneChange(clientTimezone);
-  }, [dateString, handleDateTimeChange, handleTimezoneChange, initialTimestamp, timeString]);
+  }, [dateString, handleDateTimeChange, handleTimezoneChange, initialTimestamp, router.isReady, timeString]);
 
   useEffect(() => {
     if (!dateString || !timeString) return;
