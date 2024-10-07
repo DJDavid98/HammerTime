@@ -1,5 +1,5 @@
 {
-  "meta": "Generated at 2024-10-05T11:29:38.539Z",
+  "meta": "Generated at 2024-10-07T01:22:45.699Z",
   "users": {
     "09kyaz": {
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/16611155/medium/a968db6840c87a6f72f322b9fed002aa.png",
@@ -603,6 +603,13 @@
         "ja"
       ]
     },
+    "thorarne94": {
+      "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/16611703/medium/2f3d5cdb1db8842bf4a70d93d7471bcc.png",
+      "fullName": "Thor",
+      "languages": [
+        "nb"
+      ]
+    },
     "tunket": {
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/15276254/medium/2de681008fa84f431b6e535dd0fd6c70.jpeg",
       "languages": [
@@ -639,6 +646,13 @@
       "fullName": "Vitaliy Kanev",
       "languages": [
         "ru"
+      ]
+    },
+    "w11039685": {
+      "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/16611181/medium/cec9e3b6380e7ba2ebc1dc2f22f7267b.jpeg",
+      "fullName": "Chenyu Wang",
+      "languages": [
+        "zh"
       ]
     },
     "WhiteBear60": {
@@ -700,8 +714,8 @@
       "translation": 98
     },
     "el": {
-      "approval": 96,
-      "translation": 96
+      "approval": 100,
+      "translation": 100
     },
     "en-GB": {
       "approval": 100,
@@ -820,8 +834,8 @@
       "translation": 95
     },
     "zh": {
-      "approval": 96,
-      "translation": 96
+      "approval": 97,
+      "translation": 97
     },
     "zh-TW": {
       "approval": 100,

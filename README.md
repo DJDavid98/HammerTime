@@ -54,6 +54,7 @@ English and Hungarian translations have been included, so no translators will be
   - [Rxshi](https://crowdin.com/profile/Rxshi)
 - Catalan: [sware](https://crowdin.com/profile/sware)
 - 🇨🇳 Chinese Simplified
+  - [Chenyu Wang](https://crowdin.com/profile/w11039685)
   - [CPYW_7226](https://crowdin.com/profile/CPYW_7226)
   - [User670](https://crowdin.com/profile/User670)
   - [姓甚名谁](https://crowdin.com/profile/febilly)
