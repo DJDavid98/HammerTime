@@ -75,6 +75,11 @@
     "intro": "Bu web sitesi, <1>{{developerName}}</1> tarafından geliştirilen açık kaynaklı bir yazılımdır <3>Font Awesome Free</3> ve <5>Mantine</5> kullanılarak yapıldı. Gönüllü çevirmenler sayesinde birden fazla dilde mevcuttur.",
     "translationsBy": "Çevirenler <1></1>",
     "incompleteTranslations": "Çeviriler eksik",
-    "contributeTranslations": "Katkıda bulunun"
+    "contributeTranslations": "Katkıda bulunun",
+    "developedBy": "<1></1> Tarafından geliştirdi",
+    "externalLibraries": "Kullanılanlar <1></1>",
+    "openSource": "Açık kaynak kodlu yazılım",
+    "fontAwesomeFree": "Font Awesome Free",
+    "mantine": "Mantine"
   }
 }
