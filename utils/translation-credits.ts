@@ -336,12 +336,12 @@ void (async () => {
       translation: languageProgress.translationProgress,
     };
   });
-  rawReportData.data.sort((a, b) => a.user.username.localeCompare(b.user.username));
   rawReportData.data.forEach((reportDataItem) => {
     if (reportDataItem.approved === 0 && reportDataItem.voted === 0 && reportDataItem.translated === 0) {
       // Skip users with virtually 0 activity
       return;
     }
+    const id = parseInt(reportDataItem.user.id, 10);
     const username = reportDataItem.user.username;
     let fullName = reportDataItem.user.fullName;
     if (fullName === username) {
@@ -351,7 +351,7 @@ void (async () => {
       fullName = fullName.replace(/\s\([^)]+\)$/, '');
     }
     const reportUserData: ReportUserData = {
-      id: reportDataItem.user.id,
+      username,
       avatarUrl: reportDataItem.user.avatarUrl,
     };
     if (fullName) {
@@ -367,7 +367,7 @@ void (async () => {
       }, []);
     }
 
-    indexedReportData.users[username] = reportUserData;
+    indexedReportData.users[id] = reportUserData;
   });
   const assembledReportDataOutputPath = path.join(readmeFolder, 'public', 'locales', 'crowdin.json');
   console.info(`Writing assembled report data to ${assembledReportDataOutputPath}…`);

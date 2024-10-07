@@ -1,7 +1,7 @@
 import reportDataJson from 'public/locales/crowdin.json';
 
 export interface ReportUserData {
-  id: string;
+  username: string;
   fullName?: string;
   avatarUrl: string;
   languages?: string[];

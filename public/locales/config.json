@@ -9,7 +9,7 @@
       "calendarWeekdayFormat": "dddd",
       "credits": [
         {
-          "crowdin": "raphael.santiago.53"
+          "crowdinId": 13734875
         }
       ]
     },
@@ -20,10 +20,10 @@
       "emoji": "\uD83C\uDDE7\uD83C\uDDEC",
       "credits": [
         {
-          "crowdin": "Rxshi"
+          "crowdinId": 15078949
         },
         {
-          "crowdin": "Mr.Shad"
+          "crowdinId": 16601907
         }
       ]
     },
@@ -34,7 +34,7 @@
       "customFlag": true,
       "credits": [
         {
-          "crowdin": "sware"
+          "crowdinId": 13533384
         }
       ]
     },
@@ -50,16 +50,16 @@
       "calendarYearLabelFormat": "YYYY年",
       "credits": [
         {
-          "crowdin": "CPYW_7226"
+          "crowdinId": 15176660
         },
         {
-          "crowdin": "User670"
+          "crowdinId": 12485887
         },
         {
-          "crowdin": "febilly"
+          "crowdinId": 15776699
         },
         {
-          "crowdin": "w11039685"
+          "crowdinId": 16611181
         }
       ]
     },
@@ -74,13 +74,13 @@
       "calendarYearLabelFormat": "YYYY年",
       "credits": [
         {
-          "crowdin": "CPYW_7226"
+          "crowdinId": 15176660
         },
         {
-          "crowdin": "notlin4"
+          "crowdinId": 15434450
         },
         {
-          "crowdin": "ms.investigator"
+          "crowdinId": 15980591
         }
       ]
     },
@@ -94,7 +94,7 @@
       ],
       "credits": [
         {
-          "crowdin": "stjepanmih13x",
+          "crowdinId": 15734961,
           "displayName": "Volvone",
           "url": "https://github.com/volvone"
         }
@@ -107,13 +107,13 @@
       "emoji": "\uD83C\uDDE8\uD83C\uDDFF",
       "credits": [
         {
-          "crowdin": "klauny"
+          "crowdinId": 15709863
         },
         {
-          "crowdin": "Ethxrnity"
+          "crowdinId": 14311950
         },
         {
-          "crowdin": "Blurplix"
+          "crowdinId": 15193976
         }
       ]
     },
@@ -128,7 +128,7 @@
       ],
       "credits": [
         {
-          "crowdin": "Jessuh",
+          "crowdinId": 14730100,
           "displayName": "Jesse",
           "url": "https://github.com/Jessuhh"
         }
@@ -155,28 +155,28 @@
       "emoji": "\uD83C\uDDEB\uD83C\uDDF7",
       "credits": [
         {
-          "crowdin": "Cookikui"
+          "crowdinId": 14840926
         },
         {
-          "crowdin": "Ouiouibaguette"
+          "crowdinId": 15263324
         },
         {
-          "crowdin": "sivelswhy"
+          "crowdinId": 15066243
         },
         {
-          "crowdin": "ValouFCH"
+          "crowdinId": 15205466
         },
         {
-          "crowdin": "M4gicalCat"
+          "crowdinId": 15845459
         },
         {
-          "crowdin": "humain"
+          "crowdinId": 13466537
         },
         {
-          "crowdin": "Mr.Shad"
+          "crowdinId": 16601907
         },
         {
-          "crowdin": "09kyaz"
+          "crowdinId": 16611155
         }
       ]
     },
@@ -187,13 +187,13 @@
       "emoji": "\uD83C\uDDE9\uD83C\uDDEA",
       "credits": [
         {
-          "crowdin": "carlos.diener"
+          "crowdinId": 15199922
         },
         {
-          "crowdin": "Fabian9799"
+          "crowdinId": 13020288
         },
         {
-          "crowdin": "julix00"
+          "crowdinId": 15169912
         }
       ]
     },
@@ -204,7 +204,7 @@
       "emoji": "\uD83C\uDDEC\uD83C\uDDF7",
       "credits": [
         {
-          "crowdin": "BelleBernice"
+          "crowdinId": 14459560
         }
       ]
     },
@@ -215,7 +215,7 @@
       "emoji": "\uD83C\uDDEE\uD83C\uDDF3",
       "credits": [
         {
-          "crowdin": "Balajiasli"
+          "crowdinId": 15923883
         }
       ]
     },
@@ -231,7 +231,7 @@
       ],
       "credits": [
         {
-          "crowdin": "ZeRealOne"
+          "crowdinId": 15269410
         }
       ]
     },
@@ -252,7 +252,7 @@
       "emoji": "\uD83C\uDDEE\uD83C\uDDE9",
       "credits": [
         {
-          "crowdin": "jckcr",
+          "crowdinId": 15258052,
           "url": "https://github.com/Jckcr"
         }
       ]
@@ -268,7 +268,7 @@
       ],
       "credits": [
         {
-          "crowdin": "lorypelli",
+          "crowdinId": 15096881,
           "url": "https://github.com/lorypelli"
         }
       ]
@@ -282,21 +282,21 @@
       "calendarYearLabelFormat": "YYYY年",
       "credits": [
         {
-          "crowdin": "TheOnlyRAK"
+          "crowdinId": 15218810
         },
         {
-          "crowdin": "sjkim04",
+          "crowdinId": 14469636,
           "displayName": "のむチュウ (sjk)",
           "url": "https://github.com/sjkim04"
         },
         {
-          "crowdin": "eai04191"
+          "crowdinId": 13047240
         },
         {
-          "crowdin": "sakana0580"
+          "crowdinId": 16187048
         },
         {
-          "crowdin": "ms.investigator"
+          "crowdinId": 15980591
         }
       ]
     },
@@ -309,10 +309,10 @@
       "calendarYearLabelFormat": "YYYY년",
       "credits": [
         {
-          "crowdin": "cheesepickle12345678"
+          "crowdinId": 15404404
         },
         {
-          "crowdin": "sjkim04",
+          "crowdinId": 14469636,
           "displayName": "김카츄 (sjk)",
           "url": "https://github.com/sjkim04"
         }
@@ -325,7 +325,7 @@
       "emoji": "\uD83C\uDDF1\uD83C\uDDFB",
       "credits": [
         {
-          "crowdin": "JajarGG"
+          "crowdinId": 15659129
         }
       ]
     },
@@ -336,10 +336,10 @@
       "emoji": "\uD83C\uDDF1\uD83C\uDDF9",
       "credits": [
         {
-          "crowdin": "tayloryte"
+          "crowdinId": 15270240
         },
         {
-          "crowdin": "Seenoc"
+          "crowdinId": 14785728
         }
       ]
     },
@@ -355,7 +355,7 @@
       "blueDay": 6,
       "credits": [
         {
-          "crowdin": "mnh48"
+          "crowdinId": 12680006
         }
       ]
     },
@@ -367,7 +367,7 @@
       "rtl": true,
       "credits": [
         {
-          "crowdin": "DeadMarco"
+          "crowdinId": 15419858
         }
       ]
     },
@@ -381,18 +381,18 @@
       ],
       "credits": [
         {
-          "crowdin": "MinerPL",
+          "crowdinId": 14844020,
           "displayName": "MinerPL",
           "url": "https://github.com/minerpl"
         },
         {
-          "crowdin": "sthakrk"
+          "crowdinId": 14031231
         },
         {
-          "crowdin": "meeekos"
+          "crowdinId": 16172948
         },
         {
-          "crowdin": "C.Ezra.M"
+          "crowdinId": 14673608
         }
       ]
     },
@@ -404,13 +404,13 @@
       "calendarWeekdayFormat": "ddd",
       "credits": [
         {
-          "crowdin": "JajarGG"
+          "crowdinId": 15659129
         },
         {
-          "crowdin": "DemiCool"
+          "crowdinId": 15682999
         },
         {
-          "crowdin": "buckshot-"
+          "crowdinId": 15281318
         }
       ]
     },
@@ -424,13 +424,13 @@
       "calendarWeekdayFormat": "ddd",
       "credits": [
         {
-          "crowdin": "leo0six"
+          "crowdinId": 14830652
         },
         {
-          "crowdin": "ShadowG"
+          "crowdinId": 13110344
         },
         {
-          "crowdin": "Chrisdbhr"
+          "crowdinId": 13379819
         }
       ]
     },
@@ -441,7 +441,7 @@
       "emoji": "\uD83C\uDDF7\uD83C\uDDF4",
       "credits": [
         {
-          "crowdin": "mihaiofficialRO"
+          "crowdinId": 14999657
         }
       ]
     },
@@ -452,31 +452,31 @@
       "emoji": "\uD83C\uDDF7\uD83C\uDDFA",
       "credits": [
         {
-          "crowdin": "GameHacker"
+          "crowdinId": 15276044
         },
         {
-          "crowdin": "JudeDM"
+          "crowdinId": 15196324
         },
         {
-          "crowdin": "NightyCloud"
+          "crowdinId": 14880978
         },
         {
-          "crowdin": "Aligatoor"
+          "crowdinId": 15276232
         },
         {
-          "crowdin": "arturfomenko8"
+          "crowdinId": 14491318
         },
         {
-          "crowdin": "helppriklreyta"
+          "crowdinId": 14318252
         },
         {
-          "crowdin": "JudDayLum"
+          "crowdinId": 15761951
         },
         {
-          "crowdin": "bill876"
+          "crowdinId": 12500432
         },
         {
-          "crowdin": "Mr.Shad"
+          "crowdinId": 16601907
         }
       ]
     },
@@ -492,7 +492,7 @@
       ],
       "credits": [
         {
-          "crowdin": "net-tech-",
+          "crowdinId": 14936099,
           "displayName": "net-tech-#7475",
           "url": "https://nettech.dev/"
         }
@@ -506,12 +506,12 @@
       "crowdinLocale": "es-ES",
       "credits": [
         {
-          "crowdin": "yareaj",
+          "crowdinId": 14524626,
           "displayName": "Yareaj",
           "url": "https://github.com/Yareaj/"
         },
         {
-          "crowdin": "DrakeZero"
+          "crowdinId": 14699026
         }
       ]
     },
@@ -526,18 +526,18 @@
       ],
       "credits": [
         {
-          "crowdin": "joll05"
+          "crowdinId": 15692641
         },
         {
-          "crowdin": "Liggli",
+          "crowdinId": 25282,
           "displayName": "Liggliluff",
           "url": "https://github.com/Liggliluff"
         },
         {
-          "crowdin": "tunket"
+          "crowdinId": 15276254
         },
         {
-          "crowdin": "patricktobias"
+          "crowdinId": 15221880
         }
       ]
     },
@@ -548,7 +548,7 @@
       "emoji": "\uD83C\uDDF9\uD83C\uDDED",
       "credits": [
         {
-          "crowdin": "unpredictable",
+          "crowdinId": 15514192,
           "displayName": "timelessnesses",
           "url": "https://github.com/timelessnesses"
         }
@@ -561,7 +561,7 @@
       "emoji": "\uD83C\uDDF9\uD83C\uDDF7",
       "credits": [
         {
-          "crowdin": "tututuana",
+          "crowdinId": 14391214,
           "url": "https://github.com/tututuana"
         }
       ]
@@ -573,16 +573,16 @@
       "emoji": "\uD83C\uDDFA\uD83C\uDDE6",
       "credits": [
         {
-          "crowdin": "GameHacker"
+          "crowdinId": 15276044
         },
         {
-          "crowdin": "enky"
+          "crowdinId": 14495070
         },
         {
-          "crowdin": "WhiteBear60"
+          "crowdinId": 14236042
         },
         {
-          "crowdin": "Mr.Shad"
+          "crowdinId": 16601907
         }
       ]
     },
@@ -594,10 +594,10 @@
       "rtl": true,
       "credits": [
         {
-          "crowdin": "muharslan"
+          "crowdinId": 15767931
         },
         {
-          "crowdin": "Developer_X"
+          "crowdinId": 15745113
         }
       ]
     },
@@ -608,7 +608,7 @@
       "emoji": "\uD83C\uDDFB\uD83C\uDDF3",
       "credits": [
         {
-          "crowdin": "quanonthecob"
+          "crowdinId": 16061216
         }
       ]
     },
@@ -619,10 +619,10 @@
       "emoji": "\uD83C\uDDE9\uD83C\uDDF0",
       "credits": [
         {
-          "crowdin": "jovictasor"
+          "crowdinId": 16066210
         },
         {
-          "crowdin": "LennartDenmark"
+          "crowdinId": 12852355
         }
       ]
     },
@@ -633,7 +633,7 @@
       "emoji": "\uD83C\uDDF3\uD83C\uDDF4",
       "credits": [
         {
-          "crowdin": "zach.lawnmower"
+          "crowdinId": 16466619
         }
       ]
     }
