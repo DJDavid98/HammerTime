@@ -75,6 +75,11 @@
     "intro": "Αυτή η ιστοσελίδα είναι λογισμικό ανοιχτού κώδικα που αναπτύχθηκε από <1>{{developerName}}</1> χρησιμοποιώντας <3>Font Awesome Free</3> και <5>Mantine</5>. Είναι διαθέσιμο σε πολλές γλώσσες χάρη στους εθελοντές μεταφραστές.",
     "translationsBy": "Μετάφραση από <1></1>",
     "incompleteTranslations": "Οι μεταφράσεις είναι ελλιπείς",
-    "contributeTranslations": "Συνεισφέρετε"
+    "contributeTranslations": "Συνεισφέρετε",
+    "developedBy": "Δημιουργήθηκε από <1></1>",
+    "externalLibraries": "Χρησιμοποιώντας <1></1>",
+    "openSource": "Λογισμικό ανοικτού κώδικα",
+    "fontAwesomeFree": "Δωρεάν έκδοση Font Awesome",
+    "mantine": "Mantine"
   }
 }
