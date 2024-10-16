@@ -78,6 +78,8 @@
     "contributeTranslations": "Bidrage",
     "developedBy": "Udviklet af <1></1>",
     "externalLibraries": "Indeholder <1></1>",
-    "openSource": "Open source software"
+    "openSource": "Open source software",
+    "fontAwesomeFree": "Font Awesome Free",
+    "mantine": "Mantine"
   }
 }
