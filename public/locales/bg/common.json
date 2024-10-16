@@ -78,6 +78,8 @@
     "contributeTranslations": "Допринасяне",
     "developedBy": "Разработя <1></1>",
     "externalLibraries": "Използувам <1></1>",
-    "openSource": "Софтуер с отворен код"
+    "openSource": "Софтуер с отворен код",
+    "fontAwesomeFree": "Font Awesome Free",
+    "mantine": "Mantine"
   }
 }
