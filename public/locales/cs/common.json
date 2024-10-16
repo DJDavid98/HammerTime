@@ -78,6 +78,8 @@
     "contributeTranslations": "Přispět",
     "developedBy": "Vytvořili <1></1>",
     "externalLibraries": "Použitím <1></1>",
-    "openSource": "Otevřený software"
+    "openSource": "Otevřený software",
+    "fontAwesomeFree": "Font Awesome Free",
+    "mantine": "Mantine"
   }
 }
