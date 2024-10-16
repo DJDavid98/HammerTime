@@ -77,6 +77,7 @@ English and Hungarian translations have been included, so no translators will be
   - [HumainAbsurde](https://crowdin.com/profile/humain)
   - [Kyaz](https://crowdin.com/profile/09kyaz)
   - [M4gicalCat](https://crowdin.com/profile/M4gicalCat)
+  - [Malalia Mimi](https://crowdin.com/profile/MialyMusic)
   - [Ouiouibaguette](https://crowdin.com/profile/Ouiouibaguette)
   - [sivelswhy](https://crowdin.com/profile/sivelswhy)
   - [ValouFCH](https://crowdin.com/profile/ValouFCH)
@@ -116,6 +117,7 @@ English and Hungarian translations have been included, so no translators will be
   - [Tiago](https://crowdin.com/profile/DemiCool)
 - 🇧🇷 Portuguese, Brazilian
   - [Chris](https://crowdin.com/profile/Chrisdbhr)
+  - [Eduardo](https://crowdin.com/profile/Nirewen)
   - [leo0six](https://crowdin.com/profile/leo0six)
   - [ShadowG](https://crowdin.com/profile/ShadowG)
 - 🇷🇴 Romanian: [mihai](https://crowdin.com/profile/mihaiofficialRO)
@@ -136,6 +138,7 @@ English and Hungarian translations have been included, so no translators will be
 - 🇸🇪 Swedish
   - [joll05](https://crowdin.com/profile/joll05)
   - [Liggliluff](https://github.com/Liggliluff)
+  - [Ludwig Lannebro](https://crowdin.com/profile/lannebroludwig)
   - [Patrick Tobias](https://crowdin.com/profile/patricktobias)
   - [tunket](https://crowdin.com/profile/tunket)
 - 🇹🇭 Thai: [timelessnesses](https://github.com/timelessnesses)

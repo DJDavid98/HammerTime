@@ -1,5 +1,5 @@
 {
-  "meta": "Generated at 2024-10-07T18:35:56.675Z",
+  "meta": "Generated at 2024-10-16T21:37:22.517Z",
   "users": {
     "25282": {
       "username": "Liggli",
@@ -46,6 +46,14 @@
       "fullName": "Lennart Christiansen",
       "languages": [
         "da"
+      ]
+    },
+    "12931321": {
+      "username": "Nirewen",
+      "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/12931321/medium/c4db16a97d63094ba28e8bfd20892480.jpg",
+      "fullName": "Eduardo",
+      "languages": [
+        "pt-BR"
       ]
     },
     "13020288": {
@@ -773,6 +781,30 @@
       "languages": [
         "nb"
       ]
+    },
+    "16622315": {
+      "username": "lannebroludwig",
+      "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/16622315/medium/8836fe4f85562fb6cee32f554d0a8acd.png",
+      "fullName": "Ludwig Lannebro",
+      "languages": [
+        "sv"
+      ]
+    },
+    "16622391": {
+      "username": "therobot",
+      "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/16622391/medium/880e7cb9d84a527270b293f83491cb73.jpeg",
+      "fullName": "The Robot",
+      "languages": [
+        "de"
+      ]
+    },
+    "16629243": {
+      "username": "MialyMusic",
+      "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/16629243/medium/b3cde4ae19f658797a383900666980b4.jpeg",
+      "fullName": "Malalia Mimi",
+      "languages": [
+        "fr"
+      ]
     }
   },
   "progress": {
@@ -785,24 +817,24 @@
       "translation": 100
     },
     "bg": {
-      "approval": 98,
+      "approval": 100,
       "translation": 100
     },
     "ca": {
-      "approval": 96,
-      "translation": 96
+      "approval": 97,
+      "translation": 97
     },
     "cs": {
-      "approval": 98,
-      "translation": 98
+      "approval": 100,
+      "translation": 100
     },
     "da": {
-      "approval": 98,
-      "translation": 98
+      "approval": 100,
+      "translation": 100
     },
     "de": {
-      "approval": 98,
-      "translation": 98
+      "approval": 100,
+      "translation": 100
     },
     "el": {
       "approval": 100,
@@ -817,32 +849,32 @@
       "translation": 100
     },
     "fa": {
-      "approval": 74,
-      "translation": 74
+      "approval": 75,
+      "translation": 75
     },
     "fr": {
-      "approval": 99,
-      "translation": 99
+      "approval": 100,
+      "translation": 100
     },
     "he": {
-      "approval": 71,
-      "translation": 71
+      "approval": 73,
+      "translation": 73
     },
     "hi": {
-      "approval": 95,
-      "translation": 95
+      "approval": 97,
+      "translation": 97
     },
     "hr": {
-      "approval": 96,
-      "translation": 96
+      "approval": 97,
+      "translation": 97
     },
     "hu": {
       "approval": 100,
       "translation": 100
     },
     "id": {
-      "approval": 96,
-      "translation": 96
+      "approval": 97,
+      "translation": 97
     },
     "it": {
       "approval": 100,
@@ -853,40 +885,40 @@
       "translation": 100
     },
     "ko": {
-      "approval": 96,
-      "translation": 96
+      "approval": 97,
+      "translation": 97
     },
     "lt": {
-      "approval": 96,
-      "translation": 96
+      "approval": 97,
+      "translation": 97
     },
     "lv": {
-      "approval": 96,
-      "translation": 96
+      "approval": 97,
+      "translation": 97
     },
     "ms": {
       "approval": 100,
       "translation": 100
     },
     "nb": {
-      "approval": 41,
-      "translation": 41
+      "approval": 43,
+      "translation": 43
     },
     "nl": {
-      "approval": 95,
-      "translation": 95
+      "approval": 100,
+      "translation": 100
     },
     "pl": {
       "approval": 100,
       "translation": 100
     },
     "pt-BR": {
-      "approval": 98,
-      "translation": 98
+      "approval": 100,
+      "translation": 100
     },
     "pt": {
-      "approval": 96,
-      "translation": 96
+      "approval": 97,
+      "translation": 97
     },
     "ro": {
       "approval": 100,
@@ -901,8 +933,8 @@
       "translation": 100
     },
     "sv": {
-      "approval": 96,
-      "translation": 96
+      "approval": 97,
+      "translation": 97
     },
     "th": {
       "approval": 100,
@@ -913,20 +945,20 @@
       "translation": 100
     },
     "uk": {
-      "approval": 98,
+      "approval": 100,
       "translation": 100
     },
     "ur": {
-      "approval": 96,
-      "translation": 96
-    },
-    "vi": {
-      "approval": 95,
-      "translation": 95
-    },
-    "zh": {
       "approval": 97,
       "translation": 97
+    },
+    "vi": {
+      "approval": 97,
+      "translation": 97
+    },
+    "zh": {
+      "approval": 99,
+      "translation": 99
     },
     "zh-TW": {
       "approval": 100,
