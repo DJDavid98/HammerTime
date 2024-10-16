@@ -14,15 +14,19 @@ export const TranslatorCredit: FC = () => {
     i18n: { language },
   } = useTranslation();
 
-  const currentLanguage = useMemo(() => (language in LANGUAGES ? LANGUAGES[language as AvailableLanguage] : undefined), [language]);
+  const currentLocaleConfig = useMemo(() => (language in LANGUAGES ? LANGUAGES[language as AvailableLanguage] : undefined), [language]);
+  const currentLocaleReportData = useMemo(
+    () => (language in reportData.languages ? reportData.languages[language] : undefined),
+    [language],
+  );
 
   const translationCredits = useMemo(() => {
-    if (!currentLanguage?.credits) return null;
+    if (!currentLocaleReportData?.translatorIds) return null;
 
-    return currentLanguage.credits
-      .map((c) => normalizeCredit(c, reportData))
+    return currentLocaleReportData.translatorIds
+      .map((crowdinId) => normalizeCredit(crowdinId, currentLocaleConfig?.creditOverrides, reportData))
       .sort((cr1, cr2) => cr1.displayName.localeCompare(cr2.displayName));
-  }, [currentLanguage?.credits]);
+  }, [currentLocaleConfig?.creditOverrides, currentLocaleReportData?.translatorIds]);
 
   if (!translationCredits) return null;
 

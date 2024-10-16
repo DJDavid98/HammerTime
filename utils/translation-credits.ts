@@ -3,15 +3,18 @@ import path from 'path';
 import { config as dotenvConfig } from 'dotenv';
 import { IndexedReportData, ReportUserData } from 'src/util/crowdin';
 import localeConfig from '../public/locales/config.json';
-import { AvailableLanguage, isAvailableLanguage, LANGUAGES } from '../src/config';
+import { AvailableLanguage, LANGUAGES } from '../src/config';
 import { LanguageConfig } from '../src/model/language-config';
 import { normalizeCredit, NormalizedCredits } from '../src/util/translation';
+import { migrateLanguageConfig } from './helpers/migrate-language-config';
+import { mapCrowdinLanguageToAvailableLanguage } from './helpers/map-crowdin-language-to-available-language';
 
 dotenvConfig();
 
 const markerString = '### Credits';
 const readmeFolder = path.join(__dirname, '..');
 const readmePath = path.join(readmeFolder, 'README.md');
+const REMOVED_USER_USERNAME = 'REMOVED_USER';
 
 const mapCreditToString = (credit: NormalizedCredits) => `[${credit.displayName}](${credit.url})`;
 
@@ -110,6 +113,11 @@ void (async () => {
   if (!crowdinProjectIdentifier) {
     console.warn('Missing Crowdin project identifier, skipping translation credits generation.');
     return;
+  }
+
+  const crowdinDeveloperId = process.env.CROWDIN_DEVELOPER_ID;
+  if (crowdinDeveloperId) {
+    console.info(`Crowdin ID for site developer is set, user ${crowdinDeveloperId} will be excluded from reports`);
   }
 
   console.info('Reading README file…');
@@ -297,33 +305,7 @@ void (async () => {
   const indexedReportData: IndexedReportData = {
     meta: `Generated at ${new Date().toISOString()}`,
     users: {},
-    progress: {
-      en: { approval: 100, translation: 100 },
-    },
-  };
-  const languageMapping: Record<string, AvailableLanguage> = {
-    /* eslint-disable @typescript-eslint/naming-convention */
-    'zh': 'zh-TW',
-    'zh-CN': 'zh',
-    'pt': 'pt-BR',
-    'pt-PT': 'pt',
-    'sr-CS': 'sr',
-    'ur-PK': 'ur',
-    'es-ES': 'es',
-    'sv-SE': 'sv',
-    'no': 'nb',
-    /* eslint-enable @typescript-eslint/naming-convention */
-  };
-  const mapCrowdinLanguageToAvailableLanguage = (crowdinLanguage: CrowdinLanguage): AvailableLanguage | null => {
-    if (crowdinLanguage.id in languageMapping) {
-      return languageMapping[crowdinLanguage.id];
-    }
-    if (!isAvailableLanguage(crowdinLanguage.id)) {
-      console.warn(`Language ${crowdinLanguage.id} (${crowdinLanguage.name}) is missing from the available languages list`);
-      return null;
-    }
-
-    return crowdinLanguage.id;
+    languages: {},
   };
   translationProgressResponse.data.sort((a, b) => a.data.languageId.localeCompare(b.data.languageId));
   translationProgressResponse.data.forEach(({ data: languageProgress }) => {
@@ -331,14 +313,24 @@ void (async () => {
     if (!availableLanguageCode) {
       return;
     }
-    indexedReportData.progress[availableLanguageCode] = {
-      approval: languageProgress.approvalProgress,
-      translation: languageProgress.translationProgress,
+    indexedReportData.languages[availableLanguageCode] = {
+      translatorIds: [],
+      progress: {
+        approval: languageProgress.approvalProgress,
+        translation: languageProgress.translationProgress,
+      },
     };
   });
   rawReportData.data.forEach((reportDataItem) => {
-    if (reportDataItem.approved === 0 && reportDataItem.voted === 0 && reportDataItem.translated === 0) {
+    if (
+      (reportDataItem.approved === 0 && reportDataItem.voted === 0 && reportDataItem.translated === 0) ||
+      reportDataItem.user.username === REMOVED_USER_USERNAME
+    ) {
       // Skip users with virtually 0 activity
+      return;
+    }
+    if (reportDataItem.user.id === crowdinDeveloperId) {
+      // Skip developer
       return;
     }
     const id = parseInt(reportDataItem.user.id, 10);
@@ -358,13 +350,24 @@ void (async () => {
       reportUserData.fullName = fullName;
     }
     if (reportDataItem.languages.length > 0) {
-      reportUserData.languages = reportDataItem.languages.reduce((acc: AvailableLanguage[], language) => {
+      const userLanguages = reportDataItem.languages.reduce((acc: AvailableLanguage[], language) => {
         const mappedLanguage = mapCrowdinLanguageToAvailableLanguage(language);
         if (!mappedLanguage) {
           return acc;
         }
         return [...acc, mappedLanguage];
       }, []);
+
+      userLanguages.forEach((langCode) => {
+        const existingIds = indexedReportData.languages[langCode]?.translatorIds || [];
+        if (!existingIds) {
+          return;
+        }
+        if (!indexedReportData.languages[langCode]) {
+          return;
+        }
+        indexedReportData.languages[langCode]!.translatorIds = Array.from(new Set([...existingIds, String(id)]));
+      });
     }
 
     indexedReportData.users[id] = reportUserData;
@@ -374,25 +377,36 @@ void (async () => {
   const assembledReportDataString = JSON.stringify(indexedReportData, null, 2);
   await fs.writeFile(assembledReportDataOutputPath, assembledReportDataString);
 
+  await migrateLanguageConfig(readmeFolder);
+
   console.info('Generating credits text…');
   const creditsText = [markerString, ''];
-  const sortedConfigs: LanguageConfig[] = Object.values(localeConfig.languages).sort((c1, c2) => c1.name.localeCompare(c2.name));
-  sortedConfigs.forEach((config) => {
+  const sortedConfigs = (Object.entries(localeConfig.languages) as [AvailableLanguage, LanguageConfig][]).sort(
+    ([, { name: c1Name }], [, { name: c2Name }]) => c1Name.localeCompare(c2Name),
+  );
+  sortedConfigs.forEach(([locale, config]) => {
+    const localeReportData = indexedReportData.languages[locale];
     const languageString = `- ${config.emoji ? `${config.emoji} ` : ''}${config.name}`;
-    if (config.credits) {
-      const creditCount = config.credits.length;
+    const translatorIds = localeReportData?.translatorIds;
+    if (translatorIds) {
+      const creditCount = translatorIds.length;
       switch (creditCount) {
         case 0:
           // No credits, omit language from README (primarily for included languages)
           break;
         case 1:
-          creditsText.push(`${languageString}: ${mapCreditToString(normalizeCredit(config.credits[0], indexedReportData))}`);
+          {
+            const singleTrnaslatorId = translatorIds[0];
+            creditsText.push(
+              `${languageString}: ${mapCreditToString(normalizeCredit(singleTrnaslatorId, config.creditOverrides, indexedReportData))}`,
+            );
+          }
           break;
         default: {
           creditsText.push(languageString);
 
-          const sortedCredits = config.credits
-            .map((c) => normalizeCredit(c, indexedReportData))
+          const sortedCredits = translatorIds
+            .map((c) => normalizeCredit(c, config.creditOverrides, indexedReportData))
             .sort((cr1, cr2) => cr1.displayName.localeCompare(cr2.displayName));
 
           sortedCredits.forEach((credit) => {
