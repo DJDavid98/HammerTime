@@ -13,14 +13,22 @@ export interface TranslationCompletionData {
 }
 
 export interface IndexedReportData {
-  meta: string;
   users: Partial<Record<string, ReportUserData>>;
-  progress: Record<string, TranslationCompletionData>;
+  languages: Partial<
+    Record<
+      string,
+      {
+        translatorIds: string[];
+        progress: TranslationCompletionData;
+      }
+    >
+  >;
 }
 
 export const reportData: IndexedReportData = reportDataJson;
 
-export const getTranslationCompletionData = (language: string): TranslationCompletionData | null => reportData.progress[language] || null;
+export const getTranslationCompletionData = (language: string): TranslationCompletionData | null =>
+  reportData.languages[language]?.progress || null;
 
 export const getTranslationCompletePercent = (value: TranslationCompletionData | null | undefined): number =>
   typeof value !== 'undefined' && value !== null ? value.approval : 0;

@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { VoidFunctionComponent } from 'react';
+import { FunctionComponent } from 'react';
 
-export const IconCol: VoidFunctionComponent<{ i: number; className: string }> = ({ i, className }) => {
+export const IconCol: FunctionComponent<{ i: number; className: string }> = ({ i, className }) => {
   let content: JSX.Element | null;
   const rowspan = i >= 6 ? undefined : 2;
   switch (i) {

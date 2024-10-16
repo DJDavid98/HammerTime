@@ -1,6 +1,15 @@
-import { TranslationCreditOverride } from 'src/model/translation-credit-override';
+export interface TranslationCreditV1 {
+  /**
+   * Crowdin username, will be used as a fallback for display name as well as
+   * generating the fallback Crowdin profile URL if no link is set
+   */
+  crowdinId: number;
+  displayName?: string;
+  url?: string;
+  avatarUrl?: string;
+}
 
-export interface LanguageConfigV2 {
+export interface LanguageConfigV1 {
   /**
    * Language name in English
    */
@@ -22,5 +31,5 @@ export interface LanguageConfigV2 {
   weekendDays?: number[];
   firstDayOfWeek?: number;
   blueDay?: number;
-  creditOverrides?: Record<string | number, TranslationCreditOverride | null>;
+  credits?: TranslationCreditV1[];
 }

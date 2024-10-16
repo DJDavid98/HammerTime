@@ -1,10 +1,10 @@
-import { useMemo, VoidFunctionComponent } from 'react';
+import { useMemo, FunctionComponent } from 'react';
 import type { Props as FlagProps } from 'react-flagkit';
 import Flag from 'react-flagkit';
-import { LanguageConfig } from 'src/model/language-config';
+import { LatestLanguageConfigType } from '../../config';
 
-export const LanguageFlag: VoidFunctionComponent<
-  Omit<FlagProps, 'country'> & { language: Pick<LanguageConfig, 'countryCode' | 'customFlag'> }
+export const LanguageFlag: FunctionComponent<
+  Omit<FlagProps, 'country'> & { language: Pick<LatestLanguageConfigType, 'countryCode' | 'customFlag'> }
 > = ({ language: { countryCode, customFlag }, role = 'img', size = 24, alt, ...props }) => {
   const flagImageSrc = useMemo(() => {
     if (customFlag) {

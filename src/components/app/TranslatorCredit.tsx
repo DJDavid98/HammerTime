@@ -1,7 +1,7 @@
 import { Trans, useTranslation } from 'next-i18next';
 import { FC, useMemo } from 'react';
 import { AvailableLanguage, LANGUAGES } from 'src/config';
-import { normalizeCredit } from 'src/util/translation';
+import { getTranslatorIds, normalizeCredit, NormalizedCredits } from 'src/util/translation';
 import { TranslationCredits } from 'components/i18n/TranslationCredits';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styles from 'modules/AppSidebar.module.scss';
@@ -14,17 +14,28 @@ export const TranslatorCredit: FC = () => {
     i18n: { language },
   } = useTranslation();
 
-  const currentLanguage = useMemo(() => (language in LANGUAGES ? LANGUAGES[language as AvailableLanguage] : undefined), [language]);
+  const currentLocaleConfig = useMemo(() => (language in LANGUAGES ? LANGUAGES[language as AvailableLanguage] : undefined), [language]);
+  const currentLocaleReportData = useMemo(
+    () => (language in reportData.languages ? reportData.languages[language] : undefined),
+    [language],
+  );
+  const translatorIds = useMemo(
+    () => getTranslatorIds(currentLocaleConfig, currentLocaleReportData),
+    [currentLocaleConfig, currentLocaleReportData],
+  );
 
-  const translationCredits = useMemo(() => {
-    if (!currentLanguage?.credits) return null;
+  const translationCredits = useMemo(
+    () =>
+      translatorIds.length === 0
+        ? []
+        : translatorIds
+            .map((crowdinId) => normalizeCredit(crowdinId, currentLocaleConfig?.creditOverrides, reportData))
+            .filter((credit): credit is NormalizedCredits => credit !== null)
+            .sort((cr1, cr2) => cr1.displayName.localeCompare(cr2.displayName)),
+    [currentLocaleConfig?.creditOverrides, translatorIds],
+  );
 
-    return currentLanguage.credits
-      .map((c) => normalizeCredit(c, reportData))
-      .sort((cr1, cr2) => cr1.displayName.localeCompare(cr2.displayName));
-  }, [currentLanguage?.credits]);
-
-  if (!translationCredits) return null;
+  if (translationCredits.length === 0) return null;
 
   return (
     <Flex wrap="nowrap">
