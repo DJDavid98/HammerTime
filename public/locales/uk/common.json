@@ -78,6 +78,8 @@
     "contributeTranslations": "Підтримати проект",
     "developedBy": "Розробивши <1></1>",
     "externalLibraries": "Використовувати <1></1>",
-    "openSource": "Програмне забезпечення з відкритим кодом"
+    "openSource": "Програмне забезпечення з відкритим кодом",
+    "fontAwesomeFree": "Font Awesome Free",
+    "mantine": "Mantine"
   }
 }
