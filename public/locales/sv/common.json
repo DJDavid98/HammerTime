@@ -75,6 +75,11 @@
     "intro": "Denna webbplats är en programvara med öppen källkod som utvecklats av <1>{{developerName}}</1> med hjälp av <3>Font Awesome Free</3> och <5>Mantine</5>. Den finns tillgänglig på flera språk tack vare frivilliga översättare.",
     "translationsBy": "Översättningar av <1></1>",
     "incompleteTranslations": "Översättningarna är ofullständiga",
-    "contributeTranslations": "Bidra"
+    "contributeTranslations": "Bidra",
+    "developedBy": "Utvecklad av <1></1>",
+    "externalLibraries": "Använder <1></1>",
+    "openSource": "Öppen källkod",
+    "fontAwesomeFree": "Font Awesome Free",
+    "mantine": "Mantine"
   }
 }
