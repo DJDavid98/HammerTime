@@ -104,7 +104,9 @@ English and Hungarian translations have been included, so no translators will be
   - [Seenoc](https://crowdin.com/profile/Seenoc)
   - [tayloryte](https://crowdin.com/profile/tayloryte)
 - 🇲🇾 Malay: [Nurul Azeera Hidayah Muhammad Nur Hidayat Yasuyoshi (MNH48)](https://crowdin.com/profile/mnh48)
-- 🇳🇴 Norwegian: [Ivy Wilson](https://crowdin.com/profile/zach.lawnmower)
+- 🇳🇴 Norwegian
+  - [Ivy Wilson](https://crowdin.com/profile/zach.lawnmower)
+  - [Phillip Rødseth](https://crowdin.com/profile/philliphatrod)
 - 🇮🇷 Persian: [Mohammad Safa Gray](https://crowdin.com/profile/DeadMarco)
 - 🇵🇱 Polish
   - [meeekos](https://crowdin.com/profile/meeekos)

@@ -1,5 +1,5 @@
 {
-  "meta": "Generated at 2024-10-17T21:47:54.044Z",
+  "meta": "Generated at 2024-10-21T15:30:51.303Z",
   "users": {
     "25282": {
       "username": "Liggli",
@@ -698,6 +698,14 @@
         "ja"
       ]
     },
+    "16406120": {
+      "username": "philliphatrod",
+      "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/16406120/medium/907be003885afcc83a7e40eeb5941f11.png",
+      "fullName": "Phillip Rødseth",
+      "languages": [
+        "nb"
+      ]
+    },
     "16466619": {
       "username": "zach.lawnmower",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/16466619/medium/d6cb5d30611145442ab98303a519813d.png",
@@ -901,8 +909,8 @@
       "translation": 100
     },
     "nb": {
-      "approval": 43,
-      "translation": 43
+      "approval": 100,
+      "translation": 100
     },
     "nl": {
       "approval": 100,
