@@ -98,6 +98,7 @@ English and Hungarian translations have been included, so no translators will be
   - [のむチュウ (sjk)](https://github.com/sjkim04)
 - 🇰🇷 Korean
   - [Bin](https://crowdin.com/profile/cheesepickle12345678)
+  - [SkyStorage\_](https://crowdin.com/profile/SkyStorage_)
   - [김카츄 (sjk)](https://github.com/sjkim04)
 - 🇱🇻 Latvian: [Casper](https://crowdin.com/profile/JajarGG)
 - 🇱🇹 Lithuanian

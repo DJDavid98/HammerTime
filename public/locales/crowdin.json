@@ -1,5 +1,5 @@
 {
-  "meta": "Generated at 2024-10-21T15:30:51.303Z",
+  "meta": "Generated at 2024-10-25T14:43:06.931Z",
   "users": {
     "25282": {
       "username": "Liggli",
@@ -270,6 +270,13 @@
       "fullName": "Pablo",
       "languages": [
         "es"
+      ]
+    },
+    "14531480": {
+      "username": "SkyStorage_",
+      "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/14531480/medium/0b26cb0dbb2b20b7615fa67d8f847ba5.png",
+      "languages": [
+        "ko"
       ]
     },
     "14673608": {
@@ -893,8 +900,8 @@
       "translation": 100
     },
     "ko": {
-      "approval": 97,
-      "translation": 97
+      "approval": 100,
+      "translation": 100
     },
     "lt": {
       "approval": 97,
