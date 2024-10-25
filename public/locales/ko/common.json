@@ -75,6 +75,11 @@
     "intro": "이 웹사이트는 <3>Font Awesome Free</3>와 <5>Mantine</5>을 사용하며, <1>{{developerName}}</1>에 의해 개발된 오픈 소스 소프트웨어입니다. 자원 봉사 번역가들에 의해 여러 언어로 제공되고 있습니다.",
     "translationsBy": "번역: <1></1>",
     "incompleteTranslations": "번역 미완료",
-    "contributeTranslations": "기여하기"
+    "contributeTranslations": "기여하기",
+    "developedBy": "개발: <1></1>",
+    "externalLibraries": "사용 중: <1></1>",
+    "openSource": "오픈 소스 소프트웨어",
+    "fontAwesomeFree": "Font Awesome Free",
+    "mantine": "Mantine"
   }
 }
