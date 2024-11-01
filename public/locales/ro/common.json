@@ -35,7 +35,7 @@
       "p": "Discutați site-ul web, testați sintaxa și sugerați caracteristici"
     },
     "bot": {
-      "header": "HammerTime Bot",
+      "header": "Aplicația HammerTime",
       "pWithoutCommand": "Generați timestamp-uri din cadrul Discord folosind comenzi slash"
     },
     "textColor": {
@@ -81,5 +81,16 @@
     "openSource": "Software cu sursă deschisă",
     "fontAwesomeFree": "Font Awesome Gratuit",
     "mantine": "Mantine"
+  },
+  "add-app": {
+    "title": "Selectați unde doriți să adăugați aplicația",
+    "user": {
+      "title": "Adaugă în Aplicațiile mele",
+      "description": "Folosește aplicația asta oriunde!"
+    },
+    "guild": {
+      "title": "Adaugă pe server",
+      "description": "Personalizează-ți serverul adăugând această aplicație"
+    }
   }
 }
