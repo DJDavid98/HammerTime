@@ -60,7 +60,7 @@ English and Hungarian translations have been included, so no translators will be
   - [姓甚名谁](https://crowdin.com/profile/febilly)
 - 🇹🇼 Chinese Traditional
   - [CPYW_7226](https://crowdin.com/profile/CPYW_7226)
-  - [investigator VT](https://crowdin.com/profile/ms.investigator)
+  - [ms.investigator](https://crowdin.com/profile/ms.)
   - [notlin4](https://crowdin.com/profile/notlin4)
 - 🇭🇷 Croatian: [Volvone](https://github.com/volvone)
 - 🇨🇿 Czech
@@ -92,7 +92,7 @@ English and Hungarian translations have been included, so no translators will be
 - 🇮🇹 Italian: [Lory Pelli](https://github.com/lorypelli)
 - 🇯🇵 Japanese
   - [eai04191](https://crowdin.com/profile/eai04191)
-  - [investigator VT](https://crowdin.com/profile/ms.investigator)
+  - [ms.investigator](https://crowdin.com/profile/ms.)
   - [sakana](https://crowdin.com/profile/sakana0580)
   - [TheOnlyRAK](https://crowdin.com/profile/TheOnlyRAK)
   - [のむチュウ (sjk)](https://github.com/sjkim04)
@@ -102,6 +102,7 @@ English and Hungarian translations have been included, so no translators will be
   - [김카츄 (sjk)](https://github.com/sjkim04)
 - 🇱🇻 Latvian: [Casper](https://crowdin.com/profile/JajarGG)
 - 🇱🇹 Lithuanian
+  - [adome595](https://crowdin.com/profile/adome595)
   - [Seenoc](https://crowdin.com/profile/Seenoc)
   - [tayloryte](https://crowdin.com/profile/tayloryte)
 - 🇲🇾 Malay: [Nurul Azeera Hidayah Muhammad Nur Hidayat Yasuyoshi (MNH48)](https://crowdin.com/profile/mnh48)
