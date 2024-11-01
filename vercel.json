@@ -6,8 +6,13 @@
       "permanent": false
     },
     {
-      "source": "/add-bot",
-      "destination": "https://discord.com/oauth2/authorize?client_id=964106782790283295&permissions=0&scope=bot%20applications.commands",
+      "source": "/add-bot/guild",
+      "destination": "https://discord.com/oauth2/authorize?client_id=964106782790283295&permissions=0&scope=bot%20applications.commands&integration_type=0",
+      "permanent": false
+    },
+    {
+      "source": "/add-bot/user",
+      "destination": "https://discord.com/oauth2/authorize?client_id=964106782790283295&permissions=0&scope=applications.commands&integration_type=1",
       "permanent": false
     }
   ],

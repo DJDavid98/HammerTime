@@ -1,0 +1,75 @@
+@use '../vars';
+
+.page {
+  background-color: #323338;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 20px;
+  background-color: #000;
+  border: 1px solid #424348;
+}
+
+.title {
+  font-size: 1.4rem;
+  margin: 0.5em 0;
+}
+
+.subtitle {
+  font-size: 0.9rem;
+  margin: 0 0 1em;
+}
+
+.add-links-wrap {
+  gap: 0.15em;
+}
+
+.add-link {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 1em;
+  padding: 0.5em 1em;
+  background-color: #2b2d31;
+  text-decoration: none;
+
+  &:first-child {
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+  }
+
+  &:last-child {
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+  }
+
+  &:hover {
+    background-color: #3b3c41;
+  }
+}
+
+.add-link-icon {
+  color: #b6bac0;
+  font-size: 1.4em;
+}
+
+.add-link-text {
+  flex-grow: 1;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 0.15em;
+
+  .add-link-title {
+    font-size: 1rem;
+    color: #ffffff;
+    margin: 0;
+  }
+
+  .add-link-description {
+    font-size: 0.8rem;
+    color: #969ba4;
+    margin: 0;
+  }
+}
