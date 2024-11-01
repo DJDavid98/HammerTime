@@ -10,6 +10,7 @@ import { FC, PropsWithChildren } from 'react';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import { SITE_TITLE } from 'src/config';
 import { CustomIcon } from 'components/CustomIcon';
+import Head from 'next/head';
 
 interface AddLinkProps extends PropsWithChildren {
   installType: 'user' | 'guild';
@@ -33,6 +34,10 @@ const DiscordAppPage: NextPage = () => {
   const { t } = useTranslation();
   return (
     <Layout>
+      <Head>
+        <title>{t('common:usefulLinks.bot.header')}</title>
+      </Head>
+
       <Center w="100%" mih="100vh" className={styles.page}>
         <Flex direction="column" align="center">
           <CustomIcon src="/logos/logo.png" alt="" className={styles.logo} />
