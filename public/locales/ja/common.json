@@ -35,7 +35,7 @@
       "p": "サイトについての議論・タイムスタンプのテスト・機能のリクエストができます"
     },
     "bot": {
-      "header": "HammerTime bot",
+      "header": "HammerTimeアプリ",
       "pWithoutCommand": "Discord内からコマンドでタイムスタンプを生成できます"
     },
     "textColor": {
@@ -81,5 +81,16 @@
     "openSource": "オープンソース",
     "fontAwesomeFree": "Font Awesome Free",
     "mantine": "Mantine"
+  },
+  "add-app": {
+    "title": "アプリを追加したい場所を選択してください",
+    "user": {
+      "title": "マイアプリに追加",
+      "description": "このアプリをあらゆる場所で使おう！"
+    },
+    "guild": {
+      "title": "サーバーに追加",
+      "description": "このアプリを追加してサーバーをカスタマイズしよう"
+    }
   }
 }
