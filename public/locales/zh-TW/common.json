@@ -35,7 +35,7 @@
       "p": "討論站點、測試語法和建議功能"
     },
     "bot": {
-      "header": "HammerTime 機器人",
+      "header": "HammerTime App",
       "pWithoutCommand": "在 Discord 中使用斜線指令生成時間戳記"
     },
     "textColor": {
@@ -81,5 +81,16 @@
     "openSource": "開源軟件",
     "fontAwesomeFree": "Font Awesome Free",
     "mantine": "Mantine"
+  },
+  "add-app": {
+    "title": "請選擇您想將本應用程式新增至",
+    "user": {
+      "title": "新增至我的應用程式",
+      "description": "隨處都可使用這個應用程式！"
+    },
+    "guild": {
+      "title": "新增至伺服器",
+      "description": "新增這個應用程式，以便自訂您的伺服器"
+    }
   }
 }
