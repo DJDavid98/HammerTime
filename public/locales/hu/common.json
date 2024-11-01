@@ -35,7 +35,7 @@
       "p": "Csevegj a weboldalról, próbáld ki a kódokat és javasolj funkciókat"
     },
     "bot": {
-      "header": "HammerTime Bot",
+      "header": "HammerTime App",
       "pWithoutCommand": "Generálj időbélyegeket slash parancsok használatával"
     },
     "textColor": {
@@ -81,5 +81,16 @@
     "openSource": "Nyílt forráskódú szoftver",
     "fontAwesomeFree": "Font Awesome Free",
     "mantine": "Mantine"
+  },
+  "add-app": {
+    "title": "Válaszd ki, hova szeretnéd hozzáadni az appot",
+    "user": {
+      "title": "Hozzáadás a Saját alkalmazások területhez",
+      "description": "Mindenhol használhatod ezt az alakalmazást!"
+    },
+    "guild": {
+      "title": "Hozzáadás szerverhez",
+      "description": "Személyre szabhatod a szerveredet az alkalmazás hozzáadásával"
+    }
   }
 }
