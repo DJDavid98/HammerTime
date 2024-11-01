@@ -35,7 +35,7 @@
       "p": "ناقش الموقع وجرب الصيغة وقدِّم اقتراحات"
     },
     "bot": {
-      "header": "بوت HammerTime",
+      "header": "تطبيق HammerTime",
       "pWithoutCommand": "قم بعمل أختام زمنية من داخل ديسكورد باستخدام أوامر السلاش (slash commands)"
     },
     "textColor": {
@@ -81,5 +81,16 @@
     "openSource": "الموقع مفتوح المصدر",
     "fontAwesomeFree": "Font Awesome Free",
     "mantine": "Mantine"
+  },
+  "add-app": {
+    "title": "إلى أين تريد إضافة التطبيق؟",
+    "user": {
+      "title": "الإضافة إلى تطبيقاتي",
+      "description": "سيمكنك استخدام هذا التطبيق في أي مكان."
+    },
+    "guild": {
+      "title": "الإضافة إلى سيرفر",
+      "description": "سيُضاف التطبيق للسيرفر الخاص بك"
+    }
   }
 }
