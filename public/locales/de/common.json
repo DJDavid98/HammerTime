@@ -35,7 +35,7 @@
       "p": "Bespreche die Webseite, teste den Syntax und schlage Features vor"
     },
     "bot": {
-      "header": "HammerTime Bot",
+      "header": "HammerTime Anwendung",
       "pWithoutCommand": "Generiere Zeitstempel innerhalb von Discord mit Slash-Befehlen"
     },
     "textColor": {
@@ -81,5 +81,16 @@
     "openSource": "Open-Source Software",
     "fontAwesomeFree": "Font Awesome Font",
     "mantine": "Mantine"
+  },
+  "add-app": {
+    "title": "Wähle aus, wo du die App hinzufügen möchtest",
+    "user": {
+      "title": "Zu meinen Apps hinzufügen",
+      "description": "Nutze diese App überall!"
+    },
+    "guild": {
+      "title": "Dem Server hinzufügen",
+      "description": "Passe deinen Server an, indem du diese App hinzufügst"
+    }
   }
 }
