@@ -1,5 +1,5 @@
 {
-  "meta": "Generated at 2024-11-01T05:32:31.657Z",
+  "meta": "Generated at 2024-11-01T14:25:38.435Z",
   "users": {
     "25282": {
       "username": "Liggli",
@@ -827,6 +827,21 @@
       "languages": [
         "lt"
       ]
+    },
+    "16655307": {
+      "username": "PleasedontslammykeyboarddfsdoijfwR",
+      "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/16655307/medium/f4c0972f04b5da4dbc0c17564f072f6a.png",
+      "fullName": "stolarchukboris",
+      "languages": [
+        "ru"
+      ]
+    },
+    "16655625": {
+      "username": "Sr_Crix",
+      "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/16655625/medium/a4fe32830ff1e5896bc17084e5877831.png",
+      "languages": [
+        "es"
+      ]
     }
   },
   "progress": {
@@ -835,8 +850,8 @@
       "translation": 100
     },
     "ar": {
-      "approval": 91,
-      "translation": 91
+      "approval": 100,
+      "translation": 100
     },
     "bg": {
       "approval": 96,
@@ -867,8 +882,8 @@
       "translation": 100
     },
     "es": {
-      "approval": 96,
-      "translation": 96
+      "approval": 99,
+      "translation": 99
     },
     "fa": {
       "approval": 69,
@@ -899,8 +914,8 @@
       "translation": 89
     },
     "it": {
-      "approval": 96,
-      "translation": 96
+      "approval": 100,
+      "translation": 100
     },
     "ja": {
       "approval": 100,
@@ -919,8 +934,8 @@
       "translation": 89
     },
     "ms": {
-      "approval": 91,
-      "translation": 91
+      "approval": 100,
+      "translation": 100
     },
     "nb": {
       "approval": 96,
@@ -931,8 +946,8 @@
       "translation": 96
     },
     "pl": {
-      "approval": 96,
-      "translation": 96
+      "approval": 100,
+      "translation": 100
     },
     "pt-BR": {
       "approval": 96,
@@ -947,8 +962,8 @@
       "translation": 96
     },
     "ru": {
-      "approval": 96,
-      "translation": 96
+      "approval": 100,
+      "translation": 100
     },
     "sr": {
       "approval": 91,

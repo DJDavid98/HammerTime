@@ -132,12 +132,14 @@ English and Hungarian translations have been included, so no translators will be
   - [JudeDM](https://crowdin.com/profile/JudeDM)
   - [Luna](https://crowdin.com/profile/NightyCloud)
   - [Nikita Sharikov](https://crowdin.com/profile/Aligatoor)
+  - [stolarchukboris](https://crowdin.com/profile/PleasedontslammykeyboarddfsdoijfwR)
   - [Vladimir](https://crowdin.com/profile/bill876)
   - [Крутой Бо](https://crowdin.com/profile/arturfomenko8)
   - [Рейт](https://crowdin.com/profile/helppriklreyta)
 - 🇷🇸 Serbian (Latin): [net-tech-#7475](https://nettech.dev/)
 - 🇪🇸 Spanish
   - [DrakeZero](https://crowdin.com/profile/DrakeZero)
+  - [Sr_Crix](https://crowdin.com/profile/Sr_Crix)
   - [Yareaj](https://github.com/Yareaj/)
 - 🇸🇪 Swedish
   - [joll05](https://crowdin.com/profile/joll05)
