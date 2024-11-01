@@ -35,7 +35,7 @@
       "p": "Bincang mengenai laman sesawang, uji sintaks dan cadangkan ciri-ciri"
     },
     "bot": {
-      "header": "Bot HammerTime",
+      "header": "Apl HammerTime",
       "pWithoutCommand": "Jana cap masa di dalam Discord sendiri menggunakan perintah palang"
     },
     "textColor": {
@@ -81,5 +81,16 @@
     "openSource": "Perisian sumber terbuka",
     "fontAwesomeFree": "Font Awesome Free",
     "mantine": "Mantine"
+  },
+  "add-app": {
+    "title": "Pilih di manakah anda ingin tambahkan apl",
+    "user": {
+      "title": "Tambah ke Apl Saya",
+      "description": "Gunakan apl ini di mana-mana saja!"
+    },
+    "guild": {
+      "title": "Tambah ke Pelayan",
+      "description": "Sesuaikan pelayan anda dengan menambah apl ini"
+    }
   }
 }
