@@ -35,7 +35,7 @@
       "p": "Dyskusje na temat strony, testowanie składni i proponowanie nowych funkcji"
     },
     "bot": {
-      "header": "Bot HammerTime",
+      "header": "HammerTime App",
       "pWithoutCommand": "Generuj znaczniki czasu z poziomu Discorda za pomocą poleceń typu slash"
     },
     "textColor": {
@@ -81,5 +81,16 @@
     "openSource": "Otwartoźródłowe oprogramowanie",
     "fontAwesomeFree": "Font Awesome Free",
     "mantine": "Mantine"
+  },
+  "add-app": {
+    "title": "Wybierz, gdzie chcesz dodać aplikację",
+    "user": {
+      "title": "Dodaj do Moich aplikacji",
+      "description": "Korzystaj z tej aplikacji w dowolnym miejscu!"
+    },
+    "guild": {
+      "title": "Dodaj do serwera",
+      "description": "Dostosuj serwer poprzez dodanie tej aplikacji"
+    }
   }
 }
