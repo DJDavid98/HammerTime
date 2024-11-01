@@ -29,13 +29,13 @@
     "example": "Exemplo do resultado"
   },
   "usefulLinks": {
-    "lead": "Talvez você pode achar estes úteis também:",
+    "lead": "Você também pode achar isto útil:",
     "server": {
       "header": "Servidor Oficial do HammerTime",
       "p": "Discuta sobre o site, teste a sintaxe e sugira funções"
     },
     "bot": {
-      "header": "HammerTime Bot",
+      "header": "HammerTime App",
       "pWithoutCommand": "Gere timestamps dentro do Discord usando slash commands"
     },
     "textColor": {
@@ -81,5 +81,16 @@
     "openSource": "Software de código aberto",
     "fontAwesomeFree": "Font Awesome Free",
     "mantine": "Mantine"
+  },
+  "add-app": {
+    "title": "Selecione onde você gostaria de adicionar o app",
+    "user": {
+      "title": "Adicionar aos meus aplicativos",
+      "description": "Utilize este aplicativo em qualquer lugar!"
+    },
+    "guild": {
+      "title": "Adicionar ao servidor",
+      "description": "Personalize seu servidor adicionando este aplicativo"
+    }
   }
 }
