@@ -2,6 +2,7 @@
 
 .page {
   background-color: #323338;
+  padding: 1em;
 }
 
 .logo {
@@ -20,6 +21,11 @@
 .subtitle {
   font-size: 0.9rem;
   margin: 0 0 1em;
+}
+
+.title,
+.subtitle {
+  text-align: center;
 }
 
 .add-links-wrap {

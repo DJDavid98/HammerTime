@@ -5,6 +5,7 @@ import styles from 'modules/UsefulLinks.module.scss';
 import { Trans } from 'next-i18next';
 import Image, { StaticImageData } from 'next/image';
 import { FC, memo, ReactNode } from 'react';
+import Link from 'next/link';
 import bot from '../../public/bot.png';
 import server from '../../public/server.png';
 import textColor from '../../public/textcolor.png';
@@ -14,6 +15,7 @@ interface UsefulLink {
   image: StaticImageData;
   name: ReactNode;
   desc: ReactNode;
+  local?: boolean;
 }
 
 const UsefulLinksComponent: FC<{ t: TFunction; leadText: string }> = ({ t, leadText }) => {
@@ -27,6 +29,7 @@ const UsefulLinksComponent: FC<{ t: TFunction; leadText: string }> = ({ t, leadT
     {
       href: '/add-bot',
       image: bot,
+      local: true,
       name: t('common:usefulLinks.bot.header'),
       desc: (
         <Trans t={t} i18nKey="common:usefulLinks.bot.pWithoutCommand">
@@ -50,23 +53,28 @@ const UsefulLinksComponent: FC<{ t: TFunction; leadText: string }> = ({ t, leadT
     <>
       <Text className={styles['lead-text']}>{leadText}</Text>
       <Group position="center" align="stretch">
-        {components.map(({ href, image, name, desc }) => (
-          <div key={href} className={styles.link}>
-            <Card component={ExternalLink} href={href} shadow="sm" p="lg" withBorder>
-              <Card.Section className={styles['card-top-half']}>
-                <Image src={image} alt="" fill />
-              </Card.Section>
+        {components.map(({ href, image, name, desc, local }) => {
+          const WrapperEl = local ? Link : ExternalLink;
+          return (
+            <div key={href} className={styles.link}>
+              <WrapperEl href={href} target="_blank" className={styles['link-wrap']}>
+                <Card shadow="sm" p="lg" className={styles['link-card']}>
+                  <Card.Section className={styles['card-top-half']}>
+                    <Image src={image} alt="" fill />
+                  </Card.Section>
 
-              <div className={styles['card-bottom-half']}>
-                <Text className={styles['link-name']}>{name}</Text>
+                  <div className={styles['card-bottom-half']}>
+                    <Text className={styles['link-name']}>{name}</Text>
 
-                <Text size="sm" className={styles['link-desc']}>
-                  {desc}
-                </Text>
-              </div>
-            </Card>
-          </div>
-        ))}
+                    <Text size="sm" className={styles['link-desc']}>
+                      {desc}
+                    </Text>
+                  </div>
+                </Card>
+              </WrapperEl>
+            </div>
+          );
+        })}
       </Group>
     </>
   );

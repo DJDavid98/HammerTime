@@ -10,15 +10,19 @@
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 
-  a {
+  .link-wrap {
     border-radius: 0.4rem;
-    display: flex;
-    height: 100%;
-    flex-flow: column nowrap;
-    justify-content: center;
     text-decoration: none !important;
     max-width: 175px;
     margin: 0 auto;
+
+    &,
+    .link-card {
+      display: flex;
+      height: 100%;
+      flex-flow: column nowrap;
+      justify-content: center;
+    }
 
     @media (min-width: 576px) {
       max-width: 225px;
