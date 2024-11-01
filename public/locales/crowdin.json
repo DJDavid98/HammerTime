@@ -1,5 +1,5 @@
 {
-  "meta": "Generated at 2024-11-01T05:04:13.443Z",
+  "meta": "Generated at 2024-11-01T05:32:31.657Z",
   "users": {
     "25282": {
       "username": "Liggli",
@@ -903,8 +903,8 @@
       "translation": 96
     },
     "ja": {
-      "approval": 96,
-      "translation": 96
+      "approval": 100,
+      "translation": 100
     },
     "ko": {
       "approval": 96,
@@ -983,8 +983,8 @@
       "translation": 95
     },
     "zh-TW": {
-      "approval": 96,
-      "translation": 96
+      "approval": 100,
+      "translation": 100
     }
   }
 }
