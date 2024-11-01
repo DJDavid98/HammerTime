@@ -75,6 +75,11 @@
     "intro": "Ši svetainė yra atvirojo kodo programinė įranga, kurią sukūrė <1>{{developerName}}</1> naudojant <3>Font Awesome Free</3> ir <5>Mantine</5>. Savanorių vertėjų dėka ji yra prieinama keliomis kalbomis.",
     "translationsBy": "Išvertė <1></1>",
     "incompleteTranslations": "Vertimai nebaigti",
-    "contributeTranslations": "Prisidėti"
+    "contributeTranslations": "Prisidėti",
+    "developedBy": "Sukurta <1></1>",
+    "externalLibraries": "Naudojant <1></1>",
+    "openSource": "Atvirojo kodo programa",
+    "fontAwesomeFree": "Font Awesome Free",
+    "mantine": "Mantine"
   }
 }
