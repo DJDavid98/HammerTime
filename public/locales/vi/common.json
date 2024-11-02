@@ -35,7 +35,7 @@
       "p": "Thảo luận về trang web, thử nghiệm định dạng và góp ý thêm các tính năng mới"
     },
     "bot": {
-      "header": "Robot HammerTime",
+      "header": "Ứng dụng HammerTime",
       "pWithoutCommand": "Tạo lập định dạng thời gian tự động ngay trong Discord bằng các câu lệnh sử dụng gạch chéo"
     },
     "textColor": {
@@ -75,6 +75,22 @@
     "intro": "Trang web này là phần mềm với mã nguồn mở, được phát triển bởi <1>{{developerName}}</1> sử dụng <3>Font Awesome Free</3> và <5>Mantine</5>. Trang web hỗ trợ các ngôn ngữ khác nhau nhờ vào sự giúp đỡ của các phiên dịch viên tình nguyện.",
     "translationsBy": "Bản dịch bởi <1></1>",
     "incompleteTranslations": "Bản dịch chưa hoàn thiện",
-    "contributeTranslations": "Đóng góp thêm"
+    "contributeTranslations": "Đóng góp thêm",
+    "developedBy": "Được phát triển bởi <1></1>",
+    "externalLibraries": "Sử dụng <1></1>",
+    "openSource": "Phần mềm mã nguồn mở",
+    "fontAwesomeFree": "Font Awesome Free",
+    "mantine": "Mantine"
+  },
+  "add-app": {
+    "title": "Bạn muốn thêm ứng dụng vào đâu?",
+    "user": {
+      "title": "Thêm vào Ứng Dụng Của Tôi",
+      "description": "Dùng ứng dụng này ở mọi nơi!"
+    },
+    "guild": {
+      "title": "Thêm vào Máy Chủ",
+      "description": "Tùy chỉnh máy chủ của bạn bằng cách thêm ứng dụng này"
+    }
   }
 }
