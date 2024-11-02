@@ -35,7 +35,7 @@
       "p": "Discuta el sitio web, prueba la sintaxis y sugiera funciones"
     },
     "bot": {
-      "header": "Bot HammerTime",
+      "header": "Aplicación HammerTime",
       "pWithoutCommand": "Genera marcas de tiempo desde Discord usando commandos de barra diagonal"
     },
     "textColor": {
@@ -81,5 +81,16 @@
     "openSource": "Software de código abierto",
     "fontAwesomeFree": "Font Awesome Free",
     "mantine": "Mantine"
+  },
+  "add-app": {
+    "title": "Seleccione dónde quiere agregar la aplicación",
+    "user": {
+      "title": "Añadir a Mis Aplicaciones",
+      "description": "¡Usa esta aplicación en todas partes!"
+    },
+    "guild": {
+      "title": "Añadir al servidor",
+      "description": "Personaliza tu servidor añadiendo esta aplicación"
+    }
   }
 }
