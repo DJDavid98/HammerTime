@@ -35,7 +35,7 @@
       "p": "Discuta o site, teste a sintaxe e sugira recursos"
     },
     "bot": {
-      "header": "Bot HammerTime",
+      "header": "Aplicação HammerTime",
       "pWithoutCommand": "Gerar timestamps a partir de dentro do Discord usando comandos slash"
     },
     "textColor": {
@@ -75,6 +75,22 @@
     "intro": "Este sítio Web é um software de código aberto desenvolvido por <1>{{developerName}}</1> usando <3>Font Awesome Free</3> e <5>Mantine</5>. Está disponível em várias línguas graças a tradutores voluntários.",
     "translationsBy": "Tradução por <1></1>",
     "incompleteTranslations": "As traduções estão incompletas",
-    "contributeTranslations": "Contribuir"
+    "contributeTranslations": "Contribuir",
+    "developedBy": "Desenvolvido por <1></1>",
+    "externalLibraries": "A utilizar <1></1>",
+    "openSource": "Programa com código aberto",
+    "fontAwesomeFree": "Font Awesome Free",
+    "mantine": "Mantine"
+  },
+  "add-app": {
+    "title": "Selecione onde gostaria de adicionar a aplicação",
+    "user": {
+      "title": "Adicionar aos Meus Aplicativos",
+      "description": "Use esta aplicação em todo o lado!"
+    },
+    "guild": {
+      "title": "Adicionar ao Servidor",
+      "description": "Personalize o seu servidor ao adicionar esta aplicação"
+    }
   }
 }
