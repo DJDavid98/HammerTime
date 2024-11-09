@@ -409,6 +409,7 @@
       "name": "Portuguese",
       "nativeName": "Português",
       "countryCode": "PT",
+      "crowdinLocale": "pt-PT",
       "emoji": "\uD83C\uDDF5\uD83C\uDDF9",
       "calendarWeekdayFormat": "ddd",
       "credits": [
@@ -420,6 +421,9 @@
         },
         {
           "crowdinId": 15281318
+        },
+        {
+          "crowdinId": 16669695
         }
       ]
     },

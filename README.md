@@ -117,6 +117,7 @@ English and Hungarian translations have been included, so no translators will be
   - [Wojciech Marzec](https://crowdin.com/profile/C.Ezra.M)
 - 🇵🇹 Portuguese
   - [ً](https://crowdin.com/profile/buckshot-)
+  - [Arthur](https://crowdin.com/profile/DuperKnight)
   - [Casper](https://crowdin.com/profile/JajarGG)
   - [Tiago](https://crowdin.com/profile/DemiCool)
 - 🇧🇷 Portuguese, Brazilian

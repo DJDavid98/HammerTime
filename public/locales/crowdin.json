@@ -1,5 +1,5 @@
 {
-  "meta": "Generated at 2024-11-02T13:31:12.467Z",
+  "meta": "Generated at 2024-11-09T19:50:09.749Z",
   "users": {
     "25282": {
       "username": "Liggli",
@@ -7,6 +7,13 @@
       "fullName": "Liggliluff",
       "languages": [
         "sv"
+      ]
+    },
+    "12426169": {
+      "username": "MikeyDK",
+      "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/12426169/medium/d2097bf3d500edbe566d5fdb3873d308_default.png",
+      "languages": [
+        "da"
       ]
     },
     "12485887": {
@@ -133,7 +140,7 @@
     },
     "13617551": {
       "username": "DJDavid98",
-      "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/13617551/medium/89d4d6ca67dabd71e4738d8bbda1d337.png",
+      "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/13617551/medium/b87ebec332880b8aaff7bf92f7d2088b.png",
       "languages": [
         "ar",
         "bg",
@@ -842,6 +849,22 @@
       "languages": [
         "es"
       ]
+    },
+    "16669493": {
+      "username": "x0jony",
+      "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/16669493/medium/4a76b06939049761481551e7d1191dfd.jpeg",
+      "languages": [
+        "tr"
+      ]
+    },
+    "16669695": {
+      "username": "DuperKnight",
+      "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/16669695/medium/7d0c4340a531695741a422680520f4bc.png",
+      "fullName": "Arthur",
+      "languages": [
+        "he",
+        "pt"
+      ]
     }
   },
   "progress": {
@@ -867,7 +890,7 @@
     },
     "da": {
       "approval": 96,
-      "translation": 96
+      "translation": 99
     },
     "de": {
       "approval": 100,
@@ -895,7 +918,7 @@
     },
     "he": {
       "approval": 66,
-      "translation": 66
+      "translation": 68
     },
     "hi": {
       "approval": 93,
@@ -954,8 +977,8 @@
       "translation": 100
     },
     "pt": {
-      "approval": 89,
-      "translation": 89
+      "approval": 100,
+      "translation": 100
     },
     "ro": {
       "approval": 100,
@@ -975,11 +998,11 @@
     },
     "th": {
       "approval": 96,
-      "translation": 96
+      "translation": 100
     },
     "tr": {
       "approval": 96,
-      "translation": 96
+      "translation": 100
     },
     "uk": {
       "approval": 96,
