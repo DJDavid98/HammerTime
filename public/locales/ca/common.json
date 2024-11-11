@@ -35,7 +35,7 @@
       "p": "Comenteu la pàgina, experimenteu amb la sintaxi i suggeriu característiques"
     },
     "bot": {
-      "header": "Bot de HammerTime",
+      "header": "HammerTime App",
       "pWithoutCommand": "Generar marques temporals des de dins Discord utilitzant comandes de barra"
     },
     "textColor": {
@@ -75,6 +75,22 @@
     "intro": "Aquesta pàgina web és de codi obert i ha sigut desenvolupada per <1>{{developerName}}</1> amb <3>Font Awesome Free</3> i <5>Mantine</5>. Està disponible en múltiples llengües gràcies a traductors voluntaris.",
     "translationsBy": "Traducció per <1></1>",
     "incompleteTranslations": "Traducció incompleta",
-    "contributeTranslations": "Contribuïu"
+    "contributeTranslations": "Contribuïu",
+    "developedBy": "Desenvolupat per <1></1>",
+    "externalLibraries": "Utilitzant <1></1>",
+    "openSource": "Programari de codi obert",
+    "fontAwesomeFree": "Font Awesome Free",
+    "mantine": "Mantine"
+  },
+  "add-app": {
+    "title": "Seleccioneu on voleu afegir l'aplicació",
+    "user": {
+      "title": "Afegeix a Les meves aplicacions",
+      "description": "Utilitzeu aquesta aplicació a tot arreu!"
+    },
+    "guild": {
+      "title": "Afegeix al servidor",
+      "description": "Personalitza el teu servidor afegint aquesta aplicació"
+    }
   }
 }
