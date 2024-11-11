@@ -35,7 +35,7 @@
       "p": "Diskuter hjemmesiden, test syntaksen og foreslå funktioner"
     },
     "bot": {
-      "header": "HammerTime Bot",
+      "header": "HammerTime App",
       "pWithoutCommand": "Generer tidsstempler fra Discord ved hjælp af slash kommandoer"
     },
     "textColor": {
@@ -81,5 +81,16 @@
     "openSource": "Open source software",
     "fontAwesomeFree": "Font Awesome Free",
     "mantine": "Mantine"
+  },
+  "add-app": {
+    "title": "Vælg, hvor du gerne vil tilføje appen",
+    "user": {
+      "title": "Føj til Mine Apps",
+      "description": "Brug denne app overalt!"
+    },
+    "guild": {
+      "title": "Føj til server",
+      "description": "Tilpas din server ved at tilføje denne app"
+    }
   }
 }
