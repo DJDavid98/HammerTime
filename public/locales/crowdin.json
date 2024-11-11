@@ -1,5 +1,5 @@
 {
-  "meta": "Generated at 2024-11-09T19:50:09.749Z",
+  "meta": "Generated at 2024-11-11T22:41:12.450Z",
   "users": {
     "25282": {
       "username": "Liggli",
@@ -847,6 +847,7 @@
       "username": "Sr_Crix",
       "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/16655625/medium/a4fe32830ff1e5896bc17084e5877831.png",
       "languages": [
+        "ca",
         "es"
       ]
     },
@@ -881,16 +882,16 @@
       "translation": 96
     },
     "ca": {
-      "approval": 89,
-      "translation": 89
+      "approval": 100,
+      "translation": 100
     },
     "cs": {
       "approval": 96,
       "translation": 96
     },
     "da": {
-      "approval": 96,
-      "translation": 99
+      "approval": 100,
+      "translation": 100
     },
     "de": {
       "approval": 100,
@@ -917,7 +918,7 @@
       "translation": 96
     },
     "he": {
-      "approval": 66,
+      "approval": 68,
       "translation": 68
     },
     "hi": {
@@ -965,8 +966,8 @@
       "translation": 96
     },
     "nl": {
-      "approval": 96,
-      "translation": 96
+      "approval": 100,
+      "translation": 100
     },
     "pl": {
       "approval": 100,
@@ -997,12 +998,12 @@
       "translation": 96
     },
     "th": {
-      "approval": 96,
+      "approval": 100,
       "translation": 100
     },
     "tr": {
-      "approval": 96,
-      "translation": 100
+      "approval": 99,
+      "translation": 99
     },
     "uk": {
       "approval": 96,

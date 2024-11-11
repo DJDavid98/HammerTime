@@ -52,7 +52,9 @@ English and Hungarian translations have been included, so no translators will be
 - 🇧🇬 Bulgarian
   - [Alexander](https://crowdin.com/profile/Mr.Shad)
   - [Rxshi](https://crowdin.com/profile/Rxshi)
-- Catalan: [sware](https://crowdin.com/profile/sware)
+- Catalan
+  - [Sr_Crix](https://crowdin.com/profile/Sr_Crix)
+  - [sware](https://crowdin.com/profile/sware)
 - 🇨🇳 Chinese Simplified
   - [Chenyu Wang](https://crowdin.com/profile/w11039685)
   - [CPYW_7226](https://crowdin.com/profile/CPYW_7226)
@@ -70,6 +72,7 @@ English and Hungarian translations have been included, so no translators will be
 - 🇩🇰 Danish
   - [jovictasor](https://crowdin.com/profile/jovictasor)
   - [Lennart Christiansen](https://crowdin.com/profile/LennartDenmark)
+  - [MikeyDK](https://crowdin.com/profile/MikeyDK)
 - 🇳🇱 Dutch: [Jesse](https://github.com/Jessuhh)
 - 🇫🇷 French
   - [Alexander](https://crowdin.com/profile/Mr.Shad)
@@ -149,7 +152,9 @@ English and Hungarian translations have been included, so no translators will be
   - [Patrick Tobias](https://crowdin.com/profile/patricktobias)
   - [tunket](https://crowdin.com/profile/tunket)
 - 🇹🇭 Thai: [timelessnesses](https://github.com/timelessnesses)
-- 🇹🇷 Turkish: [tututuana](https://github.com/tututuana)
+- 🇹🇷 Turkish
+  - [tututuana](https://github.com/tututuana)
+  - [x0jony](https://crowdin.com/profile/x0jony)
 - 🇺🇦 Ukrainian
   - [Alexander](https://crowdin.com/profile/Mr.Shad)
   - [GameHacker](https://crowdin.com/profile/GameHacker)
