@@ -35,7 +35,7 @@
       "p": "พูดถึงรูปแบบของเว็บไซต์, ทดลองโค้ด หรือแนะนำฟีเจอร์ใหม่ๆ"
     },
     "bot": {
-      "header": "Discord บอท HammerTime",
+      "header": "แอปพลิเคชัน HammerTime",
       "pWithoutCommand": "สร้างการประทับเวลาภายใน Discord โดยใช้คำสั่งสแลช"
     },
     "textColor": {
@@ -81,5 +81,16 @@
     "openSource": "ซอฟต์แวร์แบบโอเพ่นซอร์ส",
     "fontAwesomeFree": "Font Awesome Free",
     "mantine": "Mantine"
+  },
+  "add-app": {
+    "title": "เลือกว่าคุณจะเพิ่มแอปพลิเคชันนี้ไว้ที่ใด",
+    "user": {
+      "title": "เพิ่มไปยังแอปของฉัน",
+      "description": "ใช้แอปนี้ทุกที่!"
+    },
+    "guild": {
+      "title": "เพิ่มไปยังเซิร์ฟเวอร์",
+      "description": "ปรับแต่งเซิร์ฟเวอร์ของคุณโดยเพิ่มแอปนี้"
+    }
   }
 }
