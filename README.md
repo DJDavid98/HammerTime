@@ -68,6 +68,7 @@ English and Hungarian translations have been included, so no translators will be
 - 🇨🇿 Czech
   - [Blurplix](https://crowdin.com/profile/Blurplix)
   - [klauny](https://crowdin.com/profile/klauny)
+  - [ProfiRaDeK\_](https://crowdin.com/profile/surikatibratri)
   - [イーテルニティ ☄️](https://crowdin.com/profile/Ethxrnity)
 - 🇩🇰 Danish
   - [jovictasor](https://crowdin.com/profile/jovictasor)
@@ -83,14 +84,18 @@ English and Hungarian translations have been included, so no translators will be
   - [Malalia Mimi](https://crowdin.com/profile/MialyMusic)
   - [Ouiouibaguette](https://crowdin.com/profile/Ouiouibaguette)
   - [sivelswhy](https://crowdin.com/profile/sivelswhy)
+  - [Théo Navas](https://crowdin.com/profile/GrifGrif)
   - [ValouFCH](https://crowdin.com/profile/ValouFCH)
+  - [Veivneorul](https://crowdin.com/profile/Veivneorul)
 - 🇩🇪 German
   - [Carlos Diener](https://crowdin.com/profile/carlos.diener)
   - [Fabian9799](https://crowdin.com/profile/Fabian9799)
   - [Julius Geiger](https://crowdin.com/profile/julix00)
 - 🇬🇷 Greek: [Belle Bernice](https://crowdin.com/profile/BelleBernice)
 - 🇮🇱 Hebrew: [Amit Cohen](https://crowdin.com/profile/ZeRealOne)
-- 🇮🇳 Hindi: [Balajiasli](https://crowdin.com/profile/Balajiasli)
+- 🇮🇳 Hindi
+  - [Balajiasli](https://crowdin.com/profile/Balajiasli)
+  - [Natzu](https://crowdin.com/profile/natieon)
 - 🇮🇩 Indonesian: [Jackie](https://github.com/Jckcr)
 - 🇮🇹 Italian: [Lory Pelli](https://github.com/lorypelli)
 - 🇯🇵 Japanese
@@ -103,6 +108,7 @@ English and Hungarian translations have been included, so no translators will be
   - [Bin](https://crowdin.com/profile/cheesepickle12345678)
   - [SkyStorage\_](https://crowdin.com/profile/SkyStorage_)
   - [김카츄 (sjk)](https://github.com/sjkim04)
+  - [미르냥](https://crowdin.com/profile/Mirnyang)
 - 🇱🇻 Latvian: [Casper](https://crowdin.com/profile/JajarGG)
 - 🇱🇹 Lithuanian
   - [adome595](https://crowdin.com/profile/adome595)
@@ -112,7 +118,9 @@ English and Hungarian translations have been included, so no translators will be
 - 🇳🇴 Norwegian
   - [Ivy Wilson](https://crowdin.com/profile/zach.lawnmower)
   - [Phillip Rødseth](https://crowdin.com/profile/philliphatrod)
-- 🇮🇷 Persian: [Mohammad Safa Gray](https://crowdin.com/profile/DeadMarco)
+- 🇮🇷 Persian
+  - [Mohammad Safa Gray](https://crowdin.com/profile/DeadMarco)
+  - [Not so nice potato](https://crowdin.com/profile/regimanhj)
 - 🇵🇱 Polish
   - [meeekos](https://crowdin.com/profile/meeekos)
   - [MinerPL](https://github.com/minerpl)
