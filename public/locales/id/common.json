@@ -35,7 +35,7 @@
       "p": "Diskusikan situs web, uji sintaks dan sarankan fitur"
     },
     "bot": {
-      "header": "HammerTime Bot",
+      "header": "Aplikasi HammerTime",
       "pWithoutCommand": "Hasilkan cap waktu dari dalam Discord menggunakan perintah garis miring"
     },
     "textColor": {
@@ -75,6 +75,22 @@
     "intro": "Situs web ini adalah perangkat lunak sumber terbuka yang dikembangkan oleh <1>{{developerName}}</1> menggunakan <3>Font Awesome Free</3> dan <5>Mantine</5>. Ini tersedia dalam berbagai bahasa berkat penerjemah sukarela.",
     "translationsBy": "Terjemahan oleh <1></1>",
     "incompleteTranslations": "Terjemahan tidak lengkap",
-    "contributeTranslations": "Kontribusi"
+    "contributeTranslations": "Kontribusi",
+    "developedBy": "Dikembangkan oleh <1></1>",
+    "externalLibraries": "Menggunakan <1></1>",
+    "openSource": "Perangkat lunak sumber terbuka",
+    "fontAwesomeFree": "Font Awesome Free",
+    "mantine": "Mantine"
+  },
+  "add-app": {
+    "title": "Pilih tempat Anda ingin menambahkan aplikasi",
+    "user": {
+      "title": "Tambahkan ke Aplikasi Saya",
+      "description": "Gunakan aplikasi ini di mana-mana!"
+    },
+    "guild": {
+      "title": "Tambahkan ke Server",
+      "description": "Sesuaikan server Anda dengan menambahkan aplikasi ini"
+    }
   }
 }
