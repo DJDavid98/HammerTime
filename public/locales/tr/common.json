@@ -35,7 +35,7 @@
       "p": "Siteyi tartışın, zaman damgalarını test edin ve özellikler önerin"
     },
     "bot": {
-      "header": "HammerTime Botu",
+      "header": "HammerTime Uygulaması",
       "pWithoutCommand": "Slash komutlarını kullanarak Discord üzerinden zaman damgaları oluşturun"
     },
     "textColor": {
@@ -81,5 +81,16 @@
     "openSource": "Açık kaynak kodlu yazılım",
     "fontAwesomeFree": "Font Awesome Free",
     "mantine": "Mantine"
+  },
+  "add-app": {
+    "title": "Uygulamayı eklemek istediğin yeri seç",
+    "user": {
+      "title": "Uygulamalarıma Ekle",
+      "description": "Bu uygulamayı her yerde kullan!"
+    },
+    "guild": {
+      "title": "Sunucuya ekle",
+      "description": "Bu uygulamayı ekleyerek sunucunu özelleştir."
+    }
   }
 }

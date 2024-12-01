@@ -35,7 +35,7 @@
       "p": "Diskutujte o webových stránkách, testujte syntaxi a navrhujte funkce"
     },
     "bot": {
-      "header": "HammerTime Bot",
+      "header": "HammerTime App",
       "pWithoutCommand": "Generování časových razítek přímo z aplikace Discord pomocí lomítkových příkazů"
     },
     "textColor": {
@@ -81,5 +81,16 @@
     "openSource": "Otevřený software",
     "fontAwesomeFree": "Font Awesome Free",
     "mantine": "Mantine"
+  },
+  "add-app": {
+    "title": "Vyber, kde bys chtěl aplikaci přidat",
+    "user": {
+      "title": "Přidat do mých aplikací",
+      "description": "Používej tuto aplikaci všude!"
+    },
+    "guild": {
+      "title": "Přidat na server",
+      "description": "Přizpůsob svůj server přidáním této aplikace"
+    }
   }
 }
