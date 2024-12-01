@@ -35,7 +35,7 @@
       "p": "Discutez du site, testez la syntaxe et suggérez de nouvelles fonctionnalités"
     },
     "bot": {
-      "header": "HammerTime Bot",
+      "header": "App HammerTime",
       "pWithoutCommand": "Générer des horodatages à partir de Discord à l'aide de commandes slash"
     },
     "textColor": {
@@ -81,5 +81,16 @@
     "openSource": "Logiciel open-source",
     "fontAwesomeFree": "Font Awesome Free",
     "mantine": "Mantime"
+  },
+  "add-app": {
+    "title": "Sélectionnez l'endroit où vous souhaitez ajouter l'app",
+    "user": {
+      "title": "Ajoute à Mes applications",
+      "description": "Utilise cette appli partout !"
+    },
+    "guild": {
+      "title": "Ajouter au serveur",
+      "description": "Personnalise ton serveur en ajoutant cette application"
+    }
   }
 }
