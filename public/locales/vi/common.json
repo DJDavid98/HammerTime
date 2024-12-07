@@ -72,7 +72,6 @@
   },
   "credits": {
     "title": "Các sự đóng góp",
-    "intro": "Trang web này là phần mềm với mã nguồn mở, được phát triển bởi <1>{{developerName}}</1> sử dụng <3>Font Awesome Free</3> và <5>Mantine</5>. Trang web hỗ trợ các ngôn ngữ khác nhau nhờ vào sự giúp đỡ của các phiên dịch viên tình nguyện.",
     "translationsBy": "Bản dịch bởi <1></1>",
     "incompleteTranslations": "Bản dịch chưa hoàn thiện",
     "contributeTranslations": "Đóng góp thêm",
