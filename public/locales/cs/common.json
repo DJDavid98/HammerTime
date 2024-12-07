@@ -72,7 +72,6 @@
   },
   "credits": {
     "title": "Zásluhy",
-    "intro": "Tato webová stránka obsahuje software s otevřeným zdrojovým kódem, který vyvinul <1>{{developerName}}</1> pomocí <3>Font Awesome Free</3> a <5>Mantine</5>. Díky dobrovolným překladatelům je k dispozici ve více jazycích.",
     "translationsBy": "Přeložili <1></1>",
     "incompleteTranslations": "Překlad není úplný",
     "contributeTranslations": "Přispět",
