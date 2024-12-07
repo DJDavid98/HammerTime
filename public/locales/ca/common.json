@@ -72,7 +72,6 @@
   },
   "credits": {
     "title": "Crèdits",
-    "intro": "Aquesta pàgina web és de codi obert i ha sigut desenvolupada per <1>{{developerName}}</1> amb <3>Font Awesome Free</3> i <5>Mantine</5>. Està disponible en múltiples llengües gràcies a traductors voluntaris.",
     "translationsBy": "Traducció per <1></1>",
     "incompleteTranslations": "Traducció incompleta",
     "contributeTranslations": "Contribuïu",
