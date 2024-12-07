@@ -72,7 +72,6 @@
   },
   "credits": {
     "title": "Kredit",
-    "intro": "Situs web ini adalah perangkat lunak sumber terbuka yang dikembangkan oleh <1>{{developerName}}</1> menggunakan <3>Font Awesome Free</3> dan <5>Mantine</5>. Ini tersedia dalam berbagai bahasa berkat penerjemah sukarela.",
     "translationsBy": "Terjemahan oleh <1></1>",
     "incompleteTranslations": "Terjemahan tidak lengkap",
     "contributeTranslations": "Kontribusi",
