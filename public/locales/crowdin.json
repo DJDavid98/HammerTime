@@ -1,5 +1,5 @@
 {
-  "meta": "Generated at 2024-12-01T12:33:51.118Z",
+  "meta": "Generated at 2024-12-07T13:58:48.642Z",
   "users": {
     "25282": {
       "username": "Liggli",
@@ -165,6 +165,7 @@
         "lv",
         "lt",
         "ms",
+        "mn",
         "nb",
         "nb",
         "fa",
@@ -913,6 +914,20 @@
       "languages": [
         "fr"
       ]
+    },
+    "16733607": {
+      "username": "MerlinsBeard",
+      "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/16733607/medium/70461287109dc746b734da475692a909_default.png",
+      "languages": [
+        "mn"
+      ]
+    },
+    "16737021": {
+      "username": "Stryxen",
+      "avatarUrl": "https://crowdin-static.downloads.crowdin.com/avatar/16737021/medium/6106b414ba329fb0da71b247b46cda45.jpeg",
+      "languages": [
+        "sv"
+      ]
     }
   },
   "progress": {
@@ -957,16 +972,16 @@
       "translation": 100
     },
     "fa": {
-      "approval": 70,
-      "translation": 70
+      "approval": 77,
+      "translation": 77
     },
     "fr": {
       "approval": 100,
       "translation": 100
     },
     "he": {
-      "approval": 68,
-      "translation": 68
+      "approval": 74,
+      "translation": 74
     },
     "hi": {
       "approval": 97,
@@ -994,15 +1009,19 @@
     },
     "ko": {
       "approval": 99,
-      "translation": 99
+      "translation": 100
     },
     "lt": {
       "approval": 96,
       "translation": 96
     },
     "lv": {
-      "approval": 89,
-      "translation": 89
+      "approval": 88,
+      "translation": 88
+    },
+    "mn": {
+      "approval": 100,
+      "translation": 100
     },
     "ms": {
       "approval": 100,
@@ -1037,12 +1056,12 @@
       "translation": 100
     },
     "sr": {
-      "approval": 91,
-      "translation": 91
+      "approval": 90,
+      "translation": 90
     },
     "sv": {
-      "approval": 96,
-      "translation": 96
+      "approval": 99,
+      "translation": 99
     },
     "th": {
       "approval": 100,
@@ -1057,8 +1076,8 @@
       "translation": 96
     },
     "ur": {
-      "approval": 89,
-      "translation": 89
+      "approval": 88,
+      "translation": 88
     },
     "vi": {
       "approval": 100,

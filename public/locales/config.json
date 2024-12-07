@@ -386,6 +386,16 @@
         }
       ]
     },
+    "mn": {
+      "name": "Mongolian",
+      "nativeName": "Монгол",
+      "countryCode": "MN",
+      "credits": [
+        {
+          "crowdinId": 16733607
+        }
+      ]
+    },
     "fa": {
       "name": "Persian",
       "nativeName": "فارسی",

@@ -72,7 +72,6 @@
   },
   "credits": {
     "title": "Credits",
-    "intro": "Diese Website ist eine Open-Source-Software, die von <1>{{developerName}}</1> unter Verwendung von <3>Font Awesome Free</3> und <5>Mantine</5> entwickelt. Sie ist dank freiwilliger Übersetzer in mehreren Sprachen verfügbar.",
     "translationsBy": "Übersetzungen von <1></1>",
     "incompleteTranslations": "Übersetzung nicht vollständig",
     "contributeTranslations": "Beitragen",

@@ -72,7 +72,6 @@
   },
   "credits": {
     "title": "クレジット",
-    "intro": "このウェブサイトは<1>{{developerName}}</1>によって開発されたオープンソースソフトウェアで、<3>Font Awesome Free</3>と<5>Mantine</5>を使用しています。ボランティア翻訳者のおかげで、複数の言語で利用できます。",
     "translationsBy": "翻訳: <1></1>",
     "incompleteTranslations": "翻訳は未完成です",
     "contributeTranslations": "貢献",

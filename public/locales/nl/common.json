@@ -72,7 +72,6 @@
   },
   "credits": {
     "title": "Met dank aan",
-    "intro": "Deze website is open-source software ontwikkeld door <1>{{developerName}}</1> met behulp van <3>Font Awesome Free</3> en <5>Mantine</5>. Het is beschikbaar in meerdere talen dankzij de vrijwillige vertalers.",
     "translationsBy": "Vertalingen door <1></1>",
     "incompleteTranslations": "Vertalingen zijn onvolledig",
     "contributeTranslations": "Draag bij",
