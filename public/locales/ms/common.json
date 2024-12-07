@@ -72,7 +72,6 @@
   },
   "credits": {
     "title": "Penghargaan",
-    "intro": "Laman sesawang ini suatu perisian bersumber terbuka yang dibangunkan oleh <1>{{developerName}}</1> menggunakan <3>Font Awesome Free</3> dan <5>Mantine</5>. Ia didapati dalam pelbagai bahasa atas usaha para penterjemah sukarela.",
     "translationsBy": "Terjemahan oleh <1></1>",
     "incompleteTranslations": "Terjemahan masih belum lengkap",
     "contributeTranslations": "Sumbang",
