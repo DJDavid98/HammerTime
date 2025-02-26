@@ -29,7 +29,7 @@ export const CSP_HEADER = [
   `default-src 'self'`,
   `script-src ${DEV_MODE ? `* 'unsafe-inline' 'unsafe-hashes' ` : ''}'self' 'unsafe-eval'`,
   `style-src 'self' 'unsafe-inline' fonts.googleapis.com`,
-  `img-src 'self' data: cdn.jsdelivr.net crowdin-static.downloads.crowdin.com avatars.githubusercontent.com gravatar.com`,
+  `img-src 'self' data: cdn.jsdelivr.net crowdin-static.downloads.crowdin.com crowdin-static.cf-downloads.crowdin.com avatars.githubusercontent.com gravatar.com`,
   'font-src fonts.gstatic.com',
   `connect-src 'self' vitals.vercel-insights.com',
   'media-src 'self'`,
