@@ -48,7 +48,7 @@ English and Hungarian translations have been included, so no translators will be
 
 ### Credits
 
-- 🇸🇦 Arabic: [Raphael Santiago](https://crowdin.com/profile/raphael.santiago.53)
+- 🇸🇦 Arabic: [REMOVED_USER](https://crowdin.com/profile/REMOVED_USER)
 - 🇧🇬 Bulgarian
   - [Alexander](https://crowdin.com/profile/Mr.Shad)
   - [Rxshi](https://crowdin.com/profile/Rxshi)
@@ -101,13 +101,13 @@ English and Hungarian translations have been included, so no translators will be
 - 🇯🇵 Japanese
   - [eai04191](https://crowdin.com/profile/eai04191)
   - [ms.investigator](https://crowdin.com/profile/ms.)
+  - [Phrygia / sjk](https://github.com/sjkim04)
   - [sakana](https://crowdin.com/profile/sakana0580)
   - [TheOnlyRAK](https://crowdin.com/profile/TheOnlyRAK)
-  - [のむチュウ (sjk)](https://github.com/sjkim04)
 - 🇰🇷 Korean
   - [Bin](https://crowdin.com/profile/cheesepickle12345678)
+  - [Phrygia / sjk](https://github.com/sjkim04)
   - [SkyStorage\_](https://crowdin.com/profile/SkyStorage_)
-  - [김카츄 (sjk)](https://github.com/sjkim04)
   - [미르냥](https://crowdin.com/profile/Mirnyang)
 - 🇱🇻 Latvian: [Casper](https://crowdin.com/profile/JajarGG)
 - 🇱🇹 Lithuanian
@@ -140,11 +140,11 @@ English and Hungarian translations have been included, so no translators will be
 - 🇷🇴 Romanian: [mihai](https://crowdin.com/profile/mihaiofficialRO)
 - 🇷🇺 Russian
   - [Alexander](https://crowdin.com/profile/Mr.Shad)
+  - [Aligatoor](https://crowdin.com/profile/Aligatoor)
   - [GameHacker](https://crowdin.com/profile/GameHacker)
   - [JudDayLum Official](https://crowdin.com/profile/JudDayLum)
   - [JudeDM](https://crowdin.com/profile/JudeDM)
   - [Luna](https://crowdin.com/profile/NightyCloud)
-  - [Nikita Sharikov](https://crowdin.com/profile/Aligatoor)
   - [stolarchukboris](https://crowdin.com/profile/PleasedontslammykeyboarddfsdoijfwR)
   - [Vladimir](https://crowdin.com/profile/bill876)
   - [Крутой Бо](https://crowdin.com/profile/arturfomenko8)
