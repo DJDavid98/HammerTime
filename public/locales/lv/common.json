@@ -35,7 +35,7 @@
       "p": "Apspriest tīmekļa vietni, pārbaudīt sintaksu un ieteikt iespējas"
     },
     "bot": {
-      "header": "HammerTime Bots",
+      "header": "HammerTime lietotne",
       "pWithoutCommand": "Ģenerēt laika zīmogus no Discord izmantojot slīpkomandas"
     },
     "textColor": {
@@ -72,9 +72,24 @@
   },
   "credits": {
     "title": "Pateicība",
-    "intro": "Šī vietne ir atvērtā koda programmatūra, ko izstrādājis <1>{{developerName}}</1> izmantojot <3>Font Awesome Free</3> un <5>Mantine</5>. Tā ir pieejama vairākās valodās, pateicoties brīvprātīgajiem tulkotājiem.",
     "translationsBy": "Tulkojumi <1></1>",
     "incompleteTranslations": "Tulkojumi ir nepilnīgi",
-    "contributeTranslations": "Atbalsti"
+    "contributeTranslations": "Atbalsti",
+    "developedBy": "Izstrādājis <1></1>",
+    "externalLibraries": "Izmantojot <1></1>",
+    "openSource": "Atklātā pirmkoda programmatūra",
+    "fontAwesomeFree": "Font Awesome Free",
+    "mantine": "Mantine"
+  },
+  "add-app": {
+    "title": "Izvēlieties kur vēlaties pievienot lietotni",
+    "user": {
+      "title": "Pievienot My Apps",
+      "description": "Izmantojiet šo lietotni visur!"
+    },
+    "guild": {
+      "title": "Pievienot serverim",
+      "description": "Personalizējiet savu serveri, pievienojot šo lietotni"
+    }
   }
 }
