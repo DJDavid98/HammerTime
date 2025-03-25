@@ -35,7 +35,7 @@
       "p": "Diskutera webbsidan, testa syntax och föreslå programfunktioner"
     },
     "bot": {
-      "header": "HammerTime-bot",
+      "header": "HammerTime-app",
       "pWithoutCommand": "Generera tidsstämplar direkt i Discord med hjälp av snedstreckskommandon"
     },
     "textColor": {
@@ -72,7 +72,6 @@
   },
   "credits": {
     "title": "Erkännanden",
-    "intro": "Denna webbplats är en programvara med öppen källkod som utvecklats av <1>{{developerName}}</1> med hjälp av <3>Font Awesome Free</3> och <5>Mantine</5>. Den finns tillgänglig på flera språk tack vare frivilliga översättare.",
     "translationsBy": "Översättningar av <1></1>",
     "incompleteTranslations": "Översättningarna är ofullständiga",
     "contributeTranslations": "Bidra",
@@ -81,5 +80,16 @@
     "openSource": "Öppen källkod",
     "fontAwesomeFree": "Font Awesome Free",
     "mantine": "Mantine"
+  },
+  "add-app": {
+    "title": "Bestäm var du vill lägga till appen",
+    "user": {
+      "title": "Lägg till i mina appar",
+      "description": "Använd den här appen överallt!"
+    },
+    "guild": {
+      "title": "Lägg till på server",
+      "description": "Anpassa din server genom att lägga till den här appen"
+    }
   }
 }
