@@ -1,4 +1,4 @@
-import { LanguageConfig } from 'src/model/language-config';
+import { LanguageConfigV2 } from 'src/model/language-config';
 import localeConfig from '../../public/locales/config.json';
 
 export const SITE_TITLE = 'HammerTime';
@@ -15,7 +15,9 @@ export const IS_CLIENT_SIDE = typeof window !== 'undefined';
 
 export type AvailableLanguage = keyof typeof localeConfig.languages;
 
-type LanguagesConfig = Record<AvailableLanguage, LanguageConfig>;
+export type LatestLanguageConfigType = LanguageConfigV2;
+
+type LanguagesConfig = Record<AvailableLanguage, LatestLanguageConfigType>;
 
 export const LANGUAGES: LanguagesConfig = localeConfig.languages;
 

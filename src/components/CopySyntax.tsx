@@ -3,12 +3,12 @@ import { ActionIcon, ActionIconProps, Code, CodeProps, Group, Tooltip } from '@m
 import { useClipboard } from '@mantine/hooks';
 import { TFunction } from 'i18next';
 import styles from 'modules/TimestampsTable.module.scss';
-import { useCallback, useMemo, VoidFunctionComponent } from 'react';
+import { useCallback, useMemo, FunctionComponent } from 'react';
 
 const elementSizes: ActionIconProps['size'] = 'lg';
 const codeSx: CodeProps['sx'] = (theme) => ({ fontSize: theme.fontSizes[elementSizes] });
 
-export const CopySyntax: VoidFunctionComponent<{ syntax: string; t: TFunction }> = ({ t, syntax }) => {
+export const CopySyntax: FunctionComponent<{ syntax: string; t: TFunction }> = ({ t, syntax }) => {
   const clipboard = useClipboard({ timeout: 500 });
   const buttonTooltipText = useMemo(
     () =>
