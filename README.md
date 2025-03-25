@@ -58,6 +58,7 @@ English and Hungarian translations have been included, so no translators will be
 - 🇨🇳 Chinese Simplified
   - [Chenyu Wang](https://crowdin.com/profile/w11039685)
   - [CPYW_7226](https://crowdin.com/profile/CPYW_7226)
+  - [Faer Yili](https://crowdin.com/profile/yilifaer)
   - [User670](https://crowdin.com/profile/User670)
   - [姓甚名谁](https://crowdin.com/profile/febilly)
 - 🇹🇼 Chinese Traditional
@@ -92,7 +93,9 @@ English and Hungarian translations have been included, so no translators will be
   - [Fabian9799](https://crowdin.com/profile/Fabian9799)
   - [Julius Geiger](https://crowdin.com/profile/julix00)
 - 🇬🇷 Greek: [Belle Bernice](https://crowdin.com/profile/BelleBernice)
-- 🇮🇱 Hebrew: [Amit Cohen](https://crowdin.com/profile/ZeRealOne)
+- 🇮🇱 Hebrew
+  - [Amit Cohen](https://crowdin.com/profile/ZeRealOne)
+  - [didli789](https://crowdin.com/profile/didli789)
 - 🇮🇳 Hindi
   - [Balajiasli](https://crowdin.com/profile/Balajiasli)
   - [Natzu](https://crowdin.com/profile/natieon)

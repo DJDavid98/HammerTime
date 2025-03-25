@@ -1,5 +1,5 @@
 {
-  "meta": "Generated at 2025-02-26T16:10:35.570Z",
+  "meta": "Generated at 2025-03-25T17:07:58.755Z",
   "users": {
     "25282": {
       "username": "Liggli",
@@ -221,6 +221,13 @@
       "fullName": "Mykhailo Yaremenko",
       "languages": [
         "uk"
+      ]
+    },
+    "14240276": {
+      "username": "didli789",
+      "avatarUrl": "https://crowdin-static.cf-downloads.crowdin.com/avatar/14240276/medium/f323689794854363e02ccd452aeb0b60.png",
+      "languages": [
+        "he"
       ]
     },
     "14311950": {
@@ -993,6 +1000,14 @@
       "languages": [
         "hr"
       ]
+    },
+    "16939833": {
+      "username": "yilifaer",
+      "avatarUrl": "https://crowdin-static.cf-downloads.crowdin.com/avatar/16939833/medium/7d09f6c5d42586a5343236a7f9c915b6.jpeg",
+      "fullName": "Faer Yili",
+      "languages": [
+        "zh"
+      ]
     }
   },
   "progress": {
@@ -1045,15 +1060,15 @@
       "translation": 100
     },
     "he": {
-      "approval": 74,
-      "translation": 74
+      "approval": 100,
+      "translation": 100
     },
     "hi": {
       "approval": 97,
       "translation": 97
     },
     "hr": {
-      "approval": 94,
+      "approval": 97,
       "translation": 97
     },
     "hu": {
@@ -1081,7 +1096,7 @@
       "translation": 96
     },
     "lv": {
-      "approval": 88,
+      "approval": 100,
       "translation": 100
     },
     "mn": {
@@ -1093,8 +1108,8 @@
       "translation": 100
     },
     "nb": {
-      "approval": 96,
-      "translation": 99
+      "approval": 100,
+      "translation": 100
     },
     "nl": {
       "approval": 100,
@@ -1125,7 +1140,7 @@
       "translation": 90
     },
     "sv": {
-      "approval": 99,
+      "approval": 100,
       "translation": 100
     },
     "th": {
@@ -1137,7 +1152,7 @@
       "translation": 100
     },
     "uk": {
-      "approval": 96,
+      "approval": 100,
       "translation": 100
     },
     "ur": {
@@ -1149,7 +1164,7 @@
       "translation": 100
     },
     "zh": {
-      "approval": 95,
+      "approval": 100,
       "translation": 100
     }
   }
