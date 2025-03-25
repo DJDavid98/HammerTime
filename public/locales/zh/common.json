@@ -35,7 +35,7 @@
       "p": "讨论本网站，测试语法，提出建议"
     },
     "bot": {
-      "header": "HammerTime 机器人",
+      "header": "HammerTime App",
       "pWithoutCommand": "使用斜杠指令在 Discord 内生成时间戳"
     },
     "textColor": {
@@ -72,9 +72,24 @@
   },
   "credits": {
     "title": "致谢",
-    "intro": "本网站为<1>{{developerName}}</1>使用 <3>Font Awesome Free</3>和<5>Mantine</5>开发的开源软件。本网站支持多种语言，翻译由志愿者提供。",
     "translationsBy": "翻译者：<1></1>",
     "incompleteTranslations": "翻译不完整",
-    "contributeTranslations": "贡献"
+    "contributeTranslations": "贡献",
+    "developedBy": "开发者<1></1>",
+    "externalLibraries": "使用<1></1>",
+    "openSource": "开源软件",
+    "fontAwesomeFree": "Font Awesome Free",
+    "mantine": "Mantine"
+  },
+  "add-app": {
+    "title": "选择您想要添加应用的位置",
+    "user": {
+      "title": "添加到我的 APP",
+      "description": "随处使用该 APP！"
+    },
+    "guild": {
+      "title": "添加至服务器",
+      "description": "添加此 APP，自定义您的服务器"
+    }
   }
 }
