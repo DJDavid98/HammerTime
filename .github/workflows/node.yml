@@ -1,0 +1,32 @@
+name: Build
+
+on: [push, pull_request]
+
+jobs:
+  lint-and-test:
+    name: 'App Build'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '20'
+
+      - name: Cache node_modules
+        id: cache-node-modules
+        uses: actions/cache@v3
+        with:
+          path: ./node_modules
+          key: node_modules-${{ hashFiles('./package-lock.json') }}
+
+      - name: Upgrade NPM
+        if: steps.cache-node-modules.outputs.cache-hit != 'true'
+        run: npm install -g npm
+
+      - name: Install npm dependencies
+        if: steps.cache-node-modules.outputs.cache-hit != 'true'
+        run: npm ci --ignore-scripts
+
+      - run: npm run build
