@@ -72,9 +72,9 @@
   },
   "credits": {
     "title": "致谢",
-    "translationsBy": "翻译者：<1></1>",
+    "translationsBy": "译者：<1></1>",
     "incompleteTranslations": "翻译不完整",
-    "contributeTranslations": "贡献",
+    "contributeTranslations": "协助翻译",
     "developedBy": "开发者<1></1>",
     "externalLibraries": "使用<1></1>",
     "openSource": "开源软件",
