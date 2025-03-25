@@ -35,7 +35,7 @@
       "p": "웹사이트에 대한 토론, 타임스탬프의 테스트, 기능의 요청을 하실 수 있습니다."
     },
     "bot": {
-      "header": "HammerTime 봇",
+      "header": "HammerTime 앱",
       "pWithoutCommand": "슬래시 명령어를 사용하여 Discord 내에서 타임스탬프를 생성하세요."
     },
     "textColor": {
@@ -72,7 +72,6 @@
   },
   "credits": {
     "title": "크레딧",
-    "intro": "이 웹사이트는 <3>Font Awesome Free</3>와 <5>Mantine</5>을 사용하며, <1>{{developerName}}</1>에 의해 개발된 오픈 소스 소프트웨어입니다. 자원 봉사 번역가들에 의해 여러 언어로 제공되고 있습니다.",
     "translationsBy": "번역: <1></1>",
     "incompleteTranslations": "번역 미완료",
     "contributeTranslations": "기여하기",
@@ -81,5 +80,16 @@
     "openSource": "오픈 소스 소프트웨어",
     "fontAwesomeFree": "Font Awesome Free",
     "mantine": "Mantine"
+  },
+  "add-app": {
+    "title": "앱을 추가할 위치를 선택하세요.",
+    "user": {
+      "title": "내 앱에 추가하기",
+      "description": "이 앱을 어디서든 사용하세요!"
+    },
+    "guild": {
+      "title": "서버에 추가",
+      "description": "이 앱을 추가하여 서버 사용자 지정"
+    }
   }
 }
